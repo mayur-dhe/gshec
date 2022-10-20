@@ -892,26 +892,45 @@ services overlapping Cards
 quotes
 --------------------------------------------- 
 */
-section.quotes {
-  background-image: url(../images/quote-bg.png);
-  background-color: #1f272b;
-  background-position: center center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 250px 0px 110px 0px;
+
+.quotes {
+  padding-top: 140px;
 }
 .quote-box {
   padding: 10px 60px;
 }
-.quote-box q {
+.quote-box blockquote {
   color: white;
-  padding: 0 60px;
-  font-size: xx-large;
+  text-align: center;
+  padding: 20px 0px;
+  font-size: x-large;
   font-family: serif;
 }
-
-
+.quote-box blockquote:before,
+.quote-box blockquote:after {
+  font-family: Georgia, serif;
+  position: absolute;
+  font-size: 6em;
+  line-height: 1;
+}
+.quote-box blockquote:before {
+  top: 0;
+  left: 0;
+  content: "\201C";
+}
+.quote-box blockquote:after {
+  float:right;
+  right:0;
+  bottom:-0.5em;
+  content: "\201D";
+}
+.quotes .owl-nav .owl-prev:before,
+.quotes .owl-nav .owl-next:before {
+    font-size: 18px !important;
+    width: 40px !important;
+    height: 40px !important;
+    line-height: 42px !important;
+}
 /*
 ---------------------------------------------
 upcoming meetings
@@ -923,7 +942,7 @@ section.upcoming-meetings {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 140px;
+  padding-top: 0px;
   padding-bottom: 110px;
 }
 
@@ -1975,6 +1994,10 @@ responsive
 .meeting-item .down-content p {
   margin-left: 0px !important;
 }
+
+* {
+  color: white;
+}
 @media (max-width: 767px) {
   .logo-size {
     width: 60px !important;
@@ -2002,12 +2025,12 @@ responsive
     float: left !important;
     padding-inline: 0%;
   }
-  .nav-laws:after {
+  /* .nav-laws:after {
     content:"Laws";
   }
   .nav-staff:after {
     content:"Staff ";
-  }
+  } */
 
   .header-area .main-nav .logo-2 {
     /* .logo-2 { */
@@ -2020,12 +2043,12 @@ responsive
   .header-area .main-nav .nav {
     padding-inline: 4%;
   }
-  .nav-laws:after {
+  /* .nav-laws:after {
     content:"Acts And Rules";
   }
   .nav-staff:after {
     content:"Staff Members";
-  }
+  } */
 }
 
 /* social media links */
@@ -2383,7 +2406,7 @@ responsive
   letter-spacing: 1px;
   font-weight: 700;
   margin: 0;
-  color: #4154f1;
+  color: # ;
   text-transform: uppercase;
 }
 
