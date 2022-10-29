@@ -1350,6 +1350,12 @@ section.our-facts h2 {
   margin: 15px 0px;
 }
 
+
+.count-area-content .add-digit:after {
+  content: '+';
+  margin-left: 3px;
+}
+
 .percentage .count-digit:after {
   content: '%';
   margin-left: 3px;
@@ -2118,7 +2124,7 @@ responsive
 }
 
 .features .feature-box {
-  padding: 24px 20px;
+  padding: 5px 20px;
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
   transition: 0.3s;
   height: 100%;
@@ -2126,8 +2132,8 @@ responsive
 
 .features .feature-box h3 {
   font-size: 18px;
-  color: #012970;
-  font-weight: 700;
+  color: #322c2c;
+  font-weight: 500;
   margin: 0;
 }
 
@@ -2416,7 +2422,6 @@ responsive
   font-size: 38px;
   line-height: 42px;
   font-weight: 700;
-  color: #012970;
 }
 
 @media (max-width: 768px) {
