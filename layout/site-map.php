@@ -6,12 +6,12 @@
                     <li><a href="index"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
                     <li><a href=""><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
                     <li><a href="#"><?php echo $title;?></a></li>
-                    <li class="page-back"><a class="back_btn" href="index">
+                    <!-- <li class="page-back"><a class="back_btn" href="index">
                         <i class="fa fa-long-arrow-left" aria-hidden="true"></i> Back</a>
-                    </li>
+                    </li> -->
                 </ul>
                 <h6></h6>
-                <h2><?php echo $subtitle;?></h2>
+                <h2 style="text-align: center"><?php echo $subtitle;?></h2>
             </div>
         </div>
     </div>

@@ -6,7 +6,7 @@
 <?php 
   include 'layout/sub-header.php';
   require 'layout/header.php';
-  $subtitle = "Software Development Cell";
+  $subtitle = "Our Team";
   require 'layout/site-map.php'; 
 ?>
 
@@ -18,105 +18,134 @@
   <!-- ------------- Main Content Start---------------------- -->
   <!-- -------------------------------------------------------- -->
   
+  <section class="page-section sdc pt-0">
+    <div class="container">
+      <div class="row">
+        <p>  
+          Software Development Cell, SHEC, is an established cell, group of faculty members , who intend to put theory into practice and make use of their knowledge for implementation of technology in the field of education and Management of Activities/initiatives by SHEC.This cell has been undertaking software projects since its creation in 2022. 
+        </p>
+      </div>
+    </div>
+  </section>
   <!-- ======= features Section ======= -->
   <section class="features">
-    <div class="container">
-      <div class="row gy-4">
+    <div class="container">  
+      <div class="row">
+        <div class="col-lg-12 mt-5 mt-lg-0 d-flex px-5">
+          <div class="row align-self-center gy-1">
+            
+          </div>
+        </div>
+      </div>
 
+      <div class="row gy-2">
         <div class="section-header">
           <p>Aims And Objectives</p>
         </div>
-        </div>
+      </div>
 
-        <div class="row">
-
-          <div class="col-lg-12 mt-5 mt-lg-0 d-flex px-5">
-            <div class="row align-self-center gy-4">
-
-              <div class="col-md-12" data-aos="zoom-out" data-aos-delay="200">
-                <div class="feature-box d-flex align-items-center">
-                  <i class="bi bi-check"></i>
-                  <h3>Create the state-of-the-art learning infrastructure.</h3>
-                </div>
+      <div class="row">
+        <div class="col-lg-12 mt-5 mt-lg-0 d-flex px-5">
+          <div class="row align-self-center gy-1">
+          <!-- new start -->
+            <div class="col-md-12" data-aos="zoom-out" data-aos-delay="200">
+              <div class="feature-box d-flex align-items-center">
+                <i class="bi bi-check"></i>
+                <h3>To satisfy the current software automation needs of the state higher education council and organization /institute under its purview.</h3>
               </div>
-
-              <div class="col-md-12" data-aos="zoom-out" data-aos-delay="200">
-                <div class="feature-box d-flex align-items-center">
-                  <i class="bi bi-check"></i>
-                  <h3>To take appropriate measures for promoting innovations in teaching-learning process and inter-disciplinary studies and research.
-                  </h3>
-                </div>
-              </div>
-
-              <div class="col-md-12" data-aos="zoom-out" data-aos-delay="200">
-                <div class="feature-box d-flex align-items-center">
-                  <i class="bi bi-check"></i>
-                  <h3>To strive to continuously increase the Gross Enrolment Ratio (GER) in Higher Education.</h3>
-                </div>
-              </div>
-              <div class="col-md-12" data-aos="zoom-out" data-aos-delay="200">
-                <div class="feature-box d-flex align-items-center">
-                  <i class="bi bi-check"></i>
-                  <h3>Development of undergraduate and post-graduate education.
-                  </h3>
-                </div>
-              </div>
-              <div class="col-md-12" data-aos="zoom-out" data-aos-delay="200">
-                <div class="feature-box d-flex align-items-center">
-                  <i class="bi bi-check"></i>
-                  <h3>Ensuring maintenance of high standards of Higher Education.
-                  </h3>
-                </div>
-              </div>
-
-              <div class="col-md-12" data-aos="zoom-out" data-aos-delay="300">
-                <div class="feature-box d-flex align-items-center">
-                  <i class="bi bi-check"></i>
-                  <h3>Every College to have at least one Programme from the Institutes of Eminence.
-                  </h3>
-                </div>
-              </div>
-              <div class="col-md-12" data-aos="zoom-out" data-aos-delay="300">
-                <div class="feature-box d-flex align-items-center">
-                  <i class="bi bi-check"></i>
-                  <h3>Every College to come up with at least one new course in the coming five years & may suggest one course to be phased out in the coming ten years.
-                  </h3>
-                </div>
-              </div>
-              <div class="col-md-12" data-aos="zoom-out" data-aos-delay="300">
-                <div class="feature-box d-flex align-items-center">
-                  <i class="bi bi-check"></i>
-                  <h3>Expose and provide training in using technology for teaching, learning, and evaluation.
-                  </h3>
-                </div>
-              </div>
-              <div class="col-md-12" data-aos="zoom-out" data-aos-delay="300">
-                <div class="feature-box d-flex align-items-center">
-                  <i class="bi bi-check"></i>
-                  <h3>Meet the various educational needs of society that would arise from time to time.
-                  </h3>
-                </div>
-              </div>
-              <div class="col-md-12" data-aos="zoom-out" data-aos-delay="300">
-                <div class="feature-box d-flex align-items-center">
-                  <i class="bi bi-check"></i>
-                  <h3>Promote experiential learning.
-                  </h3>
-                </div>
-              </div>
-              <div class="col-md-12" data-aos="zoom-out" data-aos-delay="300">
-                <div class="feature-box d-flex align-items-center">
-                  <i class="bi bi-check"></i>
-                  <h3>Nurture scientific temperament among the teaching and student community of the state.
-                  </h3>
-                </div>
-              </div>
-
-             
-
             </div>
+            <div class="col-md-12" data-aos="zoom-out" data-aos-delay="200">
+              <div class="feature-box d-flex align-items-center">
+                <i class="bi bi-check"></i>
+                <h3>To provide an opportunity to grow, to use their technical expertise and ability to develop and produce innovative products.</h3>
+              </div>
+            </div>
+            <div class="col-md-12" data-aos="zoom-out" data-aos-delay="200">
+              <div class="feature-box d-flex align-items-center">
+                <i class="bi bi-check"></i>
+                <h3>To provide services and solutions that satisfy emerging needs</h3>
+              </div>
+            </div>
+          <!-- new end -->
+          <!-- old start -->
+            <!-- <div class="col-md-12" data-aos="zoom-out" data-aos-delay="200">
+              <div class="feature-box d-flex align-items-center">
+                <i class="bi bi-check"></i>
+                <h3>Create the state-of-the-art learning infrastructure.</h3>
+              </div>
+            </div>
+            <div class="col-md-12" data-aos="zoom-out" data-aos-delay="200">
+              <div class="feature-box d-flex align-items-center">
+                <i class="bi bi-check"></i>
+                <h3>To take appropriate measures for promoting innovations in teaching-learning process and inter-disciplinary studies and research.
+                </h3>
+              </div>
+            </div>
+            <div class="col-md-12" data-aos="zoom-out" data-aos-delay="200">
+              <div class="feature-box d-flex align-items-center">
+                <i class="bi bi-check"></i>
+                <h3>To strive to continuously increase the Gross Enrolment Ratio (GER) in Higher Education.</h3>
+              </div>
+            </div>
+            <div class="col-md-12" data-aos="zoom-out" data-aos-delay="200">
+              <div class="feature-box d-flex align-items-center">
+                <i class="bi bi-check"></i>
+                <h3>Development of undergraduate and post-graduate education.
+                </h3>
+              </div>
+            </div>
+            <div class="col-md-12" data-aos="zoom-out" data-aos-delay="200">
+              <div class="feature-box d-flex align-items-center">
+                <i class="bi bi-check"></i>
+                <h3>Ensuring maintenance of high standards of Higher Education.
+                </h3>
+              </div>
+            </div>
+            <div class="col-md-12" data-aos="zoom-out" data-aos-delay="300">
+              <div class="feature-box d-flex align-items-center">
+                <i class="bi bi-check"></i>
+                <h3>Every College to have at least one Programme from the Institutes of Eminence.
+                </h3>
+              </div>
+            </div>
+            <div class="col-md-12" data-aos="zoom-out" data-aos-delay="300">
+              <div class="feature-box d-flex align-items-center">
+                <i class="bi bi-check"></i>
+                <h3>Every College to come up with at least one new course in the coming five years & may suggest one course to be phased out in the coming ten years.
+                </h3>
+              </div>
+            </div>
+            <div class="col-md-12" data-aos="zoom-out" data-aos-delay="300">
+              <div class="feature-box d-flex align-items-center">
+                <i class="bi bi-check"></i>
+                <h3>Expose and provide training in using technology for teaching, learning, and evaluation.
+                </h3>
+              </div>
+            </div>
+            <div class="col-md-12" data-aos="zoom-out" data-aos-delay="300">
+              <div class="feature-box d-flex align-items-center">
+                <i class="bi bi-check"></i>
+                <h3>Meet the various educational needs of society that would arise from time to time.
+                </h3>
+              </div>
+            </div>
+            <div class="col-md-12" data-aos="zoom-out" data-aos-delay="300">
+              <div class="feature-box d-flex align-items-center">
+                <i class="bi bi-check"></i>
+                <h3>Promote experiential learning.
+                </h3>
+              </div>
+            </div>
+            <div class="col-md-12" data-aos="zoom-out" data-aos-delay="300">
+              <div class="feature-box d-flex align-items-center">
+                <i class="bi bi-check"></i>
+                <h3>Nurture scientific temperament among the teaching and student community of the state.
+                </h3>
+              </div>
+            </div> -->
           </div>
-        </div> <!-- / row -->
+        </div>
+      </div>
     </div>
   </section>
 
@@ -128,8 +157,8 @@
           <div class="count-box">
             <i class="fa fa-smile-o" aria-hidden="true"></i>
             <div>
-              <span>232</span>
-              <p>Modules Linked</p>
+              <span>6</span>
+              <p>Project undertaken</p>
             </div>
           </div>
         </div>
@@ -139,7 +168,7 @@
             <i class="fa fa-users" aria-hidden="true"></i>
             <div>
               <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1"
-                class="purecounter">521</span>
+                class="purecounter">11</span>
               <p>SDC Members</p>
             </div>
           </div>
@@ -150,7 +179,7 @@
             <i class="fa fa-life-ring" aria-hidden="true"></i>
             <div>
               <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1"
-                class="purecounter">1463</span>
+                class="purecounter">2</span>
               <p>Supporting Staffs</p>
             </div>
           </div>
@@ -177,90 +206,44 @@
   <section id="team" class="team">
     <div class="container" data-aos="fade-up">
       <div class="section-header header-details">
-        <h2>Team</h2>
-        <p>Our hard working team</p>
+        <h2>Our Team</h2>
+        <p>Meet Our Core Team</p>
       </div>
 
       <div class="row gy-4">
-
-        <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-          <div class="member">
-            <div class="member-img">
-              <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
+        <?php 
+          include 'data/teams.php';
+          foreach ($members as $key => $value) {
+        ?>
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <div class="member-img">
+                <img src="<?php echo $value['image']; ?>" class="img-fluid" alt="">
+                <!-- <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div> -->
+              </div>
+              <div class="member-info">
+                <h4><?php echo $value['name']; ?></h4>
+                <span><?php echo $value['designation']; ?></span>
+                <p><?php echo $value['role']; ?></p>
               </div>
             </div>
-            <div class="member-info">
-              <h4>Walter White</h4>
-              <span>Chief Executive Officer</span>
-              <p>Velit aut quia fugit et et. </p>
-            </div>
           </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-          <div class="member">
-            <div class="member-img">
-              <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info">
-              <h4>Sarah Jhonson</h4>
-              <span>Product Manager</span>
-              <p>Voluptate sed quas reiciendis animi neque sapiente.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
-          <div class="member">
-            <div class="member-img">
-              <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info">
-              <h4>William Anderson</h4>
-              <span>CTO</span>
-              <p>Voluptas consectetur unde qui molestiae deserunt.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
-          <div class="member">
-            <div class="member-img">
-              <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info">
-              <h4>Amanda Jepson</h4>
-              <span>Accountant</span>
-              <p>Rerum voluptate non adipisci animi distinctio et deserunt amet voluptas.</p>
-            </div>
-          </div>
-        </div>
-
+        <?php
+            if ($key>1 ) break;
+          } 
+        ?>
+          <button class="learn-more" onclick="document.location.href='sdc-team'">
+            <span class="circle" aria-hidden="true">
+              <span class="icon arrow"></span>
+            </span>
+            <span class="button-text">All Team</span>
+          </button>
       </div>
-
     </div>
 
   </section><!-- End Team Section -->
@@ -273,59 +256,19 @@
         <p>Our Projects</p>
       </div>
       <div class="row gy-4">
+        <?php 
+          include 'data/projects.php';
+          foreach ($projects as $key => $value) {
+        ?>
         <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="200">
           <div class="service-box orange">
             <i class="ri-discuss-line icon"></i>
-            <h3>Nesciunt Mete</h3>
-            <p>Development of software for a new business process. </p>
+            <h3><?php echo $value['short-name']; ?></h3>
+            <p class=""><?php echo concat_string($value['description'], 50);?></p>
             <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
           </div>
         </div>
-
-        <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="300">
-          <div class="service-box orange">
-            <i class="ri-discuss-line icon"></i>
-            <h3>Eosle Commodi</h3>
-            <p>Development of software for a new business process. </p>
-            <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="400">
-          <div class="service-box orange">
-            <i class="ri-discuss-line icon"></i>
-            <h3>Ledo Markt</h3>
-            <p>Development of software for a new business process. </p>
-            <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="500">
-          <div class="service-box orange">
-            <i class="ri-discuss-line icon"></i>
-            <h3>Asperiores Commodi</h3>
-            <p>Development of software for a new business process. </p>
-            <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="600">
-          <div class="service-box orange">
-            <i class="ri-discuss-line icon"></i>
-            <h3>Velit Doloremque.</h3>
-            <p>Development of software for a new business process. </p>
-            <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="700">
-          <div class="service-box orange">
-            <i class="ri-discuss-line icon"></i>
-            <h3>Dolori Architecto</h3>
-            <p>Development of software for a new business process. </p>
-            <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
-          </div>
-        </div>
+        <?php } ?>
       </div>
     </div>
   </section><!-- End projects Section -->

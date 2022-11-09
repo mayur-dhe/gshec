@@ -18,7 +18,7 @@
   <section class="page-section">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12">
+        <div class="col-lg-12 p-0">
           <div class="image fit">
             <img src="assets/images/rusa/image2.jpg" alt="" />
           </div>
@@ -26,6 +26,31 @@
           <div class="align-center">
             <h2 class="pt-4">Objectives</h2>
           </div>
+
+          <div class="row">
+            <div class="col-lg-12 mt-5 mt-lg-0 d-flex px-5">
+              <div class="row align-self-center gy-1">
+
+                <div class="col-md-12" data-aos="zoom-out" data-aos-delay="200">
+                  <div class="feature-box d-flex align-items-center">
+                    <i class="bi bi-check"></i>
+                    <h3>To satisfy the current software automation needs of the state higher education council and organization /institute under its purview.</h3>
+                  </div>
+                </div>
+                <div class="col-md-12" data-aos="zoom-out" data-aos-delay="200">
+                  <div class="feature-box d-flex align-items-center">
+                    <i class="bi bi-check"></i>
+                    <h3>To provide an opportunity to grow, to use their technical expertise and ability to develop and produce innovative products.</h3>
+                  </div>
+                </div>
+                <div class="col-md-12" data-aos="zoom-out" data-aos-delay="200">
+                  <div class="feature-box d-flex align-items-center">
+                    <i class="bi bi-check"></i>
+                    <h3>To provide services and solutions that satisfy emerging needs</h3>
+                  </div>
+                </div>
+                
+                
           <ol class="list-group list-group-numbered read">
             <li class="list-group-item">
               Create the state-of-the-art learning infrastructure.

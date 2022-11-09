@@ -8,9 +8,13 @@
   require 'layout/header.php'; 
 ?>
 
-
-
-
+<style>
+  .main-banner .caption {
+    position: absolute;
+    top: 280px !important;
+    transform: translateY(-50%);
+}
+</style>
   <!-- ***** Main Banner Area Start ***** -->
   <section class="section main-banner" id="top" data-section="section1">
     <video autoplay muted loop id="bg-video" poster="assets/images/meeting-04.jpg">
@@ -49,43 +53,51 @@
           <div class="owl-service-item owl-carousel">
 
             <div class="item">
-              <div class="icon">
-                <img src="assets/images/service-icon-01.png" alt="">
-              </div>
-              <div class="down-content">
-                <h4>NEP<br><br></h4>
-                <p><a href="cards">Click Here</a></p>
-              </div>
+              <a href="cards">
+                <div class="icon">
+                  <img src="assets/images/service-icon-01.png" alt="">
+                </div>
+                <div class="down-content">
+                  <h4>NEP<br><br></h4>
+                  <p>Click Here</p>
+                </div>
+              </a>
             </div>
 
             <div class="item">
-              <div class="icon">
-                <img src="assets/images/service-icon-02.png" alt="">
-              </div>
-              <div class="down-content">
-                <h4>Research Development and Innovation</h4>
-                <p>Click Here</p>
-              </div>
+              <a href="teaching-learning">
+                <div class="icon">
+                  <img src="assets/images/service-icon-02.png" alt="">
+                </div>
+                <div class="down-content">
+                  <h4>Research Development and Innovation</h4>
+                  <p>Click Here</p>
+                </div>
+              </a>
             </div>
 
             <div class="item">
-              <div class="icon">
-                <img src="assets/images/service-icon-03.png" alt="">
-              </div>
-              <div class="down-content">
-                <h4>Teaching Learning and Educational Technology </h4>
-                <p><a href="teaching-learning">Click Here</a></p>
-              </div>
+              <a href="teaching-learning">
+                <div class="icon">
+                  <img src="assets/images/service-icon-03.png" alt="">
+                </div>
+                <div class="down-content">
+                  <h4>Teaching Learning and Educational Technology </h4>
+                  <p>Click Here</p>
+                </div>
+              </a>
             </div>
 
             <div class="item">
-              <div class="icon">
-                <img src="assets/images/service-icon-02.png" alt="">
-              </div>
-              <div class="down-content">
-                <h4><a href="sdc">Software Development Cell</a></h4>
-                <p><a href="sdc">Click Here</a></p>
-              </div>
+              <a href="sdc">
+                <div class="icon">
+                  <img src="assets/images/service-icon-02.png" alt="">
+                </div>
+                <div class="down-content">
+                  <h4>Software Development Cell<br/><br/></h4>
+                  <p>Click Here</p>
+                </div>
+              </a>
             </div>
 
           </div>
@@ -100,46 +112,28 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="owl-quote-item owl-carousel quote-box">
-            <div class="item">
-              <blockquote>
-                <span>
-                  <i>
-                    Challenges in life prepare us for greater things.  it comes as the blossoming. 
-                  </i>
-                </span>  
-              </blockquote>
-            </div>
-            <div class="item">
-              <blockquote>
-                <span>
-                  <i>
-
-                    You must understand the whole of life, not just one part of it.
-                  </i>
-                </span>  
-              </blockquote>
-            </div>
-            <div class="item">
-              <blockquote>
-                <span>
-                  <i>
-
-                    Each one of us has built up this competitive, ruthless civilization, in which man is against man.
-                  </i>
-                </span>  
-              </blockquote>
-            </div>
-            <div class="item">
-              <blockquote>
-                <span>
-                  <i>
-
-                    Emptiness comes as sunset comes of an evening, full of beauty, enchantment and richness
-                  </i>
-                </span>  
-              </blockquote>
-            </div>
-
+            <?php 
+              include 'data/quotes.php';
+              foreach ($quotes as $key => $quote) {
+            ?>
+              <div class="item">
+                <blockquote>
+                  <span>
+                    <i>
+                      <?php echo $quote['desc'];  ?>
+                    </i>
+                  </span>  
+                </blockquote>
+                <span class="quote-author">
+                  <?php echo' - '.$quote['author']; ?>
+                </span>
+              </div>
+            <?php
+            // if (++$key > 1) {
+            //   break;
+            // }
+              }
+            ?>
           </div>
         </div>
       </div>
@@ -171,84 +165,31 @@
         </div>
         <div class="col-lg-8">
           <div class="row">
-            <div class="col-lg-6">
-              <div class="meeting-item">
-                <div class="thumb">
-                  <div class="price">
-                    <!-- <span>$22.00</span> -->
+
+            <?php 
+              include 'data/initiatives.php';
+              foreach ($initiatives as $key => $value) {
+            ?>
+              <div class="col-lg-6">
+                <a href="initiatives?jnhsdwmxifkd=<?php echo $value['id']?>">
+                  <div class="meeting-item">
+                    <div class="thumb">
+                      <div class="price">
+                        <!-- <span>$22.00</span> -->
+                      </div>
+                      <img src="<?php echo $value['cover_image'];  ?>" alt="MOU">
+                    </div>
+                    <div class="down-content">
+                      <!-- <div class="date">
+                        <h6>Nov <span>10</span></h6>
+                      </div> -->
+                      <h4><?php echo concat_string($value['title']) ;?></h4>
+                      <p>Know More</p>
+                    </div>
                   </div>
-                  <a href="initiatives">
-                    <img src="assets/images/meeting-01.jpg" alt="New Lecturer Meeting">
-                  </a>
-                </div>
-                <div class="down-content">
-                  <!-- <div class="date">
-                    <h6>Nov <span>10</span></h6>
-                  </div> -->
-                  <a href="initiatives">
-                    <h4>New Lecturers Meeting</h4>
-                  </a>
-                  <p>Know More</p>
-                </div>
+                </a>
               </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="meeting-item">
-                <div class="thumb">
-                  <div class="price">
-                    <!-- <span>$36.00</span> -->
-                  </div>
-                  <a href="initiatives"><img src="assets/images/meeting-02.jpg" alt="Online Teaching"></a>
-                </div>
-                <div class="down-content">
-                  <!-- <div class="date">
-                    <h6>Nov <span>24</span></h6>
-                  </div> -->
-                  <a href="initiatives">
-                    <h4>Online Teaching Techniques</h4>
-                    <p>Know More</p>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="meeting-item">
-                <div class="thumb">
-                  <div class="price">
-                    <!-- <span>$14.00</span> -->
-                  </div>
-                  <a href="meeting-details"><img src="assets/images/meeting-03.jpg" alt="Higher Education"></a>
-                </div>
-                <div class="down-content">
-                  <!-- <div class="date">
-                    <h6>Nov <span>26</span></h6>
-                  </div> -->
-                  <a href="meeting-details">
-                    <h4>Higher Education Conference</h4>
-                  </a>
-                  <p>Know More</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="meeting-item">
-                <div class="thumb">
-                  <div class="price">
-                    <!-- <span>$48.00</span> -->
-                  </div>
-                  <a href="meeting-details"><img src="assets/images/meeting-04.jpg" alt="Student Training"></a>
-                </div>
-                <div class="down-content">
-                  <!-- <div class="date">
-                    <h6>Nov <span>30</span></h6>
-                  </div> -->
-                  <a href="meeting-details">
-                    <h4>Student Training Meetup</h4>
-                  </a>
-                  <p>Know More</p>
-                </div>
-              </div>
-            </div>
+            <?php } ?>
           </div>
         </div>
       </div>

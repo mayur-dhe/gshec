@@ -2,6 +2,7 @@
   $title = "RUSA";
   require 'layout/top-header.php';
 ?>
+  
 <body class="reading-pages">
 <?php 
   include 'layout/sub-header.php';
@@ -16,13 +17,43 @@
   <!-- -------------------------------------------------------- -->
   <!-- ------------- Main Content Start---------------------- -->
   <!-- -------------------------------------------------------- -->
-  <section class="page-section pt-0">
+  <section class="page-section rusa pt-0">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12">
+        <div class="col-lg-12 p-0">
           <div class="image fit">
-            <img src="assets/images/rusa/image2.jpg" alt="" />
+            <div id="demo" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+              </ul>
+
+              <!-- The slideshow -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="assets/images/rusa/image2.jpg" alt="Los Angeles" width="1100" height="500">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/images/rusa/image2.jpg" alt="Chicago" width="1100" height="500">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/images/rusa/image2.jpg" alt="New York" width="1100" height="500">
+                </div>
+                <!-- <div class="carousel-item carousel_item_overlay"></div> -->
+              </div>
+
+              <!-- Left and right controls -->
+              <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </a>
+            </div>
           </div>
+
           <div class="align-center">
             <h2>Rashtriya Uchchatar Shiksha Abiyan(RUSA)</h2>
             <p class="sub_title"> In the relentless pursuit of excellence to strengthen the core of our nation’s universities</p>
