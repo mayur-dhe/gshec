@@ -6,6 +6,10 @@
 <?php 
   include 'layout/sub-header.php';
   require 'layout/header.php'; 
+
+  include 'data/quotes.php';
+  include 'data/initiatives.php';
+
 ?>
 
 <style>
@@ -67,7 +71,7 @@
             <div class="item">
               <a href="teaching-learning">
                 <div class="icon">
-                  <img src="assets/images/service-icon-02.png" alt="">
+                  <img src="assets/images/icons/R-D-Innovation.svg" alt="">
                 </div>
                 <div class="down-content">
                   <h4>Research Development and Innovation</h4>
@@ -79,7 +83,7 @@
             <div class="item">
               <a href="teaching-learning">
                 <div class="icon">
-                  <img src="assets/images/service-icon-03.png" alt="">
+                  <img src="assets/images/icons/Teaching-Learning-and-Educational-Technologies.svg" alt="">
                 </div>
                 <div class="down-content">
                   <h4>Teaching Learning and Educational Technology </h4>
@@ -91,7 +95,7 @@
             <div class="item">
               <a href="sdc">
                 <div class="icon">
-                  <img src="assets/images/service-icon-02.png" alt="">
+                  <img src="assets/images/icons/SW-Development-cell.svg" alt="">
                 </div>
                 <div class="down-content">
                   <h4>Software Development Cell<br/><br/></h4>
@@ -113,7 +117,6 @@
         <div class="col-lg-12">
           <div class="owl-quote-item owl-carousel quote-box">
             <?php 
-              include 'data/quotes.php';
               foreach ($quotes as $key => $quote) {
             ?>
               <div class="item">
@@ -129,9 +132,6 @@
                 </span>
               </div>
             <?php
-            // if (++$key > 1) {
-            //   break;
-            // }
               }
             ?>
           </div>
@@ -150,24 +150,27 @@
         </div>
         <div class="col-lg-4">
           <div class="categories">
-            <h4>Meeting Catgories</h4>
+            <h4>Initiatives List</h4>
             <ul>
-              <li><a href="#">Sed tempus enim leo</a></li>
-              <li><a href="#">Aenean molestie quis</a></li>
-              <li><a href="#">Cras et metus vestibulum</a></li>
-              <li><a href="#">Nam et condimentum</a></li>
-              <li><a href="#">Phasellus nec sapien</a></li>
+              <?php 
+                foreach ($initiatives as $key => $value) {
+              ?>
+                <li><a href="initiatives?jnhsdwmxifkd=<?php echo $value['id']?>" title="<?php echo concat_string($value['title']); ?>">
+                  <?php echo concat_string($value['title'], 30); ?>
+                </a></li>
+              <?php
+                if (++$key>9)
+                break;
+              } ?>
             </ul>
             <div class="main-button-red">
-              <a href="meetings">All Upcoming Meetings</a>
+              <a href="initiatives-list">All Initiatives</a>
             </div>
           </div>
         </div>
         <div class="col-lg-8">
           <div class="row">
-
             <?php 
-              include 'data/initiatives.php';
               foreach ($initiatives as $key => $value) {
             ?>
               <div class="col-lg-6">
@@ -183,13 +186,16 @@
                       <!-- <div class="date">
                         <h6>Nov <span>10</span></h6>
                       </div> -->
-                      <h4><?php echo concat_string($value['title']) ;?></h4>
+                      <h4><?php echo concat_string($value['title']);?></h4>
                       <p>Know More</p>
                     </div>
                   </div>
                 </a>
               </div>
-            <?php } ?>
+            <?php
+              if (++$key>3)
+                break;
+            } ?>
           </div>
         </div>
       </div>
@@ -592,7 +598,7 @@
                 </div>
                 <div class="col-12">
                   <div class="count-area-content">
-                    <div class="count-digit add-digit">3000</div>
+                    <div class="count-digit add-digit">50000</div>
                     <div class="count-title">Students</div>
                   </div>
                 </div>
@@ -602,16 +608,16 @@
               <div class="row">
                 <div class="col-12">
                   <div class="count-area-content new-students">
-                    <div class="count-digit add-digit">50000</div>
+                    <div class="count-digit add-digit">30000</div>
                     <div class="count-title">Faculty</div>
                   </div>
                 </div>
-                <div class="col-12">
+                <!-- <div class="col-12">
                   <div class="count-area-content">
                     <div class="count-digit">32</div>
                     <div class="count-title">Courses</div>
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -686,15 +692,16 @@
             <ul>
               <li>
                 <h6>Phone Number</h6>
-                <span>0832-2410824</span>
+                <span><a href="tel:+08322410824">0832-2410824</a></span>
               </li>
+              <br/>
               <li>
                 <h6>Email Address</h6>
                 <span>gshec@nic.in</span>
               </li>
               <li>
                 <h6>Street Address</h6>
-                <span>SCERT, Alto-Porvorim, Bardez-Goa</span>
+                <span><a href="https://www.google.com/maps/d/u/0/edit?mid=1dr9AOy4B4u4E2TRLuhPX696K2nFUvPg&ll=15.523695419267277%2C73.82926019655531&z=18">SCERT, Alto-Porvorim, Bardez-Goa</a></span>
               </li>
               <li class="social-media-links">
                 <a href="https://twitter.com/GoaSHEC" class="fa fa-twitter"></a>
@@ -707,6 +714,23 @@
             </ul>
           </div>
         </div>
+        <!-- <div class="col-lg-12">
+
+          <div id="googleMap" style="width:100%;height:400px;"></div>
+
+          <script>
+            function myMap() {
+            var mapProp= {
+              center:new google.maps.LatLng(15.523695419267277,73.82926019655531),
+              zoom:5,
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+            }
+          </script>
+
+          <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+        </div> -->
+        <!-- https://www.google.com/maps/d/u/0/edit?mid=1dr9AOy4B4u4E2TRLuhPX696K2nFUvPg&ll=15.523695419267277%2C73.82926019655531&z=18 -->
       </div>
     </div>
   </section>

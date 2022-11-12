@@ -6,7 +6,7 @@
 <?php 
   include 'layout/sub-header.php';
   require 'layout/header.php';
-  $subtitle = "Our Team";
+  $subtitle = "Software Development Cell";
   require 'layout/site-map.php'; 
 ?>
 
@@ -206,8 +206,8 @@
   <section id="team" class="team">
     <div class="container" data-aos="fade-up">
       <div class="section-header header-details">
-        <h2>Our Team</h2>
-        <p>Meet Our Core Team</p>
+        <!-- <h2>Our Team</h2> -->
+        <p>Meet Our Team</p>
       </div>
 
       <div class="row gy-4">
@@ -233,16 +233,9 @@
               </div>
             </div>
           </div>
-        <?php
-            if ($key>1 ) break;
+        <?php   
           } 
         ?>
-          <button class="learn-more" onclick="document.location.href='sdc-team'">
-            <span class="circle" aria-hidden="true">
-              <span class="icon arrow"></span>
-            </span>
-            <span class="button-text">All Team</span>
-          </button>
       </div>
     </div>
 

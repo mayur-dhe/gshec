@@ -1,5 +1,5 @@
 <?php
-  $title = "Intiatives";
+  $title = "Intiative";
   require 'layout/top-header.php';
 ?>
 <body>

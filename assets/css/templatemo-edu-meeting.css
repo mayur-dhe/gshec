@@ -106,10 +106,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0px;
 }
 
-ul {
-  margin-bottom: 0px;
-}
-
 p {
   font-size: 14px;
   line-height: 25px;
@@ -212,7 +208,12 @@ header
 .sub-header {
   background-color: #1f272b;
   position: relative;
-  z-index: 1111;
+  z-index: 11;
+}
+
+.sub-header .left-content p,
+.sub-header .right-icons ul {
+  margin-bottom: 0px !important;
 }
 
 .sub-header .left-content p {
@@ -794,8 +795,15 @@ services overlapping Cards
 }
 
 .services .item .icon {
-  max-width: 60px;
+  max-width: 70px;
   margin: 0 auto;
+}
+
+.services .item>img {
+  /* background-color: #d79400;
+  border-radius: 35px;
+  height: 70px;
+  width: 70px; */
 }
 
 .services .item h4 {
@@ -885,8 +893,6 @@ services overlapping Cards
 }
 
 
-
-
 /* 
 ---------------------------------------------
 quotes
@@ -908,7 +914,7 @@ quotes
 }
 .quote-box blockquote span {
   font-size: 28px;
-  padding: 0px 3em;
+  padding: 0px 2em;
 }
 .quote-box blockquote:before,
 .quote-box blockquote:after {
@@ -925,7 +931,7 @@ quotes
 .quote-box blockquote:after {
   float:right;
   right:0;
-  bottom:-0.5em;
+  bottom:-0.1em;
   content: "\201D";
 }
 .quotes .owl-nav .owl-prev:before,
@@ -936,7 +942,7 @@ quotes
     line-height: 42px !important;
 }
 .quote-author {
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 500;
   position: absolute;
   right: 60px;
@@ -1493,7 +1499,7 @@ section.contact-us #contact button:hover {
 section.contact-us .right-info {
   background-color: #a12c2f;
   border-radius: 20px;
-  padding: 40px;
+  padding: 30px 20px;
 }
 
 section.contact-us .right-info ul li {
@@ -2093,9 +2099,9 @@ responsive
 }
 /* social media links */
 .social-media-links .fa {
-  padding: 14px;
-  font-size: 16px;
-  width: 40px;
+  padding: 12px;
+  font-size: 14px;
+  width: 38px;
   text-align: center;
   text-decoration: none;
   margin-right: 2px;
@@ -2347,9 +2353,12 @@ responsive
   overflow: hidden;
   text-align: center;
   border-radius: 8px;
-  background: #fff;
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
   transition: 0.3s;
+}
+
+.img-fluid {
+  border-radius: 15px !important;
 }
 
 .team .member .member-img {
@@ -2357,7 +2366,7 @@ responsive
   overflow: hidden;
 }
 
-.team .member .member-img:after {
+/* .team .member .member-img:after {
   position: absolute;
   content: "";
   left: 0;
@@ -2367,7 +2376,7 @@ responsive
   background: url(../img/team-shape.svg) no-repeat center bottom;
   background-size: contain;
   z-index: 1;
-}
+} */
 
 .team .member .social {
   position: absolute;
@@ -2397,10 +2406,18 @@ responsive
   font-size: 18px;
 }
 
-.team .member .member-info {
+/* .team .member .member-info {
   padding: 10px 15px 20px 15px;
+} */
+.team .member .member-info {
+  padding: 20px 10px 1px;
+  text-align: center;
+  box-shadow: 0px 2px 15px rgba(var(--color-black-rgb), 0.1);
+  background-color: white;
+  margin: -50px 20px 0 20px;
+  position: relative;
+  border-radius: 8px;
 }
-
 .team .member .member-info h4 {
   font-weight: 700;
   margin-bottom: 5px;
@@ -2411,16 +2428,17 @@ responsive
 .team .member .member-info span {
   display: block;
   font-size: 14px;
-  font-weight: 400;
-  color: #aaaaaa;
+  font-weight: 500;
+  color: #605858;
 }
 
 .team .member .member-info p {
-  font-style: italic;
+  /* font-style: italic; */
   font-size: 14px;
-  padding-top: 15px;
+  font-weight: 600;
+  padding-top: 5px;
   line-height: 26px;
-  color: #5e5e5e;
+  color: #1c1c1c;
 }
 
 .team .member:hover {
