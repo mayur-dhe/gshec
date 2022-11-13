@@ -57,7 +57,7 @@
           <div class="owl-service-item owl-carousel">
 
             <div class="item">
-              <a href="cards">
+              <a href="nep">
                 <div class="icon">
                   <img src="assets/images/service-icon-01.png" alt="">
                 </div>
@@ -69,7 +69,7 @@
             </div>
 
             <div class="item">
-              <a href="teaching-learning">
+              <a href="research-development-innovation">
                 <div class="icon">
                   <img src="assets/images/icons/R-D-Innovation.svg" alt="">
                 </div>

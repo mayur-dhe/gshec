@@ -25,8 +25,9 @@
           <!-- ***** Logo End ***** -->
           <!-- ***** Menu Start ***** -->
           <ul class="nav">
-            <li class="scroll-to-section"><a href="index#top" class="active">Home</a></li>
-            <li><a href="council">Council org Structure</a></li>
+            <!-- <li class="scroll-to-section"><a href="index#top" class="active">Home</a></li> -->
+            <li><a href="index#top" class="active">Home</a></li>
+            <li><a href="council-org-structure">Council Org Structure</a></li>
             <li><a href="meetings">Human Resource</a></li>
             <!-- <li class="has-sub">
               <a href="javascript:void(0)">Services</a>

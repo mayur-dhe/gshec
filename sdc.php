@@ -8,6 +8,9 @@
   require 'layout/header.php';
   $subtitle = "Software Development Cell";
   require 'layout/site-map.php'; 
+
+
+  include 'data/sdc.php';
 ?>
 
 
@@ -45,104 +48,21 @@
       </div>
 
       <div class="row">
-        <div class="col-lg-12 mt-5 mt-lg-0 d-flex px-5">
+        <div class="col-lg-6">
+          <img src="assets/images/free_icon_1.png" class="img-fluid" alt="" title="<a href='https://www.freepik.com/free-vector/happy-freelancer-with-computer-home-young-man-sitting-armchair-using-laptop-chatting-online-smiling-vector-illustration-distance-work-online-learning-freelance_10172825.htm#query=flat%20illustration&position=4&from_view=keyword'>Image by pch.vector</a> on Freepik ">
+        </div>
+        <div class="col-lg-6 mt-5 mt-lg-0 d-flex px-5">
           <div class="row align-self-center gy-1">
-          <!-- new start -->
-            <div class="col-md-12" data-aos="zoom-out" data-aos-delay="200">
-              <div class="feature-box d-flex align-items-center">
-                <i class="bi bi-check"></i>
-                <h3>To satisfy the current software automation needs of the state higher education council and organization /institute under its purview.</h3>
+            <?php 
+              foreach ($sdc as $key => $value) {
+            ?>
+              <div class="col-md-12" data-aos="zoom-out" data-aos-delay="200">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3><?php echo $value['title'] ?></h3>
+                </div>
               </div>
-            </div>
-            <div class="col-md-12" data-aos="zoom-out" data-aos-delay="200">
-              <div class="feature-box d-flex align-items-center">
-                <i class="bi bi-check"></i>
-                <h3>To provide an opportunity to grow, to use their technical expertise and ability to develop and produce innovative products.</h3>
-              </div>
-            </div>
-            <div class="col-md-12" data-aos="zoom-out" data-aos-delay="200">
-              <div class="feature-box d-flex align-items-center">
-                <i class="bi bi-check"></i>
-                <h3>To provide services and solutions that satisfy emerging needs</h3>
-              </div>
-            </div>
-          <!-- new end -->
-          <!-- old start -->
-            <!-- <div class="col-md-12" data-aos="zoom-out" data-aos-delay="200">
-              <div class="feature-box d-flex align-items-center">
-                <i class="bi bi-check"></i>
-                <h3>Create the state-of-the-art learning infrastructure.</h3>
-              </div>
-            </div>
-            <div class="col-md-12" data-aos="zoom-out" data-aos-delay="200">
-              <div class="feature-box d-flex align-items-center">
-                <i class="bi bi-check"></i>
-                <h3>To take appropriate measures for promoting innovations in teaching-learning process and inter-disciplinary studies and research.
-                </h3>
-              </div>
-            </div>
-            <div class="col-md-12" data-aos="zoom-out" data-aos-delay="200">
-              <div class="feature-box d-flex align-items-center">
-                <i class="bi bi-check"></i>
-                <h3>To strive to continuously increase the Gross Enrolment Ratio (GER) in Higher Education.</h3>
-              </div>
-            </div>
-            <div class="col-md-12" data-aos="zoom-out" data-aos-delay="200">
-              <div class="feature-box d-flex align-items-center">
-                <i class="bi bi-check"></i>
-                <h3>Development of undergraduate and post-graduate education.
-                </h3>
-              </div>
-            </div>
-            <div class="col-md-12" data-aos="zoom-out" data-aos-delay="200">
-              <div class="feature-box d-flex align-items-center">
-                <i class="bi bi-check"></i>
-                <h3>Ensuring maintenance of high standards of Higher Education.
-                </h3>
-              </div>
-            </div>
-            <div class="col-md-12" data-aos="zoom-out" data-aos-delay="300">
-              <div class="feature-box d-flex align-items-center">
-                <i class="bi bi-check"></i>
-                <h3>Every College to have at least one Programme from the Institutes of Eminence.
-                </h3>
-              </div>
-            </div>
-            <div class="col-md-12" data-aos="zoom-out" data-aos-delay="300">
-              <div class="feature-box d-flex align-items-center">
-                <i class="bi bi-check"></i>
-                <h3>Every College to come up with at least one new course in the coming five years & may suggest one course to be phased out in the coming ten years.
-                </h3>
-              </div>
-            </div>
-            <div class="col-md-12" data-aos="zoom-out" data-aos-delay="300">
-              <div class="feature-box d-flex align-items-center">
-                <i class="bi bi-check"></i>
-                <h3>Expose and provide training in using technology for teaching, learning, and evaluation.
-                </h3>
-              </div>
-            </div>
-            <div class="col-md-12" data-aos="zoom-out" data-aos-delay="300">
-              <div class="feature-box d-flex align-items-center">
-                <i class="bi bi-check"></i>
-                <h3>Meet the various educational needs of society that would arise from time to time.
-                </h3>
-              </div>
-            </div>
-            <div class="col-md-12" data-aos="zoom-out" data-aos-delay="300">
-              <div class="feature-box d-flex align-items-center">
-                <i class="bi bi-check"></i>
-                <h3>Promote experiential learning.
-                </h3>
-              </div>
-            </div>
-            <div class="col-md-12" data-aos="zoom-out" data-aos-delay="300">
-              <div class="feature-box d-flex align-items-center">
-                <i class="bi bi-check"></i>
-                <h3>Nurture scientific temperament among the teaching and student community of the state.
-                </h3>
-              </div>
-            </div> -->
+            <?php } ?>
           </div>
         </div>
       </div>

@@ -1,5 +1,5 @@
 <?php
-  $title = "Intiative";
+  $title = "Initiatives";
   require 'layout/top-header.php';
 ?>
 <body>
@@ -44,8 +44,7 @@
                   </div>
                 </a>
               </div>
-            <?php
-            } ?>
+            <?php } ?>
           </div>
         </div>
       </div>
