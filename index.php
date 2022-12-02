@@ -22,7 +22,7 @@
   <!-- ***** Main Banner Area Start ***** -->
   <section class="section main-banner" id="top" data-section="section1">
     <video autoplay muted loop id="bg-video" poster="assets/images/meeting-04.jpg">
-      <source src="assets/images/course-video.mp4" type="video/mp4" />
+      <source src="assets/video/Test1.mp4" type="video/mp4" />
     </video>
 
     <div class="video-overlay header-text">
@@ -586,7 +586,7 @@
         <div class="col-lg-6">
           <div class="row">
             <div class="col-lg-12">
-              <h2>A Few Facts About Our University</h2>
+              <h2>Facts About GSHEC</h2>
             </div>
             <div class="col-lg-6">
               <div class="row">
@@ -637,7 +637,7 @@
   <section class="contact-us" id="contact">
     <div class="container">
       <div class="row">
-        <div class="col-lg-9 align-self-center">
+        <div class="col-lg-7 align-self-center">
           <div class="row">
             <div class="col-lg-12">
               <form id="contact" action="" method="post">
@@ -678,7 +678,7 @@
                     </fieldset>
                   </div>
                   <div class="col-lg-12">
-                    <fieldset>
+                    <fieldset style="text-align: center;">
                       <button type="submit" id="form-submit" class="button">SEND MESSAGE NOW</button>
                     </fieldset>
                   </div>
@@ -687,7 +687,10 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-5">
+          <iframe src="https://www.google.com/maps/d/embed?mid=1dr9AOy4B4u4E2TRLuhPX696K2nFUvPg&ehbc=2E312F" width="100%" height="510" style="border-radius: 20px;"></iframe>
+        </div>
+        <!-- <div class="col-lg-2">
           <div class="right-info">
             <ul>
               <li>
@@ -699,43 +702,24 @@
                 <h6>Email Address</h6>
                 <span>gshec@nic.in</span>
               </li>
+              <br/>
+
               <li>
                 <h6>Street Address</h6>
-                <span><a href="https://www.google.com/maps/d/u/0/edit?mid=1dr9AOy4B4u4E2TRLuhPX696K2nFUvPg&ll=15.523695419267277%2C73.82926019655531&z=18">SCERT, Alto-Porvorim, Bardez-Goa</a></span>
+                <span>SCERT, Alto-Porvorim, Bardez-Goa</span>
               </li>
               <li class="social-media-links">
-                <a href="https://twitter.com/GoaSHEC" class="fa fa-twitter"></a>
+                <a href="https://twitter.com/GoaSHEC" class="fa fa-twitter" title="@GoaSHEC"></a>
                 <a href="https://www.facebook.com/profile.php?id=100086696510658" class="fa fa-facebook"></a>
                 <a href="#" class="fa fa-instagram"></a>
                 <a href="https://www.linkedin.com/in/goa-state-higher-education-council-652852254/" class="fa fa-linkedin"></a>
-                <!-- <h6>Website URL</h6>
-                <span>www.dhe.goa.gov.in</span> -->
               </li>
             </ul>
           </div>
-        </div>
-        <!-- <div class="col-lg-12">
-
-          <div id="googleMap" style="width:100%;height:400px;"></div>
-
-          <script>
-            function myMap() {
-            var mapProp= {
-              center:new google.maps.LatLng(15.523695419267277,73.82926019655531),
-              zoom:5,
-            };
-            var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-            }
-          </script>
-
-          <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
         </div> -->
-        <!-- https://www.google.com/maps/d/u/0/edit?mid=1dr9AOy4B4u4E2TRLuhPX696K2nFUvPg&ll=15.523695419267277%2C73.82926019655531&z=18 -->
-      </div>
     </div>
   </section>
 
- 
 
 
 

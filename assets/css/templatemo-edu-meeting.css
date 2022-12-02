@@ -1428,13 +1428,13 @@ section.contact-us {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 140px 0px 110px 0px;
+  padding: 70px 0px;
 }
 
 section.contact-us #contact {
   background-color: #fff;
   border-radius: 20px;
-  padding: 40px;
+  padding: 30px;
 }
 
 section.contact-us #contact h2 {

@@ -4,9 +4,10 @@
     <footer>
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-lg-6 item">
+          <div class="col-lg-5 item">
             <h3>GOA SHEC</h3>
             <ul>
+              
               <li>Goa State Higher Education Council
                 <br>under Rashtriya Uchchtar Shiksha Abhiyan (RUSA),
                 <br> a new Centrally sponsored Program 
@@ -15,16 +16,16 @@
               </li>
             </ul>
           </div>
-          <div class="col-lg-3 item">
+          <div class="col-lg-2 item">
             <h3>Important Links</h3>
             <ul>
               <li><a href="#">RTI</a></li>
               <li><a href="rusa">RUSA</a></li>
-              <li><a href="#">Acts And Rules</a></li>
+              <li><a href="acts-and-rules">Acts And Rules</a></li>
               <li><a href="#contact">Contact Us</a></li>
             </ul>
           </div>
-          <div class="col-lg-3 item">
+          <div class="col-lg-2 item">
             <h3>Useful Links</h3>
             <ul>
               <li><a href="#">Gallery</a></li>
@@ -34,7 +35,26 @@
               <li><a href="#">Archives</a></li>
             </ul>
           </div>
-          
+          <div class="col-lg-3 item">
+            <h3>Contact Us</h3>
+            <ul>
+              <li>
+                <h6>Phone : <span><a href="tel:08322410824">0832-2410824</a></span></h6>
+              </li>
+              <li>
+                <h6>Email : <span><a href="mailto:gshec@nic.in">gshec@nic.in</a></span></h6>
+              </li>
+              <li>
+                <h6>Address : <span>SCERT, Alto-Porvorim, <br>Bardez-Goa</span></h6>
+              </li>
+              <li class="social-media-links">
+                <a href="https://twitter.com/GoaSHEC" class="fa fa-twitter" title="@GoaSHEC"></a>
+                <a href="https://www.facebook.com/profile.php?id=100086696510658" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="https://www.linkedin.com/in/goa-state-higher-education-council-652852254/" class="fa fa-linkedin"></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>

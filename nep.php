@@ -39,7 +39,7 @@
 
           
           <div id="tab0" class="tabcontent">
-            <h4>Brief report on implementation of new National Education Policy (NEP 2020)</h4>
+            <h4>Brief report on implementation of new National Education Policy <br>(NEP 2020)</h4>
             <?php foreach ($intro as $key => $value) { ?>
               <div><?php echo $value ?></div>
             <?php } ?>
