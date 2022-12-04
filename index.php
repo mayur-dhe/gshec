@@ -6,12 +6,9 @@
 <?php 
   include 'layout/sub-header.php';
   require 'layout/header.php'; 
-
   include 'data/quotes.php';
   include 'data/initiatives.php';
-
 ?>
-
 <style>
   .main-banner .caption {
     position: absolute;
@@ -640,7 +637,7 @@
         <div class="col-lg-7 align-self-center">
           <div class="row">
             <div class="col-lg-12">
-              <form id="contact" action="" method="post">
+              <form id="contact" action="api/sendMail" method="post">
                 <div class="row">
                   <div class="col-lg-12">
                     <h2>Let's get in touch</h2>
@@ -674,7 +671,7 @@
                     <fieldset>
                       <!-- <label for="message">YOUR MESSAGE</label> -->
                       <textarea name="message" type="text" class="form-control" id="message"
-                        placeholder="YOUR MESSAGE..."></textarea>
+                        placeholder="YOUR MESSAGE..." required=""></textarea>
                     </fieldset>
                   </div>
                   <div class="col-lg-12">

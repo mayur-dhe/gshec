@@ -8,15 +8,9 @@
   require 'layout/header.php';
   $subtitle = "";
   require 'layout/site-map.php'; 
-
   include 'data/initiatives.php';
-
 ?>
-
-  
-  <!-- -------------------------------------------------------- -->
   <!-- ------------- Main Content Start---------------------- -->
-  <!-- -------------------------------------------------------- -->
   <section class="meetings-page" id="meetings">
     <div class="container">
       <div class="row">
@@ -50,9 +44,7 @@
       </div>
     </div>
   </section>
-
-
-            
+  
   <!-- ***** Footer  ***** -->
   <?php require 'layout/footer.php'; ?>
 

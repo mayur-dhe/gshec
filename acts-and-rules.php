@@ -8,13 +8,9 @@
     require 'layout/header.php';
     $subtitle = "Acts and Rules";
     require 'layout/site-map.php'; 
-
     include 'data/acts_and_rules.php';
 ?>
-
-<!-- -------------------------------------------------------- -->
-<!-- ------------- Main Content Start---------------------- -->
-<!-- -------------------------------------------------------- -->
+    <!-- ------------- Main Content Start---------------------- -->
     <section class="page-section features">
         <div class="container">
             <div class="row">
@@ -29,7 +25,7 @@
                                     <div class="feature-box d-flex align-items-center">
                                         <i class="bi bi-check"></i>
                                         <h3>
-                                            <a href="<?php echo $value['url'] ?>" target="_blank" style="color: #002b58;"><?php echo $value['title'] ?>!</a>
+                                            <a href="<?php echo $value['url'] ?>" target="_blank" style="color: #002b58;"><?php echo $value['title'] ?></a>
                                         </h3>
                                         <!-- <i class="fa cloud" style="color: black; font-size:larger;"></i> -->
                                     </div>
@@ -46,9 +42,7 @@
             </div>
         </div>
     </section>
-<!-- -------------------------------------------------------- -->
-<!-- ------------- Main Content End---------------------- -->
-<!-- -------------------------------------------------------- -->
+    <!-- ------------- Main Content End---------------------- -->    
     <!-- ***** Footer  ***** -->
     <?php require 'layout/footer.php'; ?>
     </body>

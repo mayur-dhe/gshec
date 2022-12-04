@@ -8,19 +8,9 @@
   require 'layout/header.php';
   $subtitle = "Software Development Cell";
   require 'layout/site-map.php'; 
-
-
   include 'data/sdc.php';
 ?>
-
-
-
-
-
-  <!-- -------------------------------------------------------- -->
   <!-- ------------- Main Content Start---------------------- -->
-  <!-- -------------------------------------------------------- -->
-  
   <section class="page-section sdc pt-0">
     <div class="container">
       <div class="row">
@@ -59,7 +49,7 @@
               <div class="col-md-12" data-aos="zoom-out" data-aos-delay="200">
                 <div class="feature-box d-flex align-items-center">
                   <i class="bi bi-check"></i>
-                  <h3><?php echo $value['title'] ?></h3>
+                  <h3><?php echo $value ?></h3>
                 </div>
               </div>
             <?php } ?>
@@ -186,13 +176,8 @@
     </div>
   </section><!-- End projects Section -->
 
-
-
-
-
-
+<!-- ------------- Main Content End---------------------- -->
   <!-- ***** Footer  ***** -->
   <?php require 'layout/footer.php'; ?>
-
   </body>
 </html>

@@ -6,12 +6,9 @@
 <?php 
   include 'layout/sub-header.php';
   require 'layout/header.php'; 
-
   include 'data/quotes.php';
   include 'data/initiatives.php';
-
 ?>
-
 <style>
   .main-banner .caption {
     position: absolute;

@@ -8,51 +8,64 @@
   require 'layout/header.php';
   $subtitle = "Council Organization Structure";
   require 'layout/site-map.php'; 
+  include 'data/council.php';
+  // DFA($council_members);
 ?>
-
-  
-
-  <!-- -------------------------------------------------------- -->
   <!-- ------------- Main Content Start---------------------- -->
-  <!-- -------------------------------------------------------- -->
   <section class="page-section">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <div class="image fit">
-            <img src="assets/images/council/GSHEC Organization Chart.png" alt="GSHEC Organization Chart" style="object-fit: contain;" />
+          <div class="filters">
+            <ul>
+              <li data-filter=".all" class="active">All</li>
+              <li data-filter=".chart">Organization Chart</li>
+              <li data-filter=".members">Council Members</li>
+            </ul>
           </div>
-          <!-- <p>
-            The Ministry of Human Resource Development, University Grants Commission and Rashtriya Uchhatar Shiksha
-            Abhiyan, 2013 have recommended that the State level planning and co-ordination of Higher education including
-            University Education shall be done through an independent, autonomous Council for Higher Education.
-            Accordingly, in order to bring out better excellence, inclusiveness and accessibility in the Higher
-            Education Sector, the State Government has decided to constitute the State Level Higher Education Council to
-            be known as Goa State Higher Education Council. The Council shall function in order to forge synergic
-            relationship amongst the State Government, Universities, academics and experts by occupying an operational
-            space between the Government and Universities on one hand and between Universities and apex level regulatory
-            institutions on the other. The main objects of the Council includes planned and co-ordinated development of
-            Higher education in the State, promoting academic excellence and social justice by obtaining academic input
-            for policy formulation and perspective planning, ensuring autonomy, accountability and co-ordination of all
-            institutions of higher education in the State and guiding the growth of higher education in accordance with
-            the socio-economic requirements of the State.
-
-          </p> -->
         </div>
+
+        <div class="col-lg-12">
+          <div class="row grid">
+            <div class="col-lg-12 templatemo-item-col all chart">
+              <h2 style="color:black; text-align:center;font-weight: 600;padding: 20px 100px;">Organization Chart</h2>
+              <div class="image fit">
+                <img src="<?php echo $org_chart['image']?>" alt="<?php echo $org_chart['alt']?>" style="object-fit: contain;" />
+              </div>
+            </div>
+
+            <div class="col-lg-12 templatemo-item-col all members council">
+              <h2 style="color:black; text-align:center;font-weight: 600;padding: 20px 100px;">Council Members</h2>
+              <div class="row gy-4">
+                <?php 
+                  foreach ($council_members as $key => $value) {
+                ?>
+                  <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                    <div class="member">
+                      <div class="member-img">
+                        <img src="<?php echo $value['image']?>" class="img-fluid" alt="<?php echo $value['name']?>">
+                      </div>
+                      <div class="member-info">
+                        <h4><?php echo $value['name']; ?></h4>
+                        <span><?php echo $value['designation']; ?></span>
+                        <p><?php echo $value['title']; ?></p>
+                      </div>
+                    </div>
+                  </div>
+                <?php   
+                  } 
+                ?>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
-  <!-- -------------------------------------------------------- -->
   <!-- ------------- Main Content End---------------------- -->
-  <!-- -------------------------------------------------------- -->
-
-
-
-
-  
-
   <!-- ***** Footer  ***** -->
   <?php require 'layout/footer.php'; ?>
-
   </body>
 </html>

@@ -8,10 +8,7 @@
   require 'layout/header.php';
   $subtitle = "";
   require 'layout/site-map.php'; 
-
-
   $id = $_GET['jnhsdwmxifkd'];
-
   include 'data/initiatives.php';
 ?>
 <style>
@@ -25,11 +22,7 @@
     height: 500px !important;
   }
 </style>
-
-  
-  <!-- -------------------------------------------------------- -->
   <!-- ------------- Main Content Start---------------------- -->
-  <!-- -------------------------------------------------------- -->
   <section class="meetings-page" id="meetings">
     <div class="container">
       <div class="row">
@@ -38,46 +31,40 @@
             <div class="col-lg-12">
               <div class="meeting-single-item">
                 <div class="thumb">
-                  <!-- <div class="price">
-                    <span>$14.00</span>
-                  </div> -->
-                  <!-- <div class="date">
-                    <h6>Nov <span>12</span></h6>
-                  </div> -->
                   <div class="image fit">
                     <div id="demo" class="carousel slide" data-ride="carousel">
                       <!-- Indicators -->
                       <ul class="carousel-indicators">
                         <?php if ( $id == 1) { ?>
-                          <?php foreach ($mou_images as $key => $image){  ?>
+                          <?php foreach ($mou_images['data'] as $key => $image){  ?>
                                   <li data-target="#demo" data-slide-to="<?php echo $key?>" <?php echo $key==0 ?? 'class="active"' ?> ></li>                            
                           <?php } ?>
 
                         <?php  } else if ( $id == 2) {   ?>
-                          <?php foreach ($obe as $key => $image){ ?>
+                          <?php foreach ($obe['data'] as $key => $image){ ?>
                                 <li data-target="#demo" data-slide-to="<?php echo $key?>" <?php echo $key==0 ?? 'class="active"' ?> ></li>                            
                           <?php } ?>
 
                         <?php  } else if ( $id == 3) {   ?>
-                          <?php foreach ($job_drive as $key => $image){ ?>
+                          <?php foreach ($job_drive['data'] as $key => $image){ ?>
                                 <li data-target="#demo" data-slide-to="<?php echo $key?>" <?php echo $key==0 ?? 'class="active"' ?> ></li>                            
                           <?php } ?>
 
                         <?php  } else if ( $id == 4) {   ?>
                           
-                          <?php foreach ($aip as $key => $image){ ?>
+                          <?php foreach ($aip['data'] as $key => $image){ ?>
                                 <li data-target="#demo" data-slide-to="<?php echo $key?>" <?php echo $key==0 ?? 'class="active"' ?> ></li>                            
                           <?php } ?>
 
                         <?php  } else if ( $id == 5) {   ?>
                           
-                          <?php foreach ($dhe as $key => $image){ ?>
+                          <?php foreach ($dhe['data'] as $key => $image){ ?>
                                 <li data-target="#demo" data-slide-to="<?php echo $key?>" <?php echo $key==0 ?? 'class="active"' ?> ></li>                            
                           <?php } ?>
 
                         <?php  } else if ( $id == 6) {   ?>
 
-                          <?php foreach ($tip as $key => $image){ ?>
+                          <?php foreach ($tip['data'] as $key => $image){ ?>
                               <li data-target="#demo" data-slide-to="<?php echo $key?>" <?php echo $key==0 ?? 'class="active"' ?> ></li>                            
                           <?php } ?>
                         <?php } ?>
@@ -86,48 +73,48 @@
                       <!-- The slideshow -->
                       <div class="carousel-inner">
                         <?php if ( $id == 1) { ?>
-                          <?php foreach ($mou_images as $key => $image) { ?>
+                          <?php foreach ($mou_images['data'] as $key => $image) { ?>
                             <div class="carousel-item <?php echo $key==0 ?  'active' : '' ?>">
-                              <img src="<?php echo $image; ?>"width="1100" height="500">
+                              <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" width="1100" height="500">
                             </div> 
                           <?php } ?>
 
                         <?php  } else if ( $id == 2) {  ?>
 
-                          <?php foreach ($obe as $key => $image) { ?>
+                          <?php foreach ($obe['data'] as $key => $image) { ?>
                             <div class="carousel-item <?php echo $key==0 ?  'active' : '' ?>">
-                              <img src="<?php echo $image; ?>"width="1100" height="500">
+                              <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" width="1100" height="500">
                             </div> 
                           <?php } ?>
 
                         <?php  } else if ( $id == 3) {  ?>
 
-                          <?php foreach ($job_drive as $key => $image) { ?>
+                          <?php foreach ($job_drive['data'] as $key => $image) { ?>
                             <div class="carousel-item <?php echo $key==0 ?  'active' : '' ?>">
-                              <img src="<?php echo $image; ?>"width="1100" height="500">
+                              <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" width="1100" height="500">
                             </div> 
                           <?php } ?>
                         <?php  } else if ( $id == 4) {  ?>
 
-                          <?php foreach ($aip as $key => $image) { ?>
+                          <?php foreach ($aip['data'] as $key => $image) { ?>
                             <div class="carousel-item <?php echo $key==0 ?  'active' : '' ?>">
-                              <img src="<?php echo $image; ?>"width="1100" height="500">
+                              <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" width="1100" height="500">
                             </div> 
                           <?php } ?>
 
                         <?php  } else if ( $id == 5) {  ?>
 
-                          <?php foreach ($dhe as $key => $image) { ?>
+                          <?php foreach ($dhe['data'] as $key => $image) { ?>
                             <div class="carousel-item <?php echo $key==0 ?  'active' : '' ?>">
-                              <img src="<?php echo $image; ?>"width="1100" height="500">
+                              <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" width="1100" height="500">
                             </div> 
                           <?php } ?>
                         
                         <?php  } else if ( $id == 6) {  ?>
 
-                          <?php foreach ($tip as $key => $image) { ?>
+                          <?php foreach ($tip['data'] as $key => $image) { ?>
                             <div class="carousel-item <?php echo $key==0 ?  'active' : '' ?>">
-                              <img src="<?php echo $image; ?>"width="1100" height="500">
+                              <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" width="1100" height="500">
                             </div> 
                           <?php } ?>
 

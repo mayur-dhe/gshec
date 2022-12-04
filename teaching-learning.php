@@ -8,15 +8,9 @@
   require 'layout/header.php';
   $subtitle = "Teaching, Learning and Educational Technology";
   require 'layout/site-map.php'; 
-
   include 'data/teaching_learning.php';
 ?>
-
-  
-
-  <!-- -------------------------------------------------------- -->
-  <!-- ------------- Main Content Start---------------------- -->
-  <!-- -------------------------------------------------------- -->
+<!-- ------------- Main Content Start---------------------- -->
   <section class="page-section features">
     <div class="container">
       <div class="row">
@@ -25,16 +19,16 @@
             <div id="demo" class="carousel slide" data-ride="carousel">
               <!-- Indicators -->
               <ul class="carousel-indicators">
-                <?php foreach ($images as $key => $image){  ?>
+                <?php foreach ($teaching_learning_images['data'] as $key => $image){  ?>
                         <li data-target="#demo" data-slide-to="<?php echo $key?>" <?php echo $key==0 ?? 'class="active"' ?> ></li>                            
                 <?php } ?>  
               </ul>
           
               <!-- The slideshow -->
               <div class="carousel-inner">
-                <?php foreach ($images as $key => $image) { ?>
+                <?php foreach ($teaching_learning_images['data'] as $key => $image) { ?>
                         <div class="carousel-item <?php echo $key==0 ?  'active' : '' ?>">
-                          <img src="<?php echo $image; ?>"width="1100" height="500">
+                          <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" width="1100" height="500">
                         </div> 
                 <?php } ?>
                 <!-- <div class="carousel-item carousel_item_overlay"></div> -->
@@ -62,7 +56,7 @@
                 <div class="col-md-12" data-aos="zoom-out" data-aos-delay="200">
                   <div class="feature-box d-flex align-items-center">
                     <i class="bi bi-check"></i>
-                    <h3><?php echo $value['title'] ?></h3>
+                    <h3><?php echo $value ?></h3>
                   </div>
                 </div>
                 <?php } ?>
@@ -75,17 +69,8 @@
       </div>
     </div>
   </section>
-  <!-- -------------------------------------------------------- -->
   <!-- ------------- Main Content End---------------------- -->
-  <!-- -------------------------------------------------------- -->
-
-
-
-
-  
-
   <!-- ***** Footer  ***** -->
   <?php require 'layout/footer.php'; ?>
-
   </body>
 </html>

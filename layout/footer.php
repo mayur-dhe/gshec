@@ -10,7 +10,7 @@
               
               <li>Goa State Higher Education Council
                 <br>under Rashtriya Uchchtar Shiksha Abhiyan (RUSA),
-                <br> a new Centrally sponsored Program 
+                <br>a new Centrally sponsored Program 
                 <br>under Ministry of Human Resource Development, 
                 <br>Government of India, Department of Higher Education, New Delhi
               </li>
@@ -19,20 +19,20 @@
           <div class="col-lg-2 item">
             <h3>Important Links</h3>
             <ul>
-              <li><a href="#">RTI</a></li>
+              <li><a href="rti">RTI</a></li>
               <li><a href="rusa">RUSA</a></li>
               <li><a href="acts-and-rules">Acts And Rules</a></li>
-              <li><a href="#contact">Contact Us</a></li>
+              <li><a href="index#contact">Contact Us</a></li>
             </ul>
           </div>
           <div class="col-lg-2 item">
             <h3>Useful Links</h3>
             <ul>
-              <li><a href="#">Gallery</a></li>
-              <li><a href="#">News</a></li>
-              <li><a href="#">Tenders</a></li>
-              <li><a href="#">Downloads</a></li>
-              <li><a href="#">Archives</a></li>
+              <li><a href="gallery">Gallery</a></li>
+              <li><a href="news">News</a></li>
+              <li><a href="tenders">Tenders</a></li>
+              <li><a href="downloads">Downloads</a></li>
+              <li><a href="archives">Archives</a></li>
             </ul>
           </div>
           <div class="col-lg-3 item">
@@ -75,6 +75,7 @@
 <script src="assets/js/owl-carousel.js"></script>
 <script src="assets/js/lightbox.js"></script>
 <script src="assets/js/tabs.js"></script>
+<script src="assets/js/isotope.js"></script>
 <script src="assets/js/video.js"></script>
 <script src="assets/js/slick-slider.js"></script>
 <script src="assets/js/custom.js"></script>

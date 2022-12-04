@@ -9,14 +9,9 @@
   require 'layout/header.php';
   $subtitle = "";
   require 'layout/site-map.php'; 
+  include 'data/rusa.php';
 ?>
-
-
-
-
-  <!-- -------------------------------------------------------- -->
   <!-- ------------- Main Content Start---------------------- -->
-  <!-- -------------------------------------------------------- -->
   <section class="page-section rusa pt-0">
     <div class="container">
       <div class="row">
@@ -25,25 +20,20 @@
             <div id="demo" class="carousel slide" data-ride="carousel">
               <!-- Indicators -->
               <ul class="carousel-indicators">
-                <li data-target="#demo" data-slide-to="0" class="active"></li>
-                <li data-target="#demo" data-slide-to="1"></li>
-                <li data-target="#demo" data-slide-to="2"></li>
+                <?php foreach ($rusa_images['data'] as $key => $value){  ?>
+                        <li data-target="#demo" data-slide-to="<?php echo $key?>" <?php echo $key==0 ?? 'class="active"' ?> ></li>                            
+                <?php } ?>  
               </ul>
 
               <!-- The slideshow -->
               <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="assets/images/rusa/image2.jpg" alt="Los Angeles" width="1100" height="500">
-                </div>
-                <div class="carousel-item">
-                  <img src="assets/images/rusa/image2.jpg" alt="Chicago" width="1100" height="500">
-                </div>
-                <div class="carousel-item">
-                  <img src="assets/images/rusa/image2.jpg" alt="New York" width="1100" height="500">
-                </div>
+                <?php foreach ($rusa_images['data'] as $key => $value) { ?>
+                        <div class="carousel-item <?php echo $key==0 ?  'active' : '' ?>">
+                          <img src="<?php echo $value['url']; ?>" alt="<?php echo $value['alt']; ?>" width="1100" height="500">
+                        </div> 
+                <?php } ?>
                 <!-- <div class="carousel-item carousel_item_overlay"></div> -->
               </div>
-
               <!-- Left and right controls -->
               <a class="carousel-control-prev" href="#demo" data-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
@@ -78,15 +68,8 @@
       </div>
     </div>
   </section>
-  <!-- -------------------------------------------------------- -->
   <!-- ------------- Main Content End---------------------- -->
-  <!-- -------------------------------------------------------- -->
-  
-
-
-
   <!-- ***** Footer  ***** -->
   <?php require 'layout/footer.php'; ?>
-
   </body>
 </html>
