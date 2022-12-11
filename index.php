@@ -651,8 +651,7 @@
                   <div class="col-lg-6">
                     <fieldset>
                       <!-- <label for="email">YOUR EMAIL*</label> -->
-                      <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="YOUR EMAIL...*"
-                        required="">
+                      <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="YOUR EMAIL...*" pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required="">
                     </fieldset>
                   </div>
                   <div class="col-lg-6">
@@ -670,8 +669,7 @@
                   <div class="col-lg-12">
                     <fieldset>
                       <!-- <label for="message">YOUR MESSAGE</label> -->
-                      <textarea name="message" type="text" class="form-control" id="message"
-                        placeholder="YOUR MESSAGE..." required=""></textarea>
+                      <textarea name="message" type="text" class="form-control" id="message" placeholder="YOUR MESSAGE..." required=""></textarea>
                     </fieldset>
                   </div>
                   <div class="col-lg-12">
