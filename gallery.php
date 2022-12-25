@@ -14,13 +14,14 @@
   include 'data/teaching_learning.php';
 ?>
   <!-- ------------- Main Content Start---------------------- -->
-  <section class="page-section features">
+  <section class="page-section">
     <div class="container">
       <div class="row">
+      <!-- 
         <div class="col-lg-12 p-0">
           <div class="row">
             <div class="col-lg-12 mt-5 mt-lg-0 d-flex px-5">
-              <div class="row align-self-center gy-1">
+              <div class="row align-self-center gy-1"> -->
                 <!-- teaching-learning-images -->
                 <div class="col-lg-3" style="height: fit-content;">
                   <a href="gallery-view?jnhsdwmxifkd=Teaching, Learning and Educational Technology">
@@ -61,10 +62,10 @@
                   </a>
                 </div>
                 
-              </div>
+              <!-- </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>

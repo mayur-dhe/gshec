@@ -1,12 +1,13 @@
 <?php
-  $title = "Council Org Structure";
+  $title = "Organization";
+  $page = "2";
   require 'layout/top-header.php';
 ?>
-<body>
+<body class="reading-pages">
 <?php 
   include 'layout/sub-header.php';
   require 'layout/header.php';
-  $subtitle = "Council Organization Structure";
+  $subtitle = "Organization";
   require 'layout/site-map.php'; 
   include 'data/council.php';
   // DFA($council_members);
@@ -18,23 +19,23 @@
         <div class="col-lg-12">
           <div class="filters">
             <ul>
-              <li data-filter=".all" class="active">All</li>
-              <li data-filter=".chart">Organization Chart</li>
-              <li data-filter=".members">Council Members</li>
+              <!-- <li data-filter=".all" class="active">All</li> -->
+              <li class="active" onclick="changeTab(0); return false;" >Organization Chart</li>
+              <li onclick="changeTab(1); return false;">Council Members</li>
             </ul>
           </div>
         </div>
 
         <div class="col-lg-12">
           <div class="row grid">
-            <div class="col-lg-12 templatemo-item-col all chart">
+            <div class="col-lg-12 templatemo-item-col all chart" id="chart">
               <h2 style="color:black; text-align:center;font-weight: 600;padding: 20px 100px;">Organization Chart</h2>
               <div class="image fit">
                 <img src="<?php echo $org_chart['image']?>" alt="<?php echo $org_chart['alt']?>" style="object-fit: contain;" />
               </div>
             </div>
 
-            <div class="col-lg-12 templatemo-item-col all members council">
+            <div class="col-lg-12 templatemo-item-col all members council d-none" id="members">
               <h2 style="color:black; text-align:center;font-weight: 600;padding: 20px 100px;">Council Members</h2>
               <div class="row gy-4">
                 <?php 
@@ -67,5 +68,18 @@
   <!-- ------------- Main Content End---------------------- -->
   <!-- ***** Footer  ***** -->
   <?php require 'layout/footer.php'; ?>
+  <script>
+    function changeTab(no)
+    {
+      if (no == 1) {
+        $("#chart").addClass("d-none");
+        $("#members").removeClass("d-none");
+      } else {
+        $("#members").addClass("d-none");
+        $("#chart").removeClass("d-none");
+      }
+    }
+
+  </script>
   </body>
 </html>

@@ -1,12 +1,12 @@
 <?php
-  $title = "NEP";
+  $title = "National Education Policy";
   require 'layout/top-header.php';
 ?>
 <body class="reading-pages">
 <?php 
   include 'layout/sub-header.php';
   require 'layout/header.php';
-  $subtitle = "NEP";
+  $subtitle = "National Education Policy";
   require 'layout/site-map.php'; 
   include 'data/nep.php';
 ?>
@@ -119,7 +119,7 @@
       document.getElementById(selectedTab).style.display = "block";
       evt.currentTarget.className += " active";
 
-      $(window).scrollTop(0);
+      $(window).scrollTop(160);
     }
 
     // Get the element with id="defaultOpen" and click on it

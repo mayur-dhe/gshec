@@ -12,7 +12,7 @@
   include 'data/rusa.php';
 ?>
   <!-- ------------- Main Content Start---------------------- -->
-  <section class="page-section rusa pt-0">
+  <section class="page-section rusa">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 p-0">

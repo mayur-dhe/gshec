@@ -1,5 +1,6 @@
 <?php
-  $title = "Intiative";
+  $title = "Human Resource";
+  $page = "3";
   require 'layout/top-header.php';
 ?>
 <body class="reading-pages">

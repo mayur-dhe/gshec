@@ -11,7 +11,7 @@
   include 'data/research_dev_innovation.php';
 ?>
   <!-- ------------- Main Content Start---------------------- -->
-  <section class="page-section features rdi">
+  <section class="page-section features text-black">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 p-0">
@@ -112,7 +112,7 @@
       document.getElementById(selectedTab).style.display = "block";
       evt.currentTarget.className += " active";
 
-      $(window).scrollTop(0);
+      $(window).scrollTop(160);
     }
 
     // Get the element with id="defaultOpen" and click on it

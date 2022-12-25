@@ -13,6 +13,9 @@
 ?>
 
 <style>
+   * {
+    font-family: 'Open Sans';
+  }
   .main-banner .caption {
     position: absolute;
     top: 280px !important;
@@ -62,7 +65,7 @@
                   <img src="assets/images/service-icon-01.png" alt="">
                 </div>
                 <div class="down-content">
-                  <h4>NEP<br><br></h4>
+                  <h4>National Education Policy<br><br></h4>
                   <p>Click Here</p>
                 </div>
               </a>
@@ -71,7 +74,7 @@
             <div class="item">
               <a href="research-development-innovation">
                 <div class="icon">
-                  <img src="assets/images/icons/R-D-Innovation.svg" alt="">
+                  <img src="assets/images/icons/R-D-Innovation.png" alt="">
                 </div>
                 <div class="down-content">
                   <h4>Research Development and Innovation</h4>
@@ -83,7 +86,7 @@
             <div class="item">
               <a href="teaching-learning">
                 <div class="icon">
-                  <img src="assets/images/icons/Teaching-Learning-and-Educational-Technologies.svg" alt="">
+                  <img src="assets/images/icons/Teaching-Learning-and-Educational-Technologies.png" alt="">
                 </div>
                 <div class="down-content">
                   <h4>Teaching Learning and Educational Technology </h4>
@@ -164,7 +167,7 @@
               } ?>
             </ul>
             <div class="main-button-red">
-              <a href="initiatives-list">All Initiatives</a>
+              <a href="initiatives">All Initiatives</a>
             </div>
           </div>
         </div>

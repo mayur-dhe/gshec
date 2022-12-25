@@ -9,14 +9,13 @@
   $subtitle = "Software Development Cell";
   require 'layout/site-map.php'; 
   include 'data/sdc.php';
+  include 'data/projects.php';
 ?>
   <!-- ------------- Main Content Start---------------------- -->
   <section class="page-section sdc pt-0">
     <div class="container">
       <div class="row">
-        <p>  
-          Software Development Cell, SHEC, is an established cell, group of faculty members , who intend to put theory into practice and make use of their knowledge for implementation of technology in the field of education and Management of Activities/initiatives by SHEC.This cell has been undertaking software projects since its creation in 2022. 
-        </p>
+        <p><?php echo $introduction ?></p>
       </div>
     </div>
   </section>
@@ -44,7 +43,7 @@
         <div class="col-lg-6 mt-5 mt-lg-0 d-flex px-5">
           <div class="row align-self-center gy-1">
             <?php 
-              foreach ($sdc as $key => $value) {
+              foreach ($objective as $key => $value) {
             ?>
               <div class="col-md-12" data-aos="zoom-out" data-aos-delay="200">
                 <div class="feature-box d-flex align-items-center">
@@ -60,7 +59,7 @@
   </section>
 
   <!-- ======= Counts Section ======= -->
-  <section id="counts" class="counts">
+  <!-- <section id="counts" class="counts">
     <div class="container">
       <div class="row gy-4">
         <div class="col-lg-3 col-md-6">
@@ -109,7 +108,7 @@
       </div>
 
     </div>
-  </section>
+  </section> -->
   <!-- End Counts Section -->
 
   <!-- ======= Team Section ======= -->
@@ -160,17 +159,18 @@
       </div>
       <div class="row gy-4">
         <?php 
-          include 'data/projects.php';
           foreach ($projects as $key => $value) {
         ?>
-        <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="service-box orange">
-            <i class="ri-discuss-line icon"></i>
-            <h3><?php echo $value['short-name']; ?></h3>
-            <p class=""><?php echo concat_string($value['description'], 50);?></p>
-            <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
-          </div>
-        </div>
+            <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="200">
+              <a href="sdc-projects?title=<?php echo $value['short-name']?>" class="read-more">
+                <div class="service-box orange">
+                  <img src="<?php echo $value['images'][0]['url'] ?>" alt="<?php echo $value['images'][0]['alt'] ?? $value['title'] ?>" class="rounded tablet-top"> 
+                  <h3><?php echo $value['short-name']; ?></h3>
+                  <p class=""><?php echo concat_string($value['description'], 50);?></p>
+                  <div class="read-more">Read More</div>
+                </div>
+              </a>
+            </div>
         <?php } ?>
       </div>
     </div>

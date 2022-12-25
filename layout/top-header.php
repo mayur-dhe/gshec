@@ -4,9 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="TemplateMo">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-
+    <meta name="author" content="Mayur Naik">
     <title><?php echo $title; ?> - GSHEC</title>
 
     <!-- Bootstrap core CSS -->
@@ -28,8 +26,6 @@
             width: 100%;
             height: 100%;
         }
-    </style>
-    <style>
         
         /* Style the tab */
         .tab {
@@ -96,15 +92,20 @@
             margin-bottom: 0.3rem !important;
         }
 
-        .rdi h4,
-        .rdi h5,
+        .text-black li strong,
+        .text-black li,
+        .text-black h2,
+        .text-black h3,
+        .text-black h4,
+        .text-black h5,
+        .text-black p,
         .tabcontent strong,
         .tabcontent span,
         .tabcontent>h4,
         .tabcontent>h5,
         .tabcontent>div,
         .tabcontent>p {
-            color: black;
+            color: #363636;
         }
 
     </style>

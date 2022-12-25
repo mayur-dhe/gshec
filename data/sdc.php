@@ -1,12 +1,14 @@
 <?php
 
-    $sdc = [
+    $introduction = 'Software Development Cell, SHEC, is an established cell, group of faculty members , who intend to put theory into practice and make use of their knowledge for implementation of technology in the field of education and Management of Activities/initiatives by SHEC.This cell has been undertaking software projects since its creation in 2022.';
+
+    $objective = [
         'To satisfy the current software automation needs of the state higher education council and organization /institute under its purview.',
         'To provide an opportunity to grow, to use their technical expertise and ability to develop and produce innovative products.',
         'To provide services and solutions that satisfy emerging needs',
     ];
 
-    $sdc2 = [
+    $objective2 = [
         'Create the state-of-the-art learning infrastructure.',
         'To take appropriate measures for promoting innovations in teaching-learning process and inter-disciplinary studies and research.',
         'To strive to continuously increase the Gross Enrolment Ratio (GER) in Higher Education.',

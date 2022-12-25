@@ -1,5 +1,6 @@
 <?php
   $title = "Welcome";
+  $page = "1";
   require 'layout/top-header.php';
 ?>
 <body class="body">
@@ -10,6 +11,9 @@
   include 'data/initiatives.php';
 ?>
 <style>
+  * {
+    font-family: 'Roboto';
+  }
   .main-banner .caption {
     position: absolute;
     top: 280px !important;
@@ -56,10 +60,11 @@
             <div class="item">
               <a href="nep">
                 <div class="icon">
-                  <img src="assets/images/service-icon-01.png" alt="">
+                  <img src="assets/images/icons/NEP.png" alt="">
                 </div>
                 <div class="down-content">
-                  <h4>NEP<br><br></h4>
+                  <h4 class="card_label">National Education Policy<br><br></h4>
+                  <h4 class="card_label_short">NEP<br><br></h4>
                   <p>Click Here</p>
                 </div>
               </a>
@@ -68,10 +73,11 @@
             <div class="item">
               <a href="research-development-innovation">
                 <div class="icon">
-                  <img src="assets/images/icons/R-D-Innovation.svg" alt="">
+                  <img src="assets/images/icons/R-D-Innovation.png" alt="">
                 </div>
                 <div class="down-content">
-                  <h4>Research Development and Innovation</h4>
+                  <h4 class="card_label">Research Development and Innovation <br class="hide_br_2"><br class="hide_br_2"> </h4>
+                  <h4 class="card_label_short">RDI <br><br> </h4>
                   <p>Click Here</p>
                 </div>
               </a>
@@ -80,10 +86,11 @@
             <div class="item">
               <a href="teaching-learning">
                 <div class="icon">
-                  <img src="assets/images/icons/Teaching-Learning-and-Educational-Technologies.svg" alt="">
+                  <img src="assets/images/icons/Teaching-Learning-and-Educational-Technologies.png" alt="">
                 </div>
                 <div class="down-content">
-                  <h4>Teaching Learning and Educational Technology </h4>
+                  <h4 class="card_label">Teaching Learning and Educational Technology </h4>
+                  <h4 class="card_label_short">TLET <br><br> </h4>
                   <p>Click Here</p>
                 </div>
               </a>
@@ -95,7 +102,8 @@
                   <img src="assets/images/icons/SW-Development-cell.svg" alt="">
                 </div>
                 <div class="down-content">
-                  <h4>Software Development Cell<br/><br/></h4>
+                  <h4 class="card_label">Software Development Cell<br/><br/></h4>
+                  <h4 class="card_label_short">SDC<br/><br/></h4>
                   <p>Click Here</p>
                 </div>
               </a>
@@ -145,14 +153,14 @@
             <h2>Initiatives</h2>
           </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-md-6">
           <div class="categories">
             <h4>Initiatives List</h4>
             <ul>
               <?php 
                 foreach ($initiatives as $key => $value) {
               ?>
-                <li><a href="initiatives?jnhsdwmxifkd=<?php echo $value['id']?>" title="<?php echo concat_string($value['title']); ?>">
+                <li><a href="initiative?jnhsdwmxifkd=<?php echo $value['id']?>" title="<?php echo concat_string($value['title']); ?>">
                   <?php echo concat_string($value['title'], 30); ?>
                 </a></li>
               <?php
@@ -161,17 +169,17 @@
               } ?>
             </ul>
             <div class="main-button-red">
-              <a href="initiatives-list">All Initiatives</a>
+              <a href="initiatives">All Initiatives</a>
             </div>
           </div>
         </div>
-        <div class="col-lg-8">
+        <div class="col-lg-8 col-md-6">
           <div class="row">
             <?php 
               foreach ($initiatives as $key => $value) {
             ?>
-              <div class="col-lg-6">
-                <a href="initiatives?jnhsdwmxifkd=<?php echo $value['id']?>">
+              <div class="col-lg-6 col-md-12">
+                <a href="initiative?jnhsdwmxifkd=<?php echo $value['id']?>">
                   <div class="meeting-item">
                     <div class="thumb">
                       <div class="price">
@@ -183,8 +191,10 @@
                       <!-- <div class="date">
                         <h6>Nov <span>10</span></h6>
                       </div> -->
-                      <h4><?php echo concat_string($value['title']);?></h4>
-                      <p>Know More</p>
+                      <h4>
+                        <?php echo concat_string($value['title'], 50);?> 
+                        <span class="know_more">Read More</span>
+                      </h4>
                     </div>
                   </div>
                 </a>

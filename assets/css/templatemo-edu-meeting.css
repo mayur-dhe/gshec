@@ -32,6 +32,11 @@ font & reset css
 --------------------------------------------- 
 */
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Open Sans");
+@import url("https://fonts.googleapis.com/css?family=Arizonia");
+
 /* 
 ---------------------------------------------
 reset
@@ -66,6 +71,13 @@ html[xmlns] .clearfix {
 
 * html .clearfix {
   height: 1%;
+}
+
+* {
+  color: white;
+}
+.text-black {
+  color: #2a2a2a !important;
 }
 
 ul, li {
@@ -111,6 +123,7 @@ p {
   line-height: 25px;
   color: #2a2a2a;
 }
+
 
 img {
   width: 100%;
@@ -224,7 +237,7 @@ header
 
 .sub-header .right-icons {
   text-align: right;
-  padding: 8px 0px;
+  /* padding: 8px 0px; */
 }
 
 .sub-header .right-icons ul li {
@@ -277,7 +290,7 @@ header
 .header-area {
   background-color: rgba(250,250,250,0.15);
   position: absolute;
-  top: 40px;
+  /* top: 40px; */
   left: 0;
   right: 0;
   z-index: 100;
@@ -369,7 +382,7 @@ header
 }
 
 .header-area .main-nav .nav li.has-sub:after {
-  font-family: FontAwesome;
+  font-family: 'FontAwesome';
   content: "\f107";
   font-size: 12px;
   color: #fff;
@@ -910,7 +923,7 @@ quotes
   text-align: center;
   padding: 20px 0px;
   font-size: inherit;
-  font-family:  serif;
+  font-family: 'Arizonia';
 }
 .quote-box blockquote span {
   font-size: 28px;
@@ -1022,9 +1035,11 @@ section.upcoming-meetings .categories .main-button-red a {
 .meeting-item .thumb {
   position: relative;
 }
+.gallery-item .thumb img, 
 .meeting-item .thumb img {
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
+  height: 155px;
 }
 .gallery-item .thumb img {
   border-top-right-radius: 10px;
@@ -1657,7 +1672,7 @@ body, .body {
 /* -----------  data filter ----------- */
 section .filters {
   text-align: center;
-  margin-bottom: 60px;
+  margin: 20px 0;
 }
 section .filters li {
   font-size: 13px;
@@ -1828,32 +1843,28 @@ section .pagination ul li a:hover {
   color: #f5a425;
 }
 
-
-
-
 /* Meeting item column */
 .templatemo-item-col {
 	width: 31%;
 }
 
-@media (max-width: 992px) {
-	.templatemo-item-col {
-		width: 45%;
-	}
+
+/* services cards */
+.hide_br_2 {
+  display: none;
+}
+.know_more {
+  font-size: 13px;
+  color: black;
+  font-weight: 500;
 }
 
-@media (max-width: 767px) {
-	.templatemo-item-col {
-		width: 100%;
-	}
-}
 
 /* 
 ---------------------------------------------
 responsive
 --------------------------------------------- 
 */
-
 @media (max-width: 1300px) {
   .services .owl-nav .owl-next{
     right: -30px;
@@ -1868,7 +1879,13 @@ responsive
     left: -25px;
   }
 }
-
+@media (min-width: 1200px) {
+  /* navigation bar */
+  .header-area .main-nav .nav {
+    /* padding-inline: 16%; */
+    padding-inline: 22%;
+  }
+}
 @media (max-width: 1200px) {
   .services .owl-nav .owl-next{
     right: -70px;
@@ -1882,8 +1899,14 @@ responsive
   .our-courses .owl-nav .owl-prev{
     left: -65px;
   }
-}
 
+  /* services cards */
+  .hide_br_2 {
+    display: block;
+  }
+
+
+}
 @media (max-width: 1085px) {
   .services .owl-nav .owl-next{
     right: -30px;
@@ -1898,7 +1921,6 @@ responsive
     left: -25px;
   }
 }
-
 @media (max-width: 1005px) {
   .services .owl-nav .owl-next{
     display: none;
@@ -1913,8 +1935,10 @@ responsive
     display: none;
   }
 }
-
 @media (max-width: 992px) {
+  .templatemo-item-col {
+		width: 45%;
+	}
 
   .main-banner .caption {
     top: 60%;
@@ -1931,11 +1955,11 @@ responsive
   }
 
   .services {
-    margin-top: 60px;
+    /* margin-top: 60px; */
   }
 
   section.upcoming-meetings {
-    padding-top: 400px;
+    padding-top: 0px; /* 400px */
   }
 
   section.upcoming-meetings .categories {
@@ -1963,6 +1987,9 @@ responsive
 }
 
 @media (max-width: 767px) {
+  .templatemo-item-col {
+		width: 100%;
+	}
 
   .sub-header .left-content p {
     display: none;
@@ -1975,11 +2002,17 @@ responsive
   .main-nav .nav .sub-menu {
     display: none;
   }
-
   .header-area .main-nav .nav li ul.sub-menu li a {
     color: #1f272b;
   }
 
+  /* services cards */
+  .card_label {
+    display: none;
+  }
+  .card_label_short{
+    display: block;
+  }
 }
 
 
@@ -1999,7 +2032,7 @@ responsive
 
 /* Logo */
 .logo-size {
-  width: 66px !important;
+  width: 62px !important;
   filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(87deg) brightness(119%) contrast(119%);
   /* white */
 }
@@ -2032,11 +2065,9 @@ responsive
   position: absolute;
   top: 0px;
   height: 290px;
+  z-index: -5;
 }
 
-* {
-  color: white;
-}
 @media (max-width: 767px) {
   .logo-size {
     width: 60px !important;
@@ -2062,7 +2093,8 @@ responsive
   /* navigation bar */
   .header-area .main-nav .nav {
     float: left !important;
-    padding-inline: 3%;
+    /* padding-inline: 2%; */
+    padding-inline: 9%;
   }
   /* .nav-laws:after {
     content:"Laws";
@@ -2074,6 +2106,13 @@ responsive
   .header-area .main-nav .logo-2 {
     /* .logo-2 { */
     float: right !important;
+  }
+  /* services cards */
+  .card_label {
+    display: block;
+  }
+  .card_label_short{
+    display: none;
   }
 }
 
@@ -2162,7 +2201,6 @@ responsive
 --------------------------------------------------------------*/
 .features {
   padding: 24px 20px;
-  background-color: white;
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
   transition: 0.3s;
   height: 100%;
@@ -2472,7 +2510,7 @@ responsive
 --------------------------------------------------------------*/
 .section-header {
   text-align: center;
-  padding-bottom: 40px;
+  /* padding-bottom: 40px; */
 }
 
 .section-header h2 {
@@ -2487,7 +2525,7 @@ responsive
 .section-header p {
   margin: 10px 0 0 0;
   padding: 0;
-  font-size: 38px;
+  font-size: 25px;
   line-height: 42px;
   font-weight: 700;
 }
@@ -2509,7 +2547,6 @@ responsive
 # SDC projects
 --------------------------------------------------------------- */
 .projects {
-  
   width: 100%;
   background-color: rgb(255, 255, 255);
   background-repeat: no-repeat;
@@ -2689,6 +2726,26 @@ hr {
   margin: 0 6em;
   color: #858585 !important;
 }
+
+/* card design pdf */
+.card {
+  margin: 12px !important;
+  padding: 0 !important;
+  width: min-content;
+  border: 1px solid rgba(0,0,0,0);
+  transition: 0.3s;
+}
+.card img {
+  width: 100px;
+  height: 120px;
+  margin: 0 5px 5px;
+}
+.card:hover,
+.card:hover a,
+.card:hover img {
+  transform: scale(1.04);
+}
+/* card design pdf */
 
 /* rusa */
 .para p,
