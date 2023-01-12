@@ -11,9 +11,13 @@
   include 'data/initiatives.php';
 ?>
 <style>
-  * {
-    font-family: 'Roboto';
+  .quote-font {
+    font-family: 'Parisienne', cursive;
+    font-size: 1.8em;
+    max-width: 780px;
+    margin: auto;
   }
+
   .main-banner .caption {
     position: absolute;
     top: 280px !important;
@@ -23,7 +27,7 @@
   <!-- ***** Main Banner Area Start ***** -->
   <section class="section main-banner" id="top" data-section="section1">
     <video autoplay muted loop id="bg-video" poster="assets/images/meeting-04.jpg">
-      <source src="assets/video/Test1.mp4" type="video/mp4" />
+      <source src="assets/video/gshec_intro.mp4" type="video/mp4" />
     </video>
 
     <div class="video-overlay header-text">
@@ -33,16 +37,6 @@
             <div class="caption">
               <h6>Welcome to</h6>
               <h2>GOA STATE Higher Education Council</h2>
-              <p>
-                Under Rashtriya Uchchtar Shiksha Abhiyan(RUSA)
-                <br>A new Centrally sponsored Program under Ministry of Human Resource Development,
-                <br>Government of India, 
-                <br>Department of Higher Education, 
-                <br>New Delhi
-              </p>
-              <!-- <div class="main-button-red">
-                    <div class="scroll-to-section"><a href="#contact">Join Us Now!</a></div>
-                  </div> -->
             </div>
           </div>
         </div>
@@ -99,11 +93,24 @@
             <div class="item">
               <a href="sdc">
                 <div class="icon">
-                  <img src="assets/images/icons/SW-Development-cell.svg" alt="">
+                  <img src="assets/images/icons/SW Development cell.png" alt="">
                 </div>
                 <div class="down-content">
                   <h4 class="card_label">Software Development Cell<br/><br/></h4>
                   <h4 class="card_label_short">SDC<br/><br/></h4>
+                  <p>Click Here</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="item">
+              <a href="tip">
+                <div class="icon">
+                  <img src="assets/images/icons/SW Development cell.png" alt="">
+                </div>
+                <div class="down-content">
+                  <h4 class="card_label">Training Internship Program<br/><br/></h4>
+                  <h4 class="card_label_short">TIP<br/><br/></h4>
                   <p>Click Here</p>
                 </div>
               </a>
@@ -126,11 +133,9 @@
             ?>
               <div class="item">
                 <blockquote>
-                  <span>
-                    <i>
+                  <div class="quote-font">
                       <?php echo $quote['desc'];  ?>
-                    </i>
-                  </span>  
+                  </div>  
                 </blockquote>
                 <span class="quote-author">
                   <?php echo' - '.$quote['author']; ?>
@@ -160,12 +165,12 @@
               <?php 
                 foreach ($initiatives as $key => $value) {
               ?>
-                <li><a href="initiative?jnhsdwmxifkd=<?php echo $value['id']?>" title="<?php echo concat_string($value['title']); ?>">
-                  <?php echo concat_string($value['title'], 30); ?>
+                <!-- title="<?php echo concat_string($value['title']); ?>" -->
+                <li><a href="initiative?jnhsdwmxifkd=<?php echo $value['id']?>" >
+                  <?php echo $value['short_name'] ?>
                 </a></li>
               <?php
-                if (++$key>9)
-                break;
+                if (++$key>9) break;
               } ?>
             </ul>
             <div class="main-button-red">
@@ -187,14 +192,14 @@
                       </div>
                       <img src="<?php echo $value['cover_image'];  ?>" alt="MOU">
                     </div>
-                    <div class="down-content">
+                    <div class="down-content" style="text-align:center">
                       <!-- <div class="date">
                         <h6>Nov <span>10</span></h6>
                       </div> -->
                       <h4>
-                        <?php echo concat_string($value['title'], 50);?> 
-                        <span class="know_more">Read More</span>
+                        <?php echo $value['short_name'];?> 
                       </h4>
+                      <div class="know_more">Read More</div>
                     </div>
                   </div>
                 </a>
@@ -593,7 +598,7 @@
         <div class="col-lg-6">
           <div class="row">
             <div class="col-lg-12">
-              <h2>Facts About GSHEC</h2>
+              <h2></h2>
             </div>
             <div class="col-lg-6">
               <div class="row">
@@ -619,18 +624,18 @@
                     <div class="count-title">Faculty</div>
                   </div>
                 </div>
-                <!-- <div class="col-12">
+                <div class="col-12">
                   <div class="count-area-content">
                     <div class="count-digit">32</div>
-                    <div class="count-title">Courses</div>
+                    <div class="count-title">Gender Descrimination</div>
                   </div>
-                </div> -->
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div class="col-lg-6 align-self-center">
-          <canvas id="myChart" class="video" style="width:100%;max-width:600px;" ></canvas>
+          <!-- <canvas id="myChart" class="video" style="width:100%;max-width:600px;" ></canvas> -->
           <!-- <div class="video"> -->
             <!-- <a href="#" target="_blank">
               <img src="" alt="">

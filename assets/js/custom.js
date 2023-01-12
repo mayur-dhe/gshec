@@ -111,7 +111,7 @@
 
 	// New Changes for carousel
 	$('.owl-service-item').owlCarousel({
-		items: 4,
+		items: 5,
 		loop: false,
 		dots: false,
 		nav: true,
@@ -119,13 +119,13 @@
 		margin: 26,
 		responsive: {
 			0: {
-				items: 4
+				items: 5
 			},
 			600: {
-				items: 4
+				items: 5
 			},
 			1000: {
-				items: 4
+				items: 5
 			}
 		}
 	})
@@ -201,7 +201,7 @@
 	});
 
 	$(document).ready(function () {
-		$(document).on("scroll", onScroll);
+		// $(document).on("scroll", onScroll);
 
 		//smoothscroll
 		$('.scroll-to-section a[href^="#"]').on('click', function (e) {
@@ -315,25 +315,25 @@
 
 	$(window).scroll(function () {
 
-		if (visible($('.count-digit'))) {
-			if ($('.count-digit').hasClass('counter-loaded')) return;
-			$('.count-digit').addClass('counter-loaded');
+		// if (visible($('.count-digit'))) {
+		// 	if ($('.count-digit').hasClass('counter-loaded')) return;
+		// 	$('.count-digit').addClass('counter-loaded');
 
-			$('.count-digit').each(function () {
-				var $this = $(this);
-				jQuery({
-					Counter: 0
-				}).animate({
-					Counter: $this.text()
-				}, {
-					duration: 3000,
-					easing: 'swing',
-					step: function () {
-						$this.text(Math.ceil(this.Counter));
-					}
-				});
-			});
-		}
+		// 	$('.count-digit').each(function () {
+		// 		var $this = $(this);
+		// 		jQuery({
+		// 			Counter: 0
+		// 		}).animate({
+		// 			Counter: $this.text()
+		// 		}, {
+		// 			duration: 3000,
+		// 			easing: 'swing',
+		// 			step: function () {
+		// 				$this.text(Math.ceil(this.Counter));
+		// 			}
+		// 		});
+		// 	});
+		// }
 	})
 
 

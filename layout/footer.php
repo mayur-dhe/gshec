@@ -23,6 +23,7 @@
               <li><a href="rusa">RUSA</a></li>
               <li><a href="acts-and-rules">Acts And Rules</a></li>
               <li><a href="index#contact">Contact Us</a></li>
+              <li><a href="https://www.dhe.goa.gov.in/" target="_blank">DHE</a></li>
             </ul>
           </div>
           <div class="col-lg-2 item">
@@ -59,7 +60,7 @@
       </div>
     </footer>
     <div class="footer f-home">
-      <p>Copyright © 2022 : Directorate of Higher Education, Government of Goa
+      <p>Copyright © 2023 : Directorate of Higher Education, Government of Goa
         <!-- <br>Design: <a href="https://templatemo.com" target="_parent" title="free css templates">TemplateMo</a> -->
       </p>
     </div>
@@ -69,7 +70,7 @@
 <!-- Scripts -->
 <!-- Bootstrap core JavaScript -->
 <script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
 
 <script src="assets/js/isotope.min.js"></script>
 <script src="assets/js/owl-carousel.js"></script>
@@ -86,7 +87,6 @@
   $(function () {
 
   });
-
   //according to loftblog tut
   $('.nav li:first').addClass('active');
 

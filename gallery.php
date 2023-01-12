@@ -17,55 +17,64 @@
   <section class="page-section">
     <div class="container">
       <div class="row">
-      <!-- 
-        <div class="col-lg-12 p-0">
-          <div class="row">
-            <div class="col-lg-12 mt-5 mt-lg-0 d-flex px-5">
-              <div class="row align-self-center gy-1"> -->
-                <!-- teaching-learning-images -->
-                <div class="col-lg-3" style="height: fit-content;">
-                  <a href="gallery-view?jnhsdwmxifkd=Teaching, Learning and Educational Technology">
-                    <div class="gallery-item">
-                      <div class="thumb">
-                        <img src="<?php echo $teaching_learning_images['data'][0]['url'] ?>" alt="<?php echo $teaching_learning_images['data'][0]['alt'] ?>">
-                      </div>
-                      <div class="down-content">
-                        <h4><?php echo concat_string($teaching_learning_images['title']);?></h4>
-                      </div>
-                    </div>
-                  </a>
+        <!-- teaching-learning-images -->
+
+        <div class="col-lg-3 col-md-6">
+          <div class="gallery">
+            <a href="gallery-view?jnhsdwmxifkd=Teaching, Learning and Educational Technology">
+              <div class="gallery-item">
+                <div class="thumb">
+                  <img src="<?php echo $teaching_learning_images['data'][0]['url'] ?>" alt="<?php echo $teaching_learning_images['data'][0]['alt'] ?>">
                 </div>
-                <!-- initiatives -->
-                <div class="col-lg-3" style="height: fit-content;">
-                  <a href="gallery-view?jnhsdwmxifkd=Initiatives">
-                    <div class="gallery-item">
-                      <div class="thumb">
-                        <img src="<?php echo $mou_images['data'][0]['url'] ?>" alt="<?php echo $mou_images['data'][0]['alt'] ?>">
-                      </div>
-                      <div class="down-content">
-                        <h4>Initiatives</h4>
-                      </div>
-                    </div>
-                  </a>
+                <div class="down-content">
+                  <h4><?php echo concat_string($teaching_learning_images['title']);?></h4>
                 </div>
-                <!-- RUSA -->
-                <div class="col-lg-3" style="height: fit-content;">
-                  <a href="gallery-view?jnhsdwmxifkd=RUSA">
-                    <div class="gallery-item">
-                      <div class="thumb">
-                        <img src="<?php echo $rusa_images['data'][0]['url'] ?>" alt="<?php echo $rusa_images['data'][0]['alt'] ?>">
-                      </div>
-                      <div class="down-content">
-                        <h4><?php echo concat_string($rusa_images['title']);?></h4>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                
-              <!-- </div>
-            </div>
+              </div>
+              <div class="overlay">
+                <div class="text">Open Folder</div>
+              </div>
+            </a>
           </div>
-        </div> -->
+        </div>
+        <!-- initiatives -->
+        <div class="col-lg-3 col-md-6">
+          <div class="gallery">
+            <a href="gallery-view?jnhsdwmxifkd=Initiatives">
+              <div class="gallery-item">
+                <div class="thumb">
+                  <img src="<?php echo $mou_images['data'][0]['url'] ?>" alt="<?php echo $mou_images['data'][0]['alt'] ?>">
+                </div>
+                <div class="down-content">
+                  <h4>Initiatives</h4>
+                </div>
+                <div class="overlay">
+                  <div class="text">Open Folder</div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- RUSA -->
+        <div class="col-lg-3 col-md-6">
+          <div class="gallery">
+            <a href="gallery-view?jnhsdwmxifkd=RUSA">
+              <div class="gallery-item">
+                <div class="thumb">
+                  <img src="<?php echo $rusa_images['data'][0]['url'] ?>" alt="<?php echo $rusa_images['data'][0]['alt'] ?>">
+                </div>
+                <div class="down-content">
+                  <h4><?php echo concat_string($rusa_images['title']);?></h4>
+                </div>
+              </div>
+              <div class="overlay">
+                <div class="text">Open Folder</div>
+              </div>
+
+              </div>
+            </a>
+          </div>
+        </div>
+        
       </div>
     </div>
   </section>

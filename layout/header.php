@@ -9,7 +9,7 @@
               <img src="assets/images/logo/GSHEC.png" alt="GSHEC" style="width: 70px;">
           </a>
           <!-- ***** Logo 2 Start ***** -->
-          <a href="https://www.dhe.goa.gov.in/" target="_blank" class="logo logo-2">
+          <a href="#" target="_blank" class="logo logo-2">
             <svg class="logo-size" viewBox="0 0 68 87" fill="none" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink">
               <rect width="68" height="87" fill="url(#pattern_2)" />
@@ -27,18 +27,17 @@
           <ul class="nav">
             <!-- <li class="scroll-to-section"><a href="index#top" class="active">Home</a></li> -->
             <li><a href="index#top" class="<?php if ($page == '1') echo 'active'; ?>">Home</a></li>
-            <li><a href="council-org-structure" class="<?php if ($page == '2') echo 'active'; ?>">Organization</a></li>
+            <li class="has-sub">
+              <a href="javascript:void(0)" class="<?php if ($page == '2') echo 'active'; ?>">About Us</a>
+              <ul class="sub-menu">
+                <li><a href="#">Objectives</a></li>
+                <li><a href="#">GSHEC</a></li>
+                <li><a href="council-org-structure">Organisation</a></li>
+                <li><a href="#">Council Members</a></li>
+              </ul>
+            </li>
             <li><a href="human-resource" class="<?php if ($page == '3') echo 'active'; ?>">Human Resource</a></li>
             <li><a href="enrol-me" class="<?php if ($page == '4') echo 'active'; ?>">Enrol Me</a></li>
-            <!-- <li class="has-sub">
-              <a href="javascript:void(0)">Services</a>
-              <ul class="sub-menu">
-                <li><a href="council">Council org Structure</a></li>
-                <li><a href="meetings">RUSA</a></li>
-                <li><a href="meeting-details">RTI</a></li>
-                <li><a href="meeting-details">Acts And Rules</a></li>
-              </ul>
-            </li> -->
             <!-- <li class="scroll-to-section"><a href="#contact">Contact Us</a></li> -->
           </ul>
           <a class='menu-trigger'>

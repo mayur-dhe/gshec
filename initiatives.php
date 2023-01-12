@@ -10,6 +10,11 @@
   require 'layout/site-map.php'; 
   include 'data/initiatives.php';
 ?>
+<style>
+  * {
+    font-family: 'Roboto';
+  }
+</style>
   <!-- ------------- Main Content Start---------------------- -->
   <section class="meetings-page" id="meetings">
     <div class="container">

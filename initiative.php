@@ -21,6 +21,9 @@
   include 'data/initiatives.php';
 ?>
 <style>
+ * {
+    font-family: 'Roboto' !important;
+  }
   p {
     color: rgb(0, 0, 0);
   }
