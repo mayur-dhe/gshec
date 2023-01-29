@@ -1,5 +1,5 @@
-<section class="heading-page" >
-    <div class="container">
+<section class="heading-page">
+    <div class="container contains-sitemap">
         <div class="row">
             <div class="col-lg-12">
                 <ul class="site-map">
@@ -28,12 +28,17 @@
                     </li> -->
                 </ul>
                 <h6></h6>
-                <h3 style="text-align: center; padding: 15px 0;"><?php echo $subtitle;?></h3>
             </div>
         </div>
     </div>
 </section>
+<h3 class="page-title"><?php echo $subtitle;?></h3>
 
 <div class="heading-div header-text" id="top">
     nav scroller
 </div>
+
+
+<!-- margin-top: -120px;
+position: absolute;
+width: 100%; -->

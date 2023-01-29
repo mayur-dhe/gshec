@@ -25,7 +25,7 @@
           if ($title_2 == "Initiatives" && $title_3 == "") {
         ?>
           <!-- 1 mou_images -->
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-3 col-md-6 p0">
             <div class="gallery">
               <a href="gallery-view?jnhsdwmxifkd=<?php echo $title_2?>&jnhstrefbd=<?php echo $mou_images['title']?>">
                 <div class="gallery-item">
@@ -43,7 +43,7 @@
             </div>
           </div>
           <!-- 2 obe -->
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-3 col-md-6 p0">
             <div class="gallery">
               <a href="gallery-view?jnhsdwmxifkd=<?php echo $title_2?>&jnhstrefbd=<?php echo $obe['title'] ?>">
                 <div class="gallery-item">
@@ -61,7 +61,7 @@
             </div>
           </div>
           <!-- 3 job_drive -->
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-3 col-md-6 p0">
             <div class="gallery">
               <a href="gallery-view?jnhsdwmxifkd=<?php echo $title_2?>&jnhstrefbd=<?php echo $job_drive['title'] ?>">
                 <div class="gallery-item">
@@ -79,7 +79,7 @@
             </div>
           </div>
           <!-- 4 aip -->
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-3 col-md-6 p0">
             <div class="gallery">
               <a href="gallery-view?jnhsdwmxifkd=<?php echo $title_2?>&jnhstrefbd=<?php echo $aip['title'] ?>">
                 <div class="gallery-item">
@@ -97,7 +97,7 @@
             </div>
           </div>
           <!-- 5 dhe -->
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-3 col-md-6 p0">
             <div class="gallery">
               <a href="gallery-view?jnhsdwmxifkd=<?php echo $title_2?>&jnhstrefbd=<?php echo $dhe['title'] ?>">
                 <div class="gallery-item">
@@ -115,7 +115,7 @@
             </div>
           </div>
           <!-- 6 tip -->
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-3 col-md-6 p0">
             <div class="gallery">
               <a href="gallery-view?jnhsdwmxifkd=<?php echo $title_2?>&jnhstrefbd=<?php echo $tip['title'] ?>">
                 <div class="gallery-item">
@@ -143,7 +143,7 @@
             {
               $imageCount = $key+1;
         ?>
-              <div class="col-lg-3 col-md-6">
+              <div class="col-lg-3 col-md-6 p0">
                 <div class="gallery">
                   <a href="#" type="button" onclick="showModel('<?php echo $title_2 ?>',' <?php echo $imageCount ?>'); return false;" title="<?php echo $value['alt']?>" class="gallery_item">
                     <img src="<?php echo $value['url']?>" alt="<?php echo $value['alt']?>">
@@ -165,7 +165,7 @@
             foreach ($image_list as $key => $value) 
             {
         ?>
-              <div class="col-lg-3 col-md-6">
+              <div class="col-lg-3 col-md-6 p0">
                 <div class="gallery">
                   <a href="#" title="<?php echo $value['alt']?>" class="gallery_item">
                   <img src="<?php echo $value['url']?>" alt="<?php echo $value['alt']?>">

@@ -14,7 +14,7 @@
 
     // Right side Tab Content
     $introduction = [
-        'title' => 'Brief report on implementation of new National Education Policy <br>(NEP 2020)',
+        'title' => 'Brief report on implementation of new National Education Policy (NEP 2020)',
         'data' => array(
             'New National Education Policy (NEP 2020) is being implemented in a phased manner in the State of Goa. As part of NEP implementation, following initiatives are in progress or completed.',
         )

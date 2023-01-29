@@ -7,7 +7,6 @@
           <div class="col-lg-5 item">
             <h3>GOA SHEC</h3>
             <ul>
-              
               <li>Goa State Higher Education Council
                 <br>under Rashtriya Uchchtar Shiksha Abhiyan (RUSA),
                 <br>a new Centrally sponsored Program 
@@ -87,7 +86,7 @@
   $(function () {
 
   });
-  //according to loftblog tut
+  
   $('.nav li:first').addClass('active');
 
   var showSection = function showSection(section, isAnimate) {
