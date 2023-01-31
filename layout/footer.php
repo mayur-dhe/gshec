@@ -8,10 +8,10 @@
             <h3>GOA SHEC</h3>
             <ul>
               <li>Goa State Higher Education Council
-                <br>under Rashtriya Uchchtar Shiksha Abhiyan (RUSA),
+                <!-- <br>under Rashtriya Uchchtar Shiksha Abhiyan (RUSA),
                 <br>a new Centrally sponsored Program 
                 <br>under Ministry of Human Resource Development, 
-                <br>Government of India, Department of Higher Education, New Delhi
+                <br>Government of India, Department of Higher Education, New Delhi -->
               </li>
             </ul>
           </div>

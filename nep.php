@@ -320,7 +320,7 @@
             <!-- <h5>1.</h5> -->
             <div class="row">
               <div class="col-md-7">
-                <ul>
+                <ul class="list-uppercase_first">
                   <li>
                     recognizing, identifying, and fostering the unique capabilities of each student, by sensitizing teachers as well as parents to promote each student’s holistic development in both academic and non-academic spheres. 
                   </li>
@@ -342,52 +342,58 @@
                   <li>
                     creativity and critical thinking to encourage logical decision-making and innovation
                   </li>
-                  <li>
+                  <li class="list_items_salient d-none">
                     ethics and human & Constitutional values like empathy, respect for others, cleanliness, courtesy, democratic spirit, spirit of service, respect for public property, scientific temper, liberty, responsibility, pluralism, equality, and justice
                   </li>
-                  <li>
+                  <li class="list_items_salient d-none">
                     promoting multilingualism and the power of language in teaching and learning
                   </li>
-                  <li>
+                  <li class="list_items_salient d-none">
                     life skills such as communication, cooperation, teamwork, and resilience
                   </li>
-                  <li>
+                  <li class="list_items_salient d-none">
                     focus on regular formative assessment for learning rather than the summative assessment that encourages today’s ‘coaching culture’
                   </li>
-                  <li>
+                  <li class="list_items_salient d-none">
                     extensive use of technology in teaching and learning, removing language barriers, increasing access for Divyang students, and educational planning and management
                   </li>
-                  <li>
+                  <li class="list_items_salient d-none">
                     respect for diversity and respect for the local context in all curriculum, pedagogy, and policy, always keeping in mind that education is a concurrent subject
                   </li>
-                  <li>
+                  <li class="list_items_salient d-none">
                     full equity and inclusion as the cornerstone of all educational decisions to ensure that all students are able to thrive in the education system
                   </li>
-                  <li>
+                  <li class="list_items_salient d-none">
                     synergy in curriculum across all levels of education from early childhood care and education to school education to higher education
                   </li>
-                  <li>
+                  <li class="list_items_salient d-none">
                     teachers and faculty as the heart of the learning process – their recruitment, continuous professional development, positive working environments and service conditions
                   </li>
-                  <li>
+                  <li class="list_items_salient d-none">
                     a ‘light but tight’ regulatory framework to ensure integrity, transparency, and resource efficiency of the educational system through audit and public disclosure while encouraging innovation and out-of-the-box ideas through autonomy, good governance, and empowerment
                   </li>
-                  <li>
+                  <li class="list_items_salient d-none">
                     outstanding research as a corequisite for outstanding education and development
                   </li>
-                  <li>
+                  <li class="list_items_salient d-none">
                     continuous review of progress based on sustained research and regular assessment by educational experts
                   </li>
-                  <li>
+                  <li class="list_items_salient d-none">
                     a rootedness and pride in India, and its rich, diverse, ancient and modern culture and knowledge systems and traditions. 
                   </li>
-                  <li>
+                  <li class="list_items_salient d-none">
                     education is a public service; access to quality education must be considered a basic right of every child
                   </li>
-                  <li>
+                  <li class="list_items_salient d-none">
                     substantial investment in a strong, vibrant public education system as well as the encouragement and facilitation of true philanthropic private and community participation.
                   </li>
                 </ul>
+                <div class="border-button-yellow">
+                  <a href="#" onclick="showMoreSalient(); return false;">
+                    <span class="list_items_salient">Read More</span>
+                    <span class="list_items_salient d-none">Show Less</span>
+                  </a>
+                </div>
               </div>
               <div class="col-md-5">
                 <img src="assets/images/nep/action-plan/uucms.jpg" alt="UUCMS">
@@ -408,6 +414,9 @@
     // show more list
     function showMore() {
       $(".list_items").toggleClass("d-none");
+    }
+    function showMoreSalient() {
+      $(".list_items_salient").toggleClass("d-none");
     }
     
   </script>

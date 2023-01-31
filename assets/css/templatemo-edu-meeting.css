@@ -2282,11 +2282,11 @@ responsive
     padding-inline: 16%;
   } */
 } 
-@media (min-width: 1400px) {
-  .header-area .main-nav .nav {
+/* @media (min-width: 1400px) { */
+  /* .header-area .main-nav .nav {
     width: 1164px;
-  }
-} 
+  } */
+/* }  */
 /* social media links */
 .social-media-links .fa {
   padding: 12px;
@@ -3005,6 +3005,14 @@ section.page-section.rusa p {
 /* sdc */
 .page-section.sdc .container {
   margin-bottom: 0rem;
+}
+
+/* Nep */
+.list-uppercase_first>li {
+  list-style: auto !important;
+}
+.list-uppercase_first li:first-letter {
+  text-transform: uppercase;
 }
 
 
