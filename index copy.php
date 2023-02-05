@@ -62,13 +62,9 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="owl-service-item owl-carousel">
-            
-            <!-- Ribbon -->
-            <!-- <p class="ribbon">
-              <span class="text"><strong class="bold">Special Offer:</strong> Recieve bonus rewards points for signing up</span>
-            </p> -->
+
             <div class="item">
-              <a href="nep.php">
+              <a href="nep">
                 <div class="icon">
                   <img src="assets/images/icons/NEP.png" alt="">
                 </div>

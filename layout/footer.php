@@ -18,21 +18,21 @@
           <div class="col-lg-2 item">
             <h3>Important Links</h3>
             <ul>
-              <li><a href="rti">RTI</a></li>
-              <li><a href="rusa">RUSA</a></li>
-              <li><a href="acts-and-rules">Acts And Rules</a></li>
-              <li><a href="index#contact">Contact Us</a></li>
+              <li><a href="rti.php">RTI</a></li>
+              <li><a href="rusa.php">RUSA</a></li>
+              <li><a href="acts-and-rules.php">Acts And Rules</a></li>
+              <li><a href="index.php#contact">Contact Us</a></li>
               <li><a href="https://www.dhe.goa.gov.in/" target="_blank">DHE</a></li>
             </ul>
           </div>
           <div class="col-lg-2 item">
             <h3>Useful Links</h3>
             <ul>
-              <li><a href="gallery">Gallery</a></li>
-              <li><a href="news">News</a></li>
-              <li><a href="tenders">Tenders</a></li>
-              <li><a href="downloads">Downloads</a></li>
-              <li><a href="archives">Archives</a></li>
+              <li><a href="gallery.php">Gallery</a></li>
+              <li><a href="news.php">News</a></li>
+              <li><a href="tenders.php">Tenders</a></li>
+              <li><a href="downloads.php">Downloads</a></li>
+              <li><a href="archives.php">Archives</a></li>
             </ul>
           </div>
           <div class="col-lg-3 item">

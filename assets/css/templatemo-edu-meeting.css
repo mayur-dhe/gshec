@@ -91,6 +91,7 @@ html[xmlns] .clearfix {
 * {
   color:var(--white);
 }
+.text-black *,
 .text-black {
   color: var(--greyReadableTextColor) !important;
 }
@@ -182,6 +183,12 @@ body {
   }
 }
 
+/* .page-section *, */
+.read-more,
+.border-button-yellow a {
+  color: var(--greyReadableTextColor) !important;
+}
+
 /* buttons btn */
 /* btn 1 */
 .read-more,
@@ -197,6 +204,9 @@ body {
   font-weight: 500;
   text-transform: uppercase;
   transition: all .3s;
+}
+.read-more {
+  left: 160px;
 }
 .read-more,
 .border-button-yellow {
@@ -2374,7 +2384,7 @@ responsive
   border-radius: 17px;
   border-bottom: 1px solid;
 }
-/* Create an active/current "tab button" class */
+/* Create an active/current tab button */
 .tab button.active {
   color:var(--yellow);
   font-weight: 500;
@@ -2395,11 +2405,14 @@ responsive
   text-align: left;
 }
 /* tabcontent title */
+.innerpage-title,
 .tabcontent>h4 {
   color: var(--yellow) !important;
-  margin-top: -38px;
   font-size: 2.2rem;
   font-weight: 600;
+}
+.tabcontent>h4 {
+  margin-top: -38px;
 }
 .tabcontent>h5 {
   padding-top: 1rem !important;
@@ -2944,6 +2957,14 @@ hr:not([size]) {
     color: blue;
 }
 
+.align-justify * {
+  text-align: justify;
+}
+
+/* logo alignment */
+.align-left {
+  text-align: left;
+}
 
 
 
@@ -2953,16 +2974,39 @@ hr:not([size]) {
 /*--------------------------------------------------------------
 # General css
 --------------------------------------------------------------- */
-
-/* logo alignment */
-.align-left {
-  text-align: left;
-}
-
 hr {
   height: 1px;
   margin: 0 6em;
   color: #858585 !important;
+}
+
+.table-border tr td {
+  border: 1px solid grey;
+  padding: 2px;
+  text-align: center;
+}
+
+.sub-title-font h5 {
+  font-size: 1.5rem !important;
+  font-weight: 600;
+}
+
+.themes ul>li {
+  list-style: circle;
+}
+.themes ul>li {
+  list-style: circle;
+}
+.themes ul {
+  padding-left:30px;
+}
+/* sub heading */
+.theme-subtitle {
+  font-weight: 600;
+}
+/* underline text */
+.sub-theme {
+  text-decoration: disc;
 }
 
 .p0 {
@@ -2971,6 +3015,39 @@ hr {
 .pt-100 {
   padding: 100px 0;
 }
+.pt-30 {
+  padding-top: 30px;
+}
+.pl-10 {
+  padding-left: 10px;
+}
+.pl-20 {
+  padding-left: 20px;
+}
+.pl-30 {
+  padding-left: 30px;
+}
+
+.pt_30_for_h5 h5 {
+  padding-top: 30px;
+}
+.pl_30_for_row .row {
+  padding-top: 30px;
+}
+.pl_40_for_row .row>div:not(.col-md-5) {
+  padding-left: 40px;
+}
+.list-number>li {
+  list-style: auto !important;
+}
+.list-number-decimal>li {
+  list-style: decimal-leading-zero !important;
+}
+.list-number-decimal li:first-letter,
+.list-number li:first-letter {
+  text-transform: uppercase;
+}
+
 
 /* card design pdf */
 .card {
@@ -3007,14 +3084,59 @@ section.page-section.rusa p {
   margin-bottom: 0rem;
 }
 
-/* Nep */
-.list-uppercase_first>li {
-  list-style: auto !important;
-}
-.list-uppercase_first li:first-letter {
-  text-transform: uppercase;
-}
 
+/* ----- Ribbon ---------------------- */
+.ribbon{
+  font-size:20px;
+  position:relative;
+  display:inline-block;
+  margin: 2em 1em;
+  text-align:center;
+}
+.text{
+  display:inline-block;
+  padding:0.5em 1em;
+  min-width:20em;
+  line-height:1.2em;
+  background: #FFD72A;
+  position:relative;
+}
+.ribbon:after,.ribbon:before,
+.text:before,.text:after,
+.bold:before{
+  content:'';
+  position:absolute;
+  border-style:solid;
+}
+.ribbon:before{
+  top:0.3em; left:0.2em;
+  width:100%; height:100%;
+  border:none;
+  background:#EBECED;
+  z-index:-2;
+}
+.text:before{
+  bottom:100%; left:0;
+  border-width: .5em .7em 0 0;
+  border-color: transparent #FC9544 transparent transparent;
+}
+.text:after{
+  top:100%; right:0;
+  border-width: .5em 2em 0 0;
+  border-color: #FC9544 transparent transparent transparent;
+}
+.ribbon:after, .bold:before{
+  top:0.5em;right:-2em;
+  border-width: 1.1em 1em 1.1em 3em;
+  border-color: #FECC30 transparent #FECC30 #FECC30;
+  z-index:-1;
+}
+.bold:before{
+  border-color: #EBECED transparent #EBECED #EBECED;
+  top:0.7em;
+  right:-2.3em;
+}
+/* ----- Ribbon ---------------------- */
 
 /* Flex button Start ----------------------- */
 button {

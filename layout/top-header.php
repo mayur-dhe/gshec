@@ -3,9 +3,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
+    <meta name="keywords" content="institution, education, porvorim, higher education">
+    <meta name="description" content="The Goa State Higher Education Council, established under Goa Act 14 of 2018 is an autonomous body with all 64 (Higher Education Institutes(HEI) under its purview.">
     <meta name="author" content="Mayur Naik">
     <title><?php echo $title; ?> - GSHEC</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/logo/GSHEC.ico">
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">

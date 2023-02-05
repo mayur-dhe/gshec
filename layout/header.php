@@ -35,10 +35,10 @@
                 <li><a class="align-left" href="#">Council Members</a></li>
               </ul>
             </li>
-            <li><a href="human-resource" class="<?php if ($page == '3') echo 'active'; ?>">Edu Dashboard</a></li>
+            <li><a href="#" class="<?php if ($page == '3') echo 'active'; ?>">Edu Dashboard</a></li>
             <li><a href="human-resource" class="<?php if ($page == '4') echo 'active'; ?>">Human Resource</a></li>
             <li><a href="enrol-me" class="<?php if ($page == '5') echo 'active'; ?>">Enrol Me</a></li>
-            <li class="scroll-to-section"><a href="#contact">Contact Us</a></li>
+            <li class="scroll-to-section"><a href="index#contact">Contact Us</a></li>
           </ul>
           <a class='menu-trigger'>
             <span>Menu</span>

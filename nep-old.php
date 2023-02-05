@@ -8,7 +8,7 @@
   require 'layout/header.php';
   $subtitle = "National Education Policy";
   require 'layout/site-map.php'; 
-  include 'data/nep.php';
+  include 'data/nep-old.php';
 ?>
   <!-- ------------- Main Content Start---------------------- -->
   <section class="page-section">
