@@ -5,7 +5,7 @@
       <div class="col-12">
         <nav class="main-nav">
           <!-- ***** Logo Start ***** -->
-          <a href="index" class="logo">
+          <a href="index.php" class="logo">
               <img src="assets/images/logo/GSHEC.png" alt="GSHEC" style="width: 70px;">
           </a>
           <!-- ***** Logo 2 Start ***** -->
@@ -26,19 +26,19 @@
           <!-- ***** Menu Start ***** -->
           <ul class="nav">
             <!-- <li class="scroll-to-section"><a href="index#top" class="active">Home</a></li> -->
-            <li><a href="index#top" class="<?php if ($page == '1') echo 'active'; ?>">Home</a></li>
+            <li><a href="index.php#top" class="<?php if ($page == '1') echo 'active'; ?>">Home</a></li>
             <li class="has-sub">
               <a href="javascript:void(0)" class="<?php if ($page == '2') echo 'active'; ?>">About Us</a>
               <ul class="sub-menu">
-                <li><a class="align-left" href="#">Objectives</a></li>
-                <li><a class="align-left" href="council-org-structure">Organisation</a></li>
-                <li><a class="align-left" href="#">Council Members</a></li>
+                <li><a class="align-left" href="objectives.php">Objectives</a></li>
+                <li><a class="align-left" href="organization.php">Organisation</a></li>
+                <li><a class="align-left" href="council-members.php">Council Members</a></li>
               </ul>
             </li>
             <li><a href="#" class="<?php if ($page == '3') echo 'active'; ?>">Edu Dashboard</a></li>
-            <li><a href="human-resource" class="<?php if ($page == '4') echo 'active'; ?>">Human Resource</a></li>
-            <li><a href="enrol-me" class="<?php if ($page == '5') echo 'active'; ?>">Enrol Me</a></li>
-            <li class="scroll-to-section"><a href="index#contact">Contact Us</a></li>
+            <li><a href="human-resource.php" class="<?php if ($page == '4') echo 'active'; ?>">Human Resource</a></li>
+            <li><a href="enrol-me.php" class="<?php if ($page == '5') echo 'active'; ?>">Enrol Me</a></li>
+            <!-- <li class="scroll-to-section"><a href="index.php#contact">Contact Us</a></li> -->
           </ul>
           <a class='menu-trigger'>
             <span>Menu</span>

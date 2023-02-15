@@ -2,10 +2,28 @@
 
     $initiatives = [
         array(
+            'id' => 5,
+            'title' => 'DHE collaboration with IBM',
+            'short_name' => 'IBM Initiative',
+            'cover_image' => 'assets/images/empty.jpg',
+        ),
+        array(
             'id' => 1,
             'title' => 'The State Higher Education Council, Directorate of Higher Education signs a Memorandum of Understanding (MoU) with 1) NAVGURUKUL FOUNDATION FOR SOCIAL WELFARE 2)NEWTON SCHOOL 3) Be Unlu 4) Entri',
-            'short_name' => 'Memorandum of Understanding',
+            'short_name' => 'MoU with National Startup',
             'cover_image' => 'assets/images/initiatives/initiative1 MoU.JPG',
+        ),
+        array(
+            'id' => 4,
+            'title' => 'Academic Interface Programme (AIP)  by TCS” ',
+            'short_name' => 'TCS Initiative for Banking',
+            'cover_image' => 'assets/images/initiatives/Initiative 4 AIP.jpg',
+        ),
+        array(
+            'id' => 6,
+            'title' => 'Installation of Training Internship and Placement (TIP) cell',
+            'short_name' => 'TIP Unified Portal ',
+            'cover_image' => 'assets/images/initiatives/initiative 6 TIP.jpg',
         ),
         array(
             'id' => 2,
@@ -19,24 +37,6 @@
             'short_name' => 'Inspire to Aspire',
             'cover_image' => 'assets/images/initiatives/initiative 3 Inspire to Aspire.jpg',
         ),
-        array(
-            'id' => 4,
-            'title' => 'Academic Interface Programme (AIP)  by TCS” ',
-            'short_name' => 'Academic Interface Prog',
-            'cover_image' => 'assets/images/initiatives/Initiative 4 AIP.jpg',
-        ),
-        array(
-            'id' => 5,
-            'title' => 'DHE collaboration with IBM',
-            'short_name' => 'Directorate of Higher Education',
-            'cover_image' => 'assets/images/empty.jpg',
-        ),
-        array(
-            'id' => 6,
-            'title' => 'Installation of Training Internship and Placement (TIP) cell',
-            'short_name' => 'Placement cell',
-            'cover_image' => 'assets/images/initiatives/initiative 6 TIP.jpg',
-        )
     ];
 
 

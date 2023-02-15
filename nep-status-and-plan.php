@@ -32,215 +32,7 @@
             <h5>1. THEME: ACCESS</h5>
             <div class="col-md-7">
               <div class="row">
-                <div class="col-md-12">
-                  <div class="sub-theme">Sub-themes:</div>
-                  <ul class="pl-30">
-                    <li><a href="#thm1-equity">Equity, including Gender Parity</a></li>
-                    <li><a href="#thm1-inclusion">Inclusion including SEDGs</a></li>
-                    <li><a href="#thm1-measures">Measures for increasing Access including Online & ODL education</a></li>
-                    <li><a href="#thm1-increasing">Increasing Access through Indian Languages </a></li>
-                  </ul>
-                </div>
-                <div id="thm1-equity" class="themes">
-                  <div class="theme-subtitle">a) Equity, including Gender Parity</div>
-                  <span class="sub-theme">Status:</span>
-                  Goa has a very good equity as well as gender parity in Higher Education. As can be seen from Table 1, for the last three years, the enrollment of Female students is significantly higher than the male students. 
-                  <br>
-                  <br>
-                  <strong>Table 1: Student enrollment in Goa for the last three years.</strong>
-                  <table class="table table-light table-border">
-                    <thead>
-                      <tr>
-                        <td>Year</td>
-                        <td>Female</td>
-                        <td>Male</td>
-                        <td>Total</td>
-                        <td>Ratio(Female/Male)</td>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>2017-2018</td>
-                        <td>24,898</td>
-                        <td>24,743</td>
-                        <td>49,641</td>
-                        <td>1.006</td>
-                      </tr>
-                      <tr>
-                        <td>2018-2019</td>
-                        <td>27,713</td>
-                        <td>26,967</td>
-                        <td>54680</td>
-                        <td>1.03</td>
-                      </tr>
-                      <tr>
-                        <td>2019-2020</td>
-                        <td>47,727</td>
-                        <td>25,055</td>
-                        <td>52,782</td>
-                        <td>1.11</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <br>
-                  <br>
-                  <strong>Table 2: GER of Goa and comparison with overall GER of India.</strong>
-                  <table class="table table-light table-border">
-                    <thead>
-                      <tr>
-                        <td></td>
-                        <td>GER (%)</td>
-                        <td>Female (%)</td>
-                        <td>Male (%)</td>
-                        <td>SC (%)</td>
-                        <td>ST (%)</td>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>India</td>
-                        <td>27.1</td>
-                        <td>27.3</td>
-                        <td>26.9</td>
-                        <td>23.4</td>
-                        <td>18</td>
-                      </tr>
-                      <tr>
-                        <td>Goa</td>
-                        <td>28.4</td>
-                        <td>34.6</td>
-                        <td>23.8</td>
-                        <td>31.7</td>
-                        <td>26.4</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <br>
-                  <br>
-                  Enrollment of female students in Goa has seen  quite an increase of up to 11% in the year 2019-2020,  compared with the male students. This is likely attributed to the encouragement of female students for higher education as well as because of the conducive  academic environment for female students. 
-                  <br>
-                  <br>
-                  Similarly, the GER of Goa is significantly higher compared to the overall GER of India, especially for SC and ST students. This can be attributed to the access to higher educational institutions (HEIs): all government colleges in Goa are strategically built in rural areas providing easy access to quality higher education.
-                  <br>
-                  <br>
-                  Goa University, the only state university, has a full fledged hostel on campus. Construction and planning  of hostel accommodation in a few other HEIs  are in progress.
-                  <br>
-                  <br>
-                  <div class="sub-theme">Strategies</div>
-                  <ul>
-                    <li>
-                      While Goa’s GER is higher compared with the national GER, a detailed study is needed to identify the reasons why students are unable to pursue higher education.
-                    </li>
-                    <li>
-                      Further, to improve GER, appropriate Degree/Skill-based program should be introduced. This again requires a detailed study.
-                    </li>
-                    <li>
-                      Identifying skill gaps and introducing appropriate skills for SC & ST students.
-                    </li>
-                    <li>
-                      Continuous sensitization to faculties and students about the reservation-identity issue faced by the SC & ST students.
-                    </li>
-                  </ul>
-                </div>
-                <div id="thm1-inclusion" class="themes">
-                  <div class="theme-subtitle">b) Inclusion including SEDGs</div>
-                  <span class="sub-theme">Status:</span>
-                  <ul>
-                    <li>
-                      For inclusion of students and faculty belonging to SEDGs, all HEIs in Goa adhere to the reservation policy, and admission for students and recruitment of teaching faculty is being done accordance to the State reservation policy.
-                    </li>
-                    <li>
-                      Establishment of Tribal skill development and Research Centre in one of the Govt. Colleges is underway.
-                    </li>
-                    <li>
-                      Tuition Fee waiver scheme for SC and ST students is already being implemented.
-                    </li>
-                    <li>
-                      Bhausaheb Bandodkar scheme for orphan students is also being implemented.
-                    </li>
-                    <li>
-                      In addition, interest free loan is being given to pursue higher education.
-                    </li>
-                  </ul>
-                  <div class="sub-theme">Strategies:</div>
-                  <ul>
-                    <li>  
-                      Introduction of Education Degree programs in Special Education as part of the courses through Goa University and other HEIs.
-                    </li>
-                    <li>  
-                      Mitigating fees, especially for socio-economically disadvantaged groups,  for pursuing higher education.
-                    </li>
-                    <li>  
-                      Providing special research fund to systematically study areas specific to SDGs.
-                    </li>
-                  </ul>
-                </div>
-                <div id="thm1-measures" class="themes">
-                  <div class="theme-subtitle">c) Measures for increasing Access including Online & ODL education </div>
-                  <span class="sub-theme">Status:</span>
-                  Goa has been very proactive in promoting online education. Following the MOOCs standards, the Directorate of Higher Education, Goa had put a framework in place to develop e-content focused on the actual syllabus of Undergraduate Degree Programs. For this purpose, an online platform named DISHTAVO (Digital Integrated System for Holistic Teaching And Virtual Orientation) was developed. 
-                  <br>
-                  <br>
-                  DISHTAVO is an online e-content web portal, entirely developed in-house,  for  providing free access to UG academic content in Arts, Commerce, Science, Music, Law, Home Science,  Agriculture, & Education, and currently accessible at 
-                  <br>
-                  <a href="https://www.dishtavo.dhe.goa.gov.in/">https://www.dishtavo.dhe.goa.gov.in/</a>
-                  <br>
-                  Some features of DISHTAVO
-                  <ul>
-                    <li>
-                      Six temporary studios have been setup for training, recording of the video lectures.
-                    </li>
-                    <li>
-                      More than 1500 teaching faculty are involved in producing about 16,000 lecture videos.
-                    </li>
-                    <li>
-                      E-content available, that strictly adheres to the academic syllabus prescribed by the Goa University for UG programs.
-                    </li>
-                  </ul>
-                  MoU signing with SWAYAM for the production of MOOCs is in progress. For this purpose, development of  MOOCs is already in progress. Unlike traditional MOOC production by individual faculties, an unique thing that we have adopted is that we have provided centralized facilities and a dedicated team for coordination of such MOOC courses. In the first phase 5 MOOCs are being developed. A few film directors have also been hired to give MOOC production direction to improve the presentation quality of MOOC content.
-                  <br>
-                  <br>
-                  For ODL, and credit transfer, we  have collaborated with IIT Mumbai. In the first phase, computer courses are being offered for BSc Computer Science degree program in Credit Transfer mode in all government colleges, where blended teaching mode is being currently adopted.
-                  <br>
-                  <br>
-                  <div class="sub-theme">Strategies:</div>
-                  <ul>
-                    <li>
-                      Creating MOOCs for PG level.
-                    </li>
-                    <li>
-                      Encourage and provide support for creating more MOOCs in all disciplines.
-                    </li>
-                    <li>
-                      Convert DISHTAVO E-content into Konkani language
-                    </li>
-                  </ul>
-                </div>
-                <div id="thm1-increasing" class="themes">
-                  <div class="theme-subtitle">d) Increasing Access through Indian Languages </div>
-                  <span class="sub-theme">Status:</span>
-                  <ul>
-                    <li>Currently, the language of instruction in HEIs in Goa is primarily English.</li>
-                  </ul>
-                  <br>
-                  <div class="sub-theme">Strategies:</div>
-                  <ul>
-                    <li>While English is the primary medium of instruction in all HEIs in Goa, introduction of Konkani for communicating with students should be promoted.</li>
-                    <li>Some SWAYAM courses, especially related to history, arts can be converted to Konkani.</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-5">
-              <img src="assets/images/nep/action-plan/uucms.jpg" alt="UUCMS">
-            </div>
-
-            <h5>1. THEME: ACCESS</h5>
-            
-            <!-- 1 -->
-            <div class="col-md-7">
-              <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 list-inside">
                   <div class="sub-theme">Sub-themes:</div>
                   <ul class="pl-30">
                     <li><a href="#thm1-equity">Equity, including Gender Parity</a></li>
@@ -447,7 +239,7 @@
             <h5>2. THEME: QUALITY</h5>
             <div class="col-md-7">
               <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 list-inside">
                   <div class="sub-theme">Sub-themes:</div>
                   <ul class="pl-30">
                     <li><a href="#thm1-Multidisciplinary">Multidisciplinary & Holistic Education </a></li>
@@ -460,7 +252,7 @@
                 <div id="thm1-Multidisciplinary" class="themes">
                   <div class="theme-subtitle">a) Multidisciplinary & Holistic Education</div>
                   <span class="sub-theme">Status:</span>
-                  <ul class="sub-theme">
+                  <ul>
                     <li>
                       Currently, Goa University (GU) is the only State university in Goa, with a student enrollment of about 2400 in PG and PhD. 
                     </li>
@@ -470,7 +262,7 @@
                   </ul>
                   <br>
                   <div class="sub-theme">Strategies</div>
-                  <ul class="sub-theme">
+                  <ul>
                     <li>
                       To provide truly multidisciplinary & holistic education, programs like engineering, and music would have to be introduced on Goa University campus. Currently,  degree programs in engineering, music, architecture are being offered by affiliated Colleges.
                     </li>
@@ -677,7 +469,7 @@
             <h5>3. THEME: FUTURE READINESS</h5>
             <div class="col-md-7">
               <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 list-inside">
                   <div class="sub-theme">Sub-themes:</div>
                   <ul class="pl-30">
                     <li><a href="#thm1-Apprenticeship">Enhancing Employability through Internship/Apprenticeship</a></li>
@@ -690,7 +482,7 @@
                 <div id="thm1-Apprenticeship" class="themes">
                   <div class="theme-subtitle">a) Enhancing Employability through Internship/Apprenticeship</div>
                   <span class="sub-theme">Status:</span>
-                  <ul class="sub-theme">
+                  <ul>
                     <li>
                       In collaboration with industries, the Directorate of Higher Education has initiated Academic-Industry Connect through which  Youth Employment Program for College students in the entire state has begun. Through this program, final year students in all disciplines are being trained for skills especially soft skills that are necessary for industries. 
                     </li>
@@ -700,7 +492,7 @@
                   </ul>
                   <br>
                   <div class="sub-theme">Strategies</div>
-                  <ul class="sub-theme">
+                  <ul>
                     <li>
                       Create opportunities for research internship for students and faculty with other HEIs, industries,  and research institutions.
                     </li>
@@ -720,6 +512,7 @@
                       Similarly, Established  Teaching , learning and Educational Technology departments in all Govt. Colleges, in the first phase.
                     </li>
                   </ul>
+                  <br>
                   <div class="sub-theme">Strategies:</div>
                   <ul>
                     <li>  
@@ -747,6 +540,7 @@
                       Majority  of the HEIs under DHE-Goa have A grade.
                     </li>
                   </ul>
+                  <br>
                   <div class="sub-theme">Strategies:</div>
                   <ul>
                     <li>  
@@ -769,7 +563,6 @@
                       Several HEIs in Goa have international students enrolled.
                     </li>
                   </ul>
-                  <br>
                   <br>
                   <div class="sub-theme">Strategies:</div>
                   <ul>
@@ -800,8 +593,10 @@
                     <li>
                       Govt. continues salary & non-salary grants to all HEIs in Goa.
                     </li>
+                    <li>
+                      Govt. of Goa has constituted several Committees for NEP implementation in the State of Goa. The Final Report for NEP implementation is under consideration.
+                    </li>
                   </ul>
-                  Govt. of Goa has constituted several Committees for NEP implementation in the State of Goa. The Final Report for NEP implementation is under consideration.
 
                   <br>
                   <div class="sub-theme">Strategies:</div>

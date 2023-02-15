@@ -1,13 +1,15 @@
 <?php
   $id = $_GET['jnhsdwmxifkd'];
   $title = "Initiatives";
-  
-  include 'data/initiatives.php';
-  foreach ($initiatives as $key => $value) {
-    if ($value == $id) {
-      $title_2 = $value['short_name'];
-    }
+  switch ($id) {
+    case 1 : $title_2 = 'Memorandum of Understanding'; break;
+    case 2 : $title_2 = 'Outcome-based Education'; break;
+    case 3 : $title_2 = 'Inspire to Aspire'; break;
+    case 4 : $title_2 = 'Academic Interface Programme'; break;
+    case 5 : $title_2 = 'DHE'; break;
+    case 6 : $title_2 = 'Training Internship and Placement'; break;
   }
+  
   require 'layout/top-header.php';
 ?>
 <body>
@@ -16,14 +18,14 @@
   require 'layout/header.php';
   $subtitle = "";
   require 'layout/site-map.php'; 
+  include 'data/initiatives.php';
 ?>
 <style>
  * {
     font-family: 'Roboto' !important;
   }
-  h2,
   p {
-    color: var(--greyReadableTextColor);
+    color: rgb(0, 0, 0);
   }
   .image.fit {
     margin: 0 !important;
@@ -245,35 +247,52 @@
                     <p style="line-height: 1.8; margin-top: 0pt; margin-bottom: 0pt;"><br><br><br></p>
                   
                   <?php  } else if ( $id == 6) {  ?>
-                    <h2>
-                      Unified TIP portal as per NEP for technical and non-technical colleges
-                    </h2>
-                    <p>
-                      As the NEP 2020 focuses on skill improvement and competency development of the students. Under NEP 2020, an industry- internship portal is getting developed by the software development team at GSHEC, DHE which will allow students to choose their internship through a single portal. The internship will be a part of the academic curriculum under NEP 2020. The objective of Unified TIP portal is to bridge the gap between the corporate requirements and student’s knowledge and skill sets.
-                    </p>
-                    <p>
-                      Some of the features are as follows :
-                    </p>
-                    <div class="list-inside">
-                      <ul>
-                        <li>
-                          It will provide Internship/Job opportunities to the students.
-                        </li>
-                        <li>
-                          Track Student related initiatives of the Colleges
-                        </li>
-                        <li>
-                          Generate Portfolio of the student
-                        </li>
-                        <li>
-                          Track Skill  of the Students
-                        </li>
-                        <li>
-                          Bridge Gap between skill set and Company Requirement
-                        </li>
 
-                      </ul>
-                    </div>
+                    <p style="line-height: 1.8; margin-top: 0pt; margin-bottom: 0pt; text-align: center;"><strong><span style="font-size: 14pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0); text-decoration: underline; text-decoration-skip-ink: none;">Installation of Training Internship and Placement (TIP) cell of</span><span style="font-size: 14pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0); text-decoration-skip-ink: none;"> <span style="color: rgb(0, 0, 0); text-decoration: underline;">Directorate</span> </span><span style="font-size: 14pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0); text-decoration: underline; text-decoration-skip-ink: none;">of Higher Education (DHE)</span></strong></p>
+                    <p style="line-height: 1.8; text-align: center; margin-top: 0pt; margin-bottom: 0pt; padding-left: 48px;"><strong><span style="font-size: 14pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0); text-decoration: underline; text-decoration-skip-ink: none;">Date : 8</span></strong><strong><span style="font-size: 14pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0); text-decoration: underline; text-decoration-skip-ink: none;"><sup>th</sup></span></strong><strong><span style="font-size: 14pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0); text-decoration: underline; text-decoration-skip-ink: none;"> September 2022 at 10:30a.m&nbsp;&nbsp;</span></strong></p>
+                    <p style="line-height: 1.8; text-align: center; margin-top: 0pt; margin-bottom: 0pt; padding-left: 48px;"><strong><span style="font-size: 14pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0); text-decoration: underline; text-decoration-skip-ink: none;">Venue: Multipurpose Hall, Directorate of Arts and Culture, Patto, Panaji</span></strong></p>
+                    <p style="line-height: 1.8; text-indent: 36pt; text-align: justify; margin-top: 12pt; margin-bottom: 0pt;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0);">Skill development and providing employment opportunities is one of the objectives under new National Education Policy (NEP 2020).&nbsp; This requires strengthening of&nbsp; Industry &ndash; Institute Interactions. Keeping this in mind the Directorate of Higher Education in association with Government colleges of Arts, Science and Commerce (Quepem, Sanquelim and Khandola) centrally organized first of its kind Job placement drive titled &lsquo;Inspire to Aspire&rsquo;. The placement drive was held at Government College of Arts, Science and Commerce, Quepem Goa during 19</span></strong><strong><span style="font-size: 33pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0);"><sup>th</sup></span></strong><strong><span style="font-size: 12pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0);"> - 22</span></strong><strong><span style="font-size: 33pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0);"><sup>nd</sup></span></strong><strong><span style="font-size: 12pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0);"> July 2022. The Job placement drive was for the BSc. final year students of Computer Science graduating in September 2022, across the state. In addition to students from Computer Science, few IT companies also agreed to interview students from Physics and Mathematics disciplines provided they have taken computer science courses during their first and second year of the UG program.</span></strong></p>
+                    <p style="line-height: 1.8; text-indent: 36pt; text-align: justify; margin-top: 12pt; margin-bottom: 0pt;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0);">The job placement drive consisted of training , pre-screening tests, interviews and final in-person interviews. Prior to the placement drive, students were&nbsp; trained&nbsp; in soft skills &amp; resume building at DHE on 18</span></strong><strong><span style="font-size: 33pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0);"><sup>th</sup></span></strong><strong><span style="font-size: 12pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0);"> July 2022. The resource person invited to deliver the sessions was Ms. Sarita D&rsquo;Souza among others.The training was provided to about 100 students of seven colleges across the state of Goa. The colleges include</span></strong></p>
+                    <p style="line-height: 1.8; text-align: justify; margin-top: 12pt; margin-bottom: 0pt; padding-left: 28px;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0);">a. Government College Sanquelim,</span></strong></p>
+                    <p style="line-height: 1.8; text-align: justify; margin-top: 12pt; margin-bottom: 0pt; padding-left: 28px;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0);">b. Government College Quepem,</span></strong></p>
+                    <p style="line-height: 1.8; text-align: justify; margin-top: 12pt; margin-bottom: 0pt; padding-left: 28px;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0);">c. Government College Khandola,</span></strong></p>
+                    <p style="line-height: 1.8; text-align: justify; margin-top: 12pt; margin-bottom: 0pt; padding-left: 28px;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0);">d. Dhempe College,</span></strong></p>
+                    <p style="line-height: 1.8; text-align: justify; margin-top: 12pt; margin-bottom: 0pt; padding-left: 28px;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0);">e. St. Xaviers College,</span></strong></p>
+                    <p style="line-height: 1.8; text-align: justify; margin-top: 12pt; margin-bottom: 0pt; padding-left: 28px;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0);">f. Dnyanprasarak Mandal&rsquo;s College and Research Center and</span></strong></p>
+                    <p style="line-height: 1.8; text-align: justify; margin-top: 12pt; margin-bottom: 0pt; padding-left: 28px;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0);">g. Parvatibai Chowgule College.</span></strong></p>
+                    <p style="line-height: 1.8; text-align: justify; margin-top: 12pt; margin-bottom: 0pt;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0);">&nbsp;</span></strong></p>
+                    <p style="line-height: 1.8; text-align: justify; margin-top: 0pt; margin-bottom: 0pt; padding-left: 18.6667px;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0);">The following nine companies participated in the drive namely,&nbsp;</span></strong></p>
+                    <p style="line-height: 1.8; text-align: justify; margin-top: 0pt; margin-bottom: 0pt;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0);">1. Open Destinations Infotech Pvt Ltd</span></strong></p>
+                    <p style="line-height: 1.8; text-align: justify; margin-top: 0pt; margin-bottom: 0pt;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0);">2. Zimetrics Technology Pvt Ltd</span></strong></p>
+                    <p style="line-height: 1.8; text-align: justify; margin-top: 0pt; margin-bottom: 0pt;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0);">3. Umang software</span></strong></p>
+                    <p style="line-height: 1.8; text-align: justify; margin-top: 0pt; margin-bottom: 0pt;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0);">4. Creative Capsule</span></strong></p>
+                    <p style="line-height: 1.8; text-align: justify; margin-top: 0pt; margin-bottom: 0pt;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0);">5. Tangentia</span></strong></p>
+                    <p style="line-height: 1.8; text-align: justify; margin-top: 0pt; margin-bottom: 0pt;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0);">6. Helix Tech Pvt Ltd</span></strong></p>
+                    <p style="line-height: 1.8; text-align: justify; margin-top: 0pt; margin-bottom: 0pt;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0);">7. Anant Info Media Pvt Ltd</span></strong></p>
+                    <p style="line-height: 1.8; text-align: justify; margin-top: 0pt; margin-bottom: 0pt;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0);">8. Genora Infotech Pvt Ltd</span></strong></p>
+                    <p style="line-height: 1.8; text-align: justify; margin-top: 0pt; margin-bottom: 0pt;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0);">9. Webware.io</span></strong></p>
+                    <p style="line-height: 1.8; text-align: justify; margin-top: 0pt; margin-bottom: 0pt;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0);">&nbsp;</span></strong></p>
+                    <p style="line-height: 1.8; text-align: justify; margin-top: 0pt; margin-bottom: 0pt;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0);">The IT companies participating in the drive interviewed students for software developer trainee, software testing, UI/UX developers, analysts, among other positions.A panel discussion between DHE officials and participating IT companies was conducted during the placement drive. The discussion focused on meeting goals of NEP with the Academia-Industry connect. The panelists spoke about the initiatives which could be taken to enhance the skills among students so that the students can be industry ready by the time they graduate. The session also focused on including internships for students in general graduation education courses to enhance the work experience among the students.</span></strong></p>
+                    <p style="line-height: 1.2; text-align: justify; margin-top: 12pt; margin-bottom: 12pt;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0);">&nbsp;</span></strong></p>
+                    <p style="line-height: 1.8; text-align: justify; margin-top: 12pt; margin-bottom: 12pt;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0);">&nbsp;This job placement drive was highly successful where, nearly 50% of the 60 students who registered for the placement drive were offered jobs.&nbsp;&nbsp;</span></strong></p>
+                    <p style="line-height: 1.8; text-align: justify; margin-top: 12pt; margin-bottom: 12pt;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0);">&nbsp;</span></strong></p>
+                    <p style="line-height: 1.8; text-align: justify; margin-top: 0pt; margin-bottom: 0pt;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0);">Additionally, DHE signed an MOU with Tata Consultancy Services (TCS) for implementing the company&rsquo;s </span></strong><strong><span style="font-size: 12pt; font-family: 'Times New Roman'; color: rgb(34, 34, 34);">Youth Employment Program (YEP) for college students offered under their CSR initiatives. </span></strong><strong><span style="font-size: 12pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0);">This program was launched in 2021 and has successfully completed one year. It is aimed at strengthening the skills of college students so that they&nbsp; are well equipped to carry out the roles and responsibilities in their career life. The key competencies targeted through this program include numerical ability, logical reasoning, communication, programming, and domain skills, along with providing career guidance and interview skills.The course content comprises of around 100 hours of training spread over 90 days during the academic year. The trainers for this program consisted of the team constituted by the TCS out of their employees.</span></strong></p>
+                    <p style="line-height: 1.2; text-align: justify; margin-top: 12pt; margin-bottom: 12pt;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0);">&nbsp;</span></strong></p>
+                    <p style="line-height: 1.8; text-align: justify; margin-top: 12pt; margin-bottom: 12pt;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0);">In another CSR initiative , DHE has already started collaborating with SkillsBuild program by IBM, which aims at providing job seekers role based skills, Job essential &amp; professional Skills , Web Developers and essential skills for small business owners. It promises to build entrepreneurs and hands-on projects to facilitate employment to the skillsbuild learners. This project is commencing by September end.</span></strong></p>
+                    <p style="line-height: 1.8; text-align: justify; margin-top: 12pt; margin-bottom: 12pt;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0);">&nbsp;</span></strong></p>
+                    <p style="line-height: 1.8; text-align: justify; margin-top: 12pt; margin-bottom: 12pt;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0);">For continuing collaboration with the Industry to skill and train students from all Higher Education Institutes and to prepare students to be Industry ready, DHE installed the Training Internship and Placement (TIP) cell at the function today. All future Institute -Industry interactions&nbsp; and Job placement drives will be executed through this TIP cell of DHE.</span></strong></p>
+                    <p style="line-height: 1.8; text-align: justify; margin-top: 12pt; margin-bottom: 12pt;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0);">&nbsp;</span></strong></p>
+                    <p style="line-height: 1.8; text-align: justify; margin-top: 12pt; margin-bottom: 12pt;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0); text-decoration: underline; text-decoration-skip-ink: none;">On the Dais&nbsp;</span></strong></p>
+                    <p style="line-height: 1.8; text-align: justify; margin-top: 12pt; margin-bottom: 12pt; padding-left: 48px;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0);">1. Hon&rsquo;ble Chief Minister - Dr. Pramod Sawant</span></strong></p>
+                    <p style="line-height: 1.8; text-align: justify; margin-top: 12pt; margin-bottom: 12pt; padding-left: 48px;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0);">2. Secretary ( Education) - Shri Ravi Dhawan , IAS</span></strong></p>
+                    <p style="line-height: 1.8; text-align: justify; margin-top: 12pt; margin-bottom: 12pt; padding-left: 48px;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0);">3. Director, DHE - Shri Prasad Lolayekar , IAS</span></strong></p>
+                    <p style="line-height: 1.8; text-align: justify; margin-top: 12pt; margin-bottom: 12pt; padding-left: 48px;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0);">4. TIP coordinator, State Higher Education Council, DHE - Prof Niyan Marchon</span></strong></p>
+                    <p style="line-height: 1.8; text-align: justify; margin-top: 12pt; margin-bottom: 12pt; padding-left: 48px;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0);">5. Industry Representative - Mr. Milind Anvekar,</span></strong></p>
+                    <p style="line-height: 1.8; text-align: justify; margin-top: 12pt; margin-bottom: 12pt;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0);">&nbsp;</span></strong></p>
+                    <p style="line-height: 1.8; text-align: justify; margin-top: 12pt; margin-bottom: 12pt;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0);">&nbsp;</span></strong></p>
+                    <p style="line-height: 1.2; text-align: justify; margin-top: 12pt; margin-bottom: 12pt;"><strong><span style="font-size: 14.5pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0);">&nbsp;</span></strong></p>
+                    <p style="line-height: 1.2; text-align: justify; margin-top: 12pt; margin-bottom: 12pt;"><strong><span style="font-size: 12pt; font-family: 'Times New Roman'; color: rgb(0, 0, 0);">&nbsp;</span></strong></p>
+                    <p style="line-height: 1.8; margin-top: 0pt; margin-bottom: 0pt; text-align: center;"><br><br><br></p>
 
                   <?php } ?>
 

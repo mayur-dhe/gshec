@@ -31,8 +31,8 @@
           <!-- <h5>1.</h5> -->
           <div class="row align-justify pt-30 text-black">
         
-            <div class="col-md-7">
-              <ul class="list-number">
+            <div class="col-md-7 list-number">
+              <ul>
                 <li>
                   recognizing, identifying, and fostering the unique capabilities of each student, by sensitizing teachers as well as parents to promote each student’s holistic development in both academic and non-academic spheres. 
                 </li>

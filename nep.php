@@ -28,11 +28,11 @@
               The core of new National Education Policy (NEP) 2020 is to develop a Learner-centric education system that will provide quality and truly holistic education for all-round  growth of Learners. Looking at the successful institutions that make at the top of the World Rankings, two common features emerge: 
               <br>
               <div class="pl-20">
-                  <strong>
-                    <ol class="list-number">
-                      <li>They are all research institutions, and </li>
-                      <li>They are large in terms of student population, often with more than 10,000 students on a single campus, and providing UG, PG, and PhD programs on a single campus.</li>
-                    </ol>
+                <strong class="list-number">
+                  <ol>
+                    <li>They are all research institutions, and </li>
+                    <li>They are large in terms of student population, often with more than 10,000 students on a single campus, and providing UG, PG, and PhD programs on a single campus.</li>
+                  </ol>
                   <br>
                 </strong>
               </div>
@@ -46,8 +46,8 @@
             </div>
             <div class="col-md-5">
               <h5>Resources</h5>
-              <div class="pl-20">
-                <ul class="list-number-decimal">
+              <div class="pl-20 list-number">
+                <ol>
                   <?php 
                     if ($linksData && $linksData['code']=='200') {
                       foreach ($linksData['data'] as $key => $value) { 
@@ -61,10 +61,10 @@
                 <?php   
                     }
                 ?>
-                </ul>
+                </ol>
               </div>
 
-              <img src="assets/images/nep/action-plan/uucms.jpg" alt="UUCMS">
+              <img class="py-40" src="assets/images/nep/action-plan/uucms.jpg" alt="UUCMS">
             </div>
           </div>
         </div>

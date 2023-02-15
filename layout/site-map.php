@@ -32,8 +32,11 @@
         </div>
     </div>
 </section>
-<h3 class="page-title"><?php echo $subtitle;?></h3>
-
+<?php 
+    if ($subtitle) {
+        echo '<h3 class="page-title">'.$subtitle.'</h3>';
+    }
+?>
 <div class="heading-div header-text" id="top">
     nav scroller
 </div>

@@ -25,22 +25,17 @@
               foreach ($initiatives as $key => $value) {
             ?>
               <div class="col-lg-4">
-                <a href="initiative?jnhsdwmxifkd=<?php echo $value['id']?>">
+                <a href="initiative.php?jnhsdwmxifkd=<?php echo $value['id']?>">
                   <div class="meeting-item">
                     <div class="thumb">
-                      <div class="price">
-                        <!-- <span>$22.00</span> -->
-                      </div>
                       <img src="<?php echo $value['cover_image'];  ?>" alt="MOU">
                     </div>
-                    <div class="down-content">
-                      <!-- <div class="date">
-                        <h6>Nov <span>10</span></h6>
-                      </div> -->
-                      <h4>
+                    <div class="down-content align-center">
+                      <h4><?php echo $value['short_name'] ?></h4>
+                      <!-- <h4>
                         <?php echo concat_string($value['title']);?>
                         <span class="know_more">Read More</span>
-                      </h4>
+                      </h4> -->
                     </div>
                   </div>
                 </a>

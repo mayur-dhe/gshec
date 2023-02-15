@@ -28,14 +28,14 @@
 
         <div class="col-lg-12">
           <div class="row grid">
-            <div class="col-lg-12 templatemo-item-col all chart" id="chart">
+            <div class="col-lg-12 all chart" id="chart">
               <h2 style="color:black; text-align:center;font-weight: 600;padding: 20px 100px;">Organization Chart</h2>
               <div class="image fit">
                 <img src="<?php echo $org_chart['image']?>" alt="<?php echo $org_chart['alt']?>" style="object-fit: contain;" />
               </div>
             </div>
 
-            <div class="col-lg-12 templatemo-item-col all members council d-none" id="members">
+            <div class="col-lg-12 all members council d-none" id="members">
               <h2 style="color:black; text-align:center;font-weight: 600;padding: 20px 100px;">Council Members</h2>
               <div class="row gy-4">
                 <?php 
