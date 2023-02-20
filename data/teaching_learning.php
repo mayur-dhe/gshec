@@ -1,5 +1,11 @@
 <?php
 
+    $tabs = [
+        'About',
+        'FDP on Outcome Based Education',
+        'MOOCs',
+    ];
+
     $teaching_learning = [
         'Create the state-of-the-art learning infrastructure.',
         'To take appropriate measures for promoting innovations in teaching-learning process and inter-disciplinary studies and research.',
@@ -18,35 +24,179 @@
         'title' => 'Teaching, Learning and Educational Technology',
         'data' => array(
             array(
-                'url' => 'assets/images/teaching-learning-education/img-1.jpeg',
+                'type' => 'mooc',
+                'url' => 'assets/images/tle/mooc/img-1.jpeg',
                 'alt' => '',
             ),
             array(
-                'url' => 'assets/images/teaching-learning-education/img-2.jpeg',
+                'type' => 'mooc',
+                'url' => 'assets/images/tle/mooc/img-2.jpeg',
                 'alt' => '',
             ),
             array(
-                'url' => 'assets/images/teaching-learning-education/img-3.jpeg',
+                'type' => 'mooc',
+                'url' => 'assets/images/tle/mooc/img-3.jpeg',
                 'alt' => '',
             ),
             array(
-                'url' => 'assets/images/teaching-learning-education/img-4.jpeg',
+                'type' => 'mooc',
+                'url' => 'assets/images/tle/mooc/img-4.jpeg',
                 'alt' => '',
             ),
             array(
-                'url' => 'assets/images/teaching-learning-education/img-5.jpeg',
+                'type' => 'mooc',
+                'url' => 'assets/images/tle/mooc/img-5.jpeg',
                 'alt' => '',
             ),
             array(
-                'url' => 'assets/images/teaching-learning-education/img-6.jpeg',
+                'type' => 'mooc',
+                'url' => 'assets/images/tle/mooc/img-6.jpeg',
                 'alt' => '',
             ),
             array(
-                'url' => 'assets/images/teaching-learning-education/img-7.jpeg',
+                'type' => 'mooc',
+                'url' => 'assets/images/tle/mooc/img-7.jpeg',
                 'alt' => '',
             ),
             array(
-                'url' => 'assets/images/teaching-learning-education/img-8.jpeg',
+                'type' => 'mooc',
+                'url' => 'assets/images/tle/mooc/img-8.jpeg',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'mooc',
+                'url' => 'assets/images/tle/mooc/img-9.jpeg',
+                'alt' => '',
+            ),
+            // 2
+            array(
+                'type' => 'obe',
+                'url' => 'assets/images/tle/obe/img-1.jpg',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'obe',
+                'url' => 'assets/images/tle/obe/img-2.jpg',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'obe',
+                'url' => 'assets/images/tle/obe/img-3.jpg',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'obe',
+                'url' => 'assets/images/tle/obe/img-4.jpg',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'obe',
+                'url' => 'assets/images/tle/obe/img-5.jpg',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'obe',
+                'url' => 'assets/images/tle/obe/img-6.jpg',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'obe',
+                'url' => 'assets/images/tle/obe/img-7.jpg',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'obe',
+                'url' => 'assets/images/tle/obe/img-8.jpg',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'obe',
+                'url' => 'assets/images/tle/obe/img-9.jpg',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'obe',
+                'url' => 'assets/images/tle/obe/img-10.jpg',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'obe',
+                'url' => 'assets/images/tle/obe/img-11.jpg',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'obe',
+                'url' => 'assets/images/tle/obe/img-12.jpg',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'obe',
+                'url' => 'assets/images/tle/obe/img-13.jpg',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'obe',
+                'url' => 'assets/images/tle/obe/img-14.jpg',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'obe',
+                'url' => 'assets/images/tle/obe/img-15.jpg',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'obe',
+                'url' => 'assets/images/tle/obe/img-16.jpg',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'obe',
+                'url' => 'assets/images/tle/obe/img-17.jpg',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'obe',
+                'url' => 'assets/images/tle/obe/img-18.jpg',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'obe',
+                'url' => 'assets/images/tle/obe/img-19.jpg',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'obe',
+                'url' => 'assets/images/tle/obe/img-20.jpg',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'obe',
+                'url' => 'assets/images/tle/obe/img-21.jpg',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'obe',
+                'url' => 'assets/images/tle/obe/img-22.JPG',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'obe',
+                'url' => 'assets/images/tle/obe/img-23.JPG',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'obe',
+                'url' => 'assets/images/tle/obe/img-24.jpg',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'obe',
+                'url' => 'assets/images/tle/obe/img-25.jpg',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'obe',
+                'url' => 'assets/images/tle/obe/img-26.jpg',
                 'alt' => '',
             ),
         ),

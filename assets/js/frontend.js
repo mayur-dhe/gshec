@@ -23,6 +23,15 @@ function openTabSection(evt, selectedTab)
 document.getElementById("defaultOpen").click();
 
 
+// show more list)-----------------------------------------------------------------------------
+function showMore() {
+    $(".list_items").toggleClass("d-none");
+}
+function showMoreSalient() {
+    $(".list_items_salient").toggleClass("d-none");
+}
+
+
 // Show/Hide Text (read More)-----------------------------------------------------------------------------
 // Create Variables
 var allOSB = [];
@@ -91,3 +100,4 @@ function updateHeight(el) {
 function insertAfter(referenceNode, newNode) {
     referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
 }
+// -----------------------------------------------------------------------------

@@ -143,8 +143,8 @@
         ),
         array(
             'id' => 16,
-            'name' => 'fifteen members co-opted by the Council who are persons of scholarly pursuit, out of which minimum five should be from outside the State',
-            'designation' => '',
+            'name' => '',
+            'designation' => 'fifteen members co-opted by the Council who are persons of scholarly pursuit, out of which minimum five should be from outside the State',
             'title' => 'Member',
             'remark' => 'Not yet nominated',
             'desc' => '',
@@ -152,8 +152,8 @@
         ),
         array(
             'id' => 17,
-            'name' => 'One nominee of the Government of India to be nominated by the Ministry of Human Resource Development',
-            'designation' => '',
+            'name' => '',
+            'designation' => 'One nominee of the Government of India to be nominated by the Ministry of Human Resource Development',
             'title' => 'Member',
             'remark' => 'Not yet nominated',
             'desc' => '',

@@ -15,7 +15,6 @@
     background-image: url(assets/images/nep/nep4.jpg);
     padding-bottom: 400px;
   }
-
 </style>
   <!-- ------------- Main Content Start---------------------- -->
   <section class="page-section">
@@ -23,7 +22,7 @@
       <div class="row">
         <div class="col-lg-12">
           <h4 class="innerpage-title">About NEP</h4>
-          <div class="row align-justify pt-30 text-black">
+          <div class="row text-align-justify pt-30 textColor-black">
             <div class="col-md-7">
               The core of new National Education Policy (NEP) 2020 is to develop a Learner-centric education system that will provide quality and truly holistic education for all-round  growth of Learners. Looking at the successful institutions that make at the top of the World Rankings, two common features emerge: 
               <br>

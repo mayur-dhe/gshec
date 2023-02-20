@@ -58,13 +58,13 @@
         array(
             'name' => 'Gargi S. Prabhu',
             'designation' => 'Assistant Professor',
-            'role' => '',
+            'role' => 'Soatware Analyst',
             'image' => 'assets/images/team/Gargi S. Prabhu.jpg'
         ),
         array(
             'name' => 'Vinita V. Korgaonkar',
             'designation' => 'Assistant Professor',
-            'role' => '',
+            'role' => 'Soatware Analyst',
             'image' => 'assets/images/team/Vinita Korgaonkar.jpg'
         ),
         array(

@@ -39,13 +39,13 @@
             height: 100%;
         }
         
-        .text-black li strong,
-        .text-black li,
-        .text-black h2,
-        .text-black h3,
-        .text-black h4,
-        .text-black h5,
-        .text-black p {
+        .textColor-black li strong,
+        .textColor-black li,
+        .textColor-black h2,
+        .textColor-black h3,
+        .textColor-black h4,
+        .textColor-black h5,
+        .textColor-black p {
             color: #363636;
         }
 

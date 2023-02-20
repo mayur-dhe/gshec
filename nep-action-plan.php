@@ -31,7 +31,7 @@
 
 
           <h4 class="innerpage-title">Higher Education (Goa)</h4>
-          <div class="row align-justify sub-title-font pt_30_for_h5 pl_40_for_row text-black">
+          <div class="row text-align-justify sub-title-font pt_30_for_h5 pl_40_for_row textColor-black">
             <h5 class="col-md-10">1. Karnataka system of KLMS and UUCMS (Unified University & College Mgt. System) to be adopted.</h5>
             <div class="row">
               <div class="col-12 col-md-8 col-lg-7 list-inside">

@@ -56,6 +56,7 @@ reset
   --bgBlackShade2:#000000e8;
   --bgBlackShade2Hover:#67676759;
   --bgTransparent:#00000000;
+  --bgTransparent1:#00000082;
 }
 
 
@@ -94,8 +95,8 @@ html[xmlns] .clearfix {
 * {
   color:var(--white);
 }
-.text-black *,
-.text-black {
+.textColor-black *,
+.textColor-black {
   color: var(--greyReadableTextColor) !important;
 }
 
@@ -1817,7 +1818,7 @@ section.meetings-page {
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 40px; /* 140px; */
-  padding-bottom: 0px;
+  padding-bottom: 40px;
 }
 body, .body {
   padding-top: 0;
@@ -2298,7 +2299,7 @@ responsive
 } 
 @media (min-width: 1400px) {
   .header-area .main-nav .nav {
-    /* width: 1164px; */
+    width: 1164px;
   }
 } 
 /* social media links */
@@ -2352,16 +2353,21 @@ responsive
   z-index: 100;
 }
 
+
+
 /* ------ Tab CSS Start---------------------- */
 /* Style the tab */
 .tab {
-  background-color: var(--bgBlackShade2);
+  background-color: #f2f2f2;
   position: sticky;
   top: 80px;
   float: left;
   width: 22%;
   border-radius: 17px;
   margin-top: -124px;
+  box-shadow: 4px 3px 0px 0px rgb(0 0 0 / 14%);
+  /* -webkit-box-shadow: 4px 3px 0px 0px rgb(0 0 0 / 14%); */
+  -moz-box-shadow: 4px 3px 0px 0px rgba(0,0,0,0.14);
 }
 /* Style the buttons inside the tab */
 .tab button {
@@ -2373,25 +2379,26 @@ responsive
   text-align: left;
   cursor: pointer;
   transition: 0.3s;
-  font-size: 1.2rem;;
+  font-size: 1rem;
+  color: var(--greyReadableTextColor) !important;
+  /* color: #000 !important; */
 }
 .tab button.title {
   font-size: 1.4rem;
   padding: 30px 20px;
   margin-bottom: 30px;
-  color: var(--yellow);
-  border-bottom: 1px solid white;
+  color: var(--yellow) !important;
+  border-bottom: 3px solid #dbdbdb;
 }
 /* Change background color of buttons on hover */
 .tab button:hover {
-  color: var(--yellow);
+  color: var(--yellow) !important;
   border-radius: 17px;
   border-bottom: 1px solid;
 }
 /* Create an active/current tab button */
 .tab button.active {
-  color:var(--yellow);
-  font-weight: 500;
+  color:var(--yellow) !important;
 }
 /* Style the tab content */
 .tabcontent {
@@ -2414,6 +2421,9 @@ responsive
   color: var(--yellow) !important;
   font-size: 2.2rem;
   font-weight: 600;
+  padding-top: 30px;
+  margin-bottom: 20px;
+  text-align: inherit;
 }
 .tabcontent>h4 {
   margin-top: -38px;
@@ -2452,21 +2462,30 @@ responsive
   transition: 0.3s;
   height: 100%;
 }
-
+.listing-box,
 .features .feature-box {
   padding: 5px 20px;
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
   transition: 0.3s;
   height: 100%;
 }
-
+.listing-box {
+  background-color: var(--white);
+}
+.listing-box h3,
 .features .feature-box h3 {
   font-size: 18px;
   color: #322c2c;
   font-weight: 500;
   margin: 0.5rem 0;
 }
-
+.listing-box-center {
+  text-align: center !important;
+}
+.listing-box img {
+  height: 40px;
+  width: auto;
+}
 .features .feature-box i {
   line-height: 0;
   background: #ecf3ff;
@@ -2476,16 +2495,13 @@ responsive
   border-radius: 3px;
   transition: 0.3s;
 }
-
 .features .feature-box:hover i {
   background: #4154f1;
   color: var(--white);
 }
-
 .features .feture-tabs {
   margin-top: 120px;
 }
-
 .features .feture-tabs h3 {
   color: #012970;
   font-weight: 700;
@@ -2635,7 +2651,7 @@ responsive
 }
 
 .team {
-  background: #404540;
+  background: #fff;
   padding: 60px 50px;
 }
 
@@ -2718,14 +2734,14 @@ responsive
 .council .member .member-info h4 {
   font-weight: 700;
   margin-bottom: 5px;
-  font-size: 20px;
+  font-size: 14px;
   color: #012970;
 }
 
 .team .member .member-info span,
 .council .member .member-info span {
   display: block;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
   color: #605858;
 }
@@ -2733,7 +2749,7 @@ responsive
 .team .member .member-info p,
 .council .member .member-info p {
   color: #1c1c1c;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
   padding: 0;
   line-height: 26px;
@@ -2800,6 +2816,7 @@ responsive
   position: relative;
   overflow: hidden;
   height: 300px;
+  border-radius: 5px;
 }
 .profile-thumb-gradient,
 .profile-thumb-img {
@@ -2815,7 +2832,7 @@ responsive
 .profile-thumb-anim {
   margin-top: auto;  /* pushes all content to bottom */
   position: relative;
-  transition: 0.5s;
+  transition: 0.5s ease-in;
   transform: translateY(100%);
 }
 .profile-thumb-anim,
@@ -2825,14 +2842,14 @@ responsive
 }
 .profile-thumb-title {
   text-transform: uppercase;
-  padding: 12px 20px 0px;
-  height: 4rem;
-  transition: 0.5s;
+  padding: 12px 20px 12px;
+  height: 5rem;
+  transition: 0.5s ease-in;
   transform: translateY(-100%);
 }
 .profile-thumb-description {
   padding: 1px 20px;
-  transition: 0.5s;
+  transition: 0.5s ease-in;
   opacity: 0;
   flex: 1;
 }
@@ -2842,6 +2859,9 @@ responsive
   padding: 1px 20px 10px;
 }
 /* ANIMATE */
+.profile-thumb:hover {
+  cursor: pointer;
+}
 .profile-thumb:hover .profile-thumb-anim {
   transform: translateY(0);
 }
@@ -2850,6 +2870,7 @@ responsive
 }
 .profile-thumb:hover .profile-thumb-description {
   opacity: 1;
+  height:210px;
 }
 /* Team Profile */
 
@@ -2886,7 +2907,7 @@ responsive
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 5vw);
-  grid-gap: 1.5rem; 
+  grid-gap: 0.2rem; 
 }
 /* childs */
 .gallery__img {
@@ -2981,7 +3002,7 @@ responsive
 /* Projects  */
 .projects {
   width: 100%;
-  background-color: #3f464061;
+  background-color: #000000;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -3140,7 +3161,7 @@ hr:not([size]) {
     color: blue;
 }
 
-.align-justify * {
+.text-align-justify * {
   text-align: justify !important;
 }
 /* logo alignment */
@@ -3190,6 +3211,11 @@ hr {
   font-weight: 600;
 }
 
+.pdf-ref {
+  font-weight: 600 !important;
+  color: red !important;
+}
+
 .themes ul>li {
   list-style: circle;
 }
@@ -3213,8 +3239,21 @@ hr {
 .text-upper {
   text-transform: uppercase;
 }
+
+.textFont-14 {
+  font-size: 14px !important;
+}
+.fontWt-6 {
+  font-weight: 600;
+}
 .p0 {
   padding: 0 !important;
+}
+.p10 {
+  padding: 10px !important;
+}
+.p15 {
+  padding: 15px !important;
 }
 .p40 {
   padding: 40 !important;
@@ -3222,7 +3261,6 @@ hr {
 .pt-100 {
   padding: 100px 0;
 }
-
 .pt-10 {
   padding: 10 !important;
 }
@@ -3232,7 +3270,6 @@ hr {
 .pt-30 {
   padding-top: 30px;
 }
-
 .pl-10 {
   padding-left: 10px;
 }
@@ -3242,17 +3279,18 @@ hr {
 .pl-25 {
   padding-left: 25px;
 }
+.pb-20 {
+  padding-bottom: 20px;
+}
 .pl-30 {
   padding-left: 4                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     0px;
 }
-
 .py-10 {
   padding-top: 10px;
 }
 .py-40 {
   padding: 40px 0;
 }
-
 .pt_30_for_h5 h5 {
   padding-top: 30px;
 }
@@ -3263,7 +3301,6 @@ hr {
 .pl_40_for_row .row {
   padding-left: 40px;
 }
-
 .p_inner_div {
   padding: 20px 120px;
 }
@@ -3276,9 +3313,33 @@ hr {
 .p_inner_div_3 {
   padding: 40px !important;
 }
-.m-auto {
+
+.m_auto {
   margin:auto;
 }
+.m_0 {
+  margin: 0 0;
+}
+.m_5 {
+  margin: 5px !important;
+}
+.m_10 {
+  margin: 10px !important;
+}
+.mb_0 {
+  margin-bottom: 0 !important;
+}
+.mb_20 {
+  margin-bottom: 20px !important;
+}
+
+.ht_230 {
+  height:230px !important;
+}
+.ht_250 {
+  height:250px !important;
+}
+
 .list ul>li {
   list-style: auto !important;
 }
@@ -3319,7 +3380,85 @@ hr {
   transform: scale(1.04);
 }
 /* card design pdf */
+.box-shadow-left-32,
+.box-shadow-32,
+.box-shadow-43 {
+  border-radius: 10px;
+  padding: 0 10px;
+}
+.box-shadow-43 {
+  box-shadow: 4px 3px 0px 0px rgb(0 0 0 / 66%);
+  /* -webkit-box-shadow: 4px 3px 0px 0px rgb(0 0 0 / 66%); */
+  -moz-box-shadow: 4px 3px 0px 0px rgba(0,0,0,0.66);
+}
+.box-shadow-32 {
+  border-radius: 10px;
+  box-shadow: 3px 2px 0px 0px rgb(0 0 0 / 66%);
+  /* -webkit-box-shadow: 3px 2px 0px 0px rgb(0 0 0 / 66%); */
+  -moz-box-shadow: 3px 2px 0px 0px rgba(0,0,0,0.66);
+}
+.box-shadow-left-32 {
+  border-radius: 10px;
+  box-shadow: -3px 2px 0px 0px rgb(0 0 0 / 66%);
+  /* -webkit-box-shadow: 3px 2px 0px 0px rgb(0 0 0 / 66%); */
+  -moz-box-shadow: 3px 2px 0px 0px rgba(0,0,0,0.66);
+}
 
+.ibm-courses {
+  padding: 20px;
+  font-size: 11px;
+}
+.ibm-course-title {
+  font-size: 14px !important;
+}
+.ibm-courses hr.title {
+  height: 2px;
+  width: inherit;
+  color: #f00 !important;
+  margin: 0 0 13px
+}
+.ibm-courses hr.subtitle {
+  height: 2px;
+  width: inherit;
+  color: #08f !important;
+  margin: 0 0 13px
+}
+
+.center-vertical {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.customHeight {
+  height:230px !important;
+  width: auto;
+}
+.customWidth {
+  width: 399px;
+  padding: 0;
+  margin: 0;
+}
+.img-float-right {
+  float: right;
+  margin: 5px 10px 5px 5px;
+  height: 130px;
+  width: auto;
+  object-fit: cover;
+}
+
+.float_left {
+  float: left;
+}
+.height_130 {
+  min-height: 130px;
+}
+
+.height_60 {
+  min-height: 60px;
+}
 .shape-triangle {
   width: 100%;
   height: 0%;
@@ -3327,6 +3466,12 @@ hr {
   border-style: solid;
   border-width: 10px 0 10px 20px;
   border-color: transparent transparent transparent #ff0000;
+}
+.shape-round {
+  width: 50px;
+  height: 50px;
+  background: red;
+  border-radius: 50%  
 }
 .announcement {
   position: absolute;

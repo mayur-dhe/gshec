@@ -26,7 +26,7 @@
             <?php 
               foreach ($council_members as $key => $value) {
             ?>
-              <div class="col-lg-3 col-md-6 d-flex align-items-stretch council m-auto" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-3 col-md-6 d-flex align-items-stretch council m_auto" data-aos="fade-up" data-aos-delay="100">
                 <div class="member">
                   <div class="member-img">
                     <img src="<?php echo $value['image']?>" class="img-fluid" alt="<?php echo $value['name']?>">

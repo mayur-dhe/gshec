@@ -29,7 +29,7 @@
         <div class="col-lg-12">
           <h4 class="innerpage-title">Salient features of NEP 2020 for higher education</h4>
           <!-- <h5>1.</h5> -->
-          <div class="row align-justify pt-30 text-black">
+          <div class="row text-align-justify pt-30 textColor-black">
         
             <div class="col-md-7 list-number">
               <ul>

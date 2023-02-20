@@ -2,45 +2,43 @@
 
     $initiatives = [
         array(
-            'id' => 5,
+            'id' => 1,
             'title' => 'DHE collaboration with IBM',
             'short_name' => 'IBM Initiative',
             'cover_image' => 'assets/images/empty.jpg',
         ),
         array(
-            'id' => 1,
+            'id' => 2,
             'title' => 'The State Higher Education Council, Directorate of Higher Education signs a Memorandum of Understanding (MoU) with 1) NAVGURUKUL FOUNDATION FOR SOCIAL WELFARE 2)NEWTON SCHOOL 3) Be Unlu 4) Entri',
             'short_name' => 'MoU with National Startup',
             'cover_image' => 'assets/images/initiatives/initiative1 MoU.JPG',
         ),
         array(
-            'id' => 4,
+            'id' => 3,
             'title' => 'Academic Interface Programme (AIP)  by TCS” ',
             'short_name' => 'TCS Initiative for Banking',
             'cover_image' => 'assets/images/initiatives/Initiative 4 AIP.jpg',
         ),
         array(
-            'id' => 6,
+            'id' => 4,
             'title' => 'Installation of Training Internship and Placement (TIP) cell',
             'short_name' => 'TIP Unified Portal ',
             'cover_image' => 'assets/images/initiatives/initiative 6 TIP.jpg',
         ),
-        array(
-            'id' => 2,
-            'title' => 'Faculty Development Programme (FDP) on “Outcome-based Education” ',
-            'short_name' => 'Faculty Development Programme',
-            'cover_image' => 'assets/images/initiatives/Initiative 2 OBE.jpg',
-        ),
-        array(
-            'id' => 3,
-            'title' => 'Job placement drive titled “Inspire to Aspire” ',
-            'short_name' => 'Inspire to Aspire',
-            'cover_image' => 'assets/images/initiatives/initiative 3 Inspire to Aspire.jpg',
-        ),
     ];
 
-
-    // 1
+    // images
+    // 1 
+    $dhe = [
+        'title' => 'DHE',
+        'data' => array(
+            array(
+                'url' => 'assets/images/empty.jpg',
+                'alt' => '',
+            ),
+        ),
+    ];
+    // 2
     $mou_images = [
         'title' => 'Memorandum of Understanding',
         'data' => array(
@@ -122,82 +120,7 @@
             ),
         ),
     ];
-
-    // 2 
-    $obe = [
-        'title' => 'Outcome-Based Education',
-        'data' => array(
-            array(
-                'url' => 'assets/images/initiatives/obe/img-1.jpg',
-                'alt' => '',
-            ),
-            array(
-                'url' => 'assets/images/initiatives/obe/img-2.jpg',
-                'alt' => '',
-            ),
-            array(
-                'url' => 'assets/images/initiatives/obe/img-3.jpg',
-                'alt' => '',
-            ),
-            array(
-                'url' => 'assets/images/initiatives/obe/img-4.jpg',
-                'alt' => '',
-            ),
-            array(
-                'url' => 'assets/images/initiatives/obe/img-5.jpg',
-                'alt' => '',
-            ),
-            array(
-                'url' => 'assets/images/initiatives/obe/img-6.jpg',
-                'alt' => '',
-            ),
-            array(
-                'url' => 'assets/images/initiatives/obe/img-7.jpg',
-                'alt' => '',
-            ),
-            array(
-                'url' => 'assets/images/initiatives/obe/img-8.jpg',
-                'alt' => '',
-            ),
-            array(
-                'url' => 'assets/images/initiatives/obe/img-9.jpg',
-                'alt' => '',
-            ),
-            array(
-                'url' => 'assets/images/initiatives/obe/img-10.jpg',
-                'alt' => '',
-            ),
-            array(
-                'url' => 'assets/images/initiatives/obe/img-11.jpg',
-                'alt' => '',
-            ),
-            array(
-                'url' => 'assets/images/initiatives/obe/img-12.jpg',
-                'alt' => '',
-            ),
-            array(
-                'url' => 'assets/images/initiatives/obe/img-13.jpg',
-                'alt' => '',
-            ),
-            array(
-                'url' => 'assets/images/initiatives/obe/img-14.jpg',
-                'alt' => '',
-            ),
-        ),
-    ];
-
-    // 3 
-    $job_drive = [
-        'title' => 'Job Placement Drive',
-        'data' => array(
-            array(
-                'url' => 'assets/images/initiatives/job_drive/img.jpg',
-                'alt' => '',
-            ),
-        ),
-    ];
-
-    // 4
+    // 3
     $aip = [
         'title' => 'Academic Interface Programme',
         'data' => array(
@@ -207,19 +130,7 @@
             ),
         ),
     ];
-
-    // 5 
-    $dhe = [
-        'title' => 'DHE',
-        'data' => array(
-            array(
-                'url' => 'assets/images/empty.jpg',
-                'alt' => '',
-            ),
-        ),
-    ];
-
-    // 6
+    // 4
     $tip = [
         'title' => 'Training Internship and Placement Cell',
         'data' => array(
@@ -249,4 +160,119 @@
             ),
         ),
     ];
+
+    // data
+    // 1
+    $ibmCourses = [
+        array(
+            'title' => 'Role-based Skills',
+            'skills' => array(
+                'Customer service representative',
+                'Cybersecurity professional',
+                'Data analyst',
+                'Linux system administrator'
+            ),
+            'subtitle' => 'Essential Skills',
+            'essentials' => array(
+                'Agile Methodology - Foundations',
+                'Agile Methodology - Advanced',
+                'Agile Explorer - Powered by Agile at IBM',
+                'Artificial Intelligence - Foundation',
+                'Artificial Intelligence - Advanced',
+                'Blockchain - Foundation',
+                'Blockchain - Advanced',
+                'Cloud Computing - Foundation',
+                'Cloud Computing - Advanced',
+                'Data and Analytics - Foundation',
+                'Data and Analytics - Advanced',
+                'Design Thinking - Foundation',
+                'Design Thinking - Advanced',
+                'Digital Marketing',
+                'Digital Strategy for Small Business',
+                'Internet Of Things(IOT) - Foundation',
+                'Internet Of Things(IOT) - Advanced',
+                'Open Source Software (Technical Overviews from Red Hat)',
+                'Quantum Computing - Foundation',
+                'Security - Foundation',
+                'Security - Advanced',
+                'Working in a Digital World: Essential Skills'
+            ),
+        ),
+        array(
+            'title' => 'Professional Skills',
+            'skills' => array(
+                'Career Planning',
+                'Career Exploration Ideas',
+                'Collaboration',
+                'Communication Skills',
+                'Critical Thinking',
+                'Decision Making',
+                'Digital Literacy',
+                'Entrepreneurial Mindset',
+                'Explorations into Mindfulness',
+                'Interpersonal Skills',
+                'Leadership',
+                'Mindfulness',
+                'Problem Solving',
+                'Professionalism at Work',
+                'Project Management',
+                'Resilience',
+                'Virtual Teaming',
+                'Working in a Digital World:Professional Skills',
+            ),
+            'subtitle' => 'Web Developer',
+            'essentials' => array(
+                'Introduction to Programming',
+                'Learn HTML',
+                'Learn CSS',
+                'Learn JavaScript',
+                'Learn GitHub',
+            ),
+        ),
+        array(
+            'title' => 'Job Readiness Skills',
+            'skills' => array(
+                'Develop a LinkedIn Profile',
+                'Write a Good Resume',
+                'Build Interview Skills',
+                'Job Application Essentials',
+                'Succeed at Work',
+                'Search for work in Difficult Times',
+                'Work From Home',
+                'SkillsBuild Presents: Job Exploration Webinars',
+            ),
+            'subtitle' => 'Essential Skills for small business owners',
+            'essentials' => array(
+                'Business Fundamentals',
+                'Finance Fundamentals',
+                'Grow Your Business',
+                'Manage Your Business',
+                'Virtual Business Management',
+                'Be an Entrepreneur',
+                'Virtual Business Management',
+                'Legal Education (United States)',
+            ),
+        ),
+        array(
+            'title' => 'Certification Preparation',
+            'skills' => array(
+                'Red Hat Certificate System Administrator (RHCSA)',
+                'Network Security Associate Certifications: NSE 1 and NSE 2',
+                'Network Security Professional Certification: NSE 4(courses and certification)',
+                'Network Security Analyst Certification: NSE 5(courses and certification)',
+                'Network Security Specialist Certification: NSE 6(courses and certification)',
+                'Network Security Architect Certification: NSE 7(courses and certification)',
+                
+            ),
+            'subtitle' => 'Other Courses',
+            'essentials' => array(
+                'BigData Foundation',
+                'Applied Data Science with Python',
+                'Enterprise Design Thinking Practitioner',
+                'Enterprise Design Thinking Co-Creator',
+                'IBM Z System Administrator: Practitioner',
+                'Project Management Fundamentals',
+            ),
+        ),
+    ]
 ?>

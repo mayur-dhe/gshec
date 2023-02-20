@@ -28,7 +28,7 @@
       <div class="row">
         <div class="col-lg-12 p-0">
           <h4 class="innerpage-title">Summary of NEP 2020 and Status & Plan of NEP implementation in these thematic areas</h4>
-          <div class="row align-justify sub-title-font pt_30_for_h5 pl_40_for_row text-black">
+          <div class="row text-align-justify sub-title-font pt_30_for_h5 pl_40_for_row textColor-black">
             <h5>1. THEME: ACCESS</h5>
             <div class="col-md-7">
               <div class="row">

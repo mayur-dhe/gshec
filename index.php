@@ -100,7 +100,7 @@
             </div>
 
             <div class="item">
-              <a href="research-development-innovation">
+              <a href="research-development-innovation.php">
                 <div class="icon">
                   <img src="assets/images/icons/R-D-Innovation.png" alt="">
                 </div>
@@ -113,7 +113,7 @@
             </div>
 
             <div class="item">
-              <a href="teaching-learning">
+              <a href="teaching-learning.php">
                 <div class="icon">
                   <img src="assets/images/icons/Teaching-Learning-and-Educational-Technologies.png" alt="">
                 </div>
@@ -126,7 +126,7 @@
             </div>
 
             <div class="item">
-              <a href="sdc">
+              <a href="software-development-cell.php">
                 <div class="icon">
                   <img src="assets/images/icons/SW Development cell.png" alt="">
                 </div>
@@ -139,12 +139,12 @@
             </div>
 
             <div class="item">
-              <a href="tip">
+              <a href="training-internship-placement.php">
                 <div class="icon">
-                  <img src="assets/images/icons/SW Development cell.png" alt="">
+                  <img src="assets/images/icons/Training, internship and placement.png" alt="">
                 </div>
                 <div class="down-content">
-                  <h4 class="card_label">Training Internship Program<br/><br/></h4>
+                  <h4 class="card_label">Training Internship and Placement<br/><br/></h4>
                   <h4 class="card_label_short">TIP<br/><br/></h4>
                   <p>Click Here</p>
                 </div>
