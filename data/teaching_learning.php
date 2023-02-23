@@ -2,6 +2,11 @@
 
     $tabs = [
         'About',
+        'Vision',
+        'Mission',
+        // 'Activity'
+    ];
+    $activity = [
         'FDP on Outcome Based Education',
         'MOOCs',
     ];

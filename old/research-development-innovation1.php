@@ -34,19 +34,7 @@
               <?php } ?>
           </div>
 
-          <div id="tab0" class="tabcontent">
-            <h4><?php echo $vision['title']?></h4>
-            <?php foreach ($vision['data'] as $key => $value) { ?>
-              <div><?php echo $value ?></div>
-            <?php } ?>
-          </div>
-
-          <div id="tab1" class="tabcontent">
-            <h4><?php echo $mission['title']?></h4>
-            <?php foreach ($mission['data'] as $key => $value) { ?>
-              <div><?php echo $value ?></div>
-            <?php } ?>
-          </div>
+                    
           
           <div id="tab2" class="tabcontent">
             <h4><?php echo $research_dev_innovation['title']?></h4>

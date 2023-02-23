@@ -70,7 +70,6 @@
                     <li><strong>Category</strong>: <?php echo $value['category'] ?></li>
                     <li><strong>Client</strong>: <?php echo $value['client'] ?></li>
                     <li><strong>Project date</strong>: <?php echo $value['date'] ?></li>
-                    <li><strong>Tools</strong>: <?php echo $value['tools'] ?></li>
                     <li><strong>Project URL</strong>: <a href="<?php echo $value['url'] ?>" target="_blank"><?php echo $value['url'] ?></a></li>
                   </ul>
                 </div>

@@ -5,6 +5,8 @@
         'Vision',
         'Mission',
         'Objectives',
+    ];
+    $activity = [
         'TIP Installation',
     ];
 

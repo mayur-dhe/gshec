@@ -15,7 +15,7 @@
 <style>
     #custom-list-1 {
       /* width: 120px; */
-      height: 80px;
+      height: 50px;
       background: #edf0be;
       position: relative;
       -moz-border-radius: 10px;
@@ -26,29 +26,29 @@
       content: "";
       position: absolute;
       right: 100%;
-      top: 26px;
+      top: 12px;
       width: 0;
       height: 0;
-      border-top: 13px solid transparent;
-      border-right: 26px solid #edf0be;
-      border-bottom: 13px solid transparent;
+      border-top: 12px solid transparent;
+      border-right: 16px solid #edf0be;
+      border-bottom: 12px solid transparent;
     }
 </style>
   <!-- ------------- Main Content Start---------------------- -->
   <section class="page-section sdc">
     <div class="container">
       <div class="row">
-        <div class="col-md-11">
-          <h3 class="textColor-black text-align-justify">
+        <div class="col-md-9">
+          <h3 class="textColor-black intro-title mb_40">
             Software Development Cell, GSHEC, is an established cell, group of faculty members, who intend to put theory into practice and make use of their knowledge for implementation of technology in the field of education and the management of activities and initiatives by GSHEC.This team has been undertaking software projects since its creation in 2020. 
           </h3>
         </div>
-        <div class="col-md-8">
+        <div class="col-md-6">
           <p class="p0">
             Our software development team is a group of skilled professionals who are responsible for the design, development, and maintenance of various software applications. The team is composed of individuals with different roles, such as software engineers, developers, and programmers, who work together to deliver high-quality software products. The team uses a variety of programming languages and technologies like PHP, Node.JS, React.JS, MongoDB, MySQL, HTML5, CSS3, Code Igniter, Python, PWA, Flask, etc. to create software solutions that are tailored to the specific needs of our organization. The team is also responsible for testing and debugging the software to ensure that it is functioning correctly and is free of any bugs or errors. Overall, the software development team plays a crucial role in the success of the organization by providing reliable and efficient software solutions that help it achieve its goals. 
           </p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-6">
           <img src="assets/images/development_team.jpg" class="img-fluid" alt="" title="">
         </div>
       </div>
@@ -83,7 +83,7 @@
               <div class="col-md-12">
                 <div id="custom-list-1">
                   <div class="feature-box d-flex align-items-center">
-                    <h3><?php echo $value ?></h3>
+                    <h3 class="fontSize-14"><?php echo $value ?></h3>
                   </div>
                 </div>
               </div>

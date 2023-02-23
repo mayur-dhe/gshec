@@ -2383,6 +2383,18 @@ responsive
   color: var(--greyReadableTextColor) !important;
   /* color: #000 !important; */
 }
+.tab button.activities {
+  padding: 14px 20px 14px 30px !important;
+  font-size: 0.9rem !important;
+}
+.dd-icon {
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 70%;
+  height: 24px;
+  align-content: end;
+}
 .tab button.title {
   font-size: 1.4rem;
   padding: 30px 20px;
@@ -2646,6 +2658,12 @@ responsive
 /*--------------------------------------------------------------
 # SDC Team
 --------------------------------------------------------------*/
+.intro-title {
+    font-size: -webkit-calc(21.994px + 14.006 * (100vw - 720px)/780);
+    font-size: calc(21.994px + 14.006 * (100vw - 720px) / 780);
+    font-weight: 400;
+    line-height: 1.3;
+}
 .team {
   padding: 30px 0;
 }
@@ -2842,13 +2860,18 @@ responsive
 }
 .profile-thumb-title {
   text-transform: uppercase;
-  padding: 12px 20px 12px;
+  padding: 12px 20px 12px !important;
   height: 5rem;
   transition: 0.5s ease-in;
   transform: translateY(-100%);
 }
+.ptt-2 {
+  padding: 10px 20px 10px !important;
+  height: 4rem !important;
+  font-size: 1.2rem !important;
+}
 .profile-thumb-description {
-  padding: 1px 20px;
+  padding: 1px 20px !important;
   transition: 0.5s ease-in;
   opacity: 0;
   flex: 1;
@@ -2908,6 +2931,9 @@ responsive
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 5vw);
   grid-gap: 0.2rem; 
+}
+.gallery_img_box figure {
+  margin: 0 !important;
 }
 /* childs */
 .gallery__img {
@@ -3240,8 +3266,11 @@ hr {
   text-transform: uppercase;
 }
 
-.textFont-14 {
+.fontSize-14 {
   font-size: 14px !important;
+}
+.fontSize-12 {
+  font-size: 12px !important;
 }
 .fontWt-6 {
   font-weight: 600;
@@ -3331,6 +3360,9 @@ hr {
 }
 .mb_20 {
   margin-bottom: 20px !important;
+}
+.mb_40 {
+  margin-bottom: 40px !important;
 }
 
 .ht_230 {

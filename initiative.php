@@ -200,7 +200,7 @@
                   Some of the features are as follows :
                 </p>
                 <div class="list-number pl-20">
-                  <ol class="textFont-14">
+                  <ol class="fontSize-14">
                     <li>
                       It will provide Internship/Job opportunities to the students.
                     </li>

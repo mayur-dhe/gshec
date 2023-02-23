@@ -44,7 +44,14 @@
                   $class0 = "title";
                 }
             ?>
-                <button class="tablinks <?php echo $class0 ?>" onclick="openTabSection(event, 'tab<?php echo $key ?>')" id="<?php echo $id_name ?>"><?php echo $value ?></button>
+                <button class="tablinks <?php echo $class0 ?>" onclick="showActivity(0); openTabSection(event, 'tab<?php echo $key ?>')" id="<?php echo $id_name ?>"><?php echo $value ?></button>
+            <?php } ?>
+            <button class="tablinks" onclick="showActivity(1)">Activity <span class="dd-icon"> <i class="fa fa-caret-right dd-selected-right"></i> <i class="fa fa-caret-down dd-selected-down d-none"></i>  </span> </button>
+            <?php 
+              foreach ($activity as $key => $value) 
+              {
+            ?>
+                <button class="d-none activities tablinks <?php echo $class0 ?>" onclick="openTabSection(event, 'tabA<?php echo ++$key ?>')"><?php echo $value ?></button>
             <?php } ?>
           </div>
             
@@ -52,7 +59,7 @@
             <h4><?php echo $about['title'] ?></h4>
             <div class="row">
               <div class="col-md-7">
-                <p class="p0 textFont-14">
+                <p class="p0 fontSize-14">
                   <?php echo $about['data'] ?>
                 </p>
               </div>
@@ -75,7 +82,7 @@
             <h4><?php echo $vision['title'] ?></h4>
             <div class="row">
               <div class="col-md-7">
-                <p class="p0 textFont-14">
+                <p class="p0 fontSize-14">
                   <?php echo $vision['data'] ?>
                 </p>
               </div>
@@ -97,7 +104,7 @@
             <h4><?php echo $mission['title'] ?></h4>
             <div class="row list-number">
               <div class="col-md-7">
-                <p class="p0 textFont-14">
+                <p class="p0 fontSize-14">
                   <?php echo $mission['data'] ?>
                 </p>
               </div>
@@ -129,11 +136,11 @@
               <?php } ?>
             </div>
           </div>
-          <div id="tab4" class="tabcontent">
+          <div id="tabA1" class="tabcontent">
             <h4><?php echo $tip_installation['title'] ?></h4>
             <div class="row list-number">
               <div class="col-md-7">
-                <p class="p0 textFont-14">
+                <p class="p0 fontSize-14">
                   <?php echo $tip_installation['data'] ?>
                 </p>
               </div>

@@ -22,6 +22,21 @@ function openTabSection(evt, selectedTab)
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 
+function showActivity(isActivity){
+    if (isActivity) {
+        $(".activities").toggleClass("d-none");
+        $(".dd-selected-right").toggleClass("d-none");
+        $(".dd-selected-down").toggleClass("d-none");
+    } else {
+        if($('.activities').hasClass('d-none')){
+            // do nothing
+        } else {
+            $(".activities").toggleClass("d-none");
+            $(".dd-selected-right").toggleClass("d-none");
+            $(".dd-selected-down").toggleClass("d-none");
+        }
+    }
+}
 
 // show more list)-----------------------------------------------------------------------------
 function showMore() {

@@ -30,9 +30,17 @@
                     <img class="profile-thumb-img" src="<?php echo $value['url']; ?>" alt="">
                     <div class="profile-thumb-gradient"></div>
                     <div class="profile-thumb-anim">
-                      <h5 class="profile-thumb-title"><?php echo $value['name']; ?></h5>
-                      <div class="profile-thumb-author"><?php echo '' ?? ''; ?></div>
-                      <p class="profile-thumb-description"><?php echo $value['designation']; ?></p>
+                      <h5 class="profile-thumb-title ptt-2"><?php echo $value['name']; ?></h5>
+                      <p class="profile-thumb-description fontSize-12">
+                        <?php echo $value['designation']; ?><br><br>
+                        <?php if ($value['linkedin']) { ?>
+                            <a href="<?php echo $value['linkedin']; ?>">Click to view LinkedIn Profile</a><br>
+                        <?php } 
+                          if ($value['linkedin']) { ?>
+                                <a href="<?php echo $value['google_link']; ?>">Click to view LinkedIn Profile</a>
+                        <?php } ?>
+                      </p>
+                      <div class="profile-thumb-author"></div>
                     </div>
                   </div>
                 </div>
@@ -54,9 +62,17 @@
                     <img class="profile-thumb-img" src="<?php echo $value['url']; ?>" alt="">
                     <div class="profile-thumb-gradient"></div>
                     <div class="profile-thumb-anim">
-                      <h5 class="profile-thumb-title"><?php echo $value['name']; ?></h5>
-                      <div class="profile-thumb-author"><?php echo '' ?? ''; ?></div>
-                      <p class="profile-thumb-description"><?php echo $value['designation']; ?></p>
+                      <h5 class="profile-thumb-title ptt-2"><?php echo $value['name']; ?></h5>
+                      <p class="profile-thumb-description fontSize-12">
+                        <?php echo $value['designation']; ?><br><br>
+                        <?php if ($value['linkedin']) { ?>
+                            <a href="<?php echo $value['linkedin']; ?>">Click to view LinkedIn Profile</a><br>
+                        <?php } 
+                          if ($value['linkedin']) { ?>
+                                <a href="<?php echo $value['google_link']; ?>">Click to view LinkedIn Profile</a>
+                        <?php } ?>
+                      </p>
+                      <div class="profile-thumb-author"></div>
                     </div>
                   </div>
                 </div>
