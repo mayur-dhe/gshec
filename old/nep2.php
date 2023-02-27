@@ -267,16 +267,16 @@
               <div class="col-md-5">
                 <img src="assets/images/nep/action-plan/uucms.jpg" alt="UUCMS">
               </div>
-              <div class="col-md-7 pt-30">
+              <div class="col-md-7 pt30">
                 The above successful model of education is not too different from India’s ancient campuses like Nalanda University which was catering to about 10,000 students and providing truly multidisciplinary education in Buddhist studies, fine arts, medicine,  mathematics, politics, astronomy, and art of war.
               </div>
-              <div class="col-md-5 pt-30">
+              <div class="col-md-5 pt30">
                 <img src="assets/images/nep/action-plan/uucms.jpg" alt="UUCMS">
               </div>
-              <div class="col-md-7 pt-30">
+              <div class="col-md-7 pt30">
                 Thus, the implementation of NEP 2020 in true spirit needs to be done focusing on such successful models. Above all, focusing on Research in all HEIs including at UG level is a must because it is only through Research, we can produce enthusiastic teachers, and experiential teaching-Learning process for students. Research is the backbone of any developed nation, and only research can enhance the standards of living of our society. Finally, and most importantly, preparing students both mentally and physically, for life-long learning will be a major milestone to be achieved through NEP 2020.
               </div>
-              <div class="col-md-5 pt-30">
+              <div class="col-md-5 pt30">
                 <img src="assets/images/nep/action-plan/uucms.jpg" alt="UUCMS">
               </div>
             </div>

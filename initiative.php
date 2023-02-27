@@ -126,7 +126,7 @@
                       <div class="col-6 col-md-6 col-lg-3 list-number ibm-courses">
                         <h5 class="ibm-course-title">'.$value['title'].'</h5>
                         <hr class="title">
-                        <ol class="pl-10">';
+                        <ol class="pl10">';
                           foreach ($value['skills'] as $key => $skills) {
                             echo '<li>'.$skills.'</li>';
                           }
@@ -134,7 +134,7 @@
                         </ol>
                         <h5 class="ibm-course-title">'.$value['subtitle'].'</h5>
                         <hr class="subtitle">
-                        <ol class="pl-10">';
+                        <ol class="pl10">';
                             foreach ($value['essentials'] as $key => $essentials) {
                               echo '<li>'.$essentials.'</li>';
                             }
@@ -196,10 +196,10 @@
                   As the NEP 2020 focuses on skill improvement and competency development of the students. Under NEP 2020, an industry- internship portal is getting developed by the software development team at GSHEC, DHE which will allow students to choose their internship through a single portal. The internship will be a part of the academic curriculum under NEP 2020. The objective of Unified TIP portal is to bridge the gap between the corporate requirements and student’s knowledge and skill sets.
                 </p>
                 <br>
-                <p class="m_0">
+                <p class="m0">
                   Some of the features are as follows :
                 </p>
-                <div class="list-number pl-20">
+                <div class="list-number pl20">
                   <ol class="fontSize-14">
                     <li>
                       It will provide Internship/Job opportunities to the students.

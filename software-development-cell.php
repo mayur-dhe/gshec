@@ -39,7 +39,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-9">
-          <h3 class="textColor-black intro-title mb_40">
+          <h3 class="textColor-black intro-title mb40">
             Software Development Cell, GSHEC, is an established cell, group of faculty members, who intend to put theory into practice and make use of their knowledge for implementation of technology in the field of education and the management of activities and initiatives by GSHEC.This team has been undertaking software projects since its creation in 2020. 
           </h3>
         </div>

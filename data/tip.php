@@ -54,8 +54,53 @@
         'title' => 'Training Internship and Placement',
         'data' => array(
             array(
-                'type' => 'mooc',
-                'url' => 'assets/images/tle/mooc/img-1.jpeg',
+                'type' => 'tcs',
+                'url' => 'assets/images/tip/TCS/group 1.jpg',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'tcs',
+                'url' => 'assets/images/tip/TCS/group 2.jpg',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'tcs',
+                'url' => 'assets/images/tip/TCS/group 3.jpg',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'tcs',
+                'url' => 'assets/images/tip/TCS/img-1.jpg',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'tcs',
+                'url' => 'assets/images/tip/TCS/img-2.jpg',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'tcs',
+                'url' => 'assets/images/tip/TCS/img-3.jpg',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'tcs',
+                'url' => 'assets/images/tip/TCS/img-4.jpg',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'tcs',
+                'url' => 'assets/images/tip/TCS/img-5.jpg',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'tcs',
+                'url' => 'assets/images/tip/TCS/img-6.jpg',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'tcs',
+                'url' => 'assets/images/tip/TCS/img-7.jpg',
                 'alt' => '',
             ),
         ),

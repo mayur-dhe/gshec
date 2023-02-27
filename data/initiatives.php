@@ -26,6 +26,44 @@
             'cover_image' => 'assets/images/initiatives/initiative 6 TIP.jpg',
         ),
     ];
+    $initiative_activities = [
+        array(
+            'id' => 5,
+            'title' => 'FDP Expertial Learning',
+            'short_name' => 'FDP Expertial Learning',
+            'cover_image' => 'assets/images/initiatives/empty.jpg',
+        ),
+        array(
+            'id' => 6,
+            'title' => 'FDP on Banking for Business Process',
+            'short_name' => 'FDP on Banking for Business Process',
+            'cover_image' => 'assets/images/initiatives/empty.jpg',
+        ),
+        array(
+            'id' => 7,
+            'title' => 'Placement Drive at Quepem',
+            'short_name' => 'Placement Drive at Quepem',
+            'cover_image' => 'assets/images/initiatives/empty.jpg',
+        ),
+        array(
+            'id' => 8,
+            'title' => 'TCS Placement Drive at Borda College',
+            'short_name' => 'TCS Placement Drive at Borda College',
+            'cover_image' => 'assets/images/initiatives/empty.jpg',
+        ),
+        array(
+            'id' => 9,
+            'title' => 'Vidyan Dharma',
+            'short_name' => 'Vidyan Dharma',
+            'cover_image' => 'assets/images/initiatives/empty.jpg',
+        ),
+        array(
+            'id' => 10,
+            'title' => 'Visit to UGC and CEC',
+            'short_name' => 'Visit to UGC and CEC',
+            'cover_image' => 'assets/images/initiatives/empty.jpg',
+        ),
+    ];
 
     // images
     // 1 

@@ -43,49 +43,36 @@
               <h6>Welcome to</h6>
               <h2>GOA STATE Higher Education Council</h2>
             </div>
-            <div class="announcement d-none">
-              <h3>Announcement</h3>
-              <div id="scroll-container">
-                <div id="scroll-text">
-                  <?php
-                    foreach ($announcements as $key => $value) {
-                      echo '<div class="row" style="padding: 5px 0px;">
-                        <div class="col-1">
-                          <div class="shape-triangle"></div>
-                        </div>
-                        <div class="col-11">';
-                          echo $value.'<br>';
-                        echo '</div>
-                      </div>';
-                    }
-                  ?>
-                <div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
   <!-- ***** Main Banner Area End ***** -->
-<!-- 
-  <button class="btn btn-light btn-light btn-rounded bottom-button ">
-    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-megaphone" viewBox="0 0 16 16">
-      <path d="M13 2.5a1.5 1.5 0 0 1 3 0v11a1.5 1.5 0 0 1-3 0v-.214c-2.162-1.241-4.49-1.843-6.912-2.083l.405 2.712A1 1 0 0 1 5.51 15.1h-.548a1 1 0 0 1-.916-.599l-1.85-3.49a68.14 68.14 0 0 0-.202-.003A2.014 2.014 0 0 1 0 9V7a2.02 2.02 0 0 1 1.992-2.013 74.663 74.663 0 0 0 2.483-.075c3.043-.154 6.148-.849 8.525-2.199V2.5zm1 0v11a.5.5 0 0 0 1 0v-11a.5.5 0 0 0-1 0zm-1 1.35c-2.344 1.205-5.209 1.842-8 2.033v4.233c.18.01.359.022.537.036 2.568.189 5.093.744 7.463 1.993V3.85zm-9 6.215v-4.13a95.09 95.09 0 0 1-1.992.052A1.02 1.02 0 0 0 1 7v2c0 .55.448 1.002 1.006 1.009A60.49 60.49 0 0 1 4 10.065zm-.657.975 1.609 3.037.01.024h.548l-.002-.014-.443-2.966a68.019 68.019 0 0 0-1.722-.082z"/>
-    </svg>
-  </button>
-  <div id="talkbubble" class="d-none">Announcements</div> -->
-
   <section class="services">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
+          <!-- Ribbon -->
+          <div class="empty-div emptyBox">empty</div>
+          <div class="show-ribbon d-none">
+            <div class="custom-ribbon custom-ribbon-right" style="background:#e7eab3; width:auto;">
+              <?php
+                foreach ($announcements as $key => $value) {
+                  echo '<div class="row" style="padding: 5px 0px;">
+                    <div class="col-1 p0 align-center">
+                      <img class="imghw-2" src="assets/images/notification.gif" alt="">
+                    </div>
+                    <div class="col-10 p0">';
+                      echo '<div class="animate-typed-out p_inner_div_4" style="color:#2a2a2a">'.$value.'</div>';
+                    echo '</div>
+                  </div>';
+                }
+              ?>
+            </div>
+          </div>
+
           <div class="owl-service-item owl-carousel">
-            
-            <!-- Ribbon -->
-            <!-- <p class="ribbon">
-              <span class="text"><strong class="bold">Special Offer:</strong> Recieve bonus rewards points for signing up</span>
-            </p> -->
             <div class="item">
               <a href="nep.php">
                 <div class="icon">
@@ -152,7 +139,6 @@
             </div>
 
           </div>
-      
         </div>
       </div>
     </div>
@@ -200,15 +186,29 @@
               <?php 
                 foreach ($initiatives as $key => $value) {
               ?>
-                <!-- title="<?php echo concat_string($value['title']); ?>" -->
-                <li><a href="initiative.php?jnhsdwmxifkd=<?php echo $value['id']?>" >
-                  <?php echo $value['short_name'] ?>
-                </a></li>
-              <?php
-                if (++$key>9) break;
-              } ?>
+                  <!-- title="<?php echo concat_string($value['title']); ?>" -->
+                  <li><a href="initiative.php?jnhsdwmxifkd=<?php echo $value['id']?>" >
+                    <?php echo $value['short_name'] ?>
+                  </a></li>
+              <?php } ?>
+                  <!-- <li>
+                    <a href="#" onclick="showActivity(1)">
+                      Activities 
+                      <span class="dd-icon"> 
+                        <i class="fa fa-caret-right dd-selected-right"></i> 
+                        <i class="fa fa-caret-down dd-selected-down d-none"></i>
+                      </span>
+                    </a>
+                  </li> -->
+              <?php 
+                  foreach ($initiative_activities as $key => $value) {
+              ?>
+                    <!-- <li><a class="activities" href="initiative.php?jnhsdwmxifkd=<?php echo $value['id']?>" >
+                      <?php echo $value['short_name'] ?>
+                    </a></li> -->
+              <?php } ?>
             </ul>
-            <div class="main-button-red">
+            <div class="main-button-red pt0 mt10">
               <a href="initiatives.php">All Initiatives</a>
             </div>
           </div>
@@ -664,7 +664,7 @@
           </div>
           <div class="col">
             <div class="count-area-content">
-              <div class="count-title pt-100">View All</div>
+              <div class="count-title pt100">View All</div>
             </div>
           </div>
         </div>
@@ -763,6 +763,8 @@
     <?php require 'layout/footer.php'; ?>
     <script>
       setTimeout(function() {
+        $('.show-ribbon').removeClass("d-none");
+        $('.empty-div').addClass("d-none");
         $('.announcement').removeClass("d-none");
       }, 6000); // <-- time in milliseconds
 

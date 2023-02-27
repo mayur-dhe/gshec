@@ -9,6 +9,7 @@
   require 'layout/header.php';
   include 'data/quotes.php';
   include 'data/initiatives.php';
+  include 'data/announcement.php';
 ?>
 <style>
   .quote-font {
@@ -20,7 +21,7 @@
 
   .main-banner .caption {
     position: absolute;
-    top: 280px !important;
+    top: 210px !important;
     transform: translateY(-50%);
   }
   .header-area.header-sticky {
@@ -41,7 +42,25 @@
             <div class="caption">
               <h6>Welcome to</h6>
               <h2>GOA STATE Higher Education Council</h2>
-              <p>The Goa State Higher Education Council, established under Goa Act 14 of 2018 is an autonomous body with all 64 (Higher Education Institutes(HEI) under its purview. The Council shall function in order to forge synergic relationships amongst the State Government, Universities, academics, and experts by occupying an operational space between the Government and Universities on the one hand and between Universities and apex-level regulatory institutions on the other. The main objects of the Council include planned and coordinated development of Higher education in the State, promoting academic excellence and social justice by obtaining academic input for policy formulation and perspective planning, ensuring autonomy, accountability, and coordination of all institutions of higher education in the State and guiding the growth of higher education in accordance with the socio-economic requirements of the State.</p>
+            </div>
+            <div class="announcement d-none">
+              <h3>Announcement</h3>
+              <div id="scroll-container">
+                <div id="scroll-text">
+                  <?php
+                    foreach ($announcements as $key => $value) {
+                      echo '<div class="row" style="padding: 5px 0px;">
+                        <div class="col-1">
+                          <div class="shape-triangle"></div>
+                        </div>
+                        <div class="col-11">';
+                          echo $value.'<br>';
+                        echo '</div>
+                      </div>';
+                    }
+                  ?>
+                <div>
+              </div>
             </div>
           </div>
         </div>
@@ -62,9 +81,13 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="owl-service-item owl-carousel">
-
+            
+            <!-- Ribbon -->
+            <!-- <p class="ribbon">
+              <span class="text"><strong class="bold">Special Offer:</strong> Recieve bonus rewards points for signing up</span>
+            </p> -->
             <div class="item">
-              <a href="nep">
+              <a href="nep.php">
                 <div class="icon">
                   <img src="assets/images/icons/NEP.png" alt="">
                 </div>
@@ -77,7 +100,7 @@
             </div>
 
             <div class="item">
-              <a href="research-development-innovation">
+              <a href="research-development-innovation.php">
                 <div class="icon">
                   <img src="assets/images/icons/R-D-Innovation.png" alt="">
                 </div>
@@ -90,7 +113,7 @@
             </div>
 
             <div class="item">
-              <a href="teaching-learning">
+              <a href="teaching-learning.php">
                 <div class="icon">
                   <img src="assets/images/icons/Teaching-Learning-and-Educational-Technologies.png" alt="">
                 </div>
@@ -103,7 +126,7 @@
             </div>
 
             <div class="item">
-              <a href="software-development-cell">
+              <a href="software-development-cell.php">
                 <div class="icon">
                   <img src="assets/images/icons/SW Development cell.png" alt="">
                 </div>
@@ -116,12 +139,12 @@
             </div>
 
             <div class="item">
-              <a href="tip">
+              <a href="training-internship-placement.php">
                 <div class="icon">
-                  <img src="assets/images/icons/SW Development cell.png" alt="">
+                  <img src="assets/images/icons/Training, internship and placement.png" alt="">
                 </div>
                 <div class="down-content">
-                  <h4 class="card_label">Training Internship Program<br/><br/></h4>
+                  <h4 class="card_label">Training Internship and Placement<br/><br/></h4>
                   <h4 class="card_label_short">TIP<br/><br/></h4>
                   <p>Click Here</p>
                 </div>
@@ -178,7 +201,7 @@
                 foreach ($initiatives as $key => $value) {
               ?>
                 <!-- title="<?php echo concat_string($value['title']); ?>" -->
-                <li><a href="initiative?jnhsdwmxifkd=<?php echo $value['id']?>" >
+                <li><a href="initiative.php?jnhsdwmxifkd=<?php echo $value['id']?>" >
                   <?php echo $value['short_name'] ?>
                 </a></li>
               <?php
@@ -186,7 +209,7 @@
               } ?>
             </ul>
             <div class="main-button-red">
-              <a href="initiatives">All Initiatives</a>
+              <a href="initiatives.php">All Initiatives</a>
             </div>
           </div>
         </div>
@@ -196,7 +219,7 @@
               foreach ($initiatives as $key => $value) {
             ?>
               <div class="col-lg-6 col-md-12">
-                <a href="initiative?jnhsdwmxifkd=<?php echo $value['id']?>">
+                <a href="initiative.php?jnhsdwmxifkd=<?php echo $value['id']?>">
                   <div class="meeting-item">
                     <div class="thumb">
                       <div class="price">
@@ -739,6 +762,10 @@
     <!-- ***** Footer  ***** -->
     <?php require 'layout/footer.php'; ?>
     <script>
+      setTimeout(function() {
+        $('.announcement').removeClass("d-none");
+      }, 6000); // <-- time in milliseconds
+
       $(document).ready(function()
       {
         

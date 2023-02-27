@@ -11,10 +11,10 @@
   include 'data/research_dev_innovation.php';
 ?>
 <style>
-  section.heading-page {
+  /* section.heading-page {
     background-image: url(assets/images/rdi/cover-img.jpg);
     padding-bottom: 430px;
-  }
+  } */
   .page-section .container {
     margin-bottom: 2rem;
     background: #f2f2f2;
@@ -25,6 +25,38 @@
 
 </style>
   <!-- ------------- Main Content Start---------------------- -->
+  <section class="mt_n138">
+    <div class="row">
+      <div class="col-lg-12 p-0">
+        <!-- corosal ---------------------- -->
+        <div id="demo" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ul class="carousel-indicators">
+              <?php foreach ($rdi_images['data'] as $key => $image){  ?>
+                      <li data-target="#demo" data-slide-to="<?php echo $key?>" <?php echo $key==0 ?? 'class="active"' ?> ></li>                            
+              <?php } ?>  
+          </ul>
+          <!-- The slideshow -->
+          <div class="carousel-inner">
+              <?php foreach ($rdi_images['data'] as $key => $image) { ?>
+                      <div class="carousel-item carouselHeight <?php echo $key==0 ?  'active' : '' ?>">
+                          <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" >
+                      </div> 
+              <?php } ?>
+          <!-- <div class="carousel-item carousel_item_overlay"></div> -->
+          </div>
+          <!-- Left and right controls -->
+          <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
+        <!-- corosal ---------------------- -->
+      </div>
+    </div>
+  </section>
   <section class="page-section">
     <div class="container">
       <div class="row">
@@ -56,7 +88,7 @@
             <h4><?php echo $about['title']?></h4>
             <?php foreach ($about['data'] as $key => $value) { ?>
               <div class="box-shadow-left-32 "><!-- height_60 -->
-                <!-- <div class="shape-round m_5 float_left">
+                <!-- <div class="shape-round m5 float_left">
                   <img src="assets/images/icon-tickmark.png" height="50px" width="50px" alt="">
                 </div> -->
                 <div>
@@ -87,7 +119,7 @@
                   Science and Technology across the world. The lectures were delivered by accomplished experts and academicians working at various Science Colleges in Goa, Goa University, the State Higher Education Council, and Scientists from CSIR-National Institute of Oceanography (CSIR-NIO) who have achieved pre-eminence in the fields of Science and Technology, followed by interactive sessions. Students from various disciplines including Arts, Science, Commerce, and Education attended the lecture series, who otherwise have rare opportunities to listen to experts in various domains of Sciences and technology. Based on the feedback received from the resource person, audience and the host institutions, this even had overwhelming response, and we intend to continue the Science Lecture Series on a much bigger scale in the coming years.
                 </p>
                 <br> 
-                <a class="btn p-0 mb_20 pdf-ref" href="assets/images/rdi/Goa Science Lecture Series 1/ScienceLectureSeriesReport.pdf" target="_blank">
+                <a class="btn p-0 mb20 pdf-ref" href="assets/images/rdi/Goa Science Lecture Series 1/ScienceLectureSeriesReport.pdf" target="_blank">
                   <i class="icon fa fa-download"></i>
                   Click to see Science Lecture Series Report
                 </a>
@@ -96,9 +128,9 @@
               </div>
               <div class="col-md-5">
                 <?php
-                  foreach ($rdi_images as $key => $value) {
+                  foreach ($rdi_images['data'] as $key => $value) {
                     if ($value['type'] == 'Goa Science Lecture Series 1') {
-                      echo '<img src="'.$value['url'].'" alt="" class="py-10">';
+                      echo '<img src="'.$value['url'].'" alt="" class="py10">';
                     }
                   }
                 ?>
@@ -117,7 +149,7 @@
                   The renowned experts: Prof Sumit Biswas, Prof Mainak Banerjee, Dr Hari Kadam, Prof Vithal Tilvi and Dr Mahesh Majik working at various research Institutes such as BITs Goa, Goa University, GSHEC served as resource person. One of the main objectives of these initiatives is to develop vibrant research culture by training the Researchers and attracting grant from the Central funding agencies which in turn will help to develop research infrastructure in the State of Goa. 
                   These funds and facilities will allow conducting world-class research in the State of Goa, which further enhance not only the fundamental research but also boost the socio-economic development of the State of Goa. Moreover, this enables submission of large number of quality research proposals to various funding agency.
                 </p>
-                <p class="p0 mb_0 fontSize-14">
+                <p class="p0 mb0 fontSize-14">
                   <strong>
                     The following Topic was covered during this 2 day workshop: 
                   </strong>
@@ -148,9 +180,9 @@
               </div>
               <div class="col-md-5">
                 <?php
-                  foreach ($rdi_images as $key => $value) {
+                  foreach ($rdi_images['data'] as $key => $value) {
                     if ($value['type'] == 'Grant Writing Workshop 1') {
-                      echo '<img src="'.$value['url'].'" alt="" class="py-10">';
+                      echo '<img src="'.$value['url'].'" alt="" class="py10">';
                     }
                   }
                 ?>
@@ -196,9 +228,9 @@
               </div>
               <div class="col-md-5">
                 <?php
-                  foreach ($rdi_images as $key => $value) {
+                  foreach ($rdi_images['data'] as $key => $value) {
                     if ($value['type'] == 'Grant Writing Workshop 2') {
-                      echo '<img src="'.$value['url'].'" alt="" class="py-10">';
+                      echo '<img src="'.$value['url'].'" alt="" class="py10">';
                     }
                   }
                 ?>
@@ -209,7 +241,7 @@
             <h4>One Day Workshop for Librarians on “Guide to identify Fake/Predatory/Cloned Journals in Academics”</h4>
             <div class="row">
               <div class="col-md-7">
-                <p class="p0 mb_0 fontSize-14">
+                <p class="p0 mb0 fontSize-14">
                   The number of research articles published in reputed journals, is one of the globally-accepted indicators considered for various academic purposes including institutional ranking, appointments and promotions of faculty members, and award of research degrees. Academic publishing has changed tremendously with the spread of open access journals and the shift to online publishing. Publications in dubious/sub-standard journals reflect adversely leading to long-term academic damage and a tarnished image. Thus, it becomes important to learn how to identify fake/cloned and predatory journals and avoid predatory publishing. In order to identify UGC CARE (Group I & II) listed journals, Goa State Higher Education Council (SHEC) and Directorate of Higher Education had organized a hands-on training program cum workshop for Librarians on 
                   <strong>“Guide to identify Fake/Predatory/Cloned Journals in Academics”</strong>
                   , which is scheduled to be held on 
@@ -217,7 +249,7 @@
                   at the Directorate of Higher Education, Porvorim Goa. 
                 </p>
                 <br>
-                <p class="p0 mb_0 fontSize-14">
+                <p class="p0 mb0 fontSize-14">
                   During this workshop, total 51 Librarians/Librarian Grade-I working at Higher Educational Institutes (HEIs) in Goa were provided
                 </p>
                 <ol class="fontSize-14">
@@ -240,9 +272,9 @@
               </div>
               <div class="col-md-5">
                 <?php
-                  foreach ($rdi_images as $key => $value) {
+                  foreach ($rdi_images['data'] as $key => $value) {
                     if ($value['type'] == 'Librarian Workshop 1') {
-                      echo '<img src="'.$value['url'].'" alt="" class="py-10">';
+                      echo '<img src="'.$value['url'].'" alt="" class="py10">';
                     }
                   }
                 ?>
@@ -261,7 +293,7 @@
                   <strong>“New Faculty Orientation & Mentoring” </strong> 
                   program for period of three half days sessions from 6-8th October 2021. In this regards, the experienced faculties of Goa State Higher Education Council (SHEC) served as Resource persons to train the college faculty participants. Total 50 faculty members working at various HEIs in Goa participated in this workshop.
                 </p>
-                <p class="p0 mb_0 fontSize-14">
+                <p class="p0 mb0 fontSize-14">
                   <strong>
                     The Aim and Objectives of the programme
                   </strong>
@@ -281,13 +313,13 @@
                   </li>
                 </ol>
 
-                <img src="assets/images/rdi/NFOMP Workshop 1/Photo.png" alt="Gallery" class="m_10">
+                <img src="assets/images/rdi/NFOMP Workshop 1/Photo.png" alt="Gallery" class="m10">
               </div>
               <div class="col-md-5">
                 <?php
-                  foreach ($rdi_images as $key => $value) {
+                  foreach ($rdi_images['data'] as $key => $value) {
                     if ($value['type'] == 'NFOMP Workshop 1') {
-                      echo '<img src="'.$value['url'].'" alt="" class="py-10">';
+                      echo '<img src="'.$value['url'].'" alt="" class="py10">';
                     }
                   }
                 ?>
@@ -298,20 +330,20 @@
             <h4>Follow-up Workshop on “New Faculty Orientation & Mentoring Programme 2021”</h4>
             <div class="row">
               <div class="col-md-7">
-                <p class="p0 mb_0 fontSize-14">
+                <p class="p0 mb0 fontSize-14">
                   As part of the “Motivated, energized and capable faculty” under the new National education Policy (NEP 2020), The Goa State Higher Education Council and Directorate of Higher Education has organised the 3rd Follow-up Workshop entitled 
                   <strong> “New Faculty Orientation & Mentoring Programme”, on 23 September 2022 </strong>
                   from 9.00 am to 5.30 pm at New SCERT building, Porvorim Goa for newly recruited faculty (joined from academic year 2019 to Oct. 2021).
                 </p>
-                <p class="p0 mb_0 fontSize-14">
+                <p class="p0 mb0 fontSize-14">
                   GSHEC successfully organized 1st and 2nd workshop in this series during 6 -8th October 2021, and 2nd December 2021 respectively for these faculty. The key objective of this programme is to provide tools to the faculty that will enhance their teaching, management and research skills. The series of follow-up workshops were conducted to monitor the actual implementation of the tools provided in the previous workshop and to guide the faculty of the colleges. The faculty members of Goa SHEC was the resource person for these workshops.
                 </p>
               </div>
               <div class="col-md-5">
                 <?php
-                  foreach ($rdi_images as $key => $value) {
+                  foreach ($rdi_images['data'] as $key => $value) {
                     if ($value['type'] == 'NFOMP Workshop 3') {
-                      echo '<img src="'.$value['url'].'" alt="" class="py-10">';
+                      echo '<img src="'.$value['url'].'" alt="" class="py10">';
                     }
                   }
                 ?>
@@ -322,11 +354,11 @@
             <h4>Opportunities for Research, Development & Innovation: Meetings with College Faculty</h4>
             <div class="row list-number">
               <div class="col-md-7">
-                <p class="p0 mb_0 fontSize-14">
+                <p class="p0 mb0 fontSize-14">
                   Faculty meetings serve as one way to improve capability of HEIs by enhancing teaching and learning, as well as building a collaborative research culture. Improving HEIs includes staff members feeling valued, engaging in purposeful peer interactions, learning every day, and experiencing transparency. In order to develop research culture and creative thinking, interactive sessions were conducted in various colleges by the faculty members of Goa State Higher Education Council.  
                 </p>
                 <br>
-                <p class="p0 mb_0 fontSize-14">
+                <p class="p0 mb0 fontSize-14">
                   <strong>
                     The key objective of this programme is:
                   </strong>
@@ -345,9 +377,9 @@
               </div>
               <div class="col-md-5">
                 <?php
-                  foreach ($rdi_images as $key => $value) {
+                  foreach ($rdi_images['data'] as $key => $value) {
                     if ($value['type'] == 'RDI Meeting in Colleges') {
-                      echo '<img src="'.$value['url'].'" alt="" class="py-10">';
+                      echo '<img src="'.$value['url'].'" alt="" class="py10">';
                     }
                   }
                 ?>

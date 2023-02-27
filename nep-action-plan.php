@@ -40,7 +40,7 @@
                 with 34  different modules, some of which are:
               
                 <!-- List -->
-                <ul class="py-10">
+                <ul class="py10">
                   <li>
                     <strong>Online Admission: </strong>  We processed complete admission modalities of all the colleges centrally including preparation of merit list, and online fees payment. One of the greatest advantages of the online application system is that applicants can choose to submit their applications for multiple colleges or multiple courses free of cost. 
                   </li>

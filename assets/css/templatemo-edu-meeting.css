@@ -52,6 +52,8 @@ reset
   --orangeShade1:#fb7f00;
   --white:#fff;
   --greyReadableTextColor:#2a2a2a;
+  --cyanColor:#00a390;
+  --whiteShade1:#e7eab3;
   --bgBlackShade1:#131313b3;
   --bgBlackShade2:#000000e8;
   --bgBlackShade2Hover:#67676759;
@@ -148,6 +150,10 @@ p {
 img {
   width: 100%;
   overflow: hidden;
+}
+.imghw-2 {
+  height: 2rem;
+  width: 2rem;
 }
 
 /* 
@@ -890,7 +896,7 @@ services overlapping Cards
 
 /* New Changes for carousel */
 .services {
-  margin-top: -120px;   /* -135px; */
+  margin-top: -250px;   /* -135px; */
   position: absolute;
   width: 100%;
 }
@@ -2364,7 +2370,7 @@ responsive
   float: left;
   width: 22%;
   border-radius: 17px;
-  margin-top: -124px;
+  margin-top: -96px;
   box-shadow: 4px 3px 0px 0px rgb(0 0 0 / 14%);
   /* -webkit-box-shadow: 4px 3px 0px 0px rgb(0 0 0 / 14%); */
   -moz-box-shadow: 4px 3px 0px 0px rgba(0,0,0,0.14);
@@ -3266,6 +3272,9 @@ hr {
   text-transform: uppercase;
 }
 
+.fontSizeR-1 {
+  font-size: 1rem !important;
+}
 .fontSize-14 {
   font-size: 14px !important;
 }
@@ -3287,37 +3296,41 @@ hr {
 .p40 {
   padding: 40 !important;
 }
-.pt-100 {
+.pt100 {
   padding: 100px 0;
 }
-.pt-10 {
+
+.pt0 {
+  padding-top: 0 !important;
+}
+.pt10 {
   padding: 10 !important;
 }
-.pt-20 {
+.pt20 {
   padding-top: 20px;
 }
-.pt-30 {
+.pt30 {
   padding-top: 30px;
 }
-.pl-10 {
+.pl10 {
   padding-left: 10px;
 }
-.pl-20 {
+.pl20 {
   padding-left: 20px;
 }
-.pl-25 {
+.pl25 {
   padding-left: 25px;
 }
-.pb-20 {
+.pb20 {
   padding-bottom: 20px;
 }
-.pl-30 {
+.pl30 {
   padding-left: 4                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     0px;
 }
-.py-10 {
+.py10 {
   padding-top: 10px;
 }
-.py-40 {
+.py40 {
   padding: 40px 0;
 }
 .pt_30_for_h5 h5 {
@@ -3342,26 +3355,35 @@ hr {
 .p_inner_div_3 {
   padding: 40px !important;
 }
+.p_inner_div_4 {
+  padding: 4px 0 !important;
+}
 
 .m_auto {
   margin:auto;
 }
-.m_0 {
+.m0 {
   margin: 0 0;
 }
-.m_5 {
+.m5 {
   margin: 5px !important;
 }
-.m_10 {
+.m10 {
   margin: 10px !important;
 }
-.mb_0 {
+.mt10 {
+  margin-top: 0 !important;
+}
+.mt_n138 {
+  margin-top: -138px !important;
+}
+.mb0 {
   margin-bottom: 0 !important;
 }
-.mb_20 {
+.mb20 {
   margin-bottom: 20px !important;
 }
-.mb_40 {
+.mb40 {
   margin-bottom: 40px !important;
 }
 
@@ -3505,6 +3527,7 @@ hr {
   background: red;
   border-radius: 50%  
 }
+
 .announcement {
   position: absolute;
   top: 210px;
@@ -3555,6 +3578,83 @@ hr {
     transform: translateY(-100%);
   }
 }
+
+/* animations ----------------------------------------------- */
+.animate-typed-out {
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  animation: typing 10s forwards;
+  font-size: 1.2rem;
+  width: 0;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* Ribbon Box start ----------------------------------------------- */
+.emptyBox {
+  margin: 60px 0;
+  color: transparent;
+}
+.custom-ribbon {
+  width: 200px;
+  padding: 10px 20px;
+  margin: 40px 80px;
+  color: #fff;
+  text-align: right;
+  background: #7fbc03;
+  border-radius: 8px;
+  position: relative;
+  z-index: 0;
+}
+.custom-ribbon::before,
+.custom-ribbon::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  background: inherit;
+  border-radius:inherit;
+  border-bottom-left-radius:0;
+  transform-origin: top left;
+}
+.custom-ribbon::before {
+  left: 0;
+  right: 20%;
+  transform: skewX(-40deg);
+}
+.custom-ribbon::after {
+  z-index: -2;
+  left: 1px;
+  height: 130%; /* ~ 100%/cos(40deg) */
+  width: 40px;
+  filter: brightness(0.7);
+  transform: rotate(40deg);
+}
+.custom-ribbon-right {
+  text-align: left;
+  background: #cd1719;
+}
+.custom-ribbon-right::before {
+  right: 0;
+  left: 20%;
+  border-bottom-right-radius:0;
+  border-bottom-left-radius:inherit;
+  transform: skewX(40deg);
+}
+.custom-ribbon-right::after {
+  right: 1px;
+  left: auto;
+  transform-origin: top right;
+  border-bottom-right-radius:0;
+  border-bottom-left-radius:inherit;
+  transform: rotate(-40deg);
+}
+/* Ribbon Box End ----------------------------------------------- */
+
 
 /* rusa */
 .para p,
@@ -3625,6 +3725,17 @@ section.page-section.rusa p {
   right:-2.3em;
 }
 /* ----- Ribbon ---------------------- */
+
+
+
+/* carousel-item ---------------------- */
+.carouselHeight {
+  height: 555px !important;
+}
+.carouselHeight img {
+  object-fit: cover;
+}
+/* carousel-item ---------------------- */
 
 /* Flex button Start ----------------------- */
 button {
