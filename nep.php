@@ -51,7 +51,7 @@
                     if ($linksData && $linksData['code']=='200') {
                       foreach ($linksData['data'] as $key => $value) { 
                   ?>
-                        <li><a href="<?php echo $value['url'] ?>"><?php echo $value['title'] ?></a></li>
+                        <li><a href="<?php echo $value['url'] ?>" target="<?php echo $value['target']?>"><?php echo $value['title'] ?></a></li>
                 <?php   
                       }
                     } else {
