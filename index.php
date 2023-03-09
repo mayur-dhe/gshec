@@ -31,7 +31,7 @@
 </style>
   <!-- ***** Main Banner Area Start ***** -->
   <section class="section main-banner" id="top" data-section="section1">
-    <video autoplay muted loop id="bg-video" poster="assets/images/meeting-04.jpg">
+    <video autoplay muted loop id="bg-video" poster="assets/images/intro-cover-img.png">
       <source src="assets/video/gshec_intro.mp4" type="video/mp4" />
     </video>
 

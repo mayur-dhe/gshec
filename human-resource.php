@@ -18,8 +18,8 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <div class="section-header header-details p_inner_div">
-            <p class="textColor-black"><?php echo $rdi['title'] ?></p>
+          <div class="section-header header-details p0">
+            <p class="textColor-black p_inner_div_5 fontSizeR-14"><?php echo $rdi['title'] ?></p>
           </div>
           <div class="row gy-4">
             <?php 
@@ -31,7 +31,7 @@
                     <div class="profile-thumb-gradient"></div>
                     <div class="profile-thumb-anim">
                       <h5 class="profile-thumb-title ptt-2"><?php echo $value['name']; ?></h5>
-                      <p class="profile-thumb-description fontSize-12">
+                      <p class="profile-thumb-description">
                         <?php echo $value['designation']; ?><br><br>
                         <?php if ($value['linkedin']) { ?>
                             <a href="<?php echo $value['linkedin']; ?>">Click to view LinkedIn Profile</a><br>
@@ -50,8 +50,8 @@
           </div>
 
 
-          <div class="section-header header-details p_inner_div">
-            <p class="textColor-black"><?php echo $tl['title'] ?></p>
+          <div class="section-header header-details p0">
+            <p class="textColor-black p_inner_div_5 fontSizeR-14"><?php echo $tl['title'] ?></p>
           </div>
           <div class="row gy-4">
             <?php 

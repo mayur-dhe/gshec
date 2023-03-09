@@ -35,7 +35,7 @@
                 <li><a class="align-left" href="council-members.php">Council Members</a></li>
               </ul>
             </li>
-            <li><a href="#" class="<?php if ($page == '3') echo 'active'; ?>">Edu Dashboard</a></li>
+            <li><a href="education-dashboard.php" class="<?php if ($page == '3') echo 'active'; ?>">Edu Dashboard</a></li>
             <li><a href="human-resource.php" class="<?php if ($page == '4') echo 'active'; ?>">Human Resource</a></li>
             <li><a href="enrol-me.php" class="<?php if ($page == '5') echo 'active'; ?>">Enrol For Gyan Sangrah</a></li>
             <!-- <li class="scroll-to-section"><a href="index.php#contact">Contact Us</a></li> -->

@@ -50,6 +50,7 @@ reset
   --yellowLight:#e7ae00b3;
   --yellowShade1:#fb7f00;
   --orangeShade1:#fb7f00;
+  --orangeShade2:#ffa400;
   --white:#fff;
   --greyReadableTextColor:#2a2a2a;
   --cyanColor:#00a390;
@@ -1783,7 +1784,7 @@ section.heading-page {
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 100px;
-  padding-bottom: 6px;
+  /* padding-bottom: 6px; */
   text-align: left;
 }
 /* section.heading-page h6 {
@@ -2303,11 +2304,16 @@ responsive
     padding-inline: 16%;
   } */
 } 
-@media (min-width: 1400px) {
+/* @media (min-width: 1300px) {
   .header-area .main-nav .nav {
     width: 1164px;
   }
 } 
+@media (min-width: 1400px) {
+  .header-area .main-nav .nav {
+    width: 1164px;
+  }
+}  */
 /* social media links */
 .social-media-links .fa {
   padding: 12px;
@@ -2862,7 +2868,7 @@ responsive
 .profile-thumb-anim,
 .profile-thumb-author,
 .profile-thumb-title {
-  background: var(--orangeShade1);
+  background: var(--orangeShade2);
 }
 .profile-thumb-title {
   text-transform: uppercase;
@@ -3275,6 +3281,9 @@ hr {
 .fontSizeR-1 {
   font-size: 1rem !important;
 }
+.fontSizeR-14 {
+  font-size: 1.4rem !important;
+}
 .fontSize-14 {
   font-size: 14px !important;
 }
@@ -3307,7 +3316,7 @@ hr {
   padding: 10 !important;
 }
 .pt20 {
-  padding-top: 20px;
+  padding-top: 20px !important;
 }
 .pt30 {
   padding-top: 30px;
@@ -3358,6 +3367,9 @@ hr {
 .p_inner_div_4 {
   padding: 4px 0 !important;
 }
+.p_inner_div_5 {
+  padding: 20px 10px !important;
+}
 
 .m_auto {
   margin:auto;
@@ -3371,8 +3383,14 @@ hr {
 .m10 {
   margin: 10px !important;
 }
+.m40 {
+  margin: 40px !important;
+}
 .mt10 {
   margin-top: 0 !important;
+}
+.mt_n132 {
+  margin-top: -132px !important;
 }
 .mt_n138 {
   margin-top: -138px !important;
@@ -3385,6 +3403,10 @@ hr {
 }
 .mb40 {
   margin-bottom: 40px !important;
+}
+/* all */
+.mx40 {
+  margin: 40px 0 !important;
 }
 
 .ht_230 {
@@ -3415,6 +3437,13 @@ hr {
   list-style: inside !important;
 }
 
+/* shadows */
+.shadows {
+  border-radius: 4px;
+  background: #e6e6e6;
+  box-shadow:  8px 8px 16px #cdcdcd,
+              -8px -8px 16px #ffffff;
+}
 /* card design pdf */
 .card {
   margin: 12px !important;

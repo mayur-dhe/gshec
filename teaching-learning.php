@@ -24,7 +24,7 @@
   }
 </style>
 <!-- ------------- Main Content Start---------------------- -->
-  <section class="mt_n138">
+  <section class="mt_n132">
     <div class="row">
       <div class="col-lg-12 p-0">
         <!-- corosal ---------------------- -->

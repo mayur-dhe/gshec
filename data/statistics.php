@@ -1,4 +1,3 @@
-
 <?php
     $studentEnrolled = [
         'code' => 200,
