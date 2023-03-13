@@ -631,33 +631,33 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <h2>Statistics</h2>
+          <h2>Edu Dashboard</h2>
         </div>
         <div class="row">
           <div class="col">
             <div class="count-area-content">
-              <div class="count-digit"><img src="assets/images/st-college.jpg" alt=""></div>
+              <div class="count-digit"><img src="assets/images/icons/Institutes.png" alt=""></div>
               <div class="count-digit">60</div>
               <div class="count-title">Total Institutes</div>
             </div>
           </div>
           <div class="col">
             <div class="count-area-content">
-              <div class="count-digit"><img src="assets/images/st-student.jpg" alt=""></div>
+              <div class="count-digit"><img src="assets/images/icons/Students Icon.png" alt=""></div>
               <div class="count-digit add-digit">50000</div>
               <div class="count-title">Students</div>
             </div>
           </div>
           <div class="col">
             <div class="count-area-content">
-              <div class="count-digit"><img src="assets/images/st-faculty.jpg" alt=""></div>
+              <div class="count-digit"><img src="assets/images/icons/Faculty icon.png" alt=""></div>
               <div class="count-digit add-digit">30000</div>
               <div class="count-title">Faculty</div>
             </div>
           </div>
           <div class="col">
             <div class="count-area-content">
-              <div class="count-digit"><img src="assets/images/st-gender desc.jpg" alt=""></div>
+              <div class="count-digit"><img src="assets/images/icons/Faculty icon.png" alt=""></div>
               <div class="count-digit">32</div>
               <div class="count-title">Gender Descrimination</div>
             </div>

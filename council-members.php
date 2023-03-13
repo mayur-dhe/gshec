@@ -17,19 +17,16 @@
     <div class="container">
       <div class="row">
 
-        <div class="col-lg-12 p_inner_div_3">
-          <h2 class="content-title">Council Members</h2>
-          <br>
-          <br>
-          <br>
-          <div class="row g-5">
+        <div class="col-lg-12">
+          <h2 class="content-title">Constitution of Goa State Higher Education Council</h2>
+          <div class="row">
             <?php 
               foreach ($council_members as $key => $value) {
             ?>
-              <div class="col-lg-3 col-md-6 d-flex align-items-stretch council m_auto" data-aos="fade-up" data-aos-delay="100">
-                <div class="member">
+              <div class="col-lg-3 col-md-4 col-6 council m_auto" data-aos="fade-up" data-aos-delay="100">
+                <div class="member auto_height ">
                   <div class="member-img">
-                    <img src="<?php echo $value['image']?>" class="img-fluid" alt="<?php echo $value['name']?>">
+                    <img src="<?php echo $value['image']?>" style="height:300px; width:auto" alt="<?php echo $value['name']?>">
                   </div>
                   <div class="member-info">
                     <h4><?php echo $value['name']; ?></h4>
@@ -39,40 +36,39 @@
                 </div>
               </div>
             <?php
-                if ($key>0) {
-                  break;
-                }
+                break;
               } 
             ?>
           </div>
-          <br>
-          <br>
-          <br>
-          <hr class="title_tag">
-          <br>
-          <br>
-          <br>
-          <div class="row g-5">
-            <?php 
-              foreach ($council_members as $key => $value) {
-                if ($key>1) {
-            ?>
-                  <div class="col-lg-3 col-md-6 d-flex align-items-stretch council" data-aos="fade-up" data-aos-delay="100">
-                    <div class="member">
-                      <div class="member-img">
-                        <img src="<?php echo $value['image']?>" class="img-fluid" alt="<?php echo $value['name']?>">
-                      </div>
-                      <div class="member-info">
-                        <h4><?php echo $value['name']; ?></h4>
-                        <span><?php echo $value['designation']; ?></span>
-                        <p><?php echo $value['title']; ?></p>
-                      </div>
-                    </div>
-                  </div>
-            <?php   
-                } 
-              } 
-            ?>
+
+          <h2 class="content-title mt20">Council Members</h2>
+          <div class="row">
+            <div class="col-md-12" style="padding: 0 60px 60px">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col" style="min-width: 150px;">Name</th>
+                    <th scope="col">Designation</th>
+                    <th scope="col" style="min-width: 140px;">Nominated As</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <?php 
+                    foreach ($council_members as $key => $value) {
+                      echo '
+                        <tr>
+                          <th scope="row">'.++$key.'</th>
+                          <td>'.$value['name'].'</td>
+                          <td>'.$value['designation'].'</td>
+                          <td>'.$value['title'].'</td>
+                        </tr>
+                      ';
+                    } 
+                  ?>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
 

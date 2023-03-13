@@ -9,7 +9,7 @@
               <img src="assets/images/logo/GSHEC.png" alt="GSHEC" style="width: 70px;">
           </a>
           <!-- ***** Logo 2 Start ***** -->
-          <a href="#" target="_blank" class="logo logo-2">
+          <a href="https://www.dhe.goa.gov.in/" target="_blank" class="logo logo-2">
             <svg class="logo-size" viewBox="0 0 68 87" fill="none" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink">
               <rect width="68" height="87" fill="url(#pattern_2)" />
@@ -37,7 +37,7 @@
             </li>
             <li><a href="education-dashboard.php" class="<?php if ($page == '3') echo 'active'; ?>">Edu Dashboard</a></li>
             <li><a href="human-resource.php" class="<?php if ($page == '4') echo 'active'; ?>">Human Resource</a></li>
-            <li><a href="enrol-me.php" class="<?php if ($page == '5') echo 'active'; ?>">Enrol For Gyan Sangrah</a></li>
+            <li><a href="enrol-me.php" class="<?php if ($page == '5') echo 'active'; ?>">Enrol For Nyan Sangrah</a></li>
             <!-- <li class="scroll-to-section"><a href="index.php#contact">Contact Us</a></li> -->
           </ul>
           <a class='menu-trigger'>

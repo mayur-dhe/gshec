@@ -44,8 +44,16 @@
   </section>
   <!-- ------------- Main Content End---------------------- -->
   <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-  <script src="assets/js/frontend.js"></script>
+  <!-- <script src="assets/js/frontend.js"></script> -->
+  
   <script>
+    let studentEnrolled_json = <?php echo json_encode($studentEnrolled) ?>;
+    let studentEnrolledData = '';
+    if (studentEnrolled_json.code==200) {
+      studentEnrolledData = studentEnrolled_json.data;
+    }
+    console.log(studentEnrolledData);
+
     window.onload = function () {
       // line chart start ----------------------------------
       var chart = new CanvasJS.Chart("chartContainer", {

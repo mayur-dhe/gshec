@@ -1,7 +1,7 @@
 <?php
 
     $rdi = [
-        'title' => 'Center for Research Development and Initiative',
+        'title' => 'Center for Research Development and Innovation',
         'subtitle' => 'RDI Members',
         'data' => array(
                 array(
@@ -15,21 +15,21 @@
                     'name' => 'Dr. Mahesh Majik',
                     'designation' => 'Associate Professor',
                     'url' => 'assets/images/human resource/rdi/Majik.jpg',
-                    'linkedin' => '',
-                    'google_link' => '',
+                    'linkedin' => 'https://in.linkedin.com/in/mahesh-majik-27624517',
+                    'google_link' => 'https://www.researchgate.net/profile/Mahesh-Majik',
                 ),
                 array(
                     'name' => 'Ms. Vandana Naik',
                     'designation' => 'Assistant Professor',
                     'url' => 'assets/images/human resource/rdi/Ms. Vandana Naik(Assistant Professor).jpg',
-                    'linkedin' => '',
+                    'linkedin' => 'https://www.linkedin.com/in/vandananaik',
                     'google_link' => '',
                 ),
             ),
     ];
 
     $tl = [
-        'title' => 'Center for Teaching Learning',
+        'title' => 'Center for Teaching, Learning and Educational Technology',
         'subtitle' => 'TL Members',
         'data' => array(
                 array(
@@ -37,7 +37,7 @@
                     'designation' => 'Professor, Centre for Teaching, Learning and Educational Technology ',
                     'url' => 'assets/images/human resource/tl/Niyan Marchon.jpg',
                     'linkedin' => '',
-                    'google_link' => '',
+                    'google_link' => 'https://in.linkedin.com/in/dr-niyan-marchon-64516013a?original_referer=https%3A%2F%2Fwww.google.com%2F',
                 ),
                 array(
                     'name' => 'Dr. Kavita Asanani',

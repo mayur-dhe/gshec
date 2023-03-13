@@ -664,6 +664,7 @@ header
 .header-area.header-sticky {
   min-height: 80px;
   height: 130px;
+  height: 124px;
 }
 
 .header-area .nav {
@@ -1492,7 +1493,7 @@ section.our-courses {
 .our-courses .owl-nav .owl-next:before {
   display: inline-block;
   font-family: 'FontAwesome';
-  color: #1e1e1e;
+  color: #1e1e1e; 
   font-size: 25px;
   font-weight: 700;
   content: '\f105';
@@ -1530,7 +1531,7 @@ section.our-facts h2 {
 
 .count-area-content {
   text-align: center;
-  background-color: rgba(250,250,250,0.15);
+  background-color: #aeaeae75;
   border-radius: 20px;
   padding: 25px 30px 35px 30px;
   margin: 15px 0px;
@@ -2334,10 +2335,10 @@ responsive
   background: #55ACEE;
 }
 .social-media-links .fa-linkedin {
-  background: #d52929;
+  background: #125688;
 }
 .social-media-links .fa-instagram {
-  background: #125688;
+  background: #d52929;
 }
 
 /* site map */
@@ -2704,6 +2705,11 @@ responsive
   overflow: hidden;
 }
 
+.auto_height {
+  height: fit-content;
+  width: fit-content;
+}
+
 /* .team .member .member-img:after {
   position: absolute;
   content: "";
@@ -2887,6 +2893,12 @@ responsive
   transition: 0.5s ease-in;
   opacity: 0;
   flex: 1;
+}
+.profile-thumb-description a {
+  color: #000000eb !important;
+}
+.profile-thumb-description a:hover {
+  color: #c20000 !important;
 }
 .profile-thumb-author {
   position: relative;
@@ -3111,6 +3123,128 @@ responsive
 # SDC projects End
 --------------------------------------------------------------- */
 
+/* Tree Chart  Css  --------------------------------------------------------------- */
+.tree,
+.tree ul,
+.tree li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.tree {
+    margin: 0 0 1em;
+    text-align: center;
+}
+.tree,
+.tree ul {
+    display: table;
+}
+.tree ul {
+    width: 100%;
+}
+.tree li {
+    display: table-cell;
+    padding: .5em 0;
+    vertical-align: top;
+}
+.tree li:before {
+    outline: solid 1px #666;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.tree li:first-child:before {
+    left: 50%;
+}
+.tree li:last-child:before {
+    right: 50%;
+}
+.tree code,
+.tree span {
+  /* border: solid 0.1em #666; */
+  border-radius: 0.4em;
+  display: inline-block;
+  margin: 0 0.2em 0.5em;
+  padding: 0.2em 0.8em;
+  position: relative;
+  font-size: 0.8em;
+  color: #000000;
+  background-color: #c6c6c6;
+  width: -webkit-fill-available;
+  box-shadow: 0px 0px 3px #cdcdcd, 1px 1px 3px #000000;
+}
+.tree ul:before,
+.tree code:before,
+.tree span:before {
+    outline: solid 1px #666;
+    content: "";
+    height: .5em;
+    left: 50%;
+    position: absolute;
+}
+.tree ul:before {
+    top: -.5em;
+}
+.tree code:before,
+.tree span:before {
+    top: -.55em;
+}
+.tree>li {
+    margin-top: 0;
+}
+.tree>li:before,
+.tree>li:after,
+.tree>li>code:before,
+.tree>li>span:before {
+    outline: none;
+}
+.wd_1 {
+  width: 18em !important;
+}
+.wd_2 {
+  width: 10em !important;
+}
+.ht_1 {
+  min-height: 2.8em;
+  padding: inherit !important;
+}
+.ht_2 {
+  min-height: 4em;
+  padding: inherit !important;
+}
+
+.tree-title3-color,
+.tree-title2-color,
+.tree-title-color {
+  color: white !important;
+}
+.tree-title-color {
+  background-color: #4c3f73 !important;
+}
+.tree-title2-color {
+  background-color: #e00000 !important;
+}
+.tree-title3-color {
+  background-color: #f98000 !important;
+}
+.tree-title4-color {
+  background-color: #f9cc2f !important;
+}
+.tree-title5-color {
+  background-color: #f98000 !important;
+}
+/* Tree Chart  Css End --------------------------------------------------------------- */
+
+/* Add Css End --------------------------------------------------------------- */
+/* Add Css End --------------------------------------------------------------- */
+/* Add Css End --------------------------------------------------------------- */
+/* Add Css End --------------------------------------------------------------- */
+/* Add Css End --------------------------------------------------------------- */
+/* Add Css End --------------------------------------------------------------- */
+
 /* ---------------------------------------------
   Blank page
 --------------------------------------------- */
@@ -3124,15 +3258,12 @@ section.page-section {
 section.page-section.pt-0 {
   padding: 0px 0;
 }
-
 section.page-section p {
   font-size: 18px;
   line-height: 1.6;
   padding: 20px 100px;
   text-align: justify;
 }
-
-
 section.page-section1 {
   background-color: #1F262C;
   background-image: url(../images/meetings-page-bg.jpg);
@@ -3144,8 +3275,6 @@ section.page-section1 {
   padding-bottom: 0px;
 }
 
-
-
 /*--------------------------------------------------------------
 # inner page design
 --------------------------------------------------------------- */
@@ -3155,15 +3284,12 @@ section.page-section1 {
 .reading-pages * {
   color: #363636;
 }
-
 section.page-section .read {
   font-size: 18px;
   line-height: 1.6;
   padding: 20px 100px;
   text-align: justify;
 }
-
-
 .page-section .container {
   margin-bottom: 2rem;
   background: rgb(255, 255, 255);
@@ -3204,7 +3330,7 @@ hr:not([size]) {
 }
 /* logo alignment */
 .align-left {
-  text-align: left;
+  text-align: left !important;
 }
 
 
@@ -3213,7 +3339,7 @@ hr:not([size]) {
 
 
 /*--------------------------------------------------------------
-# General css
+# General Custom css
 --------------------------------------------------------------- */
 hr {
   height: 1px;
@@ -3283,6 +3409,10 @@ hr {
 }
 .fontSizeR-14 {
   font-size: 1.4rem !important;
+}
+
+.fontSizeR-2 {
+  font-size: 2rem !important;
 }
 .fontSize-14 {
   font-size: 14px !important;
@@ -3370,7 +3500,9 @@ hr {
 .p_inner_div_5 {
   padding: 20px 10px !important;
 }
-
+.p_btm_space {
+  padding: 0 30px 40px;
+}
 .m_auto {
   margin:auto;
 }
@@ -3386,11 +3518,24 @@ hr {
 .m40 {
   margin: 40px !important;
 }
+.m36_0{
+  margin: 36px 0;
+}
 .mt10 {
   margin-top: 0 !important;
 }
+.mt20 {
+  margin-top: 20px !important;
+}
+.mt30 {
+  margin-top: 30px;
+}
+.mt50 {
+  margin-top: 50px !important;
+}
 .mt_n132 {
-  margin-top: -132px !important;
+  /* margin-top: -132px !important; */
+  margin-top: -124px !important;
 }
 .mt_n138 {
   margin-top: -138px !important;
@@ -3400,6 +3545,9 @@ hr {
 }
 .mb20 {
   margin-bottom: 20px !important;
+}
+.mb30 {
+  margin-bottom: 30px !important;
 }
 .mb40 {
   margin-bottom: 40px !important;
@@ -3435,6 +3583,39 @@ hr {
 }
 .list-inside ul>li {
   list-style: inside !important;
+}
+
+
+.btn_size {
+  width: auto !important;
+  white-space: nowrap;
+}
+.star:after {
+  content: "*";
+}
+.star:after, .star-style {
+  color:red;
+}
+.form-design {
+  margin: 0;
+  padding: 20px;
+  background-color: #f7f9c4;
+  border-radius: 10px;
+}
+.form-box {
+  margin: 10px auto;
+  border: 5px solid #f2ffc2;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* fade in effect  */
+.fade-in-box {
+  opacity: 50%;
+}
+.fade-in-box:hover {
+  opacity: 100%;
+  transition: opacity 1s;
 }
 
 /* shadows */
@@ -3759,12 +3940,15 @@ section.page-section.rusa p {
 
 /* carousel-item ---------------------- */
 .carouselHeight {
-  height: 555px !important;
+  /* height: 555px !important; */
+  height: 636px !important;
 }
 .carouselHeight img {
   object-fit: cover;
 }
 /* carousel-item ---------------------- */
+
+
 
 /* Flex button Start ----------------------- */
 button {

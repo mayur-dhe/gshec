@@ -19,12 +19,6 @@
             )
         ),
     ];
-    // let studentEnrolled_json = <?php echo json_encode($studentEnrolled) ?>;
-    <!-- let studentEnrolledData = '';
-    if (studentEnrolled_json.code==200) {
-      studentEnrolledData = studentEnrolled_json.data;
-    }
-    console.log(studentEnrolledData); -->
 
     $institutes = [
         'code' => 200,

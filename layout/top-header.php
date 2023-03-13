@@ -30,6 +30,10 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
     <!-- <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+
+    <!-- map -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
     <style>
         * {
             font-family: 'Roboto';
@@ -48,84 +52,74 @@
         .textColor-black p {
             color: #363636;
         }
-
         /* image corousal */
         img {
-        vertical-align: middle;
+            vertical-align: middle;
         }
-
         /* Position the image container (needed to position the left and right arrows) */
         .container {
-        position: relative;
+            position: relative;
         }
-
         /* Hide the images by default */
         .mySlides {
-        display: none;
+            display: none;
         }
-
         /* Add a pointer when hovering over the thumbnail images */
         .cursor {
-        cursor: pointer;
+            cursor: pointer;
         }
-
         /* Next & previous buttons */
         .prev,
         .next {
-        cursor: pointer;
-        position: absolute;
-        top: 40%;
-        width: auto;
-        padding: 16px;
-        margin-top: -50px;
-        color: white;
-        font-weight: bold;
-        font-size: 20px;
-        border-radius: 0 3px 3px 0;
-        user-select: none;
-        -webkit-user-select: none;
+            cursor: pointer;
+            position: absolute;
+            top: 40%;
+            width: auto;
+            padding: 16px;
+            margin-top: -50px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            -webkit-user-select: none;
         }
-
         /* Position the "next button" to the right */
         .next {
-        right: 0;
-        border-radius: 3px 0 0 3px;
+            right: 0;
+            border-radius: 3px 0 0 3px;
         }
-
         /* On hover, add a black background color with a little bit see-through */
         .prev:hover,
         .next:hover {
-        background-color: rgba(0, 0, 0, 0.8);
+            background-color: rgba(0, 0, 0, 0.8);
         }
 
         /* Number text (1/3 etc) */
         .numbertext {
-        color: #f2f2f2;
-        font-size: 12px;
-        padding: 8px 12px;
-        position: absolute;
-        top: 0;
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
         }
-
         /* Container for image text */
         .caption-container {
-        text-align: center;
-        background-color: #222;
-        padding: 2px 16px;
-        color: white;
+            text-align: center;
+            background-color: #222;
+            padding: 2px 16px;
+            color: white;
         }
-
         .row:after {
-        content: "";
-        display: table;
-        clear: both;
+            content: "";
+            display: table;
+            clear: both;
         }
-
         /* Six columns side by side */
         .column {
-        float: left;
-        width: 5%;
-        padding: 2px;
+            float: left;
+            width: 5%;
+            padding: 2px;
         }
         .column img{
             object-fit: cover;
@@ -133,13 +127,23 @@
         }
         /* Add a transparency effect for thumnbail images */
         .demo {
-        opacity: 0.6;
+            opacity: 0.6;
         }
-
         .active,
         .demo:hover {
-        opacity: 1;
+            opacity: 1;
         }
+
+        /* scroll section wise */
+        /* .scroller {
+            height: auto;
+            overflow-y: scroll;
+            scroll-snap-type: y mandatory;
+            scroll-padding: 40px;
+        }
+        .scroller section {
+            scroll-snap-align: start;
+        } */
     </style>
 </head>
 

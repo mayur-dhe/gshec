@@ -14,14 +14,14 @@
   <!-- -------------------------------------------------------- -->
   <!-- ------------- Main Content Start---------------------- -->
   <!-- -------------------------------------------------------- -->
-  <section class="page-section">
+  <section class="page-section mt30">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12">
+        <div class="col-lg-12 p_btm_space">
           <div class="section-header header-details p0">
-            <p class="textColor-black p_inner_div_5 fontSizeR-14"><?php echo $rdi['title'] ?></p>
+            <p class="textColor-black p_inner_div_5 fontSizeR-2 align-left"><?php echo $rdi['title'] ?></p>
           </div>
-          <div class="row gy-4">
+          <div class="row">
             <?php 
               foreach ($rdi['data'] as $key => $value) {
             ?>
@@ -31,13 +31,13 @@
                     <div class="profile-thumb-gradient"></div>
                     <div class="profile-thumb-anim">
                       <h5 class="profile-thumb-title ptt-2"><?php echo $value['name']; ?></h5>
-                      <p class="profile-thumb-description">
+                      <p class="profile-thumb-description fontSize-12 align-left">
                         <?php echo $value['designation']; ?><br><br>
                         <?php if ($value['linkedin']) { ?>
-                            <a href="<?php echo $value['linkedin']; ?>">Click to view LinkedIn Profile</a><br>
+                            <a href="<?php echo $value['linkedin'];?>" target="_blank" class="fa fa-linkedin"> Click to open Linked-in Profile</a><br>
                         <?php } 
-                          if ($value['linkedin']) { ?>
-                                <a href="<?php echo $value['google_link']; ?>">Click to view LinkedIn Profile</a>
+                          if ($value['google_link']) { ?>
+                            <a href="<?php echo $value['google_link']; ?>" target="_blank" class="fa fa-google"> Click to open Profile</a>
                         <?php } ?>
                       </p>
                       <div class="profile-thumb-author"></div>
@@ -48,10 +48,17 @@
               }
             ?>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-
+  <section class="page-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 p_btm_space">
           <div class="section-header header-details p0">
-            <p class="textColor-black p_inner_div_5 fontSizeR-14"><?php echo $tl['title'] ?></p>
+            <p class="textColor-black p_inner_div_5 fontSizeR-2 align-left"><?php echo $tl['title'] ?></p>
           </div>
           <div class="row gy-4">
             <?php 
@@ -63,13 +70,13 @@
                     <div class="profile-thumb-gradient"></div>
                     <div class="profile-thumb-anim">
                       <h5 class="profile-thumb-title ptt-2"><?php echo $value['name']; ?></h5>
-                      <p class="profile-thumb-description fontSize-12">
+                      <p class="profile-thumb-description fontSize-12 align-left">
                         <?php echo $value['designation']; ?><br><br>
                         <?php if ($value['linkedin']) { ?>
-                            <a href="<?php echo $value['linkedin']; ?>">Click to view LinkedIn Profile</a><br>
+                            <a href="<?php echo $value['linkedin']; ?>" target="_blank" class="fa fa-linkedin"> Click to open Linked-in Profile</a><br>
                         <?php } 
-                          if ($value['linkedin']) { ?>
-                                <a href="<?php echo $value['google_link']; ?>">Click to view LinkedIn Profile</a>
+                          if ($value['google_link']) { ?>
+                                <a href="<?php echo $value['google_link']; ?>" target="_blank" class="fa fa-google"> Click to open Profile</a>
                         <?php } ?>
                       </p>
                       <div class="profile-thumb-author"></div>
@@ -80,7 +87,44 @@
               }
             ?>
           </div>
-
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="page-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 p_btm_space">
+          <div class="section-header header-details p0">
+            <p class="textColor-black p_inner_div_5 fontSizeR-2 align-left"><?php echo $gshec['title'] ?></p>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Designation</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <?php 
+                    foreach ($gshec['data'] as $key => $value) {
+                      echo '
+                        <tr>
+                          <th scope="row">'.++$key.'</th>
+                          <td>'.$value['name'].'</td>
+                          <td>'.$value['designation'].'</td>
+                        </tr>
+                      ';
+                    } 
+                  ?>
+                </tbody>
+              </table>
+            </div>
+          </div>
 
         </div>
       </div>

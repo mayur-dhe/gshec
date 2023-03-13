@@ -17,7 +17,7 @@ function openTabSection(evt, selectedTab)
     document.getElementById(selectedTab).style.display = "block";
     evt.currentTarget.className += " active";
 
-    $(window).scrollTop(0);// 160
+    $(window).scrollTop(80);// 160
 }
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();

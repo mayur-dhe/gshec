@@ -4,18 +4,20 @@
     <footer>
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-lg-5 item">
+          <!--   
+          <div class="col-lg-1 col-md-1 col-6 item">
             <h3>GOA SHEC</h3>
-            <ul>
-              <li>Goa State Higher Education Council
+            <ul> -->
+              <!-- <li>Goa State Higher Education Council -->
                 <!-- <br>under Rashtriya Uchchtar Shiksha Abhiyan (RUSA),
                 <br>a new Centrally sponsored Program 
                 <br>under Ministry of Human Resource Development, 
                 <br>Government of India, Department of Higher Education, New Delhi -->
-              </li>
-            </ul>
+              <!-- </li> -->
+            <!-- </ul> 
           </div>
-          <div class="col-lg-2 item">
+        -->
+          <div class="col-lg-3 col-md-3 col-6 item mb30">
             <h3>Important Links</h3>
             <ul>
               <li><a href="rti.php">RTI</a></li>
@@ -25,7 +27,7 @@
               <li><a href="https://www.dhe.goa.gov.in/" target="_blank">DHE</a></li>
             </ul>
           </div>
-          <div class="col-lg-2 item">
+          <div class="col-lg-3 col-md-2 col-6 item mb30">
             <h3>Useful Links</h3>
             <ul>
               <li><a href="gallery.php">Gallery</a></li>
@@ -35,7 +37,7 @@
               <li><a href="archives.php">Archives</a></li>
             </ul>
           </div>
-          <div class="col-lg-3 item">
+          <div class="col-lg-3 col-md-3 col-6 item mb30">
             <h3>Contact Us</h3>
             <ul>
               <li>
@@ -47,6 +49,11 @@
               <li>
                 <h6>Address : <span>SCERT, Alto-Porvorim, <br>Bardez-Goa</span></h6>
               </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6 item mb30">
+            <h3>Connect Us</h3>
+            <ul>
               <li class="social-media-links">
                 <a href="https://twitter.com/GoaSHEC" class="fa fa-twitter" title="@GoaSHEC"></a>
                 <a href="https://www.facebook.com/profile.php?id=100086696510658" class="fa fa-facebook"></a>
@@ -59,7 +66,7 @@
       </div>
     </footer>
     <div class="footer f-home">
-      <p>Copyright © 2023 : Directorate of Higher Education, Government of Goa
+      <p>Copyright © 2023 : Goa State Higher Education Council
         <!-- <br>Design: <a href="https://templatemo.com" target="_parent" title="free css templates">TemplateMo</a> -->
       </p>
     </div>
