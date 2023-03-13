@@ -3216,22 +3216,28 @@ responsive
   padding: inherit !important;
 }
 
+.tree-title5-color,
+.tree-title4-color,
 .tree-title3-color,
-.tree-title2-color,
+.tree-title1-color,
 .tree-title-color {
   color: white !important;
 }
 .tree-title-color {
-  background-color: #4c3f73 !important;
+  background-color: #3a0056 !important;
+}
+
+.tree-title1-color {
+  background-color: #102d4c !important;
 }
 .tree-title2-color {
-  background-color: #e00000 !important;
+  background-color: #f9cc2f !important;
 }
 .tree-title3-color {
-  background-color: #f98000 !important;
+  background-color: #0d7d6f !important;
 }
 .tree-title4-color {
-  background-color: #f9cc2f !important;
+  background-color: #e00000 !important;
 }
 .tree-title5-color {
   background-color: #f98000 !important;
