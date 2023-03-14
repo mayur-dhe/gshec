@@ -9,12 +9,13 @@ About us
 internal pages
 	rdi
 
-
-
+<!-- --------------------------------------------------- -->
+<!-- --------------------------------------------------- -->
 <!-- Pending Resources -->
-	Icon - Gender Desc 
 
 
 <!-- find me -->
-gshec-extra file copied
-    - assets/video/rdi/Research, Development & Innovation.gif
+
+<!-- --------------------------------------------------- -->
+<!-- --------------------------------------------------- -->
+<!-- upload on gshec edu -->
