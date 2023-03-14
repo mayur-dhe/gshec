@@ -44,7 +44,7 @@
                 <h6>Phone : <span><a href="tel:08322410824">0832-2410824</a></span></h6>
               </li>
               <li>
-                <h6>Email : <span><a href="mailto:gshec@nic.in">gshec@nic.in</a></span></h6>
+                <h6>Email : <span><a href="mailto:research-dhe.goa@gov.in">research-dhe.goa@gov.in</a></span></h6>
               </li>
               <li>
                 <h6>Address : <span>SCERT, Alto-Porvorim, <br>Bardez-Goa</span></h6>
@@ -66,7 +66,7 @@
       </div>
     </footer>
     <div class="footer f-home">
-      <p>Copyright © 2023 : Goa State Higher Education Council
+      <p>Copyright © 2023 : Goa State Higher Education Council, Government of Goa 
         <!-- <br>Design: <a href="https://templatemo.com" target="_parent" title="free css templates">TemplateMo</a> -->
       </p>
     </div>

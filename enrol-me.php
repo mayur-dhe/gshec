@@ -2,7 +2,7 @@
 include 'functions/frontend_function.php';
 include 'config/user_access.php';
 $page = "5";
-$title = "ENROL FOR NYAN SANGRAH";
+$title = "ENROL FOR DNYAN SANGRAH";
 require 'layout/top-header.php';
 ?>
 <body class="reading-pages">
@@ -27,7 +27,7 @@ if ($countryData['code'] == '200' ) {
     <div class="container" style="padding: 30px 40px;">
 		<div class="row">
 			<div class="col-md-12">
-				<!-- <h4 class="align-center"><?php echo $title ?></h4> -->
+				<h4 class="align-center font_dancing">Enrol for Dnyan Sangrah</h4>
 				<form name="frm_scholar" id="frm_scholar" method="POST" action="<?php echo $submitAPI; ?>">
 					<div class="col-md-12">
 						<legend class="form-design">Personal Information</legend>
@@ -74,7 +74,7 @@ if ($countryData['code'] == '200' ) {
 											?>
 										</select>
 									</div>
-									<div class="form-group col-md-6">
+									<div class="form-group col-md-12 col-lg-6">
 										<label class="form-label star" for="wtype">Work Type</label><br>
 										<div class="form-check form-check-inline">
 											<input class="form-check-input" type="radio" name="wtype" id="wtype-0" value="Industry">
@@ -85,7 +85,7 @@ if ($countryData['code'] == '200' ) {
 											<label class="form-check-label" for="wtype-1">Institution</label>
 										</div>
 									</div>
-									<div class="form-group col-md-6">
+									<div class="form-group col-md-12 col-lg-6">
 										<label class="form-label" for="wname">Name of Industry/Institution</label>  
 										<input id="wname" name="wname" type="text" placeholder="" class="form-control">
 									</div>
@@ -96,10 +96,11 @@ if ($countryData['code'] == '200' ) {
 											<textarea class="form-control" id="arearsch" name="arearsch"></textarea>
 										</div>
 									</div>
+									<div id="LOCAL_CONNECT"></div>
 								</div>
 							</div>
 							<div class="form-group col-md-12 text-center" id="buttonBox1">
-								<button type="button" class="btn btn-primary btn_size" onclick="changePage(2)"> Next</button>
+								<button type="button" class="btn btn-primary btn_size" onclick="changePage(2);"> Next</button>
 							</div>
 						</div>
 					</div>
@@ -111,7 +112,7 @@ if ($countryData['code'] == '200' ) {
 									<!-- Multiple Radios (inline) -->
 									<div class="form-group">
 										<label class="col-md-6 control-label" for="frqvisit">Frequency of visit to Goa</label>
-										<div class="col-md-6"> 
+										<div class="col-md-12"> 
 											<label class="radio-inline" for="frqvisit-0">
 												<input type="radio" name="frqvisit" id="frqvisit-0" value="Annual" checked="checked">
 												Annual
@@ -145,8 +146,9 @@ if ($countryData['code'] == '200' ) {
 							<div class="col-md-4">
 								<img class="img-fluid pt20" src="assets/images/travel_mode.png" alt="">
 							</div>
+							<div id="RECOMMENDATION"></div>
 							<div class="form-group col-md-12 text-center" id="buttonBox2">
-								<button type="button" class="btn btn-primary btn_size" onclick="changePage(3)"> Next</button>
+								<button type="button" class="btn btn-primary btn_size" onclick="changePage(3);"> Next</button>
 							</div>
 						</div>
 					</div>
@@ -201,9 +203,11 @@ if ($countryData['code'] == '200' ) {
 		if (value==2) {
 			$("#buttonBox1").addClass("d-none");
 			$("#box2").removeClass("d-none");
+			window.location="#LOCAL_CONNECT";
 		} else if (value==3) {
 			$("#buttonBox2").addClass("d-none");
 			$("#box3").removeClass("d-none");
+			window.location="#RECOMMENDATION";
 		}
 	}
 

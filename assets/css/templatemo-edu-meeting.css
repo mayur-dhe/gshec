@@ -37,6 +37,13 @@ font & reset css
 @import url("https://fonts.googleapis.com/css?family=Open Sans");
 @import url("https://fonts.googleapis.com/css?family=Arizonia");
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+/*
+font-family: 'Dancing Script', cursive;
+font-family: 'Parisienne', cursive;
+font-family: 'Sacramento', cursive;
+font-family: 'Tangerine', cursive; 
+*/
+
 /* 
 ---------------------------------------------
 reset
@@ -162,6 +169,12 @@ img {
 global styles
 --------------------------------------------- 
 */
+
+.font_dancing {
+  font-size: 65px;
+  font-family: 'Dancing Script', cursive;
+}
+
 html,
 body {
   background: var(--white);
@@ -821,7 +834,10 @@ banner
     object-fit: cover;
     z-index: -1;
 }
-
+#bg-video.bg-screen-height {
+  min-height: 94vh;
+  max-height: 94vh;
+}
 #bg-video::-webkit-media-controls {
     display: none !important;
 }
@@ -1069,7 +1085,6 @@ quotes
   position: absolute;
   right: 60px;
   bottom: 0px;
-
 }
 
 /*
@@ -1574,7 +1589,6 @@ section.our-facts h2 {
 section.our-facts .video {
   text-align: center;
   margin-left: 70px;
-  /* background-image: url(../images/video-item-bg.jpg); */
   background-color: rgb(0 0 0 / 45%);
   /* #ffe8c3; */
   padding: 20px;
@@ -3317,7 +3331,7 @@ section.page-section .read {
 .align-center,
 .align-center h2,
 .align-center .sub_title {
-  text-align: center;
+  text-align: center !important;
 }
 .align-center .sub_title {
   color: #505050;
@@ -3540,8 +3554,8 @@ hr {
   margin-top: 50px !important;
 }
 .mt_n132 {
-  /* margin-top: -132px !important; */
-  margin-top: -124px !important;
+  margin-top: -132px !important;
+  /* margin-top: -124px !important; */
 }
 .mt_n138 {
   margin-top: -138px !important;
@@ -3947,7 +3961,8 @@ section.page-section.rusa p {
 /* carousel-item ---------------------- */
 .carouselHeight {
   /* height: 555px !important; */
-  height: 636px !important;
+  height: 604px !important;
+  /* height: 636px !important; */
 }
 .carouselHeight img {
   object-fit: cover;

@@ -26,7 +26,7 @@
 </style>
   <!-- ------------- Main Content Start---------------------- -->
   <section class="mt_n132">
-    <img id="bg-video"  src="assets/video/rdi/Research, Development & Innovation.gif" alt="RDI Cover" >
+    <img id="bg-video"  src="../Research, Development & Innovation.gif" alt="RDI Cover" >
   </section>
   <section class="page-section">
     <div class="container">

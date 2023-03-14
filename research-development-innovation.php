@@ -11,10 +11,6 @@
   include 'data/research_dev_innovation.php';
 ?>
 <style>
-  /* section.heading-page {
-    background-image: url(assets/images/rdi/cover-img.jpg);
-    padding-bottom: 430px;
-  } */
   .page-section .container {
     margin-bottom: 2rem;
     background: #f2f2f2;
@@ -26,7 +22,7 @@
 </style>
   <!-- ------------- Main Content Start---------------------- -->
   <section class="mt_n132">
-    <video autoplay muted loop id="bg-video" poster="assets/images/rdi/intro-cover-img.png">
+    <video autoplay muted loop id="bg-video" class="bg-screen-height" poster="assets/images/rdi/intro-cover-img.png">
       <source src="assets/video/rdi/Research, Development & Innovation.mp4" type="video/mp4" />
     </video>
   </section>

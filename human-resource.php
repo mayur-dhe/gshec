@@ -11,6 +11,12 @@
   require 'layout/site-map.php'; 
   include 'data/human_resource.php';
 ?>
+<style>
+  .profile-thumb {
+    max-width: 250px;
+    margin: auto;
+  }
+</style>
   <!-- -------------------------------------------------------- -->
   <!-- ------------- Main Content Start---------------------- -->
   <!-- -------------------------------------------------------- -->
@@ -19,13 +25,13 @@
       <div class="row">
         <div class="col-lg-12 p_btm_space">
           <div class="section-header header-details p0">
-            <p class="textColor-black p_inner_div_5 fontSizeR-2 align-left"><?php echo $rdi['title'] ?></p>
+            <p class="textColor-black p_inner_div_5 fontSizeR-2 align-center"><?php echo $rdi['title'] ?></p>
           </div>
-          <div class="row">
+          <div class="row gy-4">
             <?php 
               foreach ($rdi['data'] as $key => $value) {
             ?>
-                <div class="col-12 col-md-4 col-xl-3">
+                <div class="col-12 col-md-4 col-xl-4">
                   <div class="profile-thumb">
                     <img class="profile-thumb-img" src="<?php echo $value['url']; ?>" alt="">
                     <div class="profile-thumb-gradient"></div>
@@ -58,13 +64,13 @@
       <div class="row">
         <div class="col-lg-12 p_btm_space">
           <div class="section-header header-details p0">
-            <p class="textColor-black p_inner_div_5 fontSizeR-2 align-left"><?php echo $tl['title'] ?></p>
+            <p class="textColor-black p_inner_div_5 fontSizeR-2 align-center"><?php echo $tl['title'] ?></p>
           </div>
           <div class="row gy-4">
             <?php 
               foreach ($tl['data'] as $key => $value) {
             ?>
-                <div class="col-12 col-md-4 col-xl-3">
+                <div class="col-12 col-md-4 col-xl-4">
                   <div class="profile-thumb">
                     <img class="profile-thumb-img" src="<?php echo $value['url']; ?>" alt="">
                     <div class="profile-thumb-gradient"></div>
@@ -97,7 +103,7 @@
       <div class="row">
         <div class="col-lg-12 p_btm_space">
           <div class="section-header header-details p0">
-            <p class="textColor-black p_inner_div_5 fontSizeR-2 align-left"><?php echo $gshec['title'] ?></p>
+            <p class="textColor-black p_inner_div_5 fontSizeR-2 align-center"><?php echo $gshec['title'] ?></p>
           </div>
           <div class="row">
             <div class="col-md-12">

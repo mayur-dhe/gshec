@@ -92,7 +92,7 @@
                   <img src="assets/images/icons/R-D-Innovation.png" alt="">
                 </div>
                 <div class="down-content">
-                  <h4 class="card_label">Research Development and Innovation <br class="hide_br_2"><br class="hide_br_2"> </h4>
+                  <h4 class="card_label">Center for Research Development and Innovation <br class="hide_br_2"><br class="hide_br_2"> </h4>
                   <h4 class="card_label_short">RDI <br><br> </h4>
                   <p>Click Here</p>
                 </div>
@@ -105,7 +105,7 @@
                   <img src="assets/images/icons/Teaching-Learning-and-Educational-Technologies.png" alt="">
                 </div>
                 <div class="down-content">
-                  <h4 class="card_label">Teaching Learning and Educational Technology </h4>
+                  <h4 class="card_label">Center for Teaching, Learning and Educational Technology </h4>
                   <h4 class="card_label_short">TLET <br><br> </h4>
                   <p>Click Here</p>
                 </div>
@@ -657,14 +657,14 @@
           </div>
           <div class="col">
             <div class="count-area-content">
-              <div class="count-digit"><img src="assets/images/icons/Faculty icon.png" alt=""></div>
+              <div class="count-digit"><img src="assets/images/icons/Gender ratio_icon.png" alt=""></div>
               <div class="count-digit">32</div>
-              <div class="count-title">Gender Descrimination</div>
+              <div class="count-title">Gender Ratio</div>
             </div>
           </div>
           <div class="col">
             <div class="count-area-content">
-              <div class="count-title pt100">View All</div>
+              <div class="count-title pt100"><a href="education-dashboard.php" style="color:var(--white)"> View All</a></div>
             </div>
           </div>
         </div>
@@ -736,7 +736,7 @@
               <br/>
               <li>
                 <h6>Email Address</h6>
-                <span>gshec@nic.in</span>
+                <span>research-dhe.goa@gov.in</span>
               </li>
               <br/>
 
