@@ -6,15 +6,18 @@
             'source' => 'IAIMS portal',
             'x_axis_title' => 'Courses',
             'x_axis'=> array('B.Com','B.A','B.Sc','BScAGRI','BBA','BCA','BscHSC','B.Voc','BPA','FC','B.A.LLB','B.ED','B.A.BED','BPAT','B.A sanskrit','Auxiliary Nurse Midewifery(ANM)'),
+            'x_axis'=> array(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16),
             'y_axis_title' => 'Number of Students',
             'y_axis' => array(
                 array(
+                    'color' => 'red',
                     'title' => '2020-2021',
                     'students' => array(11158,7234,5013,165,189,123,156,27,108,94,714,197,590,80,0,0),
                 ),
                 array(
+                    'color' => 'green',
                     'title' => '2021-2022',
-                    'students' => array(10586,6443,4229,130,178,121,152,60,101,103  ,906,290,592,82,29,0),
+                    'students' => array(10586,6443,4229,130,178,121,152,60,101,103,906,290,592,82,29,0),
                 ),
             )
         ),
@@ -23,9 +26,9 @@
     $institutes = [
         'code' => 200,
         'data' => array(
-            'total' => '81',
+            'title' => 'Institutes',
             'x_axis_title' => 'Title',
-            'y_axis_title' => 'Institutes',
+            'total' => '81',
             'x_axis' => array('University','Academic Colleges','Technical college','Standalone institutes'),
             'y_axis' => array('3','42','19','17'),
         )
@@ -88,22 +91,27 @@
             'y_axis' => array(
                 array(
                     'title' => '2015-16',
+                    'color' => 'red',
                     'counts' => array('23', '18'),
                 ),
                 array(
                     'title' => '2016-17',
+                    'color' => 'green',
                     'counts' => array('26', '18'),
                 ),
                 array(
                     'title' => '2017-18',
+                    'color' => 'blue',
                     'counts' => array('29', '17'),
                 ),
                 array(
                     'title' => '2018-19',
+                    'color' => 'pink',
                     'counts' => array('26', '16'),
                 ),
                 array(
                     'title' => '2019-20',
+                    'color' => '',
                     'counts' => array('26', '15'),
                 ),
             ),

@@ -22,6 +22,9 @@
     pointer-events: none;
     cursor: default;
   }
+  .shadows {
+    background-color: white;
+  }
 </style>
   <!-- ------------- Main Content Start---------------------- -->
   <section class="page-section">
@@ -29,16 +32,23 @@
       <div class="row">
         <div class="col-lg-7 mx40">
           <div class="shadows">
-            <!-- <p class="textColor-black"><?php echo $rdi['title'] ?></p> -->
-            <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+            <p class="textColor-black" id="chartScatterTitle"></p>
+            <canvas id="chartScatter" style="height: 300px; width: 100%;"></canvas>
           </div>
         </div>
         <div class="col-lg-5 mx40">
           <div class="shadows">
-            <!-- <p class="textColor-black"><?php echo $rdi['title'] ?></p> -->
+            <p class="textColor-black" id="chartDonutContainerTitle"></p>
             <div id="chartDonutContainer" style="height: 300px; width: 100%;"></div>
           </div>
         </div>
+        <div class="col-lg-5 mx40">
+          <div class="shadows">
+            <p class="textColor-black" id="chartBarGraphTitle"></p>
+            <div id="chartBarGraph" style="height: 300px; width: 100%;"></div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -48,127 +58,144 @@
   
   <script>
     let studentEnrolled_json = <?php echo json_encode($studentEnrolled) ?>;
-    let studentEnrolledData = '';
-    if (studentEnrolled_json.code==200) {
-      studentEnrolledData = studentEnrolled_json.data;
-    }
-    console.log(studentEnrolledData);
+    let institutes_json = <?php echo json_encode($institutes) ?>;
+    let teacherStatistics_json = <?php echo json_encode($studentEnrolled) ?>;
+    let teacherStatisticsData = teacherStatistics_json.data;
+    let studentEnrollmentDetails_json = <?php echo json_encode($institutes) ?>;
+    let studentEnrollmentDetailsData = studentEnrollmentDetails_json.data;
+    let pupilTeacherRatio_json = <?php echo json_encode($institutes) ?>;
 
     window.onload = function () {
       // line chart start ----------------------------------
-      var chart = new CanvasJS.Chart("chartContainer", {
-        animationEnabled: true,
-        theme: "light2",
-        title:{
-          text: "Site Traffic"
-        },
-        axisX:{
-          valueFormatString: "DD MMM",
-          crosshair: {
-            enabled: true,
-            snapToDataPoint: true
+      if (studentEnrolled_json.code == 200) {
+        let studentEnrolledData = studentEnrolled_json.data;
+        var datasetsData = [];
+        let color = '', title = '';
+        document.getElementById("chartScatterTitle").innerHTML = studentEnrolledData.title;
+
+        for (let j = 0; j < studentEnrolledData.y_axis.length; j++) 
+        {
+          var dataValue = [];
+          for (let index = 0; index < studentEnrolledData.x_axis.length; index++) 
+          {
+            const element = studentEnrolledData.x_axis[index];
+            const value = studentEnrolledData.y_axis[j].students[index];
+            color = studentEnrolledData.y_axis[j].color;
+            title = studentEnrolledData.y_axis[j].title;
+
+            dataValue.push({
+              x: element, 
+              y: value
+            });
           }
-        },
-        axisY: {
-          title: "Number of Visits",
-          includeZero: true,
-          crosshair: {
-            enabled: true
+          datasetsData.push({
+            pointRadius: 4,
+            pointBackgroundColor: color,
+            data: dataValue
+          });
+        }
+        // draw chart
+        new Chart("chartScatter", {
+          type: "scatter",
+          data: {
+            datasets: datasetsData,
+          },
+          options: {
+            legend: {display: true},
+            scales: {
+              xAxes: [{ticks: {min: 0, max:16}}],
+              yAxes: [{ticks: {min: 0, max:11158}}],
+            }
           }
-        },
-        toolTip:{
-          shared:true
-        },  
-        legend:{
-          cursor:"pointer",
-          verticalAlign: "bottom",
-          horizontalAlign: "left",
-          dockInsidePlotArea: true,
-          itemclick: toogleDataSeries
-        },
-        data: [{
-          type: "line",
-          showInLegend: true,
-          name: "Total Visit",
-          markerType: "square",
-          xValueFormatString: "DD MMM, YYYY",
-          color: "#F08080",
-          dataPoints: [
-            { x: new Date(2017, 0, 3), y: 650 },
-            { x: new Date(2017, 0, 4), y: 700 },
-            { x: new Date(2017, 0, 5), y: 710 },
-            { x: new Date(2017, 0, 6), y: 658 },
-            { x: new Date(2017, 0, 7), y: 734 },
-            { x: new Date(2017, 0, 8), y: 963 },
-            { x: new Date(2017, 0, 9), y: 847 },
-            { x: new Date(2017, 0, 10), y: 853 },
-            { x: new Date(2017, 0, 11), y: 869 },
-            { x: new Date(2017, 0, 12), y: 943 },
-            { x: new Date(2017, 0, 13), y: 970 },
-            { x: new Date(2017, 0, 14), y: 869 },
-            { x: new Date(2017, 0, 15), y: 890 },
-            { x: new Date(2017, 0, 16), y: 930 }
-          ]
+        });
+      }
+
+      // donut chart start ----------------------------------
+      if (institutes_json.code == 200) {
+        let institutesData = institutes_json.data;
+        document.getElementById("chartDonutContainerTitle").innerHTML = institutesData.title;
+        var dataValue = [];
+        for (let index = 0; index < institutesData.x_axis.length; index++) {
+          const element = institutesData.x_axis[index];
+          const value = institutesData.y_axis[index];
+          dataValue.push({
+            y: value, 
+            label: element 
+          });
+        }
+        // draw chart
+        var chartDonut = new CanvasJS.Chart("chartDonutContainer", {
+          animationEnabled: true,
+          title:{
+            text: institutesData.y_axis_title,
+            horizontalAlign: "left"
+          },
+          data: [{
+            type: "doughnut",
+            startAngle: 60,
+            //innerRadius: 60,
+            indexLabelFontSize: 17,
+            indexLabel: "{y} - {label}",
+            toolTipContent: "<b>{label}:</b> {y}",
+            dataPoints: dataValue,
+          }]
+        });
+        chartDonut.render();
+      }
+
+      // bar graph -----------------------------------------
+      if (pupilTeacherRatio_json.code == 200) {
+
+        let pupilTeacherRatioData = pupilTeacherRatio_json.data;
+        var datasetsData = labelsData = valuesData = [];
+        let color = '', title = '';
+        document.getElementById("chartBarGraphTitle").innerHTML = pupilTeacherRatioData.title;
+
+        labelsData = pupilTeacherRatioData.x_axis;
+        console.log(labelsData);
+
+        for (let j = 0; j < pupilTeacherRatioData.y_axis.length; j++) 
+        {
+          var dataValue = [];
+          for (let index = 0; index < pupilTeacherRatioData.x_axis.length; index++) 
+          {
+            const element = pupilTeacherRatioData.x_axis[index];
+            const value = pupilTeacherRatioData.y_axis[j].counts;
+            color = pupilTeacherRatioData.y_axis[j].color;
+            title = pupilTeacherRatioData.y_axis[j].title;
+
+            dataValue = value;
+          }
+          datasetsData.push({
+            label: title,
+            fillColor: color,
+            data: dataValue
+          });
+        }
+        // draw chart
+        var ctx = document.getElementById("chartBarGraph").getContext("2d");
+        var data = {
+          labels: ["Chocolate", "Vanilla", "Strawberry"],
+    datasets: [
+        {
+            label: "Blue",
+            fillColor: "blue",
+            data: [3,7,4]
         },
         {
-          type: "line",
-          showInLegend: true,
-          name: "Unique Visit",
-          lineDashType: "dash",
-          dataPoints: [
-            { x: new Date(2017, 0, 3), y: 510 },
-            { x: new Date(2017, 0, 4), y: 560 },
-            { x: new Date(2017, 0, 5), y: 540 },
-            { x: new Date(2017, 0, 6), y: 558 },
-            { x: new Date(2017, 0, 7), y: 544 },
-            { x: new Date(2017, 0, 8), y: 693 },
-            { x: new Date(2017, 0, 9), y: 657 },
-            { x: new Date(2017, 0, 10), y: 663 },
-            { x: new Date(2017, 0, 11), y: 639 },
-            { x: new Date(2017, 0, 12), y: 673 },
-            { x: new Date(2017, 0, 13), y: 660 },
-            { x: new Date(2017, 0, 14), y: 562 },
-            { x: new Date(2017, 0, 15), y: 643 },
-            { x: new Date(2017, 0, 16), y: 570 }
-          ]
-        }]
-      });
-      chart.render();
-      function toogleDataSeries(e){
-        if (typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
-          e.dataSeries.visible = false;
-        } else{
-          e.dataSeries.visible = true;
-        }
-        chart.render();
-      }
-      // line chart end ----------------------------------
-      // donut chart start ----------------------------------
-      var chartDonut = new CanvasJS.Chart("chartDonutContainer", {
-        animationEnabled: true,
-        title:{
-          text: "Email Categories",
-          horizontalAlign: "left"
+            label: "Red",
+            fillColor: "red",
+            data: [4,3,5]
         },
-        data: [{
-          type: "doughnut",
-          startAngle: 60,
-          //innerRadius: 60,
-          indexLabelFontSize: 17,
-          indexLabel: "{label} - #percent%",
-          toolTipContent: "<b>{label}:</b> {y} (#percent%)",
-          dataPoints: [
-            { y: 67, label: "Inbox" },
-            { y: 28, label: "Archives" },
-            { y: 10, label: "Labels" },
-            { y: 7, label: "Drafts"},
-            { y: 15, label: "Trash"},
-            { y: 6, label: "Spam"}
-          ]
-        }]
-      });
-      chartDonut.render();
-      // donut chart end ----------------------------------
+        {
+            label: "Green",
+            fillColor: "green",
+            data: [7,2,6]
+        }
+    ]
+        };
+        var myBarChart = new Chart(ctx).Bar(data, { barValueSpacing: 20 });
+      }
 
     }
 

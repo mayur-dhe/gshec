@@ -29,12 +29,12 @@
     ];
 
     $tl = [
-        'title' => 'Center for Teaching, Learning and Educational Technology',
+        'title' => 'Center for Teaching, Learning and Education Technology',
         'subtitle' => 'TL Members',
         'data' => array(
                 array(
                     'name' => 'Dr. Niyan Joseph Savio Marchon',
-                    'designation' => 'Professor, Centre for Teaching, Learning and Educational Technology ',
+                    'designation' => 'Professor, Center for Teaching, Learning and Educational Technology ',
                     'url' => 'assets/images/human resource/tl/Niyan Marchon.jpg',
                     'linkedin' => '',
                     'google_link' => 'https://in.linkedin.com/in/dr-niyan-marchon-64516013a?original_referer=https%3A%2F%2Fwww.google.com%2F',

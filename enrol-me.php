@@ -27,7 +27,7 @@ if ($countryData['code'] == '200' ) {
     <div class="container" style="padding: 30px 40px;">
 		<div class="row">
 			<div class="col-md-12">
-				<h4 class="align-center font_dancing">Enrol for Dnyan Sangrah</h4>
+				<h4 class="textAlign-center font_dancing">Enrol for Dnyan Sangrah</h4>
 				<form name="frm_scholar" id="frm_scholar" method="POST" action="<?php echo $submitAPI; ?>">
 					<div class="col-md-12">
 						<legend class="form-design">Personal Information</legend>

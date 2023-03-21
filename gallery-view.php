@@ -134,10 +134,10 @@
           </div>
           
         <?php 
-          } else if ($title_2 == "RUSA" || $title_2 == "Teaching, Learning and Educational Technology" ) {
+          } else if ($title_2 == "RUSA" || $title_2 == "Teaching, Learning and Education Technology" ) {
             switch ($title_2) {
               case 'RUSA': $image_list = $rusa_images['data']; break;
-              case 'Teaching, Learning and Educational Technology': $image_list = $teaching_learning_images['data']; break;
+              case 'Teaching, Learning and Education Technology': $image_list = $teaching_learning_images['data']; break;
             }
             foreach ($image_list as $key => $value) 
             {
@@ -191,10 +191,10 @@
           
           <div class="container">
               <?php
-                if ($title_2 == "RUSA" || $title_2 == "Teaching, Learning and Educational Technology" ) {
+                if ($title_2 == "RUSA" || $title_2 == "Teaching, Learning and Education Technology" ) {
                   switch ($title_2) {
                     case 'RUSA': $image_list = $rusa_images['data']; break;
-                    case 'Teaching, Learning and Educational Technology': $image_list = $teaching_learning_images['data']; break;
+                    case 'Teaching, Learning and Education Technology': $image_list = $teaching_learning_images['data']; break;
                   }
                   foreach ($image_list as $key => $value) 
                   { 
@@ -213,10 +213,10 @@
 
               <div class="row" style="padding: inherit;">
                 <?php
-                  if ($title_2 == "RUSA" || $title_2 == "Teaching, Learning and Educational Technology" ) {
+                  if ($title_2 == "RUSA" || $title_2 == "Teaching, Learning and Education Technology" ) {
                     switch ($title_2) {
                       case 'RUSA': $image_list = $rusa_images['data']; break;
-                      case 'Teaching, Learning and Educational Technology': $image_list = $teaching_learning_images['data']; break;
+                      case 'Teaching, Learning and Education Technology': $image_list = $teaching_learning_images['data']; break;
                     }
                     foreach ($image_list as $key => $value) 
                     { 

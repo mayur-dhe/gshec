@@ -6,97 +6,72 @@
 <?php 
   include 'layout/sub-header.php';
   require 'layout/header.php';
-  $subtitle = "Software Development Cell";
+  // $subtitle = "Software Development Cell";
   require 'layout/site-map.php'; 
   include 'data/sdc.php';
   include 'data/projects.php';
   include 'data/teams.php';
 ?>
 <style>
-    #custom-list-1 {
-      /* width: 120px; */
-      height: 50px;
-      background: #edf0be;
-      position: relative;
-      -moz-border-radius: 10px;
-      -webkit-border-radius: 10px;
-      border-radius: 10px;
-    }
-    #custom-list-1:before {
-      content: "";
-      position: absolute;
-      right: 100%;
-      top: 12px;
-      width: 0;
-      height: 0;
-      border-top: 12px solid transparent;
-      border-right: 16px solid #edf0be;
-      border-bottom: 12px solid transparent;
-    }
+  * {
+    font-family: MessinaSans,sans-serif;
+    line-height: 1.6rem;
+  }
+  .page-section {
+    padding: 40px 100px 40px 110px;
+  }
+  section.footer-box {
+    background-color: #1F262C;
+    padding: 0 100px 0 120px;
+  }
 </style>
+  <div class="layout_border-left"></div>
+  <div class="layout_border-title textColor-black"><?php echo $title; ?></div>
   <!-- ------------- Main Content Start---------------------- -->
   <section class="page-section sdc">
-    <div class="container">
+    <div class="container mb30">
       <div class="row">
-        <div class="col-md-9">
+        <div class="col-md-10">
           <h3 class="textColor-black intro-title mb40">
             Software Development Cell, GSHEC, is an established cell, group of faculty members, who intend to put theory into practice and make use of their knowledge for implementation of technology in the field of education and the management of activities and initiatives by GSHEC.This team has been undertaking software projects since its creation in 2020. 
           </h3>
         </div>
-        <div class="col-md-6">
-          <p class="p0">
+        <div class="col-md-12 col-lg-6">
+          <p class="p0 textAlign-left">
             Our software development team is a group of skilled professionals who are responsible for the design, development, and maintenance of various software applications. The team is composed of individuals with different roles, such as software engineers, developers, and programmers, who work together to deliver high-quality software products. The team uses a variety of programming languages and technologies like PHP, Node.JS, React.JS, MongoDB, MySQL, HTML5, CSS3, Code Igniter, Python, PWA, Flask, etc. to create software solutions that are tailored to the specific needs of our organization. The team is also responsible for testing and debugging the software to ensure that it is functioning correctly and is free of any bugs or errors. Overall, the software development team plays a crucial role in the success of the organization by providing reliable and efficient software solutions that help it achieve its goals. 
           </p>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-12 col-lg-6">
           <img src="assets/images/development_team.jpg" class="img-fluid" alt="" title="">
         </div>
       </div>
     </div>
   </section>
   <!-- ======= features Section ======= -->
-  <section class="features">
-    <div class="container">  
+  <section class="layout_border-top">
+    <div class="container mb30">  
       <div class="row">
-        <div class="col-lg-12 mt-5 mt-lg-0 d-flex px-5">
-          <div class="row align-self-center gy-1">
-
-          </div>
+        <div class="col-md-12">
+          <p class="intro-title auto_height layout_border-top-title px30">Aims And Objectives</p>
         </div>
-      </div>
-
-      <div class="row gy-2">
-        <div class="section-header">
-          <p>Aims And Objectives</p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-4">
-          <img src="assets/images/free_icon_1.png" class="img-fluid" alt="" title="<a href='https://www.freepik.com/free-vector/happy-freelancer-with-computer-home-young-man-sitting-armchair-using-laptop-chatting-online-smiling-vector-illustration-distance-work-online-learning-freelance_10172825.htm#query=flat%20illustration&position=4&from_view=keyword'>Image by pch.vector</a> on Freepik ">
-        </div>
-        <div class="col-lg-8 d-flex">
-          <div class="row align-self-center gy-1">
+        <div class="col-lg-12 d-flex pl30 list-dot textColor-black">
+          <ul>
             <?php 
               foreach ($objective as $key => $value) {
             ?>
-              <div class="col-md-12">
-                <div id="custom-list-1">
-                  <div class="feature-box d-flex align-items-center">
-                    <h3 class="fontSize-14"><?php echo $value ?></h3>
-                  </div>
-                </div>
-              </div>
+              <li class="fontSize-18">
+                <?php echo $value ?></h3>
+              </li>
             <?php } ?>
-          </div>
+          </ul>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ======= Counts Section ======= -->
-  <!-- <section id="counts" class="counts">
-    <div class="container">
+  <!-- <section id="counts" class="counts pxb30 layout_border-top">
+    <div class="container mb30">
       <div class="row gy-4">
         <div class="col-lg-3 col-md-6">
           <div class="count-box">
@@ -148,35 +123,15 @@
   <!-- End Counts Section -->
 
   <!-- ======= Team Section ======= -->
-  <section id="team" class="team">
-    <div class="container" data-aos="fade-up">
-      <div class="section-header header-details p_inner_div">
-        <!-- <h2>Our Team</h2> -->
-        <p class="textColor-black">Meet Our Faculties</p>
-      </div>
-
+  <section id="team" class="team layout_border-top">
+    <div class="container mb30" data-aos="fade-up">
       <div class="row gy-4">
+        <div class="col-md-12">
+          <p class="intro-title auto_height layout_border-top-title px30 textColor-black">Meet Our Team</p>
+        </div>
         <?php 
           foreach ($members as $key => $value) {
         ?>
-          <!-- <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-              <div class="member-img">
-                <img src="<?php echo $value['image']; ?>" class="img-fluid" alt=""> -->
-                <!-- <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div> -->
-              <!-- </div>
-              <div class="member-info">
-                <h4><?php echo $value['name']; ?></h4>
-                <span><?php echo $value['designation']; ?></span>
-                <p><?php echo $value['role']; ?></p>
-              </div>
-            </div>
-          </div> -->
           <div class="col-12 col-md-4 col-xl-3">
             <div class="profile-thumb">
               <img class="profile-thumb-img" src="<?php echo $value['image']; ?>" alt="">
@@ -184,7 +139,16 @@
               <div class="profile-thumb-anim">
                 <h5 class="profile-thumb-title"><?php echo $value['name']; ?></h5>
                 <div class="profile-thumb-author"><?php echo $value['role'] ?? ''; ?></div>
-                <p class="profile-thumb-description"><?php echo $value['designation']; ?></p>
+                <p class="profile-thumb-description">
+                  <?php echo $value['designation']; ?>
+                  <br>
+                  <?php if ($value['linkedin']) { ?>
+                      <a href="<?php echo $value['linkedin'];?>" target="_blank" style="color: var(--white) !important;" class="fa fa-linkedin"> Click to open Linked-in Profile</a><br>
+                  <?php } 
+                    if ($value['google_link']) { ?>
+                      <a href="<?php echo $value['google_link']; ?>" target="_blank" style="color: var(--white) !important;" class="fa fa-google"> Click to open Profile</a>
+                  <?php } ?>
+                </p>
               </div>
             </div>
           </div>

@@ -34,7 +34,7 @@
               <div class="row">
                 <div class="col-md-12 list-inside">
                   <div class="sub-theme">Sub-themes:</div>
-                  <ul class="pl30">
+                  <ul class="pl40">
                     <li><a href="#thm1-equity">Equity, including Gender Parity</a></li>
                     <li><a href="#thm1-inclusion">Inclusion including SEDGs</a></li>
                     <li><a href="#thm1-measures">Measures for increasing Access including Online & ODL education</a></li>
@@ -241,7 +241,7 @@
               <div class="row">
                 <div class="col-md-12 list-inside">
                   <div class="sub-theme">Sub-themes:</div>
-                  <ul class="pl30">
+                  <ul class="pl40">
                     <li><a href="#thm1-Multidisciplinary">Multidisciplinary & Holistic Education </a></li>
                     <li><a href="#thm1-Flexibility">Flexibility Of Courses And Student Mobility : Multiple Entry Exit (MEE)</a></li>
                     <li><a href="#thm1-Knowledge">Indian Knowledge Systems</a></li>
@@ -471,7 +471,7 @@
               <div class="row">
                 <div class="col-md-12 list-inside">
                   <div class="sub-theme">Sub-themes:</div>
-                  <ul class="pl30">
+                  <ul class="pl40">
                     <li><a href="#thm1-Apprenticeship">Enhancing Employability through Internship/Apprenticeship</a></li>
                     <li><a href="#thm1-Transforming"> Transforming Education through Integration of Technology</a></li>
                     <li><a href="#thm1-Accreditation"> Accreditation for Quality Education</a></li>

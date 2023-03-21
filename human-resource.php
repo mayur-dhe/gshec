@@ -25,7 +25,7 @@
       <div class="row">
         <div class="col-lg-12 p_btm_space">
           <div class="section-header header-details p0">
-            <p class="textColor-black p_inner_div_5 fontSizeR-2 align-center"><?php echo $rdi['title'] ?></p>
+            <p class="textColor-black p_inner_div_5 fontSizeR-2 textAlign-center"><?php echo $rdi['title'] ?></p>
           </div>
           <div class="row gy-4">
             <?php 
@@ -37,7 +37,7 @@
                     <div class="profile-thumb-gradient"></div>
                     <div class="profile-thumb-anim">
                       <h5 class="profile-thumb-title ptt-2"><?php echo $value['name']; ?></h5>
-                      <p class="profile-thumb-description fontSize-12 align-left">
+                      <p class="profile-thumb-description fontSize-12 textAlign-left">
                         <?php echo $value['designation']; ?><br><br>
                         <?php if ($value['linkedin']) { ?>
                             <a href="<?php echo $value['linkedin'];?>" target="_blank" class="fa fa-linkedin"> Click to open Linked-in Profile</a><br>
@@ -64,7 +64,7 @@
       <div class="row">
         <div class="col-lg-12 p_btm_space">
           <div class="section-header header-details p0">
-            <p class="textColor-black p_inner_div_5 fontSizeR-2 align-center"><?php echo $tl['title'] ?></p>
+            <p class="textColor-black p_inner_div_5 fontSizeR-2 textAlign-center"><?php echo $tl['title'] ?></p>
           </div>
           <div class="row gy-4">
             <?php 
@@ -76,7 +76,7 @@
                     <div class="profile-thumb-gradient"></div>
                     <div class="profile-thumb-anim">
                       <h5 class="profile-thumb-title ptt-2"><?php echo $value['name']; ?></h5>
-                      <p class="profile-thumb-description fontSize-12 align-left">
+                      <p class="profile-thumb-description fontSize-12 textAlign-left">
                         <?php echo $value['designation']; ?><br><br>
                         <?php if ($value['linkedin']) { ?>
                             <a href="<?php echo $value['linkedin']; ?>" target="_blank" class="fa fa-linkedin"> Click to open Linked-in Profile</a><br>
@@ -103,7 +103,7 @@
       <div class="row">
         <div class="col-lg-12 p_btm_space">
           <div class="section-header header-details p0">
-            <p class="textColor-black p_inner_div_5 fontSizeR-2 align-center"><?php echo $gshec['title'] ?></p>
+            <p class="textColor-black p_inner_div_5 fontSizeR-2 textAlign-center"><?php echo $gshec['title'] ?></p>
           </div>
           <div class="row">
             <div class="col-md-12">

@@ -18,7 +18,6 @@
   .tab button:hover {
     color: var(--yellow);
   }
-
 </style>
   <!-- ------------- Main Content Start---------------------- -->
   <section class="mt_n132">
@@ -44,7 +43,7 @@
             ?>
                 <button class="tablinks <?php echo $class0 ?>" onclick="showActivity(0); openTabSection(event, 'tab<?php echo $key ?>')" id="<?php echo $id_name ?>"><?php echo $value ?></button>
             <?php } ?>
-            <button class="tablinks" onclick="showActivity(1)">Activity <span class="dd-icon"> <i class="fa fa-caret-right dd-selected-right"></i> <i class="fa fa-caret-down dd-selected-down d-none"></i>  </span> </button>
+            <button class="tablinks" onclick="showActivity(1)">Activity <span class="dd-icon"> <i class="fa fa-caret-right dd-selected-right"></i> <i class="fa fa-caret-down dd-selected-down d-none"></i></span> </button>
             <?php 
               foreach ($activity as $key => $value) 
               {
@@ -53,18 +52,15 @@
             <?php } ?>
           </div>
 
-          <div id="tab0" class="tabcontent">
+          <div id="tab0" class="tabcontent list-number">
             <h4><?php echo $about['title']?></h4>
-            <?php foreach ($about['data'] as $key => $value) { ?>
-              <div class="box-shadow-left-32 "><!-- height_60 -->
-                <!-- <div class="shape-round m5 float_left">
-                  <img src="assets/images/icon-tickmark.png" height="50px" width="50px" alt="">
-                </div> -->
-                <div>
+            <ol>
+              <?php foreach ($about['data'] as $key => $value) { ?>
+                <li>
                   <?php echo $value ?>
-                </div>
-              </div>
-            <?php } ?>
+                </li>
+              <?php } ?>
+            </ol>
           </div>
           <div id="tab1" class="tabcontent">
             <h4><?php echo $vision['title']?></h4>
@@ -82,7 +78,7 @@
           <div id="tabA1" class="tabcontent">
             <h4>Goa Science Lecture Series 2022</h4>
             <div class="row">
-              <div class="col-md-7">
+              <div class="col-md-12">
                 <p class="p0 fontSize-14">
                   Exchange of knowledge is imperative for both the teachers and learners to uphold life-long learning. With an objective to provide the youth of Goa the opportunities to enhance their versa of knowledge and to interact with leading intellectuals across the State of Goa, the State Higher Education Council (SHEC) (Govt. of Goa) made a maiden attempt to institute the “Goa Science Lecture Series 2022” to bring in prominent faculty & scientists who can inspire the postgraduate, undergraduate, and Higher Secondary Schools students of various disciplines and serve as role models in various spheres of education and careers. Thus, the ever first SHEC’s ten days long Science Lecture Series was organised in collaboration with all the Science Colleges in Goa from <strong>07 March to 16 March, 2022</strong> to create an appropriate platform for the students to update their knowledge and keep abreast with the modern developments in various fields of
                   Science and Technology across the world. The lectures were delivered by accomplished experts and academicians working at various Science Colleges in Goa, Goa University, the State Higher Education Council, and Scientists from CSIR-National Institute of Oceanography (CSIR-NIO) who have achieved pre-eminence in the fields of Science and Technology, followed by interactive sessions. Students from various disciplines including Arts, Science, Commerce, and Education attended the lecture series, who otherwise have rare opportunities to listen to experts in various domains of Sciences and technology. Based on the feedback received from the resource person, audience and the host institutions, this even had overwhelming response, and we intend to continue the Science Lecture Series on a much bigger scale in the coming years.
@@ -92,24 +88,24 @@
                   <i class="icon fa fa-download"></i>
                   Click to see Science Lecture Series Report
                 </a>
-                <img src="assets/images/rdi/Goa Science Lecture Series 1/rdi pic1.jpg" alt="" class="">
-                <img src="assets/images/rdi/Goa Science Lecture Series 1/rdi pic2.png" alt="" class="">
+                <!-- <img src="assets/images/rdi/Goa Science Lecture Series 1/rdi pic1.jpg" alt="" class="">
+                <img src="assets/images/rdi/Goa Science Lecture Series 1/rdi pic2.png" alt="" class=""> -->
               </div>
               <div class="col-md-5">
-                <?php
-                  foreach ($rdi_images['data'] as $key => $value) {
-                    if ($value['type'] == 'Goa Science Lecture Series 1') {
-                      echo '<img src="'.$value['url'].'" alt="" class="py10">';
-                    }
-                  }
-                ?>
+                    <?php
+                      foreach ($rdi_images['data'] as $key => $value) {
+                        if ($value['type'] == 'Goa Science Lecture Series 1') {
+                          echo '<img src="'.$value['url'].'" alt="" class="py10">';
+                        }
+                      }
+                    ?>
               </div>
             </div>
           </div>
           <div id="tabA2" class="tabcontent">
             <h4>Two Day Research Grant Writing Workshop 2021</h4>
             <div class="row list-number">
-              <div class="col-md-7">
+              <div class="col-md-12">
                 <p class="p0 fontSize-14">
                   As part of the research capacity building, and to provide skills to Researchers and Faculty in Goa, the Goa State Higher Education Council (SHEC) 
                   and Directorate of Higher Education has organize 
@@ -161,7 +157,7 @@
           <div id="tabA3" class="tabcontent">
             <h4>Research Grant Writing Workshop for Science and Engineering Faculty of Goa</h4>
             <div class="row">
-              <div class="col-md-7">
+              <div class="col-md-12">
                 <p class="p0 fontSize-14">
                   A One Day “Research Grant Writing Workshop” was organized by the Goa State Higher Education Council 
                   <strong>(Goa-SHEC)</strong>, 
@@ -171,7 +167,7 @@
                   The main objective of this workshop was to train and provide guidance to faculty on improving the grant proposals in order to increase the chances of acceptance from funding sources. 
                   Funds from such successful proposals will allow conducting world-class research in the State of Goa.   
                 </p>
-                <p class="p0 fontSize-14">
+                <p class="p0 m10 mb0 fontSize-14">
                   <strong>
                     The important features of this workshop is: 
                   </strong>
@@ -190,7 +186,6 @@
                     (iii) Review of the preliminary draft of Proposal by a team of the experts; 
                   </li>
                 </ol>
-                <br>
                 <p class="p0 fontSize-14">
                   The 30 research proposals have been prepared by the participants with the help of the respective resource person is the outcome of this workshop. These projects will be submitted to SURE Scheme of SERB (Govt. of India) for seeking research funding.  Prof Vithal Tilvi, Dr Mahesh Majik, Dr Bhakti Salgaokar, Dr Siddhi Jalmi, Dr Prajesh Volvoikar and Dr Anjani Nagvenkar served as resource person for this workshop. 
                 </p>
@@ -209,7 +204,7 @@
           <div id="tabA4" class="tabcontent">
             <h4>One Day Workshop for Librarians on “Guide to identify Fake/Predatory/Cloned Journals in Academics”</h4>
             <div class="row">
-              <div class="col-md-7">
+              <div class="col-md-12">
                 <p class="p0 mb0 fontSize-14">
                   The number of research articles published in reputed journals, is one of the globally-accepted indicators considered for various academic purposes including institutional ranking, appointments and promotions of faculty members, and award of research degrees. Academic publishing has changed tremendously with the spread of open access journals and the shift to online publishing. Publications in dubious/sub-standard journals reflect adversely leading to long-term academic damage and a tarnished image. Thus, it becomes important to learn how to identify fake/cloned and predatory journals and avoid predatory publishing. In order to identify UGC CARE (Group I & II) listed journals, Goa State Higher Education Council (SHEC) and Directorate of Higher Education had organized a hands-on training program cum workshop for Librarians on 
                   <strong>“Guide to identify Fake/Predatory/Cloned Journals in Academics”</strong>
@@ -253,7 +248,7 @@
           <div id="tabA5" class="tabcontent">
             <h4>New Faculty Orientation & Mentoring Programme 2021</h4>
             <div class="row list-number">
-              <div class="col-md-7">
+              <div class="col-md-12">
                 <p class="p0 fontSize-14">
                   In the contemporary world of modern education and knowledge, a teacher is not only a source of knowledge-creation but also the instrument required to sharpen the intellect of students. Good teaching learning processes are at the heart of good education. Teaching is an ethically and intellectually demanding profession. As consequence, new teachers need rigorous preparation and opportunities for continuous professional development along with academic and professional support. Unlike teachers in school education, faculty in higher education usually join the teaching profession without any formal training in teaching, learning or assessment. Recently, several faculties joined Government colleges in the State of Goa through GPSC (Goa Public Service Commission) recruitment. The newly joint faculty members need for a formal training course at the beginning of their careers to prepare themselves for their professional journey. Looking beyond basic orientation, the need is of a broad-based but focused programme that would prepare the teachers with pedagogical skills and techniques, research methodologies, methods of curriculum development, with the latest in information technology both for the gathering of knowledge as well as its dispensation and acquaint them with the processes of institutional administration and self- development.
                 </p>
@@ -298,7 +293,7 @@
           <div id="tabA6" class="tabcontent">
             <h4>Follow-up Workshop on “New Faculty Orientation & Mentoring Programme 2021”</h4>
             <div class="row">
-              <div class="col-md-7">
+              <div class="col-md-12">
                 <p class="p0 mb0 fontSize-14">
                   As part of the “Motivated, energized and capable faculty” under the new National education Policy (NEP 2020), The Goa State Higher Education Council and Directorate of Higher Education has organised the 3rd Follow-up Workshop entitled 
                   <strong> “New Faculty Orientation & Mentoring Programme”, on 23 September 2022 </strong>
@@ -322,7 +317,7 @@
           <div id="tabA7" class="tabcontent">
             <h4>Opportunities for Research, Development & Innovation: Meetings with College Faculty</h4>
             <div class="row list-number">
-              <div class="col-md-7">
+              <div class="col-md-12">
                 <p class="p0 mb0 fontSize-14">
                   Faculty meetings serve as one way to improve capability of HEIs by enhancing teaching and learning, as well as building a collaborative research culture. Improving HEIs includes staff members feeling valued, engaging in purposeful peer interactions, learning every day, and experiencing transparency. In order to develop research culture and creative thinking, interactive sessions were conducted in various colleges by the faculty members of Goa State Higher Education Council.  
                 </p>

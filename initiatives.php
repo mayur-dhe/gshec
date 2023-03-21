@@ -30,7 +30,7 @@
                     <div class="thumb">
                       <img src="<?php echo $value['cover_image'];  ?>" alt="MOU">
                     </div>
-                    <div class="down-content align-center">
+                    <div class="down-content textAlign-center">
                       <h4><?php echo $value['short_name'] ?></h4>
                       <!-- <h4>
                         <?php echo concat_string($value['title']);?>

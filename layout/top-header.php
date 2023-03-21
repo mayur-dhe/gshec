@@ -31,6 +31,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
     <!-- <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
 
+    <!-- chart -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script> -->
+
     <!-- map -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 

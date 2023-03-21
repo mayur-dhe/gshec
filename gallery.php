@@ -21,7 +21,7 @@
 
         <div class="col-lg-3 col-md-6">
           <div class="gallery">
-            <a href="gallery-view?jnhsdwmxifkd=Teaching, Learning and Educational Technology">
+            <a href="gallery-view?jnhsdwmxifkd=Teaching, Learning and Education Technology">
               <div class="gallery-item">
                 <div class="thumb">
                   <img src="<?php echo $teaching_learning_images['data'][0]['url'] ?>" alt="<?php echo $teaching_learning_images['data'][0]['alt'] ?>">

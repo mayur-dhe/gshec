@@ -26,7 +26,7 @@
     ];
 
     $teaching_learning_images = [
-        'title' => 'Teaching, Learning and Educational Technology',
+        'title' => 'Center for Teaching, Learning and Education Technology',
         'data' => array(
             array(
                 'type' => 'mooc',

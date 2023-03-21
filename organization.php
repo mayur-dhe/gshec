@@ -48,7 +48,7 @@
                                         </li>
                                       </ul>
                                     </li>
-                                    <li><span class="ht_2 tree-title1-color">Center for Teaching, Learning & Educational Technology</span>
+                                    <li><span class="ht_2 tree-title1-color">Center for Teaching, Learning & Education Technology</span>
                                       <ul>
                                         <li><span class="ht_1 tree-title3-color">Professor</span>
                                           <ul>

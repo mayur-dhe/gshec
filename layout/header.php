@@ -30,9 +30,9 @@
             <li class="has-sub">
               <a href="javascript:void(0)" class="<?php if ($page == '2') echo 'active'; ?>">About Us</a>
               <ul class="sub-menu">
-                <li><a class="align-left" href="objectives.php">Objectives</a></li>
-                <li><a class="align-left" href="organization.php">Organisation</a></li>
-                <li><a class="align-left" href="council-members.php">Council Members</a></li>
+                <li><a class="textAlign-left" href="objectives.php">Objectives</a></li>
+                <li><a class="textAlign-left" href="organization.php">Organisation</a></li>
+                <li><a class="textAlign-left" href="council-members.php">Council Members</a></li>
               </ul>
             </li>
             <li><a href="education-dashboard.php" class="<?php if ($page == '3') echo 'active'; ?>">Edu Dashboard</a></li>

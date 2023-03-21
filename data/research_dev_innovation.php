@@ -5,7 +5,7 @@
         'Vision',
         'Mission',
         // 'Activity'
-        // 'Research, Development & Innovations',
+        // 'Center for Research, Development & Innovations',
         // 'Teaching, Learning and Educational Technology',
         // 'Infrastructure Development',
         // 'Community',
@@ -22,7 +22,7 @@
 
 
     $about = [
-        'title' => 'Research, Development & Innovations',
+        'title' => 'Center for Research, Development & Innovations',
         'data' => array(
             'To establish and promote collaboration with industries so as to bridge the gap between educational output and industry demand.',
             'Every Undergraduate College to have at least two postgraduate: Departments & Research Centre or be a part of Research Cluster within 05 Years.',
@@ -49,7 +49,7 @@
     ];
 
     $rdi_images = [
-        'title' => 'Research, Development & Innovations',
+        'title' => 'Center for Research, Development & Innovations',
         'data' => array(
             // 0
             // 1
@@ -179,7 +179,7 @@
     ];
 
     $research_dev_innovation = [
-        'title' => 'Research, Development & Innovations',
+        'title' => 'Center for Research, Development & Innovations',
         'data' => array(
             'To establish and promote collaboration with industries so as to bridge the gap between educational output and industry demand.',
             'Every Undergraduate College to have at least two postgraduate: Departments & Research Centre or be a part of Research Cluster within 05 Years.',
@@ -192,7 +192,7 @@
     ];
 
     $teach_learn_edu_tech = [
-        'title' => 'Teaching, Learning and Educational Technology',
+        'title' => 'Center for Teaching, Learning and Education Technology',
         'data' => array(
             'Create of the state of the art learning infrastructure.',
             'To take appropriate measures for promoting innovations in teaching - learning process and inter-disciplinary studies and research.',

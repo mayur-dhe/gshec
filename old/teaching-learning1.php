@@ -43,7 +43,7 @@
             </div>
           </div>
             
-          <div class="align-center">
+          <div class="textAlign-center">
             <h2 class="pt-4">Objectives</h2>
           </div>
 

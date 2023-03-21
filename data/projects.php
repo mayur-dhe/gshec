@@ -16,7 +16,7 @@
                             <br/>Studio Management',
             'images' => [
                 array(
-                    'url' => 'assets/images/projects/dishtav.jpg',
+                    'url' => 'assets/images/projects/Dishtavo_Logos.jpg',
                     'alt' => ''
                 ),
                 // array(
@@ -44,7 +44,7 @@
                             <br/>Studio Management',
             'images' => [
                 array(
-                    'url' => 'assets/images/projects/dhe.jpg',
+                    'url' => 'assets/images/projects/DHE_Logo.jpg',
                     'alt' => ''
                 ),
                 // array(
@@ -72,7 +72,7 @@
                             <br/>Studio Management',
             'images' => [
                 array(
-                    'url' => 'assets/images/projects/fts.jpg',
+                    'url' => 'assets/images/projects/FTS_Logo.jpg',
                     'alt' => ''
                 ),
                 // array(
@@ -100,7 +100,7 @@
                             <br/>Studio Management',
             'images' => [
                 array(
-                    'url' => 'assets/images/projects/bursery.jpg',
+                    'url' => 'assets/images/projects/Bursaries.jpg',
                     'alt' => ''
                 ),
                 // array(
@@ -128,7 +128,7 @@
                             <br/>Studio Management',
             'images' => [
                 array(
-                    'url' => 'assets/images/projects/scholarship.jpg',
+                    'url' => 'assets/images/projects/Scholarship.jpg',
                     'alt' => ''
                 ),
                 // array(
@@ -156,7 +156,7 @@
                             <br/>Studio Management',
             'images' => [
                 array(
-                    'url' => 'assets/images/projects/outcome-based-learning1.jpg',
+                    'url' => 'assets/images/projects/OBE_2.jpg',
                     'alt' => ''
                 ),
                 // array(

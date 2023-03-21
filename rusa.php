@@ -44,7 +44,7 @@
             </div>
           </div>
 
-          <div class="align-center">
+          <div class="textAlign-center">
             <h2>Rashtriya Uchchatar Shiksha Abiyan(RUSA)</h2>
             <p class="sub_title"> In the relentless pursuit of excellence to strengthen the core of our nation’s universities</p>
           </div>
