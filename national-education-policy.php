@@ -1,5 +1,6 @@
 <?php
   $title = "National Education Policy";
+  $title_url = "#";
   require 'layout/top-header.php';
 ?>
 <body>
@@ -7,6 +8,8 @@
   include 'layout/sub-header.php';
   require 'layout/header.php';
   // $subtitle = "National Education Policy";
+  $isCardsPage = true;
+  $getUrlID = 1;
   require 'layout/site-map.php'; 
   include 'data/nep.php';
 ?>
@@ -36,7 +39,7 @@
     <div class="container mb30">
       <div class="row">
         <div class="col-md-12">
-          <p class="intro-title auto_height px30">1. Resources</p>
+          <p class="intro-title auto_height mb0 px30">Resources</p>
         </div>
         <div class="col-md-7 pr90">
           The core of new National Education Policy (NEP) 2020 is to develop a Learner-centric education system that will provide quality and truly holistic education for all-round  growth of Learners. Looking at the successful institutions that make at the top of the World Rankings, two common features emerge: 
@@ -60,8 +63,8 @@
           <?php if ($linksData && $linksData['code']=='200') { ?>
             <div class="fontWt-6">Resources</div>
             <ol>
-              <?php foreach ($linksData['data'] as $key => $value) { ?>
-                <li class="textDeco-underline"><a href="<?php echo $value['url'] ?>" target="<?php echo $value['target']?>"><?php echo $value['title'] ?></a></li>
+              <?php foreach ($linksData['data'] as $key => $link) { ?>
+                <li class="ref-links"><?php echo $link['id'] ?> <a href="<?php echo $link['url'] ?>" class="textDeco-underline" target="<?php echo $link['target']?>"><?php echo $link['title'] ?></a></li>
               <?php } ?>
             </ol>
           <?php } ?>
@@ -78,7 +81,7 @@
           <div class="container mb30">  
             <div class="row">
               <div class="col-md-12">
-                <p class="intro-title auto_height layout_border-top-title px30"><?php echo $value['id'].' '.$value['title'] ?></p>
+                <p class="intro-title auto_height mb0 layout_border-top-title px30"><?php echo $value['title'] ?></p>
               </div>
               <div class="col-md-7 pr90">
                 <?php 
@@ -117,7 +120,7 @@
                         <?php 
                           foreach ($value['links'] as $key => $link) {  
                             ?>
-                            <li class="textDeco-underline"><a href="<?php echo $link['url'] ?>" target="<?php echo $link['target']?>"><?php echo $link['title'] ?></a></li>
+                            <li class="ref-links"><?php echo $link['id'] ?> <a href="<?php echo $link['url'] ?>" class="textDeco-underline" target="<?php echo $link['target']?>"><?php echo $link['title'] ?></a></li>
                             <?php 
                           } 
                         ?>

@@ -1,5 +1,6 @@
 <?php
   $title = "National Education Policy";
+  $title_url = "national-education-policy.php";
   require 'layout/top-header.php';
 ?>
 <body>

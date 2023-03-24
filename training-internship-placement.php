@@ -1,5 +1,6 @@
 <?php
   $title = "Training Internship and Placement";
+  $title_url = "#";
   require 'layout/top-header.php';
 ?>
 <body class="reading-pages">
@@ -7,6 +8,8 @@
   include 'layout/sub-header.php';
   require 'layout/header.php';
   // $subtitle = "Training Internship and Placement";
+  $isCardsPage = true;
+  $getUrlID = 5;
   require 'layout/site-map.php'; 
   include 'data/tip.php';
 ?>

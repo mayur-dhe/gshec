@@ -1,5 +1,6 @@
 <?php
     $title = "Acts and Rules";
+    $title_url = "#";
     require 'layout/top-header.php';
 ?>
 <body class="reading-pages">

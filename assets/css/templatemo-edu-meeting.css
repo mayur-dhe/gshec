@@ -143,7 +143,10 @@ a {
 }
 
 a:hover {
-	color: #FC3;
+	color: #FC3 !important;
+}
+.ref-links:hover a {
+	color: var(--red) !important; /* #FC3 */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -2170,7 +2173,7 @@ responsive
 /* ------ Tab CSS Start---------------------- */
 /* Style the tab */
 .tab {
-  background-color: #f2f2f2;
+  background-color: #ffffffbf;/* #f2f2f2; */
   position: sticky;
   top: 80px;
   float: left;
@@ -2763,7 +2766,7 @@ responsive
 .gallery__img {
   width: 100%;
   height: 100%;
-  object-fit: fill;
+  object-fit: contain;
   display: block; 
 }
 .gallery__item {
@@ -3440,9 +3443,10 @@ hr {
   list-style: inside !important;
 }
 .textDeco-underline {
-  text-decoration: underline;
+  border-bottom: 1px solid var(--red);
+  padding-bottom: 2px;
+  line-height: 1.8;
 }
-
 .btn_size {
   width: auto !important;
   white-space: nowrap;
@@ -3888,6 +3892,30 @@ button:hover .button-text {
 /* Flex button end ----------------------- */
 
 
+/* cards  */
+.list_box {
+  background-color: #f7f7f7;
+  position: absolute;
+  width: fit-content;
+  left: 104px;
+  top: 15px;
+  margin-top: 6px;
+}
+.list_box.initiatives_link {
+  left: 190px;
+}
+.list_box>.sub-menu>li {
+  padding: 6px 16px;
+}
+.list_box>.sub-menu>li a {
+  color: var(--greyReadableTextColor);
+}
+.list_box>.sub-menu>li:hover,
+.list_box>.sub-menu>li:hover a {
+  background-color: #ffffff;
+	color: #FC3 !important;
+  transition: all 0.3s ease 0s;
+}
 
 
 
@@ -3897,242 +3925,234 @@ button:hover .button-text {
 
 
 
-
-
-
-
-
-
-
-
-
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
 /* Not Using extra--------------------------------------------------------------------------------------------------------------------------------------- */
-/* --------------------------------------------------------------------------------------------------------------------------------------- */
-/* --------------------------------------------------------------------------------------------------------------------------------------- */
-/* --------------------------------------------------------------------------------------------------------------------------------------- */
-/* --------------------------------------------------------------------------------------------------------------------------------------- */
-/* --------------------------------------------------------------------------------------------------------------------------------------- */
-/* --------------------------------------------------------------------------------------------------------------------------------------- */
-/* apply now ---------------------------------------------*/
-section.apply-now {
-  /* background-image: url(../images/apply-bg.jpg); */
-  background-position: center center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 140px 0px;
-}
-
-section.apply-now .item {
-  background-color: rgba(250,250,250,0.15);
-  padding: 40px;
-  margin-bottom: 30px;
-}
-
-section.apply-now .item h3 {
-  color: var(--white);
-  text-transform: uppercase;
-  font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-section.apply-now .item p {
-  color: var(--white);
-  margin-bottom: 20px;
-}
-
-.accordions {
-  border-radius: 20px;
-  padding: 40px;
-  background-color: var(--white);
-  margin-left: 45px;
-}
-.accordions .accordion {
-  border-bottom: 1px solid #eee;
-}
-.accordions .last-accordion {
-  border-bottom: none;
-}
-.accordion-head {
-  padding: 20px;  
-  font-size: 18px;
-  font-weight: 700;
-  color: #1f272b;
-  cursor: pointer;
-  transition: color 200ms ease-in-out;
-  border-bottom: 1px solid var(--white);
-}
-@media screen and (min-width: 768px) {
-  .accordion-head {
-    padding: 1rem;
-    font-size: 1.2rem;
+  /* apply now ---------------------------------------------*/
+  section.apply-now {
+    /* background-image: url(../images/apply-bg.jpg); */
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 140px 0px;
   }
-}
-.accordion-head .icon {
-  float: right;
-  transition: transform 200ms ease-in-out;
-}
-.accordion-head.is-open {
-  color: var(--yellow);
-  border-bottom: none;
-}
-.accordion-head.is-open .icon {
-  transform: rotate(45deg);
-}
-.accordion-body {
-  overflow: hidden;
-  height: 0;
-  transition: height 300ms ease-in-out;
-  border-bottom: 1px solid var(--white);
-}
-.accordion-body > .content {
-  padding: 20px;
-  padding-top: 0;
-}
+
+  section.apply-now .item {
+    background-color: rgba(250,250,250,0.15);
+    padding: 40px;
+    margin-bottom: 30px;
+  }
+
+  section.apply-now .item h3 {
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  section.apply-now .item p {
+    color: var(--white);
+    margin-bottom: 20px;
+  }
+
+  .accordions {
+    border-radius: 20px;
+    padding: 40px;
+    background-color: var(--white);
+    margin-left: 45px;
+  }
+  .accordions .accordion {
+    border-bottom: 1px solid #eee;
+  }
+  .accordions .last-accordion {
+    border-bottom: none;
+  }
+  .accordion-head {
+    padding: 20px;  
+    font-size: 18px;
+    font-weight: 700;
+    color: #1f272b;
+    cursor: pointer;
+    transition: color 200ms ease-in-out;
+    border-bottom: 1px solid var(--white);
+  }
+  @media screen and (min-width: 768px) {
+    .accordion-head {
+      padding: 1rem;
+      font-size: 1.2rem;
+    }
+  }
+  .accordion-head .icon {
+    float: right;
+    transition: transform 200ms ease-in-out;
+  }
+  .accordion-head.is-open {
+    color: var(--yellow);
+    border-bottom: none;
+  }
+  .accordion-head.is-open .icon {
+    transform: rotate(45deg);
+  }
+  .accordion-body {
+    overflow: hidden;
+    height: 0;
+    transition: height 300ms ease-in-out;
+    border-bottom: 1px solid var(--white);
+  }
+  .accordion-body > .content {
+    padding: 20px;
+    padding-top: 0;
+  }
 
 
-/* courses --------------------------------------------- */
-section.our-courses {
-  background-image: url(../images/meetings-bg.jpg);
-  background-position: center center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 140px;
-  padding-bottom: 130px;
-}
-.our-courses .item .down-content {
-  background-color: var(--white);
-}
-.our-courses .item .down-content h4 {
-  padding: 25px;
-  font-size: 18px;
-  color: #1f272b;
-  text-align: center; 
-  border-bottom: 1px solid #eee;
-}
-.our-courses .item .down-content .info {
-  padding: 25px;
-}
-.our-courses .item .down-content .info ul li {
-  display: inline-block;
-  margin-right: 1px;
-}
-.our-courses .item .down-content .info ul li i {
-  color: var(--yellow);
-  font-size: 14px;
-}
-.our-courses .item .down-content .info span {
-  color: var(--red);
-  font-size: 15px;
-  font-weight: 600;
-  text-align: right;
-  display: inline-block;
-  width: 100%;
-}
-.quotes .owl-nav,
-.our-courses .owl-nav {
-  text-align: center;
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  transform: translateY(-45px);
-}
-.quotes .owl-dots,
-.our-courses .owl-dots {
-  display: inline-block;
-  text-align: center;
-  width: 100%;
-  margin-top: 40px;
-}
-.quotes .owl-dots .owl-dot,
-.our-courses .owl-dots .owl-dot {
-  transition: all .5s;
-  width: 7px;
-  height: 7px;
-  background-color: var(--white);
-  margin: 0px 5px;
-  border-radius: 50%;
-  outline: none;
-}
-.quotes .owl-dots .active,
-.our-courses .owl-dots .active {
-  width: 24px;
-  height: 8px;
-  border-radius: 4px;
-}
-.quotes .owl-nav .owl-prev,
-.our-courses .owl-nav .owl-prev{
-  margin-right: 10px;
-  outline: none;
-  position: absolute;
-  left: -80px;
-}
-.quotes .owl-nav .owl-prev span,
-.quotes .owl-nav .owl-next span ,
-.our-courses .owl-nav .owl-prev span,
-.our-courses .owl-nav .owl-next span {
-  opacity: 0;
-}
-.quotes .owl-nav .owl-prev:before,
-.our-courses .owl-nav .owl-prev:before {
-  display: inline-block;
-  font-family: 'FontAwesome';
-  color: #1e1e1e;
-  font-size: 25px;
-  font-weight: 700;
-  content: '\f104';
-  background-color: var(--white);
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  line-height: 50px;
-}
-.quotes .owl-nav .owl-prev,
-.our-courses .owl-nav .owl-prev {
-  opacity: 1;
-  transition: all .5s;
-}
+  /* courses --------------------------------------------- */
+  section.our-courses {
+    background-image: url(../images/meetings-bg.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 140px;
+    padding-bottom: 130px;
+  }
+  .our-courses .item .down-content {
+    background-color: var(--white);
+  }
+  .our-courses .item .down-content h4 {
+    padding: 25px;
+    font-size: 18px;
+    color: #1f272b;
+    text-align: center; 
+    border-bottom: 1px solid #eee;
+  }
+  .our-courses .item .down-content .info {
+    padding: 25px;
+  }
+  .our-courses .item .down-content .info ul li {
+    display: inline-block;
+    margin-right: 1px;
+  }
+  .our-courses .item .down-content .info ul li i {
+    color: var(--yellow);
+    font-size: 14px;
+  }
+  .our-courses .item .down-content .info span {
+    color: var(--red);
+    font-size: 15px;
+    font-weight: 600;
+    text-align: right;
+    display: inline-block;
+    width: 100%;
+  }
+  .quotes .owl-nav,
+  .our-courses .owl-nav {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-45px);
+  }
+  .quotes .owl-dots,
+  .our-courses .owl-dots {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin-top: 40px;
+  }
+  .quotes .owl-dots .owl-dot,
+  .our-courses .owl-dots .owl-dot {
+    transition: all .5s;
+    width: 7px;
+    height: 7px;
+    background-color: var(--white);
+    margin: 0px 5px;
+    border-radius: 50%;
+    outline: none;
+  }
+  .quotes .owl-dots .active,
+  .our-courses .owl-dots .active {
+    width: 24px;
+    height: 8px;
+    border-radius: 4px;
+  }
+  .quotes .owl-nav .owl-prev,
+  .our-courses .owl-nav .owl-prev{
+    margin-right: 10px;
+    outline: none;
+    position: absolute;
+    left: -80px;
+  }
+  .quotes .owl-nav .owl-prev span,
+  .quotes .owl-nav .owl-next span ,
+  .our-courses .owl-nav .owl-prev span,
+  .our-courses .owl-nav .owl-next span {
+    opacity: 0;
+  }
+  .quotes .owl-nav .owl-prev:before,
+  .our-courses .owl-nav .owl-prev:before {
+    display: inline-block;
+    font-family: 'FontAwesome';
+    color: #1e1e1e;
+    font-size: 25px;
+    font-weight: 700;
+    content: '\f104';
+    background-color: var(--white);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+  }
+  .quotes .owl-nav .owl-prev,
+  .our-courses .owl-nav .owl-prev {
+    opacity: 1;
+    transition: all .5s;
+  }
 
-.quotes .owl-nav .owl-prev:hover,
-.our-courses .owl-nav .owl-prev:hover {
-  opacity: 0.9;
-}
+  .quotes .owl-nav .owl-prev:hover,
+  .our-courses .owl-nav .owl-prev:hover {
+    opacity: 0.9;
+  }
 
-.quotes .owl-nav .owl-next,
-.our-courses .owl-nav .owl-next {
-  opacity: 1;
-  transition: all .5s;
-}
+  .quotes .owl-nav .owl-next,
+  .our-courses .owl-nav .owl-next {
+    opacity: 1;
+    transition: all .5s;
+  }
 
-.quotes .owl-nav .owl-next:hover,
-.our-courses .owl-nav .owl-next:hover {
-  opacity: 0.9;
-}
+  .quotes .owl-nav .owl-next:hover,
+  .our-courses .owl-nav .owl-next:hover {
+    opacity: 0.9;
+  }
 
-.quotes .owl-nav .owl-next {
-  right: 30px !important;
-}
-.quotes .owl-nav .owl-next,
-.our-courses .owl-nav .owl-next {
-  margin-left: 10px;
-  outline: none;
-  position: absolute;
-  right: -85px;
-}
+  .quotes .owl-nav .owl-next {
+    right: 30px !important;
+  }
+  .quotes .owl-nav .owl-next,
+  .our-courses .owl-nav .owl-next {
+    margin-left: 10px;
+    outline: none;
+    position: absolute;
+    right: -85px;
+  }
 
-.quotes .owl-nav .owl-next:before,
-.our-courses .owl-nav .owl-next:before {
-  display: inline-block;
-  font-family: 'FontAwesome';
-  color: #1e1e1e; 
-  font-size: 25px;
-  font-weight: 700;
-  content: '\f105';
-  background-color: var(--white);
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  line-height: 50px;
-}
+  .quotes .owl-nav .owl-next:before,
+  .our-courses .owl-nav .owl-next:before {
+    display: inline-block;
+    font-family: 'FontAwesome';
+    color: #1e1e1e; 
+    font-size: 25px;
+    font-weight: 700;
+    content: '\f105';
+    background-color: var(--white);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+  }
+/* Not Using extra--------------------------------------------------------------------------------------------------------------------------------------- */

@@ -91,6 +91,45 @@
 
 <script>
   $(function () {
+    // Cards reference link
+    $(document).on('mouseover', '.show_cards', function(){
+      $(".cards_link").removeClass("d-none");
+    });
+    $(document).on('mouseover', '.cards_link', function(){
+      $(".cards_link").removeClass("d-none");
+    });
+    $(document).on('mouseout', '.show_cards', function(){
+      $(".cards_link").addClass("d-none");
+    });
+    $(document).on('mouseout', '.cards_link', function(){
+      $(".cards_link").addClass("d-none");
+    });
+    // Cards reference link
+    $(document).on('mouseover', '.show_initiatives', function(){
+      $(".initiatives_link").removeClass("d-none");
+    });
+    $(document).on('mouseover', '.initiatives_link', function(){
+      $(".initiatives_link").removeClass("d-none");
+    });
+    $(document).on('mouseout', '.show_initiatives', function(){
+      $(".initiatives_link").addClass("d-none");
+    });
+    $(document).on('mouseout', '.initiatives_link', function(){
+      $(".initiatives_link").addClass("d-none");
+    });
+    // Cards reference link
+    $(document).on('mouseover', '.show_gallery', function(){
+      $(".gallery_link").removeClass("d-none");
+    });
+    $(document).on('mouseover', '.gallery_link', function(){
+      $(".gallery_link").removeClass("d-none");
+    });
+    $(document).on('mouseout', '.show_gallery', function(){
+      $(".gallery_link").addClass("d-none");
+    });
+    $(document).on('mouseout', '.gallery_link', function(){
+      $(".gallery_link").addClass("d-none");
+    });
 
   });
   

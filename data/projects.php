@@ -17,15 +17,18 @@
             'images' => [
                 array(
                     'url' => 'assets/images/projects/Dishtavo_Logos.jpg',
-                    'alt' => ''
+                    'alt' => '',
+                    'bgColor' => '#cccccc',
                 ),
                 // array(
                 //     'url' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg-9sxZ5x87mbUN1Ao4LToqoTtH1DVhUpowQ&usqp=CAU',
-                //     'alt' => ''
+                //     'alt' => '',
+            //     'bgColor' => '#cccccc',
                 // ),
                 // array(
                 //     'url' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg-9sxZ5x87mbUN1Ao4LToqoTtH1DVhUpowQ&usqp=CAU',
-                //     'alt' => ''
+                //     'alt' => '',
+            //     'bgColor' => '#cccccc',
                 // ),
             ]
         ),
@@ -45,15 +48,18 @@
             'images' => [
                 array(
                     'url' => 'assets/images/projects/DHE_Logo.jpg',
-                    'alt' => ''
+                    'alt' => '',
+                    'bgColor' => '#ffffff',
                 ),
                 // array(
                 //     'url' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg-9sxZ5x87mbUN1Ao4LToqoTtH1DVhUpowQ&usqp=CAU',
-                //     'alt' => ''
+                //     'alt' => '',
+            //     'bgColor' => '#cccccc',
                 // ),
                 // array(
                 //     'url' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg-9sxZ5x87mbUN1Ao4LToqoTtH1DVhUpowQ&usqp=CAU',
-                //     'alt' => ''
+                //     'alt' => '',
+            //     'bgColor' => '#cccccc',
                 // ),
             ]
         ),
@@ -73,15 +79,18 @@
             'images' => [
                 array(
                     'url' => 'assets/images/projects/FTS_Logo.jpg',
-                    'alt' => ''
+                    'alt' => '',
+                    'bgColor' => '#ffffff',
                 ),
                 // array(
                 //     'url' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg-9sxZ5x87mbUN1Ao4LToqoTtH1DVhUpowQ&usqp=CAU',
-                //     'alt' => ''
+                //     'alt' => '',
+            //     'bgColor' => '#cccccc',
                 // ),
                 // array(
                 //     'url' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg-9sxZ5x87mbUN1Ao4LToqoTtH1DVhUpowQ&usqp=CAU',
-                //     'alt' => ''
+                //     'alt' => '',
+            //     'bgColor' => '#cccccc',
                 // ),
             ]
         ),
@@ -101,15 +110,18 @@
             'images' => [
                 array(
                     'url' => 'assets/images/projects/Bursaries.jpg',
-                    'alt' => ''
+                    'alt' => '',
+                    'bgColor' => '#fff',
                 ),
                 // array(
                 //     'url' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg-9sxZ5x87mbUN1Ao4LToqoTtH1DVhUpowQ&usqp=CAU',
-                //     'alt' => ''
+                //     'alt' => '',
+            //     'bgColor' => '#cccccc',
                 // ),
                 // array(
                 //     'url' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg-9sxZ5x87mbUN1Ao4LToqoTtH1DVhUpowQ&usqp=CAU',
-                //     'alt' => ''
+                //     'alt' => '',
+            //     'bgColor' => '#cccccc',
                 // ),
             ]
         ),
@@ -129,15 +141,18 @@
             'images' => [
                 array(
                     'url' => 'assets/images/projects/Scholarship.jpg',
-                    'alt' => ''
+                    'alt' => '',
+                    'bgColor' => '#fff',
                 ),
                 // array(
                 //     'url' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg-9sxZ5x87mbUN1Ao4LToqoTtH1DVhUpowQ&usqp=CAU',
-                //     'alt' => ''
+                //     'alt' => '',
+            //     'bgColor' => '#cccccc',
                 // ),
                 // array(
                 //     'url' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg-9sxZ5x87mbUN1Ao4LToqoTtH1DVhUpowQ&usqp=CAU',
-                //     'alt' => ''
+                //     'alt' => '',
+            //     'bgColor' => '#cccccc',
                 // ),
             ]
         ),
@@ -157,15 +172,18 @@
             'images' => [
                 array(
                     'url' => 'assets/images/projects/OBE_2.jpg',
-                    'alt' => ''
+                    'alt' => '',
+                    'bgColor' => '#fff',
                 ),
                 // array(
                 //     'url' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg-9sxZ5x87mbUN1Ao4LToqoTtH1DVhUpowQ&usqp=CAU',
-                //     'alt' => ''
+                //     'alt' => '',
+            //     'bgColor' => '#cccccc',
                 // ),
                 // array(
                 //     'url' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg-9sxZ5x87mbUN1Ao4LToqoTtH1DVhUpowQ&usqp=CAU',
-                //     'alt' => ''
+                //     'alt' => '',
+            //     'bgColor' => '#cccccc',
                 // ),
             ]
         ),

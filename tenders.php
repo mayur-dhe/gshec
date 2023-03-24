@@ -1,5 +1,6 @@
 <?php
   $title = "Tenders";
+  $title_url = "#";
   require 'layout/top-header.php';
 ?>
 <body class="reading-pages">

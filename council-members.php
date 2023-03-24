@@ -1,5 +1,6 @@
 <?php
   $title = "Council Members";
+  $title_url = "#";
   $page = "2";
   require 'layout/top-header.php';
 ?>

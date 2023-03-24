@@ -3,6 +3,7 @@ include 'functions/frontend_function.php';
 include 'config/user_access.php';
 $page = "5";
 $title = "ENROL FOR DNYAN SANGRAH";
+$title_url = "#";
 require 'layout/top-header.php';
 ?>
 <body class="reading-pages">

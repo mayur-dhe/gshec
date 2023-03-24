@@ -1,5 +1,6 @@
 <?php
-  $title = "Intiative";
+  $title = "blank";
+  $title_url = "#";
   require 'layout/top-header.php';
 ?>
 <body class="reading-pages">

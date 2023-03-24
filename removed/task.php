@@ -1,18 +1,18 @@
 <!-- Question  -->
-1. NEP Previous files(data) what to do with that ?
+<!-- Pending / hold  -->
+gallery - site map - linking - left 
 
+map - colleges
+	Ayurveda College, Pernem
 
 <!-- Changes Updates -->
 	<!-- new 15 march target - 17(Friday) -->
-	NEP
-	internal linking for cards
-		breadcomb (home)- dropdown links for other cards
 	RDI - 
 		ui udpates
 		images - grid view - onclick opne up
 	TLE -
 		images - grid view - onclick opne up
-		about us - link
+		
 	SDC -   video link
 		- profile links
 	teams
@@ -31,22 +31,26 @@
 Pending
 	statistics
 pages
-	index
-	edu dashboard
-	enrol me 
-	gallery-view 
-	gallery
-	Human resource 
-	initiatives 
-	national-edu-policy 
-	nep-status-and-plan 
-	objectives 
-	organisation 
-	research develoment invoation 
-	rusa 
-	software development cell
-	teachinf learning 
+	all the pages
+	<!-- 
+		index
+		edu dashboard
+		enrol me 
+		gallery-view 
+		gallery
+		Human resource 
+		initiatives 
+		national-edu-policy 
+		nep-status-and-plan 
+		objectives 
+		organisation 
+		research develoment invoation 
+		rusa 
+		software development cell
+		teachinf learning  
+	-->
 data
+	cards
 	human resource 
 	nep 
 	projects 
@@ -54,14 +58,15 @@ data
 	statistics 
 	teaching learning 
 	teams 
-
 layout
 	header 
 	top-header 
+	footer 
+	site map 
 css 
 	assets/css/templaet edu meeting.css 
-	
-	
+
+Alter
 add
 	blank-female.png
 	blank-male.png

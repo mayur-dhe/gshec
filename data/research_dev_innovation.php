@@ -55,125 +55,125 @@
             // 1
             array(
                 'type' => 'Goa Science Lecture Series 1',
-                'url' => 'assets/images/rdi/Goa Science Lecture Series 1/cARMEL hss.jpg'
+                'url' => 'assets/images/rdi/Goa Science Lecture Series 1/cARMEL hss.jpg',
             ),
             array(
                 'type' => 'Goa Science Lecture Series 1',
-                'url' => 'assets/images/rdi/Goa Science Lecture Series 1/IMG-20220310-WA0088.jpg'
+                'url' => 'assets/images/rdi/Goa Science Lecture Series 1/IMG-20220310-WA0088.jpg',
             ),
             array(
                 'type' => 'Goa Science Lecture Series 1',
-                'url' => 'assets/images/rdi/Goa Science Lecture Series 1/IMG-20220314-WA0034.jpg'
+                'url' => 'assets/images/rdi/Goa Science Lecture Series 1/IMG-20220314-WA0034.jpg',
             ),
             // 2
             array(
                 'type' => 'Grant Writing Workshop 1',
-                'url' => 'assets/images/rdi/Grant Writing Workshop 1/IMG-1.jpg'
+                'url' => 'assets/images/rdi/Grant Writing Workshop 1/IMG-1.jpg',
             ),
             array(
                 'type' => 'Grant Writing Workshop 1',
-                'url' => 'assets/images/rdi/Grant Writing Workshop 1/IMG-2.jpg'
+                'url' => 'assets/images/rdi/Grant Writing Workshop 1/IMG-2.jpg',
             ),
             array(
                 'type' => 'Grant Writing Workshop 1',
-                'url' => 'assets/images/rdi/Grant Writing Workshop 1/IMG-3.jpg'
+                'url' => 'assets/images/rdi/Grant Writing Workshop 1/IMG-3.jpg',
             ),
             array(
                 'type' => 'Grant Writing Workshop 1',
-                'url' => 'assets/images/rdi/Grant Writing Workshop 1/IMG-4.jpg'
+                'url' => 'assets/images/rdi/Grant Writing Workshop 1/IMG-4.jpg',
             ),
             // 3
             array(
                 'type' => 'Grant Writing Workshop 2',
-                'url' => 'assets/images/rdi/Grant Writing Workshop 2/img1.jpg'
+                'url' => 'assets/images/rdi/Grant Writing Workshop 2/img1.jpg',
             ),
             array(
                 'type' => 'Grant Writing Workshop 2',
-                'url' => 'assets/images/rdi/Grant Writing Workshop 2/img2.jpg'
+                'url' => 'assets/images/rdi/Grant Writing Workshop 2/img2.jpg',
             ),
             array(
                 'type' => 'Grant Writing Workshop 2',
-                'url' => 'assets/images/rdi/Grant Writing Workshop 2/img3.jpg'
+                'url' => 'assets/images/rdi/Grant Writing Workshop 2/img3.jpg',
             ),
             // 4
             array(
                 'type' => 'Librarian Workshop 1',
-                'url' => 'assets/images/rdi/Librarian Workshop 1/IMG_1.jpg'
+                'url' => 'assets/images/rdi/Librarian Workshop 1/IMG_1.jpg',
             ),
             array(
                 'type' => 'Librarian Workshop 1',
-                'url' => 'assets/images/rdi/Librarian Workshop 1/IMG_2.jpg'
+                'url' => 'assets/images/rdi/Librarian Workshop 1/IMG_2.jpg',
             ),
             array(
                 'type' => 'Librarian Workshop 1',
-                'url' => 'assets/images/rdi/Librarian Workshop 1/IMG_3.jpg'
+                'url' => 'assets/images/rdi/Librarian Workshop 1/IMG_3.jpg',
             ),
             // 5
             array(
                 'type' => 'NFOMP Workshop 1',
-                'url' => 'assets/images/rdi/NFOMP Workshop 1/img1.jpg'
+                'url' => 'assets/images/rdi/NFOMP Workshop 1/img1.jpg',
             ),
             array(
                 'type' => 'NFOMP Workshop 1',
-                'url' => 'assets/images/rdi/NFOMP Workshop 1/img2.jpg'
+                'url' => 'assets/images/rdi/NFOMP Workshop 1/img2.jpg',
             ),
             array(
                 'type' => 'NFOMP Workshop 1',
-                'url' => 'assets/images/rdi/NFOMP Workshop 1/img3.jpg'
+                'url' => 'assets/images/rdi/NFOMP Workshop 1/img3.jpg',
             ),
             array(
                 'type' => 'NFOMP Workshop 1',
-                'url' => 'assets/images/rdi/NFOMP Workshop 1/img4.jpg'
+                'url' => 'assets/images/rdi/NFOMP Workshop 1/img4.jpg',
             ),
             array(
                 'type' => 'NFOMP Workshop 1',
-                'url' => 'assets/images/rdi/NFOMP Workshop 1/img5.jpg'
+                'url' => 'assets/images/rdi/NFOMP Workshop 1/img5.jpg',
             ),
             array(
                 'type' => 'NFOMP Workshop 1',
-                'url' => 'assets/images/rdi/NFOMP Workshop 1/img6.jpg'
+                'url' => 'assets/images/rdi/NFOMP Workshop 1/img6.jpg',
             ),
             array(
                 'type' => 'NFOMP Workshop 1',
-                'url' => 'assets/images/rdi/NFOMP Workshop 1/img7.jpg'
+                'url' => 'assets/images/rdi/NFOMP Workshop 1/img7.jpg',
             ),
             array(
                 'type' => 'NFOMP Workshop 1',
-                'url' => 'assets/images/rdi/NFOMP Workshop 1/img8.jpg'
+                'url' => 'assets/images/rdi/NFOMP Workshop 1/img8.jpg',
             ),
             array(
                 'type' => 'NFOMP Workshop 1',
-                'url' => 'assets/images/rdi/NFOMP Workshop 1/img9.jpg'
+                'url' => 'assets/images/rdi/NFOMP Workshop 1/img9.jpg',
             ),
             array(
                 'type' => 'NFOMP Workshop 1',
-                'url' => 'assets/images/rdi/NFOMP Workshop 1/img10.jpg'
+                'url' => 'assets/images/rdi/NFOMP Workshop 1/img10.jpg',
             ),
             // 6
             array(
                 'type' => 'NFOMP Workshop 3',
-                'url' => 'assets/images/rdi/NFOMP Workshop 3/img1.jpg'
+                'url' => 'assets/images/rdi/NFOMP Workshop 3/img1.jpg',
             ),
             array(
                 'type' => 'NFOMP Workshop 3',
-                'url' => 'assets/images/rdi/NFOMP Workshop 3/img2.jpg'
+                'url' => 'assets/images/rdi/NFOMP Workshop 3/img2.jpg',
             ),
             array(
                 'type' => 'NFOMP Workshop 3',
-                'url' => 'assets/images/rdi/NFOMP Workshop 3/img3.jpg'
+                'url' => 'assets/images/rdi/NFOMP Workshop 3/img3.jpg',
             ),
             // 7
             array(
                 'type' => 'RDI Meeting in Colleges',
-                'url' => 'assets/images/rdi/RDI Meeting in Colleges/img1.jpg'
+                'url' => 'assets/images/rdi/RDI Meeting in Colleges/img1.jpg',
             ),  
             array(
                 'type' => 'RDI Meeting in Colleges',
-                'url' => 'assets/images/rdi/RDI Meeting in Colleges/img2.jpg'
+                'url' => 'assets/images/rdi/RDI Meeting in Colleges/img2.jpg',
             ),  
             array(
                 'type' => 'RDI Meeting in Colleges',
-                'url' => 'assets/images/rdi/RDI Meeting in Colleges/img3.jpg'
+                'url' => 'assets/images/rdi/RDI Meeting in Colleges/img3.jpg',
             ),
         ),
     ];

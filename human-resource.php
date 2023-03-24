@@ -1,5 +1,6 @@
 <?php
   $title = "Human Resource";
+  $title_url = "#";
   $page = "4";
   require 'layout/top-header.php';
 ?>

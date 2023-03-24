@@ -1,10 +1,11 @@
 <?php
   $id = $_GET['jnhsdwmxifkd'];
   $title = "Initiatives";
+  $title_url = "initiatives.php";
   
   include 'data/initiatives.php';
   foreach ($initiatives as $key => $value) {
-    if ($value == $id) {
+    if ($value['id'] == $id) {
       $title_2 = $value['short_name'];
     }
   }
@@ -15,11 +16,14 @@
   include 'layout/sub-header.php';
   require 'layout/header.php';
   $subtitle = "";
+  $isInitiativesPage = true;
+  $getUrlID = $id;
+
   require 'layout/site-map.php'; 
 ?>
 <style>
  * {
-    font-family: 'Roboto' !important;
+    /* font-family: 'Roboto' !important; */
   }
   h2,
   p {

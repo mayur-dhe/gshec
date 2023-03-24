@@ -21,7 +21,6 @@
     <!-- custom font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Parisienne&family=Sacramento&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- courosal -->
@@ -150,4 +149,9 @@
     </style>
 </head>
 
-<?php include 'functions/custom.php'; ?>
+<?php 
+    include 'functions/custom.php'; 
+    $isCardsPage = false;
+    $isInitiativesPage = false;
+    $isGalleryPage = false;
+?>

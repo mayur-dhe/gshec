@@ -1,5 +1,6 @@
 <?php
   $title = "National Education Policy";
+  $title_url = "national-education-policy.php";
   require 'layout/top-header.php';
 ?>
 <body>
@@ -7,6 +8,7 @@
   include 'layout/sub-header.php';
   require 'layout/header.php';
   // $subtitle = "National Education Policy";
+  $title_2 = "Salient features of NEP 2020";
   require 'layout/site-map.php'; 
   include 'data/nep.php';
 ?>

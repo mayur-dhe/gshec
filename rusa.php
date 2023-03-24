@@ -1,5 +1,6 @@
 <?php
   $title = "RUSA";
+  $title_url = "#";
   require 'layout/top-header.php';
 ?>
   

@@ -8,6 +8,7 @@
   include 'layout/sub-header.php';
   require 'layout/header.php';
   include 'data/quotes.php';
+  include 'data/cards.php';
   include 'data/initiatives.php';
   include 'data/announcement.php';
 ?>
@@ -71,74 +72,26 @@
               ?>
             </div>
           </div>
-          <!-- Ribbon End -->
-
+          <!-- Cards-->
           <div class="owl-service-item owl-carousel">
-            <div class="item">
-              <a href="national-education-policy.php">
-                <div class="icon">
-                  <img src="assets/images/icons/NEP.png" alt="">
-                </div>
-                <div class="down-content">
-                  <h4 class="card_label">National Education Policy</h4>
-                  <h4 class="card_label_short">NEP<br><br></h4>
-                  <p>Click Here</p>
-                </div>
-              </a>
-            </div>
-
-            <div class="item">
-              <a href="research-development-innovation.php">
-                <div class="icon">
-                  <img src="assets/images/icons/R-D-Innovation.png" alt="">
-                </div>
-                <div class="down-content">
-                  <h4 class="card_label">Center for Research Development and Innovation</h4>
-                  <h4 class="card_label_short">RDI <br><br> </h4>
-                  <p>Click Here</p>
-                </div>
-              </a>
-            </div>
-
-            <div class="item">
-              <a href="teaching-learning.php">
-                <div class="icon">
-                  <img src="assets/images/icons/Teaching-Learning-and-Educational-Technologies.png" alt="">
-                </div>
-                <div class="down-content">
-                  <h4 class="card_label">Center for Teaching, Learning and Education Technology </h4>
-                  <h4 class="card_label_short">TLET <br><br> </h4>
-                  <p>Click Here</p>
-                </div>
-              </a>
-            </div>
-
-            <div class="item">
-              <a href="software-development-cell.php">
-                <div class="icon">
-                  <img src="assets/images/icons/SW Development cell.png" alt="">
-                </div>
-                <div class="down-content">
-                  <h4 class="card_label">Software Development Cell</h4>
-                  <h4 class="card_label_short">SDC<br/><br/></h4>
-                  <p>Click Here</p>
-                </div>
-              </a>
-            </div>
-
-            <div class="item">
-              <a href="training-internship-placement.php">
-                <div class="icon">
-                  <img src="assets/images/icons/Training, internship and placement.png" alt="">
-                </div>
-                <div class="down-content">
-                  <h4 class="card_label">Training Internship and Placement</h4>
-                  <h4 class="card_label_short">TIP<br/><br/></h4>
-                  <p>Click Here</p>
-                </div>
-              </a>
-            </div>
-
+            <?php
+              foreach ($cards as $key => $card) {
+                echo '
+                  <div class="item">
+                    <a href="'.$card['url'].'">
+                      <div class="icon">
+                        <img src="'.$card['image'].'" alt="">
+                      </div>
+                      <div class="down-content">
+                        <h4 class="card_label">'.$card['title'].'</h4>
+                        <h4 class="card_label_short">'.$card['short_name'].'</h4>
+                        <p>Click Here</p>
+                      </div>
+                    </a>
+                  </div>
+                ';
+              }
+            ?>
           </div>
         </div>
       </div>
@@ -250,7 +203,7 @@
     </div>
   </section>
 
-  <section class="our-facts">
+  <section class="our-facts main-banner">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
@@ -298,7 +251,7 @@
     </div>
   </section>
 
-  <section class="contact-us" id="contact">
+  <section class="contact-us main-banner" id="contact">
     <div class="container">
       <div class="row">
         <div class="col-lg-7 align-self-center">

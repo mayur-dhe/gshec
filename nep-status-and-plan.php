@@ -1,5 +1,6 @@
 <?php
   $title = "National Education Policy";
+  $title_url = "national-education-policy.php";
   require 'layout/top-header.php';
 ?>
 <body>
@@ -7,6 +8,7 @@
   include 'layout/sub-header.php';
   require 'layout/header.php';
   // $subtitle = "National Education Policy";
+  $title_2 = "Summary of NEP 2020 and Status & Plan";
   require 'layout/site-map.php'; 
   include 'data/nep.php';
 ?>
@@ -48,7 +50,7 @@
                   <br>
                   <br>
                   <strong>Table 1: Student enrollment in Goa for the last three years.</strong>
-                  <table class="table table-light table-border">
+                  <table class="table table-light table-border textAlign-center">
                     <thead>
                       <tr>
                         <td>Year</td>
@@ -71,14 +73,14 @@
                         <td>27,713</td>
                         <td>26,967</td>
                         <td>54680</td>
-                        <td>1.03</td>
+                        <td>1.030</td>
                       </tr>
                       <tr>
                         <td>2019-2020</td>
                         <td>47,727</td>
                         <td>25,055</td>
                         <td>52,782</td>
-                        <td>1.11</td>
+                        <td>1.110</td>
                       </tr>
                     </tbody>
                   </table>
@@ -103,7 +105,7 @@
                         <td>27.3</td>
                         <td>26.9</td>
                         <td>23.4</td>
-                        <td>18</td>
+                        <td>18.0</td>
                       </tr>
                       <tr>
                         <td>Goa</td>

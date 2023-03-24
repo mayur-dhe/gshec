@@ -1,5 +1,6 @@
 <?php
   $title = "Center for Teaching Learning and Education Technology";
+  $title_url = "#";
   require 'layout/top-header.php';
 ?>
 <body class="reading-pages">
@@ -7,6 +8,8 @@
   include 'layout/sub-header.php';
   require 'layout/header.php';
   // $subtitle = "Center for Teaching, Learning and Education Technology";
+  $isCardsPage = true;
+  $getUrlID = 3;
   require 'layout/site-map.php'; 
   include 'data/teaching_learning.php';
 ?>

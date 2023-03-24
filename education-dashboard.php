@@ -1,6 +1,7 @@
 <?php
   $page = "3";
   $title = "Education Dashboard";
+  $title_url = "#";
   require 'layout/top-header.php';
 ?>
 <body>

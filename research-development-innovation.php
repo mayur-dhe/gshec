@@ -1,5 +1,6 @@
 <?php
   $title = "Research Development and Innovation";
+  $title_url = "#";
   require 'layout/top-header.php';
 ?>
 <body class="reading-pages">
@@ -7,6 +8,8 @@
   include 'layout/sub-header.php';
   require 'layout/header.php';
   // $subtitle = "Research Development and Innovation";
+  $isCardsPage = true;
+  $getUrlID = 2;
   require 'layout/site-map.php'; 
   include 'data/research_dev_innovation.php';
 ?>
@@ -91,14 +94,23 @@
                 <!-- <img src="assets/images/rdi/Goa Science Lecture Series 1/rdi pic1.jpg" alt="" class="">
                 <img src="assets/images/rdi/Goa Science Lecture Series 1/rdi pic2.png" alt="" class=""> -->
               </div>
-              <div class="col-md-5">
-                    <?php
-                      foreach ($rdi_images['data'] as $key => $value) {
-                        if ($value['type'] == 'Goa Science Lecture Series 1') {
-                          echo '<img src="'.$value['url'].'" alt="" class="py10">';
+              <div class="col-md-12">
+                <div class="gallery_img_box">
+                  <?php
+                    foreach ($rdi_images['data'] as $key => $value) {
+                      if ($value['type'] == 'Goa Science Lecture Series 1') {
+                        ?>
+                        <figure class="gallery__item gallery__item--<?php echo ++$key?>">
+                          <a href="">
+                            <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" class="gallery__img" style="background-color:#000;">
+                            <div class="gallery__item-overlay-background"></div>
+                          </a>
+                        </figure>
+                        <?php
                         }
                       }
-                    ?>
+                  ?>
+                </div>
               </div>
             </div>
           </div>

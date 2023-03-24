@@ -1,5 +1,6 @@
 <?php
   $title = "Software Development Cell";
+  $title_url = "#";
   require 'layout/top-header.php';
 ?>
 <body>
@@ -7,6 +8,8 @@
   include 'layout/sub-header.php';
   require 'layout/header.php';
   // $subtitle = "Software Development Cell";
+  $isCardsPage = true;
+  $getUrlID = 4;
   require 'layout/site-map.php'; 
   include 'data/sdc.php';
   include 'data/projects.php';
@@ -188,7 +191,7 @@
         ?>
             <figure class="gallery__item gallery__item--<?php echo ++$key?>">
               <a href="software-development-cell-projects?title=<?php echo $value['short-name']?>">
-                <img src="<?php echo $value['images'][0]['url'] ?>" alt="Gallery image 1" class="gallery__img">
+                <img src="<?php echo $value['images'][0]['url'] ?>" alt="Gallery image 1" class="gallery__img" style="background-color:<?php echo $value['images'][0]['bgColor']?>">
                 <div class="gallery__item-overlay-background"></div>
                 <div class="gallery__item-overlay"><?php echo $value['short-name']; ?></div>
               </a>

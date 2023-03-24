@@ -1,12 +1,13 @@
 <?php
   $title = "Downloads";
+  $title_url = "#";
   require 'layout/top-header.php';
 ?>
 <body class="reading-pages">
 <?php 
   include 'layout/sub-header.php';
   require 'layout/header.php';
-  $subtitle = "Downloads";
+  // $subtitle = "Downloads";
   require 'layout/site-map.php'; 
   include 'data/downloads.php';
   // DFA($council_members);
