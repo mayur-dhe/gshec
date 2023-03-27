@@ -1,5 +1,5 @@
 <?php
-  $title = "Research Development and Innovation";
+  $title = "Research, Development and Innovation";
   $title_url = "#";
   require 'layout/top-header.php';
 ?>
@@ -7,11 +7,11 @@
 <?php 
   include 'layout/sub-header.php';
   require 'layout/header.php';
-  // $subtitle = "Research Development and Innovation";
+  // $subtitle = "Research, Development and Innovation";
   $isCardsPage = true;
   $getUrlID = 2;
   require 'layout/site-map.php'; 
-  include 'data/research_dev_innovation.php';
+  include 'data/rdi.php';
 ?>
 <style>
   .page-section .container {
@@ -87,22 +87,20 @@
                   Science and Technology across the world. The lectures were delivered by accomplished experts and academicians working at various Science Colleges in Goa, Goa University, the State Higher Education Council, and Scientists from CSIR-National Institute of Oceanography (CSIR-NIO) who have achieved pre-eminence in the fields of Science and Technology, followed by interactive sessions. Students from various disciplines including Arts, Science, Commerce, and Education attended the lecture series, who otherwise have rare opportunities to listen to experts in various domains of Sciences and technology. Based on the feedback received from the resource person, audience and the host institutions, this even had overwhelming response, and we intend to continue the Science Lecture Series on a much bigger scale in the coming years.
                 </p>
                 <br> 
-                <a class="btn p-0 mb20 pdf-ref" href="assets/images/rdi/Goa Science Lecture Series 1/ScienceLectureSeriesReport.pdf" target="_blank">
+                <a class="btn p-0 mb20 pdf-ref" href="assets/documents/rdi/Goa Science Lecture Series 1/ScienceLectureSeriesReport.pdf" target="_blank">
                   <i class="icon fa fa-download"></i>
                   Click to see Science Lecture Series Report
                 </a>
-                <!-- <img src="assets/images/rdi/Goa Science Lecture Series 1/rdi pic1.jpg" alt="" class="">
-                <img src="assets/images/rdi/Goa Science Lecture Series 1/rdi pic2.png" alt="" class=""> -->
               </div>
               <div class="col-md-12">
-                <div class="gallery_img_box">
+                <div class="gallery_img_box gib_bg">
                   <?php
                     foreach ($rdi_images['data'] as $key => $value) {
                       if ($value['type'] == 'Goa Science Lecture Series 1') {
                         ?>
-                        <figure class="gallery__item gallery__item--<?php echo ++$key?>">
+                        <figure class="gallery__item gallery__item_1--<?php echo ++$key?>">
                           <a href="">
-                            <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" class="gallery__img" style="background-color:#000;">
+                            <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" class="gallery__img g_img_cover" style="background-color:#000;">
                             <div class="gallery__item-overlay-background"></div>
                           </a>
                         </figure>
@@ -155,14 +153,24 @@
                   </li>
                 </ol>
               </div>
-              <div class="col-md-5">
-                <?php
-                  foreach ($rdi_images['data'] as $key => $value) {
-                    if ($value['type'] == 'Grant Writing Workshop 1') {
-                      echo '<img src="'.$value['url'].'" alt="" class="py10">';
-                    }
-                  }
-                ?>
+              <div class="col-md-12">
+                <div class="gallery_img_box gib_bg">
+                  <?php
+                  $counter1 = 1; 
+                    foreach ($rdi_images['data'] as $key => $value) {
+                      if ($value['type'] == 'Grant Writing Workshop 1') {
+                        ?>
+                        <figure class="gallery__item gallery__item_2--<?php echo $counter1++; ?>">
+                          <a href="">
+                            <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" class="gallery__img g_img_cover" style="background-color:#000;">
+                            <div class="gallery__item-overlay-background"></div>
+                          </a>
+                        </figure>
+                        <?php
+                        }
+                      }
+                  ?>
+                </div>
               </div>
             </div>
           </div>
@@ -202,14 +210,24 @@
                   The 30 research proposals have been prepared by the participants with the help of the respective resource person is the outcome of this workshop. These projects will be submitted to SURE Scheme of SERB (Govt. of India) for seeking research funding.  Prof Vithal Tilvi, Dr Mahesh Majik, Dr Bhakti Salgaokar, Dr Siddhi Jalmi, Dr Prajesh Volvoikar and Dr Anjani Nagvenkar served as resource person for this workshop. 
                 </p>
               </div>
-              <div class="col-md-5">
-                <?php
-                  foreach ($rdi_images['data'] as $key => $value) {
-                    if ($value['type'] == 'Grant Writing Workshop 2') {
-                      echo '<img src="'.$value['url'].'" alt="" class="py10">';
-                    }
-                  }
-                ?>
+              <div class="col-md-12">
+                <div class="gallery_img_box gib_bg">
+                  <?php
+                  $counter2 = 1; 
+                    foreach ($rdi_images['data'] as $key => $value) {
+                      if ($value['type'] == 'Grant Writing Workshop 2') {
+                        ?>
+                        <figure class="gallery__item gallery__item_3--<?php echo $counter2++; ?>">
+                          <a href="">
+                            <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" class="gallery__img g_img_cover" style="background-color:#000;">
+                            <div class="gallery__item-overlay-background"></div>
+                          </a>
+                        </figure>
+                        <?php
+                        }
+                      }
+                  ?>
+                </div>
               </div>
             </div>
           </div>
@@ -246,14 +264,24 @@
                   As follow-up activity, Librarians were asked to provide similar training to all faculty in their HEIs to identify only UGC CARE listed journals. Librarians are requested to send the compliance report of their activities which are conducted in their colleges to guide faculties and researchers “to identify Fake/Predatory/Cloned Journals in Academics”.
                 </p>
               </div>
-              <div class="col-md-5">
-                <?php
-                  foreach ($rdi_images['data'] as $key => $value) {
-                    if ($value['type'] == 'Librarian Workshop 1') {
-                      echo '<img src="'.$value['url'].'" alt="" class="py10">';
-                    }
-                  }
-                ?>
+              <div class="col-md-12">
+                <div class="gallery_img_box gib_bg">
+                  <?php
+                  $counter3 = 1; 
+                    foreach ($rdi_images['data'] as $key => $value) {
+                      if ($value['type'] == 'Librarian Workshop 1') {
+                        ?>
+                        <figure class="gallery__item gallery__item_4--<?php echo $counter3++; ?>">
+                          <a href="">
+                            <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" class="gallery__img g_img_cover" style="background-color:#000;">
+                            <div class="gallery__item-overlay-background"></div>
+                          </a>
+                        </figure>
+                        <?php
+                        }
+                      }
+                  ?>
+                </div>
               </div>
             </div>
           </div>
@@ -288,17 +316,26 @@
                     To prepare the academic research community to be at par with international benchmarks for research quality, integrity, and excellence. 
                   </li>
                 </ol>
-
-                <img src="assets/images/rdi/NFOMP Workshop 1/Photo.png" alt="Gallery" class="m10">
+                <!-- <img src="assets/images/rdi/NFOMP Workshop 1/Photo.png" alt="Gallery" class="m10"> -->
               </div>
-              <div class="col-md-5">
-                <?php
-                  foreach ($rdi_images['data'] as $key => $value) {
-                    if ($value['type'] == 'NFOMP Workshop 1') {
-                      echo '<img src="'.$value['url'].'" alt="" class="py10">';
-                    }
-                  }
-                ?>
+              <div class="col-md-12">
+                <div class="gallery_img_box gib_bg">
+                  <?php
+                    $counter4 = 1; 
+                    foreach ($rdi_images['data'] as $key => $value) {
+                      if ($value['type'] == 'NFOMP Workshop 1') {
+                        ?>
+                        <figure class="gallery__item gallery__item_5--<?php echo $counter4++; ?>">
+                          <a href="">
+                            <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" class="gallery__img g_img_cover" style="background-color:#000;">
+                            <div class="gallery__item-overlay-background"></div>
+                          </a>
+                        </figure>
+                        <?php
+                        }
+                      }
+                  ?>
+                </div>
               </div>
             </div>
           </div>
@@ -315,14 +352,24 @@
                   GSHEC successfully organized 1st and 2nd workshop in this series during 6 -8th October 2021, and 2nd December 2021 respectively for these faculty. The key objective of this programme is to provide tools to the faculty that will enhance their teaching, management and research skills. The series of follow-up workshops were conducted to monitor the actual implementation of the tools provided in the previous workshop and to guide the faculty of the colleges. The faculty members of Goa SHEC was the resource person for these workshops.
                 </p>
               </div>
-              <div class="col-md-5">
-                <?php
-                  foreach ($rdi_images['data'] as $key => $value) {
-                    if ($value['type'] == 'NFOMP Workshop 3') {
-                      echo '<img src="'.$value['url'].'" alt="" class="py10">';
-                    }
-                  }
-                ?>
+              <div class="col-md-12">
+                <div class="gallery_img_box gib_bg">
+                  <?php
+                    $counter5 = 1;
+                    foreach ($rdi_images['data'] as $key => $value) {
+                      if ($value['type'] == 'NFOMP Workshop 3') {
+                        ?>
+                        <figure class="gallery__item gallery__item_3--<?php echo $counter5++; ?>">
+                          <a href="">
+                            <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" class="gallery__img g_img_cover" style="background-color:#000;">
+                            <div class="gallery__item-overlay-background"></div>
+                          </a>
+                        </figure>
+                        <?php
+                        }
+                      }
+                  ?>
+                </div>
               </div>
             </div>
           </div>
@@ -351,14 +398,24 @@
                   </li>
                 </ol>
               </div>
-              <div class="col-md-5">
-                <?php
-                  foreach ($rdi_images['data'] as $key => $value) {
-                    if ($value['type'] == 'RDI Meeting in Colleges') {
-                      echo '<img src="'.$value['url'].'" alt="" class="py10">';
-                    }
-                  }
-                ?>
+              <div class="col-md-12">
+                <div class="gallery_img_box gib_bg">
+                  <?php
+                  $counter6 = 1;
+                    foreach ($rdi_images['data'] as $key => $value) {
+                      if ($value['type'] == 'RDI Meeting in Colleges') {
+                        ?>
+                        <figure class="gallery__item gallery__item_3--<?php echo $counter6++; ?>">
+                          <a href="">
+                            <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" class="gallery__img g_img_cover" style="background-color:#000;">
+                            <div class="gallery__item-overlay-background"></div>
+                          </a>
+                        </figure>
+                        <?php
+                        }
+                      }
+                  ?>
+                </div>
               </div>
             </div>
           </div>

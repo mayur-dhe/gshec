@@ -33,9 +33,6 @@
     <!-- chart -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script> -->
 
-    <!-- map -->
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-
     <style>
         * {
             font-family: 'Roboto';

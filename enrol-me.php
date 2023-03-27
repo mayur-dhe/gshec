@@ -11,6 +11,7 @@ require 'layout/top-header.php';
 include 'layout/sub-header.php';
 require 'layout/header.php';
 $subtitle = "";
+$isCardsPage = true;
 require 'layout/site-map.php';
 // include 'data/sdc.php';
 $countryAPI = $host.'api/country.php';

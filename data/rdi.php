@@ -48,6 +48,7 @@
         )
     ];
 
+    // activities images
     $rdi_images = [
         'title' => 'Center for Research, Development & Innovations',
         'data' => array(
@@ -59,28 +60,36 @@
             ),
             array(
                 'type' => 'Goa Science Lecture Series 1',
+                'url' => 'assets/images/rdi/Goa Science Lecture Series 1/IMG-20220314-WA0034.jpg',
+            ),
+            array(
+                'type' => 'Goa Science Lecture Series 1',
                 'url' => 'assets/images/rdi/Goa Science Lecture Series 1/IMG-20220310-WA0088.jpg',
             ),
             array(
                 'type' => 'Goa Science Lecture Series 1',
-                'url' => 'assets/images/rdi/Goa Science Lecture Series 1/IMG-20220314-WA0034.jpg',
+                'url' => 'assets/images/rdi/Goa Science Lecture Series 1/rdi pic1.jpg',
             ),
+            array(
+                'type' => 'Goa Science Lecture Series 1',
+                'url' => 'assets/images/rdi/Goa Science Lecture Series 1/rdi pic2.png',
+            ),  
             // 2
-            array(
-                'type' => 'Grant Writing Workshop 1',
-                'url' => 'assets/images/rdi/Grant Writing Workshop 1/IMG-1.jpg',
-            ),
-            array(
-                'type' => 'Grant Writing Workshop 1',
-                'url' => 'assets/images/rdi/Grant Writing Workshop 1/IMG-2.jpg',
-            ),
             array(
                 'type' => 'Grant Writing Workshop 1',
                 'url' => 'assets/images/rdi/Grant Writing Workshop 1/IMG-3.jpg',
             ),
             array(
                 'type' => 'Grant Writing Workshop 1',
+                'url' => 'assets/images/rdi/Grant Writing Workshop 1/IMG-1.jpg',
+            ),
+            array(
+                'type' => 'Grant Writing Workshop 1',
                 'url' => 'assets/images/rdi/Grant Writing Workshop 1/IMG-4.jpg',
+            ),
+            array(
+                'type' => 'Grant Writing Workshop 1',
+                'url' => 'assets/images/rdi/Grant Writing Workshop 1/IMG-2.jpg',
             ),
             // 3
             array(
@@ -165,16 +174,16 @@
             // 7
             array(
                 'type' => 'RDI Meeting in Colleges',
+                'url' => 'assets/images/rdi/RDI Meeting in Colleges/img3.jpg',
+            ),
+            array(
+                'type' => 'RDI Meeting in Colleges',
                 'url' => 'assets/images/rdi/RDI Meeting in Colleges/img1.jpg',
             ),  
             array(
                 'type' => 'RDI Meeting in Colleges',
                 'url' => 'assets/images/rdi/RDI Meeting in Colleges/img2.jpg',
             ),  
-            array(
-                'type' => 'RDI Meeting in Colleges',
-                'url' => 'assets/images/rdi/RDI Meeting in Colleges/img3.jpg',
-            ),
         ),
     ];
 
@@ -191,22 +200,22 @@
         )
     ];
 
-    $teach_learn_edu_tech = [
-        'title' => 'Center for Teaching, Learning and Education Technology',
-        'data' => array(
-            'Create of the state of the art learning infrastructure.',
-            'To take appropriate measures for promoting innovations in teaching - learning process and inter-disciplinary studies and research.',
-            'To strive to continuously increase the Gross Enrolment Ratio (GER) in Higher Education.',
-            'Development of under-graduate and post-graduate education.',
-            'Ensuring maintenance of high standards of Higher Education.',
-            'Every College to have at least one Programme from Institutes of Eminence.',
-            'Every College to come up with at least one new course in coming 5 years & may suggest one course to be phased out in coming 10 years.',
-            'Expose and provide training in using technology for teaching, learning and evaluation.',
-            'Meet the various educational needs of the society that would arise from time to time.',
-            'Promote experiential learning.',
-            'Nurture scientific temperament among the teaching and student community of the state.',
-        )
-    ];
+    // $teach_learn_edu_tech = [
+    //     'title' => 'Center for Teaching, Learning and Education Technology',
+    //     'data' => array(
+    //         'Create of the state of the art learning infrastructure.',
+    //         'To take appropriate measures for promoting innovations in teaching - learning process and inter-disciplinary studies and research.',
+    //         'To strive to continuously increase the Gross Enrolment Ratio (GER) in Higher Education.',
+    //         'Development of under-graduate and post-graduate education.',
+    //         'Ensuring maintenance of high standards of Higher Education.',
+    //         'Every College to have at least one Programme from Institutes of Eminence.',
+    //         'Every College to come up with at least one new course in coming 5 years & may suggest one course to be phased out in coming 10 years.',
+    //         'Expose and provide training in using technology for teaching, learning and evaluation.',
+    //         'Meet the various educational needs of the society that would arise from time to time.',
+    //         'Promote experiential learning.',
+    //         'Nurture scientific temperament among the teaching and student community of the state.',
+    //     )
+    // ];
 
     $infrastructure_dev = [
         'title' => 'Infrastructure Development',

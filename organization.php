@@ -9,6 +9,7 @@
   include 'layout/sub-header.php';
   require 'layout/header.php';
   // $subtitle = "Organization";
+  $isCardsPage = true;
   require 'layout/site-map.php'; 
   include 'data/council.php';
   // DFA($council_members);

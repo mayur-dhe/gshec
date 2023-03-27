@@ -10,7 +10,18 @@
         'FDP on Outcome Based Education',
         'MOOCs',
     ];
-
+    $vision = [
+        'title' => 'Vision',
+        'data' => array(
+            'Achieving Educational Excellence through Holistic and Conducive Knowledge Ecology',
+        )
+    ];
+    $mission = [
+        'title' => 'Mission',
+        'data' => array(
+            'To make Goa a premier state of excellence in Higher Educational policy, planning & administration by vigorously promoting advanced level of Learning, Research & Capacity Building in Regional, National and Global context',
+        )
+    ];
     $teaching_learning = [
         'Create the state-of-the-art learning infrastructure.',
         'To take appropriate measures for promoting innovations in teaching-learning process and inter-disciplinary studies and research.',
@@ -55,7 +66,7 @@
             ),
             array(
                 'type' => 'mooc',
-                'url' => 'assets/images/tle/mooc/img-6.jpeg',
+                'url' => 'assets/images/tle/mooc/img-9.jpeg',
                 'alt' => '',
             ),
             array(
@@ -70,7 +81,7 @@
             ),
             array(
                 'type' => 'mooc',
-                'url' => 'assets/images/tle/mooc/img-9.jpeg',
+                'url' => 'assets/images/tle/mooc/img-6.jpeg',
                 'alt' => '',
             ),
             // 2
@@ -81,12 +92,12 @@
             ),
             array(
                 'type' => 'obe',
-                'url' => 'assets/images/tle/obe/img-2.jpg',
+                'url' => 'assets/images/tle/obe/img-18.jpg',
                 'alt' => '',
             ),
             array(
                 'type' => 'obe',
-                'url' => 'assets/images/tle/obe/img-3.jpg',
+                'url' => 'assets/images/tle/obe/img-11.jpg',
                 'alt' => '',
             ),
             array(
@@ -126,7 +137,7 @@
             ),
             array(
                 'type' => 'obe',
-                'url' => 'assets/images/tle/obe/img-11.jpg',
+                'url' => 'assets/images/tle/obe/img-3.jpg',
                 'alt' => '',
             ),
             array(
@@ -161,7 +172,7 @@
             ),
             array(
                 'type' => 'obe',
-                'url' => 'assets/images/tle/obe/img-18.jpg',
+                'url' => 'assets/images/tle/obe/img-2.jpg',
                 'alt' => '',
             ),
             array(

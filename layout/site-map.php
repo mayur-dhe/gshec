@@ -3,16 +3,20 @@
         <div class="row">
             <div class="col-lg-12">
                 <ul class="site-map">
-                    <li><a href="index.php"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
-                    <li><a href="#"> > </a></li>
                     <?php 
+                        $index_url = 'href="index.php"><i class="fa fa-home" aria-hidden="true"></i> Home';
+                        if ($isCardsPage == true) {
+                            echo '<li><a class="show_cards" '.$index_url.' <i class="fa fa-caret-down"></i></a></li>';
+                        } else {
+                            echo '<li><a '.$index_url.'</a></li>';
+                        }
+                        echo '<li><a href="#"> > </a></li>';
                         if ($title) { 
-                            if ($isCardsPage == true) {
-                                echo '<li><a class="show_cards" href="'.$title_url.'">'.$title.' <i class="fa fa-caret-down"></i></a></li>';
-                            } else if ($isGalleryPage == true) {
+                            if ($isGalleryPage == true) {
                                 echo '<li><a class="show_gallery" href="'.$title_url.'">'.$title.' <i class="fa fa-caret-down"></i></a></li>';
                             } else {
                                 echo '<li><a href="'.$title_url.'">'.$title.'</a></li>';
+                                // if ($isCardsPage == true) { echo 'class="show_cards" ';}
                             }
                         } 
                         if ($title_2) { 
@@ -84,7 +88,7 @@
                 <?php 
                     }
                 ?>
-                <h6></h6>
+                <!-- <h6></h6> -->
             </div>
         </div>
     </div>

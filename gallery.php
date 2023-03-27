@@ -11,7 +11,7 @@
   include 'data/rusa.php';
   include 'data/council.php';
   include 'data/initiatives.php';
-  include 'data/teaching_learning.php';
+  include 'data/tlet.php';
 ?>
   <!-- ------------- Main Content Start---------------------- -->
   <section class="page-section">

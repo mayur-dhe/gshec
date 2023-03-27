@@ -11,8 +11,8 @@
     ];
 
     $about = [
-        'title' => 'TRAINING INTERNSHIP AND PLACEMENT (TIP) CELL',
-        'data' => "The Training Internship and Placement (TIP) Cell, an Initiative by the
+        'title' => 'TRAINING, INTERNSHIP AND PLACEMENT (TIP) CELL',
+        'data' => array("The Training, Internship and Placement (TIP) Cell, an Initiative by the
                     Directorate of Higher Education and Goa State Higher Education Council,
                     Government of Goa was established on 8th September, 2022 by our Hon’ble
                     Chief Minister Dr. Pramod Sawant. The TIP Cell strives to bridge the
@@ -22,19 +22,22 @@
                     Policy 2020 highlights the need for quality education accessible to
                     all, towards which the TIP Cell seeks to achieve the same by offering
                     industry specific add-on and skill based courses."
+                ),
     ];
     $vision = [
         'title' => 'Vision',
-        'data' => 'To make our education system a global center for excellence through
+        'data' => array('To make our education system a global center for excellence through
                     a dynamic cell integrated into the formal education system thus making
                     our students globally employable or future entrepreneurs.'
+                ),
     ];
     $mission = [
         'title' => 'Mission',
-        'data' => 'Through a connect with industry to attain the requirement for
+        'data' => array('Through a connect with industry to attain the requirement for
                     employability and entrepreneurship, thereby providing adequate
                     training and mandatory internship to every student, such that every
                     student is employed or either facilitated to become an entrepreneur.'
+                ),
     ];
     $objectives = [
         'title' => 'Objectives',
@@ -51,11 +54,26 @@
     ];
 
     $tip_images = [
-        'title' => 'Training Internship and Placement',
+        'title' => 'Training, Internship and Placement',
         'data' => array(
             array(
                 'type' => 'tcs',
+                'url' => 'assets/images/tip/TCS/img-3.jpg',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'tcs',
                 'url' => 'assets/images/tip/TCS/group 1.jpg',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'tcs',
+                'url' => 'assets/images/tip/TCS/img-7.jpg',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'tcs',
+                'url' => 'assets/images/tip/TCS/img-2.jpg',
                 'alt' => '',
             ),
             array(
@@ -75,16 +93,6 @@
             ),
             array(
                 'type' => 'tcs',
-                'url' => 'assets/images/tip/TCS/img-2.jpg',
-                'alt' => '',
-            ),
-            array(
-                'type' => 'tcs',
-                'url' => 'assets/images/tip/TCS/img-3.jpg',
-                'alt' => '',
-            ),
-            array(
-                'type' => 'tcs',
                 'url' => 'assets/images/tip/TCS/img-4.jpg',
                 'alt' => '',
             ),
@@ -96,11 +104,6 @@
             array(
                 'type' => 'tcs',
                 'url' => 'assets/images/tip/TCS/img-6.jpg',
-                'alt' => '',
-            ),
-            array(
-                'type' => 'tcs',
-                'url' => 'assets/images/tip/TCS/img-7.jpg',
                 'alt' => '',
             ),
         ),

@@ -8,7 +8,7 @@
   require 'layout/header.php';
   // $subtitle = "Research Development and Innovation";
   require 'layout/site-map.php'; 
-  include 'data/research_dev_innovation.php';
+  include 'data/rdi.php';
 ?>
 <style>
   section.heading-page {

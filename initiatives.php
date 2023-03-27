@@ -1,5 +1,6 @@
 <?php
   $title = "Initiatives";
+  $title_url = "#";
   require 'layout/top-header.php';
 ?>
 <body>

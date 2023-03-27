@@ -8,7 +8,7 @@
   require 'layout/header.php';
   // $subtitle = "Teaching, Learning and Educational Technology";
   require 'layout/site-map.php'; 
-  include 'data/teaching_learning.php';
+  include 'data/tlet.php';
 ?>
 <!-- ------------- Main Content Start---------------------- -->
   <section class="page-section features p0">

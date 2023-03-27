@@ -1,7 +1,7 @@
 <?php
 
     $rdi = [
-        'title' => 'Center for Research Development and Innovation',
+        'title' => 'Center for Research, Development and Innovation',
         'subtitle' => 'RDI Members',
         'data' => array(
                 array(
@@ -60,11 +60,11 @@
         'title' => 'GSHEC Officials',
         'data' => array(
                     array(
-                        'name' => 'Shri Prasad Lolayekar, IAS',
+                        'name' => 'Mr. Prasad Lolayekar, IAS',
                         'designation' => 'Executive Director',
                     ),
                     array(
-                        'name' => 'Rajesh Mahale',
+                        'name' => 'Mr. Rajesh Mahale',
                         'designation' => 'Finance Officer',
                     ),
                     array(

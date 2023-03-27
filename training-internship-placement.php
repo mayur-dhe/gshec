@@ -1,5 +1,5 @@
 <?php
-  $title = "Training Internship and Placement";
+  $title = "Training, Internship and Placement";
   $title_url = "#";
   require 'layout/top-header.php';
 ?>
@@ -7,7 +7,7 @@
 <?php 
   include 'layout/sub-header.php';
   require 'layout/header.php';
-  // $subtitle = "Training Internship and Placement";
+  // $subtitle = "Training, Internship and Placement";
   $isCardsPage = true;
   $getUrlID = 5;
   require 'layout/site-map.php'; 
@@ -88,100 +88,69 @@
           <div id="tab0" class="tabcontent">
             <h4><?php echo $about['title'] ?></h4>
             <div class="row">
-              <div class="col-md-7">
-                <p class="p0 fontSize-14">
-                  <?php echo $about['data'] ?>
-                </p>
-              </div>
-              <div class="col-md-5">
-                <?php
-                  // foreach ($teaching_learning_images['data'] as $key => $value) {
-                  //   if ($value['type'] == 'obe') {
-                  //     echo '<img src="'.$value['url'].'" alt="" class="py10">';
-                  //     if (++$key > 4) {
-                  //       break;
-                  //     }
-                  //   }
-                  // }
-                ?>
-              </div>
+              <div class="col-md-12">
+                <?php foreach ($about['data'] as $key => $value) { ?>
+                  <p class="p0 fontSize-14">
+                    <?php echo $value ?>
+                  </p>
+                <?php } ?>
+              </div>              
             </div>
           </div>
-          
           <div id="tab1" class="tabcontent">
-            <h4><?php echo $vision['title'] ?></h4>
-            <div class="row">
-              <div class="col-md-7">
-                <p class="p0 fontSize-14">
-                  <?php echo $vision['data'] ?>
-                </p>
-              </div>
-              <div class="col-md-5">
-                <?php
-                  // foreach ($teaching_learning_images['data'] as $key => $value) {
-                  //   if ($value['type'] == 'obe') {
-                  //     echo '<img src="'.$value['url'].'" alt="" class="py10">';
-                  //     if (++$key > 4) {
-                  //       break;
-                  //     }
-                  //   }
-                  // }
-                ?>
-              </div>
-            </div>
+            <h4><?php echo $vision['title']?></h4>
+            <?php foreach ($vision['data'] as $key => $value) { ?>
+              <div><?php echo $value ?></div>
+            <?php } ?>
           </div>
           <div id="tab2" class="tabcontent">
-            <h4><?php echo $mission['title'] ?></h4>
-            <div class="row list-number">
-              <div class="col-md-7">
-                <p class="p0 fontSize-14">
-                  <?php echo $mission['data'] ?>
-                </p>
-              </div>
-              <div class="col-md-5">
-                <?php
-                  // foreach ($teaching_learning_images['data'] as $key => $value) {
-                  //   if ($value['type'] == 'mooc') {
-                  //     echo '<img src="'.$value['url'].'" alt="" class="py10">';
-                  //   }
-                  // }
-                ?>
-              </div>
-            </div>
+            <h4><?php echo $mission['title']?></h4>
+            <?php foreach ($mission['data'] as $key => $value) { ?>
+              <div><?php echo $value ?></div>
+            <?php } ?>
           </div>
           <div id="tab3" class="tabcontent">
             <h4><?php echo $objectives['title'] ?></h4>
             <div class="row gy-1">
-              <?php 
-                foreach ($objectives['data'] as $key => $value) {
-              ?>
-                  <div class="col-md-12" data-aos="zoom-out" data-aos-delay="200">
-                    <div class="row listing-box d-flex align-items-center">
-                      <div class="col-2 listing-box-center">
-                        <img src="assets/images/book.gif" alt="">
-                      </div>  
-                      <h3 class="col-10"><?php echo $value ?></h3>
-                    </div>
-                  </div>
-              <?php } ?>
+              <div class="col-12 list-number">
+                <ul>
+                  <?php 
+                    foreach ($objectives['data'] as $key => $value) {
+                  ?>
+                    <li>
+                      <?php echo $value ?></h3>
+                    </li>
+                  <?php } ?>
+                </ul>
+              </div>
             </div>
           </div>
           <div id="tabA1" class="tabcontent">
             <h4><?php echo $tip_installation['title'] ?></h4>
-            <div class="row list-number">
-              <div class="col-md-7">
+            <div class="row">
+              <div class="col-md-12">
                 <p class="p0 fontSize-14">
                   <?php echo $tip_installation['data'] ?>
                 </p>
               </div>
-              <div class="col-md-5">
-                <?php
-                  // foreach ($teaching_learning_images['data'] as $key => $value) {
-                  //   if ($value['type'] == 'mooc') {
-                  //     echo '<img src="'.$value['url'].'" alt="" class="py10">';
-                  //   }
-                  // }
-                ?>
+              <div class="col-md-12">
+                <div class="gallery_img_box gib_bg">
+                  <?php
+                    $counter0 = 1; 
+                    foreach ($tip_images['data'] as $key => $value) {
+                      if ($value['type'] == 'tcs') {
+                        ?>
+                        <figure class="gallery__item gallery__item_5--<?php echo $counter0++; ?>">
+                          <a href="">
+                            <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" class="gallery__img g_img_cover" style="background-color:#000;">
+                            <div class="gallery__item-overlay-background"></div>
+                          </a>
+                        </figure>
+                        <?php
+                      }
+                    }
+                  ?>
+                </div>
               </div>
             </div>
           </div>

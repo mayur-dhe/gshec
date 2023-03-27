@@ -9,6 +9,7 @@
   include 'layout/sub-header.php';
   require 'layout/header.php';
   $subtitle = "";
+  $isCardsPage = true;
   require 'layout/site-map.php'; 
   include 'data/human_resource.php';
 ?>
@@ -16,6 +17,9 @@
   .profile-thumb {
     max-width: 250px;
     margin: auto;
+  }
+  .page-section {
+    padding: 0 0 50px;
   }
 </style>
   <!-- -------------------------------------------------------- -->

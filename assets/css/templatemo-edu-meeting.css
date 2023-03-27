@@ -2183,6 +2183,7 @@ responsive
   box-shadow: 4px 3px 0px 0px rgb(0 0 0 / 14%);
   /* -webkit-box-shadow: 4px 3px 0px 0px rgb(0 0 0 / 14%); */
   -moz-box-shadow: 4px 3px 0px 0px rgba(0,0,0,0.14);
+  z-index: 15;
 }
 /* Style the buttons inside the tab */
 .tab button {
@@ -2474,8 +2475,8 @@ responsive
 # SDC Team
 --------------------------------------------------------------*/
 .intro-title {
-  font-size: -webkit-calc(21.994px + 14.006 * (100vw - 720px)/780) !important;
-  font-size: calc(21.994px + 14.006 * (100vw - 720px) / 780) !important;
+  font-size: -webkit-calc(20px + 14.006 * (100vw - 720px)/780) !important;
+  font-size: calc(20px + 14.006 * (100vw - 720px) / 780) !important;
   font-weight: 400 !important;
   line-height: 1.3 !important;
   /* font-family: MessinaSans,sans-serif; */
@@ -2759,6 +2760,12 @@ responsive
   grid-template-rows: repeat(8, 5vw);
   grid-gap: 1rem; 
 }
+.gib_bg {
+  background-color: #000000;
+  padding: 3rem;
+  margin-top: 4rem;
+
+}
 .gallery_img_box figure {
   margin: 0 !important;
 }
@@ -2768,6 +2775,9 @@ responsive
   height: 100%;
   object-fit: contain;
   display: block; 
+}
+.g_img_cover {
+  object-fit: cover;
 }
 .gallery__item {
   position: relative;
@@ -2796,6 +2806,7 @@ responsive
 .gallery__item:hover .gallery__item-overlay {
   opacity: 1;
 }
+/* default layout */
 .gallery__item--1 {
   grid-column-start: 1;
   grid-column-end: 3;
@@ -2810,7 +2821,6 @@ responsive
   grid-column-end: 5;
   grid-row-start: 1;
   grid-row-end: 4;
-
   /** Alternative Syntax **/
   /* grid-column: 3 / span 2;  */
   /* grid-row: 1 / span 2; */
@@ -2851,6 +2861,169 @@ responsive
   /* grid-column: 5 / span 4; */
   /* grid-row: 6 / span 3; */
 }
+/* layout 1 - 5 images - Goa Science Lecture Series 1 */
+.gallery__item_1--1 {
+  grid-column: 1 / span 4; 
+  grid-row: 1 / span 3;
+}
+.gallery__item_1--2 {
+  grid-column: 5 / span 4; 
+  grid-row: 1 / span 4;
+}
+.gallery__item_1--3 {
+  grid-column: 1 / span 4; 
+  grid-row: 4 / span 5;
+}
+.gallery__item_1--4 {
+  grid-column: 5 / span 2; 
+  grid-row: 5 / span 4;
+}
+.gallery__item_1--5 {
+  grid-column: 7 / span 2; 
+  grid-row: 5 / span 4;
+}
+/* layout 2 - 4 images - Grant Writing Workshop 1 */
+.gallery__item_2--1 {
+  grid-column: 1 / span 4; 
+  grid-row: 1 / span 3;
+}
+.gallery__item_2--2 {
+  grid-column: 5 / span 4; 
+  grid-row: 1 / span 8;
+}
+.gallery__item_2--3 {
+  grid-column: 1 / span 4; 
+  grid-row: 4 / span 3;
+}
+.gallery__item_2--4 {
+  grid-column: 1 / span 4; 
+  grid-row: 7 / span 3;
+}
+/* layout 3 x - 3 images - Grant Writing Workshop 2 */
+/* layout 3 x - 3 images - NFOMP Workshop 3 */
+.gallery__item_3--1 {
+  grid-column: 1 / span 8; 
+  grid-row: 1 / span 4;
+}
+.gallery__item_3--2 {
+  grid-column: 1 / span 4; 
+  grid-row: 5 / span 4;
+}
+.gallery__item_3--3 {
+  grid-column: 5 / span 4; 
+  grid-row: 5 / span 4;
+}
+/* layout 4 y - 3 images - Librarian Workshop 1 */
+/* layout 4 y - 3 images - RDI Meeting in Colleges */
+.gallery__item_4--1 {
+  grid-column: 1 / span 4; 
+  grid-row: 1 / span 8;
+}
+.gallery__item_4--2 {
+  grid-column: 5 / span 4; 
+  grid-row: 1 / span 4;
+}
+.gallery__item_4--3 {
+  grid-column: 5 / span 4; 
+  grid-row: 5 / span 4;
+}
+/* layout 5 - 10 images - NFOMP Workshop 1 */
+.gallery__item_5--1 {
+  grid-column: 1 / span 3; 
+  grid-row: 1 / span 3;
+}
+.gallery__item_5--2 {
+  grid-column: 4 / span 2; 
+  grid-row: 1 / span 3;
+}
+.gallery__item_5--3 {
+  grid-column: 6 / span 4; 
+  grid-row: 1 / span 3;
+}
+.gallery__item_5--4 {
+  grid-column: 1 / span 3; 
+  grid-row: 4 / span 3;
+}
+.gallery__item_5--5 {
+  grid-column: 4 / span 3; 
+  grid-row: 4 / span 3;
+}
+.gallery__item_5--6 {
+  grid-column: 7 / span 3; 
+  grid-row: 4 / span 2;
+}
+.gallery__item_5--7 {
+  grid-column: 7 / span 3; 
+  grid-row: 6 / span 2;
+}
+.gallery__item_5--8 {
+  grid-column: 1 / span 3; 
+  grid-row: 7 / span 3;
+}
+.gallery__item_5--9 {
+  grid-column: 4 / span 3; 
+  grid-row: 7 / span 3;
+}
+.gallery__item_5--10 {
+  grid-column: 7 / span 3; 
+  grid-row: 8 / span 2;
+}
+/* layout 6 - 9 images - mooc */
+.gallery__item_6--1 {
+  grid-column: 1 / span 3; 
+  grid-row: 1 / span 2;
+}
+.gallery__item_6--2 {
+  grid-column: 4 / span 3; 
+  grid-row: 1 / span 2;
+}
+.gallery__item_6--3 {
+  grid-column: 7 / span 3; 
+  grid-row: 1 / span 3;
+}
+.gallery__item_6--4 {
+  grid-column: 1 / span 3; 
+  grid-row: 3 / span 3;
+}
+.gallery__item_6--5 {
+  grid-column: 4 / span 3; 
+  grid-row: 3 / span 3;
+}
+.gallery__item_6--6 {
+  grid-column: 1 / span 3; 
+  grid-row: 6 / span 3;
+}
+.gallery__item_6--7 {
+  grid-column: 7 / span 3; 
+  grid-row: 4 / span 3;
+}
+.gallery__item_6--8 {
+  grid-column: 4 / span 3; 
+  grid-row: 6 / span 3;
+}
+.gallery__item_6--9 {
+  grid-column: 7 / span 3; 
+  grid-row: 7 / span 2;
+}
+/* layout 7 - 26 images - obe */
+.gallery__item_7--1 {
+  grid-column: 1 / span 4; 
+  grid-row: 1 / span 2;
+}
+.gallery__item_7--2 {
+  grid-column: 5 / span 4; 
+  grid-row: 1 / span 3;
+}
+.gallery__item_7--3 {
+  grid-column: 1 / span 4; 
+  grid-row: 3 / span 3;
+}
+.gallery__item_7--4 {
+  grid-column: 1 / span 4; 
+  grid-row: 6 / span 3;
+}
+
+
 /* project image box 2 ---------- */
 /* Projects  */
 .projects {
@@ -3282,7 +3455,10 @@ hr {
   padding-top: 20px !important;
 }
 .pt30 {
-  padding-top: 30px;
+  padding-top: 30px !important;
+}
+.pt40 {
+  padding-top: 40px !important;
 }
 .pl10 {
   padding-left: 10px;
@@ -3316,6 +3492,9 @@ hr {
 }
 .pxb30 {
   padding: 0 0 30px !important;
+}
+.px30 {
+  padding: 30px 0 !important;
 }
 .px30 {
   padding: 30px 0 !important;
@@ -3892,17 +4071,20 @@ button:hover .button-text {
 /* Flex button end ----------------------- */
 
 
-/* cards  */
+/* cards reference linking  */
 .list_box {
   background-color: #f7f7f7;
   position: absolute;
   width: fit-content;
-  left: 104px;
+  left: 25px;
   top: 15px;
   margin-top: 6px;
 }
 .list_box.initiatives_link {
   left: 190px;
+}
+.list_box>ul {
+  margin-bottom: 0;
 }
 .list_box>.sub-menu>li {
   padding: 6px 16px;

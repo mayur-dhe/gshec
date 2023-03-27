@@ -21,7 +21,7 @@
         ),
         array(
             'id' => 4,
-            'title' => 'Installation of Training Internship and Placement (TIP) cell',
+            'title' => 'Installation of Training, Internship and Placement (TIP) cell',
             'short_name' => 'TIP Unified Portal ',
             'cover_image' => 'assets/images/initiatives/initiative 6 TIP.jpg',
         ),
@@ -170,7 +170,7 @@
     ];
     // 4
     $tip = [
-        'title' => 'Training Internship and Placement Cell',
+        'title' => 'Training, Internship and Placement Cell',
         'data' => array(
             array(
                 'url' => 'assets/images/initiatives/tip/_SUN7015_C.jpg',

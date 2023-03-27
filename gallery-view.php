@@ -14,7 +14,7 @@
   include 'data/rusa.php';
   include 'data/council.php';
   include 'data/initiatives.php';
-  include 'data/teaching_learning.php';
+  include 'data/tlet.php';
 ?>
 
   <!-- ------------- Main Content Start---------------------- -->
@@ -160,7 +160,7 @@
               case 'Job Placement Drive': $image_list = $job_drive['data']; break;
               case 'Academic Interface Programme': $image_list = $aip['data']; break;
               case 'DHE': $image_list = $dhe['data']; break;
-              case 'Training Internship and Placement Cell': $image_list = $tip['data']; break; 
+              case 'Training, Internship and Placement Cell': $image_list = $tip['data']; break; 
             }
             foreach ($image_list as $key => $value) 
             {
