@@ -2893,7 +2893,7 @@ responsive
 }
 .gallery__item_2--3 {
   grid-column: 1 / span 4; 
-  grid-row: 4 / span 3;
+  grid-row: 4 / span 2;
 }
 .gallery__item_2--4 {
   grid-column: 1 / span 4; 
