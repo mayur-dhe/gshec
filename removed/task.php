@@ -1,5 +1,6 @@
 <!-- Question  -->
 <!-- Pending / hold  -->
+Edu Dashboard - statistics
 gallery - site map - linking - left 
 enrol me - validation for all fields
 		- country not visible on server
@@ -22,25 +23,6 @@ teams - project icons
 <!-- --------------------------------------------------- -->
 <!-- find me -->
 
-<div class="col-md-12">
-                <div class="gallery_img_box gib_bg">
-                  <?php
-                  $counter1 = 1; 
-                    foreach ($rdi_images['data'] as $key => $value) {
-                      if ($value['type'] == 'Grant Writing Workshop 1') {
-                        ?>
-                        <figure class="gallery__item gallery__item_2--<?php echo $counter1++; ?>">
-                          <a href="">
-                            <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" class="gallery__img g_img_cover" style="background-color:#000;">
-                            <div class="gallery__item-overlay-background"></div>
-                          </a>
-                        </figure>
-                        <?php
-                        }
-                      }
-                  ?>
-                </div>
-              </div>
 <!-- --------------------------------------------------- -->
 <!-- upload on gshec edu -->
 kept on hold
@@ -86,6 +68,7 @@ layout
 	site map 
 css 
 	assets/css/templaet edu meeting.css 
+config - user_access
 
 Alter
 add

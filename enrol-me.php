@@ -13,7 +13,6 @@ require 'layout/header.php';
 $subtitle = "";
 $isCardsPage = true;
 require 'layout/site-map.php';
-// include 'data/sdc.php';
 $countryAPI = $host.'api/country.php';
 $submitAPI = $host.'api/enrol_scholar.php';
 $countries = '';
@@ -22,11 +21,9 @@ if ($countryData['code'] == '200' ) {
 	$countries = $countryData['data'];
 }
 ?>
-<!-- -------------------------------------------------------- -->
 <!-- ------------- Main Content Start---------------------- -->
-<!-- -------------------------------------------------------- -->
 <section class="page-section">
-    <div class="container" style="padding: 30px 40px;">
+	<div class="container" style="padding: 30px 40px;">
 		<div class="row">
 			<div class="col-md-12">
 				<h4 class="textAlign-center font_dancing">Enrol for Dnyan Sangrah</h4>
@@ -191,21 +188,51 @@ if ($countryData['code'] == '200' ) {
 <script>
 	// Wait for the DOM to be ready
 	$(function() {
-		// Swal.fire({
-		// 	position: 'top-end',
-		// 	icon: 'success',
-		// 	title: 'Your work has been saved',
-		// 	showConfirmButton: false,
-		// 	timer: 1500
-		// })
+		
 	});
 
+	function popUpMsg(msg)
+	{
+		Swal.fire({
+			position: 'top-end',
+			icon: 'error',
+			title: msg,
+			showConfirmButton: false,
+			timer: 1000
+		})
+	}
 	function changePage(value) 
 	{
 		if (value==2) {
-			$("#buttonBox1").addClass("d-none");
-			$("#box2").removeClass("d-none");
-			window.location="#LOCAL_CONNECT";
+			if ($("#sname").val()=="") {
+				$("#sname").focus();
+				popUpMsg('Name is required, Please enter name!');
+
+			} else if ($("#semail").val()=="") {
+				$("#semail").focus();
+				popUpMsg('Email is required, Please enter email address!');
+		
+			} else if ($("#sadd").val()=="") {
+				$("#sadd").focus();
+				popUpMsg('Address is required, Please enter Address!');
+			
+			} else if ($("#inputCity").val()=="") {
+				$("#inputCity").focus();
+				popUpMsg('Please enter City!');
+			
+			} else if ($("#state").val()=="") {
+				$("#state").focus();
+				popUpMsg('Please enter State!');
+			
+			} else if ($("#country").val()=="") {
+				$("#country").focus();
+				popUpMsg('Please enter Country!');
+			
+			} else {
+				$("#buttonBox1").addClass("d-none");
+				$("#box2").removeClass("d-none");
+				window.location="#LOCAL_CONNECT";
+			}
 		} else if (value==3) {
 			$("#buttonBox2").addClass("d-none");
 			$("#box3").removeClass("d-none");

@@ -11,7 +11,7 @@ if ($server == "localhost") {
     $username = "u610117377_gshec_user";
     $password = "gshec123U";
     $dbname= "u610117377_gshec";
-    $host = $server;
+    $host = $server.'/';
 }
 
 
