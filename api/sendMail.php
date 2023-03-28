@@ -1,44 +1,76 @@
 <?php
+require '../config/connect.php';
 $name = $email = $message = $subject = $mobile = "";
 
+if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+    $query = "SELECT * FROM messages";
+    $stmt = $conn->prepare($query);
+    $stmt->execute();
+    $stmt->setFetchMode(PDO::FETCH_ASSOC);
+    if($stmt->rowCount()>0){
+        $data = $stmt->fetchAll();
+        echo json_encode(['status'=>'200', 'message'=>'success', 'data'=>$data]);
+    } else {
+        echo json_encode(['status'=>'500', 'message'=>'No data found', 'data'=>'']);
+    }
+} 
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $name = test_input($_POST["name"]);
-  $email = test_input($_POST["email"]);
-  $mobile = test_input($_POST["mobile"]);
-  $subject = test_input($_POST["subject"]);
-  $message = test_input($_POST["message"]);
+    $name = validateText($_POST["name"]);
+    $email = validateText($_POST["email"]);
+    $mobile = validateText($_POST["mobile"]);
+    $subject = validateText($_POST["subject"]);
+    $message = validateText($_POST["message"]);
 
-  $response = sendMail($email,$name,$mobile,$subject,$message);
-  
-  if ($response) {
-    header("Location: https://gshec.craftitt.com/index#contact"); 
+    $query="INSERT INTO messages (name, email, mobile, subject, message) 
+                VALUES (:name, :email, :mobile, :subject, :message)";
+    $stmt = $conn->prepare($query);
+    $result = $stmt->execute([
+                ':name' => $name,
+                ':email' => $email,
+                ':mobile' => $mobile,
+                ':subject' => $subject, 
+                ':message' => $message,
+            ]);
+    
+    if ($result) {        
+        $response = sendMail($email,$name,$mobile,$subject,$message);
+        if ($response) {
+            echo '<script>alert("Your message has been delivered!")</script>';        
+        }  else {
+            echo '<script>alert("Sorry, could not send your message !")</script>';
+        }
+    } else {
+        echo '<script>alert("Sorry, could not send your message !")</script>';
+    }
+    header("Refresh:2; url=../index.php#contact");
+    // header("Location: ".$server."/index#contact"); 
     exit();
-  }
-} else {
-  echo "<h1>Error</h1>";
+    return true;
 }
-return true;
 
 
 
-function test_input($data) {
+function validateText($data) {
     $data = trim($data);
     $data = stripslashes($data);
     $data = htmlspecialchars($data);
     return $data;
 }
 
-function sendMail($email,$name,$mobile,$subject,$message){
-  $send_to = "dev.dhegoa@gmail.com";
+function sendMail($email,$name,$mobile,$subject,$message)
+{
+    $send_to = "dev.dhegoa@gmail.com";
+    // $send_to = "nmayur101@gmail.com";
 
-  ini_set( 'display_errors', 1 );
-  error_reporting( E_ALL );
+    ini_set( 'display_errors', 1 );
+    error_reporting( E_ALL );
 
-  $headers = "MIME-Version: 1.0" . "\r\n";
-  $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-  $headers .= 'From: '.$email.'<'.$email.'>' . "\r\n".'Reply-To: '.$email."\r\n" . 'X-Mailer: PHP/' . phpversion();
-  $htmlBody = '';
-  $htmlBody .= '<!DOCTYPE html>
+    $headers = "MIME-Version: 1.0" . "\r\n";
+    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+    $headers .= 'From: '.$email.'<'.$email.'>' . "\r\n".'Reply-To: '.$email."\r\n" . 'X-Mailer: PHP/' . phpversion();
+    $htmlBody = '';
+    $htmlBody .= '<!DOCTYPE html>
                 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
                 <head>
                     <meta charset="UTF-8">
@@ -90,11 +122,10 @@ function sendMail($email,$name,$mobile,$subject,$message){
                 </body>
                 </html>';
 
-  if (mail($send_to, $subject, $htmlBody, $headers)) {
-      return true;
-  } else {
-      return false;
-  }
-  
+    if (mail($send_to, $subject, $htmlBody, $headers)) {
+        return true;
+    } else {
+        return false;
+    }
 }
 ?>

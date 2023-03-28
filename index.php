@@ -257,38 +257,33 @@
         <div class="col-lg-7 align-self-center">
           <div class="row">
             <div class="col-lg-12">
-              <form id="contact" action="api/sendMail" method="post">
+              <form id="contact" action="api/sendMail.php" method="post">
                 <div class="row">
                   <div class="col-lg-12">
                     <h2>Let's get in touch</h2>
                   </div>
                   <div class="col-lg-6">
                     <fieldset>
-                      <!-- <label for="name">Full Name*</label> -->
                       <input name="name" type="text" id="name" placeholder="Full Name*" required="">
                     </fieldset>
                   </div>
                   <div class="col-lg-6">
                     <fieldset>
-                      <!-- <label for="email">YOUR EMAIL*</label> -->
                       <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="YOUR EMAIL...*" pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required="">
                     </fieldset>
                   </div>
                   <div class="col-lg-6">
                     <fieldset>
-                      <!-- <label for="mobile">Mobile No.</label> -->
                       <input name="mobile" type="number" id="mobile" placeholder="Mobile No.">
                     </fieldset>
                   </div>
                   <div class="col-lg-6">
                     <fieldset>
-                      <!-- <label for="subject">SUBJECT...*</label> -->
                       <input name="subject" type="text" id="subject" placeholder="SUBJECT...*" required="">
                     </fieldset>
                   </div>
                   <div class="col-lg-12">
                     <fieldset>
-                      <!-- <label for="message">YOUR MESSAGE</label> -->
                       <textarea name="message" type="text" class="form-control" id="message" placeholder="YOUR MESSAGE..." required=""></textarea>
                     </fieldset>
                   </div>
@@ -349,8 +344,7 @@
 
       $(document).ready(function()
       {
-        
-
+        // console.log('reload');
       });
 
       setInterval(function() {
@@ -361,47 +355,6 @@
         }
       }, 2000);
 
-
-
-      var xValues = [100,200,300,400,500,600,700,800,900,1000];
-
-      new Chart("myChart", {
-        type: "line",
-        data: {
-          labels: xValues,
-          datasets: [{ 
-            label: "Institutes",
-            data: [860,1140,1060,1060,1070,1110,1330,2210,7830,2478],
-            borderColor: "#d5d5d570",
-            fill: false,
-          }, { 
-            label: "Faculty",
-            data: [1600,1700,1700,1900,2000,2700,4000,5000,6000,7000],
-            borderColor: "#ff9900a6",
-            fill: false
-          }, { 
-            label: "Students",
-            data: [300,700,2000,5000,6000,4000,2000,1000,200,100],
-            borderColor: "#f118189c",
-            fill: false
-          }]
-        },
-        options: {
-          legend: {display: true},
-          scales: {
-            yAxes: [{
-              display: true,
-              ticks: {
-                  beginAtZero: true
-              }
-            }]
-          },
-          title: {
-            display: true,
-            text: 'Students Record'
-          }
-        }
-      });
     </script>
   </body>
 </html>

@@ -51,11 +51,11 @@
 
         if($result)
         {
-            echo '<script>alert("Thank You for connecting to us.")</script>';
+            echo '<script>alert("Thank You for Connecting.")</script>';
         } else {
             echo '<script>alert("Failed to save data, Please try again !")</script>';
         }
-        header("Refresh:2; url=../enrol-me");
+        header("Refresh:2; url=../enrol-me.php");
     }
 
 ?>

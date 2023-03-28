@@ -14,10 +14,10 @@ function CallAPI($method, $url, $data = false)
         curl_setopt($ch, CURLOPT_POSTFIELDS,$data);  //Post Fields
     }
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    $headers = [
-        'Authorization: Bearer '.$token
-    ];
-    curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+        // $headers = [
+        //     'Authorization: Bearer '.$token
+        // ];
+        // curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
     $response = curl_exec ($ch);
     curl_close ($ch);
     return json_decode($response,true);

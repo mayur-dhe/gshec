@@ -47,6 +47,9 @@ pages
 		software development cell
 		teachinf learning  
 	-->
+api 
+	enrol me 
+	send mail
 data
   + cards
 	council
@@ -68,7 +71,8 @@ layout
 	site map 
 css 
 	assets/css/templaet edu meeting.css 
-config - user_access
+config 
+	- user_access
 
 Alter
 add
@@ -92,5 +96,8 @@ remove
 	edu dashboard - icons old
 	assets/images/rdi/Goa Science Lecture Series 1/ScienceLectureSeriesReport.pdf
 	nep
+
+	api/country.php
+	functions/frontend - fnuction
 
 <!-- --------------------------------------------------- -->

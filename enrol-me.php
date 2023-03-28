@@ -1,6 +1,8 @@
 <?php
 include 'functions/frontend_function.php';
 include 'config/user_access.php';
+include 'data/countries_list.php';
+
 $page = "5";
 $title = "ENROL FOR DNYAN SANGRAH";
 $title_url = "#";
@@ -13,13 +15,7 @@ require 'layout/header.php';
 $subtitle = "";
 $isCardsPage = true;
 require 'layout/site-map.php';
-$countryAPI = $host.'api/country.php';
-$submitAPI = $host.'api/enrol_scholar.php';
-$countries = '';
-$countryData = CallAPI('GET', $countryAPI);
-if ($countryData['code'] == '200' ) {
-	$countries = $countryData['data'];
-}
+$submitAPI = 'api/enrol_scholar.php';
 ?>
 <!-- ------------- Main Content Start---------------------- -->
 <section class="page-section">
@@ -64,10 +60,10 @@ if ($countryData['code'] == '200' ) {
 												if ($countries) {
 													foreach ($countries as $key => $value) {
 														$isSelected = '';
-														if ($value['name'] == "India") {
+														if ($value == "India") {
 															$isSelected = 'selected';
 														}
-														echo '<option value="'.$value['name'].'" '.$isSelected.'>'.$value['name'].'</option>';
+														echo '<option value="'.$value.'" '.$isSelected.'>'.$value.'</option>';
 													}
 												}
 											?>
@@ -195,10 +191,10 @@ if ($countryData['code'] == '200' ) {
 	{
 		Swal.fire({
 			position: 'top-end',
-			icon: 'error',
+			icon: 'warning',
 			title: msg,
 			showConfirmButton: false,
-			timer: 1000
+			timer: 2000
 		})
 	}
 	function changePage(value) 
