@@ -29,7 +29,7 @@
     ];
 
     $tl = [
-        'title' => 'Center for Teaching, Learning and Education Technology',
+        'title' => 'Centre for Teaching, Learning & Educational Technology',
         'subtitle' => 'TL Members',
         'data' => array(
                 array(

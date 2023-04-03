@@ -17,7 +17,7 @@
         ),
         array(
             'id' => 3,
-            'title' => 'Center for Teaching, Learning and Education Technology',
+            'title' => 'Centre for Teaching, Learning & Educational Technology',
             'short_name' => 'TLET',
             'url' => 'teaching-learning.php',
             'image' => 'assets/images/icons/Teaching-Learning-and-Educational-Technologies.png',

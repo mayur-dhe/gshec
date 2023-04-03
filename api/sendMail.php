@@ -60,7 +60,7 @@ function validateText($data) {
 
 function sendMail($email,$name,$mobile,$subject,$message)
 {
-    $send_to = "dev.dhegoa@gmail.com";
+    $send_to = "sdt.gshec@gmail.com";
     // $send_to = "nmayur101@gmail.com";
 
     ini_set( 'display_errors', 1 );

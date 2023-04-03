@@ -1,5 +1,5 @@
 <?php
-  $title = "Center for Teaching, Learning and Education Technology";
+  $title = "Centre for Teaching, Learning & Educational Technology (TLET)";
   $title_url = "#";
   require 'layout/top-header.php';
 ?>
@@ -7,17 +7,13 @@
 <?php 
   include 'layout/sub-header.php';
   require 'layout/header.php';
-  // $subtitle = "Center for Teaching, Learning and Education Technology";
+  // $subtitle = "Centre for Teaching, Learning & Educational Technology (TLET)";
   $isCardsPage = true;
   $getUrlID = 3;
   require 'layout/site-map.php'; 
   include 'data/tlet.php';
 ?>
 <style>
-  section.heading-page {
-    /* background-image: url(assets/images/tle/cover-img.jpg); */
-    /* padding-bottom: 430px; */
-  }
   .page-section .container {
     margin-bottom: 2rem;
     background: #f2f2f2;
@@ -28,36 +24,9 @@
 </style>
 <!-- ------------- Main Content Start---------------------- -->
   <section class="mt_n132">
-    <div class="row">
-      <div class="col-lg-12 p-0">
-        <!-- corosal ---------------------- -->
-        <div id="demo" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
-          <ul class="carousel-indicators">
-              <?php foreach ($teaching_learning_images['data'] as $key => $image){  ?>
-                      <li data-target="#demo" data-slide-to="<?php echo $key?>" <?php echo $key==0 ?? 'class="active"' ?> ></li>                            
-              <?php } ?>  
-          </ul>
-          <!-- The slideshow -->
-          <div class="carousel-inner">
-              <?php foreach ($teaching_learning_images['data'] as $key => $image) { ?>
-                      <div class="carousel-item carouselHeight <?php echo $key==0 ?  'active' : '' ?>">
-                          <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" >
-                      </div> 
-              <?php } ?>
-          <!-- <div class="carousel-item carousel_item_overlay"></div> -->
-          </div>
-          <!-- Left and right controls -->
-          <a class="carousel-control-prev" href="#demo" data-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-          </a>
-          <a class="carousel-control-next" href="#demo" data-slide="next">
-              <span class="carousel-control-next-icon"></span>
-          </a>
-        </div>
-        <!-- corosal ---------------------- -->
-      </div>
-    </div>
+    <video autoplay muted loop id="bg-video" class="bg-screen-height" poster="assets/images/rdi/intro-cover-img.png">
+      <source src="assets/video/tlet/Teaching, Learning & Education Technology_Final.mp4" type="video/mp4" />
+    </video>
   </section>
 
   <section class="page-section">
@@ -87,34 +56,33 @@
           </div>
             
           <div id="tab0" class="tabcontent">
-            <h4><?php echo $title ?></h4>
-            <div class="row gy-1">
-              <?php 
-                foreach ($teaching_learning as $key => $value) {
-              ?>
-                  <div class="col-md-12" data-aos="zoom-out" data-aos-delay="200">
-                    <div class="row listing-box d-flex align-items-center">  
-                      <h3 class="col-10"><?php echo $value ?></h3>
-                    </div>
-                  </div>
-              <?php } ?>
-            </div>
+            <h4><?php echo $about['title']?></h4>
+            <?php foreach ($about['data'] as $key => $value) { ?>
+              <div><?php echo $value ?></div>
+            <?php } ?>
           </div>
-          <!-- pending ----------------------------------------------------------------- -->
           <div id="tab1" class="tabcontent">
             <h4><?php echo $vision['title']?></h4>
             <?php foreach ($vision['data'] as $key => $value) { ?>
               <div><?php echo $value ?></div>
             <?php } ?>
           </div>
-          <!-- pending ----------------------------------------------------------------- -->
           <div id="tab2" class="tabcontent">
             <h4><?php echo $mission['title']?></h4>
             <?php foreach ($mission['data'] as $key => $value) { ?>
               <div><?php echo $value ?></div>
             <?php } ?>
           </div>
-          <!-- pending UP ----------------------------------------------------------------- -->
+          <div id="tab3" class="tabcontent list-number">
+            <h4><?php echo $aims_obj['title']?></h4>
+            <ol>
+              <?php foreach ($aims_obj['data'] as $key => $value) { ?>
+                <li>
+                  <?php echo $value ?>
+                </li>
+              <?php } ?>
+            </ol>
+          </div>
           <div id="tabA1" class="tabcontent">
             <h4>Outcome Based Education</h4>
             <div class="row">

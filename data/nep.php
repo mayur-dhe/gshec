@@ -10,7 +10,7 @@
             ),
             array(
                 'id' => '1.2 ',
-                'title' => 'Action Plan',
+                'title' => 'NEP Action Plan',
                 'url' => 'nep-action-plan.php',
                 'target' => '',
             ),
@@ -22,7 +22,7 @@
             ),
             array(
                 'id' => '1.4 ',
-                'title' => 'Salient Features',
+                'title' => 'Salient features of NEP 2020 for higher education',
                 'url' => 'nep-salient features.php',
                 'target' => '',
             ),

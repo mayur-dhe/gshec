@@ -4,11 +4,18 @@
         'About',
         'Vision',
         'Mission',
+        'Aims & Objectives',
         // 'Activity'
     ];
     $activity = [
         'FDP on Outcome Based Education',
         'MOOCs',
+    ];
+    $about = [
+        'title' => 'About',
+        'data' => array(
+            'TLET devises schemes and strategies for enhancing the quality and effectiveness of teaching - learning by regularly organizing faculty development workshops & seminars in various teaching pedagogical trainings, among others in all Higher Educational Institutes in Goa. TLET centre promotes outcome based education, use of ICT in classroom teaching,  implementation of MOOCs by faculty and collaborations with reputed National and International Institutes specializing in teaching, learning and educational technology for joint research and sharing of ideas.',
+        )
     ];
     $vision = [
         'title' => 'Vision',
@@ -19,9 +26,26 @@
     $mission = [
         'title' => 'Mission',
         'data' => array(
-            'To make Goa a premier state of excellence in Higher Educational policy, planning & administration by vigorously promoting advanced level of Learning, Research & Capacity Building in Regional, National and Global context',
+            'To make Goa a premier state of excellence in Higher Educational,by vigorously promoting advanced level of Teaching ,Learning, Research & Capacity Building in Regional, National and Global context.',
         )
     ];
+
+    $aims_obj = [
+        'title' => 'Aims and Objective',
+        'data' => array(
+            "To take appropriate measures for promoting innovations and quality in teaching - learning, inter-disciplinary studies and research for under-graduate and post-graduate education.",
+            "To establish and promote collaboration with industries  and scientific  institutions so as to bridge the gap between educational output and industry demand.",
+            "To strive to continuously increase the Gross Enrollment Ratio (GER) in Higher Education.",
+            "To provide greater opportunities of Higher education to under-privileged sections of the society and women, particularly in rural areas.",
+            "Excel as a hub of higher education that attracts students all over the country and across the globe.",
+            "Channelize resources to provide accessible and affordable education to all across all sections of the society.",
+            "To encourage, train and facilitate to practice technology enhanced teaching, learning and research with focus on excellence and innovation.",
+            "To assist Colleges & Universities to prepare & finalize dynamic long term institutional plan for promotion of Higher Education.",
+            "To create conducive environment in Colleges & Universities for Knowledge Generation through improved Research facilities and preparing project proposals for funding by industry/research bodies.",
+            "To promote every undergraduate College and University  to be a Center of   Eminence in Teaching , Learning and Research.",
+        ),
+    ];
+
     $teaching_learning = [
         'Create the state-of-the-art learning infrastructure.',
         'To take appropriate measures for promoting innovations in teaching-learning process and inter-disciplinary studies and research.',
@@ -37,7 +61,7 @@
     ];
 
     $teaching_learning_images = [
-        'title' => 'Center for Teaching, Learning and Education Technology',
+        'title' => 'Centre for Teaching, Learning & Educational Technology  ',
         'data' => array(
             array(
                 'type' => 'mooc',

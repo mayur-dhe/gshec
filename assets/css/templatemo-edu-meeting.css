@@ -2173,16 +2173,16 @@ responsive
 /* ------ Tab CSS Start---------------------- */
 /* Style the tab */
 .tab {
-  background-color: #ffffffbf;/* #f2f2f2; */
+  background-color: #f2f2f2a8;/* #ffffffbf #f2f2f2; */
   position: sticky;
   top: 80px;
   float: left;
   width: 22%;
   border-radius: 17px;
   margin-top: -96px;
-  box-shadow: 4px 3px 0px 0px rgb(0 0 0 / 14%);
+  /* box-shadow: 4px 3px 0px 0px rgb(0 0 0 / 14%); */
   /* -webkit-box-shadow: 4px 3px 0px 0px rgb(0 0 0 / 14%); */
-  -moz-box-shadow: 4px 3px 0px 0px rgba(0,0,0,0.14);
+  /* -moz-box-shadow: 4px 3px 0px 0px rgba(0,0,0,0.14); */
   z-index: 15;
 }
 /* Style the buttons inside the tab */
@@ -2213,6 +2213,7 @@ responsive
 }
 .tab button.title {
   font-size: 1.4rem;
+  font-weight: 600;
   padding: 30px 20px;
   margin-bottom: 30px;
   color: var(--yellow) !important;
@@ -2236,7 +2237,7 @@ responsive
   border-left: none;
 }
 .tabcontent * {
-  text-align: justify;
+  text-align: left !important;
   color: var(--greyReadableTextColor);
 }
 .tabcontent ul li {
@@ -2248,13 +2249,14 @@ responsive
 .tabcontent>h4 {
   color: var(--yellow) !important;
   font-size: 2.2rem;
-  font-weight: 600;
+  font-weight: 500;
   padding-top: 30px;
   margin-bottom: 20px;
   text-align: inherit;
 }
 .tabcontent>h4 {
   margin-top: -38px;
+  font-size: 66px;
 }
 .tabcontent>h5 {
   padding-top: 1rem !important;
@@ -3398,8 +3400,11 @@ hr {
 .sub-theme {
   text-decoration: underline;
   font-weight: 600;
+  padding-top: 10px;
 }
-
+.theme-subtitle > .sub-theme-title {
+  color: #414346 !important
+}
 .text-upper {
   text-transform: uppercase;
 }
@@ -3460,29 +3465,29 @@ hr {
 .pt40 {
   padding-top: 40px !important;
 }
-.pl10 {
-  padding-left: 10px;
-}
-.pl20 {
-  padding-left: 20px !important;
-}
-.pl30 {
-  padding-left: 30px !important;
-}
-.pl25 {
-  padding-left: 25px !important;
-}
 .pr30 {
   padding-right: 30px !important;
 }
 .pr90 {
   padding-right: 90px !important;
 }
+.pb5 {
+  padding-bottom: 5px !important;
+}
 .pb20 {
   padding-bottom: 20px !important;
 }
 .pb30 {
   padding-bottom: 30px !important;
+}
+.pl10 {
+  padding-left: 10px;
+}
+.pl20 {
+  padding-left: 20px !important;
+}
+.pl25 {
+  padding-left: 25px !important;
 }
 .pl30 {
   padding-left: 30px !important;
@@ -3570,8 +3575,8 @@ hr {
   margin-top: 50px !important;
 }
 .mt_n132 {
-  margin-top: -132px !important;
-  /* margin-top: -124px !important; */
+  /* margin-top: -132px !important; */
+  margin-top: -124px !important;
 }
 .mt_n138 {
   margin-top: -138px !important;

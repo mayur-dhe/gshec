@@ -45,7 +45,11 @@
           </p>
         </div>
         <div class="col-md-12 col-lg-6">
-          <img src="assets/images/development_team.jpg" class="img-fluid" alt="" title="">
+          <video class="mb40" width="100%" height="285" controls autoplay muted loop>
+            <source src="assets/video/sdc/SDC page video.mp4" type="video/mp4">
+            <!-- <source src="movie.ogg" type="video/ogg"> -->
+            Your browser does not support the video tag.
+          </video>
         </div>
       </div>
     </div>

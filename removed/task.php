@@ -2,24 +2,16 @@
 <!-- Pending / hold  -->
 Edu Dashboard - statistics
 gallery - site map - linking - left 
-enrol me - validation for all fields
-		- country not visible on server
 Cards - images - grid view - onclick opne up
-
 images 
 	activity 
-	
 <!-- Changes Updates -->
-
 
 <!-- --------------------------------------------------- -->
 <!-- Pending Resources -->
 Colleges Name Map
-Nep Video
-SDC video link, profile links
+SDC profile links
 teams - project icons
-
-
 <!-- --------------------------------------------------- -->
 <!-- find me -->
 
@@ -27,6 +19,8 @@ teams - project icons
 <!-- upload on gshec edu -->
 kept on hold
 	statistics
+
+
 
 pages
 	all the pages
@@ -48,22 +42,24 @@ pages
 		teachinf learning  
 	-->
 api 
-	enrol me 
+	enrol scholler 
 	send mail
 data
-  + cards
-	council
-	human resource 
-	initiatives
-	nep 
-	projects 
-  - reseaerch dev invvoation
-  + rdi
-  + tlet
-  - teaching learning 
-    tip
-	statistics 
-	teams 
+	all the pages
+	<!-- + cards
+		council
+		human resource 
+		initiatives
+		nep 
+		nep links 
+		projects 
+		- reseaerch dev invvoation
+		+ rdi
+		+ tlet
+		- teaching learning 
+		tip
+		statistics 
+		teams  -->
 layout
 	header 
 	top-header 
@@ -80,7 +76,11 @@ add
 	blank-male.png
 	edu dashboard - icons new
 	sdc - project new images 
-
+	assets 
+		images nep cvr img 
+		video nep 
+			sdc 
+			tlet 
 
 	assets/css/fontawesome.css 
 	assets/documents/rdi/Goa Science Lecture Series 1/ScienceLectureSeriesReport.pdf
@@ -88,6 +88,7 @@ add
 replace 
     rdi - goa science lecture series 1 - rdi pic 1.jpg
 
+	
 
 remove
 	book.gif 
