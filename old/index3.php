@@ -113,7 +113,7 @@
             </div>
 
             <div class="item">
-              <a href="teaching-learning.php">
+              <a href="teaching-learning&educational-technology.php.php">
                 <div class="icon">
                   <img src="assets/images/icons/Teaching-Learning-and-Educational-Technologies.png" alt="">
                 </div>

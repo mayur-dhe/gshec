@@ -14,11 +14,6 @@
   include 'data/statistics.php';
 ?>
 <style>
-  /* section.heading-page {
-    background-image: url(assets/images/nep/nep4.jpg);
-    padding-bottom: 400px;
-  } */
-
   .canvasjs-chart-credit {
     color: white !important;
     pointer-events: none;
@@ -32,6 +27,7 @@
   <section class="page-section">
     <div class="container">
       <div class="row">
+
         <div class="col-lg-7 mx40">
           <div class="shadows">
             <p class="textColor-black" id="chartScatterTitle"></p>
@@ -51,12 +47,20 @@
           </div>
         </div>
 
+        <div class="col-lg-5 mx40">
+          <div class="shadows">
+            <p class="textColor-black" id="chartScatterDotTitle"></p>
+            <canvas id="chartScatterDot" style="height: 300px; width: 100%;"></canvas>
+          </div>
+        </div>
+
+
+
       </div>
     </div>
   </section>
   <!-- ------------- Main Content End---------------------- -->
-  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-  <!-- <script src="assets/js/frontend.js"></script> -->
+  <script src="assets/js/custom_canvas.js"></script>
   
   <script>
     let studentEnrolled_json = <?php echo json_encode($studentEnrolled) ?>;
@@ -145,59 +149,92 @@
         chartDonut.render();
       }
 
-      // bar graph -----------------------------------------
-      if (pupilTeacherRatio_json.code == 200) {
+      // scatter dot -------------------------------------
+      var xyValues = [
+        {x:'a', y:7},
+        {x:'b', y:8},
+        {x:'c', y:8},
+        {x:'d', y:9},
+        {x:'e', y:9},
+        {x:'f', y:9},
+        {x:'g', y:10},
+        {x:'h', y:11},
+        {x:'i', y:14},
+        {x:'j', y:14},
+        {x:'k', y:15}
+      ];
+      document.getElementById("chartScatterDotTitle").innerHTML = 'Dot html';
 
-        let pupilTeacherRatioData = pupilTeacherRatio_json.data;
-        var datasetsData = labelsData = valuesData = [];
-        let color = '', title = '';
-        document.getElementById("chartBarGraphTitle").innerHTML = pupilTeacherRatioData.title;
-
-        labelsData = pupilTeacherRatioData.x_axis;
-        console.log(labelsData);
-
-        for (let j = 0; j < pupilTeacherRatioData.y_axis.length; j++) 
-        {
-          var dataValue = [];
-          for (let index = 0; index < pupilTeacherRatioData.x_axis.length; index++) 
-          {
-            const element = pupilTeacherRatioData.x_axis[index];
-            const value = pupilTeacherRatioData.y_axis[j].counts;
-            color = pupilTeacherRatioData.y_axis[j].color;
-            title = pupilTeacherRatioData.y_axis[j].title;
-
-            dataValue = value;
+      new Chart("chartScatterDot", {
+        type: "scatter",
+        data: {
+          datasets: [{
+            pointRadius: 4,
+            pointBackgroundColor: "rgb(0,0,255)",
+            data: xyValues
+          }]
+        },
+        options: {
+          legend: {display: false},
+          scales: {
+            xAxes: [{ticks: {min: 40, max:160}}],
+            yAxes: [{ticks: {min: 6, max:16}}],
           }
-          datasetsData.push({
-            label: title,
-            fillColor: color,
-            data: dataValue
-          });
         }
-        // draw chart
-        var ctx = document.getElementById("chartBarGraph").getContext("2d");
-        var data = {
-          labels: ["Chocolate", "Vanilla", "Strawberry"],
-    datasets: [
-        {
-            label: "Blue",
-            fillColor: "blue",
-            data: [3,7,4]
-        },
-        {
-            label: "Red",
-            fillColor: "red",
-            data: [4,3,5]
-        },
-        {
-            label: "Green",
-            fillColor: "green",
-            data: [7,2,6]
-        }
-    ]
-        };
-        var myBarChart = new Chart(ctx).Bar(data, { barValueSpacing: 20 });
-      }
+      });
+      // bar graph -----------------------------------------
+    //   if (pupilTeacherRatio_json.code == 200) {
+
+    //     let pupilTeacherRatioData = pupilTeacherRatio_json.data;
+    //     var datasetsData = labelsData = valuesData = [];
+    //     let color = '', title = '';
+    //     document.getElementById("chartBarGraphTitle").innerHTML = pupilTeacherRatioData.title;
+
+    //     labelsData = pupilTeacherRatioData.x_axis;
+    //     console.log(labelsData);
+
+    //     for (let j = 0; j < pupilTeacherRatioData.y_axis.length; j++) 
+    //     {
+    //       var dataValue = [];
+    //       for (let index = 0; index < pupilTeacherRatioData.x_axis.length; index++) 
+    //       {
+    //         const element = pupilTeacherRatioData.x_axis[index];
+    //         const value = pupilTeacherRatioData.y_axis[j].counts;
+    //         color = pupilTeacherRatioData.y_axis[j].color;
+    //         title = pupilTeacherRatioData.y_axis[j].title;
+
+    //         dataValue = value;
+    //       }
+    //       datasetsData.push({
+    //         label: title,
+    //         fillColor: color,
+    //         data: dataValue
+    //       });
+    //     }
+    //     // draw chart
+    //     var ctx = document.getElementById("chartBarGraph").getContext("2d");
+    //     var data = {
+    //       labels: ["Chocolate", "Vanilla", "Strawberry"],
+    // datasets: [
+    //     {
+    //         label: "Blue",
+    //         fillColor: "blue",
+    //         data: [3,7,4]
+    //     },
+    //     {
+    //         label: "Red",
+    //         fillColor: "red",
+    //         data: [4,3,5]
+    //     },
+    //     {
+    //         label: "Green",
+    //         fillColor: "green",
+    //         data: [7,2,6]
+    //     }
+    // ]
+    //     };
+    //     var myBarChart = new Chart(ctx).Bar(data, { barValueSpacing: 20 });
+    //   }
 
     }
 

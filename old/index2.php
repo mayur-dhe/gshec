@@ -90,7 +90,7 @@
             </div>
 
             <div class="item">
-              <a href="teaching-learning">
+              <a href="teaching-learning&educational-technology.php">
                 <div class="icon">
                   <img src="assets/images/icons/Teaching-Learning-and-Educational-Technologies.png" alt="">
                 </div>

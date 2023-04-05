@@ -86,7 +86,7 @@
 <script src="assets/js/video.js"></script>
 <script src="assets/js/slick-slider.js"></script>
 <script src="assets/js/custom.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<script src="assets/js/custom_cloud_chart.js"></script>
 <!-- <script src="vendor/aos/aos.js"></script> -->
 
 <script>

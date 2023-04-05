@@ -607,7 +607,7 @@
     </div>
   </section>
   <!-- ------------- Main Content End---------------------- -->
-  <script src="assets/js/frontend.js"></script>
+  <script src="assets/js/custom_frontend.js"></script>
   <script>
     const xValues = [100,200,300,400,500,600,700,800,900,1000];
     // <canvas id="myChart" style="width:100%;max-width:600px"></canvas>

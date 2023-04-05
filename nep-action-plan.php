@@ -93,7 +93,7 @@
     } 
   ?>
   <!-- ------------- Main Content End---------------------- -->
-  <script src="assets/js/frontend.js"></script>
+  <script src="assets/js/custom_frontend.js"></script>
   <script>
     // show more list
     function showMore() {

@@ -12,7 +12,7 @@
         'MOOCs',
     ];
     $about = [
-        'title' => 'About',
+        'title' => 'Centre for Teaching, Learning & Educational Technology',
         'data' => array(
             'TLET devises schemes and strategies for enhancing the quality and effectiveness of teaching - learning by regularly organizing faculty development workshops & seminars in various teaching pedagogical trainings, among others in all Higher Educational Institutes in Goa. TLET centre promotes outcome based education, use of ICT in classroom teaching,  implementation of MOOCs by faculty and collaborations with reputed National and International Institutes specializing in teaching, learning and educational technology for joint research and sharing of ideas.',
         )
@@ -61,7 +61,7 @@
     ];
 
     $teaching_learning_images = [
-        'title' => 'Centre for Teaching, Learning & Educational Technology  ',
+        'title' => 'Centre for Teaching, Learning & Educational Technology',
         'data' => array(
             array(
                 'type' => 'mooc',

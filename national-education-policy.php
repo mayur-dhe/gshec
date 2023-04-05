@@ -17,6 +17,12 @@
   section.heading-page {
     background-image: url(assets/images/nep/intro-cover-img.jpg);
     padding-bottom: 472px;
+    background-color: #c0c3c2;
+    background-size: contain;
+    min-width: 100%;
+    min-height: 90vh;
+    max-width: 100%;
+    max-height: 100vh;
   }
   * {
     font-family: MessinaSans,sans-serif;
@@ -29,7 +35,8 @@
     padding: 0 100px 0 120px;
   }
   .layout_border-title {
-    top: 640px;
+    /* top: 640px; */
+    top: 100vh;
   }
 </style>
   <div class="layout_border-left"></div>
@@ -56,7 +63,7 @@
           These characteristics of top institutions make their campus vibrant, and provide students even at UG level, an unique opportunity to interact with PhD students, Postdoctoral fellows, researchers, and faculty. Furthermore, the use of common infrastructure, and access to the state-of-the art facilities becomes feasible.
         </div>
         <div class="col-md-12 col-lg-6 pl30">
-          <video class="mb40" width="100%" height="285" controls autoplay muted loop>
+          <video class="mb40" width="auto" height="285" controls autoplay muted loop>
             <source src="assets/video/nep/NEP page video.mp4" type="video/mp4">
             <!-- <source src="movie.ogg" type="video/ogg"> -->
             Your browser does not support the video tag.
@@ -151,7 +158,7 @@
   ?>
 
   <!-- ------------- Main Content End---------------------- -->
-  <script src="assets/js/frontend.js"></script>
+  <script src="assets/js/custom_frontend.js"></script>
   <script>
     // show more list
     function showMore() {

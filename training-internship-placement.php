@@ -87,15 +87,9 @@
             
           <div id="tab0" class="tabcontent">
             <h4><?php echo $about['title'] ?></h4>
-            <div class="row">
-              <div class="col-md-12">
-                <?php foreach ($about['data'] as $key => $value) { ?>
-                  <p class="p0 fontSize-14">
-                    <?php echo $value ?>
-                  </p>
-                <?php } ?>
-              </div>              
-            </div>
+            <?php foreach ($about['data'] as $key => $value) { ?>
+              <div><?php echo $value ?></div>
+            <?php } ?>
           </div>
           <div id="tab1" class="tabcontent">
             <h4><?php echo $vision['title']?></h4>
@@ -127,30 +121,24 @@
           </div>
           <div id="tabA1" class="tabcontent">
             <h4><?php echo $tip_installation['title'] ?></h4>
-            <div class="row">
+            <div><?php echo $tip_installation['data'] ?></div>
               <div class="col-md-12">
-                <p class="p0 fontSize-14">
-                  <?php echo $tip_installation['data'] ?>
-                </p>
-              </div>
-              <div class="col-md-12">
-                <div class="gallery_img_box gib_bg">
-                  <?php
-                    $counter0 = 1; 
-                    foreach ($tip_images['data'] as $key => $value) {
-                      if ($value['type'] == 'tcs') {
-                        ?>
-                        <figure class="gallery__item gallery__item_5--<?php echo $counter0++; ?>">
-                          <a href="">
-                            <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" class="gallery__img g_img_cover" style="background-color:#000;">
-                            <div class="gallery__item-overlay-background"></div>
-                          </a>
-                        </figure>
-                        <?php
-                      }
+              <div class="gallery_img_box gib_bg">
+                <?php
+                  $counter0 = 1; 
+                  foreach ($tip_images['data'] as $key => $value) {
+                    if ($value['type'] == 'tcs') {
+                      ?>
+                      <figure class="gallery__item gallery__item_5--<?php echo $counter0++; ?>">
+                        <a href="">
+                          <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" class="gallery__img g_img_cover" style="background-color:#000;">
+                          <div class="gallery__item-overlay-background"></div>
+                        </a>
+                      </figure>
+                      <?php
                     }
-                  ?>
-                </div>
+                  }
+                ?>
               </div>
             </div>
           </div>
@@ -160,7 +148,7 @@
     </div>
   </section>
   <!-- ------------- Main Content End---------------------- -->
-  <script src="assets/js/frontend.js"></script>
+  <script src="assets/js/custom_frontend.js"></script>
   <!-- ***** Footer  ***** -->
   <?php require 'layout/footer.php'; ?>
   </body>

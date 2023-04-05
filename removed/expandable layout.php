@@ -2,7 +2,7 @@
 /* The expanding image container */
 .galleryBox {
   position: relative;
-  display: none;
+  height: 600px;
 }
 /* The grid: Four equal columns that floats next to each other */
 .containerBox {
@@ -86,3 +86,11 @@
       expandImg.parentElement.style.display = "block";
     }
   </script>
+
+
+<!-- --------------------------------------- -->
+<!-- --------------------------------------- -->
+<!-- --------------------------------------- -->
+<!-- --------------------------------------- -->
+<!-- --------------------------------------- -->
+<!-- --------------------------------------- -->

@@ -89,7 +89,7 @@
     } 
   ?>
   <!-- ------------- Main Content End---------------------- -->
-  <script src="assets/js/frontend.js"></script>
+  <script src="assets/js/custom_frontend.js"></script>
   <!-- ***** Footer  ***** -->
   <?php require 'layout/footer.php'; ?>
   </body>

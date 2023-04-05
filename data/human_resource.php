@@ -72,7 +72,7 @@
                         'designation' => 'Administrative Officer',
                     ),
                     array(
-                        'name' => 'Ms. Meeta',
+                        'name' => 'Ms. Meeta Borker',
                         'designation' => 'Assistant Director',
                     ),
                 ),

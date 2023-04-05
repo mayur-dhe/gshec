@@ -2266,10 +2266,17 @@ responsive
 /* .tabcontent>h5::after {
   content: ' :';
 } */
+.tabcontent p,
+.tabcontent ul li,
+.tabcontent ol li,
 .tabcontent>div {
   /* padding-left: 2.4rem !important; */
   margin-bottom: 1.5rem;
-  font-size: 1.2rem;
+  font-size: 1.2rem !important;
+}
+.tabcontent ul li,
+.tabcontent ol li {
+  margin-bottom: 0.4rem;
 }
 .tabcontent>p {
   padding: 0px 3rem !important;
