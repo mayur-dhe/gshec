@@ -188,12 +188,20 @@ $submitAPI = 'api/enrol_scholar.php';
 	function loderTimeOut() {
 		setTimeout(() => {
 			window.location.reload();
-		}, 3000);
+		}, 3000);	
 	}
 	// Wait for the DOM to be ready
 	$(function() {
 		
-
+		$('#sname').keydown(function (e) {
+			validateText(e);
+		});
+		$('#inputCity').keydown(function (e) {
+			validateText(e);
+		});
+		$('#state').keydown(function (e) {
+			validateText(e);
+		});
 	});
 
 	const Toast = Swal.mixin({
@@ -208,6 +216,16 @@ $submitAPI = 'api/enrol_scholar.php';
 		}
 	});
 	
+	function validateText(e) {
+		if (e.shiftKey || e.ctrlKey || e.altKey) {
+			e.preventDefault();
+		} else {
+			var key = e.keyCode;
+			if (!((key == 8) || (key == 32) || (key == 46) || (key >= 35 && key <= 40) || (key >= 65 && key <= 90))) {
+				e.preventDefault();
+			}
+		}
+	}
 
 	function popUpMsg(msg, position="top-end", icon="warning")
 	{
