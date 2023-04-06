@@ -3641,6 +3641,7 @@ hr {
 .btn_size {
   width: auto !important;
   white-space: nowrap;
+  color: white !important;
 }
 .star:after {
   content: "*";

@@ -15,20 +15,22 @@
     } 
     
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        $name = $_POST['sname'] ?? '';
-        $semail = $_POST['semail'] ?? '';
-        $address = $_POST['sadd'] ?? '';
-        $city = $_POST['inputCity'] ?? '';
-        $state = $_POST['state'] ?? '';
-        $country = $_POST['country'] ?? '';
-        $worktype = $_POST['wtype'] ?? '';
-        $workname = $_POST['wname'] ?? '';
-        $areaofwork = $_POST['arearsch'] ?? '';
-        $visitfreq = $_POST['frqvisit'] ?? '';
-        $local_add = $_POST['locadd'] ?? '';
-        $local_inst = $_POST['locwork'] ?? '';
-        $other_name = $_POST['osname'] ?? '';
-        $other_email = $_POST['osemail'] ?? '';
+        $postData = json_decode(file_get_contents("php://input"), true);
+
+        $name = $postData['name'] ?? '';
+        $semail = $postData['email'] ?? '';
+        $address = $postData['address'] ?? '';
+        $city = $postData['inputCity'] ?? '';
+        $state = $postData['state'] ?? '';
+        $country = $postData['country'] ?? '';
+        $worktype = $postData['wtype'] ?? '';
+        $workname = $postData['wname'] ?? '';
+        $areaofwork = $postData['arearsch'] ?? '';
+        $visitfreq = $postData['frqvisit'] ?? '';
+        $local_add = $postData['locadd'] ?? '';
+        $local_inst = $postData['locwork'] ?? '';
+        $other_name = $postData['osname'] ?? '';
+        $other_email = $postData['osemail'] ?? '';
         
         $query="INSERT INTO scholar (name, address, city, state, country, worktype, workname, areaofwork, visitfreq, local_add, local_inst, othername, otheremail) 
                 VALUES (:name, :address, :city, :state, :country, :worktype, :workname, :areaofwork, :visitfreq, :local_add, :local_inst, :othername, :otheremail)";
@@ -51,11 +53,10 @@
 
         if($result)
         {
-            echo '<script>alert("Thank You for Connecting.")</script>';
+            echo json_encode(['flag'=>true, 'status'=>'200', 'message'=>'Thank You for connecting us !!']);
         } else {
-            echo '<script>alert("Failed to save data, Please try again !")</script>';
+            echo json_encode(['flag'=>false, 'status'=>'500', 'message'=>'Failed to save data. Please, try again !']);
         }
-        header("Refresh:2; url=../enrol-me.php");
     }
 
 ?>

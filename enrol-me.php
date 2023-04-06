@@ -23,7 +23,7 @@ $submitAPI = 'api/enrol_scholar.php';
 		<div class="row">
 			<div class="col-md-12">
 				<h4 class="textAlign-center font_dancing">Enrol for Dnyan Sangrah</h4>
-				<form name="frm_scholar" id="frm_scholar" method="POST" action="<?php echo $submitAPI; ?>">
+				<form name="frm_scholar" id="frm_scholar">
 					<div class="col-md-12">
 						<legend class="form-design">Personal Information</legend>
 						<div class="row">
@@ -72,11 +72,11 @@ $submitAPI = 'api/enrol_scholar.php';
 									<div class="form-group col-md-12 col-lg-6">
 										<label class="form-label star" for="wtype">Work Type</label><br>
 										<div class="form-check form-check-inline">
-											<input class="form-check-input" type="radio" name="wtype" id="wtype-0" value="Industry">
+											<input class="form-check-input wtype" type="radio" name="wtype" id="wtype-0" value="Industry">
 											<label class="form-check-label" for="wtype-0">Industry</label>
 										</div>
 										<div class="form-check form-check-inline">
-											<input class="form-check-input" type="radio" name="wtype" id="wtype-1" value="Institution" checked>
+											<input class="form-check-input wtype" type="radio" name="wtype" id="wtype-1" value="Institution" checked>
 											<label class="form-check-label" for="wtype-1">Institution</label>
 										</div>
 									</div>
@@ -85,7 +85,7 @@ $submitAPI = 'api/enrol_scholar.php';
 										<input id="wname" name="wname" type="text" placeholder="" class="form-control">
 									</div>
 
-									<div class="form-group col-md-12">
+									<div class="form-group col-md-12 mb20">
 										<div class="form-group">
 											<label class="form-label" for="arearsch">Specify the broad area of industry/research/academics/etc. currently engaged with</label>
 											<textarea class="form-control" id="arearsch" name="arearsch"></textarea>
@@ -109,19 +109,19 @@ $submitAPI = 'api/enrol_scholar.php';
 										<label class="col-md-6 control-label" for="frqvisit">Frequency of visit to Goa</label>
 										<div class="col-md-12"> 
 											<label class="radio-inline" for="frqvisit-0">
-												<input type="radio" name="frqvisit" id="frqvisit-0" value="Annual" checked="checked">
+												<input type="radio" class="frqvisit" name="frqvisit" id="frqvisit-0" value="Annual" checked="checked">
 												Annual
 											</label> 
 											<label class="radio-inline" for="frqvisit-1">
-												<input type="radio" name="frqvisit" id="frqvisit-1" value="Bi-annual">
+												<input type="radio" class="frqvisit" name="frqvisit" id="frqvisit-1" value="Bi-annual">
 												Bi-annual
 											</label> 
 											<label class="radio-inline" for="frqvisit-2">
-												<input type="radio" name="frqvisit" id="frqvisit-2" value="Monthly">
+												<input type="radio" class="frqvisit" name="frqvisit" id="frqvisit-2" value="Monthly">
 												Monthly
 											</label> 
 											<label class="radio-inline" for="radios-3">
-												<input type="radio" name="frqvisit" id="radios-3" value="Rarely">
+												<input type="radio" class="frqvisit" name="frqvisit" id="radios-3" value="Rarely">
 												Rarely
 											</label>
 										</div>
@@ -134,7 +134,7 @@ $submitAPI = 'api/enrol_scholar.php';
 									<!-- Textarea -->
 									<div class="form-group col-md-12">
 										<label class="control-label" for="locwork">Name the industry/academic/institution/etc. in Goa to which professionally/academically collaborated, if any</label>
-										<textarea class="form-control" id="locwork" name="locwork"></textarea>
+										<textarea class="form-control mb20" id="locwork" name="locwork"></textarea>
 									</div>
 								</div>
 							</div>
@@ -166,7 +166,7 @@ $submitAPI = 'api/enrol_scholar.php';
 								</div>
 							</div>
 							<div class="form-group col-md-12 text-center">
-								<input class="btn btn-primary btn_size" type="submit" id="btn_submit" name="submit" value="Enroll Me"/>
+								<button type="button" class="btn btn-primary btn_size" onclick="submitForm();">Enroll Me</button>
 							</div>
 						</div>
 					</div>
@@ -181,50 +181,92 @@ $submitAPI = 'api/enrol_scholar.php';
 
 <!-- ***** Footer  ***** -->
 <?php require 'layout/footer.php'; ?>
+<script src="https://cdn.jsdelivr.net/gh/AmagiTech/JSLoader/amagiloader.js"></script>
 <script>
+	var data = {};
+   // set loader
+	function loderTimeOut() {
+		setTimeout(() => {
+			window.location.reload();
+		}, 3000);
+	}
 	// Wait for the DOM to be ready
 	$(function() {
 		
+
 	});
 
-	function popUpMsg(msg)
+	const Toast = Swal.mixin({
+		toast: true,
+		position: 'top-end',
+		showConfirmButton: false,
+		timer: 3000,
+		timerProgressBar: true,
+		didOpen: (toast) => {
+			toast.addEventListener('mouseenter', Swal.stopTimer)
+			toast.addEventListener('mouseleave', Swal.resumeTimer)
+		}
+	});
+	
+
+	function popUpMsg(msg, position="top-end", icon="warning")
 	{
-		Swal.fire({
-			position: 'top-end',
-			icon: 'warning',
+		Toast.fire({
+			icon: icon,
 			title: msg,
-			showConfirmButton: false,
-			timer: 2000
-		})
+		});
 	}
 	function changePage(value) 
 	{
+		var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+
+		var name = $("#sname").val();
+		var email = $("#semail").val()
+		var address = $("#sadd").val()
+		var inputCity = $("#inputCity").val()
+		var state = $("#state").val()
+		var country = $("#country").val()
+		
 		if (value==2) {
-			if ($("#sname").val()=="") {
+			if (name=="") {
 				$("#sname").focus();
 				popUpMsg('Name is required, Please enter name!');
 
-			} else if ($("#semail").val()=="") {
+			} else if (email=="") {
 				$("#semail").focus();
 				popUpMsg('Email is required, Please enter email address!');
+				
+			}else if (!emailReg.test(email)){
+				$("#semail").focus();
+				popUpMsg('Please enter valid email address!');
 		
-			} else if ($("#sadd").val()=="") {
+			} else if (address=="") {
 				$("#sadd").focus();
 				popUpMsg('Address is required, Please enter Address!');
 			
-			} else if ($("#inputCity").val()=="") {
+			} else if (inputCity=="") {
 				$("#inputCity").focus();
 				popUpMsg('Please enter City!');
 			
-			} else if ($("#state").val()=="") {
+			} else if (state=="") {
 				$("#state").focus();
 				popUpMsg('Please enter State!');
 			
-			} else if ($("#country").val()=="") {
+			} else if (country=="") {
 				$("#country").focus();
 				popUpMsg('Please enter Country!');
 			
 			} else {
+
+				data = {
+					name:name,
+					email:email,
+					address:address,
+					inputCity:inputCity,
+					state:state,
+					country:country,
+				}
+
 				$("#buttonBox1").addClass("d-none");
 				$("#box2").removeClass("d-none");
 				window.location="#LOCAL_CONNECT";
@@ -234,6 +276,39 @@ $submitAPI = 'api/enrol_scholar.php';
 			$("#box3").removeClass("d-none");
 			window.location="#RECOMMENDATION";
 		}
+	}
+
+	function submitForm() 
+	{
+		data.wtype = $('.wtype:checked').val();
+		data.wname = $("#wname").val();
+		data.arearsch = $("#arearsch").val();
+		data.frqvisit = $('.frqvisit:checked').val();
+		data.locadd = $("#locadd").val();
+		data.locwork = $("#locwork").val();
+		data.osname = $("#osname").val();
+		data.osemail = $("#osemail").val();
+		// console.log(data);
+
+		AmagiLoader.show();
+		$.ajax({
+			type: "POST",
+			url: "<?php echo $submitAPI; ?>",
+			data: JSON.stringify(data),
+			success: function(res)
+			{
+				AmagiLoader.hide();
+				var responseData = JSON.parse(res);
+				if (responseData.flag && responseData.status=='200') {
+					popUpMsg(responseData.message, "", "success");
+					loderTimeOut();
+					window.scrollTo({ top: 0, behavior: 'smooth' });
+				} else {
+					popUpMsg(responseData.message, "", "error");
+					window.scrollTo({ top: 0, behavior: 'smooth' });
+				}
+			},
+		});
 	}
 
 </script>

@@ -21,6 +21,8 @@ Progress
 	- edu dashboard (statistics) 
 <!-- upload on gshec edu -->
 alter
+	api 
+		enrol scholar 
 	assets
 		css 
 			template 
@@ -35,10 +37,11 @@ alter
 		nep
 		tlet 
 	pages 
-		<!-- edu dash  -->
 		nep, ap, sf, s&p
 		rdi
 		tip 
+		enrol me
+		objectives 
 	layout 
 		footer 
 add 
