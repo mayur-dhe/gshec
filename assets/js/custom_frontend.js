@@ -1,6 +1,30 @@
 
 // Page link - <script src="assets/js/custom_frontend.js"></script>
 
+
+// show expanded image
+var expandImg = document.getElementById("expandedImg");
+var imgText = document.getElementById("imgtext");
+
+function isImageExpanded(imgs) 
+{ 
+    if (expandImg.src == imgs.src) {
+        hideExpandedImage();
+    } else {
+        expandImg.src = imgs.src;
+        imgText.innerHTML = imgs.alt;
+        expandImg.parentElement.style.display = "block";
+        window.location.href = "#expandedImg";
+    }
+}
+function hideExpandedImage() {
+    expandImg.parentElement.style.display = "none";
+    expandImg.src = '';
+}
+function closeExpandedImage() {
+    expandImg.src = '';
+}
+
 // show Multiple Tabs-----------------------------------------------------------------------------------
 function openTabSection(evt, selectedTab) 
 {
@@ -15,6 +39,10 @@ function openTabSection(evt, selectedTab)
     }
     document.getElementById(selectedTab).style.display = "block";
     evt.currentTarget.className += " active";
+
+    if (expandImg.src) {
+        hideExpandedImage();
+    }
 
     $(window).scrollTop(80);// 160
 }

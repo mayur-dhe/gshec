@@ -2230,6 +2230,7 @@ responsive
   color:var(--yellow) !important;
 }
 /* Style the tab content */
+.expandContainer,
 .tabcontent {
   float: right;
   width: 78%;
@@ -2762,6 +2763,33 @@ responsive
 /* project box 1 ------------  */
 
 /* project image box 2 ---------- */
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 30px;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 30px;
+  background-color: #000000a1;
+}
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  width: 65%;
+  height: -webkit-fill-available;
+  color: #ffffff00 !important;
+  font-size: 35px;
+  cursor: pointer;
+  background-color: rgba(61, 61, 61, 0);
+}
+.expandContainer {  
+  padding: 0px 40px 30px;
+  margin: -130px 0px 14px;
+}
+.grid_size {
+  background-color: #000000;
+  padding: 3rem;
+}
 /* parent */
 .gallery_img_box {
   display: grid;
@@ -2784,6 +2812,7 @@ responsive
   height: 100%;
   object-fit: contain;
   display: block; 
+  opacity: 0.5;
 }
 .g_img_cover {
   object-fit: cover;
@@ -2811,9 +2840,17 @@ responsive
   transition: .5s ease;
   opacity:0;
 }
+.gallery__img:hover {
+  opacity: 1;
+  transition: .5s ease;
+  cursor: pointer;
+  padding: 6px;
+}
 .gallery__item:hover .gallery__item-overlay-background,
 .gallery__item:hover .gallery__item-overlay {
   opacity: 1;
+  transition: .5s ease;
+  cursor:pointer;
 }
 /* default layout */
 .gallery__item--1 {

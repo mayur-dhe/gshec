@@ -96,10 +96,8 @@
                     if ($value['type'] == 'obe') {
                       ?>
                       <figure class="gallery__item gallery__item_7--<?php echo $counter0++; ?>">
-                        <a href="">
-                          <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" class="gallery__img g_img_cover" style="background-color:#000;">
-                          <div class="gallery__item-overlay-background"></div>
-                        </a>
+                        <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
+                        <!-- <div class="gallery__item-overlay-background"></div>  --> 
                       </figure>
                       <?php
                     }
@@ -134,10 +132,8 @@
                     if ($value['type'] == 'mooc') {
                       ?>
                       <figure class="gallery__item gallery__item_6--<?php echo $counter1++; ?>">
-                        <a href="">
-                          <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" class="gallery__img g_img_cover" style="background-color:#000;">
-                          <div class="gallery__item-overlay-background"></div>
-                        </a>
+                        <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
+                        <!-- <div class="gallery__item-overlay-background"></div>  --> 
                       </figure>
                       <?php
                     }
@@ -147,6 +143,14 @@
             </div>
           </div>
 
+          <div class="expandContainer">
+            <div class="grid_size">
+              <span onclick="this.parentElement.style.display='none'; closeExpandedImage();" class="closebtn">&times;</span>
+              <img id="expandedImg">
+              <div id="imgtext" class="d-none"></div>
+            </div>
+          </div>
+          
         </div>
       </div>
     </div>

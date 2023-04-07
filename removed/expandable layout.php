@@ -56,7 +56,7 @@
         foreach ($teaching_learning_images['data'] as $key => $value) {
         if ($value['type'] == 'mooc') {
             echo '<div class="containerBox">
-                    <img onclick="myFunction(this);" src="'.$value['url'].'" alt="" class="py10">
+                    <img onclick="isImageExpanded(this);" src="'.$value['url'].'" alt="" class="py10">
                 </div>';
         }
         }
@@ -77,7 +77,7 @@
 
 
 <script>
-    function myFunction(imgs) 
+    function isImageExpanded(imgs) 
     {
       var expandImg = document.getElementById("expandedImg");
       var imgText = document.getElementById("imgtext");

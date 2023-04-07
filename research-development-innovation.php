@@ -22,98 +22,6 @@
     color: var(--yellow);
   }
 </style>
-<style>
-/* The expanding image container */
-.galleryBox {
-  position: relative;
-}
-/* The grid: Four equal columns that floats next to each other */
-.containerBox {
-  float: left;
-  width: 25%;
-  height: 120px;
-  padding: 3px;
-}
-/* Style the images inside the grid */
-.containerBox img {
-  opacity: 0.8; 
-  height: 100%;
-  cursor: pointer;
-  object-fit: cover;
-}
-.containerBox img:hover {
-  opacity: 1;
-}
-/* Clear floats after the columns */
-.item:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-/* Expanding image text */
-#imgtext {
-  position: absolute;
-  bottom: 15px;
-  left: 15px;
-  color: white;
-  font-size: 20px;
-}
-/* Closable button inside the expanded image */
-.closebtn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  color: white;
-  font-size: 35px;
-  cursor: pointer;
-}
-</style>
-
-
-
-
-
-
-<style>
-  .image-grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-  }
-
-  .image-grid-item {
-    width: 100%;
-    height: auto;
-    cursor: pointer;
-    transition: transform 0.2s ease;
-  }
-
-  .image-grid-item:hover {
-    transform: scale(1.05);
-  }
-
-  .image-grid-item.active {
-    transform: scale(1.5);
-    z-index: 1; /* Bring the expanded image to the front */
-  }
-
-  .expanded-image-container {
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    display: none;
-  }
-
-  .expanded-image {
-    max-width: 100%;
-    max-height: 80vh;
-    margin: 20px auto;
-    display: block;
-  }
-</style>
-
   <!-- ------------- Main Content Start---------------------- -->
   <section class="mt_n132">
     <video autoplay muted loop id="bg-video" class="bg-screen-height" poster="assets/images/rdi/intro-cover-img.png">
@@ -124,7 +32,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 p-0">
-
+          <!-- tabs -->
           <div class="tab">
             <?php 
               foreach ($tabs as $key => $value) 
@@ -146,7 +54,7 @@
                 <button class="d-none activities tablinks <?php echo $class0 ?>" onclick="openTabSection(event, 'tabA<?php echo ++$key ?>')"><?php echo $value ?></button>
             <?php } ?>
           </div>
-
+          <!-- Tab Content -->
           <div id="tab0" class="tabcontent list-number">
             <h4><?php echo $about['title']?></h4>
             <ol>
@@ -163,7 +71,6 @@
               <div><?php echo $value ?></div>
             <?php } ?>
           </div>
-
           <div id="tab2" class="tabcontent">
             <h4><?php echo $mission['title']?></h4>
             <?php foreach ($mission['data'] as $key => $value) { ?>
@@ -196,10 +103,8 @@
                       if ($value['type'] == 'Goa Science Lecture Series 1') {
                         ?>
                         <figure class="gallery__item gallery__item_1--<?php echo ++$key?>">
-                          <a href="#">
-                            <img onclick="myFunction(this);" src="<?php echo $value['url'] ?>" alt="Gallery image 1" class="gallery__img g_img_cover" style="background-color:#000;">
-                            <div class="gallery__item-overlay-background"></div>
-                          </a>
+                            <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
+                            <!-- <div class="gallery__item-overlay-background"></div>  --> 
                         </figure>
                         <?php
                         }
@@ -258,10 +163,8 @@
                       if ($value['type'] == 'Grant Writing Workshop 1') {
                         ?>
                         <figure class="gallery__item gallery__item_2--<?php echo $counter1++; ?>">
-                          <a href="#">
-                            <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" class="gallery__img g_img_cover" style="background-color:#000;">
-                            <div class="gallery__item-overlay-background"></div>
-                          </a>
+                          <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
+                          <!-- <div class="gallery__item-overlay-background"></div>  --> 
                         </figure>
                         <?php
                         }
@@ -315,10 +218,8 @@
                       if ($value['type'] == 'Grant Writing Workshop 2') {
                         ?>
                         <figure class="gallery__item gallery__item_3--<?php echo $counter2++; ?>">
-                          <a href="#">
-                            <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" class="gallery__img g_img_cover" style="background-color:#000;">
-                            <div class="gallery__item-overlay-background"></div>
-                          </a>
+                          <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
+                          <!-- <div class="gallery__item-overlay-background"></div>  --> 
                         </figure>
                         <?php
                         }
@@ -369,10 +270,8 @@
                       if ($value['type'] == 'Librarian Workshop 1') {
                         ?>
                         <figure class="gallery__item gallery__item_4--<?php echo $counter3++; ?>">
-                          <a href="#">
-                            <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" class="gallery__img g_img_cover" style="background-color:#000;">
-                            <div class="gallery__item-overlay-background"></div>
-                          </a>
+                          <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
+                          <!-- <div class="gallery__item-overlay-background"></div>  --> 
                         </figure>
                         <?php
                         }
@@ -423,10 +322,8 @@
                       if ($value['type'] == 'NFOMP Workshop 1') {
                         ?>
                         <figure class="gallery__item gallery__item_5--<?php echo $counter4++; ?>">
-                          <a href="#">
-                            <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" class="gallery__img g_img_cover" style="background-color:#000;">
-                            <div class="gallery__item-overlay-background"></div>
-                          </a>
+                          <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
+                          <!-- <div class="gallery__item-overlay-background"></div>  --> 
                         </figure>
                         <?php
                         }
@@ -457,10 +354,8 @@
                       if ($value['type'] == 'NFOMP Workshop 3') {
                         ?>
                         <figure class="gallery__item gallery__item_3--<?php echo $counter5++; ?>">
-                          <a href="#">
-                            <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" class="gallery__img g_img_cover" style="background-color:#000;">
-                            <div class="gallery__item-overlay-background"></div>
-                          </a>
+                          <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
+                          <!-- <div class="gallery__item-overlay-background"></div>  --> 
                         </figure>
                         <?php
                         }
@@ -503,10 +398,8 @@
                       if ($value['type'] == 'RDI Meeting in Colleges') {
                         ?>
                         <figure class="gallery__item gallery__item_3--<?php echo $counter6++; ?>">
-                          <a href="#">
-                            <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" class="gallery__img g_img_cover" style="background-color:#000;">
-                            <div class="gallery__item-overlay-background"></div>
-                          </a>
+                          <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
+                          <!-- <div class="gallery__item-overlay-background"></div>  --> 
                         </figure>
                         <?php
                         }
@@ -517,41 +410,13 @@
             </div>
           </div>
 
-          <div class="galleryBox">
-            <?php
-                // foreach ($rdi_images['data'] as $key => $value) {
-                // if ($value['type'] == 'Goa Science Lecture Series 1') {
-                //                 echo '<div class="containerBox">
-                //             <img onclick="myFunction(this);" src="'.$value['url'].'" alt="" class="py10">
-                //         </div>';
-                // }
-                // }
-            ?> 
+          <div class="expandContainer">
+            <div class="grid_size">
+              <span onclick="this.parentElement.style.display='none'; closeExpandedImage();" class="closebtn">&times;</span>
+              <img id="expandedImg">
+              <div id="imgtext" class="d-none"></div>
+            </div>
           </div>
-          <!-- <div class="expandContainer">
-            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-            <img id="expandedImg" style="width:100%">
-          </div> -->
-
-
-          <!-- <div class="image-grid-container">
-            <?php
-                foreach ($rdi_images['data'] as $key => $value) {
-                  if ($value['type'] == 'Goa Science Lecture Series 1') {
-                    echo '
-                          <img class="image-grid-item" src="'.$value['url'].'" alt="">
-                          
-                      ';
-                  }
-                }
-              ?> 
-          </div>
-          <div style="width:auto; height:800px">
-
-            <div class="expanded-image-container"></div>
-          </div>
-             -->
-
 
         </div>
       </div>
@@ -559,47 +424,26 @@
   </section>
   <!-- ------------- Main Content End---------------------- -->
   <script src="assets/js/custom_frontend.js"></script>
-
-<script>
-    function myFunction(imgs) 
-    {
-      var expandImg = document.getElementById("expandedImg");
-      var imgText = document.getElementById("imgtext");
-      expandImg.src = imgs.src;
-      imgText.innerHTML = imgs.alt;
-      expandImg.parentElement.style.display = "block";
-    }
+  <script>
+    // var expandImg = document.getElementById("expandedImg");
+    // var imgText = document.getElementById("imgtext");
+    // function isImageExpanded(imgs) 
+    // { 
+    //   if (expandImg.src == imgs.src) {
+    //     expandImg.parentElement.style.display = "none";
+    //     expandImg.src = '';
+    //   } else {
+    //     expandImg.src = imgs.src;
+    //     imgText.innerHTML = imgs.alt;
+    //     expandImg.parentElement.style.display = "block";
+    //   }
+    // }
+    // function closeExpandedImage() {
+    //   expandImg.src = '';
+    // }
   </script>
 
 
-<script>
-  const images = document.querySelectorAll('.image-grid-item');
-  const expandedImageContainer = document.querySelector('.expanded-image-container');
-
-  images.forEach(image => {
-    image.addEventListener('click', () => {
-      // Clone the clicked image and append it to the expanded image container
-      const expandedImage = image.cloneNode();
-      expandedImage.classList.add('expanded-image');
-      expandedImageContainer.innerHTML = '';
-      expandedImageContainer.appendChild(expandedImage);
-
-      // Show the expanded image container
-      expandedImageContainer.style.display = 'block';
-
-      // Add the active class to the clicked image
-      image.classList.add('active');
-    });
-  });
-
-  expandedImageContainer.addEventListener('click', () => {
-    // Hide the expanded image container and remove the active class from all images
-    expandedImageContainer.style.display = 'none';
-    images.forEach(img => {
-      img.classList.remove('active');
-    });
-  });
-</script>
 
   <!-- ***** Footer  ***** -->
   <?php require 'layout/footer.php'; ?>

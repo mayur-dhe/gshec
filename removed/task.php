@@ -26,6 +26,8 @@ alter
 	assets
 		css 
 			template 
+		js 
+			custom_frontend.js
 		video 
 			rdi 
 				Research, Development & Innovation
