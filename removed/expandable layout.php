@@ -63,7 +63,7 @@
     ?> 
 </div>
 
-<div class="expandContainer">
+<div class="expandContainer d-none" id="expandContainer">
     <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
     <img id="expandedImg" style="width:100%">
 </div>

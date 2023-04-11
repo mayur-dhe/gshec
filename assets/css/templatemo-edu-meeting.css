@@ -2814,6 +2814,9 @@ responsive
   display: block; 
   opacity: 0.5;
 }
+.g_img_opc {
+  opacity: 1;
+}
 .g_img_cover {
   object-fit: cover;
 }
@@ -2845,6 +2848,9 @@ responsive
   transition: .5s ease;
   cursor: pointer;
   padding: 6px;
+}
+.g_img_opc:hover {
+  opacity: 0.5;
 }
 .gallery__item:hover .gallery__item-overlay-background,
 .gallery__item:hover .gallery__item-overlay {

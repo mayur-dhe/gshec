@@ -410,7 +410,7 @@
             </div>
           </div>
 
-          <div class="expandContainer">
+          <div class="expandContainer d-none" id="expandContainer">
             <div class="grid_size">
               <span onclick="this.parentElement.style.display='none'; closeExpandedImage();" class="closebtn">&times;</span>
               <img id="expandedImg">
@@ -424,26 +424,6 @@
   </section>
   <!-- ------------- Main Content End---------------------- -->
   <script src="assets/js/custom_frontend.js"></script>
-  <script>
-    // var expandImg = document.getElementById("expandedImg");
-    // var imgText = document.getElementById("imgtext");
-    // function isImageExpanded(imgs) 
-    // { 
-    //   if (expandImg.src == imgs.src) {
-    //     expandImg.parentElement.style.display = "none";
-    //     expandImg.src = '';
-    //   } else {
-    //     expandImg.src = imgs.src;
-    //     imgText.innerHTML = imgs.alt;
-    //     expandImg.parentElement.style.display = "block";
-    //   }
-    // }
-    // function closeExpandedImage() {
-    //   expandImg.src = '';
-    // }
-  </script>
-
-
 
   <!-- ***** Footer  ***** -->
   <?php require 'layout/footer.php'; ?>

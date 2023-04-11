@@ -195,7 +195,7 @@
         ?>
             <figure class="gallery__item gallery__item--<?php echo ++$key?>">
               <a href="software-development-cell-projects?title=<?php echo $value['short-name']?>">
-                <img src="<?php echo $value['images'][0]['url'] ?>" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img" style="background-color:<?php echo $value['images'][0]['bgColor']?>">
+                <img src="<?php echo $value['images'][0]['url'] ?>" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_opc" style="background-color:<?php echo $value['images'][0]['bgColor']?>">
                 <!-- <div class="gallery__item-overlay-background"></div>  --> 
                 <div class="gallery__item-overlay"><?php echo $value['short-name']; ?></div>
               </a>

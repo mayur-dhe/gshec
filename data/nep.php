@@ -16,7 +16,8 @@
             ),
             array(
                 'id' => '1.3 ',
-                'title' => 'Summary of NEP 2020 and Status & Plan of NEP implementation in these thematic areas',
+                'title' => 'Summary of NEP 2020 and Status & Implementation Plan',
+                'full_title' => 'Summary of NEP 2020 and Status & Plan of NEP implementation in these thematic areas',
                 'url' => 'nep-status-and-plan.php',
                 'target' => '',
             ),

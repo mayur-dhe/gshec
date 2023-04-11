@@ -15,7 +15,7 @@
 ?>
 <style>
   section.heading-page {
-    background-image: url(assets/images/nep/intro-cover-img.jpg);
+    background-image: url(assets/images/nep/intro-cover-img.png);
     padding-bottom: 472px;
     background-color: #c0c3c2;
     background-size: contain;
@@ -158,7 +158,6 @@
   ?>
 
   <!-- ------------- Main Content End---------------------- -->
-  <script src="assets/js/custom_frontend.js"></script>
   <script>
     // show more list
     function showMore() {

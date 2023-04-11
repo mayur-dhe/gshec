@@ -143,7 +143,7 @@
             </div>
           </div>
 
-          <div class="expandContainer">
+          <div class="expandContainer d-none" id="expandContainer">
             <div class="grid_size">
               <span onclick="this.parentElement.style.display='none'; closeExpandedImage();" class="closebtn">&times;</span>
               <img id="expandedImg">

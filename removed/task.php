@@ -2,7 +2,6 @@
 <!-- Pending / hold  -->
 Edu Dashboard - statistics
 gallery - site map - linking - left 
-Cards - images - grid view - onclick opne up
 images 
 	activity 
 <!-- Changes Updates -->
@@ -17,8 +16,10 @@ teams - project icons
 
 <!-- --------------------------------------------------- -->
 Progress  
-	- RDI images grid
-	- edu dashboard (statistics) 
+	- edu dashboard (statistics)
+<!-- craftitt upload    -->
+	SDC 
+	css template
 <!-- upload on gshec edu -->
 alter
 	api 
@@ -26,8 +27,16 @@ alter
 	assets
 		css 
 			template 
+		images 
+			nep 
+				intro .png 
 		js 
-			custom_frontend.js
+			add
+				custom_frontend.js
+				custom_canvas.js
+				custom_cloud_chart.js
+			remove 
+				frontend.js
 		video 
 			rdi 
 				Research, Development & Innovation
@@ -38,21 +47,22 @@ alter
 		hr 
 		nep
 		tlet 
+	layout 
+		footer 
+		top-header 
 	pages 
 		nep, ap, sf, s&p
 		rdi
 		tip 
+		sdc 
+		tlet 
 		enrol me
 		objectives 
+		-remove 
+			teaching-learning
+		-add 
+			teaching-learning&educational-technology.php
 	layout 
 		footer 
-add 
-	teaching-learning&educational-technology.php
-	assets/js/custom_frontend.js
-	assets/js/custom_canvas.js
-	assets/js/custom_cloud_chart.js
-remove 
-	teaching-learning
-	assets/js/frontend.js
 
 <!-- --------------------------------------------------- -->

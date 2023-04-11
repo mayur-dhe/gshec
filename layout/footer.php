@@ -75,7 +75,7 @@
 
 <!-- Scripts -->
 <!-- Bootstrap core JavaScript -->
-<script src="vendor/jquery/jquery.min.js"></script>
+<!-- <script src="vendor/jquery/jquery.min.js"></script> -->
 <!-- <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
 
 <script src="assets/js/isotope.min.js"></script>
@@ -86,7 +86,6 @@
 <script src="assets/js/video.js"></script>
 <script src="assets/js/slick-slider.js"></script>
 <script src="assets/js/custom.js"></script>
-<script src="assets/js/custom_cloud_chart.js"></script>
 <!-- <script src="vendor/aos/aos.js"></script> -->
 
 <script>

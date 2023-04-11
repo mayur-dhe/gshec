@@ -13,11 +13,13 @@ function isImageExpanded(imgs)
     } else {
         expandImg.src = imgs.src;
         imgText.innerHTML = imgs.alt;
+        $("#expandContainer").removeClass("d-none");
         expandImg.parentElement.style.display = "block";
         window.location.href = "#expandedImg";
     }
 }
 function hideExpandedImage() {
+    $("#expandContainer").addClass("d-none");
     expandImg.parentElement.style.display = "none";
     expandImg.src = '';
 }
@@ -80,30 +82,30 @@ var allOSB = [];
 var mxh = '';
 
 window.onload = function() {
-// Set Variables
-allOSB = document.getElementsByClassName("only-so-big");
 
-if (allOSB.length > 0) {
-    mxh = window.getComputedStyle(allOSB[0]).getPropertyValue('max-height');
-    mxh = parseInt(mxh.replace('px', ''));
-    
-    // Add read-more button to each OSB section
-    for (var i = 0; i < allOSB.length; i++) {
-        var el = document.createElement("button");
-        el.innerHTML = "Read More";
-        el.setAttribute("type", "button");
-        el.setAttribute("class", "read-more hid");
+    // Set Variables
+    allOSB = document.getElementsByClassName("only-so-big");
+    if (allOSB.length > 0) {
+        mxh = window.getComputedStyle(allOSB[0]).getPropertyValue('max-height');
+        mxh = parseInt(mxh.replace('px', ''));
         
-        insertAfter(allOSB[i], el);
+        // Add read-more button to each OSB section
+        for (var i = 0; i < allOSB.length; i++) {
+            var el = document.createElement("button");
+            el.innerHTML = "Read More";
+            el.setAttribute("type", "button");
+            el.setAttribute("class", "read-more hid");
+            
+            insertAfter(allOSB[i], el);
+        }
     }
-}
-// Add click function to buttons
-var readMoreButtons = document.getElementsByClassName("read-more");
-for (var i = 0; i < readMoreButtons.length; i++) {
+    // Add click function to buttons
+    var readMoreButtons = document.getElementsByClassName("read-more");
+    for (var i = 0; i < readMoreButtons.length; i++) {
         readMoreButtons[i].addEventListener("click", function() { 
-        revealThis(this);
-    }, false);
-}
+            revealThis(this);
+        }, false);
+    }
 // Update buttons so only the needed ones show
 updateReadMore();
 }

@@ -1,8 +1,13 @@
 <?php
-  $title = "Training, Internship and Placement";
-  $title_url = "#";
-  require 'layout/top-header.php';
+$title = "Training, Internship and Placement";
+$title_url = "#";
+require 'layout/top-header.php';
 ?>
+<!-- courosal -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
 <body class="reading-pages">
 <?php 
   include 'layout/sub-header.php';
@@ -122,7 +127,7 @@
           <div id="tabA1" class="tabcontent">
             <h4><?php echo $tip_installation['title'] ?></h4>
             <div><?php echo $tip_installation['data'] ?></div>
-              <div class="col-md-12">
+            <div class="col-md-12 p0">  
               <div class="gallery_img_box gib_bg">
                 <?php
                   $counter0 = 1; 
@@ -141,7 +146,7 @@
             </div>
           </div>
           
-          <div class="expandContainer">
+          <div class="expandContainer d-none" id="expandContainer">
             <div class="grid_size">
               <span onclick="this.parentElement.style.display='none'; closeExpandedImage();" class="closebtn">&times;</span>
               <img id="expandedImg">
