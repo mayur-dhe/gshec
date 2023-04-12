@@ -5,7 +5,7 @@ gallery - site map - linking - left
 images 
 	activity 
 <!-- Changes Updates -->
-
+Enrol me Add new fields 
 <!-- --------------------------------------------------- -->
 <!-- Pending Resources -->
 Colleges Name Map
@@ -15,8 +15,6 @@ teams - project icons
 <!-- find me -->
 
 <!-- --------------------------------------------------- -->
-Progress  
-	- edu dashboard (statistics)
 <!-- craftitt upload    -->
 	SDC 
 	css template
@@ -35,6 +33,7 @@ alter
 				custom_frontend.js
 				custom_canvas.js
 				custom_cloud_chart.js
+				custom_npm_chart.js
 			remove 
 				frontend.js
 		video 
@@ -47,10 +46,12 @@ alter
 		hr 
 		nep
 		tlet 
+		statistics 
 	layout 
 		footer 
 		top-header 
 	pages 
+		edu dashboard (statistics)
 		nep, ap, sf, s&p
 		rdi
 		tip 
@@ -62,7 +63,5 @@ alter
 			teaching-learning
 		-add 
 			teaching-learning&educational-technology.php
-	layout 
-		footer 
 
 <!-- --------------------------------------------------- -->

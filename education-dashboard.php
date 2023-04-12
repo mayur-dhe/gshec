@@ -6,8 +6,8 @@
   require 'layout/top-header.php';
 ?>
 <!-- chart -->
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script> -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+
 <body>
 <?php 
   include 'layout/sub-header.php';
@@ -25,263 +25,316 @@
   }
   .shadows {
     background-color: white;
+    padding: 20px;
   }
 </style>
   <!-- ------------- Main Content Start---------------------- -->
   <section class="page-section">
     <div class="container">
       <div class="row">
-
-        <div class="col-lg-7 mx40">
+        <div class="col-lg-12 mx40">
           <div class="shadows">
-            <p class="textColor-black" id="chartScatterTitle"></p>
-            <canvas id="chartScatter" style="height: 300px; width: 100%;"></canvas>
+            <p class="textColor-black p0" id="chartDoubleBarGraphTitle"></p>
+            <canvas id="chartDoubleBarGraph" style="height: 360px; width:100%;"></canvas>
           </div>
         </div>
-        <div class="col-lg-5 mx40">
+        <div class="col-lg-6 mx40">
           <div class="shadows">
-            <p class="textColor-black" id="chartDonutContainerTitle"></p>
-            <div id="chartDonutContainer" style="height: 300px; width: 100%;"></div>
+            <p class="textColor-black p0" id="chartDoughnutTitle"></p>
+            <canvas id="chartDoughnut" style="height: 400px; width:100%;"></canvas>
           </div>
         </div>
-        <div class="col-lg-7 mx40">
+        <div class="col-lg-6 mx40">
           <div class="shadows">
-            <p class="textColor-black" id="chartScatterDotTitle"></p>
-            <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+            <p class="textColor-black p0" id="chartBarTitle"></p>
+            <canvas id="chartBar" style="height: 400px; width: 100%;"></canvas>
           </div>
         </div>
+        <div class="col-lg-6 mx40">
+          <div class="shadows">
+            <p class="textColor-black p0" id="chartRatioTitle"></p>
+            <canvas id="chartRatio" style="height: 300px; width: 100%;"></canvas>
+          </div>
+        </div>
+        <div class="col-lg-6 mx40">
+          <div class="shadows">
+            <p class="textColor-black p0" id="chartBarGraphTitle"></p>
+            <canvas id="myChart" style="height: 300px; width: 100%;"></canvas>
+          </div>
+        </div>
+        
 
       </div>
     </div>
   </section>
   <!-- ------------- Main Content End---------------------- -->
-  <script src="assets/js/custom_canvas.js"></script>
-  <script src="assets/js/custom_cloud_chart.js"></script>
+  <!-- <script src="assets/js/custom_canvas.js"></script> -->
+  <!-- <script src="assets/js/custom_cloud_chart.js"></script> -->
+  <script src="assets/js/custom_npm_chart.js"></script>
   <script>
     let studentEnrolled_json = <?php echo json_encode($studentEnrolled) ?>;
     let institutes_json = <?php echo json_encode($institutes) ?>;
-    let teacherStatistics_json = <?php echo json_encode($studentEnrolled) ?>;
-    let teacherStatisticsData = teacherStatistics_json.data;
-    let studentEnrollmentDetails_json = <?php echo json_encode($institutes) ?>;
-    let studentEnrollmentDetailsData = studentEnrollmentDetails_json.data;
-    let pupilTeacherRatio_json = <?php echo json_encode($institutes) ?>;
+    let teacherStatistics_json = <?php echo json_encode($teacherStatistics) ?>;
+    let studentEnrollmentDetails_json = <?php echo json_encode($studentEnrollmentDetails) ?>;
+    let pupilTeacherRatio_json = <?php echo json_encode($pupilTeacherRatio) ?>;
 
     window.onload = function () {
-      // line chart start ----------------------------------
+      // Double Bar Graph -----------------------------------------------------------------
       if (studentEnrolled_json.code == 200) {
         let studentEnrolledData = studentEnrolled_json.data;
         var datasetsData = [];
-        let color = '', title = '';
-        document.getElementById("chartScatterTitle").innerHTML = studentEnrolledData.title;
+        var xAxisLabel = [];
+        var yAxisValue = [];
+        let bgColor = borderColor = title = '';
 
+        document.getElementById("chartDoubleBarGraphTitle").innerHTML = studentEnrolledData.title;
+        xAxisLabel = studentEnrolledData.x_axis;
+        
         for (let j = 0; j < studentEnrolledData.y_axis.length; j++) 
         {
-          var dataValue = [];
+          yAxisValue = [];
           for (let index = 0; index < studentEnrolledData.x_axis.length; index++) 
           {
-            const element = studentEnrolledData.x_axis[index];
-            const value = studentEnrolledData.y_axis[j].students[index];
-            color = studentEnrolledData.y_axis[j].color;
+            yAxisValue = studentEnrolledData.y_axis[j].students;
             title = studentEnrolledData.y_axis[j].title;
-
-            dataValue.push({
-              x: element, 
-              y: value
-            });
+            bgColor = studentEnrolledData.y_axis[j].bgColor;
+            borderColor = studentEnrolledData.y_axis[j].borderColor;
           }
           datasetsData.push({
-            pointRadius: 4,
-            pointBackgroundColor: color,
-            data: dataValue
+            label: title,
+            data: yAxisValue,
+            yAxisID: 'y-axis-1',
+            backgroundColor: bgColor,
+            borderColor: borderColor,
+            borderWidth: 1
           });
         }
-        // draw chart
-        new Chart("chartScatter", {
-          type: "scatter",
-          data: {
-            datasets: datasetsData,
-          },
+        var chartData = {
+          labels: xAxisLabel,
+          datasets: datasetsData,
+        };
+        // Define the chart options
+        var chartOptions = {p\po
+          scales: {
+            yAxes: [
+              {
+                id: 'y-axis-1',
+                type: 'linear',
+                position: 'left'
+              }
+            ]
+          }
+        };
+        // Create the chart
+        var chartDoubleBarGraph = new Chart(document.getElementById('chartDoubleBarGraph').getContext('2d'), {
+          type: 'bar',
+          data: chartData,
+          options: chartOptions
+        });
+      }
+
+      // Doughnut chart  -----------------------------------------------------------------
+      if (institutes_json.code == 200) {
+        let institutesData = institutes_json.data;
+        document.getElementById("chartDoughnutTitle").innerHTML = 'Total '+institutesData.title+' '+institutesData.total;
+        var chartData = {
+          labels: institutesData.x_axis,
+          datasets: [
+            {
+              label: 'My Dataset',
+              data: institutesData.y_axis,
+              backgroundColor: institutesData.bgColor,
+              borderColor: institutesData.borderColor,
+              borderWidth: 1
+            }
+          ]
+        };
+        // Get the canvas element and create the chart
+        var chartDoughnut = new Chart(document.getElementById('chartDoughnut').getContext('2d'), {
+          type: 'doughnut',
+          data: chartData,
           options: {
-            legend: {display: true},
+            responsive: true
+          }
+        });
+        // Add a click event listener to the chart canvas element
+        document.getElementById('chartDoughnut').addEventListener('click', function() {
+          // Animate the chart using Chart.js animation functions
+          chartDoughnut.options.animation = {
+            animateScale: true,
+            animateRotate: true
+          };
+          chartDoughnut.update();
+        });
+      }
+
+      // Bar chart  -----------------------------------------------------------------
+      if (teacherStatistics_json.code == 200) {
+        let teacherStatisticsData = teacherStatistics_json.data;
+        let yAxis = teacherStatisticsData.y_axis;
+        var datasetsData = [];
+        var yAxisValue = [];
+
+        document.getElementById("chartBarTitle").innerHTML = teacherStatisticsData.title;
+        yAxisValue = [];
+        
+        for (let index = 0; index < yAxis.length; index++) 
+        {
+          datasetsData.push({
+            label: yAxis[index].label,
+            data: yAxis[index].data,
+            backgroundColor: yAxis[index].bgColor,
+          });
+        }
+        var chartData = {
+          labels: teacherStatisticsData.x_axis,
+          datasets: datasetsData,
+        };
+        // Get the canvas element and create the chart
+        var chartBar = new Chart(document.getElementById('chartBar').getContext('2d'), {
+          type: 'bar',
+          data: chartData,
+          options: {
+            responsive: true,
             scales: {
-              xAxes: [{ticks: {min: 0, max:16}}],
-              yAxes: [{ticks: {min: 0, max:11158}}],
+              x: {
+                stacked: true,
+                title: {
+                  display: true,
+                  text: 'Year'
+                }
+              },
+              y: {
+                stacked: true,
+                title: {
+                  display: true,
+                  text: 'Number of Teachers'
+                }
+              }
             }
           }
         });
       }
 
-      // donut chart start ----------------------------------
-      if (institutes_json.code == 200) {
-        let institutesData = institutes_json.data;
-        document.getElementById("chartDonutContainerTitle").innerHTML = institutesData.title;
-        var dataValue = [];
-        for (let index = 0; index < institutesData.x_axis.length; index++) {
-          const element = institutesData.x_axis[index];
-          const value = institutesData.y_axis[index];
-          dataValue.push({
-            y: value, 
-            label: element 
+      // Scatter chart -----------------------------------------
+      if (pupilTeacherRatio_json.code == 200) {
+        let pupilTeacherRatioData = pupilTeacherRatio_json.data;
+        var datasetsData = data = [];
+        let bgColor = xAxis = label = value = '';
+        
+        document.getElementById("chartRatioTitle").innerHTML = pupilTeacherRatioData.title;
+        labelsData = pupilTeacherRatioData.x_axis;
+
+        for (let index = 0; index < pupilTeacherRatioData.y_axis.length; index++) 
+        {
+          data = [];
+          value = pupilTeacherRatioData.y_axis[index].count;
+          bgColor = pupilTeacherRatioData.y_axis[index].bgColor;
+          label = pupilTeacherRatioData.y_axis[index].label;
+
+          for (let j = 0; j < value.length; j++) {
+            const element = value[j];
+            xAxis = pupilTeacherRatioData.x_axis[j];
+
+            data.push({
+              x: xAxis, 
+              y: element 
+            });
+          }
+          datasetsData.push({
+            label: label,
+            backgroundColor: bgColor,
+            data: data,
           });
         }
-        // draw chart
-        var chartDonut = new CanvasJS.Chart("chartDonutContainer", {
-          animationEnabled: true,
-          title:{
-            text: institutesData.y_axis_title,
-            horizontalAlign: "left"
-          },
-          data: [{
-            type: "doughnut",
-            startAngle: 60,
-            //innerRadius: 60,
-            indexLabelFontSize: 17,
-            indexLabel: "{y} - {label}",
-            toolTipContent: "<b>{label}:</b> {y}",
-            dataPoints: dataValue,
-          }]
+        // Define the chart data
+        var chartData = {
+          datasets: datasetsData,
+        };
+        // Get the canvas element and create the chart
+        var chartRatio = new Chart(document.getElementById('chartRatio').getContext('2d'), {
+          type: 'scatter',
+          data: chartData,
+          options: {
+            responsive: true,
+            scales: {
+              x: {
+                title: {
+                  display: true,
+                  text: 'Year'
+                }
+              },
+              y: {
+                title: {
+                  display: true,
+                  text: 'Count'
+                },
+                ticks: {
+                  beginAtZero: true
+                }
+              }
+            }
+          }
         });
-        chartDonut.render();
       }
 
-      // scatter dot -------------------------------------
-      // var xyValues = [
-      //   {x:a, y:7},
-      //   {x:b, y:8},
-      //   {x:c, y:8},
-      //   {x:d, y:9},
-      //   {x:e, y:9},
-      //   {x:f, y:9},
-      //   {x:g, y:10},
-      //   {x:h, y:11},
-      //   {x:i, y:14},
-      //   {x:j, y:14},
-      //   {x:k, y:15}
-      // ];
-      // document.getElementById("chartScatterDotTitle").innerHTML = 'Dot html';
-      // new Chart("chartScatterDot", {
-      //   type: "scatter",
-      //   data: {
-      //     datasets: [{
-      //       pointRadius: 4,
-      //       pointBackgroundColor: "rgb(0,0,255)",
-      //       data: xyValues
-      //     }]
-      //   },
-      //   options: {
-      //     legend: {display: false},
-      //     scales: {
-      //       xAxes: [{ticks: {min: 40, max:160}}],
-      //       yAxes: [{ticks: {min: 6, max:16}}],
-      //     }
-      //   }
-      // });
+      // Horizontal chart -----------------------------------------
+      let studentEnrollmentDetailsData = studentEnrollmentDetails_json.data;
 
-      // bar graph ----------------------------
-      var xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
-      var yValuesee = [55, 49, 44, 24, 15];
-      var barColors = ["red", "green","blue","orange","brown"];
+  // Define the chart data
+  var chartData = {
+    labels: ['College A', 'College B', 'College C', 'College D'],
+    datasets: [
+      {
+        label: 'Male',
+        data: [1000, 800, 1200, 900],
+        backgroundColor: 'rgba(54, 162, 235, 0.5)'
+      },
+      {
+        label: 'Female',
+        data: [800, 900, 1000, 1200],
+        backgroundColor: 'rgba(255, 99, 132, 0.5)'
+      }
+    ]
+  };
 
-      new Chart("chartBarGraph", {
-        type: "bar",
-        data: {
-          labels: xValues,
-          datasets: [{
-            backgroundColor: barColors,
-            data: yValuesee
-          }]
-        },
-        options: {
-          legend: {display: true},
+  // Get the canvas element and create the chart
+  var ctx = document.getElementById('myChart').getContext('2d');
+  var myChart = new Chart(ctx, {
+    type: 'horizontalBar',
+    data: chartData,
+    options: {
+      responsive: true,
+      scales: {
+        x: {
+          stacked: true,
           title: {
             display: true,
-            text: "World Wine Production 2018"
+            text: 'Enrollment Count'
+          },
+          ticks: {
+            beginAtZero: true
+          }
+        },
+        y: {
+          stacked: true,
+          title: {
+            display: true,
+            text: 'College'
           }
         }
-      });
-
-      // bar graph -----------------------------------------
-    //   if (pupilTeacherRatio_json.code == 200) {
-
-    //     let pupilTeacherRatioData = pupilTeacherRatio_json.data;
-    //     var datasetsData = labelsData = valuesData = [];
-    //     let color = '', title = '';
-    //     document.getElementById("chartBarGraphTitle").innerHTML = pupilTeacherRatioData.title;
-
-    //     labelsData = pupilTeacherRatioData.x_axis;
-    //     console.log(labelsData);
-
-    //     for (let j = 0; j < pupilTeacherRatioData.y_axis.length; j++) 
-    //     {
-    //       var dataValue = [];
-    //       for (let index = 0; index < pupilTeacherRatioData.x_axis.length; index++) 
-    //       {
-    //         const element = pupilTeacherRatioData.x_axis[index];
-    //         const value = pupilTeacherRatioData.y_axis[j].counts;
-    //         color = pupilTeacherRatioData.y_axis[j].color;
-    //         title = pupilTeacherRatioData.y_axis[j].title;
-
-    //         dataValue = value;
-    //       }
-    //       datasetsData.push({
-    //         label: title,
-    //         fillColor: color,
-    //         data: dataValue
-    //       });
-    //     }
-    //     // draw chart
-    //     var ctx = document.getElementById("chartBarGraph").getContext("2d");
-    //     var data = {
-    //       labels: ["Chocolate", "Vanilla", "Strawberry"],
-    // datasets: [
-    //     {
-    //         label: "Blue",
-    //         fillColor: "blue",
-    //         data: [3,7,4]
-    //     },
-    //     {
-    //         label: "Red",
-    //         fillColor: "red",
-    //         data: [4,3,5]
-    //     },
-    //     {
-    //         label: "Green",
-    //         fillColor: "green",
-    //         data: [7,2,6]
-    //     }
-    // ]
-    //     };
-    //     var myBarChart = new Chart(ctx).Bar(data, { barValueSpacing: 20 });
-    //   }
-
+      },
+      plugins: {
+        title: {
+          display: true,
+          text: 'Student Enrollment in Different Colleges (Gender-wise)'
+        }
+      }
     }
-
+  });
+    }
   </script>
 
-
-<script>
-var xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
-var yValues = [55, 49, 44, 24, 15];
-var barColors = ["red", "green","blue","orange","brown"];
-
-new Chart("myChart", {
-  type: "bar",
-  data: {
-    labels: xValues,
-    datasets: [{
-      backgroundColor: barColors,
-      data: yValues
-    }]
-  },
-  options: {
-    legend: {display: false},
-    title: {
-      display: true,
-      text: "World Wine Production 2018"
-    }
-  }
-});
-</script>
   <!-- ***** Footer  ***** -->
   <?php require 'layout/footer.php'; ?>
   </body>

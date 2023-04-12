@@ -5,17 +5,19 @@
             'title' => 'Student enrolled for various discipline',
             'source' => 'IAIMS portal',
             'x_axis_title' => 'Courses',
-            'x_axis'=> array('B.Com','B.A','B.Sc','BScAGRI','BBA','BCA','BscHSC','B.Voc','BPA','FC','B.A.LLB','B.ED','B.A.BED','BPAT','B.A sanskrit','Auxiliary Nurse Midewifery(ANM)'),
-            'x_axis'=> array(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16),
+            'x_axis'=> array('B.Com','B.A','B.Sc','BScAGRI','BBA','BCA','BscHSC','B.Voc','BPA','FC','B.A.LLB','B.ED','B.A.BED','BPAT','B.A sanskrit','ANM'),
+            'x_axis_full'=> array('B.Com','B.A','B.Sc','BScAGRI','BBA','BCA','BscHSC','B.Voc','BPA','FC','B.A.LLB','B.ED','B.A.BED','BPAT','B.A sanskrit','Auxiliary Nurse Midewifery(ANM)'),
             'y_axis_title' => 'Number of Students',
             'y_axis' => array(
                 array(
-                    'color' => 'red',
+                    'bgColor' => 'rgba(255, 99, 132, 0.2)',
+                    'borderColor' => 'rgba(255, 99, 132, 1)',
                     'title' => '2020-2021',
                     'students' => array(11158,7234,5013,165,189,123,156,27,108,94,714,197,590,80,0,0),
                 ),
                 array(
-                    'color' => 'green',
+                    'bgColor' => 'rgba(54, 162, 235, 0.2)',
+                    'borderColor' => 'rgba(54, 162, 235, 1)',
                     'title' => '2021-2022',
                     'students' => array(10586,6443,4229,130,178,121,152,60,101,103,906,290,592,82,29,0),
                 ),
@@ -31,6 +33,18 @@
             'total' => '81',
             'x_axis' => array('University','Academic Colleges','Technical college','Standalone institutes'),
             'y_axis' => array('3','42','19','17'),
+            'bgColor' => array(
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+            ),
+            'borderColor' => array(
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+            ),
         )
     ];
 
@@ -38,16 +52,23 @@
         'code' => 200,
         'data' => array(
             'title' => 'Teachers Statistics',
-            'x_axis' => array('No. of Male', 'No. of Female', 'Total'),
+            'x_axis' => array('2019-20', '2020-21'),
             'y_axis' => array(
                 array(
-                    'title' => '2019-20',
-                    'counts' => array('1772','2180','3406'),
+                    'label' => 'Male',
+                    'data' => array('1772','1397'),
+                    'bgColor' => 'rgba(54, 162, 235, 0.5)',
                 ),
                 array(
-                    'title' => '2020-21',
-                    'counts' => array('1397','1716','3113'),
+                    'label' => 'Female',
+                    'data' => array('2180','1716'),
+                    'bgColor' => 'rgba(255, 99, 132, 0.5)',
                 ),
+                // array(
+                //     'label' => 'Total',
+                //     'data' => array('3406','3113'),
+                //     'bgColor' => 'rgba(255, 99, 132, 0.5)',
+                // ),
             ),
         )
     ];
@@ -87,32 +108,18 @@
         'data' => array(
             'title' => 'Pupil Teacher Ratio',
             'source' => 'AISHE',
-            'x_axis' => array('India', 'Goa'),
+            // 'x_axis' => array('2015-16','2016-17','2017-18','2018-19','2019-20'),
+            'x_axis' => array('2015','2016','2017','2018','2019'),
             'y_axis' => array(
                 array(
-                    'title' => '2015-16',
-                    'color' => 'red',
-                    'counts' => array('23', '18'),
+                    'label' => 'India',
+                    'bgColor' => 'rgba(255, 99, 132, 0.5)',
+                    'count' => array('23', '26', '29', '26', '26'),
                 ),
                 array(
-                    'title' => '2016-17',
-                    'color' => 'green',
-                    'counts' => array('26', '18'),
-                ),
-                array(
-                    'title' => '2017-18',
-                    'color' => 'blue',
-                    'counts' => array('29', '17'),
-                ),
-                array(
-                    'title' => '2018-19',
-                    'color' => 'pink',
-                    'counts' => array('26', '16'),
-                ),
-                array(
-                    'title' => '2019-20',
-                    'color' => '',
-                    'counts' => array('26', '15'),
+                    'label' => 'Goa',
+                    'color' => 'rgba(54, 162, 235, 0.5)',
+                    'count' => array('18', '18', '17','16', '15'),
                 ),
             ),
 
