@@ -185,7 +185,7 @@ $submitAPI = 'api/enrol_scholar.php';
 <script>
 	var data = {};
    // set loader
-	function loderTimeOut() {
+	function loaderTimeOut() {
 		setTimeout(() => {
 			window.location.reload();
 		}, 3000);	
@@ -319,7 +319,7 @@ $submitAPI = 'api/enrol_scholar.php';
 				var responseData = JSON.parse(res);
 				if (responseData.flag && responseData.status=='200') {
 					popUpMsg(responseData.message, "", "success");
-					loderTimeOut();
+					loaderTimeOut();
 					window.scrollTo({ top: 0, behavior: 'smooth' });
 				} else {
 					popUpMsg(responseData.message, "", "error");

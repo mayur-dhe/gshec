@@ -30,9 +30,10 @@ alter
 				intro .png 
 		js 
 			add
-				custom_frontend.js
-				custom_canvas.js
-				custom_cloud_chart.js
+			custom_canvas.js
+			custom_chart_370min.js
+			custom_cloud_chart.js
+			custom_frontend.js
 				custom_npm_chart.js
 			remove 
 				frontend.js
@@ -51,12 +52,12 @@ alter
 		footer 
 		top-header 
 	pages 
-		edu dashboard (statistics)
 		nep, ap, sf, s&p
 		rdi
 		tip 
 		sdc 
 		tlet 
+		edu dashboard (statistics)
 		enrol me
 		objectives 
 		-remove 
