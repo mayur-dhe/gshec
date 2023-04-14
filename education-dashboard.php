@@ -61,7 +61,6 @@
             <canvas id="chartBar" style="height: 380px; width: 100%;"></canvas>
           </div>
         </div>
-    
       </div>
     </div>
   </section>
@@ -77,7 +76,51 @@
     let pupilTeacherRatio_json = <?php echo json_encode($pupilTeacherRatio) ?>;
 
     window.onload = function () {
-      // Double Bar Graph Student Enrolment -----------------------------------------------------------------
+      doubleBarGraphStudentsEnrolled();
+    }
+    window.addEventListener('scroll', function() {
+      // var element = document.querySelector('#container-box');
+      // var position = element.getBoundingClientRect();
+      // // checking whether fully visible
+      // if(position.top >= 0 && position.bottom <= window.innerHeight) {
+      //   // console.log('Element is fully visible in screen');
+      // }
+      // // checking for partial visibility
+      // if(position.top < window.innerHeight && position.bottom >= 0) {
+          // // console.log('Element is partially visible in screen');
+      // }
+      
+      // 2
+      var chartDoughnutScroll = document.querySelector('#chartDoughnutTitle');
+      var chartDoughnutScrollPosition =chartDoughnutScroll.getBoundingClientRect();
+      // checking whether fully visible
+      if(chartDoughnutScrollPosition.top >= 0 && chartDoughnutScrollPosition.bottom <= window.innerHeight) {
+        doughnutInstitutes();
+      }
+      // 3
+      var scatterPupilRatioScroll = document.querySelector('#chartRatioTitle');
+      var scatterPupilRatioScrollPosition = scatterPupilRatioScroll.getBoundingClientRect();
+      // checking whether fully visible
+      if(scatterPupilRatioScrollPosition.top >= 0 && scatterPupilRatioScrollPosition.bottom <= window.innerHeight) {
+        scatterPupilRatio();
+      }
+      // 4
+      var bubbleEnrolmentDetailsScroll = document.querySelector('#chartBubbleTitle');
+      var bubbleEnrolmentDetailsPosition = bubbleEnrolmentDetailsScroll.getBoundingClientRect();
+      // checking whether fully visible
+      if(bubbleEnrolmentDetailsPosition.top >= 0 && bubbleEnrolmentDetailsPosition.bottom <= window.innerHeight) {
+        bubbleEnrolmentDetails();
+      }
+      // 5
+      var barTeacherStatisticsScroll = document.querySelector('#chartBarTitle');
+      var barTeacherStatisticsScrollPosition = barTeacherStatisticsScroll.getBoundingClientRect();
+      // checking whether fully visible
+      if(barTeacherStatisticsScrollPosition.top >= 0 && barTeacherStatisticsScrollPosition.bottom <= window.innerHeight) {
+        barTeacherStatistics();
+      }
+    });
+
+    function doubleBarGraphStudentsEnrolled(){
       if (studentEnrolled_json.code == 200) {
         let studentEnrolledData = studentEnrolled_json.data;
         let bgColor = borderColor = title = chartSubTitle = '';
@@ -134,12 +177,16 @@
                 display: true,
                 text: chartSubTitle
               }
+            },
+            animation: {
+              duration: 3000,  // 1 second transition
+              delay: 500,      // 0.2 second delay before starting the transition
             }
           }
         });
       }
-
-      // Doughnut chart  Institutes -----------------------------------------------------------------
+    }
+    function doughnutInstitutes(){
       if (institutes_json.code == 200) {
         let institutesData = institutes_json.data;
         document.getElementById("chartDoughnutTitle").innerHTML = 'Total '+institutesData.title+' '+institutesData.total;
@@ -160,7 +207,11 @@
           type: 'doughnut',
           data: chartData,
           options: {
-            responsive: true
+            responsive: true,
+            animation: {
+              duration: 3000,  // 1 second transition
+              delay: 1000,      // 0.2 second delay before starting the transition
+            }
           }
         });
         // Add a click event listener to the chart canvas element
@@ -173,8 +224,8 @@
           chartDoughnut.update();
         });
       }
-      
-      // Scatter chart Pupil Ratio -----------------------------------------
+    }
+    function scatterPupilRatio(){
       if (pupilTeacherRatio_json.code == 200) {
         let pupilTeacherRatioData = pupilTeacherRatio_json.data;
         var datasetsData = axisData = [];
@@ -208,9 +259,9 @@
             backgroundColor: bgColor,
             borderColor: borderColor,
             pointRadius: 5,
-            pointHoverRadius: 9,
-            tension: 0.1,
-            showLine: true,
+            pointHoverRadius: 7,
+            tension: 0.4,
+            showLine: false,
             fill: false
           });
         }
@@ -240,12 +291,16 @@
                   stepSize: 4
                 }
               }
+            },
+            animation: {
+              duration: 3000,  // 1 second transition
+              delay: 200,      // 0.2 second delay before starting the transition
             }
           }
         });
       }
-
-      // Bubble Chart Enrolment details -----------------------------------------
+    }
+    function bubbleEnrolmentDetails(){
       if (studentEnrollmentDetails_json.code == 200) {
         let studentEnrollmentDetailsData = studentEnrollmentDetails_json.data;
         let studentEnrollmentDetailsYAxis = studentEnrollmentDetailsData.y_axis;
@@ -287,9 +342,7 @@
             borderColor: borderColor,
           });
         }
-
-        var ctx = document.getElementById('chartBubble').getContext('2d');
-        var chart = new Chart(ctx, {
+        var chartBubble = new Chart(document.getElementById('chartBubble').getContext('2d'), {
           type: 'bubble',
           data: {
             datasets: datasetsData
@@ -318,12 +371,16 @@
                   text: yAxisTitle,
                 }
               }
+            },
+            animation: {
+              duration: 3000,  // 1 second transition
+              delay: 1000,      // 0.2 second delay before starting the transition
             }
           }
         });
       }
-
-      // Bar chart Teacher Statistics -----------------------------------------------------------------
+    }
+    function barTeacherStatistics(){
       if (teacherStatistics_json.code == 200) {
         let teacherStatisticsData = teacherStatistics_json.data;
         let yAxis = teacherStatisticsData.y_axis;
@@ -371,6 +428,10 @@
                   text: 'Number of Teachers'
                 }
               }
+            },
+            animation: {
+              duration: 3000,  // 1 second transition
+              delay: 1000,      // 0.2 second delay before starting the transition
             }
           }
         });

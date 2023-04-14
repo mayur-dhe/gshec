@@ -79,13 +79,13 @@
             'title' => 'Student Enrollment Details',
             'x_axis_title' => 'Students Enrolled in Higher Education (AISHE)',
             'y_axis_title' => 'Number of Students',
-            'x_axis' => array('Universities with level wise', 'University', 'Standalone Institutes', 'Technical Institutes ','Academic Colleges'),
+            'x_axis' => array('University', 'Universities with level wise', 'Standalone Institutes', 'Technical Institutes ','Academic Colleges'),
             'y_axis_max_range' => '7000',
             'y_axis' => array(
                 array(
                     'title' => '2020-21',
                     'label' => 'Male',
-                    'data' => array('1914','878','5999','5221','5221'),
+                    'data' => array('878','1914','5999','5221','5221'),
                     'radius' => array('10','10','10','10','10'),
                     'bgColor' => '#315470',
                     'borderColor' => '#315470',
@@ -93,7 +93,7 @@
                 array(
                     'title' => '2020-21',
                     'label' => 'Female',
-                    'data' => array('1856','1597','1851','4339','4339'),
+                    'data' => array('1597','1856','1851','4339','4339'),
                     'radius' => array('10','10','10','10','10'),
                     'bgColor' => '#fb7f00',
                     'borderColor' => '#fb7f00',
