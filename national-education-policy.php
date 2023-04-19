@@ -47,7 +47,7 @@
       <div class="row">
         <div class="col-md-10">
           <h3 class="textColor-black intro-title mb40">
-            The core of new National Education Policy (NEP) 2020 is to develop a Learner-centric education system that will provide quality and truly holistic education for all-round  growth of Learners. 
+            The core of new National Education Policy (NEP) 2020 is to develop a <span class="textDeco-underline">LEARNER-CENTRIC EDUCATION</span> system that will provide quality and truly holistic education for all-round  growth of Learners. 
           </h3>
         </div>
         <div class="col-md-12 col-lg-6">

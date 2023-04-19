@@ -4,7 +4,7 @@
         'data' => array(
             array(
                 'id' => '1.1 ',
-                'title' => 'NEP 2020 PDF',
+                'title' => 'NEP 2020 Policy Document',
                 'url' => 'assets/documents/nep/NEP_Final_English_0.pdf',
                 'target' => '_blank',
             ),

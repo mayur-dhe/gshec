@@ -22,15 +22,15 @@ $submitAPI = 'api/enrol_scholar.php';
 	<div class="container" style="padding: 30px 40px;">
 		<div class="row">
 			<div class="col-md-12">
-				<h4 class="textAlign-center font_dancing">Enrol for Dnyan Sangrah</h4>
+				<h4 class="textAlign-center font_dancing pb20">Enrol for Dnyan Sangrah</h4>
 				<form name="frm_scholar" id="frm_scholar">
 					<div class="col-md-12">
 						<legend class="form-design">Personal Information</legend>
 						<div class="row">
-							<div class="col-md-4">
+							<div class="d-none d-lg-block col-lg-4">
 								<img class="img-fluid" src="assets/images/personal form.png" alt="">
 							</div>
-							<div class="col-md-8 pt20">
+							<div class="col-md-12 col-lg-8 pt20">
 								<div class="row g-3">
 									<div class="col-md-6">
 										<label class="form-label star" for="sname">Name</label>  
@@ -41,7 +41,7 @@ $submitAPI = 'api/enrol_scholar.php';
 										<input id="semail" name="semail" type="email" class="form-control" placeholder="example@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Invalid email address" required> 
 									</div>
 									<div class="form-group col-md-12">
-										<label class="form-label star" for="sadd">Address</label>
+										<label class="form-label star" for="sadd">Work/Office Address</label>
 										<textarea class="form-control" id="sadd" name="sadd" required></textarea>
 									</div>
 									<div class="form-group col-md-4">
@@ -70,25 +70,56 @@ $submitAPI = 'api/enrol_scholar.php';
 										</select>
 									</div>
 									<div class="form-group col-md-12 col-lg-6">
-										<label class="form-label star" for="wtype">Work Type</label><br>
+										<label class="form-label star" for="work_type">Work Type</label><br>
 										<div class="form-check form-check-inline">
-											<input class="form-check-input wtype" type="radio" name="wtype" id="wtype-0" value="Industry">
-											<label class="form-check-label" for="wtype-0">Industry</label>
+											<input class="form-check-input work_type" type="radio" name="work_type" id="work_type-0" value="Industry">
+											<label class="form-check-label" for="work_type-0">Industry</label>
 										</div>
 										<div class="form-check form-check-inline">
-											<input class="form-check-input wtype" type="radio" name="wtype" id="wtype-1" value="Institution" checked>
-											<label class="form-check-label" for="wtype-1">Institution</label>
+											<input class="form-check-input work_type" type="radio" name="work_type" id="work_type-1" value="Institution" checked>
+											<label class="form-check-label star" for="work_type-1">Institution</label>
 										</div>
 									</div>
 									<div class="form-group col-md-12 col-lg-6">
-										<label class="form-label" for="wname">Name of Industry/Institution</label>  
-										<input id="wname" name="wname" type="text" placeholder="" class="form-control">
+										<label class="form-label star" for="work_name">Name of Industry/Institution</label>  
+										<input id="work_name" name="work_name" type="text" placeholder="" class="form-control">
 									</div>
-
+									<div class="form-group col-md-12">
+										<div class="form-group">
+											<label class="form-label star" for="area_of_work">Specify the broad area of industry/research/academics/etc. currently engaged with</label>
+											<textarea class="form-control" id="area_of_work" name="area_of_work"></textarea>
+										</div>
+									</div>
+									<div class="form-group col-md-6 col-lg-6">
+										<label class="control-label star" for="designation">Designation</label>  
+										<input id="designation" name="designation" type="text" placeholder="" class="form-control input-md">
+									</div>
+									<div class="form-group col-md-6 col-lg-6">
+										<label class="control-label star" for="phone_no">Contact No.</label>  
+										<div class="input-group">
+											<span class="input-group-text" id="basic-addon1">+91</span>
+											<input id="phone_no" name="phone_no" type="number" class="form-control input-md" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+										</div>
+									</div>
+									<div class="form-group col-12 col-lg-12">
+										<label class="control-label star" for="cv">Upload CV/Profile Link</label>
+										<div class="row">
+											<div class="form-group col-lg-6 col-6 pb-3">
+												<input id="cv" name="cv" type="file" placeholder="" class="form-control input-md" accept="application/pdf,.csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel">
+											</div>
+											<div class="form-group col-lg-6 col-6">
+												<input id="profile_link" name="profile_link" type="text" placeholder="http://www.example.com/profile" class="form-control input-md">
+											</div>
+										</div>  
+									</div>
+									<div class="form-group col-md-12">
+										<label class="form-label star" for="permanent_address">Permanent Address</label>
+										<textarea class="form-control" id="permanent_address" name="permanent_address" required></textarea>
+									</div>
 									<div class="form-group col-md-12 mb20">
 										<div class="form-group">
-											<label class="form-label" for="arearsch">Specify the broad area of industry/research/academics/etc. currently engaged with</label>
-											<textarea class="form-control" id="arearsch" name="arearsch"></textarea>
+											<label class="form-label star" for="type_of_eng">Type of Engagement with students and academic community</label>
+											<textarea class="form-control" id="type_of_eng" name="type_of_eng"></textarea>
 										</div>
 									</div>
 									<div id="LOCAL_CONNECT"></div>
@@ -102,7 +133,7 @@ $submitAPI = 'api/enrol_scholar.php';
 					<div class="col-md-12 d-none" id="box2">
 						<legend class="form-design">LOCAL CONNECT</legend>
 						<div class="row">
-							<div class="col-md-8 pt20">
+							<div class="col-md-12 col-lg-8 pt20">
 								<div class="row g-3">
 									<!-- Multiple Radios (inline) -->
 									<div class="form-group">
@@ -128,17 +159,17 @@ $submitAPI = 'api/enrol_scholar.php';
 									</div>
 									<!-- Textarea -->
 									<div class="form-group col-md-12">
-										<label class="control-label" for="locadd">Local Address, if any</label>                 
-										<textarea class="form-control" id="locadd" name="locadd"></textarea>
+										<label class="control-label" for="local_address">Local Address, if any</label>                 
+										<textarea class="form-control" id="local_address" name="local_address"></textarea>
 									</div>
 									<!-- Textarea -->
 									<div class="form-group col-md-12">
-										<label class="control-label" for="locwork">Name the industry/academic/institution/etc. in Goa to which professionally/academically collaborated, if any</label>
-										<textarea class="form-control mb20" id="locwork" name="locwork"></textarea>
+										<label class="control-label" for="local_work">Name the industry/academic/institution/etc. in Goa to which professionally/academically collaborated, if any</label>
+										<textarea class="form-control mb20" id="local_work" name="local_work"></textarea>
 									</div>
 								</div>
 							</div>
-							<div class="col-md-4">
+							<div class="d-none d-lg-block col-lg-4">
 								<img class="img-fluid pt20" src="assets/images/travel_mode.png" alt="">
 							</div>
 							<div id="RECOMMENDATION"></div>
@@ -150,23 +181,49 @@ $submitAPI = 'api/enrol_scholar.php';
 					<div class="col-md-12 d-none" id="box3">
 						<legend class="form-design">RECOMMENDATION [Any other scholar]</legend>
 						<div class="row">
-							<div class="col-md-6">
+							<div class="d-none d-lg-block col-lg-4">
 								<img class="img-fluid" src="assets/images/referrals.png" alt="">
 							</div>
-							<div class="col-md-6 pt20">
-								<div class="row g-3">
-									<div class="form-group col-md-12">
-										<label class="control-label" for="osname">Name</label>  
-										<input id="osname" name="osname" type="text" placeholder="Scholar Name" class="form-control input-md">
-									</div>
-									<div class="form-group col-md-12">
-										<label class="control-label" for="osemail">Email</label>  
-										<input id="osemail" name="osemail" type="text" placeholder="Scholar Email" class="form-control input-md">
+							<div class="col-md-12 col-lg-8 pt20">
+								<div class="row">
+									<div class="col-1 col-md-1">1</div>
+									<div class="col-8 col-md-11">
+										<div class="row g-3">
+											<div class="form-group col-md-6">
+												<label class="control-label" for="other_name-1">Name</label>  
+												<input id="other_name-1" name="other_name[]" type="text" placeholder="Scholar Name" class="form-control input-md">
+											</div>
+											<div class="form-group col-md-6">
+												<label class="control-label" for="other_email-1">Email</label>  
+												<input id="other_email-1" name="other_email[]" type="text" placeholder="Scholar Email" class="form-control input-md">
+											</div>
+											<div class="form-group col-md-6">
+												<label class="control-label" for="other_contact_no-1">Contact No.</label>  
+												<div class="input-group">
+													<span class="input-group-text" id="basic-addon2">+91</span>
+													<input id="other_contact_no-1" name="other_contact_no[]" type="number" class="form-control input-md" placeholder="" aria-label="Username" aria-describedby="basic-addon2">
+												</div>
+											</div>
+											<div class="form-group col-md-6">
+												<label class="control-label" for="other_designation-1">Designation</label>  
+												<input id="other_designation-1" name="other_designation[]" type="text" placeholder="" class="form-control input-md">
+											</div>
+											<div class="form-group col-md-6 mb-3">
+												<label class="control-label" for="other_affiliation-1">Affiliation</label>  
+												<input id="other_affiliation-1" name="other_affiliation[]" type="text" placeholder="" class="form-control input-md">
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
-							<div class="form-group col-md-12 text-center">
-								<button type="button" class="btn btn-primary btn_size" onclick="submitForm();">Enroll Me</button>
+							<div class="input_fields_wrap"></div>   <!-- Show Added Days -->
+							<div class="row g-3">
+								<div class="form-group col-md-12 text-center" id="buttonBox2">
+									<button type="button" class="btn btn-secondary btn_size add_field_button">Add More</button>
+								</div>
+								<div class="form-group col-md-12 text-center">
+									<button type="button" class="btn btn-success btn_size" onclick="submitForm();">Enroll Me</button>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -184,6 +241,16 @@ $submitAPI = 'api/enrol_scholar.php';
 <script src="https://cdn.jsdelivr.net/gh/AmagiTech/JSLoader/amagiloader.js"></script>
 <script>
 	var data = {};
+	var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+	var phoneNoReg = /^\d{10}$/;
+	let name=email=address=inputCity=state=country=work_name=area_of_work=designation=cv=profile_link=permanent_address=phone_no=type_of_eng = '';
+
+	// add days function
+	var max_fields = 16;
+	var wrapper = $(".input_fields_wrap"); 		//Fields wrapper
+	var add_button = $(".add_field_button"); 	//Add button ID
+	var x = 1;
+
    // set loader
 	function loaderTimeOut() {
 		setTimeout(() => {
@@ -192,7 +259,52 @@ $submitAPI = 'api/enrol_scholar.php';
 	}
 	// Wait for the DOM to be ready
 	$(function() {
-		
+		$(add_button).click(function(e){ 			//on add input button click
+			e.preventDefault();
+			if(x < max_fields){ 					//max input box allowed
+				x++; 								//text box increment
+				$(wrapper).append(`
+					<div class="row border_top">
+						<div class="col-1 col-md-1 col-lg-1">`+x+`</div>
+						<div class="col-8 col-md-9 col-lg-10">
+							<div class="row g-3">
+								<div class="form-group col-md-6 col-lg-4">
+									<label class="control-label" for="other_name`+x+`">Name</label>  
+									<input id="other_name`+x+`" name="other_name[]" type="text" placeholder="Scholar Name" class="form-control input-md">
+								</div>
+								<div class="form-group col-md-6 col-lg-4">
+									<label class="control-label" for="other_email`+x+`">Email</label>  
+									<input id="other_email`+x+`" name="other_email[]" type="text" placeholder="Scholar Email" class="form-control input-md">
+								</div>
+								<div class="form-group col-md-6 col-lg-4">
+									<label class="control-label" for="other_contact_no`+x+`">Contact No.</label>  
+									<div class="input-group">
+										<span class="input-group-text" id="basic-addon2">+91</span>
+										<input id="other_contact_no`+x+`" name="other_contact_no[]" type="number" class="form-control input-md" placeholder="" aria-label="Username" aria-describedby="basic-addon2">
+									</div>
+								</div>
+								<div class="form-group col-md-6 col-lg-4">
+									<label class="control-label" for="other_designation`+x+`">Designation</label>  
+									<input id="other_designation`+x+`" name="other_designation[]" type="text" placeholder="" class="form-control input-md">
+								</div>
+								<div class="form-group col-md-6 col-lg-4 mb-3">
+									<label class="control-label" for="other_affiliation`+x+`">Affiliation</label>  
+									<input id="other_affiliation`+x+`" name="other_affiliation[]" type="text" placeholder="" class="form-control input-md">
+								</div>
+							</div>
+						</div>
+						<a href="#" class="col-3 col-md-2 col-lg-1 remove_field custom_btn btn2" style="padding: 14px 10px; align-self: center; font-weight:bold; color:red">Remove</a>
+					</div>
+				`); //add input box
+			}
+		});
+		//user click on remove text
+		$(wrapper).on("click",".remove_field", function(e){
+			e.preventDefault(); 
+			$(this).parent('div').remove();
+			x--;
+		})
+
 		$('#sname').keydown(function (e) {
 			validateText(e);
 		});
@@ -202,6 +314,10 @@ $submitAPI = 'api/enrol_scholar.php';
 		$('#state').keydown(function (e) {
 			validateText(e);
 		});
+	});
+
+	$('#cv').change(function(){
+		validateFile();
 	});
 
 	const Toast = Swal.mixin({
@@ -215,7 +331,13 @@ $submitAPI = 'api/enrol_scholar.php';
 			toast.addEventListener('mouseleave', Swal.resumeTimer)
 		}
 	});
-	
+	function popUpMsg(msg, position="top-end", icon="warning")
+	{
+		Toast.fire({
+			icon: icon,
+			title: msg,
+		});
+	}
 	function validateText(e) {
 		if (e.shiftKey || e.ctrlKey || e.altKey) {
 			e.preventDefault();
@@ -226,56 +348,125 @@ $submitAPI = 'api/enrol_scholar.php';
 			}
 		}
 	}
-
-	function popUpMsg(msg, position="top-end", icon="warning")
+	function phoneNumber()
 	{
-		Toast.fire({
-			icon: icon,
-			title: msg,
-		});
+		if(phone_no.match(phoneNoReg))
+		{
+			return true;
+		} else {
+			$("#phone_no").focus();
+			popUpMsg('Please enter valid mobile Number!');
+			return false;
+		}
 	}
+	function validateFile() {
+		var fileSize = document.getElementById('cv').files[0];
+		var sizeInMb = (fileSize.size/1024)/1024;
+		var sizeLimit= 2;
+		if (sizeInMb > sizeLimit) {
+			popUpMsg('File size must be less than 2MB!');
+			$("#cv").focus()
+			return false;
+		}
+		var filename = document.getElementById('cv').value;
+		var extension = filename.replace(/^.*\./, '');
+		if (extension == filename) {
+			extension = '';
+		} else {
+			extension = extension.toLowerCase();
+		}
+		switch (extension) {
+			case 'pdf':
+			case 'doc':
+			case 'docx':
+			case 'ppt':
+			case 'pptx':
+			case 'rtf':
+			case 'txt':
+			case 'xlsx':
+				break;
+			default: 
+				popUpMsg('Invalid file! Recommended file type pdf, docx, xlsx!')
+				$("#cv").focus()
+				return false;
+		}
+		return true;
+	}
+	function isFileUploaded(){
+		if (document.getElementById('cv').value) {
+			return validateFile();
+		} else {
+			return true;
+		}
+	}
+	function validateEmptyFields() {
+		name = $("#sname").val();
+		email = $("#semail").val();
+		address = $("#sadd").val();
+		inputCity = $("#inputCity").val();
+		state = $("#state").val();
+		country = $("#country").val();
+		work_name = $("#work_name").val();
+		area_of_work = $("#area_of_work").val();
+		designation = $("#designation").val();
+		cv = $("#cv").val();
+		profile_link = $("#profile_link").val();
+		permanent_address = $("#permanent_address").val();
+		phone_no = $("#phone_no").val();
+		type_of_eng = $("#type_of_eng").val();
+
+		if (name=="") {
+			$("#sname").focus();
+			popUpMsg('Name is required, Please enter name!');
+		} else if (email=="") {
+			$("#semail").focus();
+			popUpMsg('Email is required, Please enter ypuremail address!');
+		}else if (!emailReg.test(email)){
+			$("#semail").focus();
+			popUpMsg('Please enter valid email address!');
+		} else if (address=="") {
+			$("#sadd").focus();
+			popUpMsg('Address is required, Please enter Address!');
+		} else if (inputCity=="") {
+			$("#inputCity").focus();
+			popUpMsg('Please enter your city!');
+		} else if (state=="") {
+			$("#state").focus();
+			popUpMsg('Please enter the State!');
+		} else if (country=="") {
+			$("#country").focus();
+			popUpMsg('Please select the Country!');
+		} else if (work_name=="") {
+			$("#work_name").focus();
+			popUpMsg('Please enter the name of the Industry/Institution!');
+		} else if (area_of_work=="") {
+			$("#area_of_work").focus();
+			popUpMsg('Please tell us the area of industry engaged with!');
+		} else if (designation=="") {
+			$("#designation").focus();
+			popUpMsg('Please enter the Designation!');
+		} else if (phone_no=="") {
+			$("#phone_no").focus();
+			popUpMsg('Please enter your Contact Number!');
+		} else if (cv=="" && profile_link=="") {
+			$("#profile_link").focus();
+			popUpMsg('Please Upload CV or share your Profile Link!');
+		} else if (permanent_address=="") {
+			$("#permanent_address").focus();
+			popUpMsg('Please enter the Permanent Address!');
+		} else if (type_of_eng=="") {
+			$("#type_of_eng").focus();
+			popUpMsg('Please tell us type of Engagement you will be holding on!');
+		} else {
+			return true;
+		}
+		return false;
+	}
+
 	function changePage(value) 
 	{
-		var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-
-		var name = $("#sname").val();
-		var email = $("#semail").val()
-		var address = $("#sadd").val()
-		var inputCity = $("#inputCity").val()
-		var state = $("#state").val()
-		var country = $("#country").val()
-		
 		if (value==2) {
-			if (name=="") {
-				$("#sname").focus();
-				popUpMsg('Name is required, Please enter name!');
-
-			} else if (email=="") {
-				$("#semail").focus();
-				popUpMsg('Email is required, Please enter email address!');
-				
-			}else if (!emailReg.test(email)){
-				$("#semail").focus();
-				popUpMsg('Please enter valid email address!');
-		
-			} else if (address=="") {
-				$("#sadd").focus();
-				popUpMsg('Address is required, Please enter Address!');
-			
-			} else if (inputCity=="") {
-				$("#inputCity").focus();
-				popUpMsg('Please enter City!');
-			
-			} else if (state=="") {
-				$("#state").focus();
-				popUpMsg('Please enter State!');
-			
-			} else if (country=="") {
-				$("#country").focus();
-				popUpMsg('Please enter Country!');
-			
-			} else {
-
+			if (validateEmptyFields() && isFileUploaded() && phoneNumber()) {
 				data = {
 					name:name,
 					email:email,
@@ -283,50 +474,85 @@ $submitAPI = 'api/enrol_scholar.php';
 					inputCity:inputCity,
 					state:state,
 					country:country,
+					work_name:work_name,
+					area_of_work:area_of_work,
+					designation:designation,
+					cv:cv,
+					profile_link:profile_link,
+					permanent_address:permanent_address,
+					phone_no:phone_no,
+					type_of_eng:type_of_eng,
 				}
+				data.work_type = $('.work_type:checked').val();
 
 				$("#buttonBox1").addClass("d-none");
 				$("#box2").removeClass("d-none");
 				window.location="#LOCAL_CONNECT";
 			}
 		} else if (value==3) {
-			$("#buttonBox2").addClass("d-none");
-			$("#box3").removeClass("d-none");
-			window.location="#RECOMMENDATION";
+			if (validateEmptyFields() && isFileUploaded() && phoneNumber()) {
+				$("#buttonBox2").addClass("d-none");
+				$("#box3").removeClass("d-none");
+				window.location="#RECOMMENDATION";
+			}
 		}
 	}
 
 	function submitForm() 
 	{
-		data.wtype = $('.wtype:checked').val();
-		data.wname = $("#wname").val();
-		data.arearsch = $("#arearsch").val();
-		data.frqvisit = $('.frqvisit:checked').val();
-		data.locadd = $("#locadd").val();
-		data.locwork = $("#locwork").val();
-		data.osname = $("#osname").val();
-		data.osemail = $("#osemail").val();
-		// console.log(data);
+		if (validateEmptyFields() && isFileUploaded() && phoneNumber()) {
+			data.frqvisit = $('.frqvisit:checked').val();
+			data.local_address = $("#local_address").val();
+			data.local_work = $("#local_work").val();
+			data.isRecommendations = false;
+			data.recommendations = [];
 
-		AmagiLoader.show();
-		$.ajax({
-			type: "POST",
-			url: "<?php echo $submitAPI; ?>",
-			data: JSON.stringify(data),
-			success: function(res)
-			{
-				AmagiLoader.hide();
-				var responseData = JSON.parse(res);
-				if (responseData.flag && responseData.status=='200') {
-					popUpMsg(responseData.message, "", "success");
-					loaderTimeOut();
-					window.scrollTo({ top: 0, behavior: 'smooth' });
-				} else {
-					popUpMsg(responseData.message, "", "error");
-					window.scrollTo({ top: 0, behavior: 'smooth' });
+			var other_names = document.getElementsByName("other_name[]");
+			var other_emails = document.getElementsByName("other_email[]");
+			var other_contact_nos = document.getElementsByName("other_contact_no[]");
+			var other_designations = document.getElementsByName("other_designation[]");
+			var other_affiliations = document.getElementsByName("other_affiliation[]");
+
+			if (other_names.length>0) {
+				data.isRecommendations = true;
+				for(let j=0;j<other_names.length;j++)
+				{
+					if ( other_names[j].value == "" && other_emails[j].value == "" && other_contact_nos[j].value == "" && other_designations[j].value == "" && other_affiliations[j].value == "" ) {
+						// do nothing all fields are empty
+					} else {
+						data.recommendations.push({
+							'name': other_names[j].value,
+							'email': other_emails[j].value,
+							'contact_no': other_contact_nos[j].value,
+							'designation': other_designations[j].value,
+							'affiliation': other_affiliations[j].value,
+						});
+					}
 				}
-			},
-		});
+			}
+			// console.log(data);
+			AmagiLoader.show();
+			$.ajax({
+				type: "POST",
+				url: "<?php echo $submitAPI; ?>",
+				data: JSON.stringify(data),
+				success: function(res)
+				{
+					AmagiLoader.hide();
+					var responseData = JSON.parse(res);
+					console.log(res);
+					console.log(responseData);
+					if (responseData.flag && responseData.status=='200') {
+						popUpMsg(responseData.message, "", "success");
+						loaderTimeOut();
+						window.scrollTo({ top: 0, behavior: 'smooth' });
+					} else {
+						popUpMsg(responseData.message, "", "error");
+						window.scrollTo({ top: 0, behavior: 'smooth' });
+					}
+				},
+			});
+		}
 	}
 
 </script>

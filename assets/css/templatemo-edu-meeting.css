@@ -2112,11 +2112,12 @@ responsive
     width: 1164px;
   }
 } 
+*/
 @media (min-width: 1400px) {
   .header-area .main-nav .nav {
     width: 1164px;
   }
-}  */
+}  
 /* social media links */
 .social-media-links .fa {
   padding: 12px;
@@ -3393,6 +3394,10 @@ hr:not([size]) {
 /*--------------------------------------------------------------
 # General Custom css
 --------------------------------------------------------------- */
+.border_top {
+  border-top: 2px solid #1f252c1f;
+  padding: 15px 0;
+}
 hr {
   height: 1px;
   margin: 0 6em;
