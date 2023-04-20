@@ -25,6 +25,7 @@
   .shadows {
     background-color: white;
     padding: 20px;
+    height: 100%;
   }
 </style>
   <!-- ------------- Main Content Start---------------------- -->
@@ -46,19 +47,19 @@
         <div class="col-lg-7 mx40">
           <div class="shadows">
             <p class="textColor-black p0" id="chartRatioTitle"></p>
-            <canvas id="chartRatio" style="min-height: 400px; width: 100%;"></canvas>
+            <canvas id="chartRatio" style="min-height: 400px; height: 480px; width: 100%;"></canvas>
           </div>
         </div>
         <div class="col-lg-8 mx40">
           <div class="shadows">
             <p class="textColor-black p0" id="chartBubbleTitle"></p>
-            <canvas id="chartBubble" style="min-height: 380px; width: 100%;"></canvas>
+            <canvas id="chartBubble" style="height: 400px; width: 100%;"></canvas>
           </div>
         </div>
         <div class="col-lg-4 mx40">
           <div class="shadows">
             <p class="textColor-black p0" id="chartBarTitle"></p>
-            <canvas id="chartBar" style="height: 380px; width: 100%;"></canvas>
+            <canvas id="chartBar" style="height: 400px; width: 100%;"></canvas>
           </div>
         </div>
       </div>
@@ -77,6 +78,7 @@
 
     window.onload = function () {
       doubleBarGraphStudentsEnrolled();
+      callAllTheCharts();
     }
     window.addEventListener('scroll', function() {
       // var element = document.querySelector('#container-box');
@@ -89,7 +91,9 @@
       // if(position.top < window.innerHeight && position.bottom >= 0) {
           // // console.log('Element is partially visible in screen');
       // }
-      
+      callAllTheCharts();
+    });
+    function callAllTheCharts() {
       // 2
       var chartDoughnutScroll = document.querySelector('#chartDoughnutTitle');
       var chartDoughnutScrollPosition =chartDoughnutScroll.getBoundingClientRect();
@@ -118,7 +122,7 @@
       if(barTeacherStatisticsScrollPosition.top >= 0 && barTeacherStatisticsScrollPosition.bottom <= window.innerHeight) {
         barTeacherStatistics();
       }
-    });
+    }
 
     function doubleBarGraphStudentsEnrolled(){
       if (studentEnrolled_json.code == 200) {

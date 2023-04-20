@@ -102,13 +102,13 @@ $submitAPI = 'api/enrol_scholar.php';
 										</div>
 									</div>
 									<div class="form-group col-12 col-lg-12">
-										<label class="control-label star" for="cv">Upload CV/Profile Link</label>
+										<label class="control-label star" for="cv">Profile Link or Upload CV (max 2MB)</label>
 										<div class="row">
-											<div class="form-group col-lg-6 col-6 pb-3">
-												<input id="cv" name="cv" type="file" placeholder="" class="form-control input-md" accept="application/pdf,.csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel">
-											</div>
 											<div class="form-group col-lg-6 col-6">
 												<input id="profile_link" name="profile_link" type="text" placeholder="http://www.example.com/profile" class="form-control input-md">
+											</div>
+											<div class="form-group col-lg-6 col-6 pb-3">
+												<input id="cv" name="cv" type="file" placeholder="" class="form-control input-md" accept="application/pdf,.csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel">
 											</div>
 										</div>  
 									</div>

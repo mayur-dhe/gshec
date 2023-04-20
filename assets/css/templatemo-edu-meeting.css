@@ -1044,7 +1044,6 @@ services overlapping Cards
 quotes
 --------------------------------------------- 
 */
-
 .quotes {
   padding-top: 200px;
 }
@@ -1103,12 +1102,13 @@ upcoming meetings
 ---------------------------------------------
 */
 section.upcoming-meetings {
+  background-image: url(../images/initiatives-bg.jpg);
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 0px;
-  padding-bottom: 110px;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
 }
 
 /* section.upcoming-meetings .section-heading {
@@ -1294,7 +1294,7 @@ section.our-facts {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 150px 0px 85px 0px;
+  padding: 30vh 0;
 }
 
 section.our-facts h2 {
@@ -1378,7 +1378,7 @@ section.contact-us {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 70px 0px;
+  padding: 25vh 0;
 }
 
 section.contact-us #contact {
@@ -3526,6 +3526,9 @@ hr {
 .pr90 {
   padding-right: 90px !important;
 }
+.pb0 {
+  padding-bottom: 0px !important;
+}
 .pb5 {
   padding-bottom: 5px !important;
 }
@@ -3534,6 +3537,9 @@ hr {
 }
 .pb30 {
   padding-bottom: 30px !important;
+}
+.pb40 {
+  padding-bottom: 40px !important;
 }
 .pl10 {
   padding-left: 10px;

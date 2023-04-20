@@ -3,7 +3,7 @@
   $page = "1";
   require 'layout/top-header.php';
 ?>
-<body class="body">
+<body class="body pb0">
 <?php
   include 'layout/sub-header.php';
   require 'layout/header.php';
@@ -97,8 +97,7 @@
       </div>
     </div>
   </section>
-    
-  <div class="quotes" id="quotes">
+  <section class="quotes" id="quotes">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
@@ -123,7 +122,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <section class="upcoming-meetings" id="meetings">
     <div class="container">
@@ -203,7 +202,7 @@
     </div>
   </section>
 
-  <section class="our-facts main-banner">
+  <section class="our-facts">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
@@ -251,7 +250,7 @@
     </div>
   </section>
 
-  <section class="contact-us main-banner" id="contact">
+  <section class="contact-us" id="contact">
     <div class="container">
       <div class="row">
         <div class="col-lg-7 align-self-center">

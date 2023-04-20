@@ -63,7 +63,7 @@
           These characteristics of top institutions make their campus vibrant, and provide students even at UG level, an unique opportunity to interact with PhD students, Postdoctoral fellows, researchers, and faculty. Furthermore, the use of common infrastructure, and access to the state-of-the art facilities becomes feasible.
         </div>
         <div class="col-md-12 col-lg-6 pl30">
-          <video class="mb40" width="auto" height="285" controls autoplay muted loop>
+          <video class="mb40" width="auto" height="285" poster="assets/images/nep/video-cover.jpg" controls autoplay muted loop>
             <source src="assets/video/nep/NEP page video.mp4" type="video/mp4">
             <!-- <source src="movie.ogg" type="video/ogg"> -->
             Your browser does not support the video tag.
