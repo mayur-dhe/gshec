@@ -35,7 +35,7 @@
               <a href="gallery-view?jnhsdwmxifkd=<?php echo $title_2?>&jnhstrefbd=<?php echo $mou_images['title']?>">
                 <div class="gallery-item">
                   <div class="thumb">
-                    <img src="<?php echo $mou_images['data'][0]['url'] ?>" alt="<?php echo $mou_images['data'][0]['alt'] ?>">
+                    <img class="img_bgColor" src="<?php echo $mou_images['data'][0]['url'] ?>" alt="<?php echo $mou_images['data'][0]['alt'] ?>">
                   </div>
                   <div class="down-content">
                     <h4><?php echo concat_string($mou_images['title']);?></h4>
@@ -53,7 +53,7 @@
               <a href="gallery-view?jnhsdwmxifkd=<?php echo $title_2?>&jnhstrefbd=<?php echo $obe['title'] ?>">
                 <div class="gallery-item">
                   <div class="thumb">
-                    <img src="<?php echo $obe['data'][0]['url'] ?>" alt="<?php echo $obe['data'][0]['alt'] ?>">
+                    <img class="img_bgColor" src="<?php echo $obe['data'][0]['url'] ?>" alt="<?php echo $obe['data'][0]['alt'] ?>">
                   </div>
                   <div class="down-content">
                     <h4><?php echo concat_string($obe['title']);?></h4>
@@ -71,7 +71,7 @@
               <a href="gallery-view?jnhsdwmxifkd=<?php echo $title_2?>&jnhstrefbd=<?php echo $job_drive['title'] ?>">
                 <div class="gallery-item">
                   <div class="thumb">
-                    <img src="<?php echo $job_drive['data'][0]['url'] ?>" alt="<?php echo $job_drive['data'][0]['alt'] ?>">
+                    <img class="img_bgColor" src="<?php echo $job_drive['data'][0]['url'] ?>" alt="<?php echo $job_drive['data'][0]['alt'] ?>">
                   </div>
                   <div class="down-content">
                     <h4><?php echo concat_string($job_drive['title']);?></h4>
@@ -89,7 +89,7 @@
               <a href="gallery-view?jnhsdwmxifkd=<?php echo $title_2?>&jnhstrefbd=<?php echo $aip['title'] ?>">
                 <div class="gallery-item">
                   <div class="thumb">
-                    <img src="<?php echo $aip['data'][0]['url'] ?>" alt="<?php echo $aip['data'][0]['alt'] ?>">
+                    <img class="img_bgColor" src="<?php echo $aip['data'][0]['url'] ?>" alt="<?php echo $aip['data'][0]['alt'] ?>">
                   </div>
                   <div class="down-content">
                     <h4><?php echo concat_string($aip['title']);?></h4>
@@ -107,7 +107,7 @@
               <a href="gallery-view?jnhsdwmxifkd=<?php echo $title_2?>&jnhstrefbd=<?php echo $dhe['title'] ?>">
                 <div class="gallery-item">
                   <div class="thumb">
-                    <img src="<?php echo $dhe['data'][0]['url'] ?>" alt="<?php echo $dhe['data'][0]['alt'] ?>">
+                    <img class="img_bgColor" src="<?php echo $dhe['data'][0]['url'] ?>" alt="<?php echo $dhe['data'][0]['alt'] ?>">
                   </div>
                   <div class="down-content">
                     <h4><?php echo concat_string($dhe['title']);?></h4>
@@ -125,7 +125,7 @@
               <a href="gallery-view?jnhsdwmxifkd=<?php echo $title_2?>&jnhstrefbd=<?php echo $tip['title'] ?>">
                 <div class="gallery-item">
                   <div class="thumb">
-                    <img src="<?php echo $tip['data'][0]['url'] ?>" alt="<?php echo $tip['data'][0]['alt'] ?>">
+                    <img class="img_bgColor" src="<?php echo $tip['data'][0]['url'] ?>" alt="<?php echo $tip['data'][0]['alt'] ?>">
                   </div>
                   <div class="down-content">
                     <h4><?php echo concat_string($tip['title']);?></h4>
@@ -151,7 +151,7 @@
               <div class="col-lg-3 col-md-6 p0">
                 <div class="gallery">
                   <a href="#" type="button" onclick="showModel('<?php echo $title_2 ?>',' <?php echo $imageCount ?>'); return false;" title="<?php echo $value['alt']?>" class="gallery_item">
-                    <img src="<?php echo $value['url']?>" alt="<?php echo $value['alt']?>">
+                    <img class="img_bgColor"  src="<?php echo $value['url']?>" alt="<?php echo $value['alt']?>">
                   </a>
                 </div>
               </div>
@@ -173,7 +173,7 @@
               <div class="col-lg-3 col-md-6 p0">
                 <div class="gallery">
                   <a href="#" title="<?php echo $value['alt']?>" class="gallery_item">
-                  <img src="<?php echo $value['url']?>" alt="<?php echo $value['alt']?>">
+                  <img class="img_bgColor"  src="<?php echo $value['url']?>" alt="<?php echo $value['alt']?>">
                 </a>
               </div>
         <?php
@@ -206,7 +206,7 @@
               ?>
                     <div class="mySlides">
                         <div class="numbertext"><?php echo  ++$key.'/'.count($image_list); ?></div>
-                        <img src="<?php echo $value['url']?>" alt="<?php echo $value['alt']?>" style="width:100%; height: 500px; object-fit: contain;">
+                        <img class="img_bgColor"  src="<?php echo $value['url']?>" alt="<?php echo $value['alt']?>" style="width:100%; height: 500px; object-fit: contain;">
                     </div>
               <?php 
                   } 
@@ -229,7 +229,7 @@
 
                 ?>
                       <div class="column">
-                        <img class="demo cursor" src="<?php echo $value['url']?>" alt="<?php echo $value['alt']?>" style="width:100%" onclick="currentSlide('<?php echo $modelImageCount ?>')" >
+                        <img class="img_bgColor"  class="demo cursor" src="<?php echo $value['url']?>" alt="<?php echo $value['alt']?>" style="width:100%" onclick="currentSlide('<?php echo $modelImageCount ?>')" >
                       </div>
                 <?php 
                     } 

@@ -34,7 +34,7 @@
               <div class="carousel-inner">
                 <?php foreach ($rusa_images['data'] as $key => $value) { ?>
                         <div class="carousel-item <?php echo $key==0 ?  'active' : '' ?>">
-                          <img src="<?php echo $value['url']; ?>" alt="<?php echo $value['alt']; ?>" width="1100" height="500">
+                          <img class="img_bgColor" src="<?php echo $value['url']; ?>" alt="<?php echo $value['alt']; ?>" width="1100" height="500">
                         </div> 
                 <?php } ?>
                 <!-- <div class="carousel-item carousel_item_overlay"></div> -->

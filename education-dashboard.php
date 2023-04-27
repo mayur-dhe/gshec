@@ -161,6 +161,7 @@
             datasets: datasetsData,
           },
           options: {
+            responsive: true,
             scales: {
               x: {
                 title: {
@@ -185,7 +186,18 @@
             animation: {
               duration: 3000,  // 1 second transition
               delay: 500,      // 0.2 second delay before starting the transition
-            }
+            },
+            // // Add hover animation options
+            // hover: {
+            //   animationDuration: 400,
+            //   mode: 'nearest',
+            //   intersect: true
+            // },
+            // // Add tooltips to show data on hover
+            // tooltips: {
+            //   mode: 'index',
+            //   intersect: false
+            // }
           }
         });
       }
@@ -215,7 +227,18 @@
             animation: {
               duration: 3000,  // 1 second transition
               delay: 1000,      // 0.2 second delay before starting the transition
-            }
+            },
+            // // Add hover animation options
+            // hover: {
+            //   animationDuration: 400,
+            //   mode: 'nearest',
+            //   intersect: true
+            // },
+            // // Add tooltips to show data on hover
+            // tooltips: {
+            //   mode: 'index',
+            //   intersect: false
+            // }
           }
         });
         // Add a click event listener to the chart canvas element
@@ -299,7 +322,18 @@
             animation: {
               duration: 3000,  // 1 second transition
               delay: 200,      // 0.2 second delay before starting the transition
-            }
+            },
+            // // Add hover animation options
+            // hover: {
+            //   animationDuration: 400,
+            //   mode: 'nearest',
+            //   intersect: true
+            // },
+            // // Add tooltips to show data on hover
+            // tooltips: {
+            //   mode: 'index',
+            //   intersect: false
+            // }
           }
         });
       }
@@ -379,7 +413,18 @@
             animation: {
               duration: 3000,  // 1 second transition
               delay: 1000,      // 0.2 second delay before starting the transition
-            }
+            },
+            // // Add hover animation options
+            // hover: {
+            //   animationDuration: 400,
+            //   mode: 'nearest',
+            //   intersect: true
+            // },
+            // // Add tooltips to show data on hover
+            // tooltips: {
+            //   mode: 'index',
+            //   intersect: false
+            // }
           }
         });
       }
@@ -436,7 +481,18 @@
             animation: {
               duration: 3000,  // 1 second transition
               delay: 1000,      // 0.2 second delay before starting the transition
-            }
+            },
+            // // Add hover animation options
+            // hover: {
+            //   animationDuration: 400,
+            //   mode: 'nearest',
+            //   intersect: true
+            // },
+            // // Add tooltips to show data on hover
+            // tooltips: {
+            //   mode: 'index',
+            //   intersect: false
+            // }
           }
         });
       }

@@ -45,7 +45,7 @@
           </p>
         </div>
         <div class="col-md-12 col-lg-6">
-          <video class="mb40" width="100%" height="285" poster="assets/images/sdc/video-cover.png" controls autoplay muted loop>
+          <video class="mb40 img_bgColor" width="100%" height="285" poster="assets/images/sdc/video-cover.png" controls autoplay muted loop>
             <source src="assets/video/sdc/SDC page video.mp4" type="video/mp4">
             <!-- <source src="movie.ogg" type="video/ogg"> -->
             Your browser does not support the video tag.
@@ -141,7 +141,7 @@
         ?>
           <div class="col-12 col-md-4 col-xl-3">
             <div class="profile-thumb">
-              <img class="profile-thumb-img" src="<?php echo $value['image']; ?>" alt="">
+              <img class="img_bgColor profile-thumb-img" src="<?php echo $value['image']; ?>" alt="">
               <div class="profile-thumb-gradient"></div>
               <div class="profile-thumb-anim">
                 <h5 class="profile-thumb-title"><?php echo $value['name']; ?></h5>

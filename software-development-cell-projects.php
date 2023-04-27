@@ -56,7 +56,7 @@
                   <div class="swiper-wrapper align-items-center">
                     <div class="swiper-slide">
                       <?php foreach ($value['images'] as $key1 => $image) { ?>
-                        <img src="<?php echo $image['url'] ?>" alt="<?php echo $image['alt'] ?? $value['title'] ?>" class="rounded tablet-top"> 
+                        <img src="<?php echo $image['url'] ?>" alt="<?php echo $image['alt'] ?? $value['title'] ?>" class="rounded tablet-top img_bgColor"> 
                       <?php } ?>
                     </div>
                   </div>

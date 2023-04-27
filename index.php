@@ -138,12 +138,16 @@
             <ul>
               <?php 
                 foreach ($initiatives as $key => $value) {
+                  if ($value['type']=='home') {
               ?>
-                  <!-- title="<?php echo concat_string($value['title']); ?>" -->
-                  <li><a href="initiative.php?jnhsdwmxifkd=<?php echo $value['id']?>" >
-                    <?php echo $value['short_name'] ?>
-                  </a></li>
-              <?php } ?>
+                    <!-- title="<?php echo concat_string($value['title']); ?>" -->
+                    <li><a href="initiative.php?jnhsdwmxifkd=<?php echo $value['id']?>" >
+                      <?php echo $value['short_name'] ?>
+                    </a></li>
+              <?php 
+                  }
+                }
+              ?>
                   <!-- <li>
                     <a href="#" onclick="showActivity(1)">
                       Activities 
@@ -154,7 +158,7 @@
                     </a>
                   </li> -->
               <?php 
-                  foreach ($initiative_activities as $key => $value) {
+                  foreach ($initiatives as $key => $value) {
               ?>
                     <!-- <li><a class="activities" href="initiative.php?jnhsdwmxifkd=<?php echo $value['id']?>" >
                       <?php echo $value['short_name'] ?>
@@ -170,32 +174,26 @@
           <div class="row">
             <?php 
               foreach ($initiatives as $key => $value) {
+                if ($value['type']=='home') {
             ?>
-              <div class="col-lg-6 col-md-12">
-                <a href="initiative.php?jnhsdwmxifkd=<?php echo $value['id']?>">
-                  <div class="meeting-item">
-                    <div class="thumb">
-                      <div class="price">
-                        <!-- <span>$22.00</span> -->
+                  <div class="col-lg-6 col-md-12">
+                    <a href="initiative.php?jnhsdwmxifkd=<?php echo $value['id']?>">
+                      <div class="meeting-item">
+                        <div class="thumb">
+                          <!-- <div class="price"><span></span></div> -->
+                          <img class="img_bgColor" src="<?php echo $value['cover_image'];?>" alt="MOU">
+                        </div>
+                        <div class="down-content" style="text-align:center">
+                          <h4><?php echo $value['short_name'];?> </h4>
+                          <div class="know_more">Read More</div>
+                        </div>
                       </div>
-                      <img src="<?php echo $value['cover_image'];  ?>" alt="MOU">
-                    </div>
-                    <div class="down-content" style="text-align:center">
-                      <!-- <div class="date">
-                        <h6>Nov <span>10</span></h6>
-                      </div> -->
-                      <h4>
-                        <?php echo $value['short_name'];?> 
-                      </h4>
-                      <div class="know_more">Read More</div>
-                    </div>
+                    </a>
                   </div>
-                </a>
-              </div>
             <?php
-              if (++$key>3)
-                break;
-            } ?>
+                }
+              } 
+            ?>
           </div>
         </div>
       </div>

@@ -1132,10 +1132,12 @@ section.upcoming-meetings .categories h4 {
 }
 
 section.upcoming-meetings .categories ul li {
-  display: inline-block;
+  display: block;
   margin-bottom: 15px;
 }
-
+.categories ul li {
+  display: inline-block;
+}
 section.upcoming-meetings .categories ul li a {
   font-size: 15px;
   color: #1f272b;
@@ -3394,6 +3396,9 @@ hr:not([size]) {
 /*--------------------------------------------------------------
 # General Custom css
 --------------------------------------------------------------- */
+.img_bgColor {
+  background: #e1e4e3;
+}
 .border_top {
   border-top: 2px solid #1f252c1f;
   padding: 15px 0;

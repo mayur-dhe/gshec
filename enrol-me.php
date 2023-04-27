@@ -8,6 +8,8 @@ $title = "ENROL FOR DNYAN SANGRAH";
 $title_url = "#";
 require 'layout/top-header.php';
 ?>
+<style>
+</style>
 <body class="reading-pages">
 <?php 
 include 'layout/sub-header.php';
@@ -23,211 +25,218 @@ $submitAPI = 'api/enrol_scholar.php';
 		<div class="row">
 			<div class="col-md-12">
 				<h4 class="textAlign-center font_dancing pb20">Enrol for Dnyan Sangrah</h4>
-				<form name="frm_scholar" id="frm_scholar">
-					<div class="col-md-12">
-						<legend class="form-design">Personal Information</legend>
-						<div class="row">
-							<div class="d-none d-lg-block col-lg-4">
-								<img class="img-fluid" src="assets/images/personal form.png" alt="">
-							</div>
-							<div class="col-md-12 col-lg-8 pt20">
-								<div class="row g-3">
-									<div class="col-md-6">
-										<label class="form-label star" for="sname">Name</label>  
-										<input id="sname" name="sname" type="text" placeholder="Enter Full Name" class="form-control" required>
-									</div>
-									<div class="col-md-6">
-										<label for="semail" class="form-label star">Email ID</label>
-										<input id="semail" name="semail" type="email" class="form-control" placeholder="example@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Invalid email address" required> 
-									</div>
-									<div class="form-group col-md-12">
-										<label class="form-label star" for="sadd">Work/Office Address</label>
-										<textarea class="form-control" id="sadd" name="sadd" required></textarea>
-									</div>
-									<div class="form-group col-md-4">
-										<label class="form-label star" for="inputCity">City</label>
-										<input type="text" class="form-control" name="inputCity"  id="inputCity" required>
-									</div>
-									<div class="form-group col-md-4">
-										<label class="form-label star" for="state">State</label>
-										<input id="state" name="state" type="text" placeholder="Enter State" class="form-control" required>
-									</div>
-									<div class="form-group col-md-4">		
-										<label class="form-label star" for="country">Country</label>	
-										<select id="country" name="country" class="form-control">
-											<option value="0">Select Country</option>
-											<?php
-												if ($countries) {
-													foreach ($countries as $key => $value) {
-														$isSelected = '';
-														if ($value == "India") {
-															$isSelected = 'selected';
-														}
-														echo '<option value="'.$value.'" '.$isSelected.'>'.$value.'</option>';
-													}
-												}
-											?>
-										</select>
-									</div>
-									<div class="form-group col-md-12 col-lg-6">
-										<label class="form-label star" for="work_type">Work Type</label><br>
-										<div class="form-check form-check-inline">
-											<input class="form-check-input work_type" type="radio" name="work_type" id="work_type-0" value="Industry">
-											<label class="form-check-label" for="work_type-0">Industry</label>
-										</div>
-										<div class="form-check form-check-inline">
-											<input class="form-check-input work_type" type="radio" name="work_type" id="work_type-1" value="Institution" checked>
-											<label class="form-check-label star" for="work_type-1">Institution</label>
-										</div>
-									</div>
-									<div class="form-group col-md-12 col-lg-6">
-										<label class="form-label star" for="work_name">Name of Industry/Institution</label>  
-										<input id="work_name" name="work_name" type="text" placeholder="" class="form-control">
-									</div>
-									<div class="form-group col-md-12">
-										<div class="form-group">
-											<label class="form-label star" for="area_of_work">Specify the broad area of industry/research/academics/etc. currently engaged with</label>
-											<textarea class="form-control" id="area_of_work" name="area_of_work"></textarea>
-										</div>
-									</div>
-									<div class="form-group col-md-6 col-lg-6">
-										<label class="control-label star" for="designation">Designation</label>  
-										<input id="designation" name="designation" type="text" placeholder="" class="form-control input-md">
-									</div>
-									<div class="form-group col-md-6 col-lg-6">
-										<label class="control-label star" for="phone_no">Contact No.</label>  
-										<div class="input-group">
-											<span class="input-group-text" id="basic-addon1">+91</span>
-											<input id="phone_no" name="phone_no" type="number" class="form-control input-md" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-										</div>
-									</div>
-									<div class="form-group col-12 col-lg-12">
-										<label class="control-label star" for="cv">Profile Link or Upload CV (max 2MB)</label>
-										<div class="row">
-											<div class="form-group col-lg-6 col-6">
-												<input id="profile_link" name="profile_link" type="text" placeholder="http://www.example.com/profile" class="form-control input-md">
-											</div>
-											<div class="form-group col-lg-6 col-6 pb-3">
-												<input id="cv" name="cv" type="file" placeholder="" class="form-control input-md" accept="application/pdf,.csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel">
-											</div>
-										</div>  
-									</div>
-									<div class="form-group col-md-12">
-										<label class="form-label star" for="permanent_address">Permanent Address</label>
-										<textarea class="form-control" id="permanent_address" name="permanent_address" required></textarea>
-									</div>
-									<div class="form-group col-md-12 mb20">
-										<div class="form-group">
-											<label class="form-label star" for="type_of_eng">Type of Engagement with students and academic community</label>
-											<textarea class="form-control" id="type_of_eng" name="type_of_eng"></textarea>
-										</div>
-									</div>
-									<div id="LOCAL_CONNECT"></div>
-								</div>
-							</div>
-							<div class="form-group col-md-12 text-center" id="buttonBox1">
-								<button type="button" class="btn btn-primary btn_size" onclick="changePage(2);"> Next</button>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-12 d-none" id="box2">
-						<legend class="form-design">LOCAL CONNECT</legend>
-						<div class="row">
-							<div class="col-md-12 col-lg-8 pt20">
-								<div class="row g-3">
-									<!-- Multiple Radios (inline) -->
-									<div class="form-group">
-										<label class="col-md-6 control-label" for="frqvisit">Frequency of visit to Goa</label>
-										<div class="col-md-12"> 
-											<label class="radio-inline" for="frqvisit-0">
-												<input type="radio" class="frqvisit" name="frqvisit" id="frqvisit-0" value="Annual" checked="checked">
-												Annual
-											</label> 
-											<label class="radio-inline" for="frqvisit-1">
-												<input type="radio" class="frqvisit" name="frqvisit" id="frqvisit-1" value="Bi-annual">
-												Bi-annual
-											</label> 
-											<label class="radio-inline" for="frqvisit-2">
-												<input type="radio" class="frqvisit" name="frqvisit" id="frqvisit-2" value="Monthly">
-												Monthly
-											</label> 
-											<label class="radio-inline" for="radios-3">
-												<input type="radio" class="frqvisit" name="frqvisit" id="radios-3" value="Rarely">
-												Rarely
-											</label>
-										</div>
-									</div>
-									<!-- Textarea -->
-									<div class="form-group col-md-12">
-										<label class="control-label" for="local_address">Local Address, if any</label>                 
-										<textarea class="form-control" id="local_address" name="local_address"></textarea>
-									</div>
-									<!-- Textarea -->
-									<div class="form-group col-md-12">
-										<label class="control-label" for="local_work">Name the industry/academic/institution/etc. in Goa to which professionally/academically collaborated, if any</label>
-										<textarea class="form-control mb20" id="local_work" name="local_work"></textarea>
-									</div>
-								</div>
-							</div>
-							<div class="d-none d-lg-block col-lg-4">
-								<img class="img-fluid pt20" src="assets/images/travel_mode.png" alt="">
-							</div>
-							<div id="RECOMMENDATION"></div>
-							<div class="form-group col-md-12 text-center" id="buttonBox2">
-								<button type="button" class="btn btn-primary btn_size" onclick="changePage(3);"> Next</button>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-12 d-none" id="box3">
-						<legend class="form-design">RECOMMENDATION [Any other scholar]</legend>
-						<div class="row">
-							<div class="d-none d-lg-block col-lg-4">
-								<img class="img-fluid" src="assets/images/referrals.png" alt="">
-							</div>
-							<div class="col-md-12 col-lg-8 pt20">
-								<div class="row">
-									<div class="col-1 col-md-1">1</div>
-									<div class="col-8 col-md-11">
-										<div class="row g-3">
-											<div class="form-group col-md-6">
-												<label class="control-label" for="other_name-1">Name</label>  
-												<input id="other_name-1" name="other_name[]" type="text" placeholder="Scholar Name" class="form-control input-md">
-											</div>
-											<div class="form-group col-md-6">
-												<label class="control-label" for="other_email-1">Email</label>  
-												<input id="other_email-1" name="other_email[]" type="text" placeholder="Scholar Email" class="form-control input-md">
-											</div>
-											<div class="form-group col-md-6">
-												<label class="control-label" for="other_contact_no-1">Contact No.</label>  
-												<div class="input-group">
-													<span class="input-group-text" id="basic-addon2">+91</span>
-													<input id="other_contact_no-1" name="other_contact_no[]" type="number" class="form-control input-md" placeholder="" aria-label="Username" aria-describedby="basic-addon2">
-												</div>
-											</div>
-											<div class="form-group col-md-6">
-												<label class="control-label" for="other_designation-1">Designation</label>  
-												<input id="other_designation-1" name="other_designation[]" type="text" placeholder="" class="form-control input-md">
-											</div>
-											<div class="form-group col-md-6 mb-3">
-												<label class="control-label" for="other_affiliation-1">Affiliation</label>  
-												<input id="other_affiliation-1" name="other_affiliation[]" type="text" placeholder="" class="form-control input-md">
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="input_fields_wrap"></div>   <!-- Show Added Days -->
+				<div class="col-md-12">
+					<legend class="form-design">Personal Information</legend>
+					<div class="row">
+						<div class="col-md-12 pt20">
 							<div class="row g-3">
-								<div class="form-group col-md-12 text-center" id="buttonBox2">
-									<button type="button" class="btn btn-secondary btn_size add_field_button">Add More</button>
+								<div class="col-md-6">
+									<label class="form-label star" for="sname">Name</label>  
+									<input id="sname" name="sname" type="text" placeholder="Enter Full Name" class="form-control" required>
 								</div>
-								<div class="form-group col-md-12 text-center">
-									<button type="button" class="btn btn-success btn_size" onclick="submitForm();">Enroll Me</button>
+								<div class="col-md-6">
+									<label for="semail" class="form-label star">Email ID</label>
+									<input id="semail" name="semail" type="email" class="form-control" placeholder="example@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Invalid email address" required> 
+								</div>
+								<div class="form-group col-md-12">
+									<label class="form-label star" for="sadd">Work/Office Address</label>
+									<textarea class="form-control" id="sadd" name="sadd" required></textarea>
+								</div>
+								<div class="form-group col-md-4">
+									<label class="form-label star" for="inputCity">City</label>
+									<input type="text" class="form-control" name="inputCity"  id="inputCity" required>
+								</div>
+								<div class="form-group col-md-4">
+									<label class="form-label star" for="state">State</label>
+									<input id="state" name="state" type="text" placeholder="Enter State" class="form-control" required>
+								</div>
+								<div class="form-group col-md-4">		
+									<label class="form-label star" for="country">Country</label>	
+									<select id="country" name="country" class="form-control">
+										<option value="0">Select Country</option>
+										<?php
+											if ($countries) {
+												foreach ($countries as $key => $value) {
+													$isSelected = '';
+													if ($value == "India") {
+														$isSelected = 'selected';
+													}
+													echo '<option value="'.$value.'" '.$isSelected.'>'.$value.'</option>';
+												}
+											}
+										?>
+									</select>
+								</div>
+								<div class="form-group col-md-12 col-lg-6">
+									<label class="form-label star" for="work_type">Work Type</label><br>
+									<div class="form-check form-check-inline">
+										<input class="form-check-input work_type" type="radio" name="work_type" id="work_type-0" value="Industry">
+										<label class="form-check-label" for="work_type-0">Industry</label>
+									</div>
+									<div class="form-check form-check-inline">
+										<input class="form-check-input work_type" type="radio" name="work_type" id="work_type-1" value="Institution" checked>
+										<label class="form-check-label star" for="work_type-1">Institution</label>
+									</div>
+								</div>
+								<div class="form-group col-md-12 col-lg-6">
+									<label class="form-label star" for="work_name">Name of Industry/Institution</label>  
+									<input id="work_name" name="work_name" type="text" placeholder="" class="form-control">
+								</div>
+								<div class="form-group col-md-12">
+									<div class="form-group">
+										<label class="form-label star" for="area_of_work">Specify the broad area of industry/research/academics/etc. currently engaged with</label>
+										<textarea class="form-control" id="area_of_work" name="area_of_work"></textarea>
+									</div>
+								</div>
+								<div class="form-group col-md-6 col-lg-6">
+									<label class="control-label star" for="designation">Designation</label>  
+									<input id="designation" name="designation" type="text" placeholder="" class="form-control input-md">
+								</div>
+								<div class="form-group col-md-6 col-lg-6">
+									<label class="control-label star" for="phone_no">Contact No.</label>  
+									<div class="input-group">
+										<span class="input-group-text" id="basic-addon1">+91</span>
+										<input id="phone_no" name="phone_no" type="number" class="form-control input-md" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+									</div>
+								</div>
+								<div class="form-group col-12 col-lg-12">
+									<label class="control-label star" for="cv">Profile Link or Upload CV (max 2MB)</label>
+									<div class="row">
+										<div class="form-group col-lg-6 col-6">
+											<input id="profile_link" name="profile_link" type="text" placeholder="http://www.example.com/profile" class="form-control input-md">
+										</div>
+										<div class="form-group col-lg-6 col-6 pb-3">
+											<input id="cv" name="cv" type="file" placeholder="" class="form-control input-md" accept="application/pdf,.csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel">
+										</div>
+									</div>  
+								</div>
+								<div class="form-group col-md-12">
+									<label class="form-label star" for="permanent_address">Permanent Address</label>
+									<textarea class="form-control" id="permanent_address" name="permanent_address" required></textarea>
+								</div>
+								<div class="form-group col-md-12 mb20">
+									<div class="form-group">
+										<label class="form-label star" for="type_of_eng">Type of Engagement with students and academic community</label>
+										<textarea class="form-control" id="type_of_eng" name="type_of_eng"></textarea>
+									</div>
+								</div>
+								<div id="LOCAL_CONNECT"></div>
+							</div>
+						</div>
+						<div class="form-group col-md-12 text-center" id="buttonBox1">
+							<button type="button" class="btn btn-primary btn_size" onclick="changePage(2);"> Next</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container d-none" id="box2" style="padding: 30px 40px;">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="col-md-12">
+					<legend class="form-design">LOCAL CONNECT</legend>
+					<div class="row">
+						<div class="col-md-12 col-lg-8 pt20">
+							<div class="row g-3">
+								<!-- Multiple Radios (inline) -->
+								<div class="form-group">
+									<label class="col-md-6 control-label" for="frqvisit">Frequency of visit to Goa</label>
+									<div class="col-md-12"> 
+										<label class="radio-inline" for="frqvisit-0">
+											<input type="radio" class="frqvisit" name="frqvisit" id="frqvisit-0" value="Annual" checked="checked">
+											Annual
+										</label> 
+										<label class="radio-inline" for="frqvisit-1">
+											<input type="radio" class="frqvisit" name="frqvisit" id="frqvisit-1" value="Bi-annual">
+											Bi-annual
+										</label> 
+										<label class="radio-inline" for="frqvisit-2">
+											<input type="radio" class="frqvisit" name="frqvisit" id="frqvisit-2" value="Monthly">
+											Monthly
+										</label> 
+										<label class="radio-inline" for="radios-3">
+											<input type="radio" class="frqvisit" name="frqvisit" id="radios-3" value="Rarely">
+											Rarely
+										</label>
+									</div>
+								</div>
+								<!-- Textarea -->
+								<div class="form-group col-md-12">
+									<label class="control-label" for="local_address">Local Address, if any</label>                 
+									<textarea class="form-control" id="local_address" name="local_address"></textarea>
+								</div>
+								<!-- Textarea -->
+								<div class="form-group col-md-12">
+									<label class="control-label" for="local_work">Name the industry/academic/institution/etc. in Goa to which professionally/academically collaborated, if any</label>
+									<textarea class="form-control mb20" id="local_work" name="local_work"></textarea>
 								</div>
 							</div>
 						</div>
+						<div class="d-none d-lg-block col-lg-4">
+							<img class="img-fluid pt20" src="assets/images/travel_mode.png" alt="">
+						</div>
+						<div id="RECOMMENDATION"></div>
+						<div class="form-group col-md-12 text-center" id="buttonBox2">
+							<button type="button" class="btn btn-primary btn_size" onclick="changePage(3);"> Next</button>
+						</div>
 					</div>
-				</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container d-none" id="box3" style="padding: 30px 40px;">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="col-md-12">
+					<legend class="form-design">RECOMMENDATION [Any other scholar]</legend>
+					<div class="row">
+						<div class="d-none d-lg-block col-lg-4">
+							<img class="img-fluid" src="assets/images/referrals.png" alt="">
+						</div>
+						<div class="col-md-12 col-lg-8 pt20">
+							<div class="row">
+								<div class="col-1 col-md-1">1</div>
+								<div class="col-8 col-md-11">
+									<div class="row g-3">
+										<div class="form-group col-md-6">
+											<label class="control-label" for="other_name-1">Name</label>  
+											<input id="other_name-1" name="other_name[]" type="text" placeholder="Scholar Name" class="form-control input-md">
+										</div>
+										<div class="form-group col-md-6">
+											<label class="control-label" for="other_email-1">Email</label>  
+											<input id="other_email-1" name="other_email[]" type="text" placeholder="Scholar Email" class="form-control input-md">
+										</div>
+										<div class="form-group col-md-6">
+											<label class="control-label" for="other_contact_no-1">Contact No.</label>  
+											<div class="input-group">
+												<span class="input-group-text" id="basic-addon2">+91</span>
+												<input id="other_contact_no-1" name="other_contact_no[]" type="number" class="form-control input-md" placeholder="" aria-label="Username" aria-describedby="basic-addon2">
+											</div>
+										</div>
+										<div class="form-group col-md-6">
+											<label class="control-label" for="other_designation-1">Designation</label>  
+											<input id="other_designation-1" name="other_designation[]" type="text" placeholder="" class="form-control input-md">
+										</div>
+										<div class="form-group col-md-6 mb-3">
+											<label class="control-label" for="other_affiliation-1">Affiliation</label>  
+											<input id="other_affiliation-1" name="other_affiliation[]" type="text" placeholder="" class="form-control input-md">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="input_fields_wrap"></div>   <!-- Show Added Days -->
+						<div class="row g-3">
+							<div class="form-group col-md-12 text-center" id="buttonBox2">
+								<button type="button" class="btn btn-secondary btn_size add_field_button">Add More</button>
+							</div>
+							<div class="form-group col-md-12 text-center">
+								<button type="button" class="btn btn-success btn_size" onclick="submitForm();">Enroll Me</button>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

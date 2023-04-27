@@ -38,7 +38,7 @@
             ?>
                 <div class="col-12 col-md-4 col-xl-4">
                   <div class="profile-thumb">
-                    <img class="profile-thumb-img" src="<?php echo $value['url']; ?>" alt="">
+                    <img class="profile-thumb-img img_bgColor" src="<?php echo $value['url']; ?>" alt="">
                     <div class="profile-thumb-gradient"></div>
                     <div class="profile-thumb-anim">
                       <h5 class="profile-thumb-title ptt-2"><?php echo $value['name']; ?></h5>
@@ -77,7 +77,7 @@
             ?>
                 <div class="col-12 col-md-4 col-xl-4">
                   <div class="profile-thumb">
-                    <img class="profile-thumb-img" src="<?php echo $value['url']; ?>" alt="">
+                    <img class="profile-thumb-img img_bgColor" src="<?php echo $value['url']; ?>" alt="">
                     <div class="profile-thumb-gradient"></div>
                     <div class="profile-thumb-anim">
                       <h5 class="profile-thumb-title ptt-2"><?php echo $value['name']; ?></h5>

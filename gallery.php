@@ -24,7 +24,7 @@
             <a href="gallery-view?jnhsdwmxifkd=Teaching, Learning and Education Technology">
               <div class="gallery-item">
                 <div class="thumb">
-                  <img src="<?php echo $teaching_learning_images['data'][0]['url'] ?>" alt="<?php echo $teaching_learning_images['data'][0]['alt'] ?>">
+                  <img class="img_bgColor" src="<?php echo $teaching_learning_images['data'][0]['url'] ?>" alt="<?php echo $teaching_learning_images['data'][0]['alt'] ?>">
                 </div>
                 <div class="down-content">
                   <h4><?php echo concat_string($teaching_learning_images['title']);?></h4>
@@ -42,7 +42,7 @@
             <a href="gallery-view?jnhsdwmxifkd=Initiatives">
               <div class="gallery-item">
                 <div class="thumb">
-                  <img src="<?php echo $mou_images['data'][0]['url'] ?>" alt="<?php echo $mou_images['data'][0]['alt'] ?>">
+                  <img class="img_bgColor" src="<?php echo $mou_images['data'][0]['url'] ?>" alt="<?php echo $mou_images['data'][0]['alt'] ?>">
                 </div>
                 <div class="down-content">
                   <h4>Initiatives</h4>
@@ -60,7 +60,7 @@
             <a href="gallery-view?jnhsdwmxifkd=RUSA">
               <div class="gallery-item">
                 <div class="thumb">
-                  <img src="<?php echo $rusa_images['data'][0]['url'] ?>" alt="<?php echo $rusa_images['data'][0]['alt'] ?>">
+                  <img class="img_bgColor" src="<?php echo $rusa_images['data'][0]['url'] ?>" alt="<?php echo $rusa_images['data'][0]['alt'] ?>">
                 </div>
                 <div class="down-content">
                   <h4><?php echo concat_string($rusa_images['title']);?></h4>

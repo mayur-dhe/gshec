@@ -1,10 +1,8 @@
 <!-- Question  -->
 <!-- Pending / hold  -->
 gallery - site map - linking - left 
-images 
-	activity 
 <!-- Changes Updates -->
-ribbon multiple display 
+  multiple display 
 enrol me - bg images
 compress image size 
 	- tip 
@@ -12,9 +10,9 @@ compress image size
 	- rdi 
 <!-- --------------------------------------------------- -->
 <!-- Pending Resources -->
-Colleges Name Map
 SDC profile links
 teams - project icons
+initiatives - activity pending data  
 <!-- --------------------------------------------------- -->
 <!-- find me -->
 
@@ -33,13 +31,40 @@ alter
 			nep, sdc* 
 				- * cover.lpg 
 			initiatives-bg.jpg
+			initiatives
+				add folder
+					drive_at_borda
+					drive_at_quepem
+					fdb_exp_learning
+					fdb_on_banking
+					ugc_and_cec
+					vidyan_dharma
+			remove
+				personal form png 
+				referrals.png 
+				travel mode png 
 	data 
 		nep 
+		initiatives
+	
 	pages 
-		enrol me
 		edu dashboard 
+		enrol me
+		gallery view 
+		gallery 
+		hr 
 		index 
+		initiative
+		initiatives
 		nep 
-		sdc 
-
+		rusa 
+		sdc project 
+		sdc
+	<!-- testing on hold - no effect  -->
+	vendor 
+		bootstrap 
+			css 
+				bootstrap min css 
+	assets/js/isotope.min.js 
 <!-- --------------------------------------------------- -->
+

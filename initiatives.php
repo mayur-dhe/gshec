@@ -29,14 +29,13 @@
                 <a href="initiative.php?jnhsdwmxifkd=<?php echo $value['id']?>">
                   <div class="meeting-item">
                     <div class="thumb">
-                      <img src="<?php echo $value['cover_image'];  ?>" alt="MOU">
+                      <img class="img_bgColor" src="<?php echo $value['cover_image'];  ?>" alt="<?php echo $value['title']?>">
                     </div>
                     <div class="down-content textAlign-center">
-                      <h4><?php echo $value['short_name'] ?></h4>
-                      <!-- <h4>
-                        <?php echo concat_string($value['title']);?>
-                        <span class="know_more">Read More</span>
-                      </h4> -->
+                      <h4>
+                        <?php echo $value['short_name'] ?>
+                        <!-- <?php echo concat_string($value['title']);?> -->
+                      </h4>
                     </div>
                   </div>
                 </a>

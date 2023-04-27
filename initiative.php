@@ -12,10 +12,21 @@
   require 'layout/top-header.php';
 ?>
 <!-- courosal -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 
+<!-- remove n add css down
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"> -->
+<style>
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+</style>
 <body>
 <?php 
   include 'layout/sub-header.php';
@@ -53,62 +64,35 @@
                 <div id="demo" class="carousel slide" data-ride="carousel">
                   <!-- Indicators -->
                   <ul class="carousel-indicators">
-                    <?php if ( $id == 1) {   ?>
-                      <?php foreach ($dhe['data'] as $key => $image){ ?>
-                            <li data-target="#demo" data-slide-to="<?php echo $key?>" <?php echo $key==0 ?? 'class="active"' ?> ></li>                            
-                      <?php } ?>
-
-                    <?php } else if ( $id == 2) { ?>
-                      <?php foreach ($mou_images['data'] as $key => $image){  ?>
-                              <li data-target="#demo" data-slide-to="<?php echo $key?>" <?php echo $key==0 ?? 'class="active"' ?> ></li>                            
-                      <?php } ?>
-
-                    <?php  } else if ( $id == 3) {   ?>                      
-                      <?php foreach ($aip['data'] as $key => $image){ ?>
-                            <li data-target="#demo" data-slide-to="<?php echo $key?>" <?php echo $key==0 ?? 'class="active"' ?> ></li>                            
-                      <?php } ?>
-
-                    <?php  } else if ( $id == 4) {   ?>
-                      <?php foreach ($tip['data'] as $key => $image){ ?>
-                          <li data-target="#demo" data-slide-to="<?php echo $key?>" <?php echo $key==0 ?? 'class="active"' ?> ></li>                            
-                      <?php } ?>
-                    <?php } ?>
+                    <?php 
+                      foreach ($images as $key => $value) {
+                        if ($value['id'] == $id) {
+                          foreach ($value['data'] as $keyIndicators => $image) {
+                    ?>
+                            <li data-target="#demo" data-slide-to="<?php echo $keyIndicators?>" <?php echo $keyIndicators==0 ?? 'class="active"' ?> ></li>                            
+                    <?php 
+                          }
+                        }
+                      }
+                    ?>
                   </ul>
-
                   <!-- The slideshow -->
                   <div class="carousel-inner">
-                    <?php if ( $id == 1) {  ?>
-                      <?php foreach ($dhe['data'] as $key => $image) { ?>
+                    <?php 
+                      foreach ($images as $key => $value) {
+                        if ($value['id'] == $id) {  
+                          foreach ($value['data'] as $key => $image) {
+                    ?>
                         <div class="carousel-item <?php echo $key==0 ?  'active' : '' ?>">
-                          <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" width="1100" height="500">
+                          <img class="img_bgColor" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" width="1100" height="500">
                         </div> 
-                      <?php } ?>
-
-                    <?php  } else if ( $id == 2) { ?>
-                      <?php foreach ($mou_images['data'] as $key => $image) { ?>
-                        <div class="carousel-item <?php echo $key==0 ?  'active' : '' ?>">
-                          <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" width="1100" height="500">
-                        </div> 
-                      <?php } ?>
-
-                    <?php  } else if ( $id == 3) {  ?>
-                      <?php foreach ($aip['data'] as $key => $image) { ?>
-                        <div class="carousel-item <?php echo $key==0 ?  'active' : '' ?>">
-                          <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" width="1100" height="500">
-                        </div> 
-                      <?php } ?>
-                    
-                    <?php  } else if ( $id == 4) {  ?>
-                      <?php foreach ($tip['data'] as $key => $image) { ?>
-                        <div class="carousel-item <?php echo $key==0 ?  'active' : '' ?>">
-                          <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" width="1100" height="500">
-                        </div> 
-                      <?php } ?>
-
-                    <?php } ?>
+                    <?php 
+                          } 
+                        } 
+                      } 
+                    ?>
                     <!-- <div class="carousel-item carousel_item_overlay"></div> -->
                   </div>
-
                   <!-- Left and right controls -->
                   <a class="carousel-control-prev" href="#demo" data-slide="prev">
                     <span class="carousel-control-prev-icon"></span>
@@ -121,7 +105,7 @@
             </div>
             <div class="down-content text-align-justify textColor-black">
               <?php if ( $id == 1) {  ?>
-                <h2>
+                <h2 style="text-align: left !important;">
                   IBM Certification Course
                 </h2>
                 <br>
@@ -154,7 +138,7 @@
                   ?>
                 </div>  
               <?php } else if ( $id == 2) { ?>
-                <h2>
+                <h2 style="text-align: left !important;">
                   MoU signing with 4 skilling startups
                 </h2>
                 <p>
@@ -189,7 +173,7 @@
                   role is to work with girl child from the marginal communities and place them in the tech industry. The objective of this MoU is to set up a new learning campus in the State of Goa which will have a training capacity for up to 300 students in each cycle (for a period of 5 cycles) in Software Programming, Advanced Graphic Design, and/ or Management courses of 15 months duration and providing placement assistance to the cohort on completion of their course.
                 </p>
               <?php  } else if ( $id == 3) {  ?>
-                <h2>
+                <h2 style="text-align: left !important;">
                   TCS initiative 
                 </h2>
                 <p>
@@ -197,7 +181,7 @@
                 </p>
               
               <?php  } else if ( $id == 4) {  ?>
-                <h2>
+                <h2 style="text-align: left !important;">
                   Unified TIP portal as per NEP for technical and non-technical colleges
                 </h2>
                 <br>
@@ -227,8 +211,162 @@
                     </li>
                   </ol>
                 </div>
+              <?php  } else if ( $id == 5) {  ?>
+                <!-- <h2 style="text-align: left !important;">
+                  Faculty Development Program in “Banking for Business Process”
+                </h2>
+                <br>
+                <p>
+                  
+                </p>
+                <br>
+                <p class="m0">
+                  Some of the features are as follows :
+                </p>
+                <div class="list-number pl20">
+                  <ol class="fontSize-14">
+                    <li>
+                      It will provide Internship/Job opportunities to the students.
+                    </li>
+                    <li>
+                      Track Student related initiatives of the Colleges
+                    </li>
+                    <li>
+                      Generate Portfolio of the student
+                    </li>
+                    <li>
+                      Track Skill  of the Students
+                    </li>
+                    <li>
+                      Bridge Gap between skill set and Company Requirement
+                    </li>
+                  </ol>
+                </div> -->
+              <?php  } else if ( $id == 6) {  ?>
+                <h2 style="text-align: left !important;">
+                  Faculty Development Program in “Banking for Business Process”
+                </h2>
+                <br>
+                <p>
+                  The <strong> Directorate of Higher Education and Goa State Higher Education Council, Government of Goa </strong>
+                  in collaboration with <strong>Tata Consultancy Services </strong> 
+                  organized a five-day Faculty Development Program from 30th January to 3rd February, 2023 at DHE, Porvorim on the topic 
+                  <strong>“Banking for Business Process”</strong>. 
+                  The FDP was an initiative under the Training Internship and Placement Cell in line with the objectives of the 
+                  <strong>National Education Policy 2020</strong>. 
+                  Industrial experts from the banking sector shared their industrial experiences and knowledge through interactive sessions. A total of 46 faculty from 19 Higher Education Institutes offering Bachelors in Commerce across the State of Goa attended the program.
+                </p>
+                <p>
+                  The FDP started with an Inaugural function. <strong>Ms Vandana Sawant</strong> compered the Inaugural function where 
+                  <strong>Shri. Prasad Lolayekar, IAS</strong> - Director of Directorate of Higher Education 
+                  and Executive Director of Goa State Higher Education Council welcomed the faculty and thanked their respective principals for deputing them. 
+                  <strong>Mr. Jesal Kapadia, Center of Excellence Lead, TCS</strong> 
+                  briefly addressed about the topics that would be covered during the FDP. 
+                  <strong>Prof. Niyan Marchon</strong>, 
+                  Professor of Teaching, Learning & Educational Technology section, Goa State Higher Education Council shared his insights about the objectives of the FDP and that the Government-Industry collaborative FDP was to equip the faculty with skills, knowledge and inspiration to conduct banking-related add-on courses in their respective institutions to upskill the students with the necessary skills to further improve employability.
+                </p>
+                <p>
+                  Lastly <strong>Prof. Vithal Tilvi</strong>, Professor of Research, Development & Innovation section, Goa State Higher Education Council gave the vote of thanks.
+                </p>
+                <p class="m0">
+                  The speakers for the various sessions of the FDP included:
+                </p>
+                <div class="list-number pl20">
+                  <ol class="fontSize-14">
+                    <li><strong>Mr. Jesal Kapadia – Retail Banking – Center of Excellence Lead</strong></li>
+                    <li><strong>Ms. Anupama Patil – Manager BFSI CBO</strong></li>
+                    <li><strong>Ms. Chandrakala B – Domain Consultant – BFSI</strong> </li>
+                  </ol>
+                </div>
+                <p>
+                  Topics such as Retail and Corporate Banking, Functioning of Debit and Credit cards, Mortgages, Cash Management and Trade Finance were covered over the course of five days.
+                </p>
+                <p>
+                  The FDP ended with the valedictory function. 
+                  <strong>Mr Saurabh Naik</strong> 
+                  was the compere for the function. The special invitee was 
+                  <strong>Dr. Kastub Kamat</strong>, 
+                  Assistant Director, Directorate of Higher Education, Government of Goa. Mr. Saurabh thanked the faculty for their active participation and request a few faculty to share their feedback on the five-day FDP. Most faculty said that the FDP was a very fruitful and the Academia-Industry collaboration with resource persons from the banking field gave them the first hand information, something they could go back and share with their respective students. Dr. Kastub Kamat and 
+                  <strong>Ms. Chandrakala from TCS</strong> 
+                  later handed out the participation certificates to all the faculty who had attended the FDP. 
+                  <strong>Dr. Anson Albuquerque</strong>, 
+                  Training Internship and Placement Coordinator, Goa State Higher Education Council gave the vote of thanks.
+                </p>
+              <?php  } else if ( $id == 7) {  ?>
+                <h2 style="text-align: left !important;">
+                  Placement Drive at Quepem
+                </h2>
+                <br>
+                <p>
+                  Skilling development and providing employment opportunities is one of the core objectives of National Education Policy (NEP 2020). The first of its kind placement drive was organized by the Directorate of Higher Education (DHE) held in July , in association with the Government College at Quepem where 30 out of the 57 participants (approximately 50%) have been offered jobs and were handed the offer letters in presence of Chief Minister, Director (DHE), Company officials, Principals and Training and Placement Officers of the participating colleges.The drive was held for final year BSc students graduating in September 2022.
+                </p>
+                <p>
+                  Industries like Open Destination, Infotech Pvt Ltd, Zimetric Technology, Creative Capsule , Tangentia , Helix Tech , Genora Industries , Wenware.io and Umang software participated in this placement drive.
+                </p>
+              <?php  } else if ( $id == 8) {  ?>
+                <h2 style="text-align: left !important;">
+                  TCS Placement Drive at Borda college
+                </h2>
+                <br>
+                <p>
+                  TCS Placement drive was conducted for the students from Higher Education Institutions in the State of Goa who graduated in 2021 and 2022 from Arts, Commerce as well as Science was held on 5th November 2022 at Government College of Commerce & Economics, Margao
+                </p>
+              <?php  } else if ( $id == 9) {  ?>
+                <!-- <h2 style="text-align: left !important;">
+                  Faculty Development Program in “Banking for Business Process”
+                </h2>
+                <br>
+                <p>
+                  
+                </p>
+                <br>
+                <p class="m0">
+                  Some of the features are as follows :
+                </p>
+                <div class="list-number pl20">
+                  <ol class="fontSize-14">
+                    <li>
+                      It will provide Internship/Job opportunities to the students.
+                    </li>
+                    <li>
+                      Track Student related initiatives of the Colleges
+                    </li>
+                    <li>
+                      Generate Portfolio of the student
+                    </li>
+                    <li>
+                      Track Skill  of the Students
+                    </li>
+                    <li>
+                      Bridge Gap between skill set and Company Requirement
+                    </li>
+                  </ol>
+                </div> -->
+              <?php  } else if ( $id == 10) {  ?>
+                <h2 style="text-align: left !important;">
+                  Visit to UGC and CEC, New-Delhi
+                </h2>
+                <br>
+                <p>
+                  Goa State Higher Education Council(GSHEC) and Directorate of Higher Education(DHE) official visit to UGC and CEC, New-Delhi from 9th to 11th Jan 2023 to discuss the NEP modalities in the state of Goa and handover of MOOCs courses to CEC council.
+                </p>
+                <p class="m0">
+                  The following members from the Directorate of Higher Education visited New Delhi:
+                </p>
+                <div class="list-number pl20">
+                  <ol class="fontSize-14">
+                    <li>
+                      Dr. F. M. Nadaf, Deputy Director, DHE, Goa.
+                    </li>
+                    <li>
+                      Prof. Vithal Tilvi, Professor, State Higher Education Council, DHE, Goa.
+                    </li>
+                    <li>
+                      Dr. Kavita Sanjay Asnani, Associate Professor, State Higher Education Council, DHE, Goa. 
+                    </li>
+                  </ol>
+                </div>
               <?php } ?>
-              
             </div>
           </div>
           

@@ -1,200 +1,283 @@
 <?php
-
+// display type 1.home on homepage, 
+//              2.activity on initiatives list page   
+    // title list
     $initiatives = [
         array(
             'id' => 1,
+            'type' => 'home',
             'title' => 'DHE collaboration with IBM',
             'short_name' => 'IBM Initiative',
             'cover_image' => 'assets/images/empty.jpg',
         ),
         array(
             'id' => 2,
+            'type' => 'home',
             'title' => 'The State Higher Education Council, Directorate of Higher Education signs a Memorandum of Understanding (MoU) with 1) NAVGURUKUL FOUNDATION FOR SOCIAL WELFARE 2)NEWTON SCHOOL 3) Be Unlu 4) Entri',
             'short_name' => 'MoU with National Startup',
             'cover_image' => 'assets/images/initiatives/initiative1 MoU.JPG',
         ),
         array(
             'id' => 3,
-            'title' => 'Academic Interface Programme (AIP)  by TCS” ',
+            'type' => 'home',
+            'title' => 'Academic Interface Programme (AIP) by TCS” ',
             'short_name' => 'TCS Initiative for Banking',
             'cover_image' => 'assets/images/initiatives/Initiative 4 AIP.jpg',
         ),
         array(
             'id' => 4,
+            'type' => 'home',
             'title' => 'Installation of Training, Internship and Placement (TIP) cell',
             'short_name' => 'TIP Unified Portal ',
             'cover_image' => 'assets/images/initiatives/initiative 6 TIP.jpg',
         ),
+        // array(
+        //     'id' => 5,
+        //     'type' => 'activity',
+        //     'title' => 'FDP Expertial Learning',
+        //     'short_name' => 'FDP Expertial Learning',
+        //     'cover_image' => 'assets/images/empty.jpg',
+        // ),
+        array(
+            'id' => 6,
+            'type' => 'activity',
+            'title' => 'FDP on Banking for Business Process',
+            'short_name' => 'FDP on Banking for Business Process',
+            'cover_image' => 'assets/images/empty.jpg',
+        ),
+        array(
+            'id' => 7,
+            'type' => 'activity',
+            'title' => 'Placement Drive at Quepem',
+            'short_name' => 'Placement Drive at Quepem',
+            'cover_image' => 'assets/images/empty.jpg',
+        ),
+        array(
+            'id' => 8,
+            'type' => 'activity',
+            'title' => 'TCS Placement Drive at Borda College',
+            'short_name' => 'TCS Placement Drive at Borda College',
+            'cover_image' => 'assets/images/empty.jpg',
+        ),
+        // array(
+        //     'id' => 9,
+        //     'type' => 'activity',
+        //     'title' => 'Vidyan Dharma',
+        //     'short_name' => 'Vidyan Dharma',
+        //     'cover_image' => 'assets/images/empty.jpg',
+        // ),
+        array(
+            'id' => 10,
+            'type' => 'activity',
+            'title' => 'Visit to UGC and CEC',
+            'short_name' => 'Visit to UGC and CEC',
+            'cover_image' => 'assets/images/empty.jpg',
+        ),
     ];
-    $initiative_activities = [
+
+    $images = [
+        array(
+            'id' => 1,
+            'title' => 'DHE',
+            'data' => array(
+                array(
+                    'url' => 'assets/images/empty.jpg',
+                    'alt' => '',
+                ),
+            ),
+        ),
+        array(
+            'id' => 2,
+            'title' => 'Memorandum of Understanding',
+            'data' => array(
+                array(
+                    'url' => 'assets/images/initiatives/mou/9F4A5162.JPG',
+                    'alt' => '',
+                ),
+                array(
+                    'url' => 'assets/images/initiatives/mou/9F4A5273.JPG',
+                    'alt' => '',
+                ),
+                array(
+                    'url' => 'assets/images/initiatives/mou/9F4A5276.JPG',
+                    'alt' => '',
+                ),
+                array(
+                    'url' => 'assets/images/initiatives/mou/9F4A5283.JPG',
+                    'alt' => '',
+                ),
+                array(
+                    'url' => 'assets/images/initiatives/mou/9F4A5296.JPG',
+                    'alt' => '',
+                ),
+                array(
+                    'url' => 'assets/images/initiatives/mou/9F4A5299.JPG',
+                    'alt' => '',
+                ),
+                array(
+                    'url' => 'assets/images/initiatives/mou/9F4A5313.JPG',
+                    'alt' => '',
+                ),
+                array(
+                    'url' => 'assets/images/initiatives/mou/9F4A5325.JPG',
+                    'alt' => '',
+                ),
+                array(
+                    'url' => 'assets/images/initiatives/mou/9F4A5408.JPG',
+                    'alt' => '',
+                ),
+                array(
+                    'url' => 'assets/images/initiatives/mou/ALL.JPG',
+                    'alt' => '',
+                ),
+                array(
+                    'url' => 'assets/images/initiatives/mou/audience.JPG',
+                    'alt' => '',
+                ),
+                array(
+                    'url' => 'assets/images/initiatives/mou/Be Unlu.JPG',
+                    'alt' => '',
+                ),
+                array(
+                    'url' => 'assets/images/initiatives/mou/CM.JPG',
+                    'alt' => '',
+                ),
+                array(
+                    'url' => 'assets/images/initiatives/mou/CM speech.JPG',
+                    'alt' => '',
+                ),
+                array(
+                    'url' => 'assets/images/initiatives/mou/DHE.JPG',
+                    'alt' => '',
+                ),
+                array(
+                    'url' => 'assets/images/initiatives/mou/Entri.JPG',
+                    'alt' => '',
+                ),
+                array(
+                    'url' => 'assets/images/initiatives/mou/Group Pic.JPG',
+                    'alt' => '',
+                ),
+                array(
+                    'url' => 'assets/images/initiatives/mou/NavGurukul.JPG',
+                    'alt' => '',
+                ),
+                array(
+                    'url' => 'assets/images/initiatives/mou/Newton school.JPG',
+                    'alt' => '',
+                ),
+            ),
+        ),
+        array(
+            'id' => 3,
+            'title' => 'Academic Interface Programme',
+            'data' => array(
+                array(
+                    'url' => 'assets/images/initiatives/aip/img.jpg',
+                    'alt' => '',
+                ),
+            ),
+        ),
+        array(
+            'id' => 4,
+            'title' => 'Training, Internship and Placement Cell',
+            'data' => array(
+                array(
+                    'url' => 'assets/images/initiatives/tip/_SUN7015_C.jpg',
+                    'alt' => '',
+                ),
+                array(
+                    'url' => 'assets/images/initiatives/tip/_SUN7023.jpg',
+                    'alt' => '',
+                ),
+                array(
+                    'url' => 'assets/images/initiatives/tip/_SUN7046.jpg',
+                    'alt' => '',
+                ),
+                array(
+                    'url' => 'assets/images/initiatives/tip/_SUN7063.jpg',
+                    'alt' => '',
+                ),
+                array(
+                    'url' => 'assets/images/initiatives/tip/_SUN7101_C.jpg',
+                    'alt' => '',
+                ),
+                array(
+                    'url' => 'assets/images/initiatives/tip/_SUN7119.jpg',
+                    'alt' => '',
+                ),
+            ),
+        ),
         array(
             'id' => 5,
             'title' => 'FDP Expertial Learning',
-            'short_name' => 'FDP Expertial Learning',
-            'cover_image' => 'assets/images/initiatives/empty.jpg',
+            'data' => array(
+                // 0
+                array(
+                    'url' => 'assets/images/empty.jpg',
+                    'alt' => '',
+                ),
+            ),
         ),
         array(
             'id' => 6,
             'title' => 'FDP on Banking for Business Process',
-            'short_name' => 'FDP on Banking for Business Process',
-            'cover_image' => 'assets/images/initiatives/empty.jpg',
+            'data' => array(
+                array(
+                    'url' => 'assets/images/initiatives/fdb_on_banking/FDP_group.JPG',
+                    'alt' => '',
+                ),
+                array(
+                    'url' => 'assets/images/initiatives/fdb_on_banking/RBI_session.jpeg',
+                    'alt' => '',
+                ),
+            ),
         ),
+
         array(
             'id' => 7,
             'title' => 'Placement Drive at Quepem',
-            'short_name' => 'Placement Drive at Quepem',
-            'cover_image' => 'assets/images/initiatives/empty.jpg',
+            'data' => array(
+                array(
+                    'url' => 'assets/images/initiatives/drive_at_quepem/img1.jpg',
+                    'alt' => '',
+                ),
+            ),
         ),
         array(
             'id' => 8,
             'title' => 'TCS Placement Drive at Borda College',
-            'short_name' => 'TCS Placement Drive at Borda College',
-            'cover_image' => 'assets/images/initiatives/empty.jpg',
+            'data' => array(
+                // 0
+                array(
+                    'url' => 'assets/images/empty.jpg',
+                    'alt' => '',
+                ),
+            ),
         ),
         array(
             'id' => 9,
             'title' => 'Vidyan Dharma',
-            'short_name' => 'Vidyan Dharma',
-            'cover_image' => 'assets/images/initiatives/empty.jpg',
+            'data' => array(
+                // 0
+                array(
+                    'url' => 'assets/images/empty.jpg',
+                    'alt' => '',
+                ),
+            ),
         ),
         array(
             'id' => 10,
             'title' => 'Visit to UGC and CEC',
-            'short_name' => 'Visit to UGC and CEC',
-            'cover_image' => 'assets/images/initiatives/empty.jpg',
-        ),
-    ];
-
-    // images
-    // 1 
-    $dhe = [
-        'title' => 'DHE',
-        'data' => array(
-            array(
-                'url' => 'assets/images/empty.jpg',
-                'alt' => '',
-            ),
-        ),
-    ];
-    // 2
-    $mou_images = [
-        'title' => 'Memorandum of Understanding',
-        'data' => array(
-            array(
-                'url' => 'assets/images/initiatives/mou/9F4A5162.JPG',
-                'alt' => '',
-            ),
-            array(
-                'url' => 'assets/images/initiatives/mou/9F4A5273.JPG',
-                'alt' => '',
-            ),
-            array(
-                'url' => 'assets/images/initiatives/mou/9F4A5276.JPG',
-                'alt' => '',
-            ),
-            array(
-                'url' => 'assets/images/initiatives/mou/9F4A5283.JPG',
-                'alt' => '',
-            ),
-            array(
-                'url' => 'assets/images/initiatives/mou/9F4A5296.JPG',
-                'alt' => '',
-            ),
-            array(
-                'url' => 'assets/images/initiatives/mou/9F4A5299.JPG',
-                'alt' => '',
-            ),
-            array(
-                'url' => 'assets/images/initiatives/mou/9F4A5313.JPG',
-                'alt' => '',
-            ),
-            array(
-                'url' => 'assets/images/initiatives/mou/9F4A5325.JPG',
-                'alt' => '',
-            ),
-            array(
-                'url' => 'assets/images/initiatives/mou/9F4A5408.JPG',
-                'alt' => '',
-            ),
-            array(
-                'url' => 'assets/images/initiatives/mou/ALL.JPG',
-                'alt' => '',
-            ),
-            array(
-                'url' => 'assets/images/initiatives/mou/audience.JPG',
-                'alt' => '',
-            ),
-            array(
-                'url' => 'assets/images/initiatives/mou/Be Unlu.JPG',
-                'alt' => '',
-            ),
-            array(
-                'url' => 'assets/images/initiatives/mou/CM.JPG',
-                'alt' => '',
-            ),
-            array(
-                'url' => 'assets/images/initiatives/mou/CM speech.JPG',
-                'alt' => '',
-            ),
-            array(
-                'url' => 'assets/images/initiatives/mou/DHE.JPG',
-                'alt' => '',
-            ),
-            array(
-                'url' => 'assets/images/initiatives/mou/Entri.JPG',
-                'alt' => '',
-            ),
-            array(
-                'url' => 'assets/images/initiatives/mou/Group Pic.JPG',
-                'alt' => '',
-            ),
-            array(
-                'url' => 'assets/images/initiatives/mou/NavGurukul.JPG',
-                'alt' => '',
-            ),
-            array(
-                'url' => 'assets/images/initiatives/mou/Newton school.JPG',
-                'alt' => '',
-            ),
-        ),
-    ];
-    // 3
-    $aip = [
-        'title' => 'Academic Interface Programme',
-        'data' => array(
-            array(
-                'url' => 'assets/images/initiatives/aip/img.jpg',
-                'alt' => '',
-            ),
-        ),
-    ];
-    // 4
-    $tip = [
-        'title' => 'Training, Internship and Placement Cell',
-        'data' => array(
-            array(
-                'url' => 'assets/images/initiatives/tip/_SUN7015_C.jpg',
-                'alt' => '',
-            ),
-            array(
-                'url' => 'assets/images/initiatives/tip/_SUN7023.jpg',
-                'alt' => '',
-            ),
-            array(
-                'url' => 'assets/images/initiatives/tip/_SUN7046.jpg',
-                'alt' => '',
-            ),
-            array(
-                'url' => 'assets/images/initiatives/tip/_SUN7063.jpg',
-                'alt' => '',
-            ),
-            array(
-                'url' => 'assets/images/initiatives/tip/_SUN7101_C.jpg',
-                'alt' => '',
-            ),
-            array(
-                'url' => 'assets/images/initiatives/tip/_SUN7119.jpg',
-                'alt' => '',
+            'data' => array(
+                array(
+                    'url' => 'assets/images/initiatives/ugc_and_cec/pic1.jpeg',
+                    'alt' => '',
+                ),
+                array(
+                    'url' => 'assets/images/initiatives/ugc_and_cec/pic2.jpeg',
+                    'alt' => '',
+                ),
             ),
         ),
     ];
@@ -312,5 +395,5 @@
                 'Project Management Fundamentals',
             ),
         ),
-    ]
+    ];
 ?>
