@@ -18,6 +18,9 @@ initiatives - activity pending data
 
 <!-- --------------------------------------------------- -->
 <!-- craftitt upload    -->
+Enrol me 
+	page 
+	api
 <!-- upload on gshec edu -->
 alter
 	admin 
@@ -31,6 +34,10 @@ alter
 			nep, sdc* 
 				- * cover.lpg 
 			initiatives-bg.jpg
+			team 
+				add 
+					images 
+					shamb, paresh, sneha 
 			initiatives
 				add folder
 					drive_at_borda
@@ -46,7 +53,8 @@ alter
 	data 
 		nep 
 		initiatives
-	
+	add folder 
+		uploads
 	pages 
 		edu dashboard 
 		enrol me

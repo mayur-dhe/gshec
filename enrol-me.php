@@ -43,8 +43,8 @@ $submitAPI = 'api/enrol_scholar.php';
 									<textarea class="form-control" id="sadd" name="sadd" required></textarea>
 								</div>
 								<div class="form-group col-md-4">
-									<label class="form-label star" for="inputCity">City</label>
-									<input type="text" class="form-control" name="inputCity"  id="inputCity" required>
+									<label class="form-label star" for="city">City</label>
+									<input type="text" class="form-control" name="city"  id="city" required>
 								</div>
 								<div class="form-group col-md-4">
 									<label class="form-label star" for="state">State</label>
@@ -252,7 +252,8 @@ $submitAPI = 'api/enrol_scholar.php';
 	var data = {};
 	var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
 	var phoneNoReg = /^\d{10}$/;
-	let name=email=address=inputCity=state=country=work_name=area_of_work=designation=cv=profile_link=permanent_address=phone_no=type_of_eng = '';
+	let name=email=address=city=state=country=work_name=area_of_work=designation=encoded_file=file_name=profile_link=permanent_address=phone_no=type_of_eng=work_type = '';
+	const fileInput = document.getElementById('cv');
 
 	// add days function
 	var max_fields = 16;
@@ -260,7 +261,31 @@ $submitAPI = 'api/enrol_scholar.php';
 	var add_button = $(".add_field_button"); 	//Add button ID
 	var x = 1;
 
-   // set loader
+	// upload file
+	function encodeFile(file) {
+		return new Promise((resolve, reject) => {
+			const reader = new FileReader();
+			reader.onload = () => {
+				const encoded = btoa(reader.result);
+				resolve(encoded);
+			};
+			reader.onerror = reject;
+			reader.readAsBinaryString(file);
+		});
+	}
+	fileInput.addEventListener('change', async (event) => {
+		const file = event.target.files[0];
+		if (file) {
+			if (validateFile()) {
+				const encodedFile = await encodeFile(file);
+				encoded_file = encodedFile;
+				file_name = file.name;
+			}
+		} else {
+			popUpMsg('Please select a File!');
+		}
+	});
+   	// set loader
 	function loaderTimeOut() {
 		setTimeout(() => {
 			window.location.reload();
@@ -268,6 +293,20 @@ $submitAPI = 'api/enrol_scholar.php';
 	}
 	// Wait for the DOM to be ready
 	$(function() {
+		console.log('check');
+		$("#sname").val('mayur');
+		$("#semail").val('mayur@gmail.com');
+		$("#sadd").val("goa india");
+		$("#city").val("quepem");
+		$("#state").val('Goa');
+		$("#country").val("India");
+		$("#work_name").val('engineer');
+		$("#area_of_work").val('Lead');
+		$("#designation").val('Developer');
+		$("#permanent_address").val('india goa');
+		$("#phone_no").val('8976543268');
+		$("#type_of_eng").val('siper ikdd ');
+
 		$(add_button).click(function(e){ 			//on add input button click
 			e.preventDefault();
 			if(x < max_fields){ 					//max input box allowed
@@ -317,18 +356,13 @@ $submitAPI = 'api/enrol_scholar.php';
 		$('#sname').keydown(function (e) {
 			validateText(e);
 		});
-		$('#inputCity').keydown(function (e) {
+		$('#city').keydown(function (e) {
 			validateText(e);
 		});
 		$('#state').keydown(function (e) {
 			validateText(e);
 		});
 	});
-
-	$('#cv').change(function(){
-		validateFile();
-	});
-
 	const Toast = Swal.mixin({
 		toast: true,
 		position: 'top-end',
@@ -359,6 +393,7 @@ $submitAPI = 'api/enrol_scholar.php';
 	}
 	function phoneNumber()
 	{
+		phone_no = $("#phone_no").val();
 		if(phone_no.match(phoneNoReg))
 		{
 			return true;
@@ -369,15 +404,15 @@ $submitAPI = 'api/enrol_scholar.php';
 		}
 	}
 	function validateFile() {
-		var fileSize = document.getElementById('cv').files[0];
-		var sizeInMb = (fileSize.size/1024)/1024;
+		var selectedFile = fileInput.files[0];
+		var sizeInMb = (selectedFile.size/1024)/1024;
 		var sizeLimit= 2;
 		if (sizeInMb > sizeLimit) {
 			popUpMsg('File size must be less than 2MB!');
 			$("#cv").focus()
 			return false;
 		}
-		var filename = document.getElementById('cv').value;
+		var filename = fileInput.value;
 		var extension = filename.replace(/^.*\./, '');
 		if (extension == filename) {
 			extension = '';
@@ -395,14 +430,15 @@ $submitAPI = 'api/enrol_scholar.php';
 			case 'xlsx':
 				break;
 			default: 
-				popUpMsg('Invalid file! Recommended file type pdf, docx, xlsx!')
+				popUpMsg('Please upload valid file! Supported file type pdf, docx, xlsx!')
 				$("#cv").focus()
 				return false;
 		}
 		return true;
 	}
 	function isFileUploaded(){
-		if (document.getElementById('cv').value) {
+		// if file is empty return true else validate file property 
+		if (fileInput.value) {
 			return validateFile();
 		} else {
 			return true;
@@ -412,13 +448,12 @@ $submitAPI = 'api/enrol_scholar.php';
 		name = $("#sname").val();
 		email = $("#semail").val();
 		address = $("#sadd").val();
-		inputCity = $("#inputCity").val();
+		city = $("#city").val();
 		state = $("#state").val();
 		country = $("#country").val();
 		work_name = $("#work_name").val();
 		area_of_work = $("#area_of_work").val();
 		designation = $("#designation").val();
-		cv = $("#cv").val();
 		profile_link = $("#profile_link").val();
 		permanent_address = $("#permanent_address").val();
 		phone_no = $("#phone_no").val();
@@ -436,8 +471,8 @@ $submitAPI = 'api/enrol_scholar.php';
 		} else if (address=="") {
 			$("#sadd").focus();
 			popUpMsg('Address is required, Please enter Address!');
-		} else if (inputCity=="") {
-			$("#inputCity").focus();
+		} else if (city=="") {
+			$("#city").focus();
 			popUpMsg('Please enter your city!');
 		} else if (state=="") {
 			$("#state").focus();
@@ -457,7 +492,7 @@ $submitAPI = 'api/enrol_scholar.php';
 		} else if (phone_no=="") {
 			$("#phone_no").focus();
 			popUpMsg('Please enter your Contact Number!');
-		} else if (cv=="" && profile_link=="") {
+		} else if (fileInput.value=="" && profile_link=="") {
 			$("#profile_link").focus();
 			popUpMsg('Please Upload CV or share your Profile Link!');
 		} else if (permanent_address=="") {
@@ -476,23 +511,25 @@ $submitAPI = 'api/enrol_scholar.php';
 	{
 		if (value==2) {
 			if (validateEmptyFields() && isFileUploaded() && phoneNumber()) {
+				work_type = $('.work_type:checked').val();
 				data = {
 					name:name,
 					email:email,
 					address:address,
-					inputCity:inputCity,
+					city:city,
 					state:state,
 					country:country,
 					work_name:work_name,
 					area_of_work:area_of_work,
 					designation:designation,
-					cv:cv,
 					profile_link:profile_link,
+					cv:encoded_file,
+					file_name:file_name,
 					permanent_address:permanent_address,
 					phone_no:phone_no,
 					type_of_eng:type_of_eng,
+					work_type:work_type,
 				}
-				data.work_type = $('.work_type:checked').val();
 
 				$("#buttonBox1").addClass("d-none");
 				$("#box2").removeClass("d-none");
@@ -539,12 +576,19 @@ $submitAPI = 'api/enrol_scholar.php';
 					}
 				}
 			}
-			// console.log(data);
+			console.log(data);
 			AmagiLoader.show();
+
+			var token = "<?php echo '000guug66' ?>";
+			console.log('token');
+			console.log(token);
 			$.ajax({
 				type: "POST",
 				url: "<?php echo $submitAPI; ?>",
 				data: JSON.stringify(data),
+				headers: {
+					'X-CSRF-Token': token 
+				},
 				success: function(res)
 				{
 					AmagiLoader.hide();
@@ -552,8 +596,8 @@ $submitAPI = 'api/enrol_scholar.php';
 					console.log(res);
 					console.log(responseData);
 					if (responseData.flag && responseData.status=='200') {
-						popUpMsg(responseData.message, "", "success");
-						loaderTimeOut();
+						// popUpMsg(responseData.message, "", "success");
+						// loaderTimeOut();
 						window.scrollTo({ top: 0, behavior: 'smooth' });
 					} else {
 						popUpMsg(responseData.message, "", "error");

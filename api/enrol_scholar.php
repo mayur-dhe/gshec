@@ -15,9 +15,13 @@
     } 
     
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        header("Access-Control-Allow-Origin: *");
+        header("Content-Type: application/json; charset=UTF-8");
+        header("Access-Control-Allow-Methods: POST");
+        header("Access-Control-Max-Age: 3600");
+        header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
+
         $postData = json_decode(file_get_contents("php://input"), true);
-        // print_r($postData);
-        // exit();
 
         $name = $postData['name'] ?? '';
         $email = $postData['email'] ?? '';
@@ -29,7 +33,8 @@
         $work_name = $postData['work_name'] ?? '';
         $area_of_work = $postData['area_of_work'] ?? '';
         $designation = $postData['designation'] ?? '';
-        $cv = $postData['cv'] ?? '';
+        $encodedFileContent = $postData['cv'] ?? '';
+        $encodedFileName = $postData['file_name'] ?? '';
         $profile_link = $postData['profile_link'] ?? '';
         $permanent_address = $postData['permanent_address'] ?? '';
         $phone_no = $postData['phone_no'] ?? '';
@@ -40,7 +45,22 @@
         $local_work = $postData['local_work'] ?? '';
         $isRecommendations = $postData['isRecommendations'] ?? '';
         $recommendations = $postData['recommendations'] ?? [];
-        
+
+
+        if(!is_dir('uploadfile'))
+        {
+            mkdir ('uploadfile',0777);
+        }
+
+        $filename = '';
+        if ($encodedFileContent) {
+            $decodedFileContent = base64_decode($encodedFileContent); 
+            // Save the file to the server
+            $filename = 'uploadfile/'.uniqid().$encodedFileName;
+            // move_uploaded_file($filename, $decodedFileContent);
+            file_put_contents($filename, $decodedFileContent);
+        }
+
         $query="INSERT INTO scholar (name, email, address, city, state, country, designation, cv, profile_link, permanent_address, phone_no, type_of_eng, work_type, work_name, area_of_work, visit_freq, local_address, local_work) 
                 VALUES (:name, :email, :address, :city, :state, :country, :designation, :cv, :profile_link, :permanent_address, :phone_no, :type_of_eng, :work_type, :work_name, :area_of_work, :visit_freq, :local_address, :local_work)";
         $stmt = $conn->prepare($query);
@@ -52,7 +72,7 @@
                     ':state' => $state,
                     ':country' => $country,
                     ':designation' => $designation,
-                    ':cv' => $cv,
+                    ':cv' => $filename,
                     ':profile_link' => $profile_link,
                     ':permanent_address' => $permanent_address,
                     ':phone_no' => $phone_no,
@@ -93,5 +113,6 @@
         } else {
             echo json_encode(['flag'=>false, 'status'=>'500', 'message'=>'Failed to save data. Please, try again !']);
         }
+        return true;
     }
 ?>
