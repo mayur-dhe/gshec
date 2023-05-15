@@ -293,6 +293,23 @@ $submitAPI = 'api/enrol_scholar.php';
 	}
 	// Wait for the DOM to be ready
 	$(function() {
+		
+		$("#sname").val('mayur');
+		$("#semail").val('mayur@gmail.com');
+		$("#sadd").val("goa india");
+		$("#city").val("quepem");
+		$("#state").val('Goa');
+		$("#country").val("India");
+		$("#work_name").val('engineer');
+		$("#area_of_work").val('Lead');
+		$("#designation").val('Developer');
+		$("#permanent_address").val('india goa');
+		$("#phone_no").val('8976543268');
+		$("#type_of_eng").val('siper ikdd ');
+		$("#profile_link").val('https://www.w3schools.com');
+		console.log('remove ');
+
+		
 		$(add_button).click(function(e){ 			//on add input button click
 			e.preventDefault();
 			if(x < max_fields){ 					//max input box allowed

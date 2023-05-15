@@ -15,12 +15,6 @@
     } 
     
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        header("Access-Control-Allow-Origin: *");
-        header("Content-Type: application/json; charset=UTF-8");
-        header("Access-Control-Allow-Methods: POST");
-        header("Access-Control-Max-Age: 3600");
-        header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
-
         $postData = json_decode(file_get_contents("php://input"), true);
 
         $name = $postData['name'] ?? '';
@@ -33,8 +27,8 @@
         $work_name = $postData['work_name'] ?? '';
         $area_of_work = $postData['area_of_work'] ?? '';
         $designation = $postData['designation'] ?? '';
-        $encodedFileContent = $postData['cv'] ?? '';
-        $encodedFileName = $postData['file_name'] ?? '';
+        $encodedFileContent = $postData['file'] ?? '';
+        $fileName = $postData['file_name'] ?? '';
         $profile_link = $postData['profile_link'] ?? '';
         $permanent_address = $postData['permanent_address'] ?? '';
         $phone_no = $postData['phone_no'] ?? '';
@@ -46,19 +40,12 @@
         $isRecommendations = $postData['isRecommendations'] ?? '';
         $recommendations = $postData['recommendations'] ?? [];
 
-
-        if(!is_dir('uploadfile'))
-        {
-            mkdir ('uploadfile',0777);
-        }
-
-        $filename = '';
+        $filePath = '';
         if ($encodedFileContent) {
-            $decodedFileContent = base64_decode($encodedFileContent); 
+            $decodedFileContent = base64_decode($encodedFileContent);
             // Save the file to the server
-            $filename = 'uploadfile/'.uniqid().$encodedFileName;
-            // move_uploaded_file($filename, $decodedFileContent);
-            file_put_contents($filename, $decodedFileContent);
+            $filePath = 'uploads/'.uniqid().$fileName;
+            file_put_contents('../'.$filePath, $decodedFileContent);
         }
 
         $query="INSERT INTO scholar (name, email, address, city, state, country, designation, cv, profile_link, permanent_address, phone_no, type_of_eng, work_type, work_name, area_of_work, visit_freq, local_address, local_work) 
@@ -72,7 +59,7 @@
                     ':state' => $state,
                     ':country' => $country,
                     ':designation' => $designation,
-                    ':cv' => $filename,
+                    ':cv' => $filePath,
                     ':profile_link' => $profile_link,
                     ':permanent_address' => $permanent_address,
                     ':phone_no' => $phone_no,

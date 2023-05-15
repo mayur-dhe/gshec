@@ -18,9 +18,7 @@ initiatives - activity pending data
 
 <!-- --------------------------------------------------- -->
 <!-- craftitt upload    -->
-Enrol me 
-	page 
-	api
+
 <!-- upload on gshec edu -->
 alter
 	admin 
