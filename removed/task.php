@@ -15,7 +15,6 @@ teams - project icons
 initiatives - activity pending data  
 <!-- --------------------------------------------------- -->
 <!-- find me -->
-
 <!-- --------------------------------------------------- -->
 <!-- craftitt upload    -->
 
@@ -28,7 +27,18 @@ alter
 	assets
 		css
 			template 
+		js
+			custome frontend js
 		images 
+			tip
+				5 * folder
+			tle 
+				obe 
+					img 23,26,22,1
+				rbi 
+					3 * img
+				fdp 
+					9 * add images ----------------
 			nep, sdc* 
 				- * cover.lpg 
 			initiatives-bg.jpg
@@ -51,6 +61,9 @@ alter
 	data 
 		nep 
 		initiatives
+		tip 
+		tlet 
+		teams
 	add folder 
 		uploads
 	pages 
@@ -66,6 +79,9 @@ alter
 		rusa 
 		sdc project 
 		sdc
+		rdi 
+		tlet 
+		tip 
 	<!-- testing on hold - no effect  -->
 	vendor 
 		bootstrap 
@@ -73,4 +89,6 @@ alter
 				bootstrap min css 
 	assets/js/isotope.min.js 
 <!-- --------------------------------------------------- -->
+
+
 

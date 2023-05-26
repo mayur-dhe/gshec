@@ -2206,6 +2206,10 @@ responsive
   padding: 14px 20px 14px 30px !important;
   font-size: 0.9rem !important;
 }
+.tab button.sub_activities {
+  padding: 14px 20px 14px 40px !important;
+  font-size: 0.9rem !important;
+}
 .dd-icon {
   display: inline-flex;
   flex-wrap: wrap;
@@ -2213,6 +2217,9 @@ responsive
   width: 70%;
   height: 24px;
   align-content: end;
+}
+.dd-icon2 {
+  width: 78%;
 }
 .tab button.title {
   font-size: 1.4rem;
@@ -2782,8 +2789,11 @@ responsive
   height: -webkit-fill-available;
   color: #ffffff00 !important;
   font-size: 35px;
-  cursor: pointer;
+  cursor: zoom-out;
   background-color: rgba(61, 61, 61, 0);
+}
+.closeParent {
+  cursor: zoom-out !important;
 }
 .expandContainer {  
   padding: 0px 40px 30px;
@@ -2849,7 +2859,7 @@ responsive
 .gallery__img:hover {
   opacity: 1;
   transition: .5s ease;
-  cursor: pointer;
+  cursor: zoom-in;
   padding: 6px;
 }
 .g_img_opc:hover {
@@ -2916,168 +2926,222 @@ responsive
   /* grid-column: 5 / span 4; */
   /* grid-row: 6 / span 3; */
 }
-/* layout 1 - 5 images - Goa Science Lecture Series 1 */
+/* start layout 1 - 5 images - Goa Science Lecture Series 1 */
 .gallery__item_1--1 {
-  grid-column: 1 / span 4; 
-  grid-row: 1 / span 3;
-}
-.gallery__item_1--2 {
-  grid-column: 5 / span 4; 
-  grid-row: 1 / span 4;
-}
-.gallery__item_1--3 {
-  grid-column: 1 / span 4; 
-  grid-row: 4 / span 5;
-}
-.gallery__item_1--4 {
-  grid-column: 5 / span 2; 
-  grid-row: 5 / span 4;
-}
-.gallery__item_1--5 {
-  grid-column: 7 / span 2; 
-  grid-row: 5 / span 4;
-}
+    grid-column: 1 / span 4; 
+    grid-row: 1 / span 3;
+  }
+  .gallery__item_1--2 {
+    grid-column: 5 / span 4; 
+    grid-row: 1 / span 4;
+  }
+  .gallery__item_1--3 {
+    grid-column: 1 / span 4; 
+    grid-row: 4 / span 5;
+  }
+  .gallery__item_1--4 {
+    grid-column: 5 / span 2; 
+    grid-row: 5 / span 4;
+  }
+  .gallery__item_1--5 {
+    grid-column: 7 / span 2; 
+    grid-row: 5 / span 4;
+  }
 /* layout 2 - 4 images - Grant Writing Workshop 1 */
 .gallery__item_2--1 {
-  grid-column: 1 / span 4; 
-  grid-row: 1 / span 3;
-}
-.gallery__item_2--2 {
-  grid-column: 5 / span 4; 
-  grid-row: 1 / span 8;
-}
-.gallery__item_2--3 {
-  grid-column: 1 / span 4; 
-  grid-row: 4 / span 2;
-}
-.gallery__item_2--4 {
-  grid-column: 1 / span 4; 
-  grid-row: 6 / span 3;
-}
+    grid-column: 1 / span 4; 
+    grid-row: 1 / span 3;
+  }
+  .gallery__item_2--2 {
+    grid-column: 5 / span 4; 
+    grid-row: 1 / span 8;
+  }
+  .gallery__item_2--3 {
+    grid-column: 1 / span 4; 
+    grid-row: 4 / span 2;
+  }
+  .gallery__item_2--4 {
+    grid-column: 1 / span 4; 
+    grid-row: 6 / span 3;
+  }
 /* layout 3 x - 3 images - Grant Writing Workshop 2 */
 /* layout 3 x - 3 images - NFOMP Workshop 3 */
 .gallery__item_3--1 {
-  grid-column: 1 / span 8; 
-  grid-row: 1 / span 4;
-}
-.gallery__item_3--2 {
-  grid-column: 1 / span 4; 
-  grid-row: 5 / span 4;
-}
-.gallery__item_3--3 {
-  grid-column: 5 / span 4; 
-  grid-row: 5 / span 4;
-}
+    grid-column: 1 / span 8; 
+    grid-row: 1 / span 4;
+  }
+  .gallery__item_3--2 {
+    grid-column: 1 / span 4; 
+    grid-row: 5 / span 4;
+  }
+  .gallery__item_3--3 {
+    grid-column: 5 / span 4; 
+    grid-row: 5 / span 4;
+  }
 /* layout 4 y - 3 images - Librarian Workshop 1 */
 /* layout 4 y - 3 images - RDI Meeting in Colleges */
 .gallery__item_4--1 {
-  grid-column: 1 / span 4; 
-  grid-row: 1 / span 8;
-}
-.gallery__item_4--2 {
-  grid-column: 5 / span 4; 
-  grid-row: 1 / span 4;
-}
-.gallery__item_4--3 {
-  grid-column: 5 / span 4; 
-  grid-row: 5 / span 4;
-}
-/* layout 5 - 10 images - NFOMP Workshop 1 */
-.gallery__item_5--1 {
-  grid-column: 1 / span 3; 
-  grid-row: 1 / span 3;
-}
-.gallery__item_5--2 {
-  grid-column: 4 / span 2; 
-  grid-row: 1 / span 3;
-}
-.gallery__item_5--3 {
-  grid-column: 6 / span 4; 
-  grid-row: 1 / span 3;
-}
-.gallery__item_5--4 {
-  grid-column: 1 / span 3; 
-  grid-row: 4 / span 3;
-}
-.gallery__item_5--5 {
-  grid-column: 4 / span 3; 
-  grid-row: 4 / span 3;
-}
-.gallery__item_5--6 {
-  grid-column: 7 / span 3; 
-  grid-row: 4 / span 2;
-}
-.gallery__item_5--7 {
-  grid-column: 7 / span 3; 
-  grid-row: 6 / span 2;
-}
-.gallery__item_5--8 {
-  grid-column: 1 / span 3; 
-  grid-row: 7 / span 3;
-}
-.gallery__item_5--9 {
-  grid-column: 4 / span 3; 
-  grid-row: 7 / span 3;
-}
-.gallery__item_5--10 {
-  grid-column: 7 / span 3; 
-  grid-row: 8 / span 2;
-}
+    grid-column: 1 / span 4; 
+    grid-row: 1 / span 8;
+  }
+  .gallery__item_4--2 {
+    grid-column: 5 / span 4; 
+    grid-row: 1 / span 4;
+  }
+  .gallery__item_4--3 {
+    grid-column: 5 / span 4; 
+    grid-row: 5 / span 4;
+  }
+  /* layout 5 - 10 images - NFOMP Workshop 1 */
+  .gallery__item_5--1 {
+    grid-column: 1 / span 3; 
+    grid-row: 1 / span 3;
+  }
+  .gallery__item_5--2 {
+    grid-column: 4 / span 2; 
+    grid-row: 1 / span 3;
+  }
+  .gallery__item_5--3 {
+    grid-column: 6 / span 4; 
+    grid-row: 1 / span 3;
+  }
+  .gallery__item_5--4 {
+    grid-column: 1 / span 3; 
+    grid-row: 4 / span 3;
+  }
+  .gallery__item_5--5 {
+    grid-column: 4 / span 3; 
+    grid-row: 4 / span 3;
+  }
+  .gallery__item_5--6 {
+    grid-column: 7 / span 3; 
+    grid-row: 4 / span 2;
+  }
+  .gallery__item_5--7 {
+    grid-column: 7 / span 3; 
+    grid-row: 6 / span 2;
+  }
+  .gallery__item_5--8 {
+    grid-column: 1 / span 3; 
+    grid-row: 7 / span 3;
+  }
+  .gallery__item_5--9 {
+    grid-column: 4 / span 3; 
+    grid-row: 7 / span 3;
+  }
+  .gallery__item_5--10 {
+    grid-column: 7 / span 3; 
+    grid-row: 8 / span 2;
+  }
 /* layout 6 - 9 images - mooc */
 .gallery__item_6--1 {
-  grid-column: 1 / span 3; 
-  grid-row: 1 / span 2;
-}
-.gallery__item_6--2 {
-  grid-column: 4 / span 3; 
-  grid-row: 1 / span 2;
-}
-.gallery__item_6--3 {
-  grid-column: 7 / span 3; 
-  grid-row: 1 / span 3;
-}
-.gallery__item_6--4 {
-  grid-column: 1 / span 3; 
-  grid-row: 3 / span 3;
-}
-.gallery__item_6--5 {
-  grid-column: 4 / span 3; 
-  grid-row: 3 / span 3;
-}
-.gallery__item_6--6 {
-  grid-column: 1 / span 3; 
-  grid-row: 6 / span 3;
-}
-.gallery__item_6--7 {
-  grid-column: 7 / span 3; 
-  grid-row: 4 / span 3;
-}
-.gallery__item_6--8 {
-  grid-column: 4 / span 3; 
-  grid-row: 6 / span 3;
-}
-.gallery__item_6--9 {
-  grid-column: 7 / span 3; 
-  grid-row: 7 / span 2;
-}
+    grid-column: 1 / span 3; 
+    grid-row: 1 / span 2;
+  }
+  .gallery__item_6--2 {
+    grid-column: 4 / span 3; 
+    grid-row: 1 / span 2;
+  }
+  .gallery__item_6--3 {
+    grid-column: 7 / span 3; 
+    grid-row: 1 / span 3;
+  }
+  .gallery__item_6--4 {
+    grid-column: 1 / span 3; 
+    grid-row: 3 / span 3;
+  }
+  .gallery__item_6--5 {
+    grid-column: 4 / span 3; 
+    grid-row: 3 / span 3;
+  }
+  .gallery__item_6--6 {
+    grid-column: 1 / span 3; 
+    grid-row: 6 / span 3;
+  }
+  .gallery__item_6--7 {
+    grid-column: 7 / span 3; 
+    grid-row: 4 / span 3;
+  }
+  .gallery__item_6--8 {
+    grid-column: 4 / span 3; 
+    grid-row: 6 / span 3;
+  }
+  .gallery__item_6--9 {
+    grid-column: 7 / span 3; 
+    grid-row: 7 / span 2;
+  }
 /* layout 7 - 26 images - obe */
 .gallery__item_7--1 {
+    grid-column: 1 / span 4; 
+    grid-row: 1 / span 2;
+  }
+  .gallery__item_7--2 {
+    grid-column: 5 / span 4; 
+    grid-row: 1 / span 3;
+  }
+  .gallery__item_7--3 {
+    grid-column: 1 / span 4; 
+    grid-row: 3 / span 3;
+  }
+  .gallery__item_7--4 {
+    grid-column: 1 / span 4; 
+    grid-row: 6 / span 3;
+  }
+  
+/* layout 8 - 7 images - FDB */
+.gallery__item_8--1 {
+    grid-column: 1 / span 4; 
+    grid-row: 1 / span 3;
+  }
+  .gallery__item_8--2 {
+    grid-column: 5 / span 5; 
+    grid-row: 1 / span 3;
+  }
+  .gallery__item_8--3 {
+    grid-column: 1 / span 3; 
+    grid-row: 4 / span 3;
+  }
+  .gallery__item_8--4 {
+    grid-column: 4 / span 3; 
+    grid-row: 4 / span 2;
+  }
+  .gallery__item_8--5 {
+    grid-column: 7 / span 3; 
+    grid-row: 4 / span 2;
+  }
+  .gallery__item_8--6 {
+    grid-column: 1 / span 3; 
+    grid-row: 7 / span 2;
+  }
+  .gallery__item_8--7 {
+    grid-column: 4 / span 6; 
+    grid-row: 6 / span 3;
+  }
+/* layout 9 - 6 images - tip */
+.gallery__item_9--1 {
   grid-column: 1 / span 4; 
-  grid-row: 1 / span 2;
-}
-.gallery__item_7--2 {
-  grid-column: 5 / span 4; 
   grid-row: 1 / span 3;
 }
-.gallery__item_7--3 {
-  grid-column: 1 / span 4; 
-  grid-row: 3 / span 3;
+.gallery__item_9--2 {
+  grid-column: 5 / span 6; 
+  grid-row: 1 / span 3;
 }
-.gallery__item_7--4 {
+.gallery__item_9--3 {
   grid-column: 1 / span 4; 
-  grid-row: 6 / span 3;
+  grid-row: 4 / span 3;
 }
-
+.gallery__item_9--4 {
+  grid-column: 5 / span 6; 
+  grid-row: 4 / span 2;
+}
+.gallery__item_9--5 {
+  grid-column: 1 / span 4; 
+  grid-row: 7 / span 3;
+}
+.gallery__item_9--6 {
+  grid-column: 5 / span 6; 
+  grid-row: 6 / span 4;
+}
 
 /* project image box 2 ---------- */
 /* Projects  */

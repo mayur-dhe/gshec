@@ -224,7 +224,7 @@
             'title' => 'FDP on Banking for Business Process',
             'data' => array(
                 array(
-                    'url' => 'assets/images/initiatives/fdb_on_banking/FDP_group.JPG',
+                    'url' => 'assets/images/initiatives/fdb_on_banking/FDP_group.jpg',
                     'alt' => '',
                 ),
                 array(

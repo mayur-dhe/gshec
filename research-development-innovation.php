@@ -20,7 +20,7 @@
   }
   .tab button:hover {
     color: var(--yellow);
-  }
+  } 
 </style>
   <!-- ------------- Main Content Start---------------------- -->
   <section class="mt_n132">

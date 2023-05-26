@@ -17,6 +17,9 @@ require 'layout/top-header.php';
 	font-size: 25px;
 	color: var(--yellow) !important;
 }
+.tab {
+    margin-top: 40px !important;
+}
 </style>	
 <body class="reading-pages">
 <?php 
@@ -31,16 +34,16 @@ $submitAPI = 'api/enrol_scholar.php';
 <section class="page-section">
 	<div class="container" style="padding: 30px 40px;">
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-md-12 col-lg-12 p-0">
 				<h4 class="textAlign-center font_dancing pb20" id="form_start">Enrol for Dnyan Sangrah</h4>
-			</div>
-			<div class="col-md-12" id="box1">
-				<legend class="form-design">Personal Information</legend>
-				<div class="row">
-					<div class="d-none d-lg-block col-lg-4">
-						<img class="img-fluid" src="assets/images/personal form.png" alt="">
-					</div>
-					<div class="col-md-12 col-lg-8 pt20">
+				<div id="expandedImg"></div>
+				<div class="tab">
+					<button class="tablinks" onclick="openTabSection(event, 'box1', true, 0)" id="defaultOpen">1. Personal Information</button>
+					<button class="tablinks" onclick="openTabSection(event, 'box2', true, 1)">2. LOCAL CONNECT</button>
+					<button class="tablinks" onclick="openTabSection(event, 'box3', true, 1)">3. RECOMMENDATION <br>[Any other scholar]</button>
+				</div>	
+				<div class="tabcontent" id="box1">
+					<div class="col-md-12 col-lg-12 pt20">
 						<div class="row g-3">
 							<div class="col-md-6">
 								<label class="control-label star" for="sname">Name</label>  
@@ -134,19 +137,9 @@ $submitAPI = 'api/enrol_scholar.php';
 							</div>
 						</div>
 					</div>
-					<div class="form-group col-md-12 text-end" id="buttonBox1">
-						<button type="button" class="btn btn-primary btn_size" onclick="changePage(2);"> Next</button>
-					</div>
 				</div>
-			</div>
-		
-			<div class="col-md-12 d-none" id="box2">
-				<legend class="form-design form-design-2">LOCAL CONNECT</legend>
-				<div class="row">
-					<div class="d-none d-lg-block col-lg-6">
-						<img class="img-fluid" src="assets/images/referrals.png" alt="">
-					</div>
-					<div class="col-md-12 col-lg-6 pt20">
+				<div class="tabcontent" id="box2">
+					<div class="col-md-12 col-lg-12 pt20">
 						<div class="row g-3">
 							<!-- Multiple Radios (inline) -->
 							<div class="form-group">
@@ -182,56 +175,51 @@ $submitAPI = 'api/enrol_scholar.php';
 							</div>
 						</div>
 					</div>
-					<div class="form-group col-md-12 text-end" id="buttonBox2">
-						<button type="button" class="btn btn-secondary btn_size" onclick="changePage(1);"> Previous</button>
-						<button type="button" class="btn btn-primary btn_size" onclick="changePage(3);"> Next</button>
-					</div>
 				</div>
-			</div>
-			
-			<div class="col-md-12 d-none" id="box3">
-				<legend class="form-design form-design-3">RECOMMENDATION [Any other scholar]</legend>
-				<div class="row">
+				<div class="tabcontent" id="box3">
 					<div class="col-md-12 col-lg-12 pt20">
 						<div class="row">
-							<div class="col-1 col-md-1 text-center">1</div>
-							<div class="col-11 col-md-11">
-								<div class="row g-3">
-									<div class="form-group col-md-6 col-lg-4 ">
-										<label class="control-label" for="other_name-1">Name</label>  
-										<input id="other_name-1" name="other_name[]" type="text" placeholder="Scholar Name" class="form-control input-md">
-									</div>
-									<div class="form-group col-md-6 col-lg-4 ">
-										<label class="control-label" for="other_email-1">Email</label>  
-										<input id="other_email-1" name="other_email[]" type="text" placeholder="Scholar Email" class="form-control input-md">
-									</div>
-									<div class="form-group col-md-6 col-lg-4 ">
-										<label class="control-label" for="other_contact_no-1">Contact No.</label>  
-										<div class="input-group">
-											<span class="input-group-text" id="basic-addon2">+91</span>
-											<input id="other_contact_no-1" name="other_contact_no[]" type="number" class="form-control input-md" placeholder="" aria-label="Username" aria-describedby="basic-addon2">
+							<div class="col-md-12 col-lg-12 pt20">
+								<div class="row">
+									<div class="col-1 col-md-1 text-center">1</div>
+									<div class="col-11 col-md-11">
+										<div class="row g-3">
+											<div class="form-group col-md-6 col-lg-4 ">
+												<label class="control-label" for="other_name-1">Name</label>  
+												<input id="other_name-1" name="other_name[]" type="text" placeholder="Scholar Name" class="form-control input-md">
+											</div>
+											<div class="form-group col-md-6 col-lg-4 ">
+												<label class="control-label" for="other_email-1">Email</label>  
+												<input id="other_email-1" name="other_email[]" type="text" placeholder="Scholar Email" class="form-control input-md">
+											</div>
+											<div class="form-group col-md-6 col-lg-4 ">
+												<label class="control-label" for="other_contact_no-1">Contact No.</label>  
+												<div class="input-group">
+													<span class="input-group-text" id="basic-addon2">+91</span>
+													<input id="other_contact_no-1" name="other_contact_no[]" type="number" class="form-control input-md" placeholder="" aria-label="Username" aria-describedby="basic-addon2">
+												</div>
+											</div>
+											<div class="form-group col-md-6 col-lg-4 ">
+												<label class="control-label" for="other_designation-1">Designation</label>  
+												<input id="other_designation-1" name="other_designation[]" type="text" placeholder="" class="form-control input-md">
+											</div>
+											<div class="form-group col-md-6 col-lg-4  mb-3">
+												<label class="control-label" for="other_affiliation-1">Affiliation</label>  
+												<input id="other_affiliation-1" name="other_affiliation[]" type="text" placeholder="" class="form-control input-md">
+											</div>
 										</div>
-									</div>
-									<div class="form-group col-md-6 col-lg-4 ">
-										<label class="control-label" for="other_designation-1">Designation</label>  
-										<input id="other_designation-1" name="other_designation[]" type="text" placeholder="" class="form-control input-md">
-									</div>
-									<div class="form-group col-md-6 col-lg-4  mb-3">
-										<label class="control-label" for="other_affiliation-1">Affiliation</label>  
-										<input id="other_affiliation-1" name="other_affiliation[]" type="text" placeholder="" class="form-control input-md">
 									</div>
 								</div>
 							</div>
-						</div>
-					</div>
-					<div class="input_fields_wrap"></div>   <!-- Show Added Days -->
-					<div class="row g-3">
-						<div class="form-group col-md-12 text-end" id="buttonBox2">
-							<button type="button" class="btn btn-secondary btn_size" onclick="changePage(2);"> Previous</button>
-							<button type="button" class="btn btn-info btn_size add_field_button">Add Scholar</button>
-						</div>
-						<div class="form-group col-md-12 text-center">
-							<button type="button" class="btn btn-success btn_size" onclick="submitForm();">Enroll Me</button>
+							<div class="input_fields_wrap"></div>   <!-- Show Added Days -->
+							<div class="row g-3">
+								<div class="form-group col-md-12" style="text-align: right!important" id="buttonBox2">
+									<button type="button" class="btn btn-info btn_size add_field_button">Add Scholar</button>
+								</div>
+								<div class="form-group col-md-12" style="text-align: center!important" >
+									<button type="button" class="btn btn-success btn_size" onclick="submitForm();">Enroll Me</button>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -246,6 +234,7 @@ $submitAPI = 'api/enrol_scholar.php';
 <!-- ***** Footer  ***** -->
 <?php require 'layout/footer.php'; ?>
 <script src="https://cdn.jsdelivr.net/gh/AmagiTech/JSLoader/amagiloader.js"></script>
+<script src="assets/js/custom_frontend.js"></script>
 <script>
 	var data = {};
 	var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
@@ -501,56 +490,6 @@ $submitAPI = 'api/enrol_scholar.php';
 			}
 		}
 		return false;
-	}
-
-	function changePage(value) 
-	{	
-		if (value==1) {
-			$("#box1").removeClass("d-none");
-			$("#buttonBox1").removeClass("d-none");
-
-			$("#box2").addClass("d-none");
-			window.location="#form_start";
-		} else if (value==2) {
-			if (validateEmptyFields() && isFileUploaded() && phoneNumber()) {
-				work_type = $('.work_type:checked').val();
-				data = {
-					name:name,
-					email:email,
-					address:address,
-					city:city,
-					state:state,
-					country:country,
-					work_name:work_name,
-					area_of_work:area_of_work,
-					designation:designation,
-					profile_link:profile_link,
-					file:encoded_file,
-					file_name:file_name,
-					permanent_address:permanent_address,
-					phone_no:phone_no,
-					type_of_eng:type_of_eng,
-					work_type:work_type,
-				}
-
-				$("#box1").addClass("d-none");
-				$("#buttonBox1").addClass("d-none");
-
-				$("#box2").removeClass("d-none");
-				$("#buttonBox2").removeClass("d-none");
-				
-				$("#box3").addClass("d-none");
-				window.location="#form_start";
-			}
-		} else if (value==3) {
-			if (validateEmptyFields() && isFileUploaded() && phoneNumber()) {
-				$("#box2").addClass("d-none");
-				$("#buttonBox2").addClass("d-none");
-				
-				$("#box3").removeClass("d-none");
-				window.location="#form_start";
-			}
-		}
 	}
 
 	function submitForm() 

@@ -81,13 +81,36 @@ require 'layout/top-header.php';
             ?>
                 <button class="tablinks <?php echo $class0 ?>" onclick="showActivity(0); openTabSection(event, 'tab<?php echo $key ?>')" id="<?php echo $id_name ?>"><?php echo $value ?></button>
             <?php } ?>
-            <button class="tablinks" onclick="showActivity(1)">Activity <span class="dd-icon"> <i class="fa fa-caret-right dd-selected-right"></i> <i class="fa fa-caret-down dd-selected-down d-none"></i>  </span> </button>
+            <button class="tablinks" onclick="showActivity(1)">
+              Activity 
+              <span class="dd-icon"> <i class="fa fa-caret-right dd-selected-right"></i> <i class="fa fa-caret-down dd-selected-down d-none"></i>  </span> 
+            </button>
             <?php 
-              foreach ($activity as $key => $value) 
+              foreach ($activity_year_wise as $key => $value) 
               {
+                $yearId = ++$key;
             ?>
-                <button class="d-none activities tablinks <?php echo $class0 ?>" onclick="openTabSection(event, 'tabA<?php echo ++$key ?>')"><?php echo $value ?></button>
-            <?php } ?>
+                <button class="d-none activities tablinks <?php echo $class0 ?>" onclick="showSubActivity(<?php echo $yearId ?>)">
+                  <?php echo $value ?>
+                  <span class="dd-icon dd-icon2"> 
+                    <i class="fa fa-caret-right dd-selected-right2<?php echo $yearId; ?> "></i> 
+                    <i class="fa fa-caret-down dd-selected-down2<?php echo $yearId; ?>  d-none"></i>
+                  </span>
+                </button>
+
+                <?php 
+                  $subTabCount = 0;
+                  foreach ($activities as $key1 => $activity) 
+                  {
+                    if ($activity['year'] == $value) {
+                      $subTabCount += 1;
+                ?>
+                      <button class="d-none sub_activities sub_activity<?php echo $yearId; ?> tablinks <?php echo $class0 ?>" onclick="openTabSection(event, 'tabA<?php echo $yearId.''.$subTabCount ?>')"><?php echo $activity['title'] ?></button>
+                <?php 
+                    }
+                  }
+              }
+            ?>
           </div>
             
           <div id="tab0" class="tabcontent">
@@ -124,7 +147,8 @@ require 'layout/top-header.php';
               </div>
             </div>
           </div>
-          <div id="tabA1" class="tabcontent">
+          <!-- 2022 -->
+          <div id="tabA11-hidden" class="tabcontent">
             <h4><?php echo $tip_installation['title'] ?></h4>
             <div><?php echo $tip_installation['data'] ?></div>
             <div class="col-md-12 p0">  
@@ -134,7 +158,7 @@ require 'layout/top-header.php';
                   foreach ($tip_images['data'] as $key => $value) {
                     if ($value['type'] == 'tcs') {
                       ?>
-                      <figure class="gallery__item gallery__item_5--<?php echo $counter0++; ?>">
+                      <figure class="gallery__item gallery__item_6--<?php echo $counter0++; ?>">
                         <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
                         <!-- <div class="gallery__item-overlay-background"></div>  --> 
                       </figure>
@@ -145,7 +169,231 @@ require 'layout/top-header.php';
               </div>
             </div>
           </div>
-          
+          <div id="tabA11" class="tabcontent list-number">
+            <h4><?php echo $installation_of_tip['title'] ?></h4>
+            <?php 
+              foreach ($installation_of_tip['data'] as $key => $value) {
+                echo '<div>'.$value.'</div>';
+              }
+            ?>
+            <?php 
+              if ($installation_of_tip['list']) 
+              { 
+            ?>
+                <div class="mb0">
+                  <strong> <?php echo $installation_of_tip['list']['title'] ?> </strong>
+                </div>
+                <ol class="pl20">
+                  <?php 
+                    foreach ($installation_of_tip['list']['content'] as $key => $itemValue) 
+                    {
+                  ?>
+                      <li><?php echo $itemValue ?></li>
+                  <?php 
+                    }
+                  ?>
+                </ol>
+            <?php 
+              } 
+            ?>
+            <div class="col-md-12 p0">  
+              <div class="gallery_img_box gib_bg">
+                <?php
+                  $counter0 = 1; 
+                  foreach ($tip_images['data'] as $key => $value) {
+                    if ($value['type'] == 'installation_of_tip') {
+                      ?>
+                      <figure class="gallery__item gallery__item_9--<?php echo $counter0++; ?>">
+                        <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
+                        <!-- <div class="gallery__item-overlay-background"></div>  --> 
+                      </figure>
+                      <?php
+                    }
+                  }
+                ?>
+              </div>
+            </div>
+          </div>
+          <div id="tabA12" class="tabcontent">
+            <h4><?php echo $ibm['title'] ?></h4>
+            <?php 
+              foreach ($ibm['data'] as $key => $value) {
+                echo '<div>'.$value.'</div>';
+              }
+            ?>
+            <div class="col-md-12 p0">  
+              <div class="gallery_img_box gib_bg">
+                <?php
+                  $counter0 = 1; 
+                  foreach ($tip_images['data'] as $key => $value) {
+                    if ($value['type'] == 'ibm') {
+                      ?>
+                      <figure class="gallery__item gallery__item_9--<?php echo $counter0++; ?>">
+                        <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
+                        <!-- <div class="gallery__item-overlay-background"></div>  --> 
+                      </figure>
+                      <?php
+                    }
+                  }
+                ?>
+              </div>
+            </div>
+          </div>
+          <div id="tabA13" class="tabcontent list-number">
+            <h4><?php echo $placement_drive['title'] ?></h4>
+            <?php 
+              foreach ($placement_drive['data1'] as $key => $value) {
+                echo '<div>'.$value.'</div>';
+              }
+            ?>
+            <?php 
+              if ($placement_drive['list-college']) 
+              { 
+            ?>
+                <div class="mb0">
+                  <?php echo $placement_drive['list-college']['title'] ?>
+                </div>
+                <ol class="pl20">
+                  <?php 
+                    foreach ($placement_drive['list-college']['content'] as $key => $itemValue) 
+                    {
+                  ?>
+                      <li><?php echo $itemValue ?></li>
+                  <?php 
+                    }
+                  ?>
+                </ol>
+            <?php 
+              }
+              if ($placement_drive['list-company']) 
+              { 
+            ?>
+                <div class="mb0">
+                  <?php echo $placement_drive['list-company']['title'] ?>
+                </div>
+                <ol class="pl20">
+                  <?php 
+                    foreach ($placement_drive['list-company']['content'] as $key => $itemValue) 
+                    {
+                  ?>
+                      <li><?php echo $itemValue ?></li>
+                  <?php 
+                    }
+                  ?>
+                </ol>
+            <?php 
+              }
+              foreach ($placement_drive['data2'] as $key => $value) {
+                echo '<div>'.$value.'</div>';
+              }
+            ?>
+            <!-- add Image Gallery -->
+          </div>
+          <div id="tabA14" class="tabcontent">
+            <h4><?php echo $tcs_drive['title'] ?></h4>
+            <?php 
+              foreach ($tcs_drive['data'] as $key => $value) {
+                echo '<div>'.$value.'</div>';
+              }
+            ?>
+            <div class="col-md-12 p0">  
+              <div class="gallery_img_box gib_bg">
+                <?php
+                  $counter0 = 1; 
+                  foreach ($tip_images['data'] as $key => $value) {
+                    if ($value['type'] == 'tcs_drive') {
+                      ?>
+                      <figure class="gallery__item gallery__item_2--<?php echo $counter0++; ?>">
+                        <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
+                        <!-- <div class="gallery__item-overlay-background"></div>  --> 
+                      </figure>
+                      <?php
+                    }
+                  }
+                ?>
+              </div>
+            </div>
+          </div>
+          <!-- 2023 -->
+          <div id="tabA21" class="tabcontent list-number">
+            <h4><?php echo $unlu['title'] ?></h4>
+            <?php 
+              foreach ($unlu['data1'] as $key => $value) {
+                echo '<div>'.$value.'</div>';
+              }
+              if ($unlu['list']) 
+              { 
+            ?>
+                <div class="mb0">
+                  <?php echo $unlu['list']['title'] ?>
+                </div>
+                <ol class="pl20">
+                  <?php 
+                    foreach ($unlu['list']['content'] as $key => $itemValue) 
+                    {
+                  ?>
+                      <li><?php echo $itemValue ?></li>
+                  <?php 
+                    }
+                  ?>
+                </ol>
+            <?php 
+              }
+              foreach ($unlu['data2'] as $key => $value) {
+                echo '<div>'.$value.'</div>';
+              }
+            ?>
+
+            <div class="col-md-12 p0">  
+              <div class="gallery_img_box gib_bg">
+                <?php
+                  $counter0 = 1; 
+                  foreach ($tip_images['data'] as $key => $value) {
+                    if ($value['type'] == 'unlu') {
+                      ?>
+                      <figure class="gallery__item gallery__item_9--<?php echo $counter0++; ?>">
+                        <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
+                        <!-- <div class="gallery__item-overlay-background"></div>  --> 
+                      </figure>
+                      <?php
+                    }
+                  }
+                ?>
+              </div>
+            </div>
+          </div>
+          <div id="tabA22" class="tabcontent list-number">
+            <h4><?php echo $newton['title'] ?></h4>
+            <?php 
+              foreach ($newton['data1'] as $key => $value) {
+                echo '<div>'.$value.'</div>';
+              }
+              if ($newton['list']) 
+              { 
+            ?>
+                <div class="mb0">
+                  <?php echo $newton['list']['title'] ?>
+                </div>
+                <ol class="pl20">
+                  <?php 
+                    foreach ($newton['list']['content'] as $key => $itemValue) 
+                    {
+                  ?>
+                      <li><?php echo $itemValue ?></li>
+                  <?php 
+                    }
+                  ?>
+                </ol>
+            <?php 
+              }
+              foreach ($newton['data2'] as $key => $value) {
+                echo '<div>'.$value.'</div>';
+              }
+            ?>
+          </div>
+
+
+          <!-- Image Viewer -->
           <div class="expandContainer d-none" id="expandContainer">
             <div class="grid_size">
               <span onclick="this.parentElement.style.display='none'; closeExpandedImage();" class="closebtn">&times;</span>

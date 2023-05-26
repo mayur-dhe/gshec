@@ -7,9 +7,31 @@
         'Aims & Objectives',
         // 'Activity'
     ];
-    $activity = [
-        'FDP on Outcome Based Education',
-        'MOOCs',
+    $activity_year_wise = [
+        '2022',
+        '2023',
+    ];
+    $activities = [
+        array(
+            'year_id' => 1,
+            'year' => '2022',
+            'title' => 'FDP on Outcome Based Education',
+        ),
+        array(
+            'year_id' => 1,
+            'year' => '2022',
+            'title' => 'MOOCs',
+        ),
+        array(
+            'year_id' => 2,
+            'year' => '2023',
+            'title' => 'RBI',
+        ),
+        array(
+            'year_id' => 2,
+            'year' => '2023',
+            'title' => 'FDP in Banking',
+        ),
     ];
     $about = [
         'title' => 'Centre for Teaching, Learning & Educational Technology',
@@ -63,6 +85,7 @@
     $teaching_learning_images = [
         'title' => 'Centre for Teaching, Learning & Educational Technology',
         'data' => array(
+            // 1
             array(
                 'type' => 'mooc',
                 'url' => 'assets/images/tle/mooc/img-1.jpeg',
@@ -216,12 +239,12 @@
             ),
             array(
                 'type' => 'obe',
-                'url' => 'assets/images/tle/obe/img-22.JPG',
+                'url' => 'assets/images/tle/obe/img-22.jpg',
                 'alt' => '',
             ),
             array(
                 'type' => 'obe',
-                'url' => 'assets/images/tle/obe/img-23.JPG',
+                'url' => 'assets/images/tle/obe/img-23.jpg',
                 'alt' => '',
             ),
             array(
@@ -237,6 +260,58 @@
             array(
                 'type' => 'obe',
                 'url' => 'assets/images/tle/obe/img-26.jpg',
+                'alt' => '',
+            ),
+            // 3
+            array(
+                'type' => 'rbi',
+                'url' => 'assets/images/tle/rbi/group.jpeg',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'rbi',
+                'url' => 'assets/images/tle/rbi/RBI_2.jpeg',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'rbi',
+                'url' => 'assets/images/tle/rbi/RBI_session.jpeg',
+                'alt' => '',
+            ),
+            // 4
+            array(
+                'type' => 'fdp',
+                'url' => 'assets/images/tle/fdp/FDP_group.jpg',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'fdp',
+                'url' => 'assets/images/tle/fdp/pic1.jpg',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'fdp',
+                'url' => 'assets/images/tle/fdp/pic2.jpg',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'fdp',
+                'url' => 'assets/images/tle/fdp/pic3.jpg',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'fdp',
+                'url' => 'assets/images/tle/fdp/pic4.jpg',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'fdp',
+                'url' => 'assets/images/tle/fdp/pic5.jpg',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'fdp',
+                'url' => 'assets/images/tle/fdp/pic6.jpg',
                 'alt' => '',
             ),
         ),

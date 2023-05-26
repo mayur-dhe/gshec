@@ -10,7 +10,13 @@ function isImageExpanded(imgs)
 { 
     if (expandImg.src == imgs.src) {
         hideExpandedImage();
+        imgs.classList.remove("closeParent");
     } else {
+        // if($('.gallery__img').hasClass('closeParent')){
+        //     imgs.classList.remove("closeParent");
+        // }
+        imgs.classList.add("closeParent");
+
         expandImg.src = imgs.src;
         imgText.innerHTML = imgs.alt;
         $("#expandContainer").removeClass("d-none");
@@ -28,25 +34,72 @@ function closeExpandedImage() {
 }
 
 // show Multiple Tabs-----------------------------------------------------------------------------------
-function openTabSection(evt, selectedTab) 
+function openTabSection(evt, selectedTab, isForm=false, isValid=0) 
 {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-    }
     tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(selectedTab).style.display = "block";
-    evt.currentTarget.className += " active";
 
-    if (expandImg.src) {
-        hideExpandedImage();
-    }
+    if (isForm) {
+        if (isValid == 1) {
+            if (validateEmptyFields() && isFileUploaded() && phoneNumber()) {
+                work_type = $('.work_type:checked').val();
+                data = {
+                    name:name,
+                    email:email,
+                    address:address,
+                    city:city,
+                    state:state,
+                    country:country,
+                    work_name:work_name,
+                    area_of_work:area_of_work,
+                    designation:designation,
+                    profile_link:profile_link,
+                    file:encoded_file,
+                    file_name:file_name,
+                    permanent_address:permanent_address,
+                    phone_no:phone_no,
+                    type_of_eng:type_of_eng,
+                    work_type:work_type,
+                }
+                // console.log(data);
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(selectedTab).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+        } else {
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(selectedTab).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        window.location="#form_start";
 
-    $(window).scrollTop(80);// 160
+    } else {
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(selectedTab).style.display = "block";
+        evt.currentTarget.className += " active";
+    
+        if (expandImg.src) {
+            hideExpandedImage();
+        }
+    
+        $(window).scrollTop(80);// 160
+    }
 }
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
@@ -63,6 +116,34 @@ function showActivity(isActivity){
             $(".activities").toggleClass("d-none");
             $(".dd-selected-right").toggleClass("d-none");
             $(".dd-selected-down").toggleClass("d-none");
+        }
+    }
+    showSubActivity('close');
+}
+
+function showSubActivity(isActivity){
+    if (isActivity=='close') {
+        var numItems = $('.activities').length
+        for (let index = 1; index <= numItems; index++) {
+            if($(".sub_activity"+index).hasClass('d-none')){
+                // do nothing
+            } else {
+                $(".sub_activity"+index).toggleClass("d-none");
+                $(".dd-selected-right2"+index).toggleClass("d-none");
+                $(".dd-selected-down2"+index).toggleClass("d-none");
+            }
+        }
+    } else if (isActivity) {
+        $(".sub_activity"+isActivity).toggleClass("d-none");
+        $(".dd-selected-right2"+isActivity).toggleClass("d-none");
+        $(".dd-selected-down2"+isActivity).toggleClass("d-none");
+    } else {
+        if($(".sub_activity"+isActivity).hasClass("d-none")){
+            // do nothing
+        } else {
+            $(".sub_activity"+isActivity).toggleClass("d-none");
+            $(".dd-selected-right2"+isActivity).toggleClass("d-none");
+            $(".dd-selected-down2"+isActivity).toggleClass("d-none");
         }
     }
 }
