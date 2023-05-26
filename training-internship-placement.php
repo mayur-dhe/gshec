@@ -19,6 +19,11 @@ require 'layout/top-header.php';
   include 'data/tip.php';
 ?>
 <style>
+  @media (min-width: 1400px) {
+    .header-area .main-nav .nav {
+      width: 978px;
+    }
+  }
   /* section.heading-page {
     background-image: url(assets/images/tip/cover-img.jpg);
     padding-bottom: 430px;
@@ -147,6 +152,37 @@ require 'layout/top-header.php';
               </div>
             </div>
           </div>
+          <div id="tab4" class="tabcontent">
+            <h4><?php echo $team['title']?></h4>
+            <div class="row gy-4">
+              <?php 
+                foreach ($team['data'] as $key => $value) {
+              ?>
+                  <div class="col-12 col-md-4 col-xl-4">
+                    <div class="profile-thumb">
+                      <img class="profile-thumb-img img_bgColor" src="<?php echo $value['url']; ?>" alt="">
+                      <div class="profile-thumb-gradient"></div>
+                      <div class="profile-thumb-anim">
+                        <h5 class="profile-thumb-title ptt-2"><?php echo $value['name']; ?></h5>
+                        <p class="profile-thumb-description fontSize-12 textAlign-left" style="font-size: 12px !important;">
+                          <?php echo $value['designation']; ?><br><br>
+                          <?php if ($value['linkedin']) { ?>
+                              <a href="<?php echo $value['linkedin'];?>" target="_blank" class="fa fa-linkedin"> Click to open Linked-in Profile</a><br>
+                          <?php } 
+                            if ($value['google_link']) { ?>
+                              <a href="<?php echo $value['google_link']; ?>" target="_blank" class="fa fa-google"> Click to open Profile</a>
+                          <?php } ?>
+                        </p>
+                        <div class="profile-thumb-author"></div>
+                      </div>
+                    </div>
+                  </div>
+              <?php
+                }
+              ?>
+            </div>
+          </div>
+
           <!-- 2022 -->
           <div id="tabA11-hidden" class="tabcontent">
             <h4><?php echo $tip_installation['title'] ?></h4>

@@ -94,9 +94,22 @@
                 ),
     ];
     $team = [
-        'title' => 'Teams',
+        'title' => 'Training, Internship and Placement Cell Team',
         'data' => array(
-                    '',
+                    array(
+                        'name' => 'Niyan Marchon',
+                        'designation' => 'Nodal officer of TIP',
+                        'url' => 'assets/images/tip/team/Nodal officer of TIP - Niyan Marchon.jpg',
+                        'linkedin' => '',
+                        'google_link' => '',
+                    ),
+                    array(
+                        'name' => 'Dr. Anson Albuquerque',
+                        'designation' => 'Member',
+                        'url' => 'assets/images/tip/team/Member - Dr. Anson Albuquerque.jpg',
+                        'linkedin' => '',
+                        'google_link' => '',
+                    ),
                 ),
     ];
 

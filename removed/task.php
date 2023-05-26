@@ -17,6 +17,11 @@ initiatives - activity pending data
 <!-- find me -->
 <!-- --------------------------------------------------- -->
 <!-- craftitt upload    -->
+new 
+	data 
+		tip
+	pages 
+		tip 
 
 <!-- upload on gshec edu -->
 alter
@@ -31,7 +36,7 @@ alter
 			custome frontend js
 		images 
 			tip
-				5 * folder
+				6 * folder
 			tle 
 				obe 
 					img 23,26,22,1
@@ -89,6 +94,4 @@ alter
 				bootstrap min css 
 	assets/js/isotope.min.js 
 <!-- --------------------------------------------------- -->
-
-
 
