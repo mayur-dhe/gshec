@@ -5,19 +5,52 @@
         'Vision',
         'Mission',
         // 'Activity'
-        // 'Center for Research, Development & Innovations',
-        // 'Teaching, Learning and Educational Technology',
-        // 'Infrastructure Development',
-        // 'Community',
     ];
-    $activity = [
-        'Goa Science Lecture Series 1',
-        'Grant Writing Workshop 1',
-        'Grant Writing Workshop 2',
-        'Librarian Workshop 1',
-        'NFOMP Workshop 1',
-        'NFOMP Workshop 3',
-        'RDI Meeting in Colleges',
+    $activity_year_wise = [
+        '2022',
+        '2023',
+    ];
+    $activities = [
+        array(
+            'year_id' => 1,
+            'year' => '2022',
+            'title' => 'Goa Science Lecture Series 1',
+        ),
+        array(
+            'year_id' => 1,
+            'year' => '2022',
+            'title' => 'Grant Writing Workshop 1',
+        ),
+        array(
+            'year_id' => 1,
+            'year' => '2022',
+            'title' => 'Grant Writing Workshop 2',
+        ),
+        array(
+            'year_id' => 1,
+            'year' => '2022',
+            'title' => 'Librarian Workshop 1',
+        ),
+        array(
+            'year_id' => 1,
+            'year' => '2022',
+            'title' => 'NFOMP Workshop 1',
+        ),
+        array(
+            'year_id' => 1,
+            'year' => '2022',
+            'title' => 'NFOMP Workshop 3',
+        ),
+        array(
+            'year_id' => 1,
+            'year' => '2022',
+            'title' => 'RDI Meeting in Colleges',
+        ),
+        array(
+            'year_id' => 2,
+            'year' => '2023',
+            'title' => 'Vidnyan Dhara',
+        ),
     ];
 
 
@@ -56,134 +89,187 @@
             // 1
             array(
                 'type' => 'Goa Science Lecture Series 1',
-                'url' => 'assets/images/rdi/Goa Science Lecture Series 1/cARMEL hss.jpg',
+                'url' => 'assets/images/rdi/2022_Goa Science Lecture Series 1/cARMEL hss.jpg',
             ),
             array(
                 'type' => 'Goa Science Lecture Series 1',
-                'url' => 'assets/images/rdi/Goa Science Lecture Series 1/IMG-20220314-WA0034.jpg',
+                'url' => 'assets/images/rdi/2022_Goa Science Lecture Series 1/IMG-20220314-WA0034.jpg',
             ),
             array(
                 'type' => 'Goa Science Lecture Series 1',
-                'url' => 'assets/images/rdi/Goa Science Lecture Series 1/IMG-20220310-WA0088.jpg',
+                'url' => 'assets/images/rdi/2022_Goa Science Lecture Series 1/IMG-20220310-WA0088.jpg',
             ),
             array(
                 'type' => 'Goa Science Lecture Series 1',
-                'url' => 'assets/images/rdi/Goa Science Lecture Series 1/rdi pic1.jpg',
+                'url' => 'assets/images/rdi/2022_Goa Science Lecture Series 1/rdi pic1.jpg',
             ),
             array(
                 'type' => 'Goa Science Lecture Series 1',
-                'url' => 'assets/images/rdi/Goa Science Lecture Series 1/rdi pic2.png',
+                'url' => 'assets/images/rdi/2022_Goa Science Lecture Series 1/rdi pic2.png',
             ),  
             // 2
             array(
                 'type' => 'Grant Writing Workshop 1',
-                'url' => 'assets/images/rdi/Grant Writing Workshop 1/IMG-3.jpg',
+                'url' => 'assets/images/rdi/2022_Grant Writing Workshop 1/IMG-3.jpg',
             ),
             array(
                 'type' => 'Grant Writing Workshop 1',
-                'url' => 'assets/images/rdi/Grant Writing Workshop 1/IMG-1.jpg',
+                'url' => 'assets/images/rdi/2022_Grant Writing Workshop 1/IMG-1.jpg',
             ),
             array(
                 'type' => 'Grant Writing Workshop 1',
-                'url' => 'assets/images/rdi/Grant Writing Workshop 1/IMG-4.jpg',
+                'url' => 'assets/images/rdi/2022_Grant Writing Workshop 1/IMG-4.jpg',
             ),
             array(
                 'type' => 'Grant Writing Workshop 1',
-                'url' => 'assets/images/rdi/Grant Writing Workshop 1/IMG-2.jpg',
+                'url' => 'assets/images/rdi/2022_Grant Writing Workshop 1/IMG-2.jpg',
             ),
             // 3
             array(
                 'type' => 'Grant Writing Workshop 2',
-                'url' => 'assets/images/rdi/Grant Writing Workshop 2/img1.jpg',
+                'url' => 'assets/images/rdi/2022_Grant Writing Workshop 2/img1.jpg',
             ),
             array(
                 'type' => 'Grant Writing Workshop 2',
-                'url' => 'assets/images/rdi/Grant Writing Workshop 2/img2.jpg',
+                'url' => 'assets/images/rdi/2022_Grant Writing Workshop 2/img2.jpg',
             ),
             array(
                 'type' => 'Grant Writing Workshop 2',
-                'url' => 'assets/images/rdi/Grant Writing Workshop 2/img3.jpg',
+                'url' => 'assets/images/rdi/2022_Grant Writing Workshop 2/img3.jpg',
             ),
             // 4
             array(
                 'type' => 'Librarian Workshop 1',
-                'url' => 'assets/images/rdi/Librarian Workshop 1/IMG_1.jpg',
+                'url' => 'assets/images/rdi/2022_Librarian Workshop 1/IMG_1.jpg',
             ),
             array(
                 'type' => 'Librarian Workshop 1',
-                'url' => 'assets/images/rdi/Librarian Workshop 1/IMG_2.jpg',
+                'url' => 'assets/images/rdi/2022_Librarian Workshop 1/IMG_2.jpg',
             ),
             array(
                 'type' => 'Librarian Workshop 1',
-                'url' => 'assets/images/rdi/Librarian Workshop 1/IMG_3.jpg',
+                'url' => 'assets/images/rdi/2022_Librarian Workshop 1/IMG_3.jpg',
             ),
             // 5
             array(
                 'type' => 'NFOMP Workshop 1',
-                'url' => 'assets/images/rdi/NFOMP Workshop 1/img1.jpg',
+                'url' => 'assets/images/rdi/2022_NFOMP Workshop 1/img1.jpg',
             ),
             array(
                 'type' => 'NFOMP Workshop 1',
-                'url' => 'assets/images/rdi/NFOMP Workshop 1/img2.jpg',
+                'url' => 'assets/images/rdi/2022_NFOMP Workshop 1/img2.jpg',
             ),
             array(
                 'type' => 'NFOMP Workshop 1',
-                'url' => 'assets/images/rdi/NFOMP Workshop 1/img3.jpg',
+                'url' => 'assets/images/rdi/2022_NFOMP Workshop 1/img3.jpg',
             ),
             array(
                 'type' => 'NFOMP Workshop 1',
-                'url' => 'assets/images/rdi/NFOMP Workshop 1/img4.jpg',
+                'url' => 'assets/images/rdi/2022_NFOMP Workshop 1/img4.jpg',
             ),
             array(
                 'type' => 'NFOMP Workshop 1',
-                'url' => 'assets/images/rdi/NFOMP Workshop 1/img5.jpg',
+                'url' => 'assets/images/rdi/2022_NFOMP Workshop 1/img5.jpg',
             ),
             array(
                 'type' => 'NFOMP Workshop 1',
-                'url' => 'assets/images/rdi/NFOMP Workshop 1/img6.jpg',
+                'url' => 'assets/images/rdi/2022_NFOMP Workshop 1/img6.jpg',
             ),
             array(
                 'type' => 'NFOMP Workshop 1',
-                'url' => 'assets/images/rdi/NFOMP Workshop 1/img7.jpg',
+                'url' => 'assets/images/rdi/2022_NFOMP Workshop 1/img7.jpg',
             ),
             array(
                 'type' => 'NFOMP Workshop 1',
-                'url' => 'assets/images/rdi/NFOMP Workshop 1/img8.jpg',
+                'url' => 'assets/images/rdi/2022_NFOMP Workshop 1/img8.jpg',
             ),
             array(
                 'type' => 'NFOMP Workshop 1',
-                'url' => 'assets/images/rdi/NFOMP Workshop 1/img9.jpg',
+                'url' => 'assets/images/rdi/2022_NFOMP Workshop 1/img9.jpg',
             ),
             array(
                 'type' => 'NFOMP Workshop 1',
-                'url' => 'assets/images/rdi/NFOMP Workshop 1/img10.jpg',
+                'url' => 'assets/images/rdi/2022_NFOMP Workshop 1/img10.jpg',
             ),
             // 6
             array(
                 'type' => 'NFOMP Workshop 3',
-                'url' => 'assets/images/rdi/NFOMP Workshop 3/img1.jpg',
+                'url' => 'assets/images/rdi/2022_NFOMP Workshop 3/img1.jpg',
             ),
             array(
                 'type' => 'NFOMP Workshop 3',
-                'url' => 'assets/images/rdi/NFOMP Workshop 3/img2.jpg',
+                'url' => 'assets/images/rdi/2022_NFOMP Workshop 3/img2.jpg',
             ),
             array(
                 'type' => 'NFOMP Workshop 3',
-                'url' => 'assets/images/rdi/NFOMP Workshop 3/img3.jpg',
+                'url' => 'assets/images/rdi/2022_NFOMP Workshop 3/img3.jpg',
             ),
             // 7
             array(
                 'type' => 'RDI Meeting in Colleges',
-                'url' => 'assets/images/rdi/RDI Meeting in Colleges/img3.jpg',
+                'url' => 'assets/images/rdi/2022_RDI Meeting in Colleges/img3.jpg',
             ),
             array(
                 'type' => 'RDI Meeting in Colleges',
-                'url' => 'assets/images/rdi/RDI Meeting in Colleges/img1.jpg',
+                'url' => 'assets/images/rdi/2022_RDI Meeting in Colleges/img1.jpg',
             ),  
             array(
                 'type' => 'RDI Meeting in Colleges',
-                'url' => 'assets/images/rdi/RDI Meeting in Colleges/img2.jpg',
-            ),  
+                'url' => 'assets/images/rdi/2022_RDI Meeting in Colleges/img2.jpg',
+            ),
+            // 8
+            array(
+                'type' => 'Vidnyan Dhara',
+                'url' => 'assets/images/rdi/2023_Vidnyan Dhara/img1.jpg',
+            ),
+            array(
+                'type' => 'Vidnyan Dhara',
+                'url' => 'assets/images/rdi/2023_Vidnyan Dhara/img2.jpg',
+            ),
+            array(
+                'type' => 'Vidnyan Dhara',
+                'url' => 'assets/images/rdi/2023_Vidnyan Dhara/img3.jpg',
+            ),
+            array(
+                'type' => 'Vidnyan Dhara',
+                'url' => 'assets/images/rdi/2023_Vidnyan Dhara/img4.jpg',
+            ),
+            array(
+                'type' => 'Vidnyan Dhara',
+                'url' => 'assets/images/rdi/2023_Vidnyan Dhara/img5.jpg',
+            ),
+            array(
+                'type' => 'Vidnyan Dhara',
+                'url' => 'assets/images/rdi/2023_Vidnyan Dhara/img6.jpg',
+            ),
+            array(
+                'type' => 'Vidnyan Dhara',
+                'url' => 'assets/images/rdi/2023_Vidnyan Dhara/img7.jpg',
+            ),
+            array(
+                'type' => 'Vidnyan Dhara',
+                'url' => 'assets/images/rdi/2023_Vidnyan Dhara/img8.jpg',
+            ),
+            array(
+                'type' => 'Vidnyan Dhara',
+                'url' => 'assets/images/rdi/2023_Vidnyan Dhara/img9.jpg',
+            ),
+            array(
+                'type' => 'Vidnyan Dhara',
+                'url' => 'assets/images/rdi/2023_Vidnyan Dhara/img10.jpeg',
+            ),
+            array(
+                'type' => 'Vidnyan Dhara',
+                'url' => 'assets/images/rdi/2023_Vidnyan Dhara/img11.jpeg',
+            ),
+            array(
+                'type' => 'Vidnyan Dhara',
+                'url' => 'assets/images/rdi/2023_Vidnyan Dhara/img12.jpeg',
+            ),
+            array(
+                'type' => 'Vidnyan Dhara',
+                'url' => 'assets/images/rdi/2023_Vidnyan Dhara/img13.jpeg',
+            ),
         ),
     ];
 

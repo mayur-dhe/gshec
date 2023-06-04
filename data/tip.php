@@ -97,7 +97,7 @@
         'title' => 'Training, Internship and Placement Cell Team',
         'data' => array(
                     array(
-                        'name' => 'Niyan Marchon',
+                        'name' => 'Dr. Niyan Marchon',
                         'designation' => 'Nodal officer of TIP',
                         'url' => 'assets/images/tip/team/Nodal officer of TIP - Niyan Marchon.jpg',
                         'linkedin' => '',

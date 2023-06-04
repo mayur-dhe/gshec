@@ -45,15 +45,41 @@
                 }
             ?>
                 <button class="tablinks <?php echo $class0 ?>" onclick="showActivity(0); openTabSection(event, 'tab<?php echo $key ?>')" id="<?php echo $id_name ?>"><?php echo $value ?></button>
-            <?php } ?>
-            <button class="tablinks" onclick="showActivity(1)">Activity <span class="dd-icon"> <i class="fa fa-caret-right dd-selected-right"></i> <i class="fa fa-caret-down dd-selected-down d-none"></i></span> </button>
             <?php 
-              foreach ($activity as $key => $value) 
-              {
+              }
             ?>
-                <button class="d-none activities tablinks <?php echo $class0 ?>" onclick="openTabSection(event, 'tabA<?php echo ++$key ?>')"><?php echo $value ?></button>
-            <?php } ?>
+            <button class="tablinks" onclick="showActivity(1)">
+              Activity 
+              <span class="dd-icon"> <i class="fa fa-caret-right dd-selected-right"></i> <i class="fa fa-caret-down dd-selected-down d-none"></i></span> 
+            </button>
+            <?php 
+              foreach ($activity_year_wise as $key => $value) 
+              {
+                $yearId = ++$key;
+            ?>
+                <button class="d-none activities tablinks <?php echo $class0 ?>" onclick="showSubActivity(<?php echo $yearId ?>)">
+                  <?php echo $value ?>
+                  <span class="dd-icon dd-icon2"> 
+                    <i class="fa fa-caret-right dd-selected-right2<?php echo $yearId; ?> "></i> 
+                    <i class="fa fa-caret-down dd-selected-down2<?php echo $yearId; ?>  d-none"></i>
+                  </span>
+                </button>
+
+                <?php 
+                  $subTabCount = 0;
+                  foreach ($activities as $key1 => $activity) 
+                  {
+                    if ($activity['year'] == $value) {
+                      $subTabCount += 1;
+                ?>
+                      <button class="d-none sub_activities sub_activity<?php echo $yearId; ?> tablinks <?php echo $class0 ?>" onclick="openTabSection(event, 'tabA<?php echo $yearId.''.$subTabCount ?>')"><?php echo $activity['title'] ?></button>
+                <?php 
+                    }
+                  }
+              }
+            ?>
           </div>
+
           <!-- Tab Content -->
           <div id="tab0" class="tabcontent list-number">
             <h4><?php echo $about['title']?></h4>
@@ -77,7 +103,8 @@
               <div><?php echo $value ?></div>
             <?php } ?>
           </div>
-          <div id="tabA1" class="tabcontent">
+          <!-- 2022 -->
+          <div id="tabA11" class="tabcontent">
             <h4>Goa Science Lecture Series 2022</h4>
             <div class="row">
               <div class="col-md-12">
@@ -114,7 +141,7 @@
               </div>
             </div>
           </div>
-          <div id="tabA2" class="tabcontent">
+          <div id="tabA12" class="tabcontent">
             <h4>Two Day Research Grant Writing Workshop 2021</h4>
             <div class="row list-number">
               <div class="col-md-12">
@@ -174,7 +201,7 @@
               </div>
             </div>
           </div>
-          <div id="tabA3" class="tabcontent">
+          <div id="tabA13" class="tabcontent">
             <h4>Research Grant Writing Workshop for Science and Engineering Faculty of Goa</h4>
             <div class="row">
               <div class="col-md-12">
@@ -229,7 +256,7 @@
               </div>
             </div>
           </div>
-          <div id="tabA4" class="tabcontent">
+          <div id="tabA14" class="tabcontent">
             <h4>One Day Workshop for Librarians on “Guide to identify Fake/ Predatory/ Cloned Journals in Academics”</h4>
             <div class="row">
               <div class="col-md-12">
@@ -281,7 +308,7 @@
               </div>
             </div>
           </div>
-          <div id="tabA5" class="tabcontent">
+          <div id="tabA15" class="tabcontent">
             <h4>New Faculty Orientation & Mentoring Programme 2021</h4>
             <div class="row list-number">
               <div class="col-md-12">
@@ -333,7 +360,7 @@
               </div>
             </div>
           </div>
-          <div id="tabA6" class="tabcontent">
+          <div id="tabA16" class="tabcontent">
             <h4>Follow-up Workshop on “New Faculty Orientation & Mentoring Programme 2021”</h4>
             <div class="row">
               <div class="col-md-12">
@@ -365,7 +392,7 @@
               </div>
             </div>
           </div>
-          <div id="tabA7" class="tabcontent">
+          <div id="tabA17" class="tabcontent">
             <h4>Opportunities for Research, Development & Innovation: Meetings with College Faculty</h4>
             <div class="row list-number">
               <div class="col-md-12">
@@ -398,6 +425,43 @@
                       if ($value['type'] == 'RDI Meeting in Colleges') {
                         ?>
                         <figure class="gallery__item gallery__item_3--<?php echo $counter6++; ?>">
+                          <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
+                          <!-- <div class="gallery__item-overlay-background"></div>  --> 
+                        </figure>
+                        <?php
+                        }
+                      }
+                  ?>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 2023 -->
+          <div id="tabA21" class="tabcontent">
+            <h4>Vidnyan Dhara' Mega Science Series 2023</h4>
+            <div class="row list-number">
+              <div class="col-md-12">
+                <p class="p0 mb0 ">
+                  The Goa State Higher Education Council (GSHEC) and the Directorate of Higher Education (DHE) of the Government of Goa have organized a mega science series called 'Vidnyan Dhara' from
+                  <strong>January 12th, 2023 to February 28th, 2023,</strong> 
+                  spanning from National Youth Day to National Science Day. The event was coordinated by Dr. Mahesh Majik, Dr. Vithal Tilvi, and Ms. Vandana Sawant from the Goa State Higher Education Council (GSHEC). This series is 
+                  <strong>unique in India,</strong> 
+                  where scientists from research institutes guided students and faculty from University; University faculty interacted with colleges, and college faculty motivated Higher Secondary and High School Students and teachers. This is a first of its kind initiative and an apt way of spreading knowledge - in a true sense "Vidnyan Dhara".
+                </p>
+                <br>
+                <p class="p0 mb0 ">
+                  A total of 253 events were held, featuring 204 experts in the field of science and technology over a period of one and a half months. These events were held across 105 Higher Secondary Schools (HSS), 103 High Schools, 42 Colleges/Goa University, as well as four public events. The public events covered topics such as astronomy, pollinators for food security, Antarctica, and climate change, and were attended by teachers, students, and their parents. 19 senior scientists from central research laboratories, such as the National Institute of Oceanography (NIO) and the National Centre for Polar and Ocean Research (NCPOR), participated in the event and conducted sessions in various colleges across Goa. They discussed ongoing research in areas such as Oceanography, Antarctica, Himalaya, climate change, drug discovery, remote sensing, and highlighted the benefits of research for society and India's economic growth. 185 Science faculty of Goa University and Colleges in Goa served as resource persons and covered several hot topics such as research in agriculture, medical science, solar energy, mathematical models, astronomy, nanotechnology, natural language processing, and computers in scientific research. Vidnyan Dhara covered sessions in all disciplines of science, including Chemistry, Physics, Mathematics, Biotechnology, Microbiology, Botany, and more. Faculty members from colleges had the opportunity to interact with young minds studying in secondary and higher secondary schools across all the Talukas of Goa, including remote areas such as Sattari, Quepem and Canacona. This is the first-of-its-kind initiative where our in-house resource persons visited schools and conducted 200 plus sessions.
+                </p>
+              </div>
+              <div class="col-md-12">
+                <div class="gallery_img_box gib_bg">
+                  <?php
+                  $counter6 = 1;
+                    foreach ($rdi_images['data'] as $key => $value) {
+                      if ($value['type'] == 'Vidnyan Dhara') {
+                        ?>
+                        <figure class="gallery__item gallery__item_9--<?php echo $counter6++; ?>">
                           <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
                           <!-- <div class="gallery__item-overlay-background"></div>  --> 
                         </figure>

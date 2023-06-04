@@ -17,12 +17,6 @@ initiatives - activity pending data
 <!-- find me -->
 <!-- --------------------------------------------------- -->
 <!-- craftitt upload    -->
-new 
-	data 
-		tip
-	pages 
-		tip 
-
 <!-- upload on gshec edu -->
 alter
 	admin 
@@ -67,6 +61,7 @@ alter
 		nep 
 		initiatives
 		tip 
+		rdi
 		tlet 
 		teams
 	add folder 
