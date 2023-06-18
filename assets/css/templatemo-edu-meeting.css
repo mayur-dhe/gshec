@@ -1177,6 +1177,16 @@ section.upcoming-meetings .categories .main-button-red a {
   background-color: #2828289c;
   border-radius: 10px;
 }
+.overlay .display-text {
+  color: var(--white) !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 .text {
   color: var(--white) !important;
   font-size: 20px;
@@ -1275,11 +1285,13 @@ section.upcoming-meetings .categories .main-button-red a {
   color: #1f272b;
   font-size: 14px;
 }
-
+.gallery_item {
+  width: -webkit-fill-available;
+}
 .gallery_item img {
   border-radius: 10px;
   height: 150px;
-  width: 230px;
+  /* width: 230px; */
   object-fit: cover;
 }
 
@@ -2710,7 +2722,7 @@ responsive
 .ptt-2 {
   padding: 10px 20px 10px !important;
   height: 4rem !important;
-  font-size: 1.2rem !important;
+  font-size: 1.1rem !important;
 }
 .profile-thumb-description {
   padding: 1px 20px !important;
@@ -2859,7 +2871,7 @@ responsive
 .gallery__img:hover {
   opacity: 1;
   transition: .5s ease;
-  cursor: zoom-in;
+  cursor: crosshair;
   padding: 6px;
 }
 .g_img_opc:hover {
@@ -3975,7 +3987,7 @@ hr {
 }
 
 /* animations ----------------------------------------------- */
-.animate-typed-out {
+.animate-text-to-type {
   overflow: hidden;
   border-right: .15em solid orange;
   white-space: nowrap;
@@ -4048,8 +4060,28 @@ hr {
   border-bottom-left-radius:inherit;
   transform: rotate(-40deg);
 }
+.custom-ribbon #announcement-message {
+  color: #2a2a2a;
+  font-weight: 600;
+  font-size: large;
+}
 /* Ribbon Box End ----------------------------------------------- */
-
+/* Blink Text Typing Start ----------------------------------------------- */
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+/* Blink Text Typing End ----------------------------------------------- */
 
 /* rusa */
 .para p,

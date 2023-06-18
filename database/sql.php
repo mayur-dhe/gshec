@@ -1,4 +1,15 @@
 
+CREATE TABLE activities (
+    id int(11) NOT NULL,
+    type varchar(10) DEFAULT NULL,
+    category varchar(10) DEFAULT NULL,
+    title varchar(100) DEFAULT NULL,
+    content varchar(500) DEFAULT NULL,
+    page_template_id int(10) DEFAULT NULL,
+    frm_date date DEFAULT NULL,
+    to_date date DEFAULT NULL
+    PRIMARY KEY (id)
+);
 
 CREATE TABLE messages (
     id int NOT NULL AUTO_INCREMENT,

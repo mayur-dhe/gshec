@@ -118,7 +118,7 @@
             'designation' => 'Assistant Professor',
             'role' => 'Software Developer',
             'image' => 'assets/images/team/Sneha Narvekar.jpg',
-            // 'linkedin' => 'Sneha Narvekar.JPG',
+            'linkedin' => '',
             'google_link' => '',
         ),
         array(
@@ -126,7 +126,7 @@
             'designation' => 'Assistant Professor',
             'role' => 'Software Developer',
             'image' => 'assets/images/team/Paresh Asavekar.jpg',
-            // 'linkedin' => 'Sneha Narvekar.JPG',
+            'linkedin' => '',
             'google_link' => '',
         ),
     ];

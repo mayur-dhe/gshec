@@ -57,13 +57,13 @@ ul[class] li > * {
           <li>
             <button type="button" data-quick-view 
               style="background: <?php echo $value['url'] ?>" >
-              <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" class="g_img_cover" style="background-color:#000;">
+              <img src="<?php echo $value['url'] ?>" loading="lazy" alt="Gallery image 1" class="g_img_cover" style="background-color:#000;">
             </button>
           </li>
           <li class="fullwidth is-hidden" id="quickview-01">
             <button type="button" data-close>
               qqqq
-              <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" class="g_img_cover" style="background-color:#000;">
+              <img src="<?php echo $value['url'] ?>" loading="lazy" alt="Gallery image 1" class="g_img_cover" style="background-color:#000;">
             </button>
           </li>
           <?php

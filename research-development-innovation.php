@@ -1,6 +1,7 @@
 <?php
   $title = "Research, Development and Innovation";
   $title_url = "#";
+
   require 'layout/top-header.php';
 ?>
 <body class="reading-pages">
@@ -130,7 +131,7 @@
                       if ($value['type'] == 'Goa Science Lecture Series 1') {
                         ?>
                         <figure class="gallery__item gallery__item_1--<?php echo ++$key?>">
-                            <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
+                            <img src="<?php echo $value['url'] ?>" loading="lazy" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
                             <!-- <div class="gallery__item-overlay-background"></div>  --> 
                         </figure>
                         <?php
@@ -190,7 +191,7 @@
                       if ($value['type'] == 'Grant Writing Workshop 1') {
                         ?>
                         <figure class="gallery__item gallery__item_2--<?php echo $counter1++; ?>">
-                          <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
+                          <img src="<?php echo $value['url'] ?>" loading="lazy" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
                           <!-- <div class="gallery__item-overlay-background"></div>  --> 
                         </figure>
                         <?php
@@ -245,7 +246,7 @@
                       if ($value['type'] == 'Grant Writing Workshop 2') {
                         ?>
                         <figure class="gallery__item gallery__item_3--<?php echo $counter2++; ?>">
-                          <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
+                          <img src="<?php echo $value['url'] ?>" loading="lazy" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
                           <!-- <div class="gallery__item-overlay-background"></div>  --> 
                         </figure>
                         <?php
@@ -297,7 +298,7 @@
                       if ($value['type'] == 'Librarian Workshop 1') {
                         ?>
                         <figure class="gallery__item gallery__item_4--<?php echo $counter3++; ?>">
-                          <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
+                          <img src="<?php echo $value['url'] ?>" loading="lazy" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
                           <!-- <div class="gallery__item-overlay-background"></div>  --> 
                         </figure>
                         <?php
@@ -349,7 +350,7 @@
                       if ($value['type'] == 'NFOMP Workshop 1') {
                         ?>
                         <figure class="gallery__item gallery__item_5--<?php echo $counter4++; ?>">
-                          <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
+                          <img src="<?php echo $value['url'] ?>" loading="lazy" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
                           <!-- <div class="gallery__item-overlay-background"></div>  --> 
                         </figure>
                         <?php
@@ -381,7 +382,7 @@
                       if ($value['type'] == 'NFOMP Workshop 3') {
                         ?>
                         <figure class="gallery__item gallery__item_3--<?php echo $counter5++; ?>">
-                          <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
+                          <img src="<?php echo $value['url'] ?>" loading="lazy" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
                           <!-- <div class="gallery__item-overlay-background"></div>  --> 
                         </figure>
                         <?php
@@ -425,7 +426,7 @@
                       if ($value['type'] == 'RDI Meeting in Colleges') {
                         ?>
                         <figure class="gallery__item gallery__item_3--<?php echo $counter6++; ?>">
-                          <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
+                          <img src="<?php echo $value['url'] ?>" loading="lazy" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
                           <!-- <div class="gallery__item-overlay-background"></div>  --> 
                         </figure>
                         <?php
@@ -462,7 +463,7 @@
                       if ($value['type'] == 'Vidnyan Dhara') {
                         ?>
                         <figure class="gallery__item gallery__item_9--<?php echo $counter6++; ?>">
-                          <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
+                          <img src="<?php echo $value['url'] ?>" loading="lazy" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
                           <!-- <div class="gallery__item-overlay-background"></div>  --> 
                         </figure>
                         <?php

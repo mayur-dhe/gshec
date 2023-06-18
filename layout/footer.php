@@ -55,10 +55,10 @@
             <h3>Connect Us</h3>
             <ul>
               <li class="social-media-links">
-                <a href="https://twitter.com/GoaSHEC" class="fa fa-twitter" title="@GoaSHEC"></a>
-                <a href="https://www.facebook.com/profile.php?id=100086696510658" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-instagram"></a>
-                <a href="https://www.linkedin.com/in/goa-state-higher-education-council-652852254/" class="fa fa-linkedin"></a>
+                <a target="_blank" href="https://twitter.com/GoaSHEC" class="fa fa-twitter" title="@GoaSHEC"></a>
+                <a target="_blank" href="https://www.facebook.com/profile.php?id=100086696510658" class="fa fa-facebook"></a>
+                <a target="_blank" href="#" class="fa fa-instagram"></a>
+                <a target="_blank" href="https://www.linkedin.com/in/goa-state-higher-education-council-652852254/" class="fa fa-linkedin"></a>
               </li>
             </ul>
           </div>

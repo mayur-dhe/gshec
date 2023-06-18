@@ -7,14 +7,6 @@
                 'url' => 'assets/images/rusa/image2.jpg',
                 'alt' => '',
             ),
-            array(
-                'url' => 'assets/images/rusa/image2.jpg',
-                'alt' => '',
-            ),
-            array(
-                'url' => 'assets/images/rusa/image2.jpg',
-                'alt' => '',
-            ),
         ),
     ];
 ?>

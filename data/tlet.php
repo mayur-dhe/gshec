@@ -84,6 +84,7 @@
 
     $teaching_learning_images = [
         'title' => 'Centre for Teaching, Learning & Educational Technology',
+        'shot_title' => 'Centre for TLET',
         'data' => array(
             // 1
             array(

@@ -1,6 +1,7 @@
 <?php
   $short_name = $_GET['title'];
   $title = "Projects";
+  $title_url = "software-development-cell.php#projects";
   $title_2 = $short_name;
   require 'layout/top-header.php';
 ?>

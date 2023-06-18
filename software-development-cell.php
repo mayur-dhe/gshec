@@ -1,6 +1,6 @@
 <?php
   $title = "Software Development Cell";
-  $title_url = "#";
+  $title_url = "software-development-cell.php";
   require 'layout/top-header.php';
 ?>
 <body>
@@ -45,7 +45,7 @@
           </p>
         </div>
         <div class="col-md-12 col-lg-6">
-          <video class="mb40 img_bgColor" width="100%" height="285" poster="assets/images/sdc/video-cover.png" controls autoplay muted loop>
+          <video class="mb40" width="auto" height="285" poster="assets/images/sdc/video-cover.png" controls autoplay muted loop>
             <source src="assets/video/sdc/SDC page video.mp4" type="video/mp4">
             <!-- <source src="movie.ogg" type="video/ogg"> -->
             Your browser does not support the video tag.
@@ -194,8 +194,8 @@
           foreach ($projects as $key => $value) {
         ?>
             <figure class="gallery__item gallery__item--<?php echo ++$key?>">
-              <a href="software-development-cell-projects?title=<?php echo $value['short-name']?>">
-                <img src="<?php echo $value['images'][0]['url'] ?>" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_opc" style="background-color:<?php echo $value['images'][0]['bgColor']?>">
+              <a href="software-development-cell-projects.php?title=<?php echo $value['short-name']?>">
+                <img src="<?php echo $value['images'][0]['url'] ?>" loading="lazy" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_opc" style="background-color:<?php echo $value['images'][0]['bgColor']?>">
                 <!-- <div class="gallery__item-overlay-background"></div>  --> 
                 <div class="gallery__item-overlay"><?php echo $value['short-name']; ?></div>
               </a>

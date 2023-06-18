@@ -58,18 +58,16 @@
           <div class="empty-div emptyBox">empty</div>
           <div class="show-ribbon d-none">
             <div class="custom-ribbon custom-ribbon-right" style="background:#e7eab3; width:auto;">
-              <?php
-                foreach ($announcements as $key => $value) {
-                  echo '<div class="row" style="padding: 5px 0px;">
-                    <div class="col-1 p0 textAlign-center">
-                      <img class="imghw-2" src="assets/images/notification.gif" alt="">
-                    </div>
-                    <div class="col-10 p0">';
-                      echo '<div class="animate-typed-out p_inner_div_4" style="color:#2a2a2a">'.$value.'</div>';
-                    echo '</div>
-                  </div>';
-                }
-              ?>
+              <div class="row" style="padding: 5px 0px;">
+                <div class="col-1 p0 textAlign-center">
+                  <img class="imghw-2" src="assets/images/notification.gif" alt="">
+                </div>
+                <div class="col-10 p0">
+                  <div class="row">
+                    <div class="p_inner_div_4" id="announcement-message"></div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <!-- Cards-->
@@ -138,14 +136,14 @@
             <ul>
               <?php 
                 foreach ($initiatives as $key => $value) {
-                  if ($value['type']=='home') {
+                  // if ($value['type']=='home') {
               ?>
                     <!-- title="<?php echo concat_string($value['title']); ?>" -->
                     <li><a href="initiative.php?jnhsdwmxifkd=<?php echo $value['id']?>" >
                       <?php echo $value['short_name'] ?>
                     </a></li>
               <?php 
-                  }
+                  // }
                 }
               ?>
                   <!-- <li>
@@ -297,33 +295,6 @@
         <div class="col-lg-5">
           <iframe src="https://www.google.com/maps/d/embed?mid=1dr9AOy4B4u4E2TRLuhPX696K2nFUvPg&ehbc=2E312F" width="100%" height="510" style="border-radius: 20px;"></iframe>
         </div>
-        <!-- <div class="col-lg-2">
-          <div class="right-info">
-            <ul>
-              <li>
-                <h6>Phone Number</h6>
-                <span><a href="tel:+08322410824">0832-2410824</a></span>
-              </li>
-              <br/>
-              <li>
-                <h6>Email Address</h6>
-                <span>research-dhe.goa@gov.in</span>
-              </li>
-              <br/>
-
-              <li>
-                <h6>Street Address</h6>
-                <span>SCERT, Alto-Porvorim, Bardez-Goa</span>
-              </li>
-              <li class="social-media-links">
-                <a href="https://twitter.com/GoaSHEC" class="fa fa-twitter" title="@GoaSHEC"></a>
-                <a href="https://www.facebook.com/profile.php?id=100086696510658" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-instagram"></a>
-                <a href="https://www.linkedin.com/in/goa-state-higher-education-council-652852254/" class="fa fa-linkedin"></a>
-              </li>
-            </ul>
-          </div>
-        </div> -->
     </div>
   </section>
 
@@ -333,24 +304,50 @@
     <!-- ***** Footer  ***** -->
     <?php require 'layout/footer.php'; ?>
     <script>
+      const messages = <?php echo json_encode($announcements) ?>;
+      let currentMessageIndex = 0;
+      const announcementMessage = document.getElementById("announcement-message");
+      var txtCount = 0;
+      var txtMessage = "";
+      let txtSpeed = 60;
+
       setTimeout(function() {
         $('.show-ribbon').removeClass("d-none");
         $('.empty-div').addClass("d-none");
         $('.announcement').removeClass("d-none");
-      }, 6000); // <-- time in milliseconds
+        displayNextMessage();     // initial Call to announcement
+      }, 6000); // time in milliseconds
 
       $(document).ready(function()
       {
-        // console.log('reload');
       });
 
-      setInterval(function() {
-        if (document.querySelector('#talkbubble.d-none') !== null) {
-          $("#talkbubble").removeClass("d-none");
+      // animate announcements
+      function displayNextMessage() 
+      {  
+        // start the loop from initial
+        if (messages.length == currentMessageIndex) {
+          currentMessageIndex=0;
         } else {
-          $("#talkbubble").addClass("d-none");
+          txtMessage = messages[currentMessageIndex];
         }
-      }, 2000);
+
+        // Write Announcement
+        if (txtCount < txtMessage.length) {
+          $('.blink').addClass("d-none");
+          announcementMessage.innerHTML += txtMessage.charAt(txtCount) + "<span class='blink'> | <span>";
+          txtSpeed = 100;
+          txtCount++;
+        } else if (txtCount == txtMessage.length) {
+          txtSpeed = 5000;
+          txtCount++;
+        } else {
+          currentMessageIndex++;                // next message
+          txtSpeed = txtCount = 0;              // set initial to 0
+          announcementMessage.textContent = ""; // clear the container
+        }
+        setTimeout(displayNextMessage, txtSpeed); // Change message every 5 seconds (5000 milliseconds)
+      }
 
     </script>
   </body>

@@ -45,7 +45,7 @@ require 'layout/top-header.php';
           <!-- Indicators -->
           <ul class="carousel-indicators">
               <?php foreach ($tip_images['data'] as $key => $image){  ?>
-                      <li data-target="#demo" data-slide-to="<?php echo $key?>" <?php echo $key==0 ?? 'class="active"' ?> ></li>                            
+                      <!-- <li data-target="#demo" data-slide-to="<?php echo $key?>" <?php echo $key==0 ?? 'class="active"' ?> ></li>                             -->
               <?php } ?>  
           </ul>
           <!-- The slideshow -->
@@ -158,7 +158,7 @@ require 'layout/top-header.php';
               <?php 
                 foreach ($team['data'] as $key => $value) {
               ?>
-                  <div class="col-12 col-md-4 col-xl-4">
+                  <div class="col-12 col-md-5 col-xl-4">
                     <div class="profile-thumb">
                       <img class="profile-thumb-img img_bgColor" src="<?php echo $value['url']; ?>" alt="">
                       <div class="profile-thumb-gradient"></div>
@@ -195,7 +195,7 @@ require 'layout/top-header.php';
                     if ($value['type'] == 'tcs') {
                       ?>
                       <figure class="gallery__item gallery__item_6--<?php echo $counter0++; ?>">
-                        <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
+                        <img src="<?php echo $value['url'] ?>" loading="lazy" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
                         <!-- <div class="gallery__item-overlay-background"></div>  --> 
                       </figure>
                       <?php
@@ -240,7 +240,7 @@ require 'layout/top-header.php';
                     if ($value['type'] == 'installation_of_tip') {
                       ?>
                       <figure class="gallery__item gallery__item_9--<?php echo $counter0++; ?>">
-                        <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
+                        <img src="<?php echo $value['url'] ?>" loading="lazy" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
                         <!-- <div class="gallery__item-overlay-background"></div>  --> 
                       </figure>
                       <?php
@@ -265,7 +265,7 @@ require 'layout/top-header.php';
                     if ($value['type'] == 'ibm') {
                       ?>
                       <figure class="gallery__item gallery__item_9--<?php echo $counter0++; ?>">
-                        <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
+                        <img src="<?php echo $value['url'] ?>" loading="lazy" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
                         <!-- <div class="gallery__item-overlay-background"></div>  --> 
                       </figure>
                       <?php
@@ -340,7 +340,7 @@ require 'layout/top-header.php';
                     if ($value['type'] == 'tcs_drive') {
                       ?>
                       <figure class="gallery__item gallery__item_2--<?php echo $counter0++; ?>">
-                        <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
+                        <img src="<?php echo $value['url'] ?>" loading="lazy" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
                         <!-- <div class="gallery__item-overlay-background"></div>  --> 
                       </figure>
                       <?php
@@ -388,7 +388,7 @@ require 'layout/top-header.php';
                     if ($value['type'] == 'unlu') {
                       ?>
                       <figure class="gallery__item gallery__item_9--<?php echo $counter0++; ?>">
-                        <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
+                        <img src="<?php echo $value['url'] ?>" loading="lazy" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
                         <!-- <div class="gallery__item-overlay-background"></div>  --> 
                       </figure>
                       <?php

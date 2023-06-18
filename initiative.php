@@ -31,7 +31,7 @@ dl, ol, ul {
 <?php 
   include 'layout/sub-header.php';
   require 'layout/header.php';
-  $subtitle = "";
+  // $subtitle = "";
   $isInitiativesPage = true;
   $getUrlID = $id;
 
@@ -298,10 +298,10 @@ dl, ol, ul {
                 </h2>
                 <br>
                 <p>
-                  Skilling development and providing employment opportunities is one of the core objectives of National Education Policy (NEP 2020). The first of its kind placement drive was organized by the Directorate of Higher Education (DHE) held in July , in association with the Government College at Quepem where 30 out of the 57 participants (approximately 50%) have been offered jobs and were handed the offer letters in presence of Chief Minister, Director (DHE), Company officials, Principals and Training and Placement Officers of the participating colleges.The drive was held for final year BSc students graduating in September 2022.
+                  Skilling development and providing employment opportunities is one of the core objectives of National Education Policy (NEP 2020). The first of its kind placement drive was organized by the Directorate of Higher Education (DHE) held in July, in association with the Government College at Quepem where 30 out of the 57 participants (approximately 50%) have been offered jobs and were handed the offer letters in presence of Chief Minister, Director (DHE), Company officials, Principals and Training and Placement Officers of the participating colleges.The drive was held for final year BSc students graduating in September 2022.
                 </p>
                 <p>
-                  Industries like Open Destination, Infotech Pvt Ltd, Zimetric Technology, Creative Capsule , Tangentia , Helix Tech , Genora Industries , Wenware.io and Umang software participated in this placement drive.
+                  Industries like Open Destination, Infotech Pvt Ltd, Zimetric Technology, Creative Capsule, Tangentia, Helix Tech, Genora Industries, Wenware.io and Umang software participated in this placement drive.
                 </p>
               <?php  } else if ( $id == 8) {  ?>
                 <h2 style="text-align: left !important;">

@@ -7,7 +7,7 @@
 <?php 
   include 'layout/sub-header.php';
   require 'layout/header.php';
-  $subtitle = "";
+  // $subtitle = "";
   require 'layout/site-map.php'; 
   include 'data/initiatives.php';
 ?>

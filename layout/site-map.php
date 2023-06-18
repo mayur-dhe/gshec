@@ -5,37 +5,39 @@
                 <ul class="site-map">
                     <?php 
                         $index_url = 'href="index.php"><i class="fa fa-home" aria-hidden="true"></i> Home';
-                        if ($isCardsPage == true) {
+                        if (isset($isCardsPage) && $isCardsPage == true) {
                             echo '<li><a class="show_cards" '.$index_url.' <i class="fa fa-caret-down"></i></a></li>';
                         } else {
                             echo '<li><a '.$index_url.'</a></li>';
                         }
                         echo '<li><a href="#"> > </a></li>';
-                        if ($title) { 
-                            if ($isGalleryPage == true) {
-                                echo '<li><a class="show_gallery" href="'.$title_url.'">'.$title.' <i class="fa fa-caret-down"></i></a></li>';
-                            } else {
+                        if (isset($title)) { 
+                            // if ($isGalleryPage == true) {
+                            //     echo '<li><a class="show_gallery" href="'.$title_url.'">'.$title.' <i class="fa fa-caret-down"></i></a></li>';
+                            // } else {
                                 echo '<li><a href="'.$title_url.'">'.$title.'</a></li>';
-                                // if ($isCardsPage == true) { echo 'class="show_cards" ';}
-                            }
+                            // }
                         } 
-                        if ($title_2) { 
+                        if (isset($title_2)) { 
                             echo '<li><a href=""> > </a></li>';
                             if ($isInitiativesPage == true) {
                                 echo '<li><a class="show_initiatives" href="#">'.$title_2.' <i class="fa fa-caret-down"></i></a></li>';
+                            } else if ($isGalleryPage == true) {
+                                echo '<li><a class="" href="gallery-view.php?jnhsdwmxifkd=All Initiatives">'.$title_2.' </a></li>';
                             } else {
                     ?>
                                 <li><a href="<?php echo $title_3 ? $title_2 : '#';?>"><?php echo $title_2;?></a></li>
-                    <?php 
+                    <?php   
                             } 
                         } 
-                        if ($title_3) { ?>
-                        <li><a href=""> > </a></li>
-                        <li><a href="<?php echo $title_4 ? $title_3 : '#';?>"><?php echo $title_3;?></a></li>    
-                    <?php } 
-                        if ($title_4) { ?>
-                        <li><a href=""> > </a></li>
-                        <li><a href="<?php echo $title_5 ? $title_4 : '';?>"><?php echo $title_4;?></a></li>    
+                        if (isset($title_3)) { ?>
+                            <li><a href=""> > </a></li>
+                            <li><a href="<?php echo $title_4 ? $title_3 : '#';?>"><?php echo $title_3;?></a></li>    
+                    <?php 
+                        } 
+                        if (isset($title_4)) { ?>
+                            <li><a href=""> > </a></li>
+                            <li><a href="<?php echo $title_5 ? $title_4 : '';?>"><?php echo $title_4;?></a></li>    
                     <?php } ?>
 
 
@@ -51,7 +53,7 @@
                                 <?php
                                     include 'data/cards.php';
                                     foreach ($cards as $key => $value) {
-                                        if ($value['id'] == $getUrlID) {
+                                        if (isset($getUrlID) && $value['id'] == $getUrlID) {
                                         } else {
                                             echo '<li><a href="'.$value['url'].'">'.$value['title'].'</a></li>';
                                         }
@@ -94,7 +96,7 @@
     </div>
 </section>
 <?php 
-    if ($subtitle) {
+    if (isset($subtitle)) {
         echo '<h3 class="page-title">'.$subtitle.'</h3>';
     }
 ?>

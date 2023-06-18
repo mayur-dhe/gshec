@@ -19,6 +19,64 @@ require 'layout/top-header.php';
 }
 .tab {
     margin-top: 40px !important;
+    background-color: #f2f2f200;
+}
+.rounded_corners .tablinks {
+	min-height: 74px;
+	border-radius: 25px 0 0 50px !important;
+}
+.rounded_corners .tablinks.box1 {
+	border-left: 2px solid #ebe2b7 !important;
+	border-top: 2px solid #ebe2b7 !important;
+	border-bottom: 2px solid #ebe2b7 !important;
+}
+.rounded_corners .tablinks.box2 {
+	border-left: 2px solid #e86f52 !important;
+	border-top: 2px solid #e86f52 !important;
+	border-bottom: 2px solid #e86f52 !important;
+}
+.rounded_corners .tablinks.box3 {
+	border-left: 2px solid #2a9d8e !important;
+	border-top: 2px solid #2a9d8e !important;
+	border-bottom: 2px solid #2a9d8e !important;
+}
+.rounded_corners .tablinks.box1.active {
+    background-color: #ebe2b742 !important;
+}
+.rounded_corners .tablinks.box2.active {
+    background-color: #e86f5240 !important;
+}
+.rounded_corners .tablinks.box3.active {
+    background-color: #56b1a545 !important;
+}
+.rounded_corners .tablinks.box1:hover {
+    background-color: #ebe2b742 !important;
+}
+.rounded_corners .tablinks.box2:hover {
+    background-color: #e86f5240 !important;
+}
+.rounded_corners .tablinks.box3:hover {
+    background-color: #56b1a545 !important;
+}
+.tabcontent {
+	border-radius: 25px !important;
+}
+.tabcontent#box1 {
+	border: 2px solid #ebe2b7 !important;
+}
+.tabcontent#box2 {
+	border: 2px solid #e86f52 !important;
+}
+.tabcontent#box3 {
+	border: 2px solid #2a9d8e !important;
+}
+.rounded_btn {
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+.add_field_button {
+	color: black  !important;
+	background-color: white;
 }
 </style>	
 <body class="reading-pages">
@@ -36,11 +94,26 @@ $submitAPI = 'api/enrol_scholar.php';
 		<div class="row">
 			<div class="col-md-12 col-lg-12 p-0">
 				<h4 class="textAlign-center font_dancing pb20" id="form_start">Enrol for Dnyan Sangrah</h4>
-				<div id="expandedImg"></div>
-				<div class="tab">
-					<button class="tablinks" onclick="openTabSection(event, 'box1', true, 0)" id="defaultOpen">1. Personal Information</button>
-					<button class="tablinks" onclick="openTabSection(event, 'box2', true, 1)">2. LOCAL CONNECT</button>
-					<button class="tablinks" onclick="openTabSection(event, 'box3', true, 1)">3. RECOMMENDATION <br>[Any other scholar]</button>
+				<div id="expandedImg"><!-- do not remove me --></div>
+				<div class="tab rounded_corners">
+					<button class="tablinks box1" onclick="openTabSection(event, 'box1', true, 0)" id="defaultOpen">
+						<div class="row">
+							<div class="col-md-2">1.</div>
+							<div class="col-md-10">Personal Information</div>
+						</div>
+					</button>
+					<button class="tablinks box2" onclick="openTabSection(event, 'box2', true, 1)">
+						<div class="row">
+							<div class="col-md-2">2.</div>
+							<div class="col-md-10">LOCAL CONNECT</div>
+						</div>
+					</button>
+					<button class="tablinks box3" onclick="openTabSection(event, 'box3', true, 1)">
+						<div class="row">
+							<div class="col-md-2">3.</div>
+							<div class="col-md-10">RECOMMENDATION <br>[Any other scholar]</div>
+						</div>
+					</button>
 				</div>	
 				<div class="tabcontent" id="box1">
 					<div class="col-md-12 col-lg-12 pt20">
@@ -214,10 +287,10 @@ $submitAPI = 'api/enrol_scholar.php';
 							<div class="input_fields_wrap"></div>   <!-- Show Added Days -->
 							<div class="row g-3">
 								<div class="form-group col-md-12" style="text-align: right!important" id="buttonBox2">
-									<button type="button" class="btn btn-info btn_size add_field_button">Add Scholar</button>
+									<button type="button" class="btn btn-info btn_size add_field_button rounded_btn">Add Scholar</button>
 								</div>
 								<div class="form-group col-md-12" style="text-align: center!important" >
-									<button type="button" class="btn btn-success btn_size" onclick="submitForm();">Enroll Me</button>
+									<button type="button" class="btn btn-success btn_size rounded_btn" onclick="submitForm();">Enroll Me</button>
 								</div>
 							</div>
 						</div>

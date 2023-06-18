@@ -122,7 +122,7 @@
                     if ($value['type'] == 'obe') {
                       ?>
                       <figure class="gallery__item gallery__item_7--<?php echo $counter0++; ?>">
-                        <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
+                        <img src="<?php echo $value['url'] ?>" loading="lazy" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
                         <!-- <div class="gallery__item-overlay-background"></div>  --> 
                       </figure>
                       <?php
@@ -158,7 +158,7 @@
                     if ($value['type'] == 'mooc') {
                       ?>
                       <figure class="gallery__item gallery__item_6--<?php echo $counter1++; ?>">
-                        <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
+                        <img src="<?php echo $value['url'] ?>" loading="lazy" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
                         <!-- <div class="gallery__item-overlay-background"></div>  --> 
                       </figure>
                       <?php
@@ -206,7 +206,7 @@
                     if ($value['type'] == 'rbi') {
                       ?>
                       <figure class="gallery__item gallery__item_3--<?php echo $counter1++; ?>">
-                        <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
+                        <img src="<?php echo $value['url'] ?>" loading="lazy" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
                         <!-- <div class="gallery__item-overlay-background"></div>  --> 
                       </figure>
                       <?php
@@ -241,7 +241,7 @@
                     if ($value['type'] == 'fdp') {
                       ?>
                       <figure class="gallery__item gallery__item_8--<?php echo $counter1++; ?>">
-                        <img src="<?php echo $value['url'] ?>" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
+                        <img src="<?php echo $value['url'] ?>" loading="lazy" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
                         <!-- <div class="gallery__item-overlay-background"></div>  --> 
                       </figure>
                       <?php

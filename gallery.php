@@ -1,5 +1,6 @@
 <?php
   $title = "Gallery";
+  $title_url = "#"; 
   require 'layout/top-header.php';
 ?>
 <body class="reading-pages">
@@ -7,6 +8,7 @@
   include 'layout/sub-header.php';
   require 'layout/header.php';
   $subtitle = "Gallery";
+  // $isGalleryPage = true;
   require 'layout/site-map.php'; 
   include 'data/rusa.php';
   include 'data/council.php';
@@ -18,7 +20,6 @@
     <div class="container">
       <div class="row">
         <!-- teaching-learning-images -->
-
         <div class="col-lg-3 col-md-6">
           <div class="gallery">
             <a href="gallery-view?jnhsdwmxifkd=Teaching, Learning and Education Technology">
@@ -27,11 +28,11 @@
                   <img class="img_bgColor" src="<?php echo $teaching_learning_images['data'][0]['url'] ?>" alt="<?php echo $teaching_learning_images['data'][0]['alt'] ?>">
                 </div>
                 <div class="down-content">
-                  <h4><?php echo concat_string($teaching_learning_images['title']);?></h4>
+                  <h4><?php echo concat_string($teaching_learning_images['shot_title']);?></h4>
                 </div>
               </div>
               <div class="overlay">
-                <div class="text">Open Folder</div>
+                <div class="display-text">Open Folder</div>
               </div>
             </a>
           </div>
@@ -39,17 +40,17 @@
         <!-- initiatives -->
         <div class="col-lg-3 col-md-6">
           <div class="gallery">
-            <a href="gallery-view?jnhsdwmxifkd=Initiatives">
+            <a href="gallery-view?jnhsdwmxifkd=All Initiatives">
               <div class="gallery-item">
                 <div class="thumb">
-                  <img class="img_bgColor" src="<?php echo $mou_images['data'][0]['url'] ?>" alt="<?php echo $mou_images['data'][0]['alt'] ?>">
+                  <img class="img_bgColor" src="<?php echo $images[1]['data'][4]['url'] ?>" alt="<?php echo $images[1]['data'][4]['alt'] ?>">
                 </div>
                 <div class="down-content">
                   <h4>Initiatives</h4>
                 </div>
-                <div class="overlay">
-                  <div class="text">Open Folder</div>
-                </div>
+              </div>
+              <div class="overlay">
+                <div class="display-text">Open Folder</div>
               </div>
             </a>
           </div>
@@ -67,9 +68,7 @@
                 </div>
               </div>
               <div class="overlay">
-                <div class="text">Open Folder</div>
-              </div>
-
+                <div class="display-text">Open Folder</div>
               </div>
             </a>
           </div>

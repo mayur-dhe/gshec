@@ -42,21 +42,21 @@
             'id' => 6,
             'type' => 'activity',
             'title' => 'FDP on Banking for Business Process',
-            'short_name' => 'FDP on Banking for Business Process',
-            'cover_image' => 'assets/images/empty.jpg',
+            'short_name' => 'FDP on Banking',
+            'cover_image' => 'assets/images/initiatives/fdb_on_banking/FDP_group.jpg',
         ),
         array(
             'id' => 7,
             'type' => 'activity',
             'title' => 'Placement Drive at Quepem',
             'short_name' => 'Placement Drive at Quepem',
-            'cover_image' => 'assets/images/empty.jpg',
+            'cover_image' => 'assets/images/initiatives/drive_at_quepem/img1.jpg',
         ),
         array(
             'id' => 8,
             'type' => 'activity',
             'title' => 'TCS Placement Drive at Borda College',
-            'short_name' => 'TCS Placement Drive at Borda College',
+            'short_name' => 'Placement Drive at Borda',
             'cover_image' => 'assets/images/empty.jpg',
         ),
         // array(
@@ -71,7 +71,7 @@
             'type' => 'activity',
             'title' => 'Visit to UGC and CEC',
             'short_name' => 'Visit to UGC and CEC',
-            'cover_image' => 'assets/images/empty.jpg',
+            'cover_image' => 'assets/images/initiatives/ugc_and_cec/pic2.jpeg',
         ),
     ];
 
@@ -79,6 +79,7 @@
         array(
             'id' => 1,
             'title' => 'DHE',
+            'short_title' => 'DHE',
             'data' => array(
                 array(
                     'url' => 'assets/images/empty.jpg',
@@ -89,6 +90,7 @@
         array(
             'id' => 2,
             'title' => 'Memorandum of Understanding',
+            'short_title' => 'MOU',
             'data' => array(
                 array(
                     'url' => 'assets/images/initiatives/mou/9F4A5162.JPG',
@@ -171,6 +173,7 @@
         array(
             'id' => 3,
             'title' => 'Academic Interface Programme',
+            'short_title' => 'AIP',
             'data' => array(
                 array(
                     'url' => 'assets/images/initiatives/aip/img.jpg',
@@ -181,6 +184,7 @@
         array(
             'id' => 4,
             'title' => 'Training, Internship and Placement Cell',
+            'short_title' => 'TLE Cell',
             'data' => array(
                 array(
                     'url' => 'assets/images/initiatives/tip/_SUN7015_C.jpg',
@@ -208,20 +212,22 @@
                 ),
             ),
         ),
-        array(
-            'id' => 5,
-            'title' => 'FDP Expertial Learning',
-            'data' => array(
-                // 0
-                array(
-                    'url' => 'assets/images/empty.jpg',
-                    'alt' => '',
-                ),
-            ),
-        ),
+        // array(
+        //     'id' => 5,
+        //     'title' => 'FDP Expertial Learning',
+        //     'short_title' => 'FDP Expertial Learning',
+        //     'data' => array(
+        //         // 0
+        //         array(
+        //             'url' => 'assets/images/empty.jpg',
+        //             'alt' => '',
+        //         ),
+        //     ),
+        // ),
         array(
             'id' => 6,
             'title' => 'FDP on Banking for Business Process',
+            'short_title' => 'FDP on Banking',
             'data' => array(
                 array(
                     'url' => 'assets/images/initiatives/fdb_on_banking/FDP_group.jpg',
@@ -237,6 +243,7 @@
         array(
             'id' => 7,
             'title' => 'Placement Drive at Quepem',
+            'short_title' => 'Placement Drive at Quepem',
             'data' => array(
                 array(
                     'url' => 'assets/images/initiatives/drive_at_quepem/img1.jpg',
@@ -247,6 +254,7 @@
         array(
             'id' => 8,
             'title' => 'TCS Placement Drive at Borda College',
+            'short_title' => 'Placement Drive at Borda',
             'data' => array(
                 // 0
                 array(
@@ -255,20 +263,22 @@
                 ),
             ),
         ),
-        array(
-            'id' => 9,
-            'title' => 'Vidyan Dharma',
-            'data' => array(
-                // 0
-                array(
-                    'url' => 'assets/images/empty.jpg',
-                    'alt' => '',
-                ),
-            ),
-        ),
+        // array(
+        //     'id' => 9,
+        //     'title' => 'Vidyan Dharma',
+        //     'short_title' => 'Vidyan Dharma',
+        //     'data' => array(
+        //         // 0
+        //         array(
+        //             'url' => 'assets/images/empty.jpg',
+        //             'alt' => '',
+        //         ),
+        //     ),
+        // ),
         array(
             'id' => 10,
             'title' => 'Visit to UGC and CEC',
+            'short_title' => 'Visit to UGC and CEC',
             'data' => array(
                 array(
                     'url' => 'assets/images/initiatives/ugc_and_cec/pic1.jpeg',
