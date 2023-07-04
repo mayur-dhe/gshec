@@ -21,27 +21,29 @@
         array(
             'year_id' => 1,
             'year' => '2022',
-            'title' => 'IBM',
+            'title' => 'Skill Build- IBM',
         ),
         array(
             'year_id' => 1,
             'year' => '2022',
-            'title' => 'Placement Drive',
+            'title' => 'Placement Drive at Quepem',
         ),
         array(
             'year_id' => 1,
             'year' => '2022',
-            'title' => 'TCS Drive',
+            'title' => 'Placement Drive at Borda',
         ),
         array(
             'year_id' => 2,
             'year' => '2023',
-            'title' => 'Unlu',
+            'title' => 'MUGAFI Event',
+            'sub_title' => 'Unlu',
         ),
         array(
             'year_id' => 2,
             'year' => '2023',
-            'title' => 'Newton',
+            'title' => 'Digital Goa Youth Submit',
+            'sub_title' => 'Newton',
         ),
         // array(
         //     'year_id' => 1,

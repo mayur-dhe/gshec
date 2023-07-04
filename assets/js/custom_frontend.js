@@ -70,7 +70,8 @@ function openTabSection(evt, selectedTab, isForm=false, isValid=0)
                     tablinks[i].className = tablinks[i].className.replace(" active", "");
                 }
                 document.getElementById(selectedTab).style.display = "block";
-                evt.currentTarget.className += " active";
+                // evt.currentTarget.className += " active";
+                $(".tablinks."+selectedTab).addClass("active");
             }
         } else {
             for (i = 0; i < tabcontent.length; i++) {

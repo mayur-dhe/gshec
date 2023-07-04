@@ -6,7 +6,8 @@
             'isContent' => true,
             'isContent2' => true,
             'isList' => true,
-            'title' => 'Karnataka system of KLMS and UUCMS (Unified University & College Mgt. System) to be adopted.',
+            'title' => 'Revolutionizing Education in Goa: Embracing the Karnataka System with KLMS and UUCMS',
+            'oldTitle' => 'Karnataka system of KLMS and UUCMS (Unified University & College Mgt. System) to be adopted.',
             'content' => array(
                 "A team from Goa consisting of academicians and technical experts visited the State of Karnataka to study KLMS and UUCMS. ",
                 "Our team found that <strong>Goa’s existing common academic management system is more comprehensive, with 34  different modules,</strong>  some of which are:",
@@ -62,7 +63,8 @@
             'isContent' => true,
             'isContent2' => false,
             'isList' => false,
-            'title' => 'Karnataka’s State Scholarship Portal (SSP) covering 12 post-matric schemes to be adopted in toto.',
+            'title' => 'Empowering Education in Goa: Embracing Karnataka\'s State Scholarship Portal (SSP) and its 12 Post-Matric Schemes',
+            'oldTitle' => 'Karnataka’s State Scholarship Portal (SSP) covering 12 post-matric schemes to be adopted in toto.',
             'content' => array(
                 "Team from Goa visited Karnataka to study the State Scholarship portal. We are currently in the stage of data collection for developing the State Scholarship portal. ",
                 "Karnataka’s SSP is an entitlement-based scheme, where students do not apply for the scholarship; they are automatically selected based on their eligibility, and the scholarships are disbursed through the Direct Benefit Transfer (DBT) process.",

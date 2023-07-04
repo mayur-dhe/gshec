@@ -78,6 +78,9 @@ require 'layout/top-header.php';
 	color: black  !important;
 	background-color: white;
 }
+.text-end{
+	text-align: right !important;
+}
 </style>	
 <body class="reading-pages">
 <?php 
@@ -99,7 +102,7 @@ $submitAPI = 'api/enrol_scholar.php';
 					<button class="tablinks box1" onclick="openTabSection(event, 'box1', true, 0)" id="defaultOpen">
 						<div class="row">
 							<div class="col-md-2">1.</div>
-							<div class="col-md-10">Personal Information</div>
+							<div class="col-md-10">PERSONAL INFORMATION</div>
 						</div>
 					</button>
 					<button class="tablinks box2" onclick="openTabSection(event, 'box2', true, 1)">
@@ -111,7 +114,7 @@ $submitAPI = 'api/enrol_scholar.php';
 					<button class="tablinks box3" onclick="openTabSection(event, 'box3', true, 1)">
 						<div class="row">
 							<div class="col-md-2">3.</div>
-							<div class="col-md-10">RECOMMENDATION <br>[Any other scholar]</div>
+							<div class="col-md-10">RECOMMENDATION <br>[any other scholar]</div>
 						</div>
 					</button>
 				</div>	
@@ -210,6 +213,9 @@ $submitAPI = 'api/enrol_scholar.php';
 							</div>
 						</div>
 					</div>
+					<div class="form-group col-md-12 text-end" id="buttonBox1">
+						<button type="button" class="btn btn-primary btn_size rounded_btn" onclick="openTabSection(event, 'box2', true, 1);"> Next</button>
+					</div>
 				</div>
 				<div class="tabcontent" id="box2">
 					<div class="col-md-12 col-lg-12 pt20">
@@ -247,6 +253,10 @@ $submitAPI = 'api/enrol_scholar.php';
 								<textarea class="form-control mb20" id="local_work" name="local_work"></textarea>
 							</div>
 						</div>
+					</div>
+					<div class="form-group col-md-12 text-end" id="buttonBox2">
+						<button type="button" class="btn btn-secondary btn_size rounded_btn" onclick="openTabSection(event, 'box1', true, 1);"> Previous</button>
+						<button type="button" class="btn btn-primary btn_size rounded_btn" onclick="openTabSection(event, 'box3', true, 1);"> Next</button>
 					</div>
 				</div>
 				<div class="tabcontent" id="box3">
@@ -287,6 +297,7 @@ $submitAPI = 'api/enrol_scholar.php';
 							<div class="input_fields_wrap"></div>   <!-- Show Added Days -->
 							<div class="row g-3">
 								<div class="form-group col-md-12" style="text-align: right!important" id="buttonBox2">
+									<button type="button" class="btn btn-secondary btn_size rounded_btn" onclick="openTabSection(event, 'box2', true, 1);"> Previous</button>
 									<button type="button" class="btn btn-info btn_size add_field_button rounded_btn">Add Scholar</button>
 								</div>
 								<div class="form-group col-md-12" style="text-align: center!important" >
@@ -353,6 +364,19 @@ $submitAPI = 'api/enrol_scholar.php';
 	}
 	// Wait for the DOM to be ready
 	$(function() {
+		// name = $("#sname").val('test');
+		// email = $("#semail").val('test@gmail.com');
+		// address = $("#sadd").val('test');
+		// city = $("#city").val('test');
+		// state = $("#state").val('test');
+		// work_name = $("#work_name").val('test');
+		// area_of_work = $("#area_of_work").val('test');
+		// designation = $("#designation").val('test');
+		// profile_link = $("#profile_link").val('https://open.spotify.com/collection/tracks');
+		// permanent_address = $("#permanent_address").val('test');
+		// phone_no = $("#phone_no").val('6658794561');
+		// type_of_eng = $("#type_of_eng").val('test');
+
 		$(add_button).click(function(e){ 			//on add input button click
 			e.preventDefault();
 			if(x < max_fields){ 					//max input box allowed
