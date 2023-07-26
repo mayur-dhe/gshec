@@ -356,7 +356,7 @@ $submitAPI = 'api/enrol_scholar.php';
 			popUpMsg('Please select a File!');
 		}
 	});
-   	// set loader
+    // set loader
 	function loaderTimeOut() {
 		setTimeout(() => {
 			window.location.reload();
