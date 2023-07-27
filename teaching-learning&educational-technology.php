@@ -109,11 +109,29 @@
             </ol>
           </div>
           <!-- 2022 -->
-          <div id="tabA11" class="tabcontent">
+          <div id="tabA11" class="tabcontent list-number">
             <h4>Outcome Based Education</h4>
             <div>
-              Outcome Based Education (OBE) is a flexible, empowerment-oriented approach to learning. It aims to equip learners with the knowledge, competence, and orientation needed for success after graduating from the institution. Hence, OBE is a powerful education strategy based on Bloom’s Taxonomy designed to achieve higher-order thinking. To impart high quality in the Higher Education Institutes (HEIs) in the state. Goa State Higher Education Council in the Directorate of Higher Education conducted a comprehensive and statewide faculty orientation programme focussed on outcome-based education. Prof Niyan Marchon, Professor, Teaching, learning and Educational Technology, GSHEC was the resource person for the workshops at all HEIs. Through this workshops, 1,619 faculty from 33 colleges were trained in “Outcome Based Education - Attainment of Program and Course outcomes”.  From three major sections of Goa University i.e., Science, Humanities and Goa Business School,175 faculty were also  trained.
+              <!-- Outcome Based Education (OBE) is a flexible, empowerment-oriented approach to learning. It aims to equip learners with the knowledge, competence, and orientation needed for success after graduating from the institution. Hence, OBE is a powerful education strategy based on Bloom’s Taxonomy designed to achieve higher-order thinking. To impart high quality in the Higher Education Institutes (HEIs) in the state. Goa State Higher Education Council in the Directorate of Higher Education conducted a comprehensive and statewide faculty orientation programme focussed on outcome-based education. Prof Niyan Marchon, Professor, Teaching, learning and Educational Technology, GSHEC was the resource person for the workshops at all HEIs. Through this workshops, 1,619 faculty from 33 colleges were trained in “Outcome Based Education - Attainment of Program and Course outcomes”.  From three major sections of Goa University i.e., Science, Humanities and Goa Business School,175 faculty were also  trained. -->
+              Goa State Higher Education Council in the Directorate of Higher Education conducted a comprehensive and statewide faculty orientation programme focused on outcome-based education. Outcome Based Education (OBE) is a flexible, empowerment-oriented approach to learning. It aims to equip learners with the knowledge, competence, and orientation needed for success after graduating from the institution. Hence, OBE is a powerful education strategy based on Bloom’s Taxonomy designed to achieve higher-order thinking. 
             </div>
+            <div class="mb0">
+              <strong>
+                The following modules/concepts were covered:
+              </strong>
+            </div>
+            <ol>
+              <li>Multiple Intelligence </li>
+              <li>Bloom’s Taxonomy</li>
+              <li>POs, PSOs, Cos, and assignment matrix</li>
+              <li>Rubrics and assessments</li>
+              <li>Attainment of POs and Cos.</li>
+            </ol>
+            <br>
+            <div>
+              Prof Niyan Marchon, Professor, Teaching, learning and Educational Technology, GSHEC, was the resource person for the workshops at all HEIs. Through these workshops, 1,619 faculty from 33 colleges were trained in “Outcome Based Education - Attainment of Program and Course Outcomes”.  From three major sections of Goa University, i.e., Science, Humanities and Goa Business School, 175 faculty were also trained.
+            </div>
+
             <div class="col-md-12">
               <div class="gallery_img_box gib_bg">
                 <?php
@@ -194,6 +212,7 @@
                 Mr. Nimish Raje – Asst. Manager, RBI Panaji 
               </li>
             </ol>
+            <br>
             <div>
               Topics such as Complaints redressal, Financial Inclusion, Currency Management and banking frauds were covered during the program.
             </div>
@@ -217,8 +236,11 @@
             </div>
           </div>
           <div id="tabA22" class="tabcontent">
-            <h4>TCS conducts Faculty Development program (FDP) in Banking for Business Process for Commerce faculty from all HEIs</h4>
-            <div>
+            <h4>
+              <!-- TCS conducts Faculty Development program (FDP) in Banking for Business Process for Commerce faculty from all HEIs -->
+              Faculty Development Program (FDP) in Banking for Business Process for Commerce faculty from all HEIs – in collaboration with TCS
+            </h4>
+            <!-- <div>
               “Technology has completely changed the economic and business landscape in the entire world. Therefore, higher education faculty must be equipped with skills and knowledge to prepare students for this technology-driven future. This will enhance the quality of higher education”, said Prasad Lolayekar, Director of Higher Education.  He was speaking at the inaugural function of the 5-day Faculty Development Program (FDP) organized by the Directorate of Higher Education (DHE) and Goa State Higher Education Council (GSHEC), Government of Goa in collaboration with Tata Consultancy Services. The FDP for commerce faculty as Train the Trainer program was one of the objectives of the MoU to be signed between GSHEC, DHE and TCS in March 2023.
             </div>
             <div>
@@ -232,6 +254,21 @@
             </div>
             <div>
               This FDP will certainly help faculty to introduce new skill-based courses in higher education,  and build the Academic-Industry connect, one of the main goals under NEP 2020, said Prof. Niyan Marchon at the Valedictory function. Dr. Anson Albuquerque, Saurabh Naik and Ms. Vandana Sawant of Goa State Higher Education Council coordinated the event.
+            </div> -->
+            <div>
+              “Technology has completely changed the economic and business landscape in the entire world. Therefore, higher education faculty must be equipped with skills and knowledge to prepare students for this technology-driven future. This will enhance the quality of higher education”, said Prasad Lolayekar, Director of Higher Education, at the inaugural function of the 5-day Faculty Development Program (FDP) organized by the Directorate of Higher Education (DHE) and Goa State Higher Education Council (GSHEC), Government of Goa, in collaboration with Tata Consultancy Services. The FDP for commerce faculty, Train the Trainer Program, was one of the objectives of the MoU, which was to be signed between GSHEC, DHE and TCS in March 2023.
+            </div>
+            <div>
+              This FDP was part of a much bigger initiative, “Motivated, Energized, and Capable Faculty”, one of the main themes of the National Education Policy (NEP 2020). Under this initiative, the faculty in higher education were being continuously trained and upskilled.
+            </div>
+            <div>
+              Retail Banking expert Jesal Kapadia, Manager BFSI Anupama Patil, and Domain Consultant Chandrakala B from TCS were the resource person for this FDP that was held from 30th January to 3rd February 2023 at Porvorim. 
+            </div>
+            <div>
+              The training was aimed at upskilling faculty from the disciplines of Commerce and economics. The FDP focused on Retail and Corporate Banking, electronic payment systems via Debit and Credit cards, Mortgages, Cash Management and Trade Finances. A total of 46 faculty from 19 colleges were trained during the FDP.
+            </div>
+            <div>
+              “This FDP will certainly help faculty to introduce new skill-based courses in higher education and build the Academic-Industry connect, one of the main goals under NEP 2020”, said Prof. Niyan Marchon at the Valedictory function. Dr Anson Albuquerque, Mr Saurabh Naik and Ms Vandana Sawant of Goa State Higher Education Council coordinated the event. 
             </div>
             <div class="col-md-12">
               <div class="gallery_img_box gib_bg">
@@ -240,7 +277,7 @@
                   foreach ($teaching_learning_images['data'] as $key => $value) {
                     if ($value['type'] == 'fdp') {
                       ?>
-                      <figure class="gallery__item gallery__item_8--<?php echo $counter1++; ?>">
+                      <figure class="gallery__item gallery__item_2--<?php echo $counter1++; ?>">
                         <img src="<?php echo $value['url'] ?>" loading="lazy" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
                         <!-- <div class="gallery__item-overlay-background"></div>  --> 
                       </figure>

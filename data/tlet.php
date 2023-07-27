@@ -133,136 +133,136 @@
                 'alt' => '',
             ),
             // 2
-            array(
-                'type' => 'obe',
-                'url' => 'assets/images/tle/obe/img-1.jpg',
-                'alt' => '',
-            ),
-            array(
-                'type' => 'obe',
-                'url' => 'assets/images/tle/obe/img-18.jpg',
-                'alt' => '',
-            ),
-            array(
-                'type' => 'obe',
-                'url' => 'assets/images/tle/obe/img-11.jpg',
-                'alt' => '',
-            ),
+            // array(
+            //     'type' => 'obe',
+            //     'url' => 'assets/images/tle/obe/img-1.jpg',
+            //     'alt' => '',
+            // ),
+            // array(
+            //     'type' => 'obe',
+            //     'url' => 'assets/images/tle/obe/img-18.jpg',
+            //     'alt' => '',
+            // ),
+            // array(
+            //     'type' => 'obe',
+            //     'url' => 'assets/images/tle/obe/img-11.jpg',
+            //     'alt' => '',
+            // ),
             array(
                 'type' => 'obe',
                 'url' => 'assets/images/tle/obe/img-4.jpg',
-                'alt' => '',
+                'alt' => 'selected',
             ),
-            array(
-                'type' => 'obe',
-                'url' => 'assets/images/tle/obe/img-5.jpg',
-                'alt' => '',
-            ),
-            array(
-                'type' => 'obe',
-                'url' => 'assets/images/tle/obe/img-6.jpg',
-                'alt' => '',
-            ),
-            array(
-                'type' => 'obe',
-                'url' => 'assets/images/tle/obe/img-7.jpg',
-                'alt' => '',
-            ),
-            array(
-                'type' => 'obe',
-                'url' => 'assets/images/tle/obe/img-8.jpg',
-                'alt' => '',
-            ),
-            array(
-                'type' => 'obe',
-                'url' => 'assets/images/tle/obe/img-9.jpg',
-                'alt' => '',
-            ),
+            // array(
+            //     'type' => 'obe',
+            //     'url' => 'assets/images/tle/obe/img-5.jpg',
+            //     'alt' => '',
+            // ),
+            // array(
+            //     'type' => 'obe',
+            //     'url' => 'assets/images/tle/obe/img-6.jpg',
+            //     'alt' => '',
+            // ),
+            // array(
+            //     'type' => 'obe',
+            //     'url' => 'assets/images/tle/obe/img-7.jpg',
+            //     'alt' => '',
+            // ),
+            // array(
+            //     'type' => 'obe',
+            //     'url' => 'assets/images/tle/obe/img-8.jpg',
+            //     'alt' => '',
+            // ),
+            // array(
+            //     'type' => 'obe',
+            //     'url' => 'assets/images/tle/obe/img-9.jpg',
+            //     'alt' => '',
+            // ),
             array(
                 'type' => 'obe',
                 'url' => 'assets/images/tle/obe/img-10.jpg',
-                'alt' => '',
+                'alt' => 'selected',
             ),
-            array(
-                'type' => 'obe',
-                'url' => 'assets/images/tle/obe/img-3.jpg',
-                'alt' => '',
-            ),
-            array(
-                'type' => 'obe',
-                'url' => 'assets/images/tle/obe/img-12.jpg',
-                'alt' => '',
-            ),
+            // array(
+            //     'type' => 'obe',
+            //     'url' => 'assets/images/tle/obe/img-3.jpg',
+            //     'alt' => '',
+            // ),
+            // array(
+            //     'type' => 'obe',
+            //     'url' => 'assets/images/tle/obe/img-12.jpg',
+            //     'alt' => '',
+            // ),
             array(
                 'type' => 'obe',
                 'url' => 'assets/images/tle/obe/img-13.jpg',
-                'alt' => '',
+                'alt' => 'selected',
             ),
-            array(
-                'type' => 'obe',
-                'url' => 'assets/images/tle/obe/img-14.jpg',
-                'alt' => '',
-            ),
-            array(
-                'type' => 'obe',
-                'url' => 'assets/images/tle/obe/img-15.jpg',
-                'alt' => '',
-            ),
-            array(
-                'type' => 'obe',
-                'url' => 'assets/images/tle/obe/img-16.jpg',
-                'alt' => '',
-            ),
+            // array(
+            //     'type' => 'obe',
+            //     'url' => 'assets/images/tle/obe/img-14.jpg',
+            //     'alt' => '',
+            // ),
+            // array(
+            //     'type' => 'obe',
+            //     'url' => 'assets/images/tle/obe/img-15.jpg',
+            //     'alt' => '',
+            // ),
+            // array(
+            //     'type' => 'obe',
+            //     'url' => 'assets/images/tle/obe/img-16.jpg',
+            //     'alt' => '',
+            // ),
             array(
                 'type' => 'obe',
                 'url' => 'assets/images/tle/obe/img-17.jpg',
-                'alt' => '',
+                'alt' => 'selected',
             ),
-            array(
-                'type' => 'obe',
-                'url' => 'assets/images/tle/obe/img-2.jpg',
-                'alt' => '',
-            ),
-            array(
-                'type' => 'obe',
-                'url' => 'assets/images/tle/obe/img-19.jpg',
-                'alt' => '',
-            ),
-            array(
-                'type' => 'obe',
-                'url' => 'assets/images/tle/obe/img-20.jpg',
-                'alt' => '',
-            ),
-            array(
-                'type' => 'obe',
-                'url' => 'assets/images/tle/obe/img-21.jpg',
-                'alt' => '',
-            ),
-            array(
-                'type' => 'obe',
-                'url' => 'assets/images/tle/obe/img-22.jpg',
-                'alt' => '',
-            ),
-            array(
-                'type' => 'obe',
-                'url' => 'assets/images/tle/obe/img-23.jpg',
-                'alt' => '',
-            ),
-            array(
-                'type' => 'obe',
-                'url' => 'assets/images/tle/obe/img-24.jpg',
-                'alt' => '',
-            ),
-            array(
-                'type' => 'obe',
-                'url' => 'assets/images/tle/obe/img-25.jpg',
-                'alt' => '',
-            ),
-            array(
-                'type' => 'obe',
-                'url' => 'assets/images/tle/obe/img-26.jpg',
-                'alt' => '',
-            ),
+            // array(
+            //     'type' => 'obe',
+            //     'url' => 'assets/images/tle/obe/img-2.jpg',
+            //     'alt' => '',
+            // ),
+            // array(
+            //     'type' => 'obe',
+            //     'url' => 'assets/images/tle/obe/img-19.jpg',
+            //     'alt' => '',
+            // ),
+            // array(
+            //     'type' => 'obe',
+            //     'url' => 'assets/images/tle/obe/img-20.jpg',
+            //     'alt' => '',
+            // ),
+            // array(
+            //     'type' => 'obe',
+            //     'url' => 'assets/images/tle/obe/img-21.jpg',
+            //     'alt' => '',
+            // ),
+            // array(
+            //     'type' => 'obe',
+            //     'url' => 'assets/images/tle/obe/img-22.jpg',
+            //     'alt' => '',
+            // ),
+            // array(
+            //     'type' => 'obe',
+            //     'url' => 'assets/images/tle/obe/img-23.jpg',
+            //     'alt' => '',
+            // ),
+            // array(
+            //     'type' => 'obe',
+            //     'url' => 'assets/images/tle/obe/img-24.jpg',
+            //     'alt' => '',
+            // ),
+            // array(
+            //     'type' => 'obe',
+            //     'url' => 'assets/images/tle/obe/img-25.jpg',
+            //     'alt' => '',
+            // ),
+            // array(
+            //     'type' => 'obe',
+            //     'url' => 'assets/images/tle/obe/img-26.jpg',
+            //     'alt' => '',
+            // ),
             // 3
             array(
                 'type' => 'rbi',
@@ -295,26 +295,26 @@
                 'url' => 'assets/images/tle/fdp/pic2.jpg',
                 'alt' => '',
             ),
-            array(
-                'type' => 'fdp',
-                'url' => 'assets/images/tle/fdp/pic3.jpg',
-                'alt' => '',
-            ),
+            // array(
+            //     'type' => 'fdp',
+            //     'url' => 'assets/images/tle/fdp/pic3.jpg',
+            //     'alt' => '',
+            // ),
             array(
                 'type' => 'fdp',
                 'url' => 'assets/images/tle/fdp/pic4.jpg',
                 'alt' => '',
             ),
-            array(
-                'type' => 'fdp',
-                'url' => 'assets/images/tle/fdp/pic5.jpg',
-                'alt' => '',
-            ),
-            array(
-                'type' => 'fdp',
-                'url' => 'assets/images/tle/fdp/pic6.jpg',
-                'alt' => '',
-            ),
+            // array(
+            //     'type' => 'fdp',
+            //     'url' => 'assets/images/tle/fdp/pic5.jpg',
+            //     'alt' => '',
+            // ),
+            // array(
+            //     'type' => 'fdp',
+            //     'url' => 'assets/images/tle/fdp/pic6.jpg',
+            //     'alt' => '',
+            // ),
         ),
     ];
 ?>

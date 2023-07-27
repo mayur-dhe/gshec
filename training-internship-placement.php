@@ -7,6 +7,8 @@ require 'layout/top-header.php';
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- chart -->
+<script src="assets/js/custom_chart_370min.js"></script>
 
 <body class="reading-pages">
 <?php 
@@ -184,6 +186,7 @@ require 'layout/top-header.php';
           </div>
 
           <!-- 2022 -->
+          <!-- not using -->
           <div id="tabA11-hidden" class="tabcontent">
             <h4><?php echo $tip_installation['title'] ?></h4>
             <div><?php echo $tip_installation['data'] ?></div>
@@ -205,6 +208,7 @@ require 'layout/top-header.php';
               </div>
             </div>
           </div>
+          <!-- not using above-->
           <div id="tabA11" class="tabcontent list-number">
             <h4><?php echo $installation_of_tip['title'] ?></h4>
             <?php 
@@ -239,7 +243,7 @@ require 'layout/top-header.php';
                   foreach ($tip_images['data'] as $key => $value) {
                     if ($value['type'] == 'installation_of_tip') {
                       ?>
-                      <figure class="gallery__item gallery__item_9--<?php echo $counter0++; ?>">
+                      <figure class="gallery__item gallery__item_2--<?php echo $counter0++; ?>">
                         <img src="<?php echo $value['url'] ?>" loading="lazy" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
                         <!-- <div class="gallery__item-overlay-background"></div>  --> 
                       </figure>
@@ -264,7 +268,7 @@ require 'layout/top-header.php';
                   foreach ($tip_images['data'] as $key => $value) {
                     if ($value['type'] == 'ibm') {
                       ?>
-                      <figure class="gallery__item gallery__item_9--<?php echo $counter0++; ?>">
+                      <figure class="gallery__item gallery__item_2--<?php echo $counter0++; ?>">
                         <img src="<?php echo $value['url'] ?>" loading="lazy" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
                         <!-- <div class="gallery__item-overlay-background"></div>  --> 
                       </figure>
@@ -324,6 +328,23 @@ require 'layout/top-header.php';
               }
             ?>
             <!-- add Image Gallery -->
+            <div class="col-md-12 p0">  
+              <div class="gallery_img_box gib_bg">
+                <?php
+                  $counter0 = 1; 
+                  foreach ($tip_images['data'] as $key => $value) {
+                    if ($value['type'] == 'placement_drive') {
+                      ?>
+                      <figure class="gallery__item gallery__item_2--<?php echo $counter0++; ?>">
+                        <img src="<?php echo $value['url'] ?>" loading="lazy" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
+                        <!-- <div class="gallery__item-overlay-background"></div>  --> 
+                      </figure>
+                      <?php
+                    }
+                  }
+                ?>
+              </div>
+            </div>
           </div>
           <div id="tabA14" class="tabcontent">
             <h4><?php echo $tcs_drive['title'] ?></h4>
@@ -332,6 +353,7 @@ require 'layout/top-header.php';
                 echo '<div>'.$value.'</div>';
               }
             ?>
+            <!-- add Image Gallery -->
             <div class="col-md-12 p0">  
               <div class="gallery_img_box gib_bg">
                 <?php
@@ -387,7 +409,7 @@ require 'layout/top-header.php';
                   foreach ($tip_images['data'] as $key => $value) {
                     if ($value['type'] == 'unlu') {
                       ?>
-                      <figure class="gallery__item gallery__item_9--<?php echo $counter0++; ?>">
+                      <figure class="gallery__item gallery__item_2--<?php echo $counter0++; ?>">
                         <img src="<?php echo $value['url'] ?>" loading="lazy" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
                         <!-- <div class="gallery__item-overlay-background"></div>  --> 
                       </figure>
@@ -426,6 +448,118 @@ require 'layout/top-header.php';
                 echo '<div>'.$value.'</div>';
               }
             ?>
+            <div class="col-md-12 p0">  
+              <div class="gallery_img_box gib_bg">
+                <?php
+                  $counter0 = 1; 
+                  foreach ($tip_images['data'] as $key => $value) {
+                    if ($value['type'] == 'newton') {
+                      ?>
+                      <figure class="gallery__item gallery__item_2--<?php echo $counter0++; ?>">
+                        <img src="<?php echo $value['url'] ?>" loading="lazy" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
+                        <!-- <div class="gallery__item-overlay-background"></div>  --> 
+                      </figure>
+                      <?php
+                    }
+                  }
+                ?>
+              </div>
+            </div>
+          </div>
+          <div id="tabA23" class="tabcontent list-number">
+            <h4><?php echo $mou_signing_DHE_GSHEC['title'] ?></h4>
+            <?php 
+              foreach ($mou_signing_DHE_GSHEC['data1'] as $key => $value) {
+                echo '<div>'.$value.'</div>';
+              }
+            ?>
+            <div class="col-md-12 p0">  
+              <div class="gallery_img_box gib_bg">
+                <?php
+                  $counter0 = 1; 
+                  foreach ($tip_images['data'] as $key => $value) {
+                    if ($value['type'] == 'mou_signing_DHE_GSHEC') {
+                      ?>
+                      <figure class="gallery__item gallery__item_3--<?php echo $counter0++; ?>">
+                        <img src="<?php echo $value['url'] ?>" loading="lazy" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
+                        <!-- <div class="gallery__item-overlay-background"></div>  --> 
+                      </figure>
+                      <?php
+                    }
+                  }
+                ?>
+              </div>
+            </div>
+          </div>
+          <div id="tabA24" class="tabcontent list-number">
+            <h4><?php echo $shiksha_sangam['title'] ?></h4>
+            <?php 
+              foreach ($shiksha_sangam['data'] as $key => $value) {
+                echo '<div>'.$value.'</div>';
+              }
+            ?>
+            <div class="col-md-12 p0">  
+              <div class="gallery_img_box gib_bg">
+                <?php
+                  $counter0 = 1; 
+                  foreach ($tip_images['data'] as $key => $value) {
+                    if ($value['type'] == 'shiksha_sangam') {
+                      ?>
+                      <figure class="gallery__item gallery__item_3--<?php echo $counter0++; ?>">
+                        <img src="<?php echo $value['url'] ?>" loading="lazy" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
+                        <!-- <div class="gallery__item-overlay-background"></div>  --> 
+                      </figure>
+                      <?php
+                    }
+                  }
+                ?>
+              </div>
+            </div>
+          </div>
+          <div id="tabA25" class="tabcontent list-number">
+            <h4><?php echo $inspire_to_aspire_2['title'] ?></h4>
+            <div class="text-center"><strong>
+              <?php 
+                foreach ($inspire_to_aspire_2['subtitle'] as $key => $value) {
+                  echo $value.'<br>';
+                }
+              ?>
+            </strong></div>
+            <?php 
+              foreach ($inspire_to_aspire_2['schedule'] as $key => $value) {
+                echo '<p style="font-size:18px!important; padding: 0!important;">'.$value.'</p>';
+              }
+              ?>
+            <!-- chart -->
+              
+            <!-- chart -->
+            <?php 
+              echo '
+              <br>
+              <div>
+                <strong>'.$inspire_to_aspire_2['data1_title'].'</strong>'.
+                $inspire_to_aspire_2['data1_subtitle'].'
+              </div>';
+                foreach ($inspire_to_aspire_2['data1'] as $key => $value) {
+                  echo '<div>'.$value.'</div>';
+                }
+                echo '
+              <img src="'.$inspire_to_aspire_2['data1_img_url'].'" loading="lazy" alt="Gallery image 1" class="" style="background-color:#000;">
+              <p style="font-size:16px!important; padding: 0!important;">'.$inspire_to_aspire_2['data1_img_caption'].'</p>
+                
+              <br><br>
+              <div>
+              <strong>'.$inspire_to_aspire_2['data2_title'].'</strong>'.
+              $inspire_to_aspire_2['data2_subtitle'].'
+              </div>';
+                foreach ($inspire_to_aspire_2['data2'] as $key => $value) {
+                  echo '<div>'.$value.'</div>';
+                }
+              echo '
+              <img src="'.$inspire_to_aspire_2['data2_img_url'].'" loading="lazy" alt="Gallery image 1" class="" style="background-color:#000;">
+              <p style="font-size:16px!important; padding: 0!important;">'.$inspire_to_aspire_2['data2_img_caption'].'</p>
+              ';
+            ?>
           </div>
 
 
@@ -447,4 +581,7 @@ require 'layout/top-header.php';
   <!-- ***** Footer  ***** -->
   <?php require 'layout/footer.php'; ?>
   </body>
+  <script>
+  
+</script>
 </html>

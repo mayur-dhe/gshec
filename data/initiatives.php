@@ -82,7 +82,19 @@
             'short_title' => 'DHE',
             'data' => array(
                 array(
-                    'url' => 'assets/images/empty.jpg',
+                    'url' => 'assets/images/initiatives/ibm/img1.jpeg',
+                    'alt' => '',
+                ),
+                array(
+                    'url' => 'assets/images/initiatives/ibm/img2.jpeg',
+                    'alt' => '',
+                ),
+                array(
+                    'url' => 'assets/images/initiatives/ibm/img3.jpeg',
+                    'alt' => '',
+                ),
+                array(
+                    'url' => 'assets/images/initiatives/ibm/img4.jpeg',
                     'alt' => '',
                 ),
             ),
@@ -130,11 +142,11 @@
                 ),
                 array(
                     'url' => 'assets/images/initiatives/mou/ALL.JPG',
-                    'alt' => '',
+                    'alt' => 'selected',
                 ),
                 array(
                     'url' => 'assets/images/initiatives/mou/audience.JPG',
-                    'alt' => '',
+                    'alt' => 'selected',
                 ),
                 array(
                     'url' => 'assets/images/initiatives/mou/Be Unlu.JPG',
@@ -142,7 +154,7 @@
                 ),
                 array(
                     'url' => 'assets/images/initiatives/mou/CM.JPG',
-                    'alt' => '',
+                    'alt' => 'selected',
                 ),
                 array(
                     'url' => 'assets/images/initiatives/mou/CM speech.JPG',
@@ -158,7 +170,7 @@
                 ),
                 array(
                     'url' => 'assets/images/initiatives/mou/Group Pic.JPG',
-                    'alt' => '',
+                    'alt' => 'selected',
                 ),
                 array(
                     'url' => 'assets/images/initiatives/mou/NavGurukul.JPG',

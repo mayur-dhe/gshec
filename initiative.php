@@ -110,7 +110,14 @@ dl, ol, ul {
                 </h2>
                 <br>
                 <p>
-                  The TIP cell with IBM and its implementation partner REACHA (Research and Extension Association for Conservation Horticulture and Agro-forestry) has collaborated for a SkillsBuild program, which aims to serve and foster the capability and development of learners. It's a self-paced course and open to all students as well as faculty. IBM SkillsBuild has a broad variety of courses categorized into Role- based skills, Essential skills, professional skills, web developer skills, job readiness skills and other certification preparation courses. Total of 2000+ learners have registered for this program. 
+                  <!-- The TIP cell with IBM and its implementation partner REACHA (Research and Extension Association for Conservation Horticulture and Agro-forestry) has collaborated for a SkillsBuild program, which aims to serve and foster the capability and development of learners. It's a self-paced course and open to all students as well as faculty. IBM SkillsBuild has a broad variety of courses categorized into Role- based skills, Essential skills, professional skills, web developer skills, job readiness skills and other certification preparation courses. Total of 2000+ learners have registered for this program.  -->
+                  The TIP cell, along with IBM and its implementation partner REACHA (Research and Extension Association for Conservation Horticulture and Agro-forestry), collaborated for a SkillsBuild program, which aims to serve and foster the capability and development of learners. IBM SkillsBuild categorized courses into Role - based skills, Essential skills, professional skills, web developer skills, job readiness skills and other certification preparation courses.
+                </p>
+                <p>
+                  GSHEC and IBM entered into an MoU to scale up the skilling resources and platforms to create a robust education and skilling ecosystem that creates critical thinkers, problem-solvers, and next-generation innovators.
+                </p>
+                <p>
+                  IBM SkillsBuild seeks to help those thirsting for skills and knowledge. A total of 2000+ learners from various HEIs registered for the program. The program included access to digital content/ SkillsBuild platform and associated training of students, job seekers and trainers/educators etc. via online workshops, webinars etc. IBM provided joint certification to registered candidates upon completion of the course.
                 </p>
                 <div class="row">
                   <?php
@@ -142,35 +149,42 @@ dl, ol, ul {
                   MoU signing with 4 skilling startups
                 </h2>
                 <p>
-                  The Directorate of Higher Education and Goa State Higher Education Council has taken the initiative to coordinate with the skilling organizations to create customized programs for Goa with free bootcamps ranging from 4 weeks to 15 months for all participating students. This collaboration will provide the required skills to the students of HEIs of General Institutions and Engineering colleges. It will also empower and prepare the students for the future, which is one of the recommendations of the new NEP 2020. In this regard, The TIP cell of GSHEC and DHE signed an MoU on 6th October 2022 with the below-mentioned skilling organizations that are Newton School, Beunlu Pvt Ltd, Navgurukul Foundation for social welfare and ENTRI. This collaboration will strengthen the Industry-Institute Interaction as well as help to bridge the gap between curriculum and industrial demands as well as increase the employability of students across the State of Goa. Each skilling organization on board has a specific objective to empower and enhance students’ skills. 
+                  <!-- The Directorate of Higher Education and Goa State Higher Education Council has taken the initiative to coordinate with the skilling organizations to create customized programs for Goa with free bootcamps ranging from 4 weeks to 15 months for all participating students. This collaboration will provide the required skills to the students of HEIs of General Institutions and Engineering colleges. It will also empower and prepare the students for the future, which is one of the recommendations of the new NEP 2020. In this regard, The TIP cell of GSHEC and DHE signed an MoU on 6th October 2022 with the below-mentioned skilling organizations that are Newton School, Beunlu Pvt Ltd, Navgurukul Foundation for social welfare and ENTRI. This collaboration will strengthen the Industry-Institute Interaction as well as help to bridge the gap between curriculum and industrial demands as well as increase the employability of students across the State of Goa. Each skilling organization on board has a specific objective to empower and enhance students’ skills.  -->
+                  The Directorate of Higher Education and Goa State Higher Education Council has collaborated with four skilling start-ups to create customized programs for students of HEIs with free boot camps ranging from 4 weeks to 15 months. These collaborations will provide the required skills to the students of HEIs of General Institutions and Engineering colleges, which will help empower and prepare the students for the future. The TIP cell of GSHEC and DHE signed a MoU on 6th October 2022 with the following-mentioned skilling organizations - Newton School, Beunlu Pvt Ltd (Mugafi), Navgurukul Foundation for social welfare, and ENTRI. These collaborations will strengthen the Industry-Institute Interaction as well as help to bridge the gap between curriculum and industrial demands as well as increase the employability of students across the State of Goa. Each skilling organization on board has a specific objective to empower and enhance students’ skills.
                 </p>
                 <p class="height_130">
                   <img class="img-float-right" src="assets/images/initiatives/mou/Newton school.JPG" alt="Newton School">
                   <span class="fontWt-6">
-                    Objective of Newton School: 
+                    <!-- Objective of Newton School:  -->
+                    Newton School
                   </span>
-                  This MoU is the capacity development of the students from all Higher Education Institutions (HEIs) with a special focus on upskilpng the youth of Goa with industry-focused, skill-oriented education in software development and providing 100 per cent placements to these trained students. The role of Newton School is to introduce a specially designed Full Stack Web Development program to selected students from various Technical and Non- Technical backgrounds from Goa every year.
+                  <!-- This MoU is the capacity development of the students from all Higher Education Institutions (HEIs) with a special focus on upskilpng the youth of Goa with industry-focused, skill-oriented education in software development and providing 100 per cent placements to these trained students. The role of Newton School is to introduce a specially designed Full Stack Web Development program to selected students from various Technical and Non- Technical backgrounds from Goa every year. -->
+                  This MoU concentrates on the capacity development of the students from all Higher Education Institutions (HEIs) with a special focus on upskilling the youth of Goa with industry-focused, skill-oriented education in software development and providing 100 percent placements to these trained students. The role of Newton School is to introduce a specially designed Full Stack Web Development program to selected students from various Technical and Non- Technical backgrounds from Goa every year.
                 </p>
                 <p class="height_130">
                   <img class="img-float-right" src="assets/images/initiatives/mou/Be Unlu.JPG" alt="Benunlu Pvt Ltd">
                   <span class="fontWt-6">
-                    Benunlu Pvt Ltd
+                    <!-- Benunlu Pvt Ltd -->
+                    Benunlu Pvt ( Mugafi)
                   </span>
-                  goal is to provide extensive training to students aspiring to become writers and musicians across the state of Goa by giving them the opportunity to learn from the best-in-industry mentors and teachers across the Media & Entertainment industry and eventually to create content Intellectual Property (IP) which can make them earn from their art across different mediums.
+                  <!-- goal is to provide extensive training to students aspiring to become writers and musicians across the state of Goa by giving them the opportunity to learn from the best-in-industry mentors and teachers across the Media & Entertainment industry and eventually to create content Intellectual Property (IP) which can make them earn from their art across different mediums. -->
+                  The goal of this MoU is to provide extensive training to students aspiring to become writers and musicians across the state of Goa by allowing them to learn from the best-in-industry mentors and teachers across the Media & Entertainment industry and eventually to create content Intellectual Property (IP) which can make them earn from their art across different mediums.
                 </p>
                 <p class="height_130">
                   <img class="img-float-right" src="assets/images/initiatives/mou/Entri.JPG" alt="ENTRI">
                   <span class="fontWt-6">
                     ENTRI 
                   </span>
-                  is India’s fastest-growing app for job skills with 10M users. The objective of this MoU is to provide a free scholarship for 250 students from all HEIs across Goa which will provide the selected student's different types of content, mock exam and podcast to upskill them for private and government jobs using the local language learning App in Konkani.
+                  <!-- is India’s fastest-growing app for job skills with 10M users. The objective of this MoU is to provide a free scholarship for 250 students from all HEIs across Goa which will provide the selected student's different types of content, mock exam and podcast to upskill them for private and government jobs using the local language learning App in Konkani. -->
+                  The objective of this MoU is to provide free scholarships to 250 students from all HEIs across Goa, which will provide the selected students with different types of content, mock exam and podcast to upskill them for private and government jobs using the local language learning App in Konkani.
                 </p>
                 <p class="height_130">
                   <img class="img-float-right" src="assets/images/initiatives/mou/NavGurukul.JPG" alt="NavGurukul Foundation for social welfare">
                   <span class="fontWt-6">
                     NavGurukul Foundation for social welfare 
                   </span>
-                  role is to work with girl child from the marginal communities and place them in the tech industry. The objective of this MoU is to set up a new learning campus in the State of Goa which will have a training capacity for up to 300 students in each cycle (for a period of 5 cycles) in Software Programming, Advanced Graphic Design, and/ or Management courses of 15 months duration and providing placement assistance to the cohort on completion of their course.
+                  <!-- role is to work with girl child from the marginal communities and place them in the tech industry. The objective of this MoU is to set up a new learning campus in the State of Goa which will have a training capacity for up to 300 students in each cycle (for a period of 5 cycles) in Software Programming, Advanced Graphic Design, and/ or Management courses of 15 months duration and providing placement assistance to the cohort on completion of their course. -->
+                  The objective of this MoU is to set up a new learning campus in the State of Goa, which will have a training capacity for up to 300 students, especially girl children from the marginal community. The foundation looks to introduce courses in Software Programming, Advanced Graphic Design, and/ or Management courses of 15 months duration as well as provide placement assistance to the students upon completion of the course.
                 </p>
               <?php  } else if ( $id == 3) {  ?>
                 <h2 style="text-align: left !important;">
