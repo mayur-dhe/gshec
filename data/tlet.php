@@ -183,6 +183,11 @@
                 'url' => 'assets/images/tle/obe/img-10.jpg',
                 'alt' => 'selected',
             ),
+            array(
+                'type' => 'obe',
+                'url' => 'assets/images/tle/obe/img-27.png',
+                'alt' => '',
+            ),
             // array(
             //     'type' => 'obe',
             //     'url' => 'assets/images/tle/obe/img-3.jpg',
@@ -263,6 +268,7 @@
             //     'url' => 'assets/images/tle/obe/img-26.jpg',
             //     'alt' => '',
             // ),
+            // img-28
             // 3
             array(
                 'type' => 'rbi',

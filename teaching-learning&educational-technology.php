@@ -139,7 +139,7 @@
                   foreach ($teaching_learning_images['data'] as $key => $value) {
                     if ($value['type'] == 'obe') {
                       ?>
-                      <figure class="gallery__item gallery__item_7--<?php echo $counter0++; ?>">
+                      <figure class="gallery__item gallery__item_1--<?php echo $counter0++; ?>">
                         <img src="<?php echo $value['url'] ?>" loading="lazy" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
                         <!-- <div class="gallery__item-overlay-background"></div>  --> 
                       </figure>

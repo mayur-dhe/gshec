@@ -7,7 +7,7 @@ CREATE TABLE activities (
     content varchar(500) DEFAULT NULL,
     page_template_id int(10) DEFAULT NULL,
     frm_date date DEFAULT NULL,
-    to_date date DEFAULT NULL
+    to_date date DEFAULT NULL,
     PRIMARY KEY (id)
 );
 

@@ -7,8 +7,7 @@ require 'layout/top-header.php';
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-<!-- chart -->
-<script src="assets/js/custom_chart_370min.js"></script>
+
 
 <body class="reading-pages">
 <?php 
@@ -531,7 +530,7 @@ require 'layout/top-header.php';
               }
               ?>
             <!-- chart -->
-              
+                
             <!-- chart -->
             <?php 
               echo '
@@ -578,10 +577,11 @@ require 'layout/top-header.php';
   </section>
   <!-- ------------- Main Content End---------------------- -->
   <script src="assets/js/custom_frontend.js"></script>
+
   <!-- ***** Footer  ***** -->
   <?php require 'layout/footer.php'; ?>
   </body>
   <script>
-  
+
 </script>
 </html>
