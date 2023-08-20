@@ -357,13 +357,14 @@
                         'in collaboration with Tata Consultancy Service (TCS) Conducted TCS Placement Drive 2023',
                     ),
         'date' => ' 25th, 26th May 2023',
+        'chart_url' => 'assets/images/tip/2023_inspire_to_aspire_2/TCS PLACEMENT DRIVE 2023 (Students Attended _ Placed).svg',
         'schedule' => array(
                         "<strong>DAY ONE : </strong> 25th May 2023  at S S Dempo College of Commerce and Economics, - North Goa Centre.",
                         "<strong>DAY TWO : </strong> 26th May 2023  at VVMs Shree Damodar College  Margao - South Goa Centre. ",
                     ),
         // data 1
         'data1_title' => 'A) Sub report of the North Goa Centre : ',
-        'data1_subtitle' => 'Srinivassa Sinai Dempo College of Commerce and Economics, Cujira, Bambolim. [ 25th May 2023]',
+        'data1_subtitle' => 'Srinivassa Sinai Dempo College of Commerce and Economics, Cujira, Bambolim. [25th May 2023]',
         'data1' => array(
                     "The inaugural ceremony started at 9:30 a.m. in the college auditorium.",
                     "The inaugural ceremony was attended by Prof. (Dr.) Niyan Marchon, Teaching, Learning and Education Technology, GSHEC and main coordinator of the Placement Drive. Ms. Disha Terkar, HR Talent Acquisition Group, Mumbai. Ms. Uttara Nair, Campus Lead, Mumbai. Mr. Rajesh Bhatikar, Administrator, Dempo Charities Trust. Prof. (Dr.) Manoj S. Kamat, Principal Srinivassa Sinai Dempo College of Commerce and Economics, Cujira and Asst. Prof. Pallavi Kalangutkar, Dempo College TIP Cell In-charge. Mr. Saurabh Naik and Ms Jayada Patnekar ( DHE coordinators)"

@@ -288,6 +288,59 @@
               </div>
             </div>
           </div>
+          <div id="tabA23" class="tabcontent">
+            <h4>
+                “Enhancing Competence and Quality of Higher Education”
+            </h4>
+            <div class="textAlign-center">
+              <strong>
+                Master Class Lecture Series <br>
+                Organised By  <br>
+                Directorate of Higher Education  <br>
+                and  <br>
+                Goa State Higher Education Council, Government of Goa  <br>
+              </strong>
+            </div>
+            <div>
+              One of the important objective of NEP 2020 is to focus on quality enhancement and sustainability of Higher Education through the performance assessment using the NAAC Accreditation framework and transform Higher Educational Institutions (HEI) in the state of Goa into knowledge hubs. To achieve this the Center of Teaching Learning and Education Technology of Goa State Higher Education Council (GSHEC) and Directorate of Higher Education (DHE) organized a Master Class Lecture Series titled 
+              <strong>‘Enhancing Competence and Quality of Higher Education’</strong>  
+              for the Principals and  IQAC  In-charge of all the HEIs in Goa on 
+              <strong>12th April 2023</strong> from 10.00 a.m. to 4.00 p.m. and an interactive session on the topic ‘Improving Quality in Higher Education’ on 13th April 2023 from 10.30 a.m. to 1.00 p.m. for selected representatives of HEIs across Goa in the Seminar Hall of SCERT building, Second Floor, Alto-Porvorim. 
+            </div>
+            <div>
+              The resource person for the Master Class Lecture series was 
+              <strong>Professor Pratibha Jolly, </strong> 
+              Former Principal Miranda House, University of Delhi with a 
+              <strong>NAAC grade of A++ and Rank 1 as per the NIRF Ranking 2022. </strong>
+              Professor Jolly is also a Science and Society Fellow, NASI, PI GATI (Gender Advancement for Transforming Institutions) , Academic Consultant NAAC and Former Chair, International Commission on Physics Education.
+            </div>
+            <div>
+              The first day of the workshop began with an inaugural function where Asst. Prof. Cheryl Alfonso was the compere. Ms. Cheryl welcomed the resource person for the workshop, Prof Pratibha Jolly, Shri Prasad Loylekar,Director of Higher Education , Prof. Niyan Marchon,Professor of Teaching, Learning & Educational Technology, Goa State Higher Education Council,  and  Prof. Vithal Tilvi.,  Professor of Research Development and Innovation.
+            </div>
+            <div>
+              The workshop was attended by 120 principals and IQAC In charge faculty members for HEIs . The session 1 was on the topic Assessment, Accreditation and Rankings: towards quality of higher education. In the second session Professor Pratibha Jolly spoke about the best practices in Higher Education which are important for transforming institutions to knowledge hubs and sustaining excellence of the HEIs. The third session followed after lunch and was on the topic NEP 2020 : Reimagining the world of work and  education. The last session for the first day was a question and answer session where the participants asked their queries related to the sessions. 
+            </div>
+            <div>
+              The second day of the workshop was an interactive session on the topic ‘improving quality in higher education’ where 20 selected representatives of HEIs interacted with Professor Pratibha Jolly with their queries. The session started with an introduction of every representative followed by a speech by the resource person on the importance of maintaining quality in the higher education. After a very fruitful interaction among the participants and the resource person the session concluded with a feedback from the participant. 
+            </div>
+            <div class="col-md-12">
+              <div class="gallery_img_box gib_bg">
+                <?php
+                  $counter1 = 1; 
+                  foreach ($teaching_learning_images['data'] as $key => $value) {
+                    if ($value['type'] == 'mcls') {
+                      ?>
+                      <figure class="gallery__item gallery__item_2--<?php echo $counter1++; ?>">
+                        <img src="<?php echo $value['url'] ?>" loading="lazy" alt="Gallery image 1" onclick="isImageExpanded(this);" class="gallery__img g_img_cover" style="background-color:#000;">
+                        <!-- <div class="gallery__item-overlay-background"></div>  --> 
+                      </figure>
+                      <?php
+                    }
+                  }
+                ?>
+              </div>
+            </div>
+          </div>
           
           <!-- Image Viewer -->
           <div class="expandContainer d-none" id="expandContainer">

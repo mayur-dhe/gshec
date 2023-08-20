@@ -32,6 +32,11 @@
             'year' => '2023',
             'title' => 'FDP in Banking',
         ),
+        array(
+            'year_id' => 2,
+            'year' => '2023',
+            'title' => 'Master Class Lecture Series',
+        ),
     ];
     $about = [
         'title' => 'Centre for Teaching, Learning & Educational Technology',
@@ -321,6 +326,68 @@
             //     'url' => 'assets/images/tle/fdp/pic6.jpg',
             //     'alt' => '',
             // ),
+
+            // 5
+            array(
+                'type' => 'mcls',
+                'url' => 'assets/images/tle/2023_mcls/img (1).jpg',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'mcls',
+                'url' => 'assets/images/tle/2023_mcls/img (2).jpg',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'mcls',
+                'url' => 'assets/images/tle/2023_mcls/img (3).jpg',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'mcls',
+                'url' => 'assets/images/tle/2023_mcls/img (4).jpg',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'mcls',
+                'url' => 'assets/images/tle/2023_mcls/img (5).jpg',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'mcls',
+                'url' => 'assets/images/tle/2023_mcls/img (6).jpg',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'mcls',
+                'url' => 'assets/images/tle/2023_mcls/img (7).jpg',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'mcls',
+                'url' => 'assets/images/tle/2023_mcls/img (8).jpg',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'mcls',
+                'url' => 'assets/images/tle/2023_mcls/img (9).jpg',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'mcls',
+                'url' => 'assets/images/tle/2023_mcls/img (10).jpg',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'mcls',
+                'url' => 'assets/images/tle/2023_mcls/img (11).jpg',
+                'alt' => '',
+            ),
+            array(
+                'type' => 'mcls',
+                'url' => 'assets/images/tle/2023_mcls/img (12).jpg',
+                'alt' => '',
+            ),
         ),
     ];
 ?>

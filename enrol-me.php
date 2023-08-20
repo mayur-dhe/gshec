@@ -453,7 +453,7 @@ $submitAPI = 'api/enrol_scholar.php';
 	}
 	function validateText(e) {
 		if (e.shiftKey || e.ctrlKey || e.altKey) {
-			e.preventDefault();
+			// e.preventDefault();
 		} else {
 			var key = e.keyCode;
 			if (!((key == 8) || (key == 32) || (key == 46) || (key >= 35 && key <= 40) || (key >= 65 && key <= 90))) {
@@ -470,7 +470,7 @@ $submitAPI = 'api/enrol_scholar.php';
 		} else {
 			$("#phone_no").focus();
 			popUpMsg('Please enter valid mobile Number!');
-			return false;
+			return false;	
 		}
 	}
 	function isValidURL(string) 
@@ -542,7 +542,7 @@ $submitAPI = 'api/enrol_scholar.php';
 			popUpMsg('Name is required, Please enter name!');
 		} else if (email=="") {
 			$("#semail").focus();
-			popUpMsg('Email is required, Please enter ypuremail address!');
+			popUpMsg('Email is required, Please enter your email address!');
 		}else if (!emailReg.test(email)){
 			$("#semail").focus();
 			popUpMsg('Please enter valid email address!');

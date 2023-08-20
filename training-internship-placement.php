@@ -46,7 +46,7 @@ require 'layout/top-header.php';
           <!-- Indicators -->
           <ul class="carousel-indicators">
               <?php foreach ($tip_images['data'] as $key => $image){  ?>
-                      <!-- <li data-target="#demo" data-slide-to="<?php echo $key?>" <?php echo $key==0 ?? 'class="active"' ?> ></li>                             -->
+                      <!-- <li data-target="#demo" data-slide-to="<?php echo $key?>" <?php echo $key==0 ?? 'class="active"' ?> ></li> -->
               <?php } ?>  
           </ul>
           <!-- The slideshow -->
@@ -528,11 +528,8 @@ require 'layout/top-header.php';
               foreach ($inspire_to_aspire_2['schedule'] as $key => $value) {
                 echo '<p style="font-size:18px!important; padding: 0!important;">'.$value.'</p>';
               }
-              ?>
-            <!-- chart -->
-                
-            <!-- chart -->
-            <?php 
+              // chart
+              echo '<img src="'.$inspire_to_aspire_2['chart_url'].'" loading="lazy" alt="TCS PLACEMENT DRIVE 2023 (Students Attended _ Placed)" class="pt20 pb20" >';
               echo '
               <br>
               <div>
