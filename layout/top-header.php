@@ -8,7 +8,14 @@
     <meta name="author" content="Mayur Naik">
     <title><?php echo $title; ?> - GSHEC</title>
     <link rel="icon" type="image/x-icon" href="assets/images/logo/GSHEC.ico">
-
+    
+    <script>
+        if (window.self === window.top) {
+            // This page is not in a frame, redirect to maintenance page
+            window.location.replace("index.php"); 
+        }
+    </script>
+    
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Additional CSS Files -->

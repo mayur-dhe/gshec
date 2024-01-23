@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site Under Maintenance</title>
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <!-- This page is not in a frame, redirect to maintenance page  -->
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

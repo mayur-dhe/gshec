@@ -1,3 +1,9 @@
+<!-- Updates Done -->
+            <!-- // This page is not in a frame, redirect to maintenance page -->
+	Redirected pages to Index due to site Maintenance 
+	layout/top-header.php
+	index.php
+	
 <!-- Question  -->
 <!-- Pending / hold  -->
 <!-- Changes Updates -->
