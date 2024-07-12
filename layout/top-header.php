@@ -1,3 +1,49 @@
+<?php 
+// $allowedPages = [
+//     "acts-and-rules.php",
+//     "archives.php",
+//     "blank.php",
+//     "council-members.php",
+//     "downloads.php",
+//     "education-dashboard.php",
+//     "enrol-me.php",
+//     "gallery-view-initiatives.php",
+//     "gallery-view.php",
+//     "gallery.php",
+//     "human-resource.php",
+//     "index.php",
+//     "initiative.php",
+//     "initiatives.php",
+//     "national-education-policy.php",
+//     "nep-action-plan.php",
+//     "nep-salient-features.php",
+//     "nep-status-and-plan.php",
+//     "news.php",
+//     "objectives.php",
+//     "organization.php",
+//     "research-development-innovation.php",
+//     "rti.php",
+//     "rusa.php",
+//     "software-development-cell-projects.php",
+//     "software-development-cell.php",
+//     "teaching-learning&educational-technology.php",
+//     "tenders.php",
+//     "training-internship-placement.php",
+//     "under-maintenance.php",
+//     ""
+// ];
+// // Get the requested page
+// $requestUri = $_SERVER['REQUEST_URI'];
+// $page = basename($requestUri);
+// // Check if the page is in the allowed list
+// if (!in_array($page, $allowedPages)) {
+//     // // If not, redirect to the 404 page
+//     // header("Location: ./404.php");
+//     // exit();
+// }
+// // Include the requested page
+// include($page);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,10 +56,10 @@
     <link rel="icon" type="image/x-icon" href="assets/images/logo/GSHEC.ico">
     
     <script>
-        if (window.self === window.top) {
-            // This page is not in a frame, redirect to maintenance page
-            window.location.replace("index.php"); 
-        }
+        // if (window.self === window.top) {
+        //     // This page is not in a frame, redirect to maintenance page
+        //     window.location.replace("under-maintenance.php"); 
+        // }
     </script>
     
     <!-- Bootstrap core CSS -->

@@ -131,7 +131,7 @@
         var datasetsData = xAxisLabel = yAxisValue = [];
 
         document.getElementById("chartDoubleBarGraphTitle").innerHTML = studentEnrolledData.title;
-        xAxisLabel = studentEnrolledData.x_axis;
+        xAxisLabel = studentEnrolledData.x_axis_full;
         chartSubTitle = studentEnrolledData.y_axis_title;
 
         for (let j = 0; j < studentEnrolledData.y_axis.length; j++) 
