@@ -1,0 +1,207 @@
+
+  html,
+  body {
+    background: var(--white);
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  ::selection {
+    background: var(--yellow);
+    color: var(--white);
+  }
+  
+  ::-moz-selection {
+    background: var(--yellow);
+    color: var(--white);
+  }
+  
+  @media (max-width: 991px) {
+    html, body {
+      overflow-x: hidden;
+    }
+    .mobile-top-fix {
+      margin-top: 30px;
+      margin-bottom: 0px;
+    }
+    .mobile-bottom-fix {
+      margin-bottom: 30px;
+    }
+    .mobile-bottom-fix-big {
+      margin-bottom: 60px;
+    }
+  }
+
+  
+.font_dancing {
+    font-size: 65px;
+    font-family: 'Dancing Script', cursive;
+  }
+
+.textAlign-center,
+.textAlign-center h2,
+.textAlign-center .sub_title {
+    text-align: center !important;
+}
+.textAlign-center .sub_title {
+    color: #505050;
+}
+.textDeco-underline {
+    border-bottom: 1px solid var(--red);
+    padding-bottom: 2px;
+    line-height: 1.8;
+  }
+  .btn_size {
+    width: auto !important;
+    white-space: nowrap;
+    color: white !important;
+  }
+
+  .star:after {
+    content: "*";
+  }
+  .star:after, .star-style {
+    color:red;
+  }
+  .form-design {
+    margin: 0;
+    padding: 20px;
+    background-color: #f7f9c4;
+    border-radius: 10px;
+  }
+  .form-design-2 {
+    background-color: #e7eab3;
+  }
+  .form-design-3 {
+    background-color: #fcd85c52;
+  }
+  .form-box {
+    margin: 10px auto;
+    border: 5px solid #f2ffc2;
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+/* ------ Tab CSS Start---------------------- */
+/* Style the tab */
+.tab {
+    background-color: #f2f2f2a8;/* #ffffffbf #f2f2f2; */
+    position: sticky;
+    top: 80px;
+    float: left;
+    width: 22%;
+    border-radius: 17px;
+    margin-top: -96px;
+    /* box-shadow: 4px 3px 0px 0px rgb(0 0 0 / 14%); */
+    /* -webkit-box-shadow: 4px 3px 0px 0px rgb(0 0 0 / 14%); */
+    /* -moz-box-shadow: 4px 3px 0px 0px rgba(0,0,0,0.14); */
+    z-index: 15;
+  }
+  /* Style the buttons inside the tab */
+  .tab button {
+    display: block;
+    padding: 14px 20px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 1rem;
+    color: var(--greyReadableTextColor) !important;
+    /* color: #000 !important; */
+  }
+  .tab button.activities {
+    padding: 14px 20px 14px 30px !important;
+    font-size: 0.9rem !important;
+  }
+  .tab button.sub_activities {
+    padding: 14px 20px 14px 40px !important;
+    font-size: 0.9rem !important;
+  }
+  .dd-icon {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 70%;
+    height: 24px;
+    align-content: end;
+  }
+  .dd-icon2 {
+    width: 78%;
+  }
+  .tab button.title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 30px 20px;
+    margin-bottom: 30px;
+    color: var(--yellow) !important;
+    border-bottom: 3px solid #dbdbdb;
+  }
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    color: var(--yellow) !important;
+    border-radius: 17px;
+    border-bottom: 1px solid;
+  }
+  /* Create an active/current tab button */
+  .tab button.active {
+    color:var(--yellow) !important;
+  }
+  /* Style the tab content */
+  .expandContainer,
+  .tabcontent {
+    float: right;
+    width: 78%;
+    padding: 30px 40px;
+    border-left: none;
+  }
+  .tabcontent * {
+    text-align: left !important;
+    color: var(--greyReadableTextColor);
+  }
+  .tabcontent ul li {
+    list-style: inside;
+    text-align: left;
+  }
+  /* tabcontent title */
+  .innerpage-title,
+  .tabcontent>h4 {
+    color: var(--yellow) !important;
+    font-size: 2.2rem;
+    font-weight: 500;
+    padding-top: 30px;
+    margin-bottom: 20px;
+    text-align: inherit;
+  }
+  .tabcontent>h4 {
+    margin-top: -38px;
+    font-size: 66px;
+  }
+  .tabcontent>h5 {
+    padding-top: 1rem !important;
+    /* padding-left: 1rem !important; */
+    font-weight: 600;
+  }
+  /* .tabcontent>h5::after {
+    content: ' :';
+  } */
+  .tabcontent p,
+  .tabcontent ul li,
+  .tabcontent ol li,
+  .tabcontent>div {
+    /* padding-left: 2.4rem !important; */
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem !important;
+  }
+  .tabcontent ul li,
+  .tabcontent ol li {
+    margin-bottom: 0.4rem;
+  }
+  .tabcontent>p {
+    padding: 0px 3rem !important;
+    text-align: justify;
+    margin-bottom: 0.3rem !important;
+  }
+  /* ------ Tab CSS End---------------------- */
+  
+  

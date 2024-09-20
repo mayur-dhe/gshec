@@ -1,0 +1,411 @@
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+
+body {
+  margin:0;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight:300;
+  letter-spacing: 2px;
+  font-size:48px;
+}
+p {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px;
+  font-size:14px;
+  color: #333333;
+}
+
+.header {
+  position:relative;
+  text-align:center;
+  background: linear-gradient(60deg, rgba(20,80,0,1) 0%, rgba(178, 240, 39) 100%);
+  color:white;
+}
+.logo {
+  width:50px;
+  fill:white;
+  padding-right:15px;
+  display:inline-block;
+  vertical-align: middle;
+}
+
+.inner-header {
+  height:8vh;
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
+
+.flex { /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.waves {
+  position:relative;
+  width: 100%;
+  height:15vh;
+  margin-bottom:-7px; /*Fix for safari gap*/
+  min-height:100px;
+  max-height:150px;
+}
+
+.content {
+  position:relative;
+  height:20vh;
+  text-align:center;
+  background-color: white;
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
+  .content {
+    height:30vh;
+  }
+  h1 {
+    font-size:24px;
+  }
+}
+
+#accordionFlushbestpractice h6{
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 34px;
+    background:  -webkit-linear-gradient( rgb(37, 3, 123) , rgb(119, 146, 252)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+     margin-bottom: 10px;
+}
+
+#accordionFlushbestpractice .paratxt
+{
+    color:#18037e;
+    padding-right: 6px;
+}
+
+
+.top-nav ul.pwdarea {
+    text-align: right;
+    float: right;
+    margin-right: 20px;
+}
+
+.top-nav {
+    font-family: 'Poppins', sans-serif;
+    padding: 0 8;
+    z-index: 100;
+    position: relative;
+    font-size: 13px;
+    height: 52px;
+    font-weight: 300;
+    transition-duration: .3s;
+    background-color: #ffffff;
+    opacity: 0.7;
+
+}
+
+.icons-bar {
+    width: 100%;
+    max-width: 200px;
+    /* background-color: none; */
+    display: flex;
+    justify-content: space-around;
+    float: right;
+    padding: 10px 20px;
+    align-items: float right;
+}
+
+#googlsearch {
+    /* margin-top: 80px; */
+    margin-bottom: -140px;
+    height: 50px;
+    width: 250px;
+}
+
+#___gcse_0 {
+    margin-top: -0px;
+    max-height: 400px;
+    width: 500px;
+}
+
+.gsc-control-cse .gsc-control-cse-en {
+    max-height: 400px;
+}
+
+div.gsc-control-wrapper-cse {
+    margin-bottom: -10px;
+}
+
+
+
+
+.icon-bar a {
+    font-size: 20px;
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.icon-bar a:hover {
+    -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+div.gsc-control-cse .gsc-control-cse-en {
+    display: none;
+}
+
+.skip-content {
+    float: left;
+    width: 30%;
+    margin-top: 8px;
+}
+
+.top-right {
+    float: left;
+    width: 40%;
+}
+
+#toprow {
+    height: 40px;
+}
+
+div.top-right .portalLinks li {
+    display: inline;
+}
+
+div.top-right .portalLinks {
+    margin-top: 15px;
+}
+
+div .gsc-input-box {
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+}
+
+.gsc-search-box {
+    vertical-align: top;
+}
+.portalLinks li:after {
+    content: " | ";
+    padding-left: 5px;
+    color: black;
+}
+
+.top-right {
+    display: inline;
+}
+
+.gsc-control-wrapper-cse {
+    vertical-align: top;
+    margin-top: -7px;
+}
+
+.gsc-search-button .gsc-search-button-v2 {
+    vertical-align: top;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .skip-content ul li {
+        font-size: 7px;
+        margin-top: 10;
+    }
+
+    div.top-right .portalLinks li {
+        font-size: 7px;
+    }
+
+    #___gcse_0 {
+        display: none;
+    }
+
+}
+
+.navbar-nav {
+    position: relative;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    display: block;
+    padding: 8px 0px;
+    font-size: 14px;
+    font-family: 'Poppins','sans-serif';
+    color: #000; /* Adjust color as needed */
+    text-decoration: none;
+}
+.sub-menu {
+  display: none; /* Hide sub-menu by default */
+  text-align: left;
+  position: absolute;
+  min-width: 250px;
+  top: 80%; /* Adjust positioning */
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(0, 0, 0, .1);
+  border-radius: 5px;
+  box-shadow: 0 5px 19px 1px rgba(0, 0, 0, .09);
+  z-index: 1000; /* Ensure it appears above other elements */
+  padding: 20px 0; /* Adjust padding as needed */
+  list-style: none;
+  margin: 0;
+}
+
+/* Display sub-menu on hover */
+.nav-item:hover .sub-menu {
+  display: block;
+}
+
+/* Sub-menu links styling */
+.sub-menu li {
+  position: relative; /* Positioning context for icons */
+  margin: 0;
+}
+
+/* Add padding to submenu items to make space for the icon */
+.sub-menu a {
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center align text and icon vertically */
+  padding: 10px 15px 10px 40px; /* Add extra space on the left for the icon */
+  color: #000; /* Adjust color as needed */
+  text-decoration: none;
+  font-size: 15px; /* Adjust font size */
+  text-transform: none; /* Remove text-transform */
+  letter-spacing: 0; /* Remove letter-spacing */
+  white-space: nowrap; /* Prevent text wrapping */
+  position: relative; /* Context for positioning icon */
+}
+
+/* Sub-menu links hover effect */
+.sub-menu a:hover {
+  color: #ff2c57; /* Text color on hover */
+}
+
+/* Icon styling for submenu items */
+.sub-menu a::before {
+  content: "\f10b"; /* Example icon content (Ionicons) */
+  font-family: "Ionicons";
+  font-size: 18px; /* Adjust icon size */
+  position: absolute; /* Absolute positioning to place it relative to the link */
+  left: -30px; /* Start position off-screen */
+  opacity: 0; /* Hide icon by default */
+  transition: left 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Smooth transition for icon movement and visibility */
+}
+
+/* Show icon on hover */
+.sub-menu a:hover::before {
+  left: 10px; /* Final position on hover */
+  opacity: 1; /* Show icon on hover */
+}
+
+/* Sub-menu arrow for mega menu */
+.navbar-nav > li > .sub-menu::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  height: 14px;
+  width: 14px;
+  background: #fff;
+  border-top: 1px solid rgba(0, 0, 0, .1);
+  border-right: 1px solid rgba(0, 0, 0, .1);
+  transform: translateX(-50%) translateY(6px) rotate(-45deg);
+}
+
+/* Nested sub-menu styling */
+.navbar-nav li .sub-menu li .sub-menu {
+  left: calc(100% - 5px);
+  top: -21px;
+  transform: translateX(0) translateY(0);
+  background: transparent;
+  border: none;
+  padding: 0;
+  box-shadow: none;
+}
+
+/* Mega menu specific styles */
+li.mega > .sub-menu {
+  display: table;
+  padding: 30px 10px 35px 10px;
+}
+
+.mega > .sub-menu > .mega-inner {
+  display: table-cell;
+  list-style: none;
+  position: relative;
+}
+
+.mega-inner .sub-menu {
+  min-width: 250px;
+}
+
+/* Sub-menu item styling within mega menu */
+li.mega > .sub-menu > li > a {
+  margin-bottom: 5px;
+}
+
+/* Icon styling for nested items */
+.navbar-nav li .sub-menu li:before {
+  content: "\f10b";
+  font-family: "Ionicons";
+  font-size: 14px;
+  font-weight: 400;
+  text-indent: 0;
+  position: absolute;
+  top: 10px;
+  left: -30px; /* Start position off-screen */
+  opacity: 0;
+  transition: left 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Smooth transition for icon movement and visibility */
+}
+
+
+.navbar-nav li.mega-inner .sub-menu li:hover::before,
+.no-child:hover::before {
+  left: 20px !important;
+  opacity: 1 !important;
+}

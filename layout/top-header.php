@@ -56,10 +56,10 @@
     <link rel="icon" type="image/x-icon" href="assets/images/logo/GSHEC.ico">
     
     <script>
-        // if (window.self === window.top) {
-        //     // This page is not in a frame, redirect to maintenance page
-        //     window.location.replace("under-maintenance.php"); 
-        // }
+        if (window.self === window.top) {
+            // This page is not in a frame, redirect to maintenance page
+            window.location.replace("under-maintenance.php"); 
+        }
     </script>
     
     <!-- Bootstrap core CSS -->

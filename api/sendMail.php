@@ -44,7 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo '<script>alert("Sorry, could not send your message !")</script>';
     }
     header("Refresh:2; url=../index.php#contact");
-    // header("Location: ".$server."/index#contact"); 
+    // header("Location: ".$domainName."/index#contact"); 
     exit();
     return true;
 }

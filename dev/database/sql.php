@@ -25,36 +25,49 @@ CREATE TABLE messages (
 
 CREATE TABLE scholar (
     id int NOT NULL AUTO_INCREMENT,
-    name varchar(50),
-    email varchar(100),
+    name varchar(255),
+    email varchar(255),
     address TEXT,
-    city varchar(30),
-    state varchar(30),
+    city varchar(255),
+    state varchar(100),
     country varchar(30),
-    work_type varchar(25),
-    work_name varchar(50),
+    work_type varchar(255),
+    work_name varchar(255),
     area_of_work TEXT,
-    designation varchar(100),
-    cv varchar(100),
-    profile_link varchar(100),
+    designation varchar(255),
+    cv varchar(255),
+    profile_link varchar(255),
     permanent_address TEXT,
     phone_no varchar(12),
     type_of_eng TEXT,
-    visit_freq varchar(25),
+    visit_freq varchar(255),
     local_address TEXT,
-    local_work varchar(50),
+    local_work varchar(255),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    status BOOLEAN DEFAULT 1,
     PRIMARY KEY (id)
 );
 
 CREATE TABLE scholar_recommendation (
     id int NOT NULL AUTO_INCREMENT,
     scholar_id int(10) NOT NULL,
-    name varchar(50),
-    email varchar(30),
+    name varchar(255),
+    email varchar(255),
     phone_no varchar(12),
-    designation varchar(100),
-    affiliation varchar(100),
+    designation varchar(255),
+    affiliation varchar(255),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY (id)
 );
+
+CREATE TABLE token (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    token TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    status BOOLEAN DEFAULT 1
+);
+
+
+
+show enrollment list 
+http://localhost/dhe-fe/show-results.php?token=78a0f25a2b1d995ce15ab3d8e955d39737dccb286515b8f35a1794e447eab0ab

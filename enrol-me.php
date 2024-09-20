@@ -89,7 +89,6 @@ require 'layout/header.php';
 $subtitle = "";
 $isCardsPage = true;
 require 'layout/site-map.php';
-$submitAPI = 'api/enrol_scholar.php';
 ?>
 <!-- ------------- Main Content Start---------------------- -->
 <section class="page-section">
@@ -127,7 +126,7 @@ $submitAPI = 'api/enrol_scholar.php';
 							</div>
 							<div class="col-md-6">
 								<label for="semail" class="control-label star">Email ID</label>
-								<input id="semail" name="semail" type="email" class="form-control" placeholder="example@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Invalid email address" required> 
+								<input id="semail" name="semail" type="email" class="form-control" placeholder="example@gmail.com" title="Invalid email address" required> 
 							</div>
 							<div class="form-group col-md-12">
 								<label class="control-label star" for="sadd">Work/Office Address</label>
@@ -592,7 +591,7 @@ $submitAPI = 'api/enrol_scholar.php';
 	function submitForm() 
 	{
 		if (validateEmptyFields() && isFileUploaded() && phoneNumber()) {
-			data.frqvisit = $('.frqvisit:checked').val();
+			data.visit_freq = $('.frqvisit:checked').val();
 			data.local_address = $("#local_address").val();
 			data.local_work = $("#local_work").val();
 			data.isRecommendations = false;
@@ -621,11 +620,11 @@ $submitAPI = 'api/enrol_scholar.php';
 					}
 				}
 			}
-			// console.log(data);
+			
 			AmagiLoader.show();
 			$.ajax({
 				type: "POST",
-				url: "<?php echo $submitAPI; ?>",
+				url: 'api/enrolScholarApi.php',
 				data: JSON.stringify(data),
 				success: function(res)
 				{

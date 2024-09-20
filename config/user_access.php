@@ -1,25 +1,18 @@
 <?php
-$server = $_SERVER['HTTP_HOST'];
-$servername = "localhost";
+require_once 'absolutePath.php';
 
-if ($server == "localhost") {
+// Database credentials
+$serverName = "localhost";
+
+if ($domainName == "localhost") {
     $dbname= "gshec";
     $username = "root";
     $password = "";
-    $host = "http://localhost/gshec/";
-
-// } else if ($server == "gshec.craftitt.com") {
-//     $username = "u610117377_gshec_user";
-//     $password = "gshec123U";
-//     $dbname= "u610117377_gshec";
-//     $host = $server.'/';
-
 } else {
     // for edu server
     $dbname= "gshec";
     $username = "root";
     $password = "password";
-    $host = $server.'/';
 }
 
 
