@@ -1,9 +1,10 @@
 <!-- Updates Done -->
-            <!-- // This page is not in a frame, redirect to maintenance page -->
+	<!-- // This page is not in a frame, redirect to maintenance page -->
 	Redirected pages to Index due to site Maintenance 
 	layout/top-header.php
 	index.php
 	
+	Enrol page connected using Token 
 <!-- Question  -->
 <!-- Pending / hold  -->
 <!-- Changes Updates -->
@@ -19,9 +20,7 @@ branch test
 <!-- find me --> 
 <!-- --------------------------------------------------- -->
 <!-- upload    -->
-alter
-	admin-PENDING
-	
+
 <!-- testing on hold - no effect  -->
 	vendor 
 		bootstrap 

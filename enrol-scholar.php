@@ -39,9 +39,9 @@ $title_url = "#";
 	border-bottom: 2px solid #ebe2b7 !important;
 }
 .rounded_corners .tablinks.box2 {
-	border-left: 2px solid #e86f52 !important;
-	border-top: 2px solid #e86f52 !important;
-	border-bottom: 2px solid #e86f52 !important;
+	border-left: 2px solid #7174d2 !important;
+	border-top: 2px solid #7174d2 !important;
+	border-bottom: 2px solid #7174d2 !important;
 }
 .rounded_corners .tablinks.box3 {
 	border-left: 2px solid #2a9d8e !important;
@@ -52,7 +52,7 @@ $title_url = "#";
     background-color: #ebe2b742 !important;
 }
 .rounded_corners .tablinks.box2.active {
-    background-color: #e86f5240 !important;
+    background-color: #7174d240 !important;
 }
 .rounded_corners .tablinks.box3.active {
     background-color: #56b1a545 !important;
@@ -61,7 +61,7 @@ $title_url = "#";
     background-color: #ebe2b742 !important;
 }
 .rounded_corners .tablinks.box2:hover {
-    background-color: #e86f5240 !important;
+    background-color: #7174d240 !important;
 }
 .rounded_corners .tablinks.box3:hover {
     background-color: #56b1a545 !important;
@@ -73,7 +73,7 @@ $title_url = "#";
 	border: 2px solid #ebe2b7 !important;
 }
 .tabcontent#box2 {
-	border: 2px solid #e86f52 !important;
+	border: 2px solid #7174d2 !important;
 }
 .tabcontent#box3 {
 	border: 2px solid #2a9d8e !important;
