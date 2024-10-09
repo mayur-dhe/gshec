@@ -13,7 +13,7 @@ require 'layout/dhe/header.php';
 include 'data/countries_list.php';
 
 $page = "5";
-$title = "ENROL FOR DNYAN SANGRAH";
+$title = "Enrol for ज्ञान संग्रह(Dnyan Sangrah)";
 $title_url = "#";
 ?>
 <style>
@@ -101,7 +101,7 @@ $isCardsPage = true;
 	<div class="container" style="padding: 30px 40px;">
 		<div class="row">
 			<div class="col-md-12 col-lg-12 p-0">
-				<h4 class="textAlign-center font_dancing pb20" id="form_start">Enrol for Dnyan Sangrah</h4>
+				<h4 class="textAlign-center font_dancing pb20" id="form_start">Enrol for ज्ञान संग्रह(Dnyan Sangrah)</h4>
 				<div id="expandedImg"><!-- do not remove me --></div>
 				<div class="tab rounded_corners">
 					<button class="tablinks box1" onclick="openTabSection(event, 'box1', true, 0)" id="defaultOpen">
@@ -369,18 +369,18 @@ $isCardsPage = true;
 	}
 	// Wait for the DOM to be ready
 	$(function() {
-		name = $("#sname").val('test');
-		email = $("#semail").val('test@gmail.com');
-		address = $("#sadd").val('test');
-		city = $("#city").val('test');
-		state = $("#state").val('test');
-		work_name = $("#work_name").val('test');
-		area_of_work = $("#area_of_work").val('test');
-		designation = $("#designation").val('test');
-		profile_link = $("#profile_link").val('https://open.spotify.com/collection/tracks');
-		permanent_address = $("#permanent_address").val('test');
-		phone_no = $("#phone_no").val('6658794561');
-		type_of_eng = $("#type_of_eng").val('test');
+		// name = $("#sname").val('test');
+		// email = $("#semail").val('test@gmail.com');
+		// address = $("#sadd").val('test');
+		// city = $("#city").val('test');
+		// state = $("#state").val('test');
+		// work_name = $("#work_name").val('test');
+		// area_of_work = $("#area_of_work").val('test');
+		// designation = $("#designation").val('test');
+		// profile_link = $("#profile_link").val('https://open.spotify.com/collection/tracks');
+		// permanent_address = $("#permanent_address").val('test');
+		// phone_no = $("#phone_no").val('6658794561');
+		// type_of_eng = $("#type_of_eng").val('test');
 
 		$(add_button).click(function(e){ 			//on add input button click
 			e.preventDefault();

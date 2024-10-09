@@ -4,7 +4,7 @@ include 'config/user_access.php';
 include 'data/countries_list.php';
 
 $page = "5";
-$title = "ENROL FOR DNYAN SANGRAH";
+$title = "Enrol for ज्ञान संग्रह(Dnyan Sangrah)";
 $title_url = "#";
 require 'layout/top-header.php';
 ?>
@@ -95,7 +95,7 @@ require 'layout/site-map.php';
 	<div class="container" style="padding: 30px 40px;">
 		<div class="row">
 			<div class="col-md-12 col-lg-12 p-0">
-				<h4 class="textAlign-center font_dancing pb20" id="form_start">Enrol for Dnyan Sangrah</h4>
+				<h4 class="textAlign-center font_dancing pb20" id="form_start">Enrol for ज्ञान संग्रह(Dnyan Sangrah)</h4>
 				<div id="expandedImg"><!-- do not remove me --></div>
 				<div class="tab rounded_corners">
 					<button class="tablinks box1" onclick="openTabSection(event, 'box1', true, 0)" id="defaultOpen">
